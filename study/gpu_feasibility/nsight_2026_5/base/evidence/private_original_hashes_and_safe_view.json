@@ -1,0 +1,14 @@
+{
+  "original_private_gate_sha256": "8497e7bef6ba44436cac1bda9affd02c79cb756568518453632b9430a214c846",
+  "original_report_sha256": "6140a06f276c9b037bc64f3c075cbad8e8ef02a1e41a600f83a9ed6621795a7f",
+  "original_full_sqlite_sha256": "9b42e088184eca91acad3fc86a479417d7cc16653187c95965afbf6a32dd36e0",
+  "review_safe_gate_sha256": "e73065404ef366fea0e08cb6bcdd770b729806abd5f9428735cc90338b15e4fc",
+  "transformation": "Only diagnostic_events is filtered to the actual target/global rows and four exact fixed diagnostic texts used by the subset. All other gate values are unchanged. Full original is retained privately and not published.",
+  "original_diagnostic_rows": 24,
+  "safe_diagnostic_rows": 4,
+  "raw_report_or_full_SQLite_copied": false,
+  "environment_tables_unrelated_process_rows_or_unrelated_StringIds_copied": false,
+  "actual_probe_executions_total": 1,
+  "original_V2_audit_failure_retained": true,
+  "V3_audit_only_no_GPU_repeat": true
+}

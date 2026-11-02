@@ -1,0 +1,39 @@
+{
+  "native_python": "3.13.13 (main, May  8 2026, 20:31:08) [MSC v.1944 64 bit (ARM64)]",
+  "readonly": true,
+  "checked_utc": "2026-11-02T16:03:27.048995+00:00",
+  "paths": {
+    "ordinary": {
+      "path": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\outputs\\tello_refinement\\gpu_feasibility\\native_installation\\base\\source\\interpolation_context\\src\\finiteVolume\\interpolation\\surfaceInterpolation\\surfaceInterpolationScheme",
+      "characters": 258,
+      "stat": {
+        "device": 2511484457875513115,
+        "inode": 281474978074105,
+        "mode": 16895,
+        "file_attributes": 16
+      },
+      "iterdir_ok": false,
+      "iterdir_error": {
+        "type": "FileNotFoundError",
+        "winerror": 3,
+        "message": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\abbii\\\\Documents\\\\Codex\\\\2026-10-30\\\\referenced-chatgpt-conversation-this-is-an\\\\outputs\\\\tello_refinement\\\\gpu_feasibility\\\\native_installation\\\\base\\\\source\\\\interpolation_context\\\\src\\\\finiteVolume\\\\interpolation\\\\surfaceInterpolation\\\\surfaceInterpolationScheme'"
+      }
+    },
+    "extended": {
+      "path": "\\\\?\\C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\outputs\\tello_refinement\\gpu_feasibility\\native_installation\\base\\source\\interpolation_context\\src\\finiteVolume\\interpolation\\surfaceInterpolation\\surfaceInterpolationScheme",
+      "characters": 262,
+      "stat": {
+        "device": 2511484457875513115,
+        "inode": 281474978074105,
+        "mode": 16895,
+        "file_attributes": 16
+      },
+      "directory_entries": [
+        "surfaceInterpolationScheme.C"
+      ],
+      "iterdir_ok": true
+    }
+  },
+  "observed_ordinary_failure_extended_success": true,
+  "same_physical_directory_identity": true
+}

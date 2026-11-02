@@ -1,0 +1,21 @@
+{
+  "unit": "native-large-flux-memcheck-20261102T123221Z.service",
+  "argv": [
+    "systemd-run",
+    "--collect",
+    "--unit=native-large-flux-memcheck-20261102T123221Z.service",
+    "--uid=openfoam",
+    "--nice=15",
+    "--service-type=exec",
+    "--working-directory=/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis",
+    "--property=StandardOutput=append:/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/service.log",
+    "--property=StandardError=append:/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/service.log",
+    "--property=RuntimeMaxSec=240",
+    "/bin/bash",
+    "--noprofile",
+    "--norc",
+    "-c",
+    ". /opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh; exec /usr/bin/python3 /mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/run_memcheck.py"
+  ],
+  "output": "Running as unit: native-large-flux-memcheck-20261102T123221Z.service; invocation ID: 71b5a30b92c1477a862b2963e772924f\n"
+}

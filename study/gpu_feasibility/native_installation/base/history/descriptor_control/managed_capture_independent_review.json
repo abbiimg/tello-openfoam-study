@@ -1,0 +1,311 @@
+{
+  "schema": "independent-managed-capture-source-and-ownership-review-v1",
+  "reviewed_utc": "2026-11-02T12:57:01Z",
+  "reviewer": "/root/stdpar_memory_review",
+  "conclusion": "The documented managed-mode descriptor hazard is present in the source pattern and reproduced by the separate controlled diagnostic. This supports a source-only, app-scoped managed-heap ownership candidate. The exact full-case faulting instruction and the safety of all downstream library captures remain unproven; no runtime acceptance is given.",
+  "scope": {
+    "source_reads": true,
+    "primary_web_sources": true,
+    "diagnostic_evidence_read": true,
+    "review_artifacts_written_only": true,
+    "compiler_or_test_or_CFD_or_GPU_launched": false,
+    "vendor_or_app_or_case_or_SDK_or_output_or_Git_changed": false,
+    "owner_diff_available": false
+  },
+  "sources": [
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/interpolation/surfaceInterpolation/surfaceInterpolationScheme/surfaceInterpolationScheme.C",
+      "sha256": "8f4be44f47cdd5fe4d80d82f6be26b050e647409b3431baa283bd0a1372bea3e",
+      "relevant_lines": {
+        "other_interpolation_reference_kernel": [
+          145,
+          182
+        ],
+        "dot_interpolation_aliases": [
+          248,
+          275
+        ],
+        "dot_interpolation_reference_kernel": [
+          279,
+          295
+        ],
+        "generic_geometricOneField_delegation": [
+          338,
+          344
+        ]
+      }
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/containers/Lists/policy/ListPolicy.H",
+      "sha256": "322530b836792438d4344cf9873c609e975989501530872655a869ba4f6abd29",
+      "relevant_lines": [
+        162,
+        167
+      ]
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/containers/Lists/List/UListI.H",
+      "sha256": "4d01244da298070e7f13333ea3ae63f1506d10fa05ffe54ca93a9fcdd6738af8",
+      "relevant_lines": {
+        "policy_selection": [
+          35,
+          48
+        ],
+        "data_pointer_access": [
+          313,
+          324
+        ],
+        "subscript": [
+          409,
+          450
+        ]
+      }
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/containers/Lists/List/UList.H",
+      "sha256": "f16240e3493e6e30a75c73ab2ed8b48b6731076b98ff37b219cf66745a861546",
+      "relevant_lines": [
+        103,
+        108
+      ]
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/containers/Lists/List/List.H",
+      "sha256": "5c8ddf0f9186b1d9f2525b5145eb79efb9af324f64d77a042deedd7082b194d0",
+      "relevant_lines": [
+        74,
+        78
+      ]
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/fields/Fields/Field/Field.H",
+      "sha256": "a44ead973fad6a5b9e3a986e9e2453321bf66826f5bd15526d3f668ffe320e27",
+      "relevant_lines": [
+        150,
+        155
+      ]
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fvMatrices/fvMatrix/fvMatrix.H",
+      "sha256": "bcd44167ecf726d33645848961ed5c6bc4d26ce76e95d24a92d6dc1e4fe026db",
+      "relevant_lines": [
+        163,
+        177
+      ]
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/incompressible/createPhi.H",
+      "sha256": "3bffc7d3f5a4161e528183596a7e029ae7989b1583019db5b77dc2e82313d0cd",
+      "relevant_lines": [
+        36,
+        49
+      ]
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/source/createC29Fields.H",
+      "sha256": "46793564b465f720035988be8cf5804ed7321e919caeebff1719598a991b9cf9"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/source/c29NativeHybridFoam.C",
+      "sha256": "62e55baa1aac14bdc833c364d32bca820e0c2b270758d9d19fc2809ab547ff2d"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/source/C29Operators.H",
+      "sha256": "6d45abbc25844e19d88d259de87b54e76524c5a0083faa946a7c3c3f3f45ed7d"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/source/C29HostSource.H",
+      "sha256": "92aacc175124982ff1a3c30fa6c52beb45481b1065af4688eac9a73476dafea6"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/source/C29BackendAudit.H",
+      "sha256": "f8077bb06aeae459d00ae72246feee920dc75503615216d9ae3a04e1df09eb97"
+    }
+  ],
+  "direct_source_findings": [
+    "FOAM_OFFLOAD apply_policy uses par_unseq only when ListPolicy::use_offload(length) is true; that threshold is >=1000, otherwise seq.",
+    "The relevant dotInterpolate inner lambda captures by reference and subscripts vfi, lambda, P, N, Sfi and sfi.",
+    "Field inherits List, which inherits UList. UList stores size_ and v_; operator[] must obtain v_ through its object before indexing data.",
+    "The primary U and p objects are local stack descriptors; phi is a stack object through createPhi.H. The mesh is already heap-owned.",
+    "The matrix source_, internalCoeffs_, boundaryCoeffs_ and coeffsOffset_ descriptors are inline members of fvMatrix, even when their element buffers are separately allocated."
+  ],
+  "diagnostic_evidence": {
+    "path": "work/native_stdpar_install/large_flux_diagnosis/descriptor_control_results.json",
+    "sha256": "6ab17b91e65ea5ba9cc1602beea5ff943194ef6c426589b7377a28450f3c9e27",
+    "status": "Read-only review of another owner's completed diagnostic, not a test launched by this reviewer",
+    "common_binary_sha256": "c092bc4e67259676e4a2837bce7f9d5948a1d7149e64aa1c593f3f4af4c05255",
+    "outcomes": [
+      {
+        "mode": "raw",
+        "n": 4096,
+        "offload": true,
+        "actual_exit": 0,
+        "mismatches": 0
+      },
+      {
+        "mode": "heap-ref",
+        "n": 4096,
+        "offload": true,
+        "actual_exit": 0,
+        "mismatches": 0
+      },
+      {
+        "mode": "stack-ref",
+        "n": 400,
+        "offload": false,
+        "actual_exit": 0,
+        "mismatches": 0
+      },
+      {
+        "mode": "stack-ref",
+        "n": 4096,
+        "offload": true,
+        "actual_exit": -6
+      }
+    ],
+    "measured_pointer_types": "Stack descriptor type0/unregistered; heap descriptor type3; input/output buffers type3",
+    "inference": "Controlled evidence establishes this descriptor-storage failure class on this installation. It does not identify the exact faulting operand/instruction in the full fvc::flux case."
+  },
+  "ownership_inventory": [
+    {
+      "file": "createC29Fields.H",
+      "lines": [
+        25,
+        40,
+        54,
+        63
+      ],
+      "objects": [
+        "p",
+        "U",
+        "phi via createPhi.H",
+        "nuEff"
+      ],
+      "reason": "Primary fields enter interpolation/convection/gradient helpers; U must be checked before the initial phi expression."
+    },
+    {
+      "file": "c29NativeHybridFoam.C",
+      "lines": [
+        74,
+        76,
+        78
+      ],
+      "objects": [
+        "initialU",
+        "initialP",
+        "initialPhi"
+      ],
+      "reason": "Audit copies are owning GeometricFields; consistent heap ownership avoids leaving a separate app-local descriptor class uncovered."
+    },
+    {
+      "file": "C29Operators.H",
+      "lines": [
+        21,
+        22
+      ],
+      "objects": [
+        "nuFace",
+        "devTauCorrFlux"
+      ],
+      "reason": "Passed to laplacian/div helpers after creation."
+    },
+    {
+      "file": "C29Operators.H",
+      "lines": [
+        46,
+        51
+      ],
+      "objects": [
+        "dPhi",
+        "coupling"
+      ],
+      "reason": "Owning Euler correction fields participate in field operations and boundary handling."
+    },
+    {
+      "file": "c29NativeHybridFoam.C",
+      "lines": [
+        118,
+        119,
+        120,
+        131
+      ],
+      "objects": [
+        "rAU",
+        "HbyA",
+        "phiHbyA",
+        "pEqn"
+      ],
+      "reason": "Pressure helpers interpolate/access fields; matrix holds inline Field descriptors."
+    },
+    {
+      "file": "C29HostSource.H",
+      "lines": [
+        112
+      ],
+      "objects": [
+        "source"
+      ],
+      "reason": "Temporary matrix holds inline Field descriptors and participates in subtraction."
+    }
+  ],
+  "already_heap_or_host_only": {
+    "retain_tmp_ownership": [
+      "tUEqn",
+      "predictor",
+      "momentum result",
+      "Euler correction result",
+      "new-produced GeometricField expression temporaries"
+    ],
+    "leave_host_only_without_new_evidence": [
+      "pisoControl",
+      "IOdictionaries",
+      "SourceObservation",
+      "std::vector before snapshot",
+      "dimensionedScalar nu and rDeltaT"
+    ],
+    "caution": "This is the complete application-local owning Field/matrix inventory identified by static review, not proof of all library-internal local captures."
+  },
+  "recommended_candidate_contract": [
+    "Use local autoPtr/unique ownership with new plus existing named references, preserving IO names, registry flags, constructors, expressions, scope and destruction order.",
+    "Keep all equations, source fragments, controller timing, boundary policies, schemes and numeric criteria unchanged. Keep strict-pressure protocol adaptation separate.",
+    "Preserve existing checked synchronization before temporaries and owner destruction.",
+    "Require CUDA type3 for each owning object and its embedded primitive Field descriptor, separately from data-pointer type3. Check U immediately before fvc::flux initialization.",
+    "Check source/matrix inline Field descriptors and relevant addressing/weight/geometry descriptors when naturally available.",
+    "Do not prime oldTime history or materialize extra fields solely for pointer checks; observe oldTime descriptors only at existing natural accesses.",
+    "Compile same source for CPU and GPU, recheck exact full-size initialized U/p/phi, then individual five-step field/force/power/continuity/source gates and actual GPU-path coverage."
+  ],
+  "raw_pointer_patch_alternative": {
+    "assessment": "A narrow operation-specific pointer-by-value kernel removes descriptor dereferences, preserving face addressing, arithmetic order and boundaries.",
+    "cautions": [
+      "Extract cdata()/data() on host and explicitly capture raw pointer values; retaining reference capture of local pointer variables is not a general portable cure.",
+      "Do not blindly replace [&] with [=] on owning Field objects; that may introduce deep copies, different lifetimes or unsupported copies.",
+      "Generic dotInterpolate also serves geometricOneField; its stateless Internal sentinel does not offer a universal cdata() API, so a generic patch needs an explicit specialization/trait rather than assuming all SFType values are stored arrays."
+    ]
+  },
+  "sanitizer": {
+    "reported_attempt": "Actual child-6 and tool86 with CUDA initialized before the Sanitizer; no usable kernel/address attribution",
+    "primary_forum": "https://forums.developer.nvidia.com/t/getting-cuda-initialized-before-the-sanitizer-but-not-sure-how/344601",
+    "documented_diagnostic": "NVIDIA recommends a GDB cuInit stack trace and, if CUDA is entered from a global initializer, deferring that call until after sanitizer injection libraries preload.",
+    "universal_CLI_workaround_verified": false,
+    "option_cautions": "require-cuda-init=no controls a target that does not use CUDA; injection-path selects tool libraries. Neither is documented as a universal fix for early initialization.",
+    "no_new_tool_or_target_run_by_reviewer": true
+  },
+  "primary_web_sources": [
+    {
+      "url": "https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-user-guide/#data-management-in-parallel-algorithms",
+      "support": "Current26.9 managed-mode stack/composite descriptor rules; pointer data alternative"
+    },
+    {
+      "url": "https://forums.developer.nvidia.com/t/stdpar-runtime-crash-related-to-stack-memory/279901",
+      "support": "NVIDIA staff explains composite stack descriptor vs managed-heap descriptor example; historical hardware availability statements are not applied to current hardware"
+    },
+    {
+      "url": "https://forums.developer.nvidia.com/t/getting-cuda-initialized-before-the-sanitizer-but-not-sure-how/344601",
+      "support": "Known early-initialization issue, GDB cuInit call-stack diagnostic"
+    },
+    {
+      "url": "https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html",
+      "support": "Meaning of require-cuda-init and injection-path; tool error is not a clean memory-check result"
+    }
+  ]
+}

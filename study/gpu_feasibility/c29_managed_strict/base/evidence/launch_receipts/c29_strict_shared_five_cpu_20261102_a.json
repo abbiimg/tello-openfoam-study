@@ -1,0 +1,234 @@
+{
+  "schema": "c29-unvalidated-experiment-launch-receipt-v2",
+  "created_utc": "2026-11-02T13:42:55.173888+00:00",
+  "created_epoch": 1793626975.173947,
+  "max_age_s": 300,
+  "experiment_id": "c29_strict_shared_five_cpu_20261102_a",
+  "phase": "five_fixed_steps",
+  "backend": "cpu",
+  "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu",
+  "private_root": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102",
+  "inputs": {
+    "0.6/U": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/U",
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "size_bytes": 38621951,
+      "mtime_ns": 1793624840564568568
+    },
+    "0.6/p": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/p",
+      "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+      "size_bytes": 13004937,
+      "mtime_ns": 1793624840708568632
+    },
+    "constant/rotorParameters": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/rotorParameters",
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "mtime_ns": 1793624841987413010
+    },
+    "constant/fvModels": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/fvModels",
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793624840718103337
+    },
+    "constant/physicalProperties": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/physicalProperties",
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793624840718584337
+    },
+    "constant/momentumTransport": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/momentumTransport",
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793624840718360537
+    },
+    "system/fvSchemes": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSchemes",
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "mtime_ns": 1793624842010459821
+    },
+    "system/blockMeshDict": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/blockMeshDict",
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+      "size_bytes": 743,
+      "mtime_ns": 1793624842010021221
+    },
+    "constant/polyMesh/boundary": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/polyMesh/boundary",
+      "sha256": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "size_bytes": 813,
+      "mtime_ns": 1793624840719028537
+    },
+    "constant/polyMesh/cellProc": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/polyMesh/cellProc",
+      "sha256": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+      "size_bytes": 1845845,
+      "mtime_ns": 1793624840720568638
+    },
+    "constant/polyMesh/faces": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/polyMesh/faces",
+      "sha256": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "size_bytes": 85443688,
+      "mtime_ns": 1793624841480568981
+    },
+    "constant/polyMesh/neighbour": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/polyMesh/neighbour",
+      "sha256": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "size_bytes": 18862641,
+      "mtime_ns": 1793624841636569052
+    },
+    "constant/polyMesh/owner": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/polyMesh/owner",
+      "sha256": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "size_bytes": 19220457,
+      "mtime_ns": 1793624841796569124
+    },
+    "constant/polyMesh/points": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/polyMesh/points",
+      "sha256": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "size_bytes": 37520188,
+      "mtime_ns": 1793624841980569207
+    },
+    "0.6/phi": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/phi",
+      "sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "size_bytes": 65502360,
+      "mtime_ns": 1793626243536591213
+    },
+    "system/controlDict": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/controlDict",
+      "sha256": "bed18970ed2d7b48f6b6e34eb4147e3441a374591614284b9dbb14c8c7580bad",
+      "size_bytes": 371,
+      "mtime_ns": 1793624844092696672
+    },
+    "constant/c29PortControls": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/c29PortControls",
+      "sha256": "154ef54a0be1620f4f64b0d6e53bbf73f5c4cd1b5422475457787737f2626832",
+      "size_bytes": 1181,
+      "mtime_ns": 1793626727636565424
+    },
+    "system/fvSolution": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSolution",
+      "sha256": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3",
+      "size_bytes": 359,
+      "mtime_ns": 1793624844099870676
+    },
+    "constant/transportProperties": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/transportProperties",
+      "sha256": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+      "size_bytes": 97,
+      "mtime_ns": 1793624844128536689
+    }
+  },
+  "input_snapshot_sha256": "471700564efa5fac4b076a8573c9fb179397e1a3d05d6926c9e182b9b880ef20",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "sha256": "535cb85ecb08b34b6a6ff08a00d1afc1857b68f041d4e89df309e2dbb5c01e89",
+    "size_bytes": 1037696,
+    "mtime_ns": 1793625402338252270
+  },
+  "library_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/library_identity.json",
+    "sha256": "3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80",
+    "size_bytes": 3198,
+    "mtime_ns": 1793625551468422602
+  },
+  "libraries": [
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "4f1881d27bd62e95b1cbc10127d9b24c40b62e1aab7164525b6b9ed4946bfb93",
+      "size_bytes": 49923416,
+      "mtime_ns": 1793617796565334617
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "956a3672d95ac04269f22c4cafb15d4c657e843bcc6a49182e851a2c4250d4d3",
+      "size_bytes": 11513464,
+      "mtime_ns": 1793616522198738288
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "5e00ef9264bac830689c618a79697134bdaea0b55eb98c8a19d621ad1e833256",
+      "size_bytes": 17548704,
+      "mtime_ns": 1793616097222592273
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "size_bytes": 2633224,
+      "mtime_ns": 1766093810000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libm.so.6",
+      "sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "size_bytes": 591800,
+      "mtime_ns": 1788444912000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+      "sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "size_bytes": 133696,
+      "mtime_ns": 1766093810000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libc.so.6",
+      "sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "size_bytes": 1722920,
+      "mtime_ns": 1788444912000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+      "sha256": "390027e5f45f236bd1838bc54bf464c5ff01d260ab9f8b415ea8276641bce505",
+      "size_bytes": 203968,
+      "mtime_ns": 1788444912000000000
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy/libPstream.so",
+      "sha256": "ee2b584f1a73805d9409d4e8087a6c3db7f502249499fb64f7a36a3068150c35",
+      "size_bytes": 80720,
+      "mtime_ns": 1793615675462147770
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfileFormats.so",
+      "sha256": "6544683c601c4ab168bde158f0d6ea43e8fc3ae02f2f0f5dad22e7abdb004a27",
+      "size_bytes": 1673216,
+      "mtime_ns": 1793616143952173215
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libsurfMesh.so",
+      "sha256": "3bd6a715190bae77bd4e9de401989f06c33cce9205c0adea5f3d54901ab78374",
+      "size_bytes": 3538616,
+      "mtime_ns": 1793616237030750131
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libz.so.1.3",
+      "sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3",
+      "size_bytes": 133272,
+      "mtime_ns": 1792616177000000000
+    }
+  ],
+  "candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "environment": {
+    "LD_LIBRARY_PATH": "/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64GccDPInt32/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/fftw-3.3.10/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/CGAL-4.14.3/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/boost_1_74_0/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy",
+    "LD_PRELOAD": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "NVCOMPILER_ACC_DEVICE_TYPE": null,
+    "NVCOMPILER_ACC_CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": "1"
+  },
+  "manual_argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "-case",
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu"
+  ],
+  "shared_phi_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+  "inputs_audited": true,
+  "runtime_validated": false,
+  "scientific_acceptance": "NOT ASSESSED",
+  "limitations": "No launch. Recheck immediately before exact manual argv under frozen inputs/environment. C++ logs bindings but does not hash files. Root must compare declared libraries with actual loader evidence."
+}

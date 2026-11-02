@@ -1,0 +1,54 @@
+SOURCE-ONLY PROPOSAL — NOT EXECUTED AGAINST ANY ARCHIVE
+
+Scope:
+  Refresh setup_results.zip study/** from the CURRENT closed Tello output
+  folder. Keep every existing cases/** entry, including compressed record
+  bytes, uncompressed SHA256, ZipInfo metadata and Unix permissions.
+  Only the case entries' absolute ZIP offsets necessarily relocate.
+  No case archive, CFD, original packager, GPU output, source or Git mutation.
+
+Difference from package_refinement.py:
+  - Windows-native stdlib only, using the existing Blender CPython 3.13.13.
+    No fcntl import, WSL/DrvFs I/O, SDK, executable dependency, install or run.
+  - Does not rerun validation/add_case or rebuild cases.zip. Pinned CPU84
+    approval, CSV and cases.zip hashes and 84-case memberships are checked.
+  - CPU84 setup ZIP must match its pinned SHA, size and 2468-member count.
+  - Copies old case ZIP local records verbatim instead of recompressing or
+    changing their ZipInfo/Unix modes; refreshes only the logical study set.
+  - Applies the original dotpath/__pycache__/pyc and gzip/ZIP filter, allowing
+    exactly the original three GPU reproduction compressed dependencies.
+    Current/full ZIP, dot-prefixed candidate temps and external compact
+    checksums/receipts cannot be included. Inventory keys use as_posix().
+  - Fixed workspace/output roots; checks all path ancestors for reparse
+    points, symlinks and junctions; regular input files must not be hardlinks.
+  - Unique work/run_* directory stores an exclusively created, native-copied,
+    SHA-verified readonly backup. Receipts and closed checksums stay outside
+    the study/output/archives and never hash themselves into the ZIP.
+  - Hashes EVERY study file before and after copying and again before/after
+    publication. Verifies every candidate and published member's SHA256,
+    size and full ZIP CRC, exact membership, case metadata and raw records.
+    Source changes abort. A same-directory verified temp is atomically
+    replaced over the old compact only after all checks; no pre-delete.
+  - Failure leaves backup, candidate and diagnostics for review. No automatic
+    rollback, physics extension or cleanup of source/output evidence.
+
+Review/execute later, only after root closes every GPU publication writer:
+  & 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\bin\python.exe' `
+    'work\native_compact_refresh_proposal\refresh_compact_native.py'
+  The no-argument command only prints a plan and does not create files.
+
+  & 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\bin\python.exe' `
+    'work\native_compact_refresh_proposal\refresh_compact_native.py' `
+    --execute --confirm-gpu-publications-closed
+
+Implementation note for review:
+  Raw ZIP record retention uses isolated CPython zipfile write bookkeeping
+  in raw_copy_case_record(), guarded by the pinned runtime and attributes.
+  All compressed case data/local headers/descriptors are copied byte for
+  byte. The normal zipfile writer emits their central records at new offsets.
+  Reopening verifies metadata/raw bytes/content and the complete archive.
+  The three compressed reproduction dependencies are copied from current
+  study files as normal ZIP members; no extra compressed files are allowed.
+
+No actual packaging, backup creation, output edit, source edit or Git action
+has been performed by creating this proposal.

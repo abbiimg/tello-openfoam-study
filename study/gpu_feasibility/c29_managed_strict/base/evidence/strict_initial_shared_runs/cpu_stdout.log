@@ -1,0 +1,48 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict -case /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu -initialFieldsOnly
+Date   : Nov 02 2026
+Time   : 05:31:23
+Host   : abby-spark
+PID    : 390244
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+C29_EXPERIMENTAL_UNVALIDATED phase=initial_fields_only backend=cpu case="/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu" id="c29_strict_shared_initial_cpu_20261102_a" inputSnapshot="8ac5b3629103d465ce85ca349df3971b236319d892e078d6d40c3a7406004c22" launchReceipt="69770d219b00c94830a94439a1e23effb7c43c50f94a030e7548f645a39c8d70" candidate="562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7" binary="535cb85ecb08b34b6a6ff08a00d1afc1857b68f041d4e89df309e2dbb5c01e89" libraries="3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80"; permission/input audit are NOT runtime acceptance
+C29_DEVICE CPU companion: no CUDA fences. Only valid with independently verified CPU libraries/compiler policy.
+Create mesh for time = 0.6
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+C29_SCOPE static serial constant-nu Euler; hybrid host source; explicit UFinal; native branch identity differs from Foundation14
+C29_LOCAL_CONSTANTS small=2.2204460492503131e-16 great=4503599627370496
+C29_SOURCE whole=29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd body=ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7
+C29 initial fields only: no C29 update, no timestep

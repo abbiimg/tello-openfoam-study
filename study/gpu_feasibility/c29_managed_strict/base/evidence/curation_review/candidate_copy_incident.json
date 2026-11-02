@@ -1,0 +1,18 @@
+{
+  "schema": "c29-candidate-copy-incident-v1",
+  "source_case_modified": false,
+  "source": "foundation14_control/0.6004/U",
+  "expected_source_sha256": "548d879122051360f3d877b0c6e71e3763c404203ab5d0ac6dc4e626be43b471",
+  "first_bad_candidate_copy_sha256": "b7891cd74bc59735414e2216a9fff51c83b7ad541de3166d6eb52dec33b6f8c3",
+  "size_bytes": 61308591,
+  "first_differing_byte_offset_zero_based": 1699145,
+  "observed_source_first4_bytes_hex": "36353530",
+  "observed_bad_copy_first4_bytes_hex": "05000000",
+  "bad_copy_preserved_PRIVATELY_outside_candidate": "work/c29_copy_failure_preserved_field_U_0.6004.badcopy",
+  "bad_copy_delivered": false,
+  "recopy": "Native Windows WSL UNC, no source changes",
+  "native_all31_first_pass": "evidence/curation_review/native_field_copy_verification.json",
+  "independent_native_second_pass": "evidence/curation_review/native_field_second_pass.json",
+  "cause": "Unproven; no GPU, driver, OS or global repair inferred or applied",
+  "no_byte_or_hash_waiver": true
+}

@@ -1,0 +1,11 @@
+. /opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh
+export WM_NCOMPPROCS=1
+export CMAKE_BUILD_PARALLEL_LEVEL=1
+export OMP_NUM_THREADS=1
+export C29_APPBIN=/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin
+export C29_USE_CUDA=1
+export C29_USE_NVTX=1
+export C29_NVTX_INCLUDE=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include
+export TMPDIR=/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/tmp
+export C29_CUDA_INCLUDE=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include
+export C29_CUDA_LIBDIR=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib

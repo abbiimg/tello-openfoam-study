@@ -1,0 +1,29 @@
+{
+  "kind": "Actual native Foam Field arithmetic/Umpire integration smoke; not CFD or speed result",
+  "completed_utc": "2026-11-02T09:22:34.257763+00:00",
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields",
+  "binary_sha256": "df5772176bdbe30ef5c596b883c844ff39bbd58195319b64eefdfdd284c1d4cb",
+  "core_library_sha256": "731b745dacbd620c5ca2ccadef34c2e727148816602a1146f21dbf1206bc076b",
+  "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/field_algebra_gate/Test-nativeStdparFields.C",
+  "source_sha256": "046dfc47664ff9b29544bfbb78d395ca9c745623d906b7af844c5c24d416a88b",
+  "result": {
+    "kind": "native Foam Field arithmetic integration",
+    "elements": 32768,
+    "mismatches": 0,
+    "actual_sum": 134246400,
+    "expected_sum": 134246400,
+    "actual_dot_sum": 9894214,
+    "expected_dot_sum": 9894214,
+    "pointer_memory_type": 3,
+    "synchronize_status": 0,
+    "passed": true
+  },
+  "managed_pool_log_verified": true,
+  "trace_report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace.nsys-rep",
+  "trace_range": "NATIVE_STDPAR_FIELD_ALGEBRA",
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native_field_gate_profile.log",
+  "launch_api_audit_pending": false,
+  "no_production_change": true,
+  "cuda_api_audit": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/native_field_gpu_api_gate.json",
+  "successful_launch_api_calls_in_field_algebra": 8
+}

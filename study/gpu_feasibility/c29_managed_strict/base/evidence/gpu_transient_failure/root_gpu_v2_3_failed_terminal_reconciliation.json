@@ -1,0 +1,52 @@
+{
+  "schema": "root-c29-managed2.3-gpu-failed-terminal-reconciliation-v1",
+  "reconciled_utc": "2026-11-02T14:21:07.171175+00:00",
+  "actual_child": {
+    "pid": 392599,
+    "uid": 999,
+    "birth_start_ticks": 16845542,
+    "cwd": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu",
+    "exe": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "nice": 15
+  },
+  "actual_child_waited": true,
+  "actual_child_return_code": -11,
+  "profiler_return_code": 139,
+  "outer_script_return_code": 1,
+  "wrapper_errors": [],
+  "cleanup_errors": [],
+  "postprocessing_complete": true,
+  "original_owned_child_no_longer_alive": true,
+  "entered_time_headers_s": [
+    0.6001
+  ],
+  "completed_timesteps": 0,
+  "source_calls": 0,
+  "controller_updates": 0,
+  "End_marker": false,
+  "added_case_files": [],
+  "input_and_actually_observed_library_bytes_rechecked_unchanged": true,
+  "actual_solver_receipt": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_exit.json",
+    "sha256": "c248fea9667d8970e2c34b246f3a652c9ae9fd2fde44a0623f1bab436441d47a"
+  },
+  "profiler_receipt": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/profiler_exit.json",
+    "sha256": "509a5409b4bcc36ac5bc01f186a0ec9a2ea7ce81b5c171e277df7e5662483411"
+  },
+  "stdout": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_gpu_five_stdout.log",
+    "sha256": "00be8bf0b2f8420bd1a819ca8ce8f94f18f77083a25317c8e80ee52cc428afc0"
+  },
+  "root_approval": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_approval.json",
+    "sha256": "9136f75575c895519de036f8776bd7eee7599b0fd2862f1e9e3eb14f8d241067"
+  },
+  "CPU_strict_external_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_f14_to_cpu_external_gate.json",
+    "sha256": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2"
+  },
+  "status": "GPU transient UNQUALIFIED; no completed GPU rotor result, accepted time-loop CUDA proof, numerical parity or speedup",
+  "fault_interval": "First Time header printed; next vendor Courant diagnostic did not print its result. Momentum/source entry is not established. Exact instruction/device-kernel cause is unproven.",
+  "next_work": "At most one bounded application-ownership diagnostic/remedy proposal; no extra run or build is authorized by this record."
+}

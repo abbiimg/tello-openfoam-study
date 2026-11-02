@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-11-02T08:59:00.817411+00:00",
+  "return_code": 0,
+  "elapsed_s": 5.795830527000362,
+  "command_scope_PATH_prefix": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/stub-gcc-wrapper",
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/core_gcc_wrapper_link.log",
+  "wrapper_calls": 1,
+  "library_exists": true
+}

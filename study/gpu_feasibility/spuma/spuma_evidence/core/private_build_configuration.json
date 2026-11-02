@@ -1,0 +1,32 @@
+{
+  "recorded_utc": "2026-11-02T08:02:31.472096+00:00",
+  "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+  "sdk": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9",
+  "cuda": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3",
+  "sdk_reused_readonly": true,
+  "environment": "/opt/openfoam-workspace/gpu-feasibility/spuma/env.sh",
+  "environment_sha256": "7f9611462b6bb5b634171c4a5dfaa6179045916424f98e893b7301ede559db7e",
+  "max_build_jobs": 1,
+  "required_nice": 15,
+  "pool": "fixedSizeMemoryPool",
+  "optional_umpire_enabled": false,
+  "selected_environment": {
+    "WM_PROJECT_DIR": "/opt/openfoam-workspace/gpu-feasibility/spuma/source",
+    "WM_OPTIONS": "linuxARM64NvidiaDPInt32Opt",
+    "WM_COMPILER": "Nvidia",
+    "WM_MPLIB": "none",
+    "FOAM_MPI": "dummy",
+    "FOAM_APPBIN": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin",
+    "FOAM_LIBBIN": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib",
+    "NVARCH": "121",
+    "have_cuda": "true",
+    "have_umpire": "false",
+    "NVHPC_CUDA_HOME": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3",
+    "FOAM_SIGFPE": "false",
+    "WM_NCOMPPROCS": "1"
+  },
+  "managed_compiler_gate": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/stdpar_compiler_gate.json",
+  "device_gate": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/stdpar_device_marker_gate.json",
+  "no_global_environment_or_CPU_study_change": true,
+  "no_compiler_invoked": true
+}

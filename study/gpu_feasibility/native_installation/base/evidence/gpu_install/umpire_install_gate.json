@@ -1,0 +1,36 @@
+{
+  "kind": "Actual private Umpire CUDA13 library build and installation; managed allocator/native OpenFOAM runtime gate still pending",
+  "completed_utc": "2026-11-02T08:03:12.871101+00:00",
+  "version": "2025.03.0 plus exact pinned CUDA13 operation backport",
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/umpire-2025.03.0",
+  "cuda_enabled": true,
+  "selected_cache_entries": [
+    "BUILD_SHARED_LIBS:UNINITIALIZED=OFF",
+    "CMAKE_CUDA_ARCHITECTURES:UNINITIALIZED=121",
+    "CMAKE_CUDA_COMPILER:UNINITIALIZED=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/bin/nvcc",
+    "CMAKE_CXX_COMPILER:UNINITIALIZED=/usr/bin/g++",
+    "CUDA_TOOLKIT_ROOT_DIR:UNINITIALIZED=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3",
+    "ENABLE_CUDA:BOOL=ON",
+    "UMPIRE_ENABLE_CUDA:BOOL=ON"
+  ],
+  "libraries": {
+    "libumpire.a": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/umpire-2025.03.0/lib/libumpire.a",
+      "bytes": 8279026,
+      "sha256": "f54b0f171b7f71eb34a1d9237d5c8fddf4e5ec3b4425200c198475a6689d4ccc"
+    },
+    "libfmt.a": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/umpire-2025.03.0/lib/libfmt.a",
+      "bytes": 266206,
+      "sha256": "ae5ddaa587af47084c89c2878600a3ec2db4bc7e7ecae51169166e679aab8518"
+    },
+    "libcamp.a": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/umpire-2025.03.0/lib/libcamp.a",
+      "bytes": 7848,
+      "sha256": "e7427bdb5177356a6ed37840258aecb98dc20fbaef9658e50ca4eff16f027e0e"
+    }
+  },
+  "backport_provenance": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/umpire_cuda13_backport.json",
+  "runtime_allocator_verified": false,
+  "no_production_change": true
+}

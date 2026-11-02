@@ -1,0 +1,24 @@
+{
+  "kind": "Parser-only v2 correction before nativeCPU timestep run",
+  "old_sha256": "f95aec1c7ae5c8a1ea5137927596b4023c6c3ccf9bae956aa9fa806382478053",
+  "new_sha256": "1310a87b6997b6babf3cf4859fc80a8d27564c8a195b7449cf6fad7ef4cc1e53",
+  "patch_sha256": "0f2a34408a5d842ad01eeeae3a9d74d8b93c56dc79ffb23dd8fade6661ff7816",
+  "changes": [
+    "Optional s time suffix",
+    "Intermediate continuity local/global; actual cumulative required on final correction, checked whenever printed",
+    "Exempt exact unsupported-trap startup banner, retain fatal FPE detection",
+    "Report schema v2"
+  ],
+  "metric_functions_AST_identical": [
+    "field_metrics",
+    "compare_fields",
+    "compare_samples",
+    "source_close",
+    "near_time"
+  ],
+  "thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "timing": "Both versions authored after F14 reference completed, before nativeCPU candidate timesteps; thresholds frozen before both",
+  "author_read_numerical_reference_logs_or_fields": false,
+  "analyzer_executed": false,
+  "cases_or_source_candidate_modified": false
+}

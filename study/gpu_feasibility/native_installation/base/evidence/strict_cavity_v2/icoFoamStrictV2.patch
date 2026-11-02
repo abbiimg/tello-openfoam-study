@@ -1,0 +1,40 @@
+--- pristine/icoFoam.C
++++ strict_v2_application/icoFoam.C
+@@ -65,6 +65,8 @@
+ 
+ #include "fvCFD.H"
+ #include "pisoControl.H"
++#include <nvtx3/nvToolsExt.h>
++#include <cuda_runtime_api.h>
+ 
+ // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+@@ -92,8 +94,10 @@
+ 
+     Info<< "\nStarting time loop\n" << endl;
+ 
++    bool strictFirstStep = true;
+     while (runTime.loop())
+     {
++        if (strictFirstStep) nvtxRangePushA("STRICT_CAVITY_V2_FIRST_COMPLETE_STEP");
+         Info<< "Time = " << runTime.timeName() << nl << endl;
+ 
+         #include "CourantNo.H"
+@@ -158,6 +162,17 @@
+         runTime.write();
+ 
+         runTime.printExecutionTime(Info);
++        if (strictFirstStep)
++        {
++            const cudaError_t strictSync = cudaDeviceSynchronize();
++            if (strictSync != cudaSuccess)
++            {
++                FatalErrorInFunction << "Strict first-step CUDA completion failed: "
++                    << cudaGetErrorString(strictSync) << exit(FatalError);
++            }
++            nvtxRangePop();
++            strictFirstStep = false;
++        }
+     }
+ 
+     Info<< "End\n" << endl;

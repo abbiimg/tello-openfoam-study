@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-11-02T11:15:09.216387+00:00",
+  "phase": "start",
+  "files": {
+    "icoFoam": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+      "sha256": "ad0e6a9439e88cc13bcc77efb0f618ba0c4dbbf7c2dd199e0b794c64fab6febf"
+    },
+    "libOpenFOAM.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "016e1d165ceffc26ea8f5788bf978d07c4db0123f9c414652bce9c77c5b2c534"
+    },
+    "observer.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/smoke/libspuma_cuda_observer.so",
+      "sha256": "734bdabf81820533168429a79f2e6525362177d8975eaf8462936500c7ac2e3a"
+    },
+    "environment": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/env.sh",
+      "sha256": "54c421a8d844021d9cd7ac5cd4619fed105670072de5215a88623331dae426ac"
+    }
+  }
+}

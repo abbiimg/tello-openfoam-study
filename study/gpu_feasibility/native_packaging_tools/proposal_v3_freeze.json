@@ -1,0 +1,37 @@
+{
+  "mode": "V3 source-only proposal; inert fixture and read-only membership checks only",
+  "native_python": "3.13.13 (main, May  8 2026, 20:31:08) [MSC v.1944 64 bit (ARM64)]",
+  "AST_passed": true,
+  "V1_V2_unchanged": true,
+  "no_actual_packaging": true,
+  "files": {
+    "refresh_compact_native.py": {
+      "sha256": "ed37cfd7b79417b6dc33395ee560419f51c5317912fbbd3e2bc06fab3175507b",
+      "bytes": 25579
+    },
+    "refresh_compact_native_v2.py": {
+      "sha256": "8d715ae0cf688f4397a385a575528ae0ee78b3a066ad88931f0116e3428a24d0",
+      "bytes": 29893
+    },
+    "refresh_compact_native_v3.py": {
+      "sha256": "d0dd7c34c70fb9bdf63aa46286b396fa584bb2b52b6b446687e77e7c8ad913f0",
+      "bytes": 30611
+    },
+    "PLAN_V3.txt": {
+      "sha256": "9b8a868be144b3627aec365f3f48f6125659ab73f05e166e84363235b7173b53",
+      "bytes": 2439
+    },
+    "refresh_compact_native_v2_to_v3.diff": {
+      "sha256": "4fb90d057f825e31831446fec27b01ddfa597717a3c981339647f9d03b584ff0",
+      "bytes": 4374
+    },
+    "long_path_readonly_proof.json": {
+      "sha256": "6bf53d5beb6a0a5952451018686e2da6fd181a28a2fb2025ae1dff84080f16a4",
+      "bytes": 1929
+    },
+    "v3_inert_long_path_check.json": {
+      "sha256": "fe55338719ac6ac4d3abd253261f53daf1e92944d3dad108f7810d98bf3257c2",
+      "bytes": 1494
+    }
+  }
+}

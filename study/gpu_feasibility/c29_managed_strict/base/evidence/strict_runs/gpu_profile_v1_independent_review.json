@@ -1,0 +1,47 @@
+{
+  "review_date_utc": "2026-11-02",
+  "reviewer": "stdpar_memory_review",
+  "verdict": "REQUIRES_OWNED_CHILD_EXCEPTION_CLEANUP_CORRECTION",
+  "proposal": "work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal",
+  "protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "root_supplied_original_helper_manifest_sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+  "original_manifest_hash_independently_verified_before_revision": false,
+  "observed_in_place_revised_helper_manifest_sha256": "784ab973ef7c6c783a3bad611934aa5408b6a3406823dc4ad907fdfc68a1df9f",
+  "revised_manifest_entries_checked": 7,
+  "revised_manifest_entry_mismatches": [],
+  "approval_of_revised_text": false,
+  "blocking_findings": [
+    {
+      "id": "owned-child-post-Popen-cleanup",
+      "file": "run_actual_gpu_child.py",
+      "original_lines": [23, 24, 25, 26, 27, 31, 33, 46, 49, 50],
+      "related_file": "run_gpu_profile.py",
+      "related_original_lines": [23, 24, 25, 34, 38, 40],
+      "failure": "Post-Popen exception, including saving actual_solver_start.json, can bypass solver termination/reaping; outer timeout cleanup relies on that file and otherwise terminates profiler only",
+      "required_correction": "Guaranteed exact-owned-child cleanup and wait on every postlaunch exception, including before pidfd/identity/start evidence, with distinct actual child status and wrapper failure evidence; outer exceptional paths must not bypass cleanup",
+      "requires_CFD_or_source_equation_change": false
+    }
+  ],
+  "other_static_semantics": {
+    "approval_and_receipt_gates_present": true,
+    "receipt_rechecked_before_injected_child": true,
+    "inherited_Nsight_preload_preserved": true,
+    "actual_child_and_profiler_statuses_separate": true,
+    "globalTid_PID_TID_formula_correct": true,
+    "PROCESSES_row_bound_to_actual_solver": true,
+    "non_null_successful_launch_and_sync_returns_required": true,
+    "full_step_and_required_nested_windows_bound_to_actual_thread": true,
+    "completion_after_last_launch_required_in_each_window": true,
+    "missing_evidence_fails_closed": true,
+    "performance_or_numerical_acceptance_claimed": false,
+    "additional_blocking_issue_identified": false
+  },
+  "external_F14_CPU_analysis_sha256_verified": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e",
+  "external_F14_CPU_numerical_gate_reaudited_here": false,
+  "primary_sources": [
+    "https://docs.nvidia.com/nsight-systems/UserGuide/",
+    "https://docs.nvidia.com/nsight-systems/AnalysisGuide/"
+  ],
+  "actions": {"read_only_source_review": true, "proposal_edits": false, "helper_import_or_run": false, "profiler_capture": false, "GPU_or_CFD_run": false, "case_vendor_or_build_change": false, "only_review_artifacts_written": true},
+  "next_review": "Stable corrected helper freeze, then separate Root admission; no run approved by this review"
+}

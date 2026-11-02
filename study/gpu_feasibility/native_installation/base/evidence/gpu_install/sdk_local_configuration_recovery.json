@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-11-02T07:44:49.741166+00:00",
+  "installer_warning": "ERROR: -stdpar is no longer supported",
+  "origin": "26.9 install_components/install lines352-368 forwards NVHPC_STDPAR_CUDACC through makelocalrc -stdpar; installed makelocalrc line211 rejects that option. This is not a rejection of nvc++ -stdpar=gpu, whose exact arithmetic and device-only marker already passed.",
+  "repair": "Generate private localrc with makelocalrc -x <privateSDK>/compilers/bin -cuda13.3, omitting removed -stdpar option; keep explicit cc121,mem:managed compiler flags.",
+  "manual_repair_return_code": 0,
+  "localrc": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin/localrc",
+  "localrc_exists": true,
+  "localrc_sha256": "f099cdb82197104d58cb3af829fc52267eb809a31ddd6595b66d7db0f403d31c",
+  "umpire_initial_failure": "CMake inferred CUDA root from logical cuda/bin/nvcc path, yielding missing SDK/cuda/targets/sbsa-linux/lib despite static runtime libraries existing under SDK/cuda/13.3/targets/sbsa-linux/lib.",
+  "umpire_repair": "Use real versioned cuda/13.3/bin/nvcc and explicit CUDAToolkit_ROOT=cuda/13.3 in a fresh private build directory; original failure log preserved.",
+  "no_global_changes": true
+}

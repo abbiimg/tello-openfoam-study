@@ -1,0 +1,76 @@
+--- frozen_V2/README.md
++++ outer_cleanup_V3/README.md
+@@ -1,4 +1,6 @@
+ This is a source-only proposal for one native GPU five-step functional profile. Nothing here has been run against the case. It changes no source, build, case, control, receipt, permission, SDK or library. Root owns runtime and must first pass the external F14-to-CPU strict numerical gate.
++
++V3 changes only the outer cleanup decision and supervision. A nonzero profiler exit now enters owner-stop cleanup even when the profiler has already terminated. That cleanup independently waits for true child-terminal/no-launch evidence. It no longer treats the profiler's failed exit as completion of a detached solver. For a pre-wrapper startup hang, it may stop/reap the direct profiler only after successful atomic cancellation-marker publication and observing no wrapper-start receipt. This is safe because the unchanged wrapper publishes its start atomically before its marker check and possible solver Popen: an already-passed marker check implies an existing start receipt, and any later wrapper sees the published marker and refuses to spawn. A wrapper-start receipt is never removed. Once a wrapper started, missing terminal evidence remains unresolved and is supervised rather than discarded. The V2 child owner, proof validator, capture flags, protocol and numerical gates are unchanged.
+ 
+ V2 corrects the V1 containment blocker. The original fa8... freeze and later 784... snapshot are preserved in separate sibling directories. After direct solver Popen, every operation is inside try/finally; an exception in minimal spawn receipt, pidfd setup, identity, start receipt or monitoring stops and reaps the exact Popen-owned child. If pidfd setup failed, only that unreaped direct Popen handle supplies the fallback signal target. Cleanup always attempts TERM/grace/KILL as needed and waits for true terminal status. Atomic true-exit evidence is written before log close and postprocessing. Post-wait scan/hash/parse failures become wrapper errors without changing the actual child status; the validator requires no wrapper/cleanup errors and completed postprocessing. A status-save failure also prints the true child record to the captured fallback stream.
+ 
+--- frozen_V2/run_gpu_profile.py
++++ outer_cleanup_V3/run_gpu_profile.py
+@@ -4,7 +4,10 @@
+ from profile_common import *
+ from owned_cleanup import stop_and_reap
+ def request_case_owner_stop(evidence,protocol,notes):
+- try:save(evidence/'outer_cancel_requested.json',{'requested_utc':utc(),'meaning':'Wrapper must stop/reap its own child'})
++ marker_published=False
++ try:
++  save(evidence/'outer_cancel_requested.json',{'requested_utc':utc(),'meaning':'Wrapper must stop/reap its own child'})
++  marker_published=True
+  except BaseException:notes.append({'cancel_marker_error':traceback.format_exc()})
+  # Signal only birth/UID/cwd/exe-verified identities, never an arbitrary PID/group.
+  for filename in ['actual_solver_start.json','actual_wrapper_start.json']:
+@@ -23,6 +26,7 @@
+   except BaseException:notes.append({'verified_signal_error':traceback.format_exc()})
+   finally:
+    if pidfd is not None:os.close(pidfd)
++ return marker_published
+ def solver_terminal(evidence):
+  for name in ['actual_solver_exit.json','actual_wrapper_exit.json']:
+   file=evidence/name
+@@ -30,6 +34,13 @@
+   data=json.loads(file.read_text())
+   if data.get('actual_child_waited') is True or data.get('actual_child_launched') is False:return True
+  return False
++def owner_state(evidence,marker_published):
++ if solver_terminal(evidence):return 'actual_child_terminal_or_not_launched'
++ # Atomic wrapper-start publication MUST precede the wrapper's marker check
++ # and possible solver Popen. If this marker is already published and there
++ # is no start, a later wrapper cannot pass its pre-spawn marker check.
++ if marker_published and not (evidence/'actual_wrapper_start.json').exists():return 'pre_wrapper_cancelled_safe'
++ return 'unresolved'
+ def main():
+  parser=argparse.ArgumentParser();parser.add_argument('--approval',type=Path,required=True);parser.add_argument('--receipt',type=Path,required=True);parser.add_argument('--execute-approved-receipt',action='store_true');args=parser.parse_args()
+  require(args.execute_approved_receipt,'SOURCE-ONLY: explicit approved execution flag required')
+@@ -57,15 +68,21 @@
+     time.sleep(.2)
+   except BaseException:errors.append({'stage':'profile_monitor','traceback':traceback.format_exc()})
+   finally:
+-   if cancelled or timed_out or errors or process.poll() is None:
+-    request_case_owner_stop(evidence,protocol,cleanup_notes)
+-    try:process.wait(timeout=protocol['profiler_cleanup_timeout_s'])
+-    except subprocess.TimeoutExpired:
+-     if solver_terminal(evidence):cleanup_notes.append({'profiler_cleanup':stop_and_reap(process,30)})
+-     else:
+-      # Never kill the supervisor while an unreaped solver remains unresolved.
+-      # The direct wrapper's TERM/KILL/final wait owns cleanup even pre-receipt.
+-      cleanup_notes.append({'waiting_for_owned_solver_reap':True});process.wait()
++   if cancelled or timed_out or errors or process.poll() is None or process.returncode!=0:
++    marker_published=request_case_owner_stop(evidence,protocol,cleanup_notes)
++    deadline=time.monotonic()+protocol['profiler_cleanup_timeout_s']
++    state=owner_state(evidence,marker_published)
++    while state=='unresolved':
++     if time.monotonic()>=deadline:
++      # Repeat only verified owner signaling. Actual-child reaping is required
++      # even if the profiler has ALREADY failed; its exit proves no child exit.
++      marker_published=request_case_owner_stop(evidence,protocol,cleanup_notes) or marker_published
++      cleanup_notes.append({'waiting_for_owned_solver_reap':True});deadline=time.monotonic()+protocol['profiler_cleanup_timeout_s']
++     time.sleep(.2);state=owner_state(evidence,marker_published)
++    cleanup_notes.append({'owner_cleanup_state':state,'atomic_cancel_marker_published':marker_published})
++    # Safe only after true child terminal evidence, or the pre-wrapper race
++    # proof above. No arbitrary PID/group or GPU reset is used.
++    if process.poll() is None:cleanup_notes.append({'profiler_cleanup':stop_and_reap(process,30)})
+    profiler_code=process.wait()
+    save(evidence/'profiler_exit.json',{'completed_utc':utc(),'return_code':profiler_code,'timed_out':timed_out,'cancelled':cancelled,'outer_wrapper_errors':errors,'verified_child_cleanup':cleanup_notes,'actual_solver_exit_is_separate':True,'command':command})
+  require(not cancelled and not timed_out and not errors and profiler_code==0,'Profile failed/cancelled/timed out; evidence preserved, no rerun')

@@ -1,0 +1,14 @@
+{
+  "published_utc": "2026-11-02T08:31:21.0189972Z",
+  "publisher": "outputs/tello_refinement/publish_final_flow.py",
+  "image": "results/flow_best_square.png",
+  "image_sha256": "682bf021c1f3de980abb62327eaab557bf05e81a1fed3b782b0774f29b264072",
+  "provenance": "results/flow_best_square_provenance.json",
+  "report_embedding_exit_code": 0,
+  "summary_csv_unchanged_sha256": "b0abc1404dadb4f9112ebdec73060f444df5aff67d491b4c96c5eda048a7b2c7",
+  "statistics_unchanged_sha256": "5a74dbd5c3010ec20de93f657b6918343de4588bd01de73a2295e638cf635740",
+  "crop_and_labels_visually_reviewed": true,
+  "source_case_inputs_or_fields_changed": false,
+  "fixed_stage_manifests_changed": false,
+  "report_sha256": "a1956f4cf908e449305b6f4133e133c78c91d35573cb8419a61d90552727709b"
+}

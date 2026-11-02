@@ -1,0 +1,33 @@
+{
+  "kind": "Lossless minimal subset for the named actual-thread CUDA review predicates",
+  "extracted_utc": "2026-11-02T13:35:45.769559+00:00",
+  "source_private_sqlite": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.sqlite",
+  "source_sqlite_sha256": "15711beb83d69b8ba2d01916c605d0e160782c97b75789a1db47679355cc80d6",
+  "source_sqlite_bytes": 425984,
+  "source_private_report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.nsys-rep",
+  "source_report_sha256": "81357ad2051889be699e766c3f63f7c4c3a761807937c5da5c6649fdcec190a7",
+  "source_report_bytes": 104755,
+  "globalTid": 286974447779954,
+  "decoded_pid": 327794,
+  "range_name": "NATIVE_STDPAR_FIELD_ALGEBRA",
+  "row_counts": {
+    "CUPTI_ACTIVITY_KIND_RUNTIME": 25,
+    "NVTX_EVENTS": 1,
+    "PROCESSES": 1,
+    "StringIds": 4
+  },
+  "successful_launch_rows": 12,
+  "launch_rows": 12,
+  "sync_rows": 13,
+  "failed_launch_or_sync_rows": 0,
+  "predicate": "All launch/sync rows for the actual solver globalTid across ALL retained trace timestamps, so post-window launch absence remains reviewable; exactly one named complete range when requested and one actual process row",
+  "StringIds_policy": "Only referenced safe API names and the selected static range name",
+  "process_policy": "Exact actual process row retained losslessly; basename or supplied exact owned executable path only",
+  "expected_process_path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields",
+  "environment_policy": "No environment tables or unreferenced StringIds queried/copied. Full originals are only hashed as bytes and remain private.",
+  "no_kernel_timeline_or_speed_claim": true,
+  "originals_unchanged": true,
+  "review_subset": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_gpu_install_publication_candidate/trace_subsets/native_field_current/review_subset.sqlite",
+  "review_subset_sha256": "870cbeb27d39b72252cb0b4578adae60e38c26594e64e4d62d6bc992e12c0c94",
+  "extraction_recipe_sha256": "27b87b8a3bde76da72d038a84c4455c6ae496850883963ff25ddb8936b90af21"
+}

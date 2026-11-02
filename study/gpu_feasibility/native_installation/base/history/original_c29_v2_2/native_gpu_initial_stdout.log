@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/bin/c29NativeHybridFoam -case /opt/openfoam-workspace/cases/native_c29_validation_20261102/native_gpu -initialFieldsOnly
+Date   : Nov 02 2026
+Time   : 04:11:55
+Host   : abby-spark
+PID    : 379799
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_validation_20261102/native_gpu
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : managed (size=64MB, incr=64MB)
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+C29_EXPERIMENTAL_UNVALIDATED phase=initial_fields_only backend=gpu case="/opt/openfoam-workspace/cases/native_c29_validation_20261102/native_gpu" id="c29_native_gpu_f84bb983c15c41c0bee13c7051075c86" inputSnapshot="fe2965fc056d6000b21ef0ac2270a7b30733c4b742890bf4076518b99389e8f0" launchReceipt="7592fd5db713df4e6e9e7bac34a8d098b8aef09f79adfae1a891feb532ee97ee" candidate="562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7" binary="940336b28ca1f354398eaac971e5e86e4b401b323dec553cb7cdb5e0888da6a7" libraries="2e1a55e5c7d6de6d3aeb06636d6a997ba0b1da8c2784eea37198908df50bf00e"; permission/input audit are NOT runtime acceptance
+C29_DEVICE device=0 managed=1 concurrentManagedAccess=0
+Create mesh for time = 0.6
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+terminate called after throwing an instance of 'thrust::_V_300402_SM_121_NVHPC::system::system_error'
+  what():  parallel_for: failed to synchronize: cudaErrorIllegalAddress: an illegal memory access was encountered

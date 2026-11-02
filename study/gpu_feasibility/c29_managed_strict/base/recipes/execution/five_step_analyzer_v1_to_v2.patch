@@ -1,0 +1,62 @@
+--- analyze_five_steps_v1_f95aec1.py
++++ analyze_five_steps.py
+@@ -69,7 +69,7 @@
+     time_lines=[]
+     for n,line in enumerate(lines):
+         try:
+-            m=re.match(r'^\s*Time\s*=\s*('+NUM+r')\s*$',line)
++            m=re.match(r'^\s*Time\s*=\s*('+NUM+r')\s*s?\s*$',line)
+             if m:
+                 current=step_for(float(m[1]));time_lines.append((n,current))
+                 result['times'].append({'step':current,'time':float(m[1]),'line':n+1});continue
+@@ -87,10 +87,13 @@
+                 result['residuals'].append({'step':current,'field':m[1],
+                     'initial':numbers(m[2]),'final':numbers(m[3]),'iterations':int(m[4]),'line':n+1});continue
+             if 'continuity errors' in line:
+-                m=re.search(r'sum local\s*=\s*('+NUM+r'),\s*global\s*=\s*('+NUM+r'),\s*cumulative\s*=\s*('+NUM+r')',line)
++                m=re.search(r'sum local\s*=\s*('+NUM+r'),\s*global\s*=\s*('+NUM+r')(?:,\s*cumulative\s*=\s*('+NUM+r'))?',line)
+                 require(m is not None,'Unparsed continuity line')
+-                result['continuity'].append({'step':current,'local':float(m[1]),
+-                    'global':float(m[2]),'cumulative':float(m[3]),'line':n+1});continue
++                require('cumulative' not in line or m[3] is not None,
++                    'Printed cumulative continuity was not parsed as a finite number')
++                entry={'step':current,'local':float(m[1]),'global':float(m[2]),'line':n+1}
++                if m[3] is not None:entry['cumulative']=float(m[3])
++                result['continuity'].append(entry);continue
+             if line.startswith('C29_SOLVER '):
+                 result['selections'].append({'step':current,'text':line.split(' ',1)[1]});continue
+             for tag,key in [('C29_ROTOR_AUDIT ','rotor'),('C29_SOURCE_AUDIT ','source'),('C29_APPLIED_AIR_AUDIT ','applied')]:
+@@ -109,7 +112,9 @@
+         event['step']=(candidates[0] if role=='f14' else candidates[-1]) if candidates else None
+     result['end']=bool(re.search(r'(?m)^\s*End\s*$',text))
+     patterns=r'FOAM FATAL|FOAM exiting|Segmentation fault|Floating point exception|cudaError|thrust::system_error|failed to synchronize|did not converge|not converged|reached.*(?:maxIter|maximum.*iterations)'
+-    result['fatal_or_solver_warning_lines']=[line for line in lines if re.search(patterns,line,re.I)]
++    unsupported_trap_banner=r'^\s*sigFpe\s*:\s*Floating point exception trapping\s*-\s*not supported on this platform\s*$'
++    result['fatal_or_solver_warning_lines']=[line for line in lines
++        if re.search(patterns,line,re.I) and not re.match(unsupported_trap_banner,line,re.I)]
+     return result
+ def one(items,step):
+     matches=[r for r in items if r.get('step')==step]
+@@ -161,8 +166,12 @@
+         cs=[c for c in log['continuity'] if c['step']==step]
+         add(checks,'two continuity correctors step'+str(step),len(cs)==2)
+         for k,c in enumerate(cs):
+-            for key,limit in [('local',flow['each_corrector_local_continuity_max']),('global',flow['each_corrector_abs_global_continuity_max']),('cumulative',flow['abs_cumulative_continuity_max'])]:
++            for key,limit in [('local',flow['each_corrector_local_continuity_max']),('global',flow['each_corrector_abs_global_continuity_max'])]:
+                 add(checks,f'{key} continuity step{step} corr{k+1}',abs(c[key])<=limit,c[key],limit)
++            if k==1:add(checks,'actual final cumulative step'+str(step),'cumulative' in c)
++            if 'cumulative' in c:
++                limit=flow['abs_cumulative_continuity_max']
++                add(checks,f'cumulative continuity step{step} corr{k+1}',abs(c['cumulative'])<=limit,c['cumulative'],limit)
+         if native:
+             expected=['momentum=UFinal','pressure=p','pressure=pFinal']
+             add(checks,'explicit alias order step'+str(step),[r['text'] for r in log['selections'] if r['step']==step]==expected)
+@@ -280,7 +289,7 @@
+             if not matches:continue
+             expected=matches[0]['cached_volume_m3'];s=thresholds['source_identity_tolerances']
+             add(reference_checks,'F14 original/cache volume'+str(r),source_close(original['volume']-expected,expected,s['cached_volume_abs_m3'],s['cached_volume_rel']),original['volume']-expected)
+-    report={'schema':'c29-mechanical-five-step-analysis-v1','requested_stage':stage,
++    report={'schema':'c29-mechanical-five-step-analysis-v2','requested_stage':stage,
+         'thresholds':{'path':str(THRESHOLDS),'sha256':THRESHOLD_SHA},
+         'helper_hashes':{k:{'path':str(p),'sha256':h} for k,(p,h) in HELPERS.items()},
+         'logs':logs,'log_checks':log_checks,'F14_per_rotor_references':reference_records,

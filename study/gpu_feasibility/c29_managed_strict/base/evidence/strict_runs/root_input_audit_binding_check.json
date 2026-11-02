@@ -1,0 +1,13 @@
+{
+  "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit.json",
+  "sha256": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926",
+  "protocol": "c29-native-five-fixed-steps-strict-pressure-v1",
+  "protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "roles_checked": [
+    "f14",
+    "cpu",
+    "gpu"
+  ],
+  "root_authorization_sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+  "meaning": "Binds a separate root dictionary audit to current bytes; external startup/launch/input/loader gates remain mandatory. No runtime acceptance inferred."
+}

@@ -1,0 +1,28 @@
+ifndef C29_APPBIN
+$(error Set C29_APPBIN to a NEW private application-output directory)
+endif
+C29_USE_CUDA ?= 1
+C29_USE_NVTX ?= 1
+ifeq ($(C29_USE_CUDA),1)
+ifndef C29_CUDA_INCLUDE
+$(error Set C29_CUDA_INCLUDE to the reviewed real CUDA runtime headers)
+endif
+ifndef C29_CUDA_LIBDIR
+$(error Set C29_CUDA_LIBDIR to the reviewed real libcudart directory)
+endif
+C29_CUDA_INC = -I$(C29_CUDA_INCLUDE)
+C29_CUDA_LIBS = -L$(C29_CUDA_LIBDIR) -Wl,-rpath,$(C29_CUDA_LIBDIR) -lcudart
+endif
+ifeq ($(C29_USE_NVTX),1)
+ifndef C29_NVTX_INCLUDE
+$(error Set C29_NVTX_INCLUDE to the reviewed NVTX3 include directory)
+endif
+C29_NVTX_INC = -I$(C29_NVTX_INCLUDE)
+endif
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -DC29_USE_CUDA=$(C29_USE_CUDA) -DC29_USE_NVTX=$(C29_USE_NVTX) \
+    $(C29_CUDA_INC) $(C29_NVTX_INC)
+EXE_LIBS = \
+    -lfiniteVolume -lmeshTools -ldl $(C29_CUDA_LIBS)

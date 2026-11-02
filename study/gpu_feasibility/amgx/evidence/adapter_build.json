@@ -1,0 +1,23 @@
+{
+  "kind": "Private Foundation14 serial symmetric pressure adapter build; not yet a CFD run",
+  "returncode": 0,
+  "elapsed_s": 3.686843931005569,
+  "source": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/adapter/AmgXPressure.C",
+  "library": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libAmgXPressure.so",
+  "library_exists": true,
+  "max_build_jobs": 1,
+  "nice_level": 15,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/adapter-build.log",
+  "openfoam": "/opt/openfoam14",
+  "no_production_changes": true,
+  "limitations": [
+    "serial only",
+    "symmetric scalar pressure only",
+    "no coupled interfaces",
+    "minIter0 only",
+    "uncached setup every solve",
+    "extra tenfold tolerance safety margin"
+  ],
+  "source_sha256": "c2626648f7e8ebd7d0c88766b69f864428f2f6030c68b49b29f5596ec989e127",
+  "library_sha256": "dce4bb6ca9e9d6b1060c10636ebec99f5623194c19e11277b57c90fabaa5fc3c"
+}

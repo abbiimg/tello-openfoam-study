@@ -1,0 +1,14 @@
+{
+  "kind": "Focused external-path and manifest-pin fixtures",
+  "passed": true,
+  "tests_run": 7,
+  "unsafe_catalogue_names_rejected": 48,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "actual_cpu_manifest_sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+  "real_seed_modified": false,
+  "case_restoration_executed": false,
+  "build_or_solver_launched": false,
+  "scope": "Static unsafe metadata and existing symlink traversal; not a hostile concurrent-filesystem race proof"
+}

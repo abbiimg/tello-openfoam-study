@@ -1,0 +1,12 @@
+{
+  "current_core": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libOpenFOAM.so",
+    "sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb"
+  },
+  "field_probe": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields",
+    "sha256": "df5772176bdbe30ef5c596b883c844ff39bbd58195319b64eefdfdd284c1d4cb"
+  },
+  "matches_native_field_post_resume_gate": true,
+  "inspection_only_not_new_execution": true
+}

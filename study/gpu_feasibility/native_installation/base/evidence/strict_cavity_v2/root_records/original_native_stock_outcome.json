@@ -1,0 +1,24 @@
+{
+  "main_state": {
+    "stage": "failed",
+    "updated_utc": "2026-11-02T11:41:29.638706+00:00",
+    "pid": 311811,
+    "nice": 15,
+    "max_build_jobs": 4,
+    "error": "Tutorial continuity smoke gate failed"
+  },
+  "watcher_state": {
+    "stage": "failed",
+    "updated_utc": "2026-11-02T11:41:33.096461+00:00",
+    "pid": 326002,
+    "nice": 15,
+    "error": "Native tutorial/build gate failed"
+  },
+  "main_alive": false,
+  "watcher_alive": false,
+  "actual_stock_child_return_code": 0,
+  "End": true,
+  "original_continuity_max": 0.000466513,
+  "original_screen_retained": true,
+  "no_signal_sent": true
+}

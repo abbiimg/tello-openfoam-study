@@ -1,0 +1,9 @@
+// Native only: keep original solvers{}; PIMPLE-to-PISO syntax adapter.
+PISO
+{
+    nCorrectors 2;
+    nNonOrthogonalCorrectors 0;
+    momentumPredictor yes;
+    consistent no;
+}
+// No relaxationFactors dictionary; no U fluxRequired.

@@ -1,0 +1,12 @@
+{
+  "stage": "shared_mesh",
+  "argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/blockMesh",
+    "-case",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/fixture"
+  ],
+  "return_code": 0,
+  "completed_utc": "2026-11-02T11:55:57.463283+00:00",
+  "log": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/shared_mesh.log",
+  "log_sha256": "0cc47c42ad9de6fabc74ab42705a05cc0749d18848b1b28bca48c72c47f5d288"
+}

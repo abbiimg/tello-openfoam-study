@@ -1,0 +1,9 @@
+{
+  "kind": "Source-only analyzer AST/hash check",
+  "analyzer_sha256": "1310a87b6997b6babf3cf4859fc80a8d27564c8a195b7449cf6fad7ef4cc1e53",
+  "AST_parse": true,
+  "thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "analyzer_executed": false,
+  "case_data_read_or_written": false,
+  "solver_or_initializer_or_runner": false
+}

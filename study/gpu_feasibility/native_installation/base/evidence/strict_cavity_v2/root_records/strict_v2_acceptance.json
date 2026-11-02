@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-02T11:56:50.352068+00:00",
+  "passed": true,
+  "protocol_sha256": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+  "CPU_peak_all_corrector_continuity": 1.07765980523269e-08,
+  "GPU_peak_all_corrector_continuity": 1.0776598044841246e-08,
+  "GPU_successful_launch_API_calls": 12,
+  "field_parity_passed": true,
+  "original_failed_screens_unchanged": true,
+  "speedup_measured": false,
+  "C29_validated": false
+}

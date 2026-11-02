@@ -1,0 +1,8 @@
+{
+  "kind": "Actual child icoFoam exit observed after binary returned, distinct from profiler exit",
+  "started_utc": "2026-11-02T11:15:14.371284+00:00",
+  "returned_utc": "2026-11-02T11:24:12.688104+00:00",
+  "returncode": -15,
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+  "binary_sha256_after_return": "ad0e6a9439e88cc13bcc77efb0f618ba0c4dbbf7c2dd199e0b794c64fab6febf"
+}

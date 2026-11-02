@@ -1,0 +1,25 @@
+{
+  "kind": "Actual tested command-scoped GCC-fPIC fix for NVHPC26.9 generated CUDA registration stubs on ARM64",
+  "completed_utc": "2026-11-02T09:01:28.449378+00:00",
+  "wrapper": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/stub-gcc-wrapper/gcc",
+  "wrapper_sha256": "d79198f68935534e1809646ac7336c1ff21c7f0fefe6f7de4be35bd50a15c538",
+  "matches_only": {
+    "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/include_acc/linkstub.c",
+    "output_basename_prefix": "pgcudareg",
+    "required_flags": [
+      "-c",
+      "-fpic"
+    ]
+  },
+  "only_flag_change": "-fpic to -fPIC for the generated registration C stub",
+  "tested_core_link_return_code": 0,
+  "compiled_core_objects_rebuilt": 0,
+  "large_GOT_relocations_observed": true,
+  "small_GOT_relocations_remaining": false,
+  "compiler_config_changes": false,
+  "global_PATH_changes": false,
+  "visibility_or_Bsymbolic_changes": false,
+  "scope": "Private environment PATH prefix only; all other GCC invocations forwarded unchanged.",
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/stub_gcc_wrapper.jsonl",
+  "core_link_evidence": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/core_gcc_wrapper_link.json"
+}

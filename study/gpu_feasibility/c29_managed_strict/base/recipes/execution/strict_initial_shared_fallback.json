@@ -1,0 +1,55 @@
+{
+  "kind": "Predeclared exact-startup fallback, not a relaxed equality threshold",
+  "reason": "GPU computed initial phi differs by at most3.1742559698354905e-19; U/p and CPU phi exact",
+  "failed_computed_startup_report_sha256": "81c826eb089d6eb0aa52aa9ee8405944b202e8407853c023cbcc59b59a541489",
+  "canonical_F14_phi": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/phi",
+  "canonical_phi_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+  "policy": "Copy one identical F14 output into both native backends; F14 control already owns same bytes",
+  "roles": {
+    "cpu": {
+      "copied_phi_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "moved_initial_audit_files": {
+        "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/c29_initialU": {
+          "archive": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/strict_initial_computed_archive_20261102/cpu/c29_initialU",
+          "sha256": "9d2314cb3494848c2dee843e0a3c68fa4138dacb7c9e9f013445e9fe68d86216"
+        },
+        "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/c29_initialP": {
+          "archive": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/strict_initial_computed_archive_20261102/cpu/c29_initialP",
+          "sha256": "06de105d9a3a7f9d1e23e444003136fa9b0c9f266896af421aef72909118cd8b"
+        },
+        "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/c29_initialPhi": {
+          "archive": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/strict_initial_computed_archive_20261102/cpu/c29_initialPhi",
+          "sha256": "fe5b7cea82f191e136f84cf63c4405a766f68bb3dae231bb0a4c27ffe4a3d5c4"
+        }
+      },
+      "controls_before_sha256": "6930b6418275e18ed28472b6dadd23d53107306ba4994a2cc79d14ad837da109",
+      "controls_after_sha256": "6dbfd12835ac95164fe817bd70015df8ff2dcf406e5c6663b18fe60961820121",
+      "experiment_id": "c29_strict_shared_initial_cpu_20261102_a",
+      "new_receipt_json": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_cpu_20261102_a.json"
+    },
+    "gpu": {
+      "copied_phi_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "moved_initial_audit_files": {
+        "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/0.6/c29_initialU": {
+          "archive": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/strict_initial_computed_archive_20261102/gpu/c29_initialU",
+          "sha256": "9d2314cb3494848c2dee843e0a3c68fa4138dacb7c9e9f013445e9fe68d86216"
+        },
+        "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/0.6/c29_initialP": {
+          "archive": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/strict_initial_computed_archive_20261102/gpu/c29_initialP",
+          "sha256": "06de105d9a3a7f9d1e23e444003136fa9b0c9f266896af421aef72909118cd8b"
+        },
+        "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/0.6/c29_initialPhi": {
+          "archive": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/strict_initial_computed_archive_20261102/gpu/c29_initialPhi",
+          "sha256": "ab4f5ec9889be7275c2455779490aa7efa3818960343157b75488815cb22587f"
+        }
+      },
+      "controls_before_sha256": "e038476d11fea83688ed270f26b583cb04dd00c9a45f9c84e6fcc08c88c98a24",
+      "controls_after_sha256": "051d30b486ee5a71a019cc07a331d9a7277c77463c5252e81ade0a3087c9181a",
+      "experiment_id": "c29_strict_shared_initial_gpu_20261102_a",
+      "new_receipt_json": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_gpu_20261102_a.json"
+    }
+  },
+  "all_original_U_p_mesh_source_schemes_parameters_unchanged": true,
+  "no_controller_or_timestep": true,
+  "exact_startup_gate_must_be_repeated": true
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "stage": "umpire_configure",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+      "-S",
+      "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/umpire-2025.03.0",
+      "-B",
+      "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/build/umpire-2025.03.0",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_INSTALL_PREFIX=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/umpire-2025.03.0",
+      "-DCMAKE_INSTALL_LIBDIR=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/umpire-2025.03.0/lib",
+      "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",
+      "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+      "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+      "-DCMAKE_CUDA_COMPILER=/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/bin/nvcc",
+      "-DCMAKE_CUDA_HOST_COMPILER=/usr/bin/g++",
+      "-DCMAKE_CUDA_ARCHITECTURES=121",
+      "-DBLT_CXX_STD=c++17",
+      "-DENABLE_CUDA=ON",
+      "-DUMPIRE_ENABLE_CUDA=ON",
+      "-DBUILD_SHARED_LIBS=OFF",
+      "-DENABLE_MPI=OFF",
+      "-DENABLE_OPENMP=OFF",
+      "-DENABLE_TESTS=OFF",
+      "-DCAMP_ENABLE_TESTS=OFF",
+      "-DENABLE_EXAMPLES=OFF",
+      "-DENABLE_BENCHMARKS=OFF",
+      "-DENABLE_FORTRAN=OFF",
+      "-DENABLE_DOCS=OFF",
+      "-DENABLE_DOXYGEN=OFF",
+      "-DENABLE_ASTYLE=OFF",
+      "-DUMPIRE_ENABLE_NUMA=OFF",
+      "-DUMPIRE_ENABLE_TOOLS=OFF"
+    ],
+    "return_code": 1,
+    "elapsed_s": 12.009777470986592,
+    "completed_utc": "2026-11-02T07:42:31.831153+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/umpire_configure.log"
+  }
+]

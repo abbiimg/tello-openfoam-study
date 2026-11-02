@@ -1,0 +1,109 @@
+{
+  "protocol_id": "strict-cavity-v2-20261102",
+  "status": "PROPOSED_NO_NEW_RUN_AUTHORIZED",
+  "purpose": "Bounded matched CPU/native-GPU functionality and conservation gate; no performance conclusion",
+  "source_pin": "b239fea6e48922730477e218c44e8b6a8ab17ade",
+  "template": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/tutorials/incompressible/icoFoam/cavity/cavity",
+  "proposed_case_root": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102",
+  "mesh": {
+    "cells": 400,
+    "generator": "Existing same-pin CPU blockMesh, run once after protocol approval",
+    "matching": "Copy the generated polyMesh into both backend cases and require byte-identical mesh hashes"
+  },
+  "controls": {
+    "startFrom": "startTime",
+    "startTime": 0,
+    "stopAt": "endTime",
+    "endTime": 0.025,
+    "deltaT": 0.005,
+    "writeControl": "timeStep",
+    "writeInterval": 1,
+    "writeFormat": "ascii",
+    "writePrecision": 17,
+    "writeCompression": "off",
+    "timePrecision": 12,
+    "runTimeModifiable": false,
+    "pressure_solver": "PCG",
+    "pressure_preconditioner": "DIC",
+    "p_tolerance": 1e-06,
+    "p_relTol": 0,
+    "pFinal_tolerance": 1e-06,
+    "pFinal_relTol": 0,
+    "U_solver": "smoothSolver",
+    "U_smoother": "symGaussSeidel",
+    "U_tolerance": 1e-05,
+    "U_relTol": 0,
+    "PISO_nCorrectors": 2,
+    "PISO_nNonOrthogonalCorrectors": 0,
+    "pRefCell": 0,
+    "pRefValue": 0,
+    "other_initial_boundary_and_transport_inputs": "Unchanged from the pinned template; identical hashes required"
+  },
+  "required_gates": {
+    "actual_solver_child_return_code": 0,
+    "time_values": [
+      0.005,
+      0.01,
+      0.015,
+      0.02,
+      0.025
+    ],
+    "time_absolute_tolerance": 1e-12,
+    "pressure_corrector_count": 10,
+    "continuity_entry_count": 10,
+    "all_corrector_local_continuity_max": 1e-05,
+    "all_pressure_final_residual_max": 1e-06,
+    "all_velocity_final_residual_max": 1e-05,
+    "all_logged_residuals_and_written_fields_finite": true,
+    "End_marker_required": true,
+    "written_U_p_phi_required_each_step": true,
+    "independent_flux_each_written_step_local_max": 1e-05,
+    "independent_flux_each_written_step_abs_global_max": 1e-10,
+    "independent_flux_vs_own_final_corrector": "abs difference <= max(1e-12,1e-3*abs(logged final corrector))"
+  },
+  "proposed_cross_backend_field_gates": {
+    "applies_each_written_step": true,
+    "relative_L2_definition": "sqrt(sum(V*norm(qGPU-qCPU)^2))/max(sqrt(sum(V*norm(qCPU)^2)),1e-30)",
+    "velocity_max_definition": "Maximum Euclidean norm of the cell velocity difference",
+    "velocity_relative_L2_max": 0.001,
+    "velocity_max_absolute_difference_m_per_s": 0.0001,
+    "pressure_relative_L2_max": 0.001,
+    "pressure_max_absolute_difference_m2_per_s2": 0.0001,
+    "pressure_gauge": "Compare directly with the same pRefCell0/pRefValue0; do not fit an offset after seeing results"
+  },
+  "native_GPU_execution_proof": {
+    "method": "Separate renamed icoFoamStrictV2 application copied from pristine pinned CPU icoFoam; add only one NVTX push/pop enclosing the entire first while-loop body including write/ExecutionTime. Vendor source and SDK remain unchanged. Compile only this application after native GPU libraries finish.",
+    "range": "STRICT_CAVITY_V2_FIRST_COMPLETE_STEP",
+    "nsys_flags": [
+      "--trace=cuda,nvtx",
+      "--capture-range=nvtx",
+      "--nvtx-capture=STRICT_CAVITY_V2_FIRST_COMPLETE_STEP",
+      "--capture-range-end=stop",
+      "--kill=none",
+      "--cuda-trace-scope=process-tree",
+      "--wait=all",
+      "--sample=none",
+      "--cpuctxsw=none"
+    ],
+    "runner_child_environment_only": {
+      "NSYS_NVTX_PROFILER_REGISTER_ONLY": "0"
+    },
+    "capture_prerequisite": "Verify the named first-step NVTX range actually triggered capture; do not infer coverage from flags. Preserve existing LD_PRELOAD when adding an observer.",
+    "child_wrapper": "Record actual direct solver child PID, binary SHA256 and return code atomically after wait; profiler/outer shell status is separate. Preserve inherited LD_PRELOAD.",
+    "required": "At least one successful CUDA launch API in the complete first-step NVTX window; zero failed launches/synchronizations. Child continues remaining4 steps unprofiled and must exit0.",
+    "count_scope": "API call counts are not distinct GPU kernel counts; no kernel timeline or speedup claim"
+  },
+  "preservation": "Original stock cases, failed-screen status, logs, source, SDK, inputs and journals remain unchanged. No C29 run is included. Native original stock run and watcher must terminate normally/fail their original screen before the new native case starts.",
+  "template_input_sha256": {
+    "0/U": "954e1ea33a7ccb3a6b3086fa0cd960a05c27fcf7e3a36a82c5ce25f58c070045",
+    "0/p": "0fd4f30a227253e74aad4a434ed9462686ede8f1ba0b6f8a3531c40d94cfc7e6",
+    "constant/transportProperties": "261eba87dbc7f101785f5c76212e151a2d68c1b98d930a1a6add3bafa391fc51",
+    "system/PDRblockMeshDict": "7cd46b7abe691296d4b008ff22f566d9d9b834463c64dc7cf76ec4ffd6afbab7",
+    "system/blockMeshDict": "6321615ce9d5b6bcbe480eb274b8af308e340b91adebe1c990ad464b01bfbd80",
+    "system/controlDict": "d42dca1cb4bf983fe9974b1e899bcb8a746b393a32ccae35af67678e42add322",
+    "system/decomposeParDict": "829af8c99f84bc74f6e845106f7ef8344ec04c822e9b3fab4e847b9d0cc305df",
+    "system/fvSchemes": "c68daea473990cf22575494457ae406a66eed1e14433c6c0428870aff9c6310f",
+    "system/fvSolution": "0d85777e484b68253f9c99c56ca2b5c5d69fb7aa5574d31493fdbe0fa282c224"
+  },
+  "binary_selection": "Use the backend's absolute executable and private env; never resolve icoFoam through a global/default PATH. Keep controlDict.application identical."
+}

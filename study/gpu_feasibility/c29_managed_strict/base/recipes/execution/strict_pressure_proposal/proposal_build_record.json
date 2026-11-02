@@ -1,0 +1,9 @@
+{
+  "source_only": true,
+  "no_cases_build_or_runtime": true,
+  "created_utc": "2026-11-02T12:46:59.416558+00:00",
+  "protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "restriction_sha256": "217b76d552ed28e9c5bd37b010cd036ce87717a79aef8a745716e66d26b93164",
+  "analyzer_candidate_sha256": "300c9ce0ecdb83cc20899c1077c071f4dcb82d412de8ce73f9ba5ae0309c88c5",
+  "fragments_unchanged_and_not_copied": true
+}

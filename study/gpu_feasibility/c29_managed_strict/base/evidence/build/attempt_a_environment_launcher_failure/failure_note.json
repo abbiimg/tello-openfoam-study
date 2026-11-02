@@ -1,0 +1,7 @@
+{
+  "cause": "Launcher enabled bash errexit before sourcing OpenFOAM setup; corrected launcher enables it after source",
+  "compiler_invoked": false,
+  "objects_or_binaries_created": false,
+  "source_changes": false,
+  "application_or_case_executed": false
+}

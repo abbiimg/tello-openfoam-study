@@ -1,0 +1,8 @@
+{
+  "report": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_completed_offline_replay_analysis.json",
+  "sha256": "c82065bd31fc53affb4df68d9559f3e7d93c0b09b05ee7ff93330954a4360087",
+  "checks": 499,
+  "failed": 0,
+  "mechanical_passed": true,
+  "runtime_admission": false
+}

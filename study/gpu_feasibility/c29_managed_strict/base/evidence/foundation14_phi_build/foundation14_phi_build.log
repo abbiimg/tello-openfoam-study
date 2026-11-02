@@ -1,0 +1,15 @@
+2026-11-02T11:32:50Z
+WM_PROJECT_VERSION=14
+WM_OPTIONS=linuxArm64GccDPInt32Opt
+WM_NCOMPPROCS=1
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Making dependency list for source file c29FoundationInitialPhi.C
+g++ -std=c++14 -DLIB_NAME=libNULL.so -DlinuxArm64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3 -mcpu=native  -DNoRepository -ftemplate-depth-256 -I/opt/openfoam14/src/finiteVolume/lnInclude -I/opt/openfoam14/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam14/src/OpenFOAM/lnInclude -I/opt/openfoam14/src/OSspecific/POSIX/lnInclude   -fPIC -c c29FoundationInitialPhi.C -o Make/linuxArm64GccDPInt32Opt/c29FoundationInitialPhi.o
+g++ -std=c++14 -DLIB_NAME=libNULL.so -DlinuxArm64 -DWM_ARCH_OPTION=64 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -O3 -mcpu=native  -DNoRepository -ftemplate-depth-256 -I/opt/openfoam14/src/finiteVolume/lnInclude -I/opt/openfoam14/src/meshTools/lnInclude -IlnInclude -I. -I/opt/openfoam14/src/OpenFOAM/lnInclude -I/opt/openfoam14/src/OSspecific/POSIX/lnInclude   -fPIC -fuse-ld=bfd -Xlinker --add-needed -Xlinker --no-as-needed Make/linuxArm64GccDPInt32Opt/c29FoundationInitialPhi.o -L/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib \
+    -lfiniteVolume -lmeshTools -lOpenFOAM -ldl  \
+     -lm -o /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/bin/c29FoundationInitialPhi
+2026-11-02T11:32:58Z

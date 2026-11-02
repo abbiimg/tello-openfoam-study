@@ -1,0 +1,7 @@
+{
+  "receipt_sha256": "75dfc4fb23eccd044cfa1d0e80c3b749bd89e97b493f02c8661194427d0ad864",
+  "approval_sha256": "9c4beb885fa6b1ef4eb813ad74f247e033a27c3b9e99dcda5fece99314e18c6e",
+  "protocol_sha256": "e6e58d9e37514f0dc3b3f76bfaaf6a839612faef2fde095f3c38ebf3d24c6395",
+  "no_profiler_or_tool_injection": true,
+  "environment_unchanged": true
+}

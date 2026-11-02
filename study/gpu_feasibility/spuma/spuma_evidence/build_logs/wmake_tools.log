@@ -1,0 +1,45 @@
+nvc  -DOPENFOAM=2512 -DWM_DP -DWM_LABEL_SIZE=32  -O3    -fPIC lemon.c -o /opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/tools/linuxARM64Nvidia/lemon
+"lemon.c", line 2320: warning: enumerated type mixed with another type [mixed_enum_type]
+            psp->prevrule->neverReduce = 1;
+                                       ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"lemon.c", line 2324: warning: enumerated type mixed with another type [mixed_enum_type]
+            psp->prevrule->noCode = 0;
+                                  ^
+
+"lemon.c", line 2432: warning: enumerated type mixed with another type [mixed_enum_type]
+            rp->noCode = 1;
+                       ^
+
+"lemon.c", line 3898: warning: enumerated type mixed with another type [mixed_enum_type]
+      rp->noCode = 1;
+                 ^
+
+"lemon.c", line 3900: warning: enumerated type mixed with another type [mixed_enum_type]
+      rp->noCode = 0;
+                 ^
+
+"lemon.c", line 3916: warning: enumerated type mixed with another type [mixed_enum_type]
+        rp->noCode = 0;
+                   ^
+
+"lemon.c", line 4066: warning: enumerated type mixed with another type [mixed_enum_type]
+      rp->noCode = 0;
+                 ^
+
+"lemon.c", line 4617: warning: enumerated type mixed with another type [mixed_enum_type]
+          ap->x.rp->doesReduce = 1;
+                               ^
+
+"lemon.c", line 4931: warning: enumerated type mixed with another type [mixed_enum_type]
+          rp2->codeEmitted = 1;
+                           ^
+
+"lemon.c", line 4936: warning: enumerated type mixed with another type [mixed_enum_type]
+      rp->codeEmitted = 1;
+                      ^
+
+nvc++ -std=c++17 -gpu=cc121 -cuda -Dhave_cuda  -DOPENFOAM=2512 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra --diag_suppress=111,128,177,185,612,998,1098,1428 --display_error_number -O3  -DNoRepository   -fPIC wmkdepend.cc -o /opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/tools/linuxARM64Nvidia/wmkdepend
+built wmake-bin (linuxARM64Nvidia)

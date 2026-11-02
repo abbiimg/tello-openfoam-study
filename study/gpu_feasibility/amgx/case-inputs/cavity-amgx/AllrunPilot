@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export LD_LIBRARY_PATH="/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib:/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/lib:/usr/lib/wsl/lib:${LD_LIBRARY_PATH:-}"
+export LD_PRELOAD="/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxLaunchAudit.so"
+exec nice -n 15 foamRun

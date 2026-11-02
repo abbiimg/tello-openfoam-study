@@ -1,0 +1,402 @@
+{
+  "schema": "c29-additional-curation-v1",
+  "source_files": [
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/U",
+      "path": "saved_fields/foundation14_control/0.6001/U",
+      "sha256": "82cf861476af2a740b8eb82fbef51345f108dbaea99a56f77927241862d3f96e",
+      "size_bytes": 61308886,
+      "source_mtime_ns": 1793626891444550739
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/U",
+      "path": "saved_fields/native_cpu/0.6001/U",
+      "sha256": "4f831291e62fc1cd2fc6b86ca49cd54ea91ba9ec0f39afb36fd76c6120fe80ea",
+      "size_bytes": 61310385,
+      "source_mtime_ns": 1793626987524584421
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/p",
+      "path": "saved_fields/foundation14_control/0.6001/p",
+      "sha256": "b5c5b8afaec0a06a616c0ba94cbf2f5a3a37b7d15be928f519b6f086306a525c",
+      "size_bytes": 19360306,
+      "source_mtime_ns": 1793626892140550898
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/p",
+      "path": "saved_fields/native_cpu/0.6001/p",
+      "sha256": "c8fa982a5b855cb4b549a97bd2354b843b4d8d3492fcf2a9291f9014b7052622",
+      "size_bytes": 19360241,
+      "source_mtime_ns": 1793626988272584691
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/phi",
+      "path": "saved_fields/foundation14_control/0.6001/phi",
+      "sha256": "8bb0dc1beaf2cc53f3c225273aafe52ad83778bc0650cf63375987fae00b02a0",
+      "size_bytes": 65504207,
+      "source_mtime_ns": 1793626891972550859
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/phi",
+      "path": "saved_fields/native_cpu/0.6001/phi",
+      "sha256": "9a6a3266b4284048d04a1a9c5810d0ba470ae49bd7ac4bea13ea7c04bd4caefd",
+      "size_bytes": 65503450,
+      "source_mtime_ns": 1793626988108584632
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/U",
+      "path": "saved_fields/foundation14_control/0.6002/U",
+      "sha256": "3f05b1e1360c2d47a7fb02f449b751560dbaee565b4488e2b502c95eaaac5b97",
+      "size_bytes": 61308158,
+      "source_mtime_ns": 1793626897788580534
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/U",
+      "path": "saved_fields/native_cpu/0.6002/U",
+      "sha256": "1869b1ed3b15593f80865bbc17e5246d619c6995f0a7b64b6a310f5a50602a82",
+      "size_bytes": 61308653,
+      "source_mtime_ns": 1793626992736586350
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/p",
+      "path": "saved_fields/foundation14_control/0.6002/p",
+      "sha256": "37b4f1de3564d81456b8c5c5787e53022bf31373a8b5b0ed80acae0d98d5402c",
+      "size_bytes": 20413984,
+      "source_mtime_ns": 1793626898484580864
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/p",
+      "path": "saved_fields/native_cpu/0.6002/p",
+      "sha256": "03ada47d6605afda004265ae59c4965c8bc4ec5912175983d84313190970564b",
+      "size_bytes": 20414759,
+      "source_mtime_ns": 1793626993416586608
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/phi",
+      "path": "saved_fields/foundation14_control/0.6002/phi",
+      "sha256": "2339b96bfe0f7a288701d0f6f0065f7b4f1c4f9e68d87c229740b492a33dc566",
+      "size_bytes": 65504867,
+      "source_mtime_ns": 1793626898320580786
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/phi",
+      "path": "saved_fields/native_cpu/0.6002/phi",
+      "sha256": "d3741186179e41ab9341999b50359e2d41b00e06307c37edc6ac84389f6a9444",
+      "size_bytes": 65505638,
+      "source_mtime_ns": 1793626993252586545
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/U",
+      "path": "saved_fields/foundation14_control/0.6003/U",
+      "sha256": "56a08639ef086b0b2d5c1b563bb566fc0666d0a59ec15667d48476097044a3f4",
+      "size_bytes": 61307683,
+      "source_mtime_ns": 1793626902276583580
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/U",
+      "path": "saved_fields/native_cpu/0.6003/U",
+      "sha256": "57b4d0ca043c7b4aec9979cc863cc1e04d6f5043504f5309f184b3512d8da893",
+      "size_bytes": 61308039,
+      "source_mtime_ns": 1793626997316588112
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/p",
+      "path": "saved_fields/foundation14_control/0.6003/p",
+      "sha256": "5aac271c19da4031af85658a22372a667c6604e3d46f77f2c52b732b6fecbac6",
+      "size_bytes": 20467138,
+      "source_mtime_ns": 1793626902984584293
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/p",
+      "path": "saved_fields/native_cpu/0.6003/p",
+      "sha256": "0929304a24e3ab8ce06841aa92c8e7fb0bc800ed4a22bc6175fc769b24eabeed",
+      "size_bytes": 20467538,
+      "source_mtime_ns": 1793626998028588392
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/phi",
+      "path": "saved_fields/foundation14_control/0.6003/phi",
+      "sha256": "9e4f544c6425b466bd1f14ecab7f82a004b68ddc86c762241b2c0d6b47d3e1d7",
+      "size_bytes": 65504070,
+      "source_mtime_ns": 1793626902824584132
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/phi",
+      "path": "saved_fields/native_cpu/0.6003/phi",
+      "sha256": "a2e9dd7452ac5c0ecadc0579ec18a0b79de08d4f2d7f59ce0bf3747092620afd",
+      "size_bytes": 65505435,
+      "source_mtime_ns": 1793626997848588321
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/U",
+      "path": "saved_fields/foundation14_control/0.6004/U",
+      "sha256": "548d879122051360f3d877b0c6e71e3763c404203ab5d0ac6dc4e626be43b471",
+      "size_bytes": 61308591,
+      "source_mtime_ns": 1793626906536587900
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/U",
+      "path": "saved_fields/native_cpu/0.6004/U",
+      "sha256": "9433bf83aa2a90510380437288b0f168eb8a9e29556440fc6a39770d3eb12033",
+      "size_bytes": 61306401,
+      "source_mtime_ns": 1793627001572589810
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/p",
+      "path": "saved_fields/foundation14_control/0.6004/p",
+      "sha256": "433fa93bdb20f1d62a2fff5fa1217b11a1001e8ea13921506d005e5a7fb5f0c1",
+      "size_bytes": 20487582,
+      "source_mtime_ns": 1793626907228588607
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/p",
+      "path": "saved_fields/native_cpu/0.6004/p",
+      "sha256": "40d755c0c5a8f7bca9014cefbf378f7251eb31dc0e2043e7f92934077ed15441",
+      "size_bytes": 20487940,
+      "source_mtime_ns": 1793627003124590441
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/phi",
+      "path": "saved_fields/foundation14_control/0.6004/phi",
+      "sha256": "f5d9d9083ceb2d0fa49632ada6f90f2eda5199635f0b9419dd440347e3e72964",
+      "size_bytes": 65505249,
+      "source_mtime_ns": 1793626907064588439
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/phi",
+      "path": "saved_fields/native_cpu/0.6004/phi",
+      "sha256": "4c7949439a997765d00d9f7bd67bd7b4807cc169c32edcd7489e675881c37fcb",
+      "size_bytes": 65504504,
+      "source_mtime_ns": 1793627002560590211
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/U",
+      "path": "saved_fields/foundation14_control/0.6005/U",
+      "sha256": "96da08fc683da571b4761dbae327799310924de7f5bc8da5b5e78e71aaacc6c6",
+      "size_bytes": 61307806,
+      "source_mtime_ns": 1793626910548585995
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/U",
+      "path": "saved_fields/native_cpu/0.6005/U",
+      "sha256": "2710cefc8c1c9edf8e302887fa6354cade57492639d90f3669d7e8ac41b8db78",
+      "size_bytes": 61307700,
+      "source_mtime_ns": 1793627007356592191
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/p",
+      "path": "saved_fields/foundation14_control/0.6005/p",
+      "sha256": "c6bae9c10eaa90b1b052d5b668b31dc527254ae1e29c39fa46a979156837ae64",
+      "size_bytes": 20491688,
+      "source_mtime_ns": 1793626911236584598
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/p",
+      "path": "saved_fields/native_cpu/0.6005/p",
+      "sha256": "e1da2ab59a111e175c537642afc81669143ac0e6e8cdba6b7b744d3f9b411f60",
+      "size_bytes": 20491622,
+      "source_mtime_ns": 1793627008064592488
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/phi",
+      "path": "saved_fields/foundation14_control/0.6005/phi",
+      "sha256": "a70b18133786bd5ae7e0425f0452db204888e95d72e8557ca7266a74ca07393f",
+      "size_bytes": 65504662,
+      "source_mtime_ns": 1793626911076584922
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/phi",
+      "path": "saved_fields/native_cpu/0.6005/phi",
+      "sha256": "1d5a66572f95c90bafca5f964b7752e3402c53bab136037a57f6211bda0cfc74",
+      "size_bytes": 65504151,
+      "source_mtime_ns": 1793627007900592419
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/phi",
+      "path": "shared_initial/phi",
+      "sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "size_bytes": 65502360,
+      "source_mtime_ns": 1793625973032587517
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.json",
+      "path": "evidence/launch_receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.json",
+      "sha256": "c4ae6bd898c0329cddc02a8a8acd59e96e23d40d3b0b0317d92afd3d2553e7f2",
+      "size_bytes": 11933,
+      "source_mtime_ns": 1793625963249420827
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.foam",
+      "path": "evidence/launch_receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.foam",
+      "sha256": "b506732efe40b096224a4c9b12e04669f696ccb55db450f8c5b65367c3f16736",
+      "size_bytes": 730,
+      "source_mtime_ns": 1793625963249471227
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.json",
+      "path": "evidence/launch_receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.json",
+      "sha256": "6c4e269dd8dfd7b6b61f52a499383da4082484e48bac96c55c26299c49cd255d",
+      "size_bytes": 15838,
+      "source_mtime_ns": 1793625964979711689
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.foam",
+      "path": "evidence/launch_receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.foam",
+      "sha256": "f6c3c95405555da9b1690425e49bcf47b42c1b02a4aed8caa838d2c73568899e",
+      "size_bytes": 730,
+      "source_mtime_ns": 1793625964979776189
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.json",
+      "path": "evidence/launch_receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.json",
+      "sha256": "21316981cb55876c7a521139e137386376e14e167d09eb416fe8f50f83d5eef3",
+      "size_bytes": 10683,
+      "source_mtime_ns": 1793625966075883413
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.foam",
+      "path": "evidence/launch_receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.foam",
+      "sha256": "a719db72c652312c0ab14756e13bdb58d5f6c87671854c3ff8b6185f620c5eb2",
+      "size_bytes": 753,
+      "source_mtime_ns": 1793625966075959813
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_cpu_20261102_a.json",
+      "path": "evidence/launch_receipts/c29_strict_shared_initial_cpu_20261102_a.json",
+      "sha256": "69770d219b00c94830a94439a1e23effb7c43c50f94a030e7548f645a39c8d70",
+      "size_bytes": 12259,
+      "source_mtime_ns": 1793626281076551256
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_cpu_20261102_a.foam",
+      "path": "evidence/launch_receipts/c29_strict_shared_initial_cpu_20261102_a.foam",
+      "sha256": "1498286e679cf2843357377b0dca0d7bd4aaed28c3d62781ea3350a2789b62cf",
+      "size_bytes": 716,
+      "source_mtime_ns": 1793626281076756256
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_gpu_20261102_a.json",
+      "path": "evidence/launch_receipts/c29_strict_shared_initial_gpu_20261102_a.json",
+      "sha256": "2fdd12b0b6b28705795d35c0fee63f4054c5fdb79847bf996d602f7ac8971538",
+      "size_bytes": 16165,
+      "source_mtime_ns": 1793626282078190157
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_gpu_20261102_a.foam",
+      "path": "evidence/launch_receipts/c29_strict_shared_initial_gpu_20261102_a.foam",
+      "sha256": "1d967c5ff143bc87729c3ab223bf75635fe4575e792e6dca0d7b073e0ed3f076",
+      "size_bytes": 716,
+      "source_mtime_ns": 1793626282078304057
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_cpu_20261102_a.json",
+      "path": "evidence/launch_receipts/c29_strict_shared_five_cpu_20261102_a.json",
+      "sha256": "666b17cd1a6912f3b35f2460bd061f8b5498ad1c4a42fa0eb3fbbc080c5d865c",
+      "size_bytes": 12226,
+      "source_mtime_ns": 1793626975191015091
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_cpu_20261102_a.foam",
+      "path": "evidence/launch_receipts/c29_strict_shared_five_cpu_20261102_a.foam",
+      "sha256": "0a2b358a5d5bda011f0a52cc33c0e2e805f7d03effe599764f115ec537202a78",
+      "size_bytes": 710,
+      "source_mtime_ns": 1793626975191119991
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_start.json",
+      "path": "evidence/gpu_transient_failure/actual_solver_start.json",
+      "sha256": "3e3b7440d736e7b1b3e781ffbe96c79b25aad5391d2b50d3ac92724e2f695b27",
+      "size_bytes": 6976,
+      "source_mtime_ns": 1793628503048052148
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_spawn.json",
+      "path": "evidence/gpu_transient_failure/actual_solver_spawn.json",
+      "sha256": "77e525659624c562720053fab608104e5ba46bfde3f5c7aa1f2325d0dd433328",
+      "size_bytes": 6703,
+      "source_mtime_ns": 1793628503047630047
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_exit.json",
+      "path": "evidence/gpu_transient_failure/actual_solver_exit.json",
+      "sha256": "c248fea9667d8970e2c34b246f3a652c9ae9fd2fde44a0623f1bab436441d47a",
+      "size_bytes": 16588,
+      "source_mtime_ns": 1793628639315939291
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_wrapper_start.json",
+      "path": "evidence/gpu_transient_failure/actual_wrapper_start.json",
+      "sha256": "3e21255d4cf0874e09fa1d659b546c1e56b5abb6e580412d26b74a4c0eb9b7ba",
+      "size_bytes": 375,
+      "source_mtime_ns": 1793628503031503637
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_wrapper_exit.json",
+      "path": "evidence/gpu_transient_failure/actual_wrapper_exit.json",
+      "sha256": "ecbead588940c6eb6ad9a6961940d69c04f2b142ef53bf2a67cd03e47ca10634",
+      "size_bytes": 238,
+      "source_mtime_ns": 1793628639323089394
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/outer_prelaunch.json",
+      "path": "evidence/gpu_transient_failure/outer_prelaunch.json",
+      "sha256": "13e9b843641cd8e2dd01d8953c34974c3dccffd7e6af9ae48bb48c99cd38c855",
+      "size_bytes": 1764,
+      "source_mtime_ns": 1793628497405914880
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/profiler_exit.json",
+      "path": "evidence/gpu_transient_failure/profiler_exit.json",
+      "sha256": "509a5409b4bcc36ac5bc01f186a0ec9a2ea7ce81b5c171e277df7e5662483411",
+      "size_bytes": 1576,
+      "source_mtime_ns": 1793628640664884049
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/profiler.log",
+      "path": "evidence/gpu_transient_failure/profiler.log",
+      "sha256": "f4e441716c5e7b9516aaa6b720130bde084ce212363d1a0d5754771f63cd9483",
+      "size_bytes": 1652,
+      "source_mtime_ns": 1793628640572586610
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_gpu_five_stdout.log",
+      "path": "evidence/gpu_transient_failure/native_gpu_five_stdout.log",
+      "sha256": "00be8bf0b2f8420bd1a819ca8ce8f94f18f77083a25317c8e80ee52cc428afc0",
+      "size_bytes": 6449,
+      "source_mtime_ns": 1793628516539439200
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.json",
+      "path": "evidence/launch_receipts/c29_strict_shared_five_gpu_20261102_a.json",
+      "sha256": "074540859b1dbb757122f06fed2b152158773da93138091b598fb3fbdb5f6d68",
+      "size_bytes": 16133,
+      "source_mtime_ns": 1793628490938630040
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.foam",
+      "path": "evidence/launch_receipts/c29_strict_shared_five_gpu_20261102_a.foam",
+      "sha256": "cb6fb252d050a8148a42a28ab0e197e3374d41b2944618c4639ae8d756fedc7e",
+      "size_bytes": 710,
+      "source_mtime_ns": 1793628490938737540
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_cpu_evidence_map.md",
+      "path": "evidence/curation_review/c29_cpu_evidence_map.md",
+      "sha256": "7ae242875698a731d74c3ea92c3ddeeb5699f230d938bd7e7d6664c601ae1fb6",
+      "size_bytes": 7320,
+      "source_mtime_ns": 1793629031390405600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_cpu_evidence_map.json",
+      "path": "evidence/curation_review/c29_cpu_evidence_map.json",
+      "sha256": "f375b4f12efb14279f7a88277aa4c315adf74d311ad2ea6f161b1c12f61ba956",
+      "size_bytes": 22577,
+      "source_mtime_ns": 1793628967332227200
+    }
+  ],
+  "source_files_byte_identical": true,
+  "GPU_evidence_terminal_Root_approved_for_copy": true,
+  "GPU_transient_qualified": false,
+  "raw_trace_or_full_SQLite_included": false,
+  "full_environment_included": false
+}

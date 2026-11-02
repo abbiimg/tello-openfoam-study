@@ -1,0 +1,61 @@
+{
+  "kind": "Actual GPU execution proof for managed-mode nvc++ stdpar; not CFD",
+  "completed_utc": "2026-11-02T07:46:57.588763+00:00",
+  "compiler_flags": [
+    "-std=c++17",
+    "-stdpar=gpu",
+    "-gpu=cc121,mem:managed",
+    "-Minfo=all",
+    "-O2"
+  ],
+  "source_sha256": "c54d0ca85cc7a588083bae8c2d2516fc35d4bbf895ecb6cb9d0496ddc81e3bee",
+  "binary_sha256": "d6cc79c11d3f9055c2e96bf817d67c34003bf6ae40eb1ab71eb122b67bae8c93",
+  "records": [
+    {
+      "name": "device_marker_compile",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin/nvc++",
+        "-std=c++17",
+        "-stdpar=gpu",
+        "-gpu=cc121,mem:managed",
+        "-Minfo=all",
+        "-O2",
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker.cpp",
+        "-o",
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker"
+      ],
+      "return_code": 0,
+      "elapsed_s": 10.630206236994127,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/device_marker_compile.log"
+    },
+    {
+      "name": "device_marker_run",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker",
+        "324508639"
+      ],
+      "return_code": 0,
+      "elapsed_s": 1.4724017539992929,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/device_marker_run.log"
+    }
+  ],
+  "result": {
+    "kind": "stdpar device-only-output execution marker",
+    "elements": 262144,
+    "seed": 324508639,
+    "input_memory_type": 3,
+    "output_memory_type": 2,
+    "output_device_pointer_valid": true,
+    "output_host_pointer_is_null": true,
+    "synchronize_status": 0,
+    "last_error": 0,
+    "copy_status": 0,
+    "copy_synchronize_status": 0,
+    "release_status": 0,
+    "mismatches": 0,
+    "passed": true
+  },
+  "device_execution_proof": "Managed heap input indices, runtime seed and cudaMalloc DEVICE output captured by value; hostPointer null verified; every copied-back nonuniform unsigned result matched after successful CUDA synchronization.",
+  "no_cpu_fallback_control_run": true,
+  "reference": "https://forums.developer.nvidia.com/t/implicit-data-copy-to-device-for-allocated-arrays-using-compilation-option-stdpar-gpu/253279"
+}

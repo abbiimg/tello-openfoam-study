@@ -1,0 +1,56 @@
+{
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/bin/c29FoundationInitialPhi",
+    "sha256": "161be52ffe49e0a5ec62093f4fc92a5a215f1976be141edc3965294fe8fc8888",
+    "size_bytes": 564280
+  },
+  "backend": "cpu",
+  "library_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/library_identity.json",
+    "sha256": "91a08df81f64d3d0296d22c11ad40a9b3d6b524a9bb9fb1124665abb2bb8b7d5"
+  },
+  "resolved_library_count": 21,
+  "framework_libraries": [
+    "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfiniteVolume.so",
+    "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libmeshTools.so",
+    "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libOpenFOAM.so",
+    "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/openmpi-system/libPstream.so"
+  ],
+  "artifacts": {
+    "build.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/build.log",
+      "sha256": "f5ab59a49981b02c7ec825bd15bb41409e59c0de1fab6c07e98ce20c3e44b1d3",
+      "portable_copy": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_build.log"
+    },
+    "runtime_dependency_audit.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/runtime_dependency_audit.log",
+      "sha256": "6a7a6a1f55f1978b0f663d1d2a1060a8c1af0cfe6756620e3ab5dd86fc11a520",
+      "portable_copy": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_runtime_dependency_audit.log"
+    },
+    "elf_dynamic.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/elf_dynamic.log",
+      "sha256": "6578372e30e35a02f30c50e7d198699baa9a5e8de38cee3dc1ac9bbaa93af0fb",
+      "portable_copy": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_elf_dynamic.log"
+    },
+    "elf_header.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/elf_header.log",
+      "sha256": "1bbdd7b0b8e2d86c21711aadbb534c95a8e246c09a6c6d7d5559e5cc76c3c998",
+      "portable_copy": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_elf_header.log"
+    },
+    "source_compatibility.json": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/source_compatibility.json",
+      "sha256": "14297e23ca2ae85450119ca57a46f4181df24bf964b822b289ddf6ce5d421231",
+      "portable_copy": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_source_compatibility.json"
+    },
+    "compatibility_from_v2_1.patch": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/compatibility_from_v2_1.patch",
+      "sha256": "85f86a37331e1bdca5cf70491a9b9fcbb0924ef97ca13a2b02b3976066e548a4",
+      "portable_copy": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_compatibility_from_v2_1.patch"
+    }
+  },
+  "state": "LINKED ONLY; application/utility main NOT executed; no initialization or CFD/parity claim",
+  "candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "compiler_jobs_max": 1,
+  "nice": 15
+}

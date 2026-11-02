@@ -1,0 +1,35 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      c29PortControls;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+protocol        c29-native-five-fixed-steps-strict-pressure-v1;
+
+seedArchiveSha256 "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb";
+
+backend         cpu;
+
+initialPhiPolicy sharedPinnedPhi;
+
+allowUnvalidatedBackendExperiment true;
+
+allowInitialFieldsOnlyExperiment false;
+
+allowFiveStepSourceExperiment true;
+
+experimentId    "c29_strict_shared_five_cpu_20261102_a";
+
+experimentReceiptFile "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_cpu_20261102_a.foam";
+
+
+// ************************************************************************* //

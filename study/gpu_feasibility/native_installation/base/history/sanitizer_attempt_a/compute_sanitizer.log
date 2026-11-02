@@ -1,0 +1,5 @@
+========= COMPUTE-SANITIZER
+========= Error: CUDA initialized before the Sanitizer. The Sanitizer will be disabled
+========= 
+========= Target application returned an error
+========= ERROR SUMMARY: 1 error

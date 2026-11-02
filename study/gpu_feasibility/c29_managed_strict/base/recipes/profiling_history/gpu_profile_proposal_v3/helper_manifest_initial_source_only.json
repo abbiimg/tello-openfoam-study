@@ -1,0 +1,23 @@
+{
+  "schema": "c29-gpu-profile-helper-freeze-v1",
+  "status": "SOURCE_ONLY_PENDING_ROOT_APPROVAL",
+  "files": {
+    "README.md": "b367ede7bf39ca625be110de8de5f8cafe10cc2421f73903688be35ca90f8ede",
+    "installed_help_verification.json": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+    "profile_common.py": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+    "protocol.json": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+    "run_actual_gpu_child.py": "f9517e296cfdf56509cce00bcf326fae079df62ead3a211ba119645adc693f5f",
+    "run_gpu_profile.py": "c90b978b18cec12b91fe26eb9a5b84ac1fd1579cfe620fde65364c849beb6dc6",
+    "validate_gpu_profile.py": "03e62dc74f76ce15fb7abc4b36358188222403d915886b2b5bf33babd592f1ac"
+  },
+  "preparation_script_sha256": "541d6c6fe4a64d960cbfece18cc8c46733466f4b36bcb95cd723c479f83104a7",
+  "AST_parse_success_no_import_or_execution": [
+    "profile_common.py",
+    "run_actual_gpu_child.py",
+    "run_gpu_profile.py",
+    "validate_gpu_profile.py"
+  ],
+  "GPU_or_CFD_run": false,
+  "app_build": false,
+  "case_control_or_permission_changes": false
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "download_verified",
+  "completed_utc": "2026-11-02T07:38:20.906938+00:00",
+  "url": "https://developer.download.nvidia.com/hpc-sdk/26.9/nvhpc_2026_269_Linux_aarch64_cuda_13.3.tar.gz",
+  "archive": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/nvhpc_2026_269_Linux_aarch64_cuda_13.3.tar.gz",
+  "bytes": 6904150881,
+  "sha256": "acf0d8ea9fc1b5457b16481b1067c742e6610989865e18be93e383d9ded37e2a",
+  "md5": "592aa5ca14cbb27012de983acd8d6b62",
+  "official_md5": "592aa5ca14cbb27012de983acd8d6b62",
+  "official_md5_url": "https://developer.download.nvidia.com/hpc-sdk/26.9/md5sum.txt",
+  "official_checksum_document_sha256": "37d79612a688b476734b8e44e923863445bf9528fb26868ab72acd4b5772220c",
+  "elapsed_s_four_range_resume": 3693.2668416840024,
+  "preserved_prefix_bytes": 1778384896,
+  "nice": 15,
+  "no_driver_or_system_package_changes": true
+}

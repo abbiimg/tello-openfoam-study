@@ -1,0 +1,56 @@
+{
+  "schema": "c29-strict-pressure-source-proposal-manifest-v1",
+  "created_utc": "2026-11-02T12:50:56.511294+00:00",
+  "status": "SOURCE ONLY; root review and separate authorization required before build/case/runtime",
+  "base_analyzer_sha256": "74df3cf053b8596ae57d5a04792867130392ca5ef31b59de526b0d1810d4ee16",
+  "base_candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "unchanged_analyzer_functions_AST": [
+    "field_metrics",
+    "compare_fields",
+    "compare_samples",
+    "source_close",
+    "near_time",
+    "parse_log"
+  ],
+  "numerical_policy_delta": "Only configured first p relTol0 instead of .05, as new prospective solve protocol. All acceptance limits/metrics unchanged.",
+  "no_build_case_preparation_initialization_solver_or_receipt_issuance": true,
+  "verbatim_C29_fragments_unchanged": {
+    "body_sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+    "includes_sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83"
+  },
+  "files": {
+    "C29Restrictions.H": {
+      "sha256": "217b76d552ed28e9c5bd37b010cd036ce87717a79aef8a745716e66d26b93164",
+      "size_bytes": 8630
+    },
+    "C29Restrictions_strict_pressure.patch": {
+      "sha256": "8c9e238cd0a7faf38ce1a80b2dff8bd172c91372410d84d1e2bb5320f9a6f8d1",
+      "size_bytes": 1428
+    },
+    "README.md": {
+      "sha256": "256572a67c98b4a5bb0b5c68cbe5a6390d3a0d0814b93194ba88e073b947d218",
+      "size_bytes": 4381
+    },
+    "analyze_five_steps_strict_candidate.py": {
+      "sha256": "300c9ce0ecdb83cc20899c1077c071f4dcb82d412de8ce73f9ba5ae0309c88c5",
+      "size_bytes": 25127
+    },
+    "analyzer_strict_pressure.patch": {
+      "sha256": "a708d291bd8ba8775975351863ffc48d9c4196945126ebaa69fa75afbc123466",
+      "size_bytes": 5049
+    },
+    "proposal_build_record.json": {
+      "sha256": "1210cabd0ea8f87f962b1fda7d11558406d740e1a2c9417b4b6a888880d6d3a1",
+      "size_bytes": 442
+    },
+    "strict_pressure_admission.py": {
+      "sha256": "b4102dba7234d31413463975dc1050eb176261ce9d7773acf3c5f8e9b0a8765b",
+      "size_bytes": 4441
+    },
+    "strict_pressure_protocol.json": {
+      "sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+      "size_bytes": 2124
+    }
+  }
+}

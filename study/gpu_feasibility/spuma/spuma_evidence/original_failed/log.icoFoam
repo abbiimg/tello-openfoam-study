@@ -1,0 +1,227 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1ff2d45c-20260926 OPENFOAM=2512 version=v2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam -pool fixedSizeMemoryPool -poolSize 1
+Date   : Nov 02 2026
+Time   : 03:15:14
+Host   : abby-spark
+PID    : 359303
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Initializing CUDA devices
+
+CUDA Driver Version / Runtime Version:  13.4 / 13.3
+Number of threads per block: 128
+
+Create fixedSizeMemoryPool
+ 
+Create time
+
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNS_5FieldIdEmLERKdEUliE_EEvT_i
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNS_7cmptMagINS_6VectorIdEEEEvRNS_5FieldIT_EERKNS_5UListIS6_EEEUliE_EEvS6_i
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda24reductionLambdaSumKernelINS_6VectorIdEEZNS_3sumIS3_EET_RKNS_5UListIS5_EEEUliE_EEvPS5_T0_Pii
+Create mesh for time = 0
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNKS_7fvPatch18patchInternalFieldIdEEvRKNS_5UListIT_EERKNS4_IiEERS6_EUliE_EEvS5_i
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNKS_7fvPatch18patchInternalFieldIdEEvRKNS_5UListIT_EERKNS4_IiEERS6_EUliE_EEvS5_i
+Reading field U
+
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+Reading/calculating face flux field phi
+
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+
+Starting time loop
+
+Time = 0.005
+
+Courant Number mean: 0 max: 0
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 8.19583349777e-06, No Iterations 25
+smoothSolver:  Solving for Uy, Initial residual = 0, Final residual = 0, No Iterations 0
+aDICPCG:  Solving for p, Initial residual = 1, Final residual = 0.034971417371, No Iterations 39
+time step continuity errors : sum local = 0.00023285144643, global = 2.77932685818e-19, cumulative = 2.77932685818e-19
+aDICPCG:  Solving for p, Initial residual = 0.527662537116, Final residual = 7.70524693895e-07, No Iterations 56
+time step continuity errors : sum local = 8.62766631677e-09, global = -1.95876369053e-19, cumulative = 8.20563167653e-20
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 48.36 s  ClockTime = 49 s
+
+Time = 0.01
+
+Courant Number mean: 0.0976808185728 max: 0.585731656797
+smoothSolver:  Solving for Ux, Initial residual = 0.148658645041, Final residual = 7.91072132286e-06, No Iterations 24
+smoothSolver:  Solving for Uy, Initial residual = 0.256363658462, Final residual = 7.0759783902e-06, No Iterations 24
+aDICPCG:  Solving for p, Initial residual = 0.381415154539, Final residual = 0.018938437214, No Iterations 19
+time step continuity errors : sum local = 0.000255613348367, global = 1.03232140447e-18, cumulative = 1.11437772123e-18
+aDICPCG:  Solving for p, Initial residual = 0.305391250144, Final residual = 9.80418885152e-07, No Iterations 54
+time step continuity errors : sum local = 9.70485837579e-09, global = -2.53324062594e-19, cumulative = 8.61053658637e-19
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 93.47 s  ClockTime = 94 s
+
+Time = 0.015
+
+Courant Number mean: 0.144682837478 max: 0.758329024667
+smoothSolver:  Solving for Ux, Initial residual = 0.0441789756795, Final residual = 7.32471841628e-06, No Iterations 19
+smoothSolver:  Solving for Uy, Initial residual = 0.0934312412901, Final residual = 6.87964470142e-06, No Iterations 22
+aDICPCG:  Solving for p, Initial residual = 0.163100676558, Final residual = 0.00699637435305, No Iterations 30
+time step continuity errors : sum local = 6.16363144059e-05, global = -1.91905902112e-20, cumulative = 8.41863068426e-19
+aDICPCG:  Solving for p, Initial residual = 0.115195329519, Final residual = 8.9971587872e-07, No Iterations 52
+time step continuity errors : sum local = 8.38051463468e-09, global = 7.80279471821e-19, cumulative = 1.62214254025e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 139.97 s  ClockTime = 141 s
+
+Time = 0.02
+
+Courant Number mean: 0.167372788493 max: 0.79993419351
+smoothSolver:  Solving for Ux, Initial residual = 0.0249830664485, Final residual = 7.56742732373e-06, No Iterations 19
+smoothSolver:  Solving for Uy, Initial residual = 0.047007877024, Final residual = 8.62487786961e-06, No Iterations 20
+aDICPCG:  Solving for p, Initial residual = 0.0663397181637, Final residual = 0.00246475060926, No Iterations 36
+time step continuity errors : sum local = 2.0093825835e-05, global = 1.22422730658e-20, cumulative = 1.63438481331e-18
+aDICPCG:  Solving for p, Initial residual = 0.0506163779893, Final residual = 9.81849767299e-07, No Iterations 51
+time step continuity errors : sum local = 8.05833656315e-09, global = 2.48154183766e-22, cumulative = 1.6346329675e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 186.85 s  ClockTime = 188 s
+
+Time = 0.025
+
+Courant Number mean: 0.182124645135 max: 0.819711342808
+smoothSolver:  Solving for Ux, Initial residual = 0.014854346816, Final residual = 9.64241655145e-06, No Iterations 17
+smoothSolver:  Solving for Uy, Initial residual = 0.0302045891516, Final residual = 9.33209752038e-06, No Iterations 19
+aDICPCG:  Solving for p, Initial residual = 0.0390194101773, Final residual = 0.00189477419715, No Iterations 17
+time step continuity errors : sum local = 1.89093805751e-05, global = 8.6126045379e-19, cumulative = 2.49589342129e-18
+aDICPCG:  Solving for p, Initial residual = 0.0302805245601, Final residual = 7.2880307058e-07, No Iterations 50
+time step continuity errors : sum local = 5.90577790091e-09, global = 8.18164343876e-19, cumulative = 3.31405776516e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 227.73 s  ClockTime = 228 s
+
+Time = 0.03
+
+Courant Number mean: 0.192218919641 max: 0.830293316132
+smoothSolver:  Solving for Ux, Initial residual = 0.0100314761417, Final residual = 9.94693461332e-06, No Iterations 16
+smoothSolver:  Solving for Uy, Initial residual = 0.0217141282778, Final residual = 6.79092505269e-06, No Iterations 19
+aDICPCG:  Solving for p, Initial residual = 0.0259017682627, Final residual = 0.000952873845091, No Iterations 18
+time step continuity errors : sum local = 1.11189600606e-05, global = -1.03893884937e-19, cumulative = 3.21016388023e-18
+aDICPCG:  Solving for p, Initial residual = 0.0193239737385, Final residual = 6.26083056359e-07, No Iterations 50
+time step continuity errors : sum local = 5.09354634125e-09, global = 6.74979379843e-20, cumulative = 3.27766181821e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 267.13 s  ClockTime = 268 s
+
+Time = 0.035
+
+Courant Number mean: 0.1993867368 max: 0.836812106507
+smoothSolver:  Solving for Ux, Initial residual = 0.00773904219713, Final residual = 8.38292633355e-06, No Iterations 16
+smoothSolver:  Solving for Uy, Initial residual = 0.015068805068, Final residual = 7.36926739063e-06, No Iterations 18
+aDICPCG:  Solving for p, Initial residual = 0.0202965242969, Final residual = 0.000640143952931, No Iterations 35
+time step continuity errors : sum local = 5.23873943245e-06, global = -6.39741485749e-19, cumulative = 2.63792033246e-18
+aDICPCG:  Solving for p, Initial residual = 0.0161258589766, Final residual = 8.37811311897e-07, No Iterations 48
+time step continuity errors : sum local = 6.87198755148e-09, global = 4.66447147419e-19, cumulative = 3.10436747988e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 311.69 s  ClockTime = 312 s
+
+Time = 0.04
+
+Courant Number mean: 0.204636308283 max: 0.841158102224
+smoothSolver:  Solving for Ux, Initial residual = 0.00543871643091, Final residual = 8.97322415248e-06, No Iterations 15
+smoothSolver:  Solving for Uy, Initial residual = 0.0115323204423, Final residual = 8.74212710375e-06, No Iterations 17
+aDICPCG:  Solving for p, Initial residual = 0.0136328929733, Final residual = 0.000615218438332, No Iterations 15
+time step continuity errors : sum local = 5.53442022115e-06, global = 5.96479939712e-19, cumulative = 3.70084741959e-18
+aDICPCG:  Solving for p, Initial residual = 0.0105414756136, Final residual = 7.60506564602e-07, No Iterations 47
+time step continuity errors : sum local = 6.19764578503e-09, global = -2.62381690302e-19, cumulative = 3.43846572929e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 348.59 s  ClockTime = 349 s
+
+Time = 0.045
+
+Courant Number mean: 0.208548817651 max: 0.844094838435
+smoothSolver:  Solving for Ux, Initial residual = 0.00401615613755, Final residual = 6.80315617775e-06, No Iterations 15
+smoothSolver:  Solving for Uy, Initial residual = 0.00887786630833, Final residual = 6.76768665023e-06, No Iterations 17
+aDICPCG:  Solving for p, Initial residual = 0.00978083770507, Final residual = 0.000419501736088, No Iterations 16
+time step continuity errors : sum local = 3.45075760853e-06, global = 6.91026683727e-19, cumulative = 4.12949241302e-18
+aDICPCG:  Solving for p, Initial residual = 0.00753573484907, Final residual = 8.10576088672e-07, No Iterations 45
+time step continuity errors : sum local = 6.60805496435e-09, global = -1.3640208301e-19, cumulative = 3.99309033001e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 391.08 s  ClockTime = 392 s
+
+Time = 0.05
+
+Courant Number mean: 0.211513949442 max: 0.846175038493
+smoothSolver:  Solving for Ux, Initial residual = 0.00310779460036, Final residual = 8.19809996772e-06, No Iterations 14
+smoothSolver:  Solving for Uy, Initial residual = 0.00672222489711, Final residual = 7.89546142324e-06, No Iterations 16
+aDICPCG:  Solving for p, Initial residual = 0.00723819639691, Final residual = 0.000298209860184, No Iterations 15
+time step continuity errors : sum local = 3.00303496411e-06, global = -3.68178090647e-19, cumulative = 3.62491223936e-18
+aDICPCG:  Solving for p, Initial residual = 0.00557567594739, Final residual = 8.35610854509e-07, No Iterations 45
+time step continuity errors : sum local = 6.84147699242e-09, global = 6.36101992027e-20, cumulative = 3.68852243856e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 427.48 s  ClockTime = 428 s
+
+Time = 0.055
+
+Courant Number mean: 0.213815864174 max: 0.847664882197
+smoothSolver:  Solving for Ux, Initial residual = 0.00236800257122, Final residual = 9.63565400044e-06, No Iterations 13
+smoothSolver:  Solving for Uy, Initial residual = 0.00531278972614, Final residual = 9.50541017258e-06, No Iterations 15
+aDICPCG:  Solving for p, Initial residual = 0.0057464036241, Final residual = 0.000274214318067, No Iterations 16
+time step continuity errors : sum local = 2.8596390717e-06, global = 3.73802918813e-19, cumulative = 4.06232535738e-18
+aDICPCG:  Solving for p, Initial residual = 0.00434533282342, Final residual = 9.05102731705e-07, No Iterations 46
+time step continuity errors : sum local = 7.36767488672e-09, global = -8.99972506458e-20, cumulative = 3.97232810673e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 464.25 s  ClockTime = 465 s
+
+Time = 0.06
+
+Courant Number mean: 0.215617411068 max: 0.848753304991
+smoothSolver:  Solving for Ux, Initial residual = 0.00191638243707, Final residual = 7.91042712966e-06, No Iterations 13
+smoothSolver:  Solving for Uy, Initial residual = 0.00399981838342, Final residual = 7.22772890563e-06, No Iterations 15
+aDICPCG:  Solving for p, Initial residual = 0.0045945553323, Final residual = 0.000222727208959, No Iterations 30
+time step continuity errors : sum local = 1.85054537951e-06, global = -1.57823475936e-19, cumulative = 3.81450463079e-18
+aDICPCG:  Solving for p, Initial residual = 0.00350314692788, Final residual = 7.00623901265e-07, No Iterations 46
+time step continuity errors : sum local = 5.73299351756e-09, global = 2.79752483165e-19, cumulative = 4.09425711396e-18
+
+Memory pool occupancy: 0.0198543071747 %
+ExecutionTime = 503.91 s  ClockTime = 504 s
+
+Time = 0.065
+
+Courant Number mean: 0.217012326052 max: 0.849563274372
+smoothSolver:  Solving for Ux, Initial residual = 0.00147675764755, Final residual = 9.41010319141e-06, No Iterations 12
+smoothSolver:  Solving for Uy, Initial residual = 0.00315341791883, Final residual = 8.72315299477e-06, No Iterations 14
+aDICPCG:  Solving for p, Initial residual = 0.00327126289651, Final residual = 0.00015070024245, No Iterations 13
+time step continuity errors : sum local = 1.38247984151e-06, global = 5.0871607672e-20, cumulative = 4.14512872163e-18
+Collecting data...
+Generating '/opt/openfoam-workspace/gpu-feasibility/spuma/tmp/nsys-openfoam/nsys-report-9d74.qdstrm'
+[1/1] [0%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [0%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [1%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [2%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [5%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [6%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [7%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [8%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [9%                          ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [10%                         ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [11%                         ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [12%                         ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [13%                         ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [14%                         ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [=15%                        ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [=16%                        ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [=17%                        ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [==18%                       ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [==19%                       ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [==20%                       ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [==21%                       ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [=======37%                  ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [=======================96%  ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [========================98% ] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [========================100%] cavity_icoFoam_time_loop_trace.nsys-rep[1/1] [========================100%] cavity_icoFoam_time_loop_trace.nsys-rep
+Generated:
+	/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool/cavity_icoFoam_time_loop_trace.nsys-rep

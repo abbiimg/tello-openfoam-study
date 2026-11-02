@@ -1,0 +1,28 @@
+{
+  "mode": "source-only; no import or archive/helper execution",
+  "native_python": "3.13.13 (main, May  8 2026, 20:31:08) [MSC v.1944 64 bit (ARM64)]",
+  "ast_parse_passed": true,
+  "V1_unchanged": true,
+  "files": {
+    "refresh_compact_native.py": {
+      "sha256": "ed37cfd7b79417b6dc33395ee560419f51c5317912fbbd3e2bc06fab3175507b",
+      "bytes": 25579
+    },
+    "refresh_compact_native_v2.py": {
+      "sha256": "8d715ae0cf688f4397a385a575528ae0ee78b3a066ad88931f0116e3428a24d0",
+      "bytes": 29893
+    },
+    "PLAN.txt": {
+      "sha256": "36dccbd3c37592987a204b28bc43e6bbc44482f0eb6d7ec7f548c7f01754e47f",
+      "bytes": 3375
+    },
+    "PLAN_V2.txt": {
+      "sha256": "a7a09ed0edc1f1a8d2a1a5242fb11566a9cb9fa90d59dad894f2bd8dfa885d1b",
+      "bytes": 2870
+    },
+    "refresh_compact_native_v1_to_v2.diff": {
+      "sha256": "4348a3626048784c52c1d060c49913a1233f2eb73aa44f602b0d70f884160bd2",
+      "bytes": 7914
+    }
+  }
+}

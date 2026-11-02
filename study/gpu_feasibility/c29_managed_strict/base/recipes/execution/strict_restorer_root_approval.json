@@ -1,0 +1,9 @@
+{
+  "kind": "Root-approved bounded strict three-role preparation only",
+  "approved_utc": "2026-11-02T13:06:59.5042206Z",
+  "script_sha256": "a9843f4ce9aed928dde1e8a10de7b49807e475c8dccfd2ca3d5825969394096f",
+  "independent_review_sha256": "c92ca39735f9b3e2aa9da2dc72ab11e61bb405e99d73eeca3d2cbeaa73c90832",
+  "protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "scope": "Fresh fixed root,3roles,allpermissionsfalse,no receipts/build/solver/initialization",
+  "original_cases_preserved": true
+}

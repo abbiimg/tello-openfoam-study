@@ -1,0 +1,23 @@
+{
+  "schema": "new-nsys-native-field-control-helper-freeze-v3-audit-only",
+  "status": "SOURCE_ONLY_AUDIT_SCHEMA_CORRECTION_PENDING_ROOT_REVIEW_NO_GPU_REPEAT",
+  "files": {
+    "README.md": "9e656eaecfd1ef20dd52102a9e7271c328818a306e746e056b7fec0c5f01bb73",
+    "audit_control.py": "1d5b854377d30e84bbfcf6024fb8e3287a3afa6b97978327c769fb4bca288895",
+    "control_child.py": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+    "control_common.py": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+    "linked_libraries.json": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+    "owned_cleanup.py": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+    "protocol.json": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+    "run_control.py": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+    "linux_comm_label_documentation.json": "743bab9ffbad20b548014cf2417779b8784bd071d01d732f22458356cca22bbe"
+  },
+  "generator_sha256": "3a07541ea2479bf068ace880729b0692c2ba739c80e0b2d7bd7e19f63dd83ad4",
+  "source_probe_case_libraries_or_SDK_changed": false,
+  "case_created_or_CFD_run": false,
+  "GPU_run": false,
+  "AST_parse_only_helpers_not_imported": true,
+  "previous_frozen_manifest_sha256": "1e0c435d93a35da9f25f2bd449f3b393b7dd7536ec23907b01a980d3eccad3c6",
+  "source_only_correction": "Audit only: exact approved ASCII15-byte Linux comm metadata alternative, explicit label mode and start/exit identity reconciliation; no application rerun.",
+  "limited_diff_sha256": "f1c679ade58416e410a0972f83572e30515b824987a40c5817daab2ac14609af"
+}

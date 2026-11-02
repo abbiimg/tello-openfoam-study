@@ -1,0 +1,63 @@
+{
+  "schema": "c29-same-2.3-plain-unprofiled-diagnostic-v1",
+  "status": "SOURCE_ONLY_PENDING_ROOT_AND_INDEPENDENT_REVIEW_NO_RUN",
+  "intent": "Distinguish first-step host failure without Nsight overlay from failed profiled attempt; not a speed test or automatic GPU qualification",
+  "case": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/plain_unprofiled_v2_3",
+  "private_root": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102",
+  "required_fresh_experiment_id": "c29_plain_unprofiled_2_3_20261102_a",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "sha256": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185"
+  },
+  "library_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/library_identity.json",
+    "sha256": "c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff"
+  },
+  "linked_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/linked_identity.json",
+    "sha256": "698af06f00bfd1cc142252c2e12eb1e2d30f9e1aaab6f09613020987793004d5"
+  },
+  "source_manifest": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/combined_source_manifest.json",
+    "sha256": "7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5"
+  },
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "native_environment": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh",
+    "sha256": "7cdcd1f4ce2c612bf83c1d8254fb2942fe92af4a788ae3be75ecf6f209e7947d"
+  },
+  "receipt_verifier": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/admission_audit.py",
+    "sha256": "ff05a5c9934a6330561d05c06a1ecf112f02245f0d63a46cfbb2419977092770"
+  },
+  "shared_phi_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+  "strict_pressure_protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "physical_input_policy": "Fresh clone copies ONLY pinned receipt-bound original .6 U/p/shared phi, constant and system inputs, preserves strict numerical dictionaries exactly; only diagnostic ID/receipt/case admission metadata may differ. No advanced controller/time/output reused. Root prepares/audits separately.",
+  "solver_timeout_s": 180,
+  "cleanup_grace_s": 30,
+  "maximum_owned_GPU_solvers": 1,
+  "nice": 15,
+  "minimum_available_memory_GiB": 20,
+  "evidence": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/plain_unprofiled_diagnostic_v1_20261102",
+  "stdout_log": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/plain_unprofiled_diagnostic_v1_20261102/native_gpu_five_stdout.log",
+  "tools_forbidden": [
+    "Nsight",
+    "observer/preload injection",
+    "CUDA-GDB/GDB",
+    "new app/source/library/compiler/driver changes"
+  ],
+  "environment_changes_by_runner": false,
+  "owned_child_policy": "Identical reviewed V3 stop-and-reap module; direct Popen, all post-Popen paths finally clean/reap including pre-pidfd/identity failures, true waited status before postprocessing, wrapper errors separate",
+  "required_approval_bindings": [
+    "root_f14_cpu_external_gate",
+    "exact_shared_startup_gate",
+    "native_windows_31_field_integrity_gate",
+    "fresh_clone_preparation",
+    "fresh launch_receipt"
+  ],
+  "after_run": "Preserve partial/full stdout, actual PID/birth/UID/cwd/exe, true exit, input/lib integrity, 5 source/TILT/time/End or explicit zero-source failure, all saved fields. Root frozen strict CPU\u2192GPU numerical analysis only if run completes; no automatic numerical/GPU execution proof from exit0 or missing CUPTI.",
+  "timing": "PROHIBITED; no performance measurement or conclusion",
+  "GDB": "Held optional; no debugger launched",
+  "app_2_4_build": "NOT_JUSTIFIED_BY_THIS_PROPOSAL; 2.3 remains exact"
+}

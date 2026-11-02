@@ -1,0 +1,39 @@
+{
+  "kind": "Actual basic CUDA managed-memory coherence smoke using pre-existing CUDA13.0 runtime; not stdpar, not CFD, not a kernel-profile proof",
+  "completed_utc": "2026-11-02T06:57:23.257563+00:00",
+  "library": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcudart.so",
+  "elements": 131072,
+  "bytes": 524288,
+  "calls": [
+    {
+      "call": "cudaMallocManaged",
+      "return_code": 0
+    },
+    {
+      "call": "cudaMemset 0x5a",
+      "return_code": 0
+    },
+    {
+      "call": "cudaDeviceSynchronize after GPU fill",
+      "return_code": 0
+    },
+    {
+      "call": "cudaMemset zero",
+      "return_code": 0
+    },
+    {
+      "call": "cudaDeviceSynchronize after GPU clear",
+      "return_code": 0
+    },
+    {
+      "call": "cudaFree",
+      "return_code": 0
+    }
+  ],
+  "host_read_after_device_fill_passed": true,
+  "host_read_after_device_clear_passed": true,
+  "passed": true,
+  "elapsed_s": 0.5356203289993573,
+  "synchronization": "CPU access occurs only before device operations or after cudaDeviceSynchronize; no concurrent CPU/GPU access required.",
+  "no_global_changes": true
+}

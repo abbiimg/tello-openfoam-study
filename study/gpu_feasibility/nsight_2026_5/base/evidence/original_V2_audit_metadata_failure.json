@@ -1,0 +1,14 @@
+{
+  "actual_probe_executions": 1,
+  "actual_probe_PID": 1778006,
+  "actual_probe_return_code": 0,
+  "profiler_return_code": 0,
+  "export_return_code": 0,
+  "original_V2_outer_return_code": 1,
+  "stage": "Postprocessing audit only, after all actual execution completed",
+  "error": "Wrong PROCESSES identity",
+  "observed_raw_process_label": "Test-nativeStdp",
+  "reason": "V2 required the full basename; the new tool stored the exact 15-byte Linux comm label. PID/globalPid and actual executable identity already matched. V3 adds only the documented exact ASCII comm alternative and records its mode.",
+  "GPU_rerun": false,
+  "original_V2_helpers_and_raw_rows_changed": false
+}

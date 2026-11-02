@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_managed_strict_publication_candidate_v2/recipes/replay_completed_cpu_analysis.py",
+    "--base",
+    "/opt/openfoam-workspace/cases/c29_offline_completed_replay_20261102",
+    "--out",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_completed_offline_replay_analysis.json"
+  ],
+  "pid": 1777156,
+  "actual_child_waited": true,
+  "return_code": 0,
+  "started_utc": "2026-11-02T15:13:32.220526+00:00",
+  "completed_utc": "2026-11-02T15:14:18.765178+00:00",
+  "wall_s": 46.544672965974314,
+  "cleanup_actions": [],
+  "log": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_completed_offline_replay.log",
+  "log_sha256": "ae8b7e0ea3181fb21e8cc612641a742dccabed71f2130ca03aa449d2291aade3",
+  "no_solver_build_or_GPU_command": true
+}

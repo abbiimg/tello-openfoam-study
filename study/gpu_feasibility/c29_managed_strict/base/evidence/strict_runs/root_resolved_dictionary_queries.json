@@ -1,0 +1,50 @@
+[
+  {
+    "role": "f14",
+    "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control",
+    "file": "system/fvSolution",
+    "entry": "solvers",
+    "expand": true,
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "role": "cpu",
+    "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu",
+    "file": "system/fvSolution",
+    "entry": "solvers",
+    "expand": true,
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "role": "gpu",
+    "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu",
+    "file": "system/fvSolution",
+    "entry": "solvers",
+    "expand": true,
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

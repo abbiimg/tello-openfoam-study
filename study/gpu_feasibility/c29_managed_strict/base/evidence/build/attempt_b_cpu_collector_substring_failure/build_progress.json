@@ -1,0 +1,52 @@
+{
+  "schema": "c29-managed-strict-compile-only-worker-v2.3",
+  "worker_pid": 385702,
+  "started_utc": "2026-11-02T13:16:24.393080+00:00",
+  "status": "failed_preserve_evidence",
+  "jobs_max_total": 2,
+  "nice": 15,
+  "minimum_reserve_GiB": 20,
+  "backends": {
+    "cpu": {
+      "pid": 385885,
+      "start_ticks": "16533708",
+      "uid": 999,
+      "nice": 15,
+      "argv": [
+        "/bin/bash",
+        "-c",
+        ". /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/build_environment.sh\nset -e\ncd /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/source\nwmake -j1\n"
+      ],
+      "started_utc": "2026-11-02T13:16:24.705720+00:00",
+      "MemAvailable_kib_at_start": 59140348,
+      "status": "failed_preserve_evidence",
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102",
+      "exit_code": 0,
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py\", line 105, in main\n    result=collect(backend,prefix,method,manifest,child)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py\", line 56, in collect\n    if backend=='cpu':assert '-DC29_USE_CUDA=0' in compile_lines[0] and not any(x in compile_lines[0] for x in ['-DFOAM_OFFLOAD','-stdpar','-gpu='])\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    "gpu": {
+      "pid": 386394,
+      "start_ticks": "16533740",
+      "uid": 999,
+      "nice": 15,
+      "argv": [
+        "/bin/bash",
+        "-c",
+        ". /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/build_environment.sh\nset -e\ncd /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/source\nwmake -j1\n"
+      ],
+      "started_utc": "2026-11-02T13:16:25.019129+00:00",
+      "MemAvailable_kib_at_start": 59122948,
+      "status": "linked_no_runtime",
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102",
+      "exit_code": 0,
+      "binary_sha256": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185",
+      "linked_identity_sha256": "698af06f00bfd1cc142252c2e12eb1e2d30f9e1aaab6f09613020987793004d5"
+    }
+  },
+  "application_executed": false,
+  "case_mutated": false,
+  "worker_source_sha256": "cbb198b1811146ea38163581131a282e0f37d23ee39ac851ee7198084737f795",
+  "MemAvailable_kib": 58884168,
+  "ended_utc": "2026-11-02T13:17:24.424515+00:00"
+}

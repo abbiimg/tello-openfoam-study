@@ -1,0 +1,49 @@
+{
+  "review_kind": "independent_bounded_v1_to_v2_source_ast_hash_diff_review",
+  "verdict": "no_concrete_source_blockers",
+  "blockers": [],
+  "files": {
+    "work/native_compact_refresh_proposal/refresh_compact_native_v2.py": "8d715ae0cf688f4397a385a575528ae0ee78b3a066ad88931f0116e3428a24d0",
+    "work/native_compact_refresh_proposal/PLAN_V2.txt": "a7a09ed0edc1f1a8d2a1a5242fb11566a9cb9fa90d59dad894f2bd8dfa885d1b",
+    "work/native_compact_refresh_proposal/refresh_compact_native_v1_to_v2.diff": "4348a3626048784c52c1d060c49913a1233f2eb73aa44f602b0d70f884160bd2",
+    "work/native_compact_refresh_proposal/refresh_compact_native.py": "ed37cfd7b79417b6dc33395ee560419f51c5317912fbbd3e2bc06fab3175507b",
+    "work/native_compact_refresh_proposal/PLAN.txt": "36dccbd3c37592987a204b28bc43e6bbc44482f0eb6d7ec7f548c7f01754e47f"
+  },
+  "independent_static_checks": {
+    "native_python": "3.13.13 (main, May 8 2026, 20:31:08) [MSC v.1944 64 bit (ARM64)]",
+    "ast_parse_passed": true,
+    "supplied_diff_exactly_reconstructed": true,
+    "imports_unchanged": true,
+    "unchanged_existing_function_count": 25,
+    "changed_existing_functions": ["source_files", "inventory", "main"],
+    "new_functions": ["require_spuma_inventory", "reviewed_spuma_files"],
+    "raw_case_and_zipinfo_logic_unchanged": true,
+    "cpu84_pins_and_membership_unchanged": true,
+    "backup_source_hash_crc_atomic_and_failure_guards_unchanged": true
+  },
+  "spuma_binding": {
+    "outer_manifest_sha256": "4824419c7cb30822ddb51230c6976e0739028901d795a1365e331001319b4edd",
+    "outer_manifest_current_hash_observed_exact": true,
+    "only_hidden_exceptions": [
+      "gpu_feasibility/spuma/spuma_evidence/original_failed/.spuma-smoke-started",
+      "gpu_feasibility/spuma/spuma_evidence/strict_v2/.strict-v2-started"
+    ],
+    "both_current_marker_size_zero_and_empty_sha_observed": true,
+    "required_marker_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_requires_regular_single_link_and_no_reparse_ancestors": true,
+    "source_requires_all_manifested_files_plus_outer_manifest_in_selected_inventory": true,
+    "source_checks_all_selected_spuma_sizes_and_hashes": true,
+    "no_other_unbound_hidden_paths_admitted": true,
+    "historical_nested_manifests_preserved_as_bytes": true
+  },
+  "limitations": [
+    "All limitations and closed-writer execution condition of the v1 independent source review remain applicable.",
+    "Independent AST parsing and file identity observations are not helper execution or archive-validation success.",
+    "Root must separately confirm all output writers closed before the one actual packaging action."
+  ],
+  "imported_or_executed_helper": false,
+  "opened_or_modified_archives": false,
+  "output_case_source_git_cfd_gpu_compiler_mutation": false,
+  "only_writes_independent_review_records_outside_proposal": true,
+  "execution_authorized_by_this_review": false
+}

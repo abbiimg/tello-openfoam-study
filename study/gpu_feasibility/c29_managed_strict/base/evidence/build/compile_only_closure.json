@@ -1,0 +1,43 @@
+{
+  "status": "COMPILE_AND_LINK_COMPLETE_NO_APPLICATION_MAIN_INITIALIZATION_OR_CFD_RUN",
+  "both_wmake_exit_codes": {
+    "cpu": 0,
+    "gpu": 0
+  },
+  "source_files_unchanged_and_identical_to_combined_manifest": {
+    "cpu": true,
+    "gpu": true
+  },
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "binaries": {
+    "cpu": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+      "sha256": "535cb85ecb08b34b6a6ff08a00d1afc1857b68f041d4e89df309e2dbb5c01e89",
+      "size_bytes": 1037696
+    },
+    "gpu": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+      "sha256": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185",
+      "size_bytes": 6562320
+    }
+  },
+  "known_owned_PIDs_all_absent": [
+    384943,
+    385126,
+    385499,
+    385702,
+    385885,
+    386394
+  ],
+  "MemAvailable_kib": 59137840,
+  "case_inputs_or_controls_modified": false,
+  "collector_recovery_sha256": "c2d3950e13e594be4d4430aa6e33995901fe92c4ef881338a7daef8f7c40f71c",
+  "linked_identity_sha256": {
+    "cpu": "ae0e6c63c99772d58bce4887db8631ff8dc990540684aae4011bcc1da549f088",
+    "gpu": "698af06f00bfd1cc142252c2e12eb1e2d30f9e1aaab6f09613020987793004d5"
+  },
+  "library_identity_sha256": {
+    "cpu": "3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80",
+    "gpu": "c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff"
+  }
+}

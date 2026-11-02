@@ -1,0 +1,12 @@
+[  0%] Built target umpire_tpl_json
+[  1%] Built target umpire_tpl_judy
+[  1%] Built target umpire_tpl_CLI11
+[  4%] Built target camp
+[  9%] Built target fmt
+[  9%] Built target umpire_alloc
+[ 22%] Built target umpire_util
+[ 40%] Built target umpire_resource
+[ 47%] Built target umpire_event
+[ 77%] Built target umpire_strategy
+[ 93%] Built target umpire_op
+[100%] Built target umpire

@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-11-02T11:55:58.031249+00:00",
+  "argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam",
+    "-case",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu"
+  ],
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam",
+  "binary_sha256": "77d1841b6806ddda4ffc3be7c8aca3788b42ca61d5e04ffa8a8a4d352438c3ba",
+  "case": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu",
+  "wrapper_pid": 375368,
+  "environment": {
+    "WM_OPTIONS": "linuxARM64GccDPInt32Opt",
+    "WM_COMPILER": "Gcc",
+    "WM_MPLIB": "none",
+    "FOAM_MEMORY_POOL": null,
+    "LD_PRELOAD": null,
+    "NSYS_NVTX_PROFILER_REGISTER_ONLY": null
+  },
+  "loaded_library_candidates_sha256": {
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfiniteVolume.so": "4f1881d27bd62e95b1cbc10127d9b24c40b62e1aab7164525b6b9ed4946bfb93",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libmeshTools.so": "956a3672d95ac04269f22c4cafb15d4c657e843bcc6a49182e851a2c4250d4d3",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libOpenFOAM.so": "5e00ef9264bac830689c618a79697134bdaea0b55eb98c8a19d621ad1e833256",
+    "/lib/aarch64-linux-gnu/libstdc++.so.6": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+    "/lib/aarch64-linux-gnu/libm.so.6": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+    "/lib/aarch64-linux-gnu/libgcc_s.so.1": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+    "/lib/aarch64-linux-gnu/libc.so.6": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy/libPstream.so": "ee2b584f1a73805d9409d4e8087a6c3db7f502249499fb64f7a36a3068150c35",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfileFormats.so": "6544683c601c4ab168bde158f0d6ea43e8fc3ae02f2f0f5dad22e7abdb004a27",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libsurfMesh.so": "3bd6a715190bae77bd4e9de401989f06c33cce9205c0adea5f3d54901ab78374",
+    "/lib/aarch64-linux-gnu/libz.so.1": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3"
+  },
+  "ldd": "\tlinux-vdso.so.1 (0x0000fef83a7dc000)\n\tlibfiniteVolume.so => /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfiniteVolume.so (0x0000fef838000000)\n\tlibmeshTools.so => /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libmeshTools.so (0x0000fef8376a0000)\n\tlibOpenFOAM.so => /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libOpenFOAM.so (0x0000fef8368f0000)\n\tlibstdc++.so.6 => /lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000fef836650000)\n\tlibm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000fef8365a0000)\n\tlibgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x0000fef836560000)\n\tlibc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000fef8363a0000)\n\t/lib/ld-linux-aarch64.so.1 (0x0000fef83a7a0000)\n\tlibPstream.so => /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy/libPstream.so (0x0000fef836370000)\n\tlibfileFormats.so => /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfileFormats.so (0x0000fef8361f0000)\n\tlibsurfMesh.so => /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libsurfMesh.so (0x0000fef835f10000)\n\tlibz.so.1 => /lib/aarch64-linux-gnu/libz.so.1 (0x0000fef835ed0000)\n",
+  "actual_child": {
+    "pid": 375554,
+    "uid": 999,
+    "birth_start_ticks": 16051041,
+    "state_at_receipt": "R",
+    "cwd": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu",
+    "exe": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam"
+  },
+  "completed_utc": "2026-11-02T11:55:58.069770+00:00",
+  "return_code": 0,
+  "binary_sha256_after": "77d1841b6806ddda4ffc3be7c8aca3788b42ca61d5e04ffa8a8a4d352438c3ba",
+  "log": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_cpu/solver.log",
+  "log_sha256": "929d4c8dd6853341bdd95b003eac858485be24e93c0a8b84d51652753e334c34",
+  "actual_child_waited": true,
+  "outer_profiler_status_is_separate": true
+}

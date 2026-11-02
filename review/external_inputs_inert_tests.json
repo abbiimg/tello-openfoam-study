@@ -1,0 +1,99 @@
+{
+  "passed": 22,
+  "failed": 0,
+  "fixture_root": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\source_export_external_inputs\\inert_7646560e639b487ca71d2017265df196",
+  "checks": [
+    {
+      "check": "dry run verifies and writes nothing",
+      "passed": true
+    },
+    {
+      "check": "restore creates complete exact files and cleans staging",
+      "passed": true
+    },
+    {
+      "check": "idempotent exact existing files skipped",
+      "passed": true
+    },
+    {
+      "check": "existing mismatch never overwritten",
+      "passed": true
+    },
+    {
+      "check": "whole archive hash/size enforced",
+      "passed": true
+    },
+    {
+      "check": "all staged hashes pass before any publication",
+      "passed": true
+    },
+    {
+      "check": "zip_parent",
+      "passed": true
+    },
+    {
+      "check": "zip_backslash",
+      "passed": true
+    },
+    {
+      "check": "zip_absolute",
+      "passed": true
+    },
+    {
+      "check": "zip_reserved",
+      "passed": true
+    },
+    {
+      "check": "zip_duplicate",
+      "passed": true
+    },
+    {
+      "check": "ZIP symlink rejected",
+      "passed": true
+    },
+    {
+      "check": "target_parent",
+      "passed": true
+    },
+    {
+      "check": "target_git",
+      "passed": true
+    },
+    {
+      "check": "target_alias",
+      "passed": true
+    },
+    {
+      "check": "member_count",
+      "passed": true
+    },
+    {
+      "check": "identity",
+      "passed": true
+    },
+    {
+      "check": "actual destination junction/symlink refused",
+      "passed": true
+    },
+    {
+      "check": "CLI rejects arbitrary replacement manifest",
+      "passed": true
+    },
+    {
+      "check": "atomic publication never overwrites a new competing file",
+      "passed": true
+    },
+    {
+      "check": "actual >400-character destination restored with scoped native paths",
+      "passed": true
+    },
+    {
+      "check": "all90 mappings exact verified archive catalogue and pinned archive",
+      "passed": true
+    }
+  ],
+  "scientific_archive_opened": false,
+  "export_modified": false,
+  "actual_manifest_sha256": "67b8c09c37c5ed1939152c4f5b7732a377e94bddb8ae007cee10fcd2873f4e79",
+  "helper_sha256": "a91144e5cb243c4bf17339501f29dc43609906538156ac21937ec42854789e1d"
+}

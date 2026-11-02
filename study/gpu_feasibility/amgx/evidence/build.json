@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+    "--build",
+    "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/build",
+    "--target",
+    "amgxsh",
+    "amgx_capi",
+    "--parallel",
+    "1",
+    "--",
+    "-Otarget"
+  ],
+  "returncode": 0,
+  "elapsed_s": 4.309932163974736,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/build-1793604970.log",
+  "max_jobs": 1,
+  "nice_level": 15,
+  "source_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "library": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/build/libamgxsh.so",
+  "library_exists": true,
+  "example": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/build/examples/amgx_capi",
+  "example_exists": true,
+  "no_global_changes": true,
+  "no_cfd_launched": true,
+  "mpi_enabled": false,
+  "library_sha256": "b6d60636e1dd5e817cd3af755566e13256941d246e3496af99c4db9520ab568f"
+}

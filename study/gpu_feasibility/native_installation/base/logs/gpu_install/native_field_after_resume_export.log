@@ -1,0 +1,23 @@
+Generating SQLite file /opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.sqlite from /opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.nsys-rep
+Processing [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.sqlite] with [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+47.3,1023435352,1,1023435352.0,1023435352.0,1023435352,1023435352,0.0,cuMemAllocManaged
+20.3,440397571,9,48933063.4,7659158.0,44585,395917992,130160720.8,cudaLaunchKernel
+18.2,393679214,1,393679214.0,393679214.0,393679214,393679214,0.0,cuLibraryLoadData
+5.7,124123231,1,124123231.0,124123231.0,124123231,124123231,0.0,cudaMallocManaged
+3.4,73878237,12,6156519.8,7205846.0,4721,8186469,2951021.9,cudaStreamSynchronize
+2.4,51147985,2,25573992.5,25573992.5,255799,50892186,35805332.6,cuLibraryUnload
+0.9,19665412,3,6555137.3,5893936.0,5352589,8418887,1636592.9,cudaLaunchKernelExC
+0.7,15106527,2,7553263.5,7553263.5,44041,15062486,10619644.3,cudaFree
+0.5,10914744,1,10914744.0,10914744.0,10914744,10914744,0.0,cuMemAlloc_v2
+0.5,10546890,1,10546890.0,10546890.0,10546890,10546890,0.0,cuMemAllocHost_v2
+0.1,1649549,2,824774.5,824774.5,730283,919266,133631.2,cudaMemcpyAsync
+0.0,311519,480,649.0,288.0,192,155265,7073.1,cuGetProcAddress_v2
+0.0,53692,4,13423.0,4553.5,1280,43305,20010.8,cuCtxSetCurrent
+0.0,31239,1,31239.0,31239.0,31239,31239,0.0,cudaMalloc
+0.0,27207,6,4534.5,4329.0,2433,7362,1586.5,cuLibraryGetKernel
+0.0,12099,1,12099.0,12099.0,12099,12099,0.0,cudaDeviceSynchronize
+0.0,9506,1,9506.0,9506.0,9506,9506,0.0,cudaGetDeviceProperties
+0.0,7089,1,7089.0,7089.0,7089,7089,0.0,cuInit
+0.0,6002,1,6002.0,6002.0,6002,6002,0.0,cuModuleGetLoadingMode
+

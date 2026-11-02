@@ -1,0 +1,23 @@
+{
+  "kind": "Root pre-execution approval of distinct strict five-step cavity protocol",
+  "date_utc": "2026-11-02",
+  "protocol_sha256": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+  "approved": true,
+  "scope": "Fresh matched CPU/native-GPU preparation, one byte-identical generated mesh, unchanged initial/boundary/transport inputs, all p corrections relTol0 at original absolute criteria, five steps to .025, strict per-corrector and independent conservation checks, exact child exit and source/library/input identities",
+  "field_comparison_criteria_approved_before_data": true,
+  "additional_GPU_proof_requirements": [
+    "Filter launch and completion events to the actual solver's globalTid and the complete first-step NVTX window",
+    "At least one successful launch, zero failed launch/synchronization calls, and a successful same-thread device/context completion synchronization after the last launch before the window ends",
+    "Verify capture actually started and stopped on the named range; do not infer execution from flags or startup calls"
+  ],
+  "conditions": [
+    "Freeze/hash mechanical validators and annotated application source/patch before each respective run",
+    "Original stock all-corrector screen failure remains visible; no retrospective criterion changes",
+    "New cases refuse existing destinations; no vendor/SDK/global environment/default changes",
+    "Native original worker may finish its current cached build and original stock run; do not replay earlier build stages",
+    "Retire the exact idle old profile watcher after verifying original main termination; avoid a full-horizon all-loop profile",
+    "Use max1 additional nice15 compilation process for the separate annotated application, retain at least20GiB available memory"
+  ],
+  "limits": "A short framework functionality/parity check, not the C29 rotor validation, a completed original .5-horizon gate, a kernel-activity timeline or a performance result",
+  "runtime_validated": false
+}

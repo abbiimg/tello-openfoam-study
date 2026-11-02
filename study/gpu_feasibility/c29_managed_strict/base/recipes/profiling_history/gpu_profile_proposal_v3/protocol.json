@@ -1,0 +1,100 @@
+{
+  "schema": "c29-native-gpu-five-functional-profile-proposal-v1",
+  "status": "SOURCE_ONLY_PENDING_ROOT_REVIEW_NO_RUN_OR_ADMISSION",
+  "private_root": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102",
+  "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "sha256": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185"
+  },
+  "library_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/library_identity.json",
+    "sha256": "c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff"
+  },
+  "linked_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/linked_identity.json",
+    "sha256": "698af06f00bfd1cc142252c2e12eb1e2d30f9e1aaab6f09613020987793004d5"
+  },
+  "source_manifest": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/combined_source_manifest.json",
+    "sha256": "7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5"
+  },
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "native_environment": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh",
+    "sha256": "7cdcd1f4ce2c612bf83c1d8254fb2942fe92af4a788ae3be75ecf6f209e7947d"
+  },
+  "receipt_verifier": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/admission_audit.py",
+    "sha256": "ff05a5c9934a6330561d05c06a1ecf112f02245f0d63a46cfbb2419977092770"
+  },
+  "root_input_audit": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit.json",
+    "sha256": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926"
+  },
+  "strict_pressure_protocol": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_protocol.json",
+    "sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd"
+  },
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "shared_phi_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+  "nsys": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+    "sha256": "ab0bc30cb1ec131a19fbb1ddae8f6bc84314cca34c3019103a70229243054cac"
+  },
+  "nsys_root": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems",
+  "first_step_range": "C29_NATIVE_TIME_STEP",
+  "required_subranges": {
+    "C29_CORE_MOMENTUM_ASSEMBLY": 1,
+    "C29_CORE_MOMENTUM_PREDICTOR_UFINAL": 1,
+    "C29_CORE_PRESSURE_CORRECTOR": 2
+  },
+  "nsys_flags": [
+    "--trace=cuda,nvtx",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--capture-range=nvtx",
+    "--nvtx-capture=C29_NATIVE_TIME_STEP",
+    "--capture-range-end=stop",
+    "--kill=none",
+    "--cuda-trace-scope=process-tree",
+    "--wait=all",
+    "--discard-environment=true",
+    "--stats=false",
+    "--force-overwrite=false"
+  ],
+  "child_environment_change": {
+    "NSYS_NVTX_PROFILER_REGISTER_ONLY": "0"
+  },
+  "observer_added": false,
+  "preload_policy": "Inherit Nsight injection LD_PRELOAD unchanged; preserve original components/order; added loader paths only from pinned Nsight installation",
+  "solver_timeout_s": 900,
+  "cleanup_grace_s": 30,
+  "profiler_timeout_s": 1050,
+  "profiler_cleanup_timeout_s": 120,
+  "export_timeout_s": 300,
+  "maximum_own_GPU_processes": 1,
+  "nice": 15,
+  "minimum_available_memory_GiB": 20,
+  "evidence": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102",
+  "stdout_log": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_gpu_five_stdout.log",
+  "preconditions": [
+    "Separate explicit Root approval bound to this protocol/helper manifest and fresh five-step receipt",
+    "Root explicit external F14-to-CPU strict numerical gate JSON/hash must be bound with root_asserted_pass true",
+    "Exact shared startup comparison JSON/hash must be bound with root_asserted_pass true",
+    "Fresh Root receipt must reverify before profiler injection and receipt-bound inputs/binary/libs must reverify immediately before direct child"
+  ],
+  "execution_proof": [
+    "Actual direct solver child exit0, birth ticks, UID999, cwd, executable, binary hash and sampled loaded library hashes, separate from profiler/export exits",
+    "Exactly five time/source/controller updates, End and finite logs, original case bytes unchanged",
+    "Capture start/end messages and exactly one COMPLETE first-step NVTX window",
+    "Correct NVIDIA globalTid PID/TID formula and actual PROCESSES row binding",
+    "Launch and sync returnValue columns required; zero failed captured launch/sync calls on actual solver thread",
+    "Successful launches inside each required assembly, predictor and both pressure windows",
+    "Successful same-thread device/context synchronization starting after the LAST launch and ending inside EACH required window and full step",
+    "No captured solver-thread launch after the first-step window"
+  ],
+  "numerical_acceptance": "Separate unchanged frozen strict d600 analyzer and Root review required; this profile validator does not confer numerical/scientific acceptance",
+  "performance_claim": "None; capture, address checks and concurrent work preclude timing/speed conclusions",
+  "case_source_control_or_permission_changes_by_preparation": false
+}

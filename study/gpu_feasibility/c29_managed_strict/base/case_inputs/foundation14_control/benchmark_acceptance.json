@@ -1,0 +1,37 @@
+{
+  "schema": "preregistered-isolated-cuda-cfd-acceptance-v1",
+  "registered_before_any_fresh_benchmark_solver_launch": true,
+  "physics_and_start": "Byte-identical immutable mesh, physical dictionaries, actuator/controller source and exact0.6 U,p; identical controller reinitialization. Same time-step controls and0.6–0.62 s end window. No phi seed.",
+  "mean_window_s": [0.61, 0.62],
+  "reference_selection": "Run fresh native CPU serial/direct-GAMG and native CPU MPI2/direct-GAMG under the same host load; use the faster full-run elapsed time as the native denominator. Report both CPU results, and also compare steady rates against the better native steady rate.",
+  "accuracy": {
+    "maximum_mean_vertical_lift_relative_difference": 0.001,
+    "maximum_mean_inferred_electrical_input_relative_difference": 0.001,
+    "maximum_final_volume_weighted_velocity_relative_L2": 0.002,
+    "maximum_final_volume_weighted_pressure_relative_L2": 0.002,
+    "relative_L2_definition": "sqrt(sum(V*|candidate-reference|^2)/sum(V*|reference|^2)); vector norm for U; same anchored pressure gauge with no fitted offset. Zero/near-zero denominator is inconclusive rather than an automatic pass.",
+    "mean_definition": "Time-weighted means from actual computed force/power diagnostics over0.61–0.62 s, with identical endpoint handling for all variants.",
+    "native_consistency_required": "Check CPU1 versus CPU2 physical/field consistency too; do not use a numerically suspect comparator merely because it is faster.",
+    "fatal_errors_allowed": 0,
+    "max_iteration_hits_allowed": 0,
+    "continuity": "No unexplained deterioration versus fresh native CPU envelope. Flag any peak absolute local/global/cumulative continuity metric above the larger native value plus1e-12 for explicit review; no automatic default eligibility while flagged."
+  },
+  "gpu_execution_evidence": [
+    "Actual Ginkgo CudaExecutor description, CUDA device id and owner rank recorded after executor creation in real CFD logs",
+    "Inactive rank's actual ReferenceExecutor record",
+    "Successful real CUDA-buffer and CUDA reduction MPI gate before CFD",
+    "One-second GPU/process/utilization samples plus loaded GPU-library maps and host foamRun states; WSL nvidia-smi limitations explicitly retained"
+  ],
+  "timing": {
+    "report_startup": "Solver launch to first completed physical time step, observed from the first native ExecutionTime record; includes first matrix/device setup. Record observation polling uncertainty.",
+    "report_steady": "After first completed step to last completed step: wall time, physical time advanced, step count and steady simulated-seconds/wall-second rate; report native log CPU/ClockTime counters too.",
+    "report_full": "Full runner wall including input verification, decomposition, solver/device startup/transfers, reconstruction and cleanup; solver phase also separately reported.",
+    "matched_host_load_required": true,
+    "historical_timing_denominator_allowed": false,
+    "practical_default_screen_minimum_full_wall_reduction": 0.20,
+    "practical_default_screen_minimum_throughput_ratio": 1.25,
+    "default_policy": "This20% wall reduction is a practical screening threshold, not automatic adoption. A tiny/ambiguous gain, host-load mismatch, missing accuracy evidence or worse steady throughput leaves CUDA nondefault; root retains the production decision. Longer-run/batch throughput confirmation may still be needed."
+  },
+  "production_default_changed": false,
+  "solver_launched_by_registration": false
+}

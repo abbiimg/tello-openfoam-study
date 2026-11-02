@@ -150,14 +150,15 @@ source pins, compatibility patch and actual frozen benchmark inputs.
 A separate official stdpar GPU implementation covers incompressible flow;
 the pressure-only Ginkgo measurement above cannot establish its performance.
 Current OpenCFD core/develop identifies a GPU-branch merge (68a81857/API2609).
-This computer has no installed nvc++/NVHPC or ready stdpar OpenFOAM build.
-Its basic managed-memory support leaves a possible managed-mode route, while
-the GH200 unified-memory defaults cannot be assumed suitable. The Foundation
-actuator would also need a verified target-branch port. No native stdpar
-build, actuator run or speedup was measured here. The supplied published
-4–5x example uses a much larger grid and different hardware. Primary sources,
-the local inventory and the required validation gates are documented in
-gpu_feasibility/native_stdpar/README.md and local_inventory.json beside it.
+The early feasibility inventory preceded the newly authorized private GPU
+installations. Current dependency, GPU execution and OpenFOAM integration
+status is tracked in gpu_feasibility/GPU_SETUP.md. Native stdpar, SPUMA and
+the bounded AmgX adapter are separate from the completed CPU lift matrix;
+their installed/tested scopes and performance must be checked individually.
+The GH200 unified-memory defaults cannot be assumed suitable on this WSL
+driver. The supplied published 4–5x example uses a much larger grid and
+different hardware. Primary sources and the historical local inventory are
+retained in gpu_feasibility/native_stdpar/README.md and local_inventory.json.
 
 ACTUAL EXECUTION / REPRODUCTION
 Use Linux, OpenFOAM Foundation14, Open MPI, a compiler, Python3.10+ and a
@@ -230,6 +231,11 @@ directories are excluded. Allrun refuses previously started cases by design.
 The flow images are actual saved velocity snapshots at the stated time,
 not time-averaged velocity fields. flow_provenance.json records source hashes,
 native renderer requests and the common display crop/scale.
+flow_best_square.png is the separate actual Square8/8cm/raised7.5degree
+snapshot, not a replacement for the immutable flat/10degree layout panels.
+Its hashes/crop/mean-versus-snapshot labels are in
+flow_best_square_provenance.json; publish_final_flow.py composes it from the
+preserved raw render and final CSV without rerunning CFD.
 
 CIRCULAR LAYOUT QUESTION
 circle_geometry.png is a geometry-only illustration. Separate actual CFD
@@ -261,3 +267,11 @@ command. This restricts circular eight-rotor optimization to nearest spacing
 eligibility. Old wider Circle tests,
 wide quad benchmarks, unqualified measurements and historical geometry input
 declarations remain visible; no CFD input or computed result is changed.
+
+PRIVATE PROJECT REPOSITORY
+https://github.com/abbiimg/tello-openfoam-study
+The initial private publication is commit f0c4fea7a3652293a5970a9424221eb525a1688b.
+It contains the selected reproducible case inputs, tools and a preliminary
+82-result snapshot. Final approval/results and validated GPU setup evidence
+will be added after their respective checks. Installed WSL software and the
+full reconstructed flow archive are kept outside Git, as documented there.

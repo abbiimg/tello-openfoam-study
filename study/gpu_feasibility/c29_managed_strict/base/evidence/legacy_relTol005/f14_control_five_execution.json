@@ -1,0 +1,249 @@
+{
+  "kind": "Actual five-fixed-step original Foundation14 C29 control; not performance measurement",
+  "started_utc": "2026-11-02T12:23:11.243169+00:00",
+  "binary": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/bin/foamRun",
+  "binary_sha256": "3df39f3a5a3020c4dafee9d20063f9525a6556be874e9202aa5d122d0c9970da",
+  "command": [
+    "nice",
+    "-n",
+    "15",
+    "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/bin/foamRun",
+    "-case",
+    "/opt/openfoam-workspace/cases/native_c29_validation_20261102/foundation14_control"
+  ],
+  "case": "/opt/openfoam-workspace/cases/native_c29_validation_20261102/foundation14_control",
+  "case_before": {
+    "benchmark_acceptance.json": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+    "benchmark_manifest.json": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+    "Allrun": "d6bcd776045cb29ebf5290bcc7f8b70e74d5ab22d2bdda5b24d02b1eeef94471",
+    "source_geometry.json": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+    "run_benchmark.py": "6e3e6fa94f1b926d0ebdc89cacfd028affb8290be1a14a90cd9c1de03b1230da",
+    "frozen_numerics_helper.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+    "geometry.json": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245",
+    "case.foam": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_initialization.json": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f",
+    "case_preparation.json": "d0df3facb489d870b074390d7a3705296281ddba274c3745758083ad68e55fa2",
+    "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "constant/rotorParameters": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+    "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "0.6/p": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+    "0.6/U": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+    "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+    "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+    "system/fvSolution": "cf30492975ca99d34bb83e7c63a1f8234b4bb6c4a7d224b15b61b00347c16d0e",
+    "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "system/controlDict": "56c516940b8d6b93ee7661e6598b3a3a558fce27c6e18c027fd0ee4b637667e5",
+    "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+    "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+    "constant/polyMesh/cellProc": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+    "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+    "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+    "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+    "dynamicCode/rotors/codedFvModelTemplate.C": "64c8dba28325ff52528d56a2a97567cce67952e11dab624a055833d698477035",
+    "dynamicCode/rotors/codedFvModelTemplate.H": "aa920deb2006f8fc0d0fe6ac6146b650b9038f5c1d8081328b6ed3b657a1b7bc",
+    "dynamicCode/platforms/linuxArm64GccDPInt32Opt/lib/librotors_7ae57bb77feaae19c26ff305b44ebb5a6819f2ef.so": "402b112e09f36444ac13d19a3a04f3aca24344a632eb7a258fd11fc3a33392ce",
+    "dynamicCode/rotors/lnInclude/codedFvModelTemplate.C": "64c8dba28325ff52528d56a2a97567cce67952e11dab624a055833d698477035",
+    "dynamicCode/rotors/lnInclude/codedFvModelTemplate.H": "aa920deb2006f8fc0d0fe6ac6146b650b9038f5c1d8081328b6ed3b657a1b7bc",
+    "dynamicCode/rotors/Make/SHA1Digest": "df172e8c8e38ded0d1c2444fd6333451028ca245bc93dd679dcf4f9679d4263a",
+    "dynamicCode/rotors/Make/options": "21b8c629db5ff3ca324a14402ba1600ba3ceade029da53670e2cbf006912b2d6",
+    "dynamicCode/rotors/Make/files": "67c840d4f8c9b4bab28c7414cef00bc826e71cd6e6475cb80b948f5dcac7ed57",
+    "dynamicCode/rotors/Make/linuxArm64GccDPInt32Opt/codedFvModelTemplate.o": "f3e9fb265626cd378a3b483328a4812a15c8b450a4eb0e333d4a771a44cb4c6f",
+    "dynamicCode/rotors/Make/linuxArm64GccDPInt32Opt/files": "171366624c9bb3814cb2a346a3e2c9f20b0f722fb3240870a95b42380ba535b5",
+    "dynamicCode/rotors/Make/linuxArm64GccDPInt32Opt/codedFvModelTemplate.C.dep": "fd6d4597fc2521dff1e161323341c9a5f2e6231c0dcbbe722bd0f9907a3797ac"
+  },
+  "preregistered_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "controller": "Fresh process, no priming or transferred controller history",
+  "initial_phi": "Compute original constructor from pinned U; native CPU startup matched exactly",
+  "expected_steps": 5,
+  "start_s": 0.6,
+  "end_s": 0.6005,
+  "fixed_dt_s": 0.0001,
+  "actual_child_pid": 380571,
+  "actual_birth_tick": "16214366",
+  "actual_child_returncode": 0,
+  "loaded_libraries_observed": [
+    {
+      "path": "/etc/ld.so.cache",
+      "sha256": "512c542d85f732e19a099c877a35d1f5f9a705bf2168063967528c29fe8c8608"
+    },
+    {
+      "path": "/opt/openfoam-workspace/cases/native_c29_validation_20261102/foundation14_control/dynamicCode/platforms/linuxArm64GccDPInt32Opt/lib/librotors_7ae57bb77feaae19c26ff305b44ebb5a6819f2ef.so",
+      "sha256": "402b112e09f36444ac13d19a3a04f3aca24344a632eb7a258fd11fc3a33392ce"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "667a228e7dacf27b00bb3627421334b378c628024e58483c6f0fb40b6773a7b2"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libbasicFluidSolver.so",
+      "sha256": "46f1f54cad040d818a05b4b724c88b9d8ce356821e453759dc9d635d19d7a666"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libcompressibleMomentumTransportModels.so",
+      "sha256": "514889075796a697888830b3733786b9c220a37eb158f82c2bcf465d42118096"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfileFormats.so",
+      "sha256": "51b6cac8342475de1f7ea59a168367f6f1ac7d15d2e3739c5d4f265b41d19c37"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "70ea400d4a76d54887e533880f5bcbfdc85b7f0875e1ecbcd0cad7aaa0c23fcf"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfluidThermoThermophysicalTransportModels.so",
+      "sha256": "ba889aa4add4edba5e88b86438799defb60727ff0ca0e44430dd4804a6f2b8f4"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfluidThermophysicalModels.so",
+      "sha256": "7b58c8820ea65425bcf8619de83c1e3106776e96395ece542f725646a12d8e37"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfluidThermophysicalTransportModel.so",
+      "sha256": "005801a1901742b0a71a1f411cb9f99ab70d7f18e8b9c68074103b757b14ccd4"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfvConstraints.so",
+      "sha256": "39652e8418e5b955997307f19b57c7886a77717c17d0da647b5cbd5f76ac0cbb"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfvModels.so",
+      "sha256": "9e0a779ca5e1584e3b5e0290d21faf6f6f9015385f16e7bd9835441c8acde635"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libincompressibleFluidSolver.so",
+      "sha256": "8d771200b98d21379606b3d508b1c321e0f1db83abaf21e3ff539f874376f862"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libincompressibleMomentumTransportModels.so",
+      "sha256": "54a6a3bad8ad5769414aace5bd9e70f395f533b3d2957ff47e095b48c2aa98cd"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/liblagrangian.so",
+      "sha256": "a4a6f2b001d9a72fe872329cef764f3a5c91c5957f61380c28bbb6a372ad856f"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "53f02be63c87386924790b86960d4f8db3e74ec178f09ac3e4a1979aac43ebc7"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libmomentumTransportModels.so",
+      "sha256": "0cf3a44433834e25c68d92e2b23a367e3ba10f16d10f71aeb254d02aca219313"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libmulticomponentThermophysicalModels.so",
+      "sha256": "c2c1c6989e94dd8556542ecc98517d0eb5e22afe155ccc9f7250c44e387ed91b"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libphysicalProperties.so",
+      "sha256": "ed738df379d4207f2f948f2ead48a1f270d21fb84157bffc764ad28aaabd3bc3"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libsampling.so",
+      "sha256": "95c30365e0613acc7cdc6421eedad7937986f28dda8a32c1cdc5452ed31f5f76"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libsolidThermo.so",
+      "sha256": "ab0e90dea05d4657b771d77c9cb5899e245a1183abc5b725178e4e462aaa366c"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libspecie.so",
+      "sha256": "e5ec44d60bf28aaab61f4a08d1dedc20aec89f00fa4e2491c5a54883ba8003c6"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libsurfMesh.so",
+      "sha256": "43dcce4c58fa26183c9622d8498312c2f3e04136bb53f18e633de27841dba6da"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libthermophysicalProperties.so",
+      "sha256": "99ae48e100cf52c129c75a6bbca2b2d08f3bfe43230d98fb347d80db54c17f69"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libthermophysicalTransportModel.so",
+      "sha256": "014e1b21666474aba13bd78c0242bdb9f063f5429b07bff710994afe81d02820"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libtracking.so",
+      "sha256": "647a50c3ed8538d72d2a2c0c339a68da75a52c14a69e7b6c2472b3cdfc07d83a"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libtriSurface.so",
+      "sha256": "d8a1aca3c9eb8cb55c4100d81073d624436035ad59b4b650279e87e27ccfb42b"
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/openmpi-system/libPstream.so",
+      "sha256": "297c15da6ade4e73bd2cc8dea5fbae6d6480a5004cca2d40b5cb79a2bded7a7c"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+      "sha256": "390027e5f45f236bd1838bc54bf464c5ff01d260ab9f8b415ea8276641bce505"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libc.so.6",
+      "sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libcap.so.2.66",
+      "sha256": "1b6d3932cf8b60b2f27f80cdd26d9a296b8a9608fc02b4eccb8fb2fdab73fea2"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libevent_core-2.1.so.7.0.1",
+      "sha256": "72dc55af40edeeabcbe8369c8056b3acb629fca9840837255f642a5759de0f77"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libevent_pthreads-2.1.so.7.0.1",
+      "sha256": "8e03ea005d405f89f9ed77910e40b48aa0cf84a16c40258e4bcd1a72029304e0"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+      "sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libhwloc.so.15.7.0",
+      "sha256": "43db4b0fdcb5052559c3c478ac6435e402679f2c54c77eb9080da5f458726450"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libm.so.6",
+      "sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libmpi.so.40.30.6",
+      "sha256": "981c4526cd9184063cb3e8b246f6893dbbe79e4cd8326f06227d1055493de292"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libopen-pal.so.40.30.3",
+      "sha256": "0d73f5bcf55d61092c4403b7e2a39f2ca34396086178605029300dd041f7c591"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libopen-rte.so.40.30.3",
+      "sha256": "56b095bad147da72cb51b305d5cdf25857142ea098940ee99976d5425f380a83"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libudev.so.1.7.8",
+      "sha256": "aa6d64bdfafc40a30b3206e7ae31fde008f013b180aa1ab877ec1bde0a240ca6"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libz.so.1.3",
+      "sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3"
+    }
+  ],
+  "original_inputs_and_cached_library_unchanged": true,
+  "expected_cached_actuator_library_actually_loaded": true,
+  "no_actuator_recompile_observed": true,
+  "TILT_samples": 5,
+  "time_values": [
+    0.6001,
+    0.6002,
+    0.6003,
+    0.6004,
+    0.6005
+  ],
+  "End_marker": true,
+  "completed_utc": "2026-11-02T12:23:36.657554+00:00",
+  "numerical_acceptance": "Separate frozen-threshold analysis still required"
+}

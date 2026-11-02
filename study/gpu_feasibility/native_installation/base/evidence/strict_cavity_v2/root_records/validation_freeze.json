@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-11-02T11:55:57.022031+00:00",
+  "before_any_strict_solver_run": true,
+  "protocol_sha256": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+  "files": {
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/audit_gpu_trace.py": "d2213323735e8be812956343c5d26aa0a58f89a498912cc6c2efdcf4488eb12e",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/check_cavity_flux.py": "d3ad6a4fce366054ea4aadd7cf21d085c8a9eacb734e0c896316663af0156b39",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/compare_fields.py": "8d83b5a9c88db3099489b5ee32c5a75648e1d008479fc2a8eb2248faae5920ac",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/create_gpu_probe.py": "2bba4b04b6618c54e26181edc8a63fe650bec8f797935f59f6b44d274be02778",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/prepare_fixture.py": "11e5c5de1df542828d8c23b454e4d73e4a198962dd2d7472269ff46a9755ad3c",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/run_solver_child.py": "dc3347f382cb98e94dfd49e76c44c64985e1b2971ba8adbba97c130c2a3d0977",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/run_strict_v2.py": "46ebaf692e17edafc75e7f06d7a501e6cd3c9f7ea4975c4bab010b5229a74532",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/strict_common.py": "14f078cbc8c4bf4264bef58f56184bc077c03a84642b0b7915833603e32dbdee",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/validate_run.py": "a34565be7ca0757db77974cc457268f64d4b2436dc9d160ada97c3a7fd3933ca",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/protocol.json": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/root_approval.json": "bc6fc9fa10ad9a20d372d2b34a5ae19af57b874127ae7ccdf87bca9fb71cd70f",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/icoFoamStrictV2.patch": "4382bc5ba0bad215a68ec60ca31f209cdf21c99c99f831b6ead43e391751846e",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/gpu_probe_source.json": "8b8902cdd1c6c5433266eab71b454b7e8393a7c1731b017335f6bdef7d7ee9b1",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application/Make/files": "a331e904662e4bbc15e775fffcf5ae99dea1a9f3296b0ef10a1a08d301f375de",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application/Make/options": "0e3853fb95fcd3e7b165f157d502a4408f84e2e5b5e7b79e36fff2843d63b6fb",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application/createFields.H": "4be0977a6349fca8b5675d78a7b27f73baeef2955608abfcabb29aa1e738dd23",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application/icoFoam.C": "1bad78d0a0f9b775c1635337f5bf53f72dcae79ea7ed209b3033d64b3f788981",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam": "77d1841b6806ddda4ffc3be7c8aca3788b42ca61d5e04ffa8a8a4d352438c3ba"
+  }
+}

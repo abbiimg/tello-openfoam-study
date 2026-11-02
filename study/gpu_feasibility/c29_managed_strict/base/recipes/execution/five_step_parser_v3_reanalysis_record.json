@@ -1,0 +1,379 @@
+{
+  "kind": "Parser-only v3 reanalysis of existing failed five-step experiment",
+  "created_utc": "2026-11-02T12:50:56.315545+00:00",
+  "analyzer_sha256": "74df3cf053b8596ae57d5a04792867130392ca5ef31b59de526b0d1810d4ee16",
+  "preserved_v2_report_sha256": "5d50d0314f9dd6ce332d40aa436fc42532f08a70d791b2719a04498746543be1",
+  "new_v3_report_sha256": "9ac760b08a489047db94a3b98ff9733f1569f86f9efaa250999a45f7b3ca61e3",
+  "field_and_reference_file_hashes_identical": true,
+  "numerical_classifications_identical_except_benign_banner": true,
+  "reduction_last_bit_differences": [
+    {
+      "path": "field_comparisons/0/blocks/0/reference_RMS",
+      "old": 1.8158012116648485,
+      "new": 1.815801211664849,
+      "relative_difference": 2.445692882002715e-16
+    },
+    {
+      "path": "field_comparisons/0/blocks/0/normalized_RMS",
+      "old": 5.393955933474688e-08,
+      "new": 5.3939559334746865e-08,
+      "relative_difference": 2.4536518214235335e-16
+    },
+    {
+      "path": "field_comparisons/1/blocks/0/absolute_RMS",
+      "old": 3.9647450569144156e-06,
+      "new": 3.964745056914416e-06,
+      "relative_difference": 2.1364121402386165e-16
+    },
+    {
+      "path": "field_comparisons/1/blocks/0/reference_RMS",
+      "old": 3.8703846496913856,
+      "new": 3.870384649691385,
+      "relative_difference": 1.1474032946194976e-16
+    },
+    {
+      "path": "field_comparisons/1/blocks/0/normalized_RMS",
+      "old": 1.0243801109614658e-06,
+      "new": 1.0243801109614662e-06,
+      "relative_difference": 4.1343683764969296e-16
+    },
+    {
+      "path": "field_comparisons/2/blocks/0/absolute_RMS",
+      "old": 4.304175858818083e-12,
+      "new": 4.304175858818087e-12,
+      "relative_difference": 9.383835529063788e-16
+    },
+    {
+      "path": "field_comparisons/2/blocks/0/normalized_RMS",
+      "old": 1.7135944724817816e-07,
+      "new": 1.7135944724817832e-07,
+      "relative_difference": 9.268160008719314e-16
+    },
+    {
+      "path": "field_comparisons/3/blocks/0/absolute_RMS",
+      "old": 9.415907849690749e-08,
+      "new": 9.415907849690745e-08,
+      "relative_difference": 4.216764866050528e-16
+    },
+    {
+      "path": "field_comparisons/3/blocks/0/reference_RMS",
+      "old": 1.816155133159053,
+      "new": 1.8161551331590529,
+      "relative_difference": 1.2226081399709667e-16
+    },
+    {
+      "path": "field_comparisons/3/blocks/0/normalized_RMS",
+      "old": 5.184528390651601e-08,
+      "new": 5.1845283906515994e-08,
+      "relative_difference": 2.5527663856008045e-16
+    },
+    {
+      "path": "field_comparisons/3/blocks/1/reference_RMS",
+      "old": 0.910923159965523,
+      "new": 0.9109231599655231,
+      "relative_difference": 1.2187888873823086e-16
+    },
+    {
+      "path": "field_comparisons/4/blocks/0/reference_RMS",
+      "old": 1.2012767528571504,
+      "new": 1.2012767528571506,
+      "relative_difference": 1.8484050773222253e-16
+    },
+    {
+      "path": "field_comparisons/4/blocks/0/normalized_RMS",
+      "old": 4.000235497763442e-07,
+      "new": 4.0002354977634414e-07,
+      "relative_difference": 1.3234110649983639e-16
+    },
+    {
+      "path": "field_comparisons/4/blocks/1/absolute_RMS",
+      "old": 1.0922859355277809e-09,
+      "new": 1.092285935527781e-09,
+      "relative_difference": 1.8932327736906698e-16
+    },
+    {
+      "path": "field_comparisons/4/blocks/1/normalized_RMS",
+      "old": 1.0922859355277809e-09,
+      "new": 1.092285935527781e-09,
+      "relative_difference": 1.8932327736906698e-16
+    },
+    {
+      "path": "field_comparisons/5/blocks/0/absolute_RMS",
+      "old": 4.196213130100018e-12,
+      "new": 4.1962131301000165e-12,
+      "relative_difference": 3.850107427346342e-16
+    },
+    {
+      "path": "field_comparisons/5/blocks/0/reference_RMS",
+      "old": 2.5119968405458584e-05,
+      "new": 2.511996840545858e-05,
+      "relative_difference": 1.3487802748513643e-16
+    },
+    {
+      "path": "field_comparisons/5/blocks/0/normalized_RMS",
+      "old": 1.6704691114134438e-07,
+      "new": 1.6704691114134433e-07,
+      "relative_difference": 3.169143256926176e-16
+    },
+    {
+      "path": "field_comparisons/6/blocks/0/reference_RMS",
+      "old": 1.816624323004526,
+      "new": 1.816624323004527,
+      "relative_difference": 4.889169480188183e-16
+    },
+    {
+      "path": "field_comparisons/6/blocks/0/normalized_RMS",
+      "old": 5.047530196201619e-08,
+      "new": 5.047530196201616e-08,
+      "relative_difference": 5.244105250051995e-16
+    },
+    {
+      "path": "field_comparisons/7/blocks/0/absolute_RMS",
+      "old": 2.247361569781075e-07,
+      "new": 2.2473615697810745e-07,
+      "relative_difference": 2.3556315955225147e-16
+    },
+    {
+      "path": "field_comparisons/7/blocks/0/normalized_RMS",
+      "old": 1.8592400761040716e-07,
+      "new": 1.859240076104071e-07,
+      "relative_difference": 2.84737618792757e-16
+    },
+    {
+      "path": "field_comparisons/7/blocks/1/absolute_RMS",
+      "old": 1.1009982809878648e-09,
+      "new": 1.1009982809878644e-09,
+      "relative_difference": 3.7565027431779654e-16
+    },
+    {
+      "path": "field_comparisons/7/blocks/1/normalized_RMS",
+      "old": 1.1009982809878648e-09,
+      "new": 1.1009982809878644e-09,
+      "relative_difference": 3.7565027431779654e-16
+    },
+    {
+      "path": "field_comparisons/8/blocks/0/absolute_RMS",
+      "old": 4.117977029079169e-12,
+      "new": 4.117977029079173e-12,
+      "relative_difference": 9.808135903163938e-16
+    },
+    {
+      "path": "field_comparisons/8/blocks/0/reference_RMS",
+      "old": 2.5124483384032378e-05,
+      "new": 2.5124483384032375e-05,
+      "relative_difference": 1.3485378931892766e-16
+    },
+    {
+      "path": "field_comparisons/8/blocks/0/normalized_RMS",
+      "old": 1.6390295339152364e-07,
+      "new": 1.6390295339152382e-07,
+      "relative_difference": 1.1304766227687775e-15
+    },
+    {
+      "path": "field_comparisons/8/blocks/1/absolute_RMS",
+      "old": 2.4170885641121368e-12,
+      "new": 2.4170885641121364e-12,
+      "relative_difference": 1.671005313872396e-16
+    },
+    {
+      "path": "field_comparisons/8/blocks/1/normalized_RMS",
+      "old": 1.0732905290834742e-07,
+      "new": 1.073290529083474e-07,
+      "relative_difference": 2.4662268867964846e-16
+    },
+    {
+      "path": "field_comparisons/9/blocks/0/absolute_RMS",
+      "old": 8.957890537167747e-08,
+      "new": 8.957890537167749e-08,
+      "relative_difference": 1.4774560758400347e-16
+    },
+    {
+      "path": "field_comparisons/9/blocks/0/reference_RMS",
+      "old": 1.8171364421967935,
+      "new": 1.8171364421967937,
+      "relative_difference": 1.2219478943286975e-16
+    },
+    {
+      "path": "field_comparisons/9/blocks/0/normalized_RMS",
+      "old": 4.929674145073152e-08,
+      "new": 4.9296741450731525e-08,
+      "relative_difference": 1.3423696385769984e-16
+    },
+    {
+      "path": "field_comparisons/9/blocks/1/absolute_RMS",
+      "old": 3.248965159446621e-07,
+      "new": 3.2489651594466203e-07,
+      "relative_difference": 1.6294283442673387e-16
+    },
+    {
+      "path": "field_comparisons/9/blocks/1/normalized_RMS",
+      "old": 3.248965159446621e-07,
+      "new": 3.2489651594466203e-07,
+      "relative_difference": 1.6294283442673387e-16
+    },
+    {
+      "path": "field_comparisons/10/blocks/0/absolute_RMS",
+      "old": 1.590488933883707e-07,
+      "new": 1.5904889338837071e-07,
+      "relative_difference": 1.6642542452063544e-16
+    },
+    {
+      "path": "field_comparisons/10/blocks/0/normalized_RMS",
+      "old": 1.3170909103922754e-07,
+      "new": 1.3170909103922757e-07,
+      "relative_difference": 2.0097154564534394e-16
+    },
+    {
+      "path": "field_comparisons/11/blocks/0/absolute_RMS",
+      "old": 4.050104232335897e-12,
+      "new": 4.050104232335896e-12,
+      "relative_difference": 1.9945006859253627e-16
+    },
+    {
+      "path": "field_comparisons/11/blocks/0/normalized_RMS",
+      "old": 1.6116700511826522e-07,
+      "new": 1.6116700511826517e-07,
+      "relative_difference": 3.28476409700276e-16
+    },
+    {
+      "path": "field_comparisons/11/blocks/1/absolute_RMS",
+      "old": 2.3894645260317353e-12,
+      "new": 2.389464526031735e-12,
+      "relative_difference": 1.6903234137730561e-16
+    },
+    {
+      "path": "field_comparisons/11/blocks/1/reference_RMS",
+      "old": 2.2516122283143978e-05,
+      "new": 2.2516122283143974e-05,
+      "relative_difference": 1.5047581223848765e-16
+    },
+    {
+      "path": "field_comparisons/12/blocks/0/reference_RMS",
+      "old": 1.817685903820438,
+      "new": 1.8176859038204383,
+      "relative_difference": 1.2215785161690188e-16
+    },
+    {
+      "path": "field_comparisons/12/blocks/0/normalized_RMS",
+      "old": 4.8233546679234504e-08,
+      "new": 4.82335466792345e-08,
+      "relative_difference": 1.3719590111073384e-16
+    },
+    {
+      "path": "field_comparisons/12/blocks/1/absolute_RMS",
+      "old": 3.1780496435958143e-07,
+      "new": 3.178049643595814e-07,
+      "relative_difference": 1.6657876729545087e-16
+    },
+    {
+      "path": "field_comparisons/12/blocks/1/normalized_RMS",
+      "old": 3.1780496435958143e-07,
+      "new": 3.178049643595814e-07,
+      "relative_difference": 1.6657876729545087e-16
+    },
+    {
+      "path": "field_comparisons/13/blocks/0/absolute_RMS",
+      "old": 1.2437463667569732e-07,
+      "new": 1.2437463667569738e-07,
+      "relative_difference": 4.2564594050981523e-16
+    },
+    {
+      "path": "field_comparisons/13/blocks/0/reference_RMS",
+      "old": 1.2100290894464878,
+      "new": 1.210029089446488,
+      "relative_difference": 1.8350352637109139e-16
+    },
+    {
+      "path": "field_comparisons/13/blocks/0/normalized_RMS",
+      "old": 1.0278648485433593e-07,
+      "new": 1.0278648485433596e-07,
+      "relative_difference": 2.5752198491084287e-16
+    },
+    {
+      "path": "field_comparisons/13/blocks/1/reference_RMS",
+      "old": 0.011745442658415305,
+      "new": 0.011745442658415303,
+      "relative_difference": 1.4769332467294646e-16
+    },
+    {
+      "path": "field_comparisons/14/blocks/0/absolute_RMS",
+      "old": 3.991256340118707e-12,
+      "new": 3.991256340118708e-12,
+      "relative_difference": 2.0239080081794263e-16
+    },
+    {
+      "path": "field_comparisons/14/blocks/0/reference_RMS",
+      "old": 2.513577281379651e-05,
+      "new": 2.5135772813796524e-05,
+      "relative_difference": 5.391728854515304e-16
+    },
+    {
+      "path": "field_comparisons/14/blocks/0/normalized_RMS",
+      "old": 1.5878789045737985e-07,
+      "new": 1.587878904573798e-07,
+      "relative_difference": 3.3339796284782334e-16
+    }
+  ],
+  "analysis_environment_differences": [
+    {
+      "path": "F14_per_rotor_references/0/numpy_version",
+      "old": "2.5.4",
+      "new": "1.26.4"
+    },
+    {
+      "path": "F14_per_rotor_references/1/numpy_version",
+      "old": "2.5.4",
+      "new": "1.26.4"
+    },
+    {
+      "path": "F14_per_rotor_references/2/numpy_version",
+      "old": "2.5.4",
+      "new": "1.26.4"
+    },
+    {
+      "path": "F14_per_rotor_references/3/numpy_version",
+      "old": "2.5.4",
+      "new": "1.26.4"
+    },
+    {
+      "path": "F14_per_rotor_references/4/numpy_version",
+      "old": "2.5.4",
+      "new": "1.26.4"
+    }
+  ],
+  "roundoff_audit_meaning": "Repeated reduction summaries differ only at last bits; this diagnostic does not change any solver/source/field acceptance criterion.",
+  "remaining_real_failures": [
+    {
+      "check": "global continuity step1 corr1",
+      "pass": false,
+      "observed": -1.6016736037264507e-07,
+      "limit": 1e-07,
+      "role": "f14"
+    },
+    {
+      "check": "global continuity step2 corr1",
+      "pass": false,
+      "observed": 1.5905271982708837e-07,
+      "limit": 1e-07,
+      "role": "f14"
+    },
+    {
+      "check": "global continuity step1 corr1",
+      "pass": false,
+      "observed": -1.6016740255189452e-07,
+      "limit": 1e-07,
+      "role": "cpu"
+    },
+    {
+      "check": "global continuity step2 corr1",
+      "pass": false,
+      "observed": 1.5905275657038145e-07,
+      "limit": 1e-07,
+      "role": "cpu"
+    }
+  ],
+  "all_other_checks_passed": true,
+  "numerical_acceptance_limits_changed": false,
+  "CFD_or_case_changes": false,
+  "interpretation": "MECHANICAL FAIL remains. Only benign trapFpe false-positive removed; no continuity failures waived."
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "Completed private AmgX installation and bounded Foundation14 integration",
+  "status": "functional integration verified; no performance benchmark",
+  "source_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "source_clean": true,
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda",
+  "artifacts": {
+    "install/lib/libamgxsh.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxsh.so",
+      "bytes": 138946200,
+      "sha256": "28385b730dccb1f9aabbd9b0caf37ecd478720889398d0df8c65e5d24ce7ef58"
+    },
+    "install/lib/libAmgXPressure.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libAmgXPressure.so",
+      "bytes": 81944,
+      "sha256": "dce4bb6ca9e9d6b1060c10636ebec99f5623194c19e11277b57c90fabaa5fc3c"
+    },
+    "install/lib/libamgxLaunchAudit.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxLaunchAudit.so",
+      "bytes": 70872,
+      "sha256": "203edc554f63818c5cf5a3d2c8a76272610270d2d296bff2ea1728a8c519d1d4"
+    },
+    "install/bin/amgx_poisson_smoke": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/bin/amgx_poisson_smoke",
+      "bytes": 75624,
+      "sha256": "686a37d43060f8bf03660e4ecbda51c7ed504c8a6f978d0e549c49b9ad9d93bf"
+    }
+  },
+  "gpu_poisson_gate_passed": true,
+  "openfoam_cavity_gate_passed": true,
+  "poisson_relative_l2_residual": 7.264737283453275e-11,
+  "field_comparisons": {
+    "U": {
+      "components": 1200,
+      "max_abs_difference": 2.444155988712282e-12,
+      "relative_l2_difference": 5.01549080723093e-12,
+      "gate_max_abs": 1e-08,
+      "gate_relative_l2": 1e-08
+    },
+    "p": {
+      "components": 400,
+      "max_abs_difference": 1.896833801140474e-10,
+      "relative_l2_difference": 2.6956970161516236e-10,
+      "gate_max_abs": 1e-08,
+      "gate_relative_l2": 1e-08
+    }
+  },
+  "pilot_root": "/opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102",
+  "max_subsequent_compile_jobs": 1,
+  "no_production_changes": true,
+  "no_driver_install": true,
+  "no_live_mcp_changes": true,
+  "rotor_case_tested": true,
+  "performance_benchmark_run": false,
+  "limitations": [
+    "Short cavity and five-step rotor functional checks; no stationary/performance validation",
+    "serial symmetric noncoupled pressure only",
+    "uncached setup every solve",
+    "extra tenfold backend tolerance safety margin",
+    "no performance benchmark or production adoption"
+  ],
+  "evidence_directory": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/amgx_install",
+  "rotor_gate_passed": true,
+  "rotor_evidence": "rotor_smoke.json",
+  "rotor_steps": 5,
+  "rotor_cells": 922576,
+  "rotor_successful_cuda_launch_api_calls": 16310
+}

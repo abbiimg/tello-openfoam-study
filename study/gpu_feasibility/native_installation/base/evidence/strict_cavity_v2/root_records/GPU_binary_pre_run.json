@@ -1,0 +1,7 @@
+{
+  "frozen_utc": "2026-11-02T11:56:42.926860+00:00",
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/icoFoamStrictV2",
+  "binary_sha256": "600e691e9afc9d024d1388591b4d188f892d71c33119105568c397903ae6c89f",
+  "source_sha256": "1bad78d0a0f9b775c1635337f5bf53f72dcae79ea7ed209b3033d64b3f788981",
+  "source_freeze_precedes_compile_and_run": true
+}

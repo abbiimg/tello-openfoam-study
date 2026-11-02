@@ -1,0 +1,29 @@
+{
+  "schema": "root-reviewed-c29-experimental-build-and-five-step-protocol-v1",
+  "approved_utc": "2026-11-02T11:05:30Z",
+  "meaning": "Internal source/protocol review under the user's existing installation and CFD authorization. Permission to conduct an unvalidated experiment; no runtime acceptance is asserted.",
+  "candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "main_source_sha256": "47a113b8221d829c101dfcb2f1fecfebb2cbf942a0e494af30f3a22b9eab479c",
+  "independent_review": "candidate_v2_independent_review.json",
+  "independent_review_sha256": "63633a2e72cb49436e680a340fd5050b36a7385281646873c9333fffd0af6c0c",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "thresholds_approved_before_runtime": true,
+  "approved_scope": [
+    "Private builds of the reviewed native CPU/GPU candidate and Foundation14 initial-phi utility after required libraries are ready",
+    "Fresh guarded case restoration at /opt/openfoam-workspace/cases/native_c29_validation_20261102 after restoration-script review",
+    "Exact initialized U/p/phi comparison, with the documented single Foundation14-generated common-phi fallback if needed",
+    "Five fixed 1e-4 s steps from .600 to .6005, Foundation14 to native CPU first, then same native candidate CPU to GPU",
+    "Actual binary/loaded-library/input identities, source/force/work/controller telemetry, each saved field, solver/residual/continuity/Courant checks, and time-loop CUDA evidence"
+  ],
+  "conditions": [
+    "Keep all stated identities and individual thresholds; failures remain failures without posthoc threshold changes",
+    "Keep candidate v2 and original study/vendor/SDK/source inputs unchanged; preserve and review any required source compatibility patch separately",
+    "Fresh clones only, one source call per time index, no controller priming or transferred state",
+    "Continue max10 combined low-priority compiler jobs and at least20GiB available-memory reserve; coordinate new compilation slots",
+    "Initial fields and five-step permissions admit experiments only; no prior memory, source or backend validation is claimed",
+    "No timing benchmark until active builds are idle and functional gates pass"
+  ],
+  "performance_limit": "The v2 full-array observations and per-coefficient CUDA attribute queries are validation overhead. This five-step instrumented candidate cannot support an unqualified production speed claim. Any timing must state exact workload and observer cost, with a separately reviewed matched protocol.",
+  "runtime_validated": false,
+  "production_default_changed": false
+}

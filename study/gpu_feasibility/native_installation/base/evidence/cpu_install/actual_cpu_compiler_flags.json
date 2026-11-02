@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-11-02T10:37:09.317189+00:00",
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/openfoam_base.log",
+  "actual_gcc_compile_commands_observed": 313,
+  "sample_command": "g++ -std=c++17 -pthread  -DOPENFOAM=2609 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -floop-optimize -falign-loops -falign-labels -falign-functions -falign-jumps  -DNoRepository -ftemplate-depth=1000  -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/build/linuxARM64GccDPInt32Opt/src/OpenFOAM -DHAVE_LIBZ -DHAVE_EXTRAE -iquote. -IlnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OpenFOAM/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OSspecific/POSIX/lnInclude   -fPIC -c db/Time/subCycleTime.C -o /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/build/linuxARM64GccDPInt32Opt/src/OpenFOAM/db/Time/subCycleTime.o",
+  "offload_or_gpu_commands_observed": [],
+  "passed": true
+}

@@ -1,0 +1,157 @@
+{
+  "kind": "Exact full-size startup gate, managed-ownership strict-pressure variant",
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "roles": {
+    "cpu": {
+      "fields": {
+        "U": {
+          "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/U",
+          "reference_sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+          "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/c29_initialU",
+          "candidate_sha256": "9d2314cb3494848c2dee843e0a3c68fa4138dacb7c9e9f013445e9fe68d86216",
+          "blocks": [
+            {
+              "block_index": 0,
+              "key": "internalField",
+              "values": 2767728,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            },
+            {
+              "block_index": 1,
+              "key": "value",
+              "values": 171120,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            }
+          ],
+          "all_internal_and_boundary_value_blocks_exact": true
+        },
+        "P": {
+          "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/p",
+          "reference_sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+          "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/c29_initialP",
+          "candidate_sha256": "06de105d9a3a7f9d1e23e444003136fa9b0c9f266896af421aef72909118cd8b",
+          "blocks": [
+            {
+              "block_index": 0,
+              "key": "internalField",
+              "values": 922576,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            },
+            {
+              "block_index": 1,
+              "key": "value",
+              "values": 57040,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            }
+          ],
+          "all_internal_and_boundary_value_blocks_exact": true
+        },
+        "Phi": {
+          "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/phi",
+          "reference_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+          "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6/c29_initialPhi",
+          "candidate_sha256": "fe5b7cea82f191e136f84cf63c4405a766f68bb3dae231bb0a4c27ffe4a3d5c4",
+          "blocks": [
+            {
+              "block_index": 0,
+              "key": "internalField",
+              "values": 2739208,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            },
+            {
+              "block_index": 1,
+              "key": "value",
+              "values": 57040,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            }
+          ],
+          "all_internal_and_boundary_value_blocks_exact": true
+        }
+      },
+      "all_values_exact": true
+    },
+    "gpu": {
+      "fields": {
+        "U": {
+          "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/U",
+          "reference_sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+          "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/0.6/c29_initialU",
+          "candidate_sha256": "9d2314cb3494848c2dee843e0a3c68fa4138dacb7c9e9f013445e9fe68d86216",
+          "blocks": [
+            {
+              "block_index": 0,
+              "key": "internalField",
+              "values": 2767728,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            },
+            {
+              "block_index": 1,
+              "key": "value",
+              "values": 171120,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            }
+          ],
+          "all_internal_and_boundary_value_blocks_exact": true
+        },
+        "P": {
+          "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/p",
+          "reference_sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+          "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/0.6/c29_initialP",
+          "candidate_sha256": "06de105d9a3a7f9d1e23e444003136fa9b0c9f266896af421aef72909118cd8b",
+          "blocks": [
+            {
+              "block_index": 0,
+              "key": "internalField",
+              "values": 922576,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            },
+            {
+              "block_index": 1,
+              "key": "value",
+              "values": 57040,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            }
+          ],
+          "all_internal_and_boundary_value_blocks_exact": true
+        },
+        "Phi": {
+          "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/phi",
+          "reference_sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+          "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/0.6/c29_initialPhi",
+          "candidate_sha256": "fe5b7cea82f191e136f84cf63c4405a766f68bb3dae231bb0a4c27ffe4a3d5c4",
+          "blocks": [
+            {
+              "block_index": 0,
+              "key": "internalField",
+              "values": 2739208,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            },
+            {
+              "block_index": 1,
+              "key": "value",
+              "values": 57040,
+              "exactly_equal": true,
+              "maximum_absolute_difference": 0.0
+            }
+          ],
+          "all_internal_and_boundary_value_blocks_exact": true
+        }
+      },
+      "all_values_exact": true
+    }
+  },
+  "shared_phi_fallback_used": true,
+  "startup_gate_passed": true,
+  "scope": "Initial U/p/phi internal and every stored boundary value block only; no source/timestep/performance acceptance"
+}

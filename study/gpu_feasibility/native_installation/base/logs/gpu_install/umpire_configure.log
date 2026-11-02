@@ -1,0 +1,91 @@
+CMake Warning (dev) at CMakeLists.txt:16 (project):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CMake version 3.31.7
+-- BLT Source Directory: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/umpire-2025.03.0/blt
+-- BLT Version: 0.7.0
+-- CMake Version: 3.31.7
+-- CMake Build Type: Release
+-- CMake Executable: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake
+-- Setting CMAKE_CXX_EXTENSIONS to OFF
+-- Standard C++17 selected
+-- Standard C++14 selected for CUDA
+-- BLT MPI support is OFF
+-- BLT OpenMP support is OFF
+-- BLT CUDA support is ON
+-- BLT HIP support is OFF
+-- Creating BLT CUDA targets...
+CMake Warning (dev) at blt/cmake/thirdparty/BLTSetupCUDA.cmake:101 (find_package):
+  Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+  --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  blt/cmake/BLTSetupTargets.cmake:107 (include)
+  blt/cmake/SetupThirdParty.cmake:6 (include)
+  blt/SetupBLT.cmake:129 (include)
+  CMakeLists.txt:77 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- CUDA Version:                   13.3
+-- CUDA Toolkit Root Dir:          /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3
+-- CUDA Compiler:                  /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/bin/nvcc
+-- CUDA Host Compiler:             /usr/bin/g++
+-- CUDA Include Path:              /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include
+-- CUDA Libraries:                 /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/lib64/libcudart_static.a;Threads::Threads;dl;/usr/lib/aarch64-linux-gnu/librt.a
+-- CUDA Compile Flags:             
+-- CUDA Link Flags:                -L/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/lib64
+-- BLT CUDA Separable Compilation: OFF
+-- CUDA Separable Compilation:     
+-- CUDA Link with NVCC:            
+-- CUDA Implicit Link Libraries:   stdc++;m;gcc_s;gcc;c;gcc_s;gcc
+-- CUDA Implicit Link Directories: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib/stubs;/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib;/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib
+-- Git Support is ON
+-- Git Executable: /usr/bin/git
+-- Git Version: 2.43.0
+-- Sphinx support is ON
+-- Failed to locate Sphinx executable (missing: SPHINX_EXECUTABLE) 
+-- Valgrind support is ON
+-- Failed to locate Valgrind executable (missing: VALGRIND_EXECUTABLE) 
+-- AStyle support is OFF
+-- ClangFormat support is ON
+-- Failed to locate ClangFormat executable (missing: CLANGFORMAT_EXECUTABLE) 
+-- Uncrustify support is ON
+-- Failed to locate Uncrustify executable (missing: UNCRUSTIFY_EXECUTABLE) 
+-- Yapf support is ON
+-- Failed to locate Yapf executable (missing: YAPF_EXECUTABLE) 
+-- CMakeFormat support is ON
+-- Failed to locate CMakeFormat executable (missing: CMAKEFORMAT_EXECUTABLE) 
+-- Cppcheck support is ON
+-- Failed to locate Cppcheck executable (missing: CPPCHECK_EXECUTABLE) 
+-- ClangQuery support is ON
+-- Failed to locate ClangQuery executable (missing: CLANGQUERY_EXECUTABLE) 
+-- ClangTidy support is ON
+-- Failed to locate ClangTidy executable (missing: CLANGTIDY_EXECUTABLE) 
+-- ClangApplyReplacements support is ON
+-- Failed to locate ClangApplyReplacements executable (missing: CLANGAPPLYREPLACEMENTS_EXECUTABLE) 
+-- C Compiler family is GNU
+-- Adding optional BLT definitions and compiler flags
+-- Enabling all compiler warnings on all targets.
+-- Fortran support disabled.
+-- CMAKE_C_FLAGS flags are:   -Wall -Wextra  
+-- CMAKE_CXX_FLAGS flags are:   -Wall -Wextra     
+-- CMAKE_EXE_LINKER_FLAGS flags are:  
+-- CMake's C implicit link directories: /usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib
+-- CMake's CXX implicit link directories: /usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib
+-- CMake's CUDA implicit link directories: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib/stubs;/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib;/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib
+-- CMake's C implicit link libraries: gcc;gcc_s;c;gcc;gcc_s
+-- CMake's CXX implicit link libraries: stdc++;m;gcc_s;gcc;c;gcc_s;gcc
+-- CMake's CUDA implicit link libraries: stdc++;m;gcc_s;gcc;c;gcc_s;gcc
+-- Setting C standard to 99
+-- Checking for std::filesystem
+-- std::filesystem found
+-- Version: 10.2.1
+-- Build type: Release
+-- IPC Shared Memory Disabled
+-- Configuring done (7.8s)
+-- Generating done (0.3s)
+-- Build files have been written to: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/build/umpire-2025.03.0-cuda133

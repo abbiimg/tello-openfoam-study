@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-11-02T14:10:39.322679+00:00",
+  "actual_child_launched": true,
+  "actual_child_waited": true,
+  "true_child_return_code": -11,
+  "wrapper_errors": [],
+  "cleanup_errors": [],
+  "postprocessing_complete": true
+}

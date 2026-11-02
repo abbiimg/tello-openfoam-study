@@ -1,0 +1,70 @@
+{
+  "kind": "Successful CUDA launch APIs within the actual native Foam Field algebra window; not CFD or a speed measurement",
+  "completed_utc": "2026-11-02T09:23:42.871278+00:00",
+  "range_name": "NATIVE_STDPAR_FIELD_ALGEBRA",
+  "range_row": {
+    "start": 2022156043,
+    "end": 2811919110,
+    "eventType": 59,
+    "rangeId": null,
+    "category": null,
+    "color": null,
+    "text": "NATIVE_STDPAR_FIELD_ALGEBRA",
+    "globalTid": 286553004088914,
+    "endGlobalTid": null,
+    "textId": null,
+    "domainId": 0,
+    "uint64Value": null,
+    "int64Value": null,
+    "doubleValue": null,
+    "uint32Value": null,
+    "int32Value": null,
+    "floatValue": null,
+    "jsonTextId": null,
+    "jsonText": null,
+    "binaryData": null,
+    "eventId": 40
+  },
+  "successful_launch_api_calls": 8,
+  "failed_launch_api_calls": 0,
+  "failed_synchronization_api_calls": 0,
+  "launch_api_rows": [
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "name": "cudaLaunchKernel_v7000",
+      "return_value": 0,
+      "calls": 8
+    }
+  ],
+  "synchronization_api_rows": [
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "name": "cudaDeviceSynchronize_v3020",
+      "return_value": 0,
+      "calls": 1
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "name": "cudaStreamSynchronize_v3020",
+      "return_value": 0,
+      "calls": 8
+    }
+  ],
+  "kernel_activity_tables": {},
+  "count_scope": "API calls, not distinct GPU kernels; runtime and driver calls may both be counted.",
+  "report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace.nsys-rep",
+  "report_sha256": "e6fa0e46acae8d3293cd90a729fbdef6b77a2e8c1d59d6f634121df69a97b7f0",
+  "sqlite": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace.sqlite",
+  "export_command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+    "stats",
+    "--force-export=true",
+    "--report",
+    "cuda_api_sum",
+    "--format",
+    "csv",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace.nsys-rep"
+  ],
+  "export_log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native_field_gate_trace_export.log",
+  "speedup_measured": false
+}

@@ -1,0 +1,77 @@
+CMake Warning (dev) at CMakeLists.txt:16 (project):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The CXX compiler identification is GNU 13.3.0
+-- The C compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Using CMake version 3.31.7
+-- BLT Source Directory: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/umpire-2025.03.0/blt
+-- BLT Version: 0.7.0
+-- CMake Version: 3.31.7
+-- CMake Build Type: Release
+-- CMake Executable: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake
+-- Setting CMAKE_CXX_EXTENSIONS to OFF
+-- Standard C++17 selected
+-- Standard C++14 selected for CUDA
+-- BLT MPI support is OFF
+-- BLT OpenMP support is OFF
+-- BLT CUDA support is ON
+-- BLT HIP support is OFF
+-- Creating BLT CUDA targets...
+-- The CUDA compiler identification is NVIDIA 13.3.73 with host compiler GNU 13.3.0
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - failed
+-- Check for working CUDA compiler: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/bin/nvcc
+-- Check for working CUDA compiler: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/bin/nvcc - broken
+CMake Error at /opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/share/cmake-3.31/Modules/CMakeTestCUDACompiler.cmake:59 (message):
+  The CUDA compiler
+
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/bin/nvcc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: '/opt/openfoam-workspace/gpu-feasibility/native-stdpar/build/umpire-2025.03.0/CMakeFiles/CMakeScratch/TryCompile-MLnM61'
+    
+    Run Build Command(s): /opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d27a3/fast
+    /usr/bin/gmake  -f CMakeFiles/cmTC_d27a3.dir/build.make CMakeFiles/cmTC_d27a3.dir/build
+    gmake[1]: Entering directory '/opt/openfoam-workspace/gpu-feasibility/native-stdpar/build/umpire-2025.03.0/CMakeFiles/CMakeScratch/TryCompile-MLnM61'
+    Building CUDA object CMakeFiles/cmTC_d27a3.dir/main.cu.o
+    /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/usr/bin/g++   -std=c++14 "--generate-code=arch=compute_121,code=[compute_121,sm_121]" -Xcompiler=-fPIE -MD -MT CMakeFiles/cmTC_d27a3.dir/main.cu.o -MF CMakeFiles/cmTC_d27a3.dir/main.cu.o.d -x cu -c /opt/openfoam-workspace/gpu-feasibility/native-stdpar/build/umpire-2025.03.0/CMakeFiles/CMakeScratch/TryCompile-MLnM61/main.cu -o CMakeFiles/cmTC_d27a3.dir/main.cu.o
+    Linking CUDA executable cmTC_d27a3
+    /opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d27a3.dir/link.txt --verbose=1
+    /usr/bin/ld: cannot find -lcudadevrt: No such file or directory
+    /usr/bin/ld: cannot find -lcudart_static: No such file or directory
+    collect2: error: ld returned 1 exit status
+    /usr/bin/g++ @CMakeFiles/cmTC_d27a3.dir/objects1.rsp -o cmTC_d27a3 @CMakeFiles/cmTC_d27a3.dir/linkLibs.rsp -L"/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/targets/sbsa-linux/lib/stubs" -L"/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/targets/sbsa-linux/lib"
+    gmake[1]: *** [CMakeFiles/cmTC_d27a3.dir/build.make:105: cmTC_d27a3] Error 1
+    gmake[1]: Leaving directory '/opt/openfoam-workspace/gpu-feasibility/native-stdpar/build/umpire-2025.03.0/CMakeFiles/CMakeScratch/TryCompile-MLnM61'
+    gmake: *** [Makefile:134: cmTC_d27a3/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  blt/cmake/thirdparty/BLTSetupCUDA.cmake:67 (enable_language)
+  blt/cmake/BLTSetupTargets.cmake:107 (include)
+  blt/cmake/SetupThirdParty.cmake:6 (include)
+  blt/SetupBLT.cmake:129 (include)
+  CMakeLists.txt:77 (include)
+
+
+-- Configuring incomplete, errors occurred!

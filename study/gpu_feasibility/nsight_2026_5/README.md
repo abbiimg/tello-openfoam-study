@@ -1,0 +1,9 @@
+# Current Nsight profiler and verified CUDA kernel capture
+
+The privately installed ARM64 Nsight Systems 2026.5.1 CLI passed its existing 32,768-element native OpenFOAM Field control. The actual application, profiler and export all exited with code 0. Arithmetic matched exactly, managed allocation type 3 and synchronization were checked, and the complete named range contains 8 successful launch API calls, 9 successful synchronization calls and 8 attributable GPU kernel records. No unsupported-driver warning was found. These counts are separate observations and supply no speed measurement.
+
+The [frozen source/evidence bundle](base/README.md) includes the installer recipe, official URLs, exact package checksum/version, guarded source/protocol histories, actual receipts and a small lossless restricted trace. The [independent review](review_history/current_nsight_publication_independent_review.md) verifies its scope and exclusions. The package/SDK/executables and full private traces are excluded. No package scripts, driver replacement, global profile or backend-default change was made.
+
+The original postprocessing check rejected the new tool's exact 15-byte Linux process label; that failure and its reviewed audit-only correction are preserved. The GPU control ran once. No raw process row was rewritten, and no numerical or CUDA completion gate was relaxed.
+
+Incomplete-event and disabled Unified Memory tracing warnings remain visible. Only the named algebra range and its observed execution are demonstrated. The 922,576-cell C29 time loop still fails with SIGSEGV in both profiled and plain attempts, before any source evaluation or completed step. This successful small test does not qualify that model, establish rotor lift, measure speedup or change the CPU study/default.

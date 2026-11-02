@@ -1,0 +1,25 @@
+{
+  "source_only": true,
+  "case_or_receipt_mutated": false,
+  "solver_launched": false,
+  "original_F14_launcher_sha256": "19053380b5e863047e425de1e804da62724b1f35450afc6a242af51bd79bce96",
+  "original_shared_initial_launcher_sha256": "e1d48f61e10ff9bae6982bac9d62fc33f44e73f59ffac5ad0b507f1e017eb2f4",
+  "new_launchers": [
+    {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_f14_five_once.py",
+      "sha256": "8cf3c60906086cef87053ec2aacaf627e945baa30e19335395fe11c1bca05745"
+    },
+    {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_cpu_five_once.py",
+      "sha256": "985cafe354b722dee6df9fa3d2594dfab8a95b46e3dd557a6eaec1376a400ca8"
+    },
+    {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_f14_five_once.sh",
+      "sha256": "9a0244ed483597ce8a0ca0966f8f10e3c4c49026dc0fb7e99e4e366dd59b2f88"
+    },
+    {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_cpu_five_once.sh",
+      "sha256": "01660b46209a8e69b0983650d6cb822cc90594acbae257d2d7ddda9688078cd9"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1ff2d45c-20260926 OPENFOAM=2512 version=v2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam -pool fixedSizeMemoryPool -poolSize 1
+Date   : Nov 02 2026
+Time   : 03:36:08
+Host   : abby-spark
+PID    : 367774
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Initializing CUDA devices
+
+CUDA Driver Version / Runtime Version:  13.4 / 13.3
+Number of threads per block: 128
+
+Create fixedSizeMemoryPool
+ 
+Create time
+
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNS_5FieldIdEmLERKdEUliE_EEvT_i
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNS_7cmptMagINS_6VectorIdEEEEvRNS_5FieldIT_EERKNS_5UListIS6_EEEUliE_EEvS6_i
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda24reductionLambdaSumKernelINS_6VectorIdEEZNS_3sumIS3_EET_RKNS_5UListIS5_EEEUliE_EEvPS5_T0_Pii
+Create mesh for time = 0
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNKS_7fvPatch18patchInternalFieldIdEEvRKNS_5UListIT_EERKNS4_IiEERS6_EUliE_EEvS5_i
+SPUMA_CUDA_LAUNCH entry=cudaLaunchKernel status=0 library=/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so symbol=_ZN4Foam4cuda12lambdaKernelIZNKS_7fvPatch18patchInternalFieldIdEEvRKNS_5UListIT_EERKNS4_IiEERS6_EUliE_EEvS5_i
+Reading field U
+
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+Reading/calculating face flux field phi
+
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+SPUMA_CUDA_LAUNCH entry=__cudaLaunchKernel status=0 library=unknown symbol=unavailable
+
+Starting time loop
+
+Time = 0.005
+
+Courant Number mean: 0 max: 0
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 8.1958334978048653e-06, No Iterations 25
+smoothSolver:  Solving for Uy, Initial residual = 0, Final residual = 0, No Iterations 0
+aDICPCG:  Solving for p, Initial residual = 1, Final residual = 6.9149786373722375e-07, No Iterations 58
+time step continuity errors : sum local = 4.6102574098156475e-09, global = 2.4534176968322796e-19, cumulative = 2.4534176968322796e-19
+aDICPCG:  Solving for p, Initial residual = 0.52358906643630287, Final residual = 7.6056166038279591e-07, No Iterations 56
+time step continuity errors : sum local = 8.4013107730313991e-09, global = 6.6339885126752807e-20, cumulative = 3.1168165480998078e-19
+
+Memory pool occupancy: 0.019854307174682617 %
+ExecutionTime = 56.079999999999998 s  ClockTime = 58 s
+
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/opt/openfoam-workspace/gpu-feasibility/spuma/tmp/nsys-openfoam/nsys-report-95f8.qdstrm'
+[1/1] [0%                          ] cavity_first_step_trace.nsys-repProcessing events...
+[1/1] [0%                          ] cavity_first_step_trace.nsys-rep[1/1] [1%                          ] cavity_first_step_trace.nsys-rep[1/1] [2%                          ] cavity_first_step_trace.nsys-rep[1/1] [5%                          ] cavity_first_step_trace.nsys-rep[1/1] [6%                          ] cavity_first_step_trace.nsys-rep[1/1] [7%                          ] cavity_first_step_trace.nsys-rep[1/1] [8%                          ] cavity_first_step_trace.nsys-rep[1/1] [9%                          ] cavity_first_step_trace.nsys-rep[1/1] [==19%                       ] cavity_first_step_trace.nsys-rep[1/1] [==20%                       ] cavity_first_step_trace.nsys-rep[1/1] [==================76%       ] cavity_first_step_trace.nsys-rep[1/1] [==================77%       ] cavity_first_step_trace.nsys-rep[1/1] [=======================96%  ] cavity_first_step_trace.nsys-rep[1/1] [========================98% ] cavity_first_step_trace.nsys-rep[1/1] [========================100%] cavity_first_step_trace.nsys-rep[1/1] [========================100%] cavity_first_step_trace.nsys-rep
+Time = 0.01
+
+Courant Number mean: 0.097680371174358016 max: 0.58572266704191822
+smoothSolver:  Solving for Ux, Initial residual = 0.14858310235885616, Final residual = 7.9046848066091573e-06, No Iterations 24
+smoothSolver:  Solving for Uy, Initial residual = 0.25661864692854858, Final residual = 7.0769352021228278e-06, No Iterations 24
+aDICPCG:  Solving for p, Initial residual = 0.3792207264246466, Final residual = 9.4336011693071662e-07, No Iterations 55
+time step continuity errors : sum local = 8.7707768447463547e-09, global = -4.3675136342799855e-20, cumulative = 2.6800651846718092e-19
+aDICPCG:  Solving for p, Initial residual = 0.2869254683787128, Final residual = 4.338708999648027e-07, No Iterations 55
+time step continuity errors : sum local = 4.3920886923241344e-09, global = 1.9819247476770541e-19, cumulative = 4.661989932348863e-19
+
+Memory pool occupancy: 0.019854307174682617 %
+ExecutionTime = 109.55 s  ClockTime = 112 s
+
+Time = 0.015
+
+Courant Number mean: 0.14468479501829767 max: 0.75828350128146382
+smoothSolver:  Solving for Ux, Initial residual = 0.044867783924872701, Final residual = 8.375016476195637e-06, No Iterations 20
+smoothSolver:  Solving for Uy, Initial residual = 0.078241542107529122, Final residual = 9.2877355964524918e-06, No Iterations 21
+aDICPCG:  Solving for p, Initial residual = 0.10954035362051986, Final residual = 9.8995021988012737e-07, No Iterations 53
+time step continuity errors : sum local = 7.9566788205981653e-09, global = -1.8197973476166606e-19, cumulative = 2.8421925847322021e-19
+aDICPCG:  Solving for p, Initial residual = 0.082600915180948142, Final residual = 5.8419594252870404e-07, No Iterations 53
+time step continuity errors : sum local = 4.757022876582549e-09, global = -3.4088113043310266e-19, cumulative = -5.6661871959882444e-20
+
+Memory pool occupancy: 0.019854307174682617 %
+ExecutionTime = 160.47 s  ClockTime = 163 s
+
+Time = 0.02
+
+Courant Number mean: 0.16737431969123515 max: 0.80034257618956961
+smoothSolver:  Solving for Ux, Initial residual = 0.023545163622580662, Final residual = 6.8279408195076559e-06, No Iterations 19
+smoothSolver:  Solving for Uy, Initial residual = 0.046859175395597676, Final residual = 9.0494613481377872e-06, No Iterations 20
+aDICPCG:  Solving for p, Initial residual = 0.052628307385820923, Final residual = 5.2748494767358798e-07, No Iterations 53
+time step continuity errors : sum local = 4.2208803724372461e-09, global = 1.6053921328429159e-18, cumulative = 1.5487302608830335e-18
+aDICPCG:  Solving for p, Initial residual = 0.040823716733064674, Final residual = 6.4243763960382696e-07, No Iterations 52
+time step continuity errors : sum local = 5.2196539935522275e-09, global = 8.0484673601409581e-20, cumulative = 1.6292149344844431e-18
+
+Memory pool occupancy: 0.019854307174682617 %
+ExecutionTime = 209.88 s  ClockTime = 212 s
+
+Time = 0.025
+
+Courant Number mean: 0.1821277739653549 max: 0.81982584175499651
+smoothSolver:  Solving for Ux, Initial residual = 0.014882490547946209, Final residual = 9.6592476731357661e-06, No Iterations 17
+smoothSolver:  Solving for Uy, Initial residual = 0.030040920033528509, Final residual = 9.3091810164882793e-06, No Iterations 19
+aDICPCG:  Solving for p, Initial residual = 0.034514543571042978, Final residual = 7.3860564970475932e-07, No Iterations 51
+time step continuity errors : sum local = 5.9414088888738795e-09, global = -4.1334217228758705e-19, cumulative = 1.215872762196856e-18
+aDICPCG:  Solving for p, Initial residual = 0.026447494961330937, Final residual = 8.5731734592893326e-07, No Iterations 50
+time step continuity errors : sum local = 6.9211702711986209e-09, global = 1.9809321309419903e-18, cumulative = 3.1968048931388461e-18
+
+Memory pool occupancy: 0.019854307174682617 %
+ExecutionTime = 252.22999999999999 s  ClockTime = 255 s
+
+Memory pool max occupancy: "320224" / "1073741824" [bytes]
+End
+
+SPUMA_CUDA_SUMMARY {"pid":367774,"nice":15,"OMP_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","successful_kernel_launch_apis":12606,"failed_kernel_launch_apis":0,"successful_managed_allocations":1,"managed_allocated_bytes":1073741824,"successful_device_synchronizations":12606,"failed_device_synchronizations":0,"last_device_synchronize_status":0,"profiler_kernel_activity_proof":false}
+Generated:
+	/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.nsys-rep

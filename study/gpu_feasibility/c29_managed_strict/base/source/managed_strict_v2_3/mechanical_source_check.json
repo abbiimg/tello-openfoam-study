@@ -1,0 +1,19 @@
+{
+  "method": "Remove address-check instrumentation, substitute each exact original declaration from the recorded map, and compare complete source text byte-for-byte with native2.2 or pinned vendor createPhi.H. This is not a compilation or runtime test.",
+  "all_reversed_sources_exact": true,
+  "source_matches": {
+    "C29HostSource.H": true,
+    "C29Operators.H": true,
+    "c29NativeHybridFoam.C": true,
+    "createC29Fields.H": true,
+    "createC29ManagedPhi.H": true
+  },
+  "original_reference_unchanged": true,
+  "declarations_reversed": 16,
+  "compiled": false,
+  "CFD_run": false,
+  "no_new_pressure_controls_or_tolerances": true,
+  "patch_sha256": "85439b77952af6e249af54bf3576c5517fb570a1e4d0324e5617585fe193dcb9",
+  "manifest_sha256": "689b261f3a91f280719ba575d48b4b56187cc442cf032728dd8f80ba63088203",
+  "checker_sha256": "c1cc096cc1fa5c4e78011b64275878b26981248c5aacaee6c7466c415211dfaa"
+}

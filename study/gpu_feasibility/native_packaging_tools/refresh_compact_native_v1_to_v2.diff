@@ -1,0 +1,148 @@
+--- refresh_compact_native.py
++++ refresh_compact_native_v2.py
+@@ -1,4 +1,4 @@
+-"""SOURCE-ONLY PROPOSAL: refresh study/** using native Windows file I/O.
++"""SOURCE-ONLY V2 PROPOSAL: refresh study/** using native Windows file I/O.
+ 
+ No work occurs on import or without --execute. Root must review this source and
+ finish/close all GPU publications before executing the guarded command below.
+@@ -48,6 +48,14 @@
+     'gpu_feasibility/Ginkgo_upstream_13c917436066.tar.gz',
+     'gpu_feasibility/benchmark_reproduction/shared_seed.zip',
+ ))
++SPUMA_PREFIX = PurePosixPath('gpu_feasibility/spuma')
++SPUMA_MANIFEST_KEY = (SPUMA_PREFIX / 'manifest.json').as_posix()
++SPUMA_MANIFEST_SHA256 = '4824419c7cb30822ddb51230c6976e0739028901d795a1365e331001319b4edd'
++EMPTY_SHA256 = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
++SPUMA_DOTFILE_EXCEPTIONS = frozenset((
++    'gpu_feasibility/spuma/spuma_evidence/original_failed/.spuma-smoke-started',
++    'gpu_feasibility/spuma/spuma_evidence/strict_v2/.strict-v2-started',
++))
+ # Receipts/checksums produced by this helper are always in WORK, never OUT.
+ # Also refuse accidental legacy copies of these external compact checksums.
+ EXTERNAL_RECEIPT_NAMES = frozenset((
+@@ -146,9 +154,67 @@
+     return file_record(path)
+ 
+ 
++def reviewed_spuma_files():
++    """Bind the two exact marker exceptions to the reviewed outer manifest.
++
++    The pinned outer inventory also contains all nested manifest files. They
++    are preserved as bytes, including historical candidate/review manifests;
++    their historical relative namespaces are not reinterpreted as live roots.
++    """
++    manifest_path = OUT / Path(SPUMA_MANIFEST_KEY)
++    before = file_record(manifest_path)
++    if before['sha256'] != SPUMA_MANIFEST_SHA256:
++        fail('Reviewed SPUMA outer manifest SHA256 changed')
++    manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
++    if file_record(manifest_path) != before:
++        fail('SPUMA outer manifest changed while parsing')
++    files = manifest.get('files')
++    if not isinstance(files, dict) or not files:
++        fail('SPUMA outer manifest lacks its reviewed files mapping')
++    expected = {}
++    for name, row in files.items():
++        if not isinstance(name, str):
++            fail('SPUMA manifest paths must be strings')
++        rel = PurePosixPath(name)
++        if (not name or rel.is_absolute() or any(p in ('.', '..') for p in rel.parts)
++                or '\\' in name or ':' in name or '\x00' in name or rel.as_posix() != name):
++            fail(f'Unsafe SPUMA manifest path: {name!r}')
++        if (not isinstance(row, dict) or not isinstance(row.get('bytes'), int)
++                or row['bytes'] < 0 or not re.fullmatch(r'[0-9a-f]{64}', str(row.get('sha256', '')))):
++            fail(f'Malformed SPUMA manifest record: {name}')
++        expected[(SPUMA_PREFIX / rel).as_posix()] = dict(size_bytes=row['bytes'], sha256=row['sha256'])
++    if SPUMA_MANIFEST_KEY in expected:
++        fail('SPUMA outer manifest unexpectedly includes its own hash')
++    expected[SPUMA_MANIFEST_KEY] = dict(size_bytes=before['size_bytes'], sha256=SPUMA_MANIFEST_SHA256)
++    for key in SPUMA_DOTFILE_EXCEPTIONS:
++        empty = dict(size_bytes=0, sha256=EMPTY_SHA256)
++        if expected.get(key) != empty:
++            fail(f'Exact empty marker is absent from reviewed SPUMA manifest: {key}')
++        actual = file_record(OUT / Path(key))  # regular, no hardlinks/reparse ancestors
++        if {name: actual[name] for name in empty} != empty:
++            fail(f'Reviewed SPUMA marker is not the expected empty regular file: {key}')
++    return expected
++
++
++def require_spuma_inventory(records, expected, *, hashes):
++    """No manifested file, including nested manifests, may be filtered out."""
++    prefix = SPUMA_PREFIX.as_posix() + '/'
++    actual_keys = {name for name in records if name.startswith(prefix)}
++    if actual_keys != set(expected):
++        fail('Study filter is not closed over reviewed SPUMA inventory; missing=' +
++             repr(sorted(set(expected) - actual_keys)) + '; unexpected=' +
++             repr(sorted(actual_keys - set(expected))))
++    if hashes:
++        for key, wanted in expected.items():
++            actual = records[key]
++            if any(actual[name] != value for name, value in wanted.items()):
++                fail(f'SPUMA study file differs from its reviewed manifest: {key}')
++
++
+ def source_files():
+-    """Match original package_refinement.py study filter, without following links."""
++    """Original filter plus ONLY two reviewed, manifest-bound SPUMA markers."""
+     safe_path(OUT)
++    spuma_expected = reviewed_spuma_files()
+     selected = {}
+     stack = [OUT]
+     while stack:
+@@ -156,7 +222,9 @@
+         safe_path(directory, root=OUT)
+         for path in sorted(directory.iterdir(), key=lambda p: p.name):
+             rel = path.relative_to(OUT)
+-            if any(part.startswith('.') or part == '__pycache__' for part in rel.parts):
++            key = rel.as_posix()
++            hidden = any(part.startswith('.') or part == '__pycache__' for part in rel.parts)
++            if hidden and key not in SPUMA_DOTFILE_EXCEPTIONS:
+                 continue
+             safe_path(path, root=OUT)
+             if path.is_dir():
+@@ -164,7 +232,6 @@
+                 continue
+             if not path.is_file() or path.suffix == '.pyc':
+                 continue
+-            key = rel.as_posix()
+             if key in EXTERNAL_RECEIPT_NAMES:
+                 continue
+             if path.suffix in ('.gz', '.zip') and key not in GPU_REPRODUCTION_ARCHIVES:
+@@ -176,11 +243,14 @@
+             selected[key] = path
+     if not GPU_REPRODUCTION_ARCHIVES <= set(selected):
+         fail('One or more required GPU reproduction archives are absent')
++    require_spuma_inventory(selected, spuma_expected, hashes=False)
+     return dict(sorted(selected.items()))
+ 
+ 
+ def inventory():
+-    return {key: file_record(path) for key, path in source_files().items()}
++    records = {key: file_record(path) for key, path in source_files().items()}
++    require_spuma_inventory(records, reviewed_spuma_files(), hashes=True)
++    return records
+ 
+ 
+ def assert_current_inventory(expected, *, hashes):
+@@ -458,6 +528,8 @@
+ 
+ def main(args):
+     plan = dict(mode='source-only proposal until explicit execution',
++                helper_version=2, reviewed_SPUMA_manifest_sha256=SPUMA_MANIFEST_SHA256,
++                exact_manifest_bound_dotfile_exceptions=sorted(SPUMA_DOTFILE_EXCEPTIONS),
+                 python=str(NATIVE_PYTHON), target=str(COMPACT), pinned_old_sha256=OLD_SHA256,
+                 source_scope='current filtered OUT files -> study/** only',
+                 cases_policy='raw copy every old cases/** local record; preserve content SHA256 and ZipInfo except offsets',
+@@ -513,7 +585,10 @@
+             fail('Published archive entry verification differs from candidate')
+         added = sorted(set(entries) - set(old_study) - set(cases))
+         removed = sorted(set(old_study) - set(entries))
+-        receipt = dict(format_version=1, native_windows_io=True,
++        receipt = dict(format_version=1, helper_version=2, native_windows_io=True,
++                       reviewed_SPUMA_manifest_sha256=SPUMA_MANIFEST_SHA256,
++                       exact_manifest_bound_dotfile_exceptions=sorted(SPUMA_DOTFILE_EXCEPTIONS),
++                       every_reviewed_SPUMA_manifest_member_in_study_inventory=True,
+                        generated_utc=datetime.now(timezone.utc).isoformat(),
+                        python=sys.version, executable=sys.executable, old_compact=original,
+                        old_member_count=OLD_MEMBERS, immutable_backup=dict(path=str(backup), **backup_record),

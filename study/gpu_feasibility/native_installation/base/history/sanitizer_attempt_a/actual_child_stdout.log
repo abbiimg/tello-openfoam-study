@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_compat_v2_2_20261102/bin/c29NativeHybridFoam -case /opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/initial_memcheck -initialFieldsOnly
+Date   : Nov 02 2026
+Time   : 04:32:30
+Host   : abby-spark
+PID    : 381051
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/initial_memcheck
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : managed (size=64MB, incr=64MB)
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+C29_EXPERIMENTAL_UNVALIDATED phase=initial_fields_only backend=gpu case="/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/initial_memcheck" id="c29_native_gpu_initial_memcheck_20261102_a" inputSnapshot="427efb762eb080abc0a2b3309bb6879654d7b791a608edfc9d993b2c24bbafe6" launchReceipt="f22848afba3f8fd815fa6a755e476ea8a0cf51f707ff773526f8ba1fefa6a5e9" candidate="562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7" binary="940336b28ca1f354398eaac971e5e86e4b401b323dec553cb7cdb5e0888da6a7" libraries="2e1a55e5c7d6de6d3aeb06636d6a997ba0b1da8c2784eea37198908df50bf00e"; permission/input audit are NOT runtime acceptance
+C29_DEVICE device=0 managed=1 concurrentManagedAccess=0
+Create mesh for time = 0.6
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+terminate called after throwing an instance of 'thrust::_V_300402_SM_121_NVHPC::system::system_error'
+  what():  parallel_for: failed to synchronize: cudaErrorIllegalAddress: an illegal memory access was encountered

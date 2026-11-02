@@ -1,0 +1,8 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tmp/nsys-openfoam/nsys-report-c19a.qdstrm'
+[1/1] [0%                          ] strict_gpu_trace.nsys-repProcessing events...
+[1/1] [0%                          ] strict_gpu_trace.nsys-rep[1/1] [1%                          ] strict_gpu_trace.nsys-rep[1/1] [2%                          ] strict_gpu_trace.nsys-rep[1/1] [5%                          ] strict_gpu_trace.nsys-rep[1/1] [6%                          ] strict_gpu_trace.nsys-rep[1/1] [==19%                       ] strict_gpu_trace.nsys-rep[1/1] [==20%                       ] strict_gpu_trace.nsys-rep[1/1] [===========53%              ] strict_gpu_trace.nsys-rep[1/1] [============55%             ] strict_gpu_trace.nsys-rep[1/1] [=======================96%  ] strict_gpu_trace.nsys-rep[1/1] [========================98% ] strict_gpu_trace.nsys-rep[1/1] [========================100%] strict_gpu_trace.nsys-rep[1/1] [========================100%] strict_gpu_trace.nsys-rep
+ACTUAL_SOLVER_CHILD_EXIT 0
+Generated:
+	/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.nsys-rep

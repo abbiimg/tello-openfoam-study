@@ -1,0 +1,48 @@
+{
+  "kind": "Private functional adapter pilots, not performance/rotor CFD",
+  "cases": {
+    "cavity-native": "/opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102/cavity-native",
+    "cavity-amgx": "/opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102/cavity-amgx"
+  },
+  "shared_input_hashes": {
+    "cavity-native": {
+      "0/U": "f2b22e66d91f51c1af9ab16c8a686097b9df5faae3ee307cbb0f199e2d187b40",
+      "0/p": "c433d48e026228f5420308843ef10601ce657a49c2d0e27bc8c24a70bfb82340",
+      "constant/physicalProperties": "b8edc90db52ca59c3259b2892226ed01e1ef2d0593f9811a2f76019a1be3d940",
+      "constant/momentumTransport": "b8adb3f770cebfe382cb51f67864e7d65119d034d4cfacb6b7eb97e608da5cf0",
+      "system/fvSchemes": "807ea9d86c15176e74e9f94ec999df141660c0ee044433208095cc4948f9bd25",
+      "constant/polyMesh/boundary": "13952f2d17f73009e8b35c2fb22a2e10b5e146a31ccabd82dfc26439b1b992c3",
+      "constant/polyMesh/faces": "5a1a80529897f870df45e7a75e698b200e4688320129a8cc038e73a0b906007e",
+      "constant/polyMesh/owner": "649d19cea1c4411b0775d2760f7a4f48ca39b443e37e29118ee0e596af71e734",
+      "constant/polyMesh/neighbour": "3a896fb928aa65f2cb6c136e1f16d901f55102a210f92a7cde7c4ad06496d4b0",
+      "constant/polyMesh/points": "d60e5eed6032d220ff749ffe3e949e5b5886e433504d0875dc33aa4e5c793262"
+    },
+    "cavity-amgx": {
+      "0/U": "f2b22e66d91f51c1af9ab16c8a686097b9df5faae3ee307cbb0f199e2d187b40",
+      "0/p": "c433d48e026228f5420308843ef10601ce657a49c2d0e27bc8c24a70bfb82340",
+      "constant/physicalProperties": "b8edc90db52ca59c3259b2892226ed01e1ef2d0593f9811a2f76019a1be3d940",
+      "constant/momentumTransport": "b8adb3f770cebfe382cb51f67864e7d65119d034d4cfacb6b7eb97e608da5cf0",
+      "system/fvSchemes": "807ea9d86c15176e74e9f94ec999df141660c0ee044433208095cc4948f9bd25",
+      "constant/polyMesh/boundary": "13952f2d17f73009e8b35c2fb22a2e10b5e146a31ccabd82dfc26439b1b992c3",
+      "constant/polyMesh/faces": "5a1a80529897f870df45e7a75e698b200e4688320129a8cc038e73a0b906007e",
+      "constant/polyMesh/owner": "649d19cea1c4411b0775d2760f7a4f48ca39b443e37e29118ee0e596af71e734",
+      "constant/polyMesh/neighbour": "3a896fb928aa65f2cb6c136e1f16d901f55102a210f92a7cde7c4ad06496d4b0",
+      "constant/polyMesh/points": "d60e5eed6032d220ff749ffe3e949e5b5886e433504d0875dc33aa4e5c793262"
+    }
+  },
+  "shared_inputs_identical": true,
+  "dimensions": "2D 400-cell lid-driven cavity",
+  "nu_m2_s": 0.01,
+  "end_time_s": 0.1,
+  "delta_t_s": 0.005,
+  "expected_steps": 20,
+  "turbulence": "laminar",
+  "max_compile_jobs": 1,
+  "solver_process_threads": 1,
+  "solver_nice": 15,
+  "native_pressure_tolerance": 1e-11,
+  "adapter_extra_tolerance_safety_factor": 0.1,
+  "adapter_setup": "uncached each solve",
+  "no_production_inputs_modified": true,
+  "performance_comparison": false
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "Chronology clarification outside frozen analyzer/code/threshold artifacts",
+  "analyzer_sha256": "f95aec1c7ae5c8a1ea5137927596b4023c6c3ccf9bae956aa9fa806382478053",
+  "thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "thresholds_frozen_and_root_approved_before_both_runs": true,
+  "F14_reference_completion_reported_by_root_UTC": "2026-11-02T12:23:36Z",
+  "analyzer_authorship": "Source-only analyzer was finalized AFTER the original F14 reference run and BEFORE native CPU candidate timesteps. It was not itself frozen before both runs.",
+  "author_access_to_F14_result_values_before_source_freeze": "No original five-step log/field values were read or analyzed by this agent; root subsequently supplied protocol-level completion/count information only.",
+  "checks_performed_by_author": "AST/hash check only; analyzer was not imported or executed; no case data was read or written for these checks.",
+  "metrics_or_thresholds_changed_after_reference_results": false,
+  "native_CPU_candidate_timesteps_at_analyzer_freeze": "Not started, as reported by root",
+  "root_controls_runtime_and_protocol_approval": true,
+  "mechanical_analyzer_is_not_overall_acceptance_or_performance_evidence": true
+}

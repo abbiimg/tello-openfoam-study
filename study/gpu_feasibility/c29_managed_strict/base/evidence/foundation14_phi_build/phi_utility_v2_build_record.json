@@ -1,0 +1,59 @@
+{
+  "kind": "Authorized exact-v2 F14 phi utility COMPILE attempt, failed; not executed",
+  "recorded_utc": "2026-11-02T11:23:51.271049+00:00",
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_approved_v2_20261102",
+  "candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "source_clone_sha256": "dea67bb30c5157b01efbd37895b0460f968b45c450e3a6d51fc14ba17ed96a47",
+  "source_files": {
+    "C29ExperimentAdmission.H": {
+      "sha256": "539e78eed301027007512b5035f6c90e51bc68ad0c8637ca0e6deb666cdf0cfc",
+      "bytes": 2447
+    },
+    "foundation14_phi/c29FoundationInitialPhi.C": {
+      "sha256": "50a412eb35123239a84a4222997f542b0fb05473639a53f5685373a652f9f6f9",
+      "bytes": 3338
+    },
+    "foundation14_phi/Make/files": {
+      "sha256": "10d56f855e4e88ea0a6f205585b0893656868e33b6cff2d28c3f1c4a16394163",
+      "bytes": 75
+    },
+    "foundation14_phi/Make/options": {
+      "sha256": "c103afffb9fe554bf51eed6a1493bca140f37ea8eed82eb96d43bdc965c8f086",
+      "bytes": 342
+    }
+  },
+  "build_log_sha256": "8859dc99645c95d99ae7090c2c0cfa4ced1c0ac59a9abad3df29ef679214dd8d",
+  "build_exit_code": 1,
+  "binary": null,
+  "compiler": "g++13.3.0, Foundation14 linuxArm64GccDPInt32Opt, std=c++14, WM_DP/Int32",
+  "one_compiler_slot": true,
+  "nice": 15,
+  "slot_released": true,
+  "failure": "fvCFD.H is absent in Foundation14; umbrella-header API adapter needed in a separately preserved utility version/patch",
+  "installed_intended_libraries": {
+    "libfiniteVolume.so": {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "70ea400d4a76d54887e533880f5bcbfdc85b7f0875e1ecbcd0cad7aaa0c23fcf",
+      "bytes": 35735440
+    },
+    "libmeshTools.so": {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "53f02be63c87386924790b86960d4f8db3e74ec178f09ac3e4a1979aac43ebc7",
+      "bytes": 4872656
+    },
+    "libOpenFOAM.so": {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "667a228e7dacf27b00bb3627421334b378c628024e58483c6f0fb40b6773a7b2",
+      "bytes": 10198408
+    }
+  },
+  "libraries_actually_linked": null,
+  "candidate_or_vendor_or_SDK_or_study_modified": false,
+  "no_cases": true,
+  "utility_or_solver_executed": false,
+  "restoration_script_executed": false,
+  "restorer_AST_parse": true,
+  "restorer_sha256": "d7064bde61a40764965436b4c1935d1a3cd63e54f5a2cf694fae898014c7135c",
+  "plan_sha256": "634267ffc44566ae2b5b3785b7fd1dae8937e967aec64509ce1d16da0477a06b",
+  "no_retry": true
+}

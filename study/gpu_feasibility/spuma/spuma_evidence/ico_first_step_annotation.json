@@ -1,0 +1,16 @@
+{
+  "kind": "Annotation-only complete first-step NVTX capture; existing full-loop annotation retained",
+  "recorded_utc": "2026-11-02T11:28:31.081352+00:00",
+  "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+  "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+  "upstream_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+  "previous_annotated_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+  "annotated_sha256": "285453fc33b36de47086fa339ed464a2c6e393e52c1d3f546aa2484cb63b40c4",
+  "patch": "/opt/openfoam-workspace/gpu-feasibility/spuma/patches/ico_first_step_annotation.patch",
+  "patch_sha256": "ad0f8fe232488b6d080620114c230ace7a53de129a5dac07b8a21e7a2fc860c5",
+  "range_name": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+  "scope": "One first runTime.loop body after entering time0.005 through all PISO corrections, write and execution log; no source arithmetic or numerical setting changed",
+  "old_binary_and_source_preserved": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/original_attempt",
+  "core_or_FV_rebuild": false,
+  "no_production_change": true
+}

@@ -1,0 +1,152 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-a4867fc914c1
+Exec   : foamRun
+Date   : Nov 02 2026
+Time   : 00:25:55
+Host   : "abby-spark"
+PID    : 274973
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102/rotor-amgx
+nProcs : 1
+sigFpe : Floating point exception trapping - not supported on this platform
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.6
+
+
+Selecting solver incompressibleFluid
+
+Selecting viscosity model constant
+
+Selecting momentum transport model type laminar
+    Selecting laminar stress model Stokes
+Courant Number mean: 0.00615123161 max: 0.35128201
+
+Constructing fvModels from constant/fvModels
+    Selecting coded with name rotors
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: Operating solver in transient mode with 1 outer corrector
+PIMPLE: Operating solver in PISO mode
+
+
+
+Constructing functionObjects from system/functions
+    Selecting writeObjects with name pilotFields
+
+Starting time loop
+
+
+Constructing functionObjects from system/functions
+Courant Number mean: 0.00615123161 max: 0.35128201
+deltaT = 0.000119047619
+Time = 0.60011905s
+
+Using dynamicCode for coded rotors at line 2 in "/opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102/rotor-amgx/constant/fvModels!rotors"
+
+Selecting rotors with name rotors
+DISK_VOLUME 0 5.472468e-05
+DISK_VOLUME 1 5.472468e-05
+DISK_VOLUME 2 5.472468e-05
+DISK_VOLUME 3 5.472468e-05
+DISK_VOLUME 4 5.473224e-05
+DISK_VOLUME 5 5.473224e-05
+DISK_VOLUME 6 5.473224e-05
+DISK_VOLUME 7 5.473224e-05
+POWER_BUDGET battery=19.2923077 shaft=10.2316154 axial=5.11580769
+TILT 0.600119048 1.30733445 5.11580769 10.2316154 19.2923077 1.30733445 0 0
+smoothSolver:  Solving for Ux, Initial residual = 0.00104588339, Final residual = 4.77702175e-09, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00104514938, Final residual = 4.77770058e-09, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000538989865, Final residual = 2.81780919e-09, No Iterations 2
+AMGX version 2.5.0
+Built on Nov  1 2026, 23:31:52
+Compiled with CUDA Runtime 13.0, using CUDA driver 13.4
+The AMGX_initialize_plugins API call is deprecated and can be safely removed.
+AmgXPressure: private serial mode dDDI, GPU0 NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU), compute 12.1
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=12 kernels=926 initial=0.889550505 final=0.00238876175 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.889550505, Final residual = 0.00238876175, No Iterations 12
+time step continuity errors : sum local = 3.92347541e-07, global = 1.22915589e-09
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=32 kernels=2426 initial=0.0152055724 final=5.9731499e-09 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0152055724, Final residual = 5.9731499e-09, No Iterations 32
+time step continuity errors : sum local = 1.70798608e-12, global = 7.58156563e-15, cumulative = 7.58156563e-15
+ExecutionTime = 11.211744 s  ClockTime = 12 s
+
+Courant Number mean: 0.00731676209 max: 0.419882245
+deltaT = 0.000141156463
+Time = 0.6002602s
+
+TILT 0.600260204 1.30746954 5.00633572 10.0126714 18.9081955 1.30746954 0 0
+smoothSolver:  Solving for Ux, Initial residual = 0.0205970946, Final residual = 5.9312631e-08, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0205957191, Final residual = 5.9306637e-08, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00245682388, Final residual = 1.037189e-08, No Iterations 2
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=13 kernels=1001 initial=0.802342459 final=0.00160611881 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.802342459, Final residual = 0.00160611881, No Iterations 13
+time step continuity errors : sum local = 3.60360408e-07, global = -1.41304407e-09
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=38 kernels=2876 initial=0.115822098 final=4.87570891e-09 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.115822098, Final residual = 4.87570891e-09, No Iterations 38
+time step continuity errors : sum local = 2.6852734e-13, global = 4.21592326e-16, cumulative = 8.00315796e-15
+ExecutionTime = 14.613388 s  ClockTime = 15 s
+
+Courant Number mean: 0.00867763305 max: 0.497915347
+deltaT = 0.000167927516
+Time = 0.60042813s
+
+TILT 0.600428132 1.30756979 5.04696312 10.0939262 19.0507478 1.30756979 0 0
+smoothSolver:  Solving for Ux, Initial residual = 0.00229820278, Final residual = 1.4178663e-08, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00229802882, Final residual = 1.41828747e-08, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000619081233, Final residual = 5.0809485e-09, No Iterations 2
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=11 kernels=851 initial=0.17076342 final=0.000264919023 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.17076342, Final residual = 0.000264919023, No Iterations 11
+time step continuity errors : sum local = 1.79419144e-08, global = 9.63326681e-11
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=29 kernels=2201 initial=0.00565844559 final=4.47466107e-09 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.00565844559, Final residual = 4.47466107e-09, No Iterations 29
+time step continuity errors : sum local = 2.63598937e-13, global = 1.62761083e-15, cumulative = 9.63076879e-15
+ExecutionTime = 17.555051 s  ClockTime = 19 s
+
+Courant Number mean: 0.0103274179 max: 0.59234977
+deltaT = 0.000199413925
+Time = 0.60062755s
+
+TILT 0.600627546 1.30761757 5.08784719 10.1756944 19.1942007 1.30761757 0 0
+smoothSolver:  Solving for Ux, Initial residual = 0.00180709783, Final residual = 2.63547525e-08, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00180641683, Final residual = 2.63582039e-08, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000594745057, Final residual = 9.89039102e-09, No Iterations 2
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=11 kernels=851 initial=0.0925978274 final=0.000130314311 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0925978274, Final residual = 0.000130314311, No Iterations 11
+time step continuity errors : sum local = 9.96358954e-09, global = 1.26526554e-10
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=28 kernels=2126 initial=0.00378042764 final=5.54056525e-09 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.00378042764, Final residual = 5.54056525e-09, No Iterations 28
+time step continuity errors : sum local = 3.98795096e-13, global = 3.06684025e-15, cumulative = 1.2697609e-14
+ExecutionTime = 20.455205 s  ClockTime = 22 s
+
+Courant Number mean: 0.0122703091 max: 0.703423037
+deltaT = 0.000234311362
+Time = 0.60086186s
+
+TILT 0.600861857 1.30758992 5.12933874 10.2586775 19.3397851 1.30758992 0 0
+smoothSolver:  Solving for Ux, Initial residual = 0.00179335383, Final residual = 4.83254249e-08, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00179241065, Final residual = 4.83337316e-08, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000628149379, Final residual = 1.82756586e-08, No Iterations 2
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=11 kernels=851 initial=0.0670856608 final=0.000118200637 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0670856608, Final residual = 0.000118200637, No Iterations 11
+time step continuity errors : sum local = 1.10155375e-08, global = 1.17594172e-10
+AMGX_PRESSURE_SOLVE rows=922576 nnz=6400992 iterations=29 kernels=2201 initial=0.00354403702 final=5.72791682e-09 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.00354403702, Final residual = 5.72791682e-09, No Iterations 29
+time step continuity errors : sum local = 5.15150002e-13, global = 8.14842158e-15, cumulative = 2.08460306e-14
+ExecutionTime = 23.236827 s  ClockTime = 25 s
+
+End
+
+The AMGX_finalize_plugins API call is deprecated and can be safely removed.

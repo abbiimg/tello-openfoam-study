@@ -1,0 +1,39 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/descriptorCaptureControl -case /opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_case -mode heap-ref -n 4096
+Date   : Nov 02 2026
+Time   : 04:46:36
+Host   : abby-spark
+PID    : 383995
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : managed (size=64MB, incr=64MB)
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+DIAG_BEGIN mode=heap-ref n=4096 offload_selected=1 descriptor_bytes=24
+DIAG_ATTR name=stack_descriptor address=281474716768216 status=0 type=0 host=0xfffff08197d8 device=0
+DIAG_ATTR name=heap_descriptor address=8661452672 status=0 type=3 host=0x204434780 device=0x204434780
+DIAG_ATTR name=selected_data address=9393209344 status=0 type=3 host=0x22fe10000 device=0x22fe10000
+DIAG_ATTR name=output_data address=9393176576 status=0 type=3 host=0x22fe08000 device=0x22fe08000
+DIAG_RESULT mode=heap-ref mismatches=0 sync=0

@@ -1,0 +1,68 @@
+{
+  "review_date_utc": "2026-11-02",
+  "reviewer": "stdpar_memory_review",
+  "verdict": "ACCEPTABLE_FOR_SEPARATELY_ROOT_APPROVED_SINGLE_PLAIN_DIAGNOSTIC_AFTER_PREREQUISITES",
+  "blocking_findings": [],
+  "launch_authorized_by_review": false,
+  "curator_31_field_integrity_gate_attested_complete_here": false,
+  "runtime_GPU_numerical_or_performance_qualification": false,
+  "proposal": "work/gpu_actuator_port/execution/strict_runs/plain_gpu_diagnostic_proposal_v2",
+  "helper_manifest_sha256": "ed3bd4f82fe29b361cae7a1da5fedbabfb3394e5021a55ae2ed0007dbad0ee8f",
+  "protocol_sha256": "e6e58d9e37514f0dc3b3f76bfaaf6a839612faef2fde095f3c38ebf3d24c6395",
+  "correction_patch_sha256": "ce7edc057ff20f7f56cada491422fad4cbd46c5cdbbfcf12ddf65e10fd2cc836",
+  "run_helper_sha256": "38e3690aa2b7c766f24700f3f097024b1a06a8c1893e506c2c4eedbda6ac57ba",
+  "binary_sha256": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185",
+  "library_identity_sha256": "c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff",
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "identity_checks": {
+    "manifest_entries_checked": 6,
+    "manifest_mismatches": [],
+    "external_protocol_file_records_checked": 6,
+    "external_protocol_file_record_mismatches": [],
+    "original_plain_V1_freeze_and_diff_verified": true,
+    "V2_diff_independently_regenerated_exact": true,
+    "only_run_helper_changed_from_V1": true,
+    "owned_cleanup_byte_identical_to_reviewed_V3": true,
+    "AST_only_parsed": ["owned_cleanup.py", "plain_common.py", "run_plain_gpu_once.py"]
+  },
+  "resolved_finding": {
+    "id": "plain-V1-final-receipt-save-stale-pass-boolean",
+    "file": "run_plain_gpu_once.py",
+    "V1_lines": [65, 66, 68, 71],
+    "V2_resolution_lines": [68, 72],
+    "resolution": "Final save exception clears process gate; final return rechecks wrapper errors, cleanup errors, actual wait and gate"
+  },
+  "admission_and_containment": {
+    "explicit_Root_decision_manifest_protocol_fresh_receipt_bound": true,
+    "fresh_clone_preparation_bound": true,
+    "passing_external_CPU_startup_31_field_integrity_attestations_required": true,
+    "same_binary_library_phi_and_new_case_ID_required": true,
+    "failed_original_case_rejected": true,
+    "receipt_and_input_bytes_mtime_reverified_before_launch": true,
+    "LD_PRELOAD_and_CUDA_NVTX_injection_paths_rejected": true,
+    "Nsight_loader_overlay_rejected": true,
+    "no_extra_execution_environment_or_profiler_debugger_observer": true,
+    "solver_timeout_seconds": 180,
+    "timer_begins_before_Popen": true,
+    "all_postPopen_paths_in_finally_cleanup": true,
+    "true_waited_status_before_postprocessing": true,
+    "exact_owned_pidfd_or_direct_unreaped_Popen_only": true,
+    "no_automatic_retry": true,
+    "unresolved_terminal_status_cannot_pass": true
+  },
+  "future_process_gate_requirements": [
+    "Actual child0, waited, no timeout/cancellation/wrapper or cleanup errors",
+    "Completed postprocessing and unchanged original inputs/observed declared libraries",
+    "Five time/source/controller observations, End and finite log",
+    "Fifteen recognized saved U/p/phi fields and no observed Nsight/CUPTI libraries"
+  ],
+  "limitations": [
+    "Curator31native-Windowsdoublehash gate and actual fresh-clone preparation are external prerequisites, not completed by this review",
+    "Hashing identity files does not replace runtime observation/checksumming of every declared loaded library",
+    "OS reaping may outlast nominal timers; no success while terminal status unresolved",
+    "Process pass is not numerical parity or accepted CUDA execution proof",
+    "One plain result cannot prove profiling caused the original fault; missing partial CUPTI does not prove zeroGPUexecution",
+    "No2.4build, debugger, retry, timing or backend adoption authorized"
+  ],
+  "actions": {"read_only_source_review": true, "hash_diff_and_AST_checks": true, "proposed_helper_import_or_execution": false, "case_receipt_or_approval_created": false, "proposal_source_vendor_build_SDK_permission_changes": false, "GPU_CFD_profiler_or_debugger_run": false, "only_independent_review_artifacts_written": true}
+}

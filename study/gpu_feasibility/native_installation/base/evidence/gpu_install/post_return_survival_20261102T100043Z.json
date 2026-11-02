@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-02T10:00:43.223146+00:00",
+  "method": "Independent one-shot process check after the launching tool command exited; no solver or compiler launched",
+  "checker_pid": 326182,
+  "workers": [
+    {
+      "worker": "main",
+      "pid": 311811,
+      "stage": "finiteVolume_build",
+      "alive": true,
+      "cmdline": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/build_minimal_native_stack.py"
+      ],
+      "nice": 15,
+      "cgroup": "0::/system.slice/native-stdpar-main-20261102T095941Z.service",
+      "uid": 999,
+      "cmdline_matches": true,
+      "expected_unit": "native-stdpar-main-20261102T095941Z.service",
+      "in_expected_systemd_unit": true
+    },
+    {
+      "worker": "profile",
+      "pid": 326002,
+      "stage": "waiting_for_native_tutorial_gate",
+      "alive": true,
+      "cmdline": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/profile_native_cfd_loop.py"
+      ],
+      "nice": 15,
+      "cgroup": "0::/system.slice/native-stdpar-profile-20261102T095941Z.service",
+      "uid": 999,
+      "cmdline_matches": true,
+      "expected_unit": "native-stdpar-profile-20261102T095941Z.service",
+      "in_expected_systemd_unit": true
+    }
+  ],
+  "all_alive_and_matching": true,
+  "all_in_expected_systemd_units": true
+}

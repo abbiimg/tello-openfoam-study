@@ -1,0 +1,103 @@
+{
+  "schema": "new-nsight-2026.5.1-existing-native-field-positive-control-v1",
+  "status": "SOURCE_ONLY_PENDING_ROOT_APPROVAL_NO_GPU_RUN",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields",
+    "sha256": "df5772176bdbe30ef5c596b883c844ff39bbd58195319b64eefdfdd284c1d4cb"
+  },
+  "source": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/field_algebra_gate/Test-nativeStdparFields.C",
+    "sha256": "046dfc47664ff9b29544bfbb78d395ca9c745623d906b7af844c5c24d416a88b"
+  },
+  "core_library": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libOpenFOAM.so",
+    "sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb"
+  },
+  "nsys": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted/opt/nvidia/nsight-systems-cli/2026.5.1/bin/nsys",
+    "sha256": "dbe02661b00efbfb4c9c3cd3c2d8df6fecd6e80ac794305892e233e0d712a527"
+  },
+  "new_tool_installation_receipt": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/installation_receipt.json",
+    "sha256": "bee7c3f2dee1f71914e99c407c5fca0fe4b48b508f857f4f8220b13fd7609f59"
+  },
+  "native_environment": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh",
+    "sha256": "7cdcd1f4ce2c612bf83c1d8254fb2942fe92af4a788ae3be75ecf6f209e7947d"
+  },
+  "library_identity": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/linked_libraries.json",
+    "sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e"
+  },
+  "plain_failure_reconciliation": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_plain_gpu_failed_terminal_reconciliation.json",
+    "sha256": "2434244e6fe0c0453d5849c0c082f6485dd66ddde0f57e31ed22df5ad73d8a2f"
+  },
+  "prior_positive_control": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/native_field_post_resume_gate.json",
+    "sha256": "52256f0b09e881b75f1ec8b48837c6fb79e60e24bfd879e0902c79c54bcf1f8b"
+  },
+  "case": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate",
+  "case_files": {
+    "0/p": "0fd4f30a227253e74aad4a434ed9462686ede8f1ba0b6f8a3531c40d94cfc7e6",
+    "0/U": "954e1ea33a7ccb3a6b3086fa0cd960a05c27fcf7e3a36a82c5ce25f58c070045",
+    "constant/transportProperties": "261eba87dbc7f101785f5c76212e151a2d68c1b98d930a1a6add3bafa391fc51",
+    "system/PDRblockMeshDict": "7cd46b7abe691296d4b008ff22f566d9d9b834463c64dc7cf76ec4ffd6afbab7",
+    "system/blockMeshDict": "6321615ce9d5b6bcbe480eb274b8af308e340b91adebe1c990ad464b01bfbd80",
+    "system/decomposeParDict": "829af8c99f84bc74f6e845106f7ef8344ec04c822e9b3fab4e847b9d0cc305df",
+    "system/fvSolution": "0d85777e484b68253f9c99c56ca2b5c5d69fb7aa5574d31493fdbe0fa282c224",
+    "system/fvSchemes": "c68daea473990cf22575494457ae406a66eed1e14433c6c0428870aff9c6310f",
+    "system/controlDict": "d42dca1cb4bf983fe9974b1e899bcb8a746b393a32ccae35af67678e42add322"
+  },
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields",
+    "-case",
+    "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate"
+  ],
+  "range": "NATIVE_STDPAR_FIELD_ALGEBRA",
+  "expected_arithmetic_result": {
+    "kind": "native Foam Field arithmetic integration",
+    "elements": 32768,
+    "mismatches": 0,
+    "actual_sum": 134246400,
+    "expected_sum": 134246400,
+    "actual_dot_sum": 9894214,
+    "expected_dot_sum": 9894214,
+    "pointer_memory_type": 3,
+    "synchronize_status": 0,
+    "passed": true
+  },
+  "application_timeout_s": 30,
+  "cleanup_grace_s": 5,
+  "profiler_timeout_s": 110,
+  "export_timeout_s": 60,
+  "maximum_GPU_applications": 1,
+  "minimum_MemAvailable_GiB": 20,
+  "nice": 15,
+  "nsys_flags": [
+    "--trace=cuda,nvtx",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--capture-range=nvtx",
+    "--nvtx-capture=NATIVE_STDPAR_FIELD_ALGEBRA",
+    "--capture-range-end=stop",
+    "--kill=none",
+    "--cuda-trace-scope=process-tree",
+    "--wait=all",
+    "--discard-environment=true",
+    "--stats=false",
+    "--force-overwrite=false"
+  ],
+  "profile_child_environment_only": {
+    "NSYS_NVTX_PROFILER_REGISTER_ONLY": "0"
+  },
+  "evidence": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102",
+  "help_verification": {
+    "profile_help_sha256": "c8ca1600825cc3d41ea3849cdac7cdd48db901a7f70c5637551444c53abeeae4",
+    "required_flags_supported": true,
+    "no_GPU_or_app_launch": true
+  },
+  "scope": "Existing Field algebra and new profiler dependency verification only; no CFD, geometry, timestep, build, 2.4 adoption or timing",
+  "C29_large_transient_status": "FAILED_UNQUALIFIED in both profiled and plain2.3 attempts",
+  "GPU_action_authorized_by_this_preparation": false
+}

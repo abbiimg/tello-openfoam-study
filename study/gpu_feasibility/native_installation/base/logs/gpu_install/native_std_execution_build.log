@@ -1,0 +1,2 @@
+Compiling enabled on 4 cores
+wmake /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/applications/test/std_execution

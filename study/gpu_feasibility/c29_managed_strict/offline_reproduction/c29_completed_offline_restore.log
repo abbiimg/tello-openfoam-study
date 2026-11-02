@@ -1,0 +1,8 @@
+{
+  "read_only_preflight_passed": true,
+  "saved_fields": 30,
+  "seed_not_duplicated_in_package": true,
+  "restored_to": "/opt/openfoam-workspace/cases/c29_offline_completed_replay_20261102",
+  "compiler_or_CFD_run": false,
+  "runtime_admission": false
+}

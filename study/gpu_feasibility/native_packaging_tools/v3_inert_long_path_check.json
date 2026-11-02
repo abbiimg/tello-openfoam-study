@@ -1,0 +1,23 @@
+{
+  "mode": "inert work fixture and read-only source membership only",
+  "native_python": "3.13.13 (main, May  8 2026, 20:31:08) [MSC v.1944 64 bit (ARM64)]",
+  "AST_passed": true,
+  "runtime_identity_passed": true,
+  "fixture_path": "\\\\?\\C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\native_compact_refresh_proposal\\inert_path_fixture_73fb0abdab09\\segment_0_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\segment_1_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\segment_2_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\inert_native_probe.txt",
+  "fixture_path_characters": 423,
+  "fixture_sha256": "160ab1376e2501dde09fc1363077300d195d25d727ff860f71bdff1fc840f5d2",
+  "ordinary_alias_canonicalized_to_same_bounded_extended_path": true,
+  "relative_inventory_names_are_posix_without_extended_prefix": true,
+  "source_membership_count": 1852,
+  "longest_source_path_characters": 291,
+  "exact_SPUMA_markers_selected": [
+    "gpu_feasibility/spuma/spuma_evidence/original_failed/.spuma-smoke-started",
+    "gpu_feasibility/spuma/spuma_evidence/strict_v2/.strict-v2-started"
+  ],
+  "V1_V2_unchanged": true,
+  "V3_source_sha256": "d0dd7c34c70fb9bdf63aa46286b396fa584bb2b52b6b446687e77e7c8ad913f0",
+  "archives_opened_or_created": false,
+  "study_case_output_written": false,
+  "backup_created": false,
+  "registry_or_profile_changed": false
+}

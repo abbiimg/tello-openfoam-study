@@ -1,0 +1,31 @@
+{
+  "kind": "Lossless minimal subset for the named actual-thread CUDA review predicates",
+  "extracted_utc": "2026-11-02T13:31:22.542103+00:00",
+  "source_private_sqlite": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.sqlite",
+  "source_sqlite_sha256": "6c02852e1a9e922be2e43bcaf31577a5b9d9b71ee52aa249b49f42f065da31d4",
+  "source_sqlite_bytes": 397312,
+  "source_private_report": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.nsys-rep",
+  "source_report_sha256": "29f735e992c5473be2339df0f78430cc9805af2628ccc3a804718f39cea1b74d",
+  "source_report_bytes": 90627,
+  "globalTid": 287789669531201,
+  "decoded_pid": 376385,
+  "range_name": "STRICT_CAVITY_V2_FIRST_COMPLETE_STEP",
+  "row_counts": {
+    "CUPTI_ACTIVITY_KIND_RUNTIME": 25,
+    "NVTX_EVENTS": 1,
+    "PROCESSES": 1,
+    "StringIds": 3
+  },
+  "successful_launch_rows": 12,
+  "launch_rows": 12,
+  "sync_rows": 13,
+  "failed_launch_or_sync_rows": 0,
+  "predicate": "All launch/sync rows for the actual solver globalTid across ALL retained trace timestamps, so post-window launch absence remains reviewable; exactly one named complete range when requested and one actual process row",
+  "StringIds_policy": "Only referenced safe API names and the selected static range name",
+  "environment_policy": "No environment tables or unreferenced StringIds queried/copied. Full originals are only hashed as bytes and remain private.",
+  "no_kernel_timeline_or_speed_claim": true,
+  "originals_unchanged": true,
+  "review_subset": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_gpu_install_publication_candidate/trace_subsets/strict_cavity_v2/review_subset.sqlite",
+  "review_subset_sha256": "fcd2ed36fb07fa255583881d7071aa3909a2e5ff5f1ba3a44a84140b5d5cfee7",
+  "extraction_recipe_sha256": "d34ab1048916abe048935ac1cb5b03916a549823ab6989e33cce38192c260cc8"
+}

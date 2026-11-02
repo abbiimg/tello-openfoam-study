@@ -1,0 +1,8 @@
+{
+  "completed_utc": "2026-11-02T07:40:58.515435+00:00",
+  "elapsed_s": 154.0578802319942,
+  "archive_sha256": "acf0d8ea9fc1b5457b16481b1067c742e6610989865e18be93e383d9ded37e2a",
+  "member_count": 21156,
+  "extraction_root": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/nvhpc_2026_269_Linux_aarch64_cuda_13.3",
+  "data_filter_used": true
+}

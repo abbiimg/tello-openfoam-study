@@ -1,0 +1,10 @@
+--- pinned_cpu_override/system/fvSolution
++++ foundation14_strict/system/fvSolution
+@@ -1,6 +1,6 @@
+ FoamFile { format ascii; class dictionary; object fvSolution; }
+ solvers {
+-p {directSolveCoarsest yes; solver GAMG; smoother GaussSeidel; tolerance 1e-7; relTol .05;}
++p {directSolveCoarsest yes; solver GAMG; smoother GaussSeidel; tolerance 1e-7; relTol 0;}
+ pFinal {$p; relTol 0;}
+ U {solver smoothSolver; smoother symGaussSeidel; tolerance 1e-7; relTol .05;}
+ UFinal {$U; relTol 0;}}

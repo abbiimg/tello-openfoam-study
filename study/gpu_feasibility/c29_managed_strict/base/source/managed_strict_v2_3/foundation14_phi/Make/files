@@ -1,0 +1,3 @@
+c29FoundationInitialPhi.C
+
+EXE = $(C29_PHI_APPBIN)/c29FoundationInitialPhi

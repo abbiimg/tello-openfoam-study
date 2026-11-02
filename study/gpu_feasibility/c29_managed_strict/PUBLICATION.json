@@ -1,0 +1,15 @@
+{
+  "published_utc": "2026-11-02T15:29:31.722752+00:00",
+  "candidate_manifest_sha256": "6b2994a2aae47fdad8dcb57b36add85b48e21d16f8f4be62ea34a408d3cdf884",
+  "review_sha256": "2a498cb7f259c650872688f0c3e0025210103c9d5f85a03cf0ce5e1c8ab3ba82",
+  "offline_terminal_receipt_sha256": "188e9c8cbf97631d5887af444f5e6362e977c099a864f908a4e72d86bdffbffe",
+  "offline_report_sha256": "c82065bd31fc53affb4df68d9559f3e7d93c0b09b05ee7ff93330954a4360087",
+  "offline_checks": 499,
+  "offline_failed_checks": 0,
+  "all_offline_checks_equal_original": true,
+  "plain_failure_reconciliation_sha256": "2434244e6fe0c0453d5849c0c082f6485dd66ddde0f57e31ed22df5ad73d8a2f",
+  "new_CFD_or_build_run_by_publication": false,
+  "GitHub_action": false,
+  "CPU84_results_changed": false,
+  "candidate_files_copied_exact": 518
+}

@@ -1,0 +1,73 @@
+{
+  "review_date_utc": "2026-11-02",
+  "reviewer": "stdpar_memory_review",
+  "verdict": "ACCEPTABLE_FOR_SEPARATELY_ROOT_APPROVED_SINGLE_FUNCTIONAL_PROFILE",
+  "blocking_findings": [],
+  "launch_authorized_by_this_review": false,
+  "runtime_numerical_or_performance_acceptance": false,
+  "proposal": "work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3",
+  "helper_manifest_sha256": "467b014b9fefe74ac76f26e7efe7bb0206994792cbe7e32d85c362dbbca1c5cb",
+  "protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "V3_diff_sha256": "a1020857615228dc039d5be91e8b10e398243d45ee56290a67bd68ab011d85ee",
+  "V2_base_manifest_sha256": "a488de2a74b25f50d8fcb4644344ee7de1dc91830af444280115750d328e1c13",
+  "V2_diff_sha256": "8b0343126fb07a43eb303b3b918164554f617cf821fdcddf0d6f16329b04cc95",
+  "restored_V1_manifest_sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+  "intermediate_snapshot_manifest_sha256": "784ab973ef7c6c783a3bad611934aa5408b6a3406823dc4ad907fdfc68a1df9f",
+  "identity_checks": {
+    "V3_manifest_entries_checked": 9,
+    "V3_manifest_mismatches": [],
+    "external_protocol_file_records_checked": 9,
+    "external_protocol_file_record_mismatches": [],
+    "restored_V1_seven_entries_verified": true,
+    "intermediate_seven_entries_verified": true,
+    "V2_nine_entries_verified": true,
+    "V2_patch_independently_regenerated_exact": true,
+    "V3_patch_independently_regenerated_exact": true,
+    "only_README_and_outer_runner_changed_from_V2": true,
+    "protocol_common_installed_help_unchanged_from_V1": true,
+    "trace_proof_body_from_capture_check_exact_to_V1": true,
+    "AST_only_parse_success": ["owned_cleanup.py", "profile_common.py", "run_actual_gpu_child.py", "run_gpu_profile.py", "validate_gpu_profile.py"]
+  },
+  "resolved_findings": [
+    {
+      "id": "V1-post-Popen-owned-child-cleanup",
+      "files": ["run_actual_gpu_child.py", "owned_cleanup.py"],
+      "lines": {"run_actual_gpu_child.py": [26, 27, 29, 30, 49, 50, 55], "owned_cleanup.py": [3, 7, 8, 12, 14, 20, 23, 26]},
+      "resolution": "Immediate post-Popen try/finally, exact owned pidfd or unreaped direct Popen fallback, TERM/grace/KILL/wait, true terminal receipt before postprocessing"
+    },
+    {
+      "id": "V2-nonzero-profiler-exit-and-pre-wrapper-timeout",
+      "file": "run_gpu_profile.py",
+      "lines": [6, 9, 13, 20, 23, 30, 37, 42, 71, 72, 75, 79, 85, 86],
+      "resolution": "Nonzero profiler exit requests cleanup independently of profiler liveness; waits for terminal/no-launch evidence; atomic marker plus no earlier wrapper-start safely handles pre-wrapper startup hang"
+    }
+  ],
+  "static_proof_checks": {
+    "separate_Root_approval_and_fresh_receipt_required": true,
+    "external_startup_and_F14_CPU_gate_bindings_required": true,
+    "receipt_rechecked_before_profiler_and_actual_child": true,
+    "inherited_profiler_preload_preserved": true,
+    "loader_overlay_restricted_to_pinned_Nsight": true,
+    "actual_child_identity_and_wait_status_separate_from_profiler": true,
+    "recorded_wrapper_or_cleanup_errors_fail_gate": true,
+    "same_actual_child_globalTid_and_PROCESSES_required": true,
+    "successful_non_null_launch_and_sync_return_values_required": true,
+    "successful_launches_in_whole_assembly_predictor_and_both_pressure_windows_required": true,
+    "completion_after_last_launch_in_each_window_required": true,
+    "five_steps_and_finite_End_log_required": true,
+    "missing_evidence_fails_closed": true,
+    "distinct_kernel_count_or_GPU_timeline_proof_claimed": false,
+    "numerical_or_speed_acceptance_conferred": false
+  },
+  "limitations": [
+    "Static review only; proposed helpers were not imported or executed",
+    "Actual loaded-library evidence and every declared library checksum remain runtime gates",
+    "Normal timers are not an absolute upper bound on pathological OS reaping or unresolved started-owner cleanup",
+    "Strict GPU numerical comparison remains separate and outstanding",
+    "Functional profiling cannot establish speedup or lift-design conclusions"
+  ],
+  "external_F14_CPU_analysis_sha256_verified": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e",
+  "external_F14_CPU_numerical_gate_reaudited_here": false,
+  "primary_sources": ["https://docs.nvidia.com/nsight-systems/UserGuide/", "https://docs.nvidia.com/nsight-systems/AnalysisGuide/"],
+  "actions": {"read_only_source_and_documentation_review": true, "hash_diff_and_AST_checks": true, "helper_import_or_execution": false, "profiler_capture": false, "GPU_or_CFD_run": false, "proposal_case_source_vendor_build_SDK_permission_changes": false, "only_independent_review_artifacts_written": true}
+}

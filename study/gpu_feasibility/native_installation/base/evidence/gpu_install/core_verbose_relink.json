@@ -1,0 +1,13 @@
+{
+  "kind": "Link-only diagnostic; all628compiled objects preserved",
+  "completed_utc": "2026-11-02T08:53:49.218096+00:00",
+  "return_code": 2,
+  "elapsed_s": 3.588683387002675,
+  "flags_added": [
+    "-v",
+    "-gpu=keep"
+  ],
+  "has_fPIC": true,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/core_verbose_relink.log",
+  "original_argv": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/core_failed_link_argv.json"
+}

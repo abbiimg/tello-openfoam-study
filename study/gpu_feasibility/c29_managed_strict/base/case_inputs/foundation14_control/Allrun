@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Prepared inputs only; no execution authorized by Allrun." >&2
+exit 64

@@ -1,0 +1,14 @@
+{
+  "changed_utc": "2026-11-02T08:19:46.0362967Z",
+  "analyzer_before": "c43f0e6d266538812cf53d3c618d1ad4e9b39e937f96e965099c291100bedf46",
+  "analyzer_after": "d6e15594430e2f64a4ee878965b8a5072d97a256e0d5f891a824af4e8772ca1c",
+  "statistics_after": "5a74dbd5c3010ec20de93f657b6918343de4588bd01de73a2295e638cf635740",
+  "summary_csv_unchanged_sha256": "b0abc1404dadb4f9112ebdec73060f444df5aff67d491b4c96c5eda048a7b2c7",
+  "change": "Standalone planform title says matched target initialization/numerics; extra footer records differing upstream MPI2/directoff vs serial/directon seed protocols.",
+  "scope": "Planform caption/footer only; no CFD, metrics, comparisons, ranking or qualification logic changes",
+  "review": "work/final_scientific_review.md/json",
+  "final_analysis_exit_code": 0,
+  "approved_cases": 84,
+  "selected_skips": 0,
+  "preliminary": false
+}

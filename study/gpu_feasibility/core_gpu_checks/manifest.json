@@ -1,0 +1,37 @@
+{
+  "published_utc": "2026-11-02T09:53:01.389889+00:00",
+  "kind": "Completed core GPU evidence/source snapshot; no CFD/performance claim",
+  "files": {
+    "README.txt": {
+      "bytes": 1394,
+      "sha256": "e5889841a352abec8d84cf710ad5c3092dc2a10b145d2d3534a02bc3e3a59cb9"
+    },
+    "Test-nativeStdparFields.C": {
+      "bytes": 2236,
+      "sha256": "046dfc47664ff9b29544bfbb78d395ca9c745623d906b7af844c5c24d416a88b"
+    },
+    "native_field_arithmetic_gate.json": {
+      "bytes": 1551,
+      "sha256": "ce6cfe4fd48799e0284708646c26e15a0678613f565cc9c6a7fd4808760e05fe"
+    },
+    "native_field_gpu_api_gate.json": {
+      "bytes": 2320,
+      "sha256": "13516b5b0f3628f8c91070cca736fa00fd0771f0b4f25baddf6c2aab9ad26909"
+    },
+    "spuma_core_executor_gate.json": {
+      "bytes": 1377,
+      "sha256": "4d4c988d3319c69924a4f49496ce4d72ef09d287ebc179bc61680fa2e2357837"
+    },
+    "spuma_core_executor_preparation.json": {
+      "bytes": 835,
+      "sha256": "e147167a5d8e9a692f6d8cae90d47fc04eee80823bc68eb043b9a07f73256e67"
+    },
+    "spuma_pool_device_marker.C": {
+      "bytes": 4089,
+      "sha256": "c47b46171a5dc9efcf5c246c737d4e2e1d82c1db10dfa12592568d2d882c9aef"
+    }
+  },
+  "original_source_files_unchanged": true,
+  "binaries_or_sdk_included": false,
+  "production_inputs_changed": false
+}

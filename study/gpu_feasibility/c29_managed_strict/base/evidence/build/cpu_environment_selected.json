@@ -1,0 +1,22 @@
+{
+  "WM_PROJECT_DIR": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606",
+  "WM_OPTIONS": "linuxARM64GccDPInt32Opt",
+  "WM_COMPILER": "Gcc",
+  "WM_PRECISION_OPTION": "DP",
+  "WM_LABEL_SIZE": "32",
+  "WM_MPLIB": "none",
+  "FOAM_LIBBIN": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib",
+  "FOAM_EXT_LIBBIN": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64GccDPInt32/lib",
+  "FOAM_MEMORY_POOL": null,
+  "PATH": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/user/platforms/linuxARM64GccDPInt32Opt/bin:/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64GccDPInt32Opt/bin:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64GccDPInt32Opt/bin:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/bin:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/wmake:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/tools/bison/usr/bin:/usr/bin:/bin",
+  "LD_LIBRARY_PATH": "/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64GccDPInt32/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/fftw-3.3.10/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/CGAL-4.14.3/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/boost_1_74_0/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy",
+  "C29_APPBIN": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin",
+  "C29_USE_CUDA": "0",
+  "C29_USE_NVTX": "1",
+  "C29_CUDA_INCLUDE": null,
+  "C29_CUDA_LIBDIR": null,
+  "C29_NVTX_INCLUDE": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include",
+  "WM_NCOMPPROCS": "1",
+  "OMP_NUM_THREADS": "1",
+  "TMPDIR": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/tmp"
+}

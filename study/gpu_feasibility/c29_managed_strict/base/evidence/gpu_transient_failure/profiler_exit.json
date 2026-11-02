@@ -1,0 +1,39 @@
+{
+  "completed_utc": "2026-11-02T14:10:40.664596+00:00",
+  "return_code": 139,
+  "timed_out": false,
+  "cancelled": false,
+  "outer_wrapper_errors": [],
+  "verified_child_cleanup": [
+    {
+      "owner_cleanup_state": "actual_child_terminal_or_not_launched",
+      "atomic_cancel_marker_published": true
+    }
+  ],
+  "actual_solver_exit_is_separate": true,
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+    "profile",
+    "--trace=cuda,nvtx",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--capture-range=nvtx",
+    "--nvtx-capture=C29_NATIVE_TIME_STEP",
+    "--capture-range-end=stop",
+    "--kill=none",
+    "--cuda-trace-scope=process-tree",
+    "--wait=all",
+    "--discard-environment=true",
+    "--stats=false",
+    "--force-overwrite=false",
+    "-o",
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/first_complete_step",
+    "/usr/bin/python3",
+    "-B",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/run_actual_gpu_child.py",
+    "--approval",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_approval.json",
+    "--receipt",
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.json"
+  ]
+}

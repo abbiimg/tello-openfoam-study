@@ -1,0 +1,420 @@
+{
+  "kind": "Actual OpenFOAM Foundation14 AmgX functional integration verification",
+  "passed": true,
+  "checks": {
+    "native_exit_zero": true,
+    "gpu_exit_zero": true,
+    "cavity-native_end": true,
+    "cavity-native_20steps": true,
+    "cavity-native_no_fatal": true,
+    "cavity-native_written_time": true,
+    "cavity-amgx_end": true,
+    "cavity-amgx_20steps": true,
+    "cavity-amgx_no_fatal": true,
+    "cavity-amgx_written_time": true,
+    "U_field_agreement": true,
+    "p_field_agreement": true,
+    "40_amgx_pressure_solves": true,
+    "all_amgx_solves_launched_gpu_work": true,
+    "all_native_residuals_meet_tolerance": true,
+    "shared_physics_mesh_inputs_unchanged": true,
+    "upstream_amgx_source_clean": true
+  },
+  "field_comparisons": {
+    "U": {
+      "components": 1200,
+      "max_abs_difference": 2.444155988712282e-12,
+      "relative_l2_difference": 5.01549080723093e-12,
+      "gate_max_abs": 1e-08,
+      "gate_relative_l2": 1e-08
+    },
+    "p": {
+      "components": 400,
+      "max_abs_difference": 1.896833801140474e-10,
+      "relative_l2_difference": 2.6956970161516236e-10,
+      "gate_max_abs": 1e-08,
+      "gate_relative_l2": 1e-08
+    }
+  },
+  "amgx_pressure_solves": 40,
+  "successful_cuda_launch_api_calls_total": 8040,
+  "max_native_normalized_pressure_residual": 8.044811605588257e-13,
+  "native_job_id": "AllrunPilot-6375da",
+  "gpu_job_id": "AllrunPilot-f8e55d",
+  "pilot_root": "/opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102",
+  "source_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "source_git_status": "",
+  "library_gpu_smoke_passed": true,
+  "adapter_library": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libAmgXPressure.so",
+  "adapter_library_sha256": "dce4bb6ca9e9d6b1060c10636ebec99f5623194c19e11277b57c90fabaa5fc3c",
+  "diagnostics": [
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 23,
+      "successful_cuda_launch_api_calls": 234,
+      "initial_residual": 1.0,
+      "native_final_residual": 4.3810272278377456e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 23,
+      "successful_cuda_launch_api_calls": 234,
+      "initial_residual": 0.523588449377803,
+      "native_final_residual": 1.7031964860208238e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 24,
+      "successful_cuda_launch_api_calls": 244,
+      "initial_residual": 0.3702579587660459,
+      "native_final_residual": 2.6565871876077457e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 24,
+      "successful_cuda_launch_api_calls": 244,
+      "initial_residual": 0.29059117165350845,
+      "native_final_residual": 2.2104869955995113e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 22,
+      "successful_cuda_launch_api_calls": 224,
+      "initial_residual": 0.13819581160145827,
+      "native_final_residual": 7.345695177718487e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 22,
+      "successful_cuda_launch_api_calls": 224,
+      "initial_residual": 0.09857915515670755,
+      "native_final_residual": 5.674929281505044e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 22,
+      "successful_cuda_launch_api_calls": 224,
+      "initial_residual": 0.05536537179040326,
+      "native_final_residual": 2.0232534056696906e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.042685602130864836,
+      "native_final_residual": 6.90597057268678e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 22,
+      "successful_cuda_launch_api_calls": 224,
+      "initial_residual": 0.03693772457844237,
+      "native_final_residual": 2.344241215793131e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.02866055273945509,
+      "native_final_residual": 7.566033216127031e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.02478477742647096,
+      "native_final_residual": 5.471258038385121e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.019305725023900617,
+      "native_final_residual": 4.486273030985675e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.018140847335420235,
+      "native_final_residual": 2.7171214330085116e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 20,
+      "successful_cuda_launch_api_calls": 204,
+      "initial_residual": 0.01411960507594848,
+      "native_final_residual": 8.023626684448315e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.01342406569375591,
+      "native_final_residual": 2.845810961638975e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 21,
+      "successful_cuda_launch_api_calls": 214,
+      "initial_residual": 0.010443384258897973,
+      "native_final_residual": 2.319183998760205e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 20,
+      "successful_cuda_launch_api_calls": 204,
+      "initial_residual": 0.010116455377081217,
+      "native_final_residual": 4.929609966279363e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 20,
+      "successful_cuda_launch_api_calls": 204,
+      "initial_residual": 0.007865742928207931,
+      "native_final_residual": 3.6828046036504334e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.007719510585895426,
+      "native_final_residual": 3.8080213641507864e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.005991032928861364,
+      "native_final_residual": 2.938671592277058e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.0059203353561821425,
+      "native_final_residual": 4.658160626257767e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.004590374816411087,
+      "native_final_residual": 3.4281032530276216e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.004566326556517296,
+      "native_final_residual": 1.925065744099654e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0035420279801656,
+      "native_final_residual": 6.574764453958488e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.0035417187256667837,
+      "native_final_residual": 3.451247063381216e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 19,
+      "successful_cuda_launch_api_calls": 194,
+      "initial_residual": 0.002743895733061283,
+      "native_final_residual": 2.731207169108461e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0027588374675329365,
+      "native_final_residual": 6.373075823044703e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0021361047851983467,
+      "native_final_residual": 5.070920596125042e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0021567064528897873,
+      "native_final_residual": 7.706094312709302e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0016688883479545975,
+      "native_final_residual": 6.136162238795138e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0016897454748531905,
+      "native_final_residual": 5.981507886688846e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0013070696613255383,
+      "native_final_residual": 4.738882191489761e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.001326692384675599,
+      "native_final_residual": 3.352157204778124e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0010256162816563205,
+      "native_final_residual": 2.6105878537161416e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0010430642633336834,
+      "native_final_residual": 2.6125333577115156e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 17,
+      "successful_cuda_launch_api_calls": 174,
+      "initial_residual": 0.0008062236633509464,
+      "native_final_residual": 8.044811605588257e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 18,
+      "successful_cuda_launch_api_calls": 184,
+      "initial_residual": 0.0008209290411211931,
+      "native_final_residual": 2.0272428494353205e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 17,
+      "successful_cuda_launch_api_calls": 174,
+      "initial_residual": 0.0006347293369309005,
+      "native_final_residual": 6.356356194557186e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 17,
+      "successful_cuda_launch_api_calls": 174,
+      "initial_residual": 0.0006470078765253102,
+      "native_final_residual": 6.316817018758448e-13,
+      "converged": true
+    },
+    {
+      "rows": 400,
+      "nnz": 1920,
+      "iterations": 17,
+      "successful_cuda_launch_api_calls": 174,
+      "initial_residual": 0.000500343164379832,
+      "native_final_residual": 4.992285278301309e-13,
+      "converged": true
+    }
+  ],
+  "limitations": [
+    "400-cell 2D cavity only; rotor CFD not tested",
+    "serial symmetric noncoupled pressure only",
+    "uncached setup every solve",
+    "extra tenfold backend tolerance safety margin",
+    "no performance benchmark or production adoption"
+  ],
+  "no_production_inputs_modified": true
+}

@@ -1,0 +1,81 @@
+{
+  "reviewed_utc": "2026-11-02T11:59:51.667912+00:00",
+  "acceptance": {
+    "completed_utc": "2026-11-02T11:56:50.352068+00:00",
+    "passed": true,
+    "protocol_sha256": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+    "CPU_peak_all_corrector_continuity": 1.07765980523269e-08,
+    "GPU_peak_all_corrector_continuity": 1.0776598044841246e-08,
+    "GPU_successful_launch_API_calls": 12,
+    "field_parity_passed": true,
+    "original_failed_screens_unchanged": true,
+    "speedup_measured": false,
+    "C29_validated": false
+  },
+  "actual_children": {
+    "native_cpu": {
+      "actual_child": {
+        "pid": 375554,
+        "uid": 999,
+        "birth_start_ticks": 16051041,
+        "state_at_receipt": "R",
+        "cwd": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu",
+        "exe": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam"
+      },
+      "return_code": 0,
+      "alive_now": false,
+      "binary_sha256": "77d1841b6806ddda4ffc3be7c8aca3788b42ca61d5e04ffa8a8a4d352438c3ba"
+    },
+    "native_gpu": {
+      "actual_child": {
+        "pid": 376385,
+        "uid": 999,
+        "birth_start_ticks": 16055770,
+        "state_at_receipt": "R",
+        "cwd": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_gpu",
+        "exe": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/icoFoamStrictV2"
+      },
+      "return_code": 0,
+      "alive_now": false,
+      "binary_sha256": "600e691e9afc9d024d1388591b4d188f892d71c33119105568c397903ae6c89f"
+    }
+  },
+  "proof": {
+    "range_start": 13929079,
+    "range_end": 111439351,
+    "globalTid": 287789669531201,
+    "decoded_PID": 376385,
+    "decoded_TID": 376385,
+    "process_table_row": {
+      "globalPid": 287789669154816,
+      "pid": 376385,
+      "name": "icoFoamStrictV2"
+    },
+    "launch_calls": 12,
+    "successful_sync_calls": 13,
+    "failed_launch_or_sync_calls": 0,
+    "last_launch_end": 104371893,
+    "completion": [
+      {
+        "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+        "start": 109933351,
+        "end": 111437639,
+        "globalTid": 287789669531201,
+        "return_value": 0,
+        "name": "cudaDeviceSynchronize_v3020"
+      }
+    ],
+    "capture_start": true,
+    "capture_end": true,
+    "kernel_activity_tables": {}
+  },
+  "CPU_final_independent_local": 4.206927833340531e-09,
+  "GPU_final_independent_local": 4.206927834851294e-09,
+  "max_U_relative_L2": 3.710018777681922e-15,
+  "max_U_absolute": 2.8232461024730346e-15,
+  "max_p_relative_L2": 1.3037842957178397e-13,
+  "max_p_absolute": 1.3500311979441904e-13,
+  "pipeline_alive": false,
+  "original_native_main_alive": false,
+  "original_native_watcher_alive": false
+}

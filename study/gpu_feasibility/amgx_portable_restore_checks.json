@@ -1,0 +1,67 @@
+{
+  "checked_utc": "2026-11-02T09:18:31.315270+00:00",
+  "passed": true,
+  "kind": "Published portable cavity/rotor restoration positive check on installed host",
+  "published_manifest_sha256": "9d5136903133192acbc8dc7353623e2a0e1d4f69aef32e08dae08509579414d3",
+  "restored_root": "/opt/openfoam-workspace/cases/amgx_portable_restore_checks_20261102",
+  "records": [
+    {
+      "kind": "cavity",
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/gpu_feasibility/amgx/recipes/restore_pilots.py",
+        "--kind",
+        "cavity",
+        "--case-root",
+        "/opt/openfoam-workspace/cases/amgx_portable_restore_checks_20261102/cavity",
+        "--amgx-prefix",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda",
+        "--cuda-root",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"case_root\": \"/opt/openfoam-workspace/cases/amgx_portable_restore_checks_20261102/cavity\",\n  \"cases\": [\n    \"cavity-native\",\n    \"cavity-amgx\"\n  ],\n  \"solver_launched\": false\n}\n",
+      "receipt_sha256": "6947068338560def8cd2fdf575fb8f22840c11554eda718be46bef313658dead",
+      "cases": [
+        "cavity-amgx",
+        "cavity-native"
+      ],
+      "all_reported_files_rehashed": true
+    },
+    {
+      "kind": "rotor",
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/gpu_feasibility/amgx/recipes/restore_pilots.py",
+        "--kind",
+        "rotor",
+        "--case-root",
+        "/opt/openfoam-workspace/cases/amgx_portable_restore_checks_20261102/rotor",
+        "--amgx-prefix",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda",
+        "--cuda-root",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13",
+        "--seed-dir",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/gpu_feasibility/benchmark_reproduction"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"case_root\": \"/opt/openfoam-workspace/cases/amgx_portable_restore_checks_20261102/rotor\",\n  \"cases\": [\n    \"rotor-native\",\n    \"rotor-amgx\"\n  ],\n  \"solver_launched\": false\n}\n",
+      "receipt_sha256": "96775bdd7c6507f75bc14352eace5962d1cfb072ce0a4c0ee612215cec64694a",
+      "cases": [
+        "rotor-amgx",
+        "rotor-native"
+      ],
+      "all_reported_files_rehashed": true
+    }
+  ],
+  "installed_libraries_unchanged": {
+    "libAmgXPressure.so": "dce4bb6ca9e9d6b1060c10636ebec99f5623194c19e11277b57c90fabaa5fc3c",
+    "libamgxLaunchAudit.so": "203edc554f63818c5cf5a3d2c8a76272610270d2d296bff2ea1728a8c519d1d4",
+    "libamgxsh.so": "28385b730dccb1f9aabbd9b0caf37ecd478720889398d0df8c65e5d24ce7ef58"
+  },
+  "publisher_or_recipe_modified": false,
+  "solver_or_build_launched": false,
+  "fresh_host_rebuild_tested": false,
+  "production_cases_changed": false,
+  "scope": "Inputs, relocation, checksummed copying and fresh Allrun creation only; the existing functional simulations are separate recorded checks."
+}

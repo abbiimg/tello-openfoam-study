@@ -1,0 +1,50 @@
+{
+  "schema": "root-c29-strict-f14-to-nativecpu-external-gate-v1",
+  "root_asserted_pass": true,
+  "reviewed_utc": "2026-11-02T13:50:06.683218+00:00",
+  "numerical_report": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_to_cpu_analysis.json",
+    "sha256": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e"
+  },
+  "strict_input_binding": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit.json",
+    "sha256": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926",
+    "protocol": "c29-native-five-fixed-steps-strict-pressure-v1",
+    "protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+    "roles_checked": [
+      "f14",
+      "cpu",
+      "gpu"
+    ],
+    "root_authorization_sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+    "meaning": "Binds a separate root dictionary audit to current bytes; external startup/launch/input/loader gates remain mandatory. No runtime acceptance inferred."
+  },
+  "actual_five_step_receipts": {
+    "f14": {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_execution.json",
+      "sha256": "55330fd6ad635905678d397ab42566b98e9f1c0334d3cc96d3812647fad6ac17"
+    },
+    "cpu": {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_execution.json",
+      "sha256": "5d0acdabf03babfac0369dbb19707a686855828ce416eb86009599e23da555c3"
+    }
+  },
+  "exact_shared_startup_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/initial_field_comparison.json",
+    "sha256": "6da117692c579c345bcddafab1d1f9a9f92858bbbd63c61f96bd1f56e382a3d7"
+  },
+  "actual_shared_initial_receipts": {
+    "cpu": {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_execution.json",
+      "sha256": "273255876991a65b15c06e8dcb79405580661842345f861a20f3b7feee4fb4b5"
+    },
+    "gpu": {
+      "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_execution.json",
+      "sha256": "5cc910b78f576e296faab75d57ed14dbe6e6ca405a1f3d27304b6d2581bbb2d2"
+    }
+  },
+  "passed_mechanical_checks": 499,
+  "numpy_version_for_analysis_and_reconciliation": "1.26.4",
+  "scope": "Only the new shared-phi strict-pressure managed2.3 F14-to-nativeCPU five-fixed-step validation. GPU transient qualification, performance, production default and study optimum are not decided by this gate.",
+  "preserved_failures": "Original computed-GPU startup phi exactness failed by 3.1742559698354905e-19; preregistered common-phi fallback used. Original legacy relTol.05 five-step continuity failures remain unwaived."
+}

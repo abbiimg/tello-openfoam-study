@@ -1,0 +1,228 @@
+{
+  "schema": "c29-unvalidated-experiment-launch-receipt-v2",
+  "created_utc": "2026-11-02T13:26:06.056644+00:00",
+  "created_epoch": 1793625966.0566773,
+  "max_age_s": 300,
+  "experiment_id": "c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46",
+  "phase": "foundation_initial_phi",
+  "backend": "cpu",
+  "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control",
+  "private_root": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102",
+  "inputs": {
+    "0.6/U": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/U",
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "size_bytes": 38621951,
+      "mtime_ns": 1793624836428566148
+    },
+    "constant/polyMesh/boundary": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/polyMesh/boundary",
+      "sha256": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "size_bytes": 813,
+      "mtime_ns": 1793624836576792968
+    },
+    "constant/polyMesh/cellProc": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/polyMesh/cellProc",
+      "sha256": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+      "size_bytes": 1845845,
+      "mtime_ns": 1793624836577039168
+    },
+    "constant/polyMesh/faces": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/polyMesh/faces",
+      "sha256": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "size_bytes": 85443688,
+      "mtime_ns": 1793624837300566855
+    },
+    "constant/polyMesh/neighbour": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/polyMesh/neighbour",
+      "sha256": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "size_bytes": 18862641,
+      "mtime_ns": 1793624837456566982
+    },
+    "constant/polyMesh/owner": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/polyMesh/owner",
+      "sha256": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "size_bytes": 19220457,
+      "mtime_ns": 1793624837620567115
+    },
+    "constant/polyMesh/points": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/polyMesh/points",
+      "sha256": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "size_bytes": 37520188,
+      "mtime_ns": 1793624837800567261
+    },
+    "system/controlDict": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/controlDict",
+      "sha256": "56c516940b8d6b93ee7661e6598b3a3a558fce27c6e18c027fd0ee4b637667e5",
+      "size_bytes": 380,
+      "mtime_ns": 1793624839907444172
+    },
+    "constant/c29InitialPhiControls": {
+      "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/c29InitialPhiControls",
+      "sha256": "72d92c26616f6f1a549c90832d7e63a9d601d03b4f3d0357d2d98336ef07aadc",
+      "size_bytes": 1001,
+      "mtime_ns": 1793625763368576137
+    }
+  },
+  "input_snapshot_sha256": "f0aa4f40bf69de318835dfaa69bc02f42d60903edfe9108e01ba41ef3d61f579",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/bin/c29FoundationInitialPhi",
+    "sha256": "161be52ffe49e0a5ec62093f4fc92a5a215f1976be141edc3965294fe8fc8888",
+    "size_bytes": 564280,
+    "mtime_ns": 1793619178845829694
+  },
+  "library_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/library_identity.json",
+    "sha256": "91a08df81f64d3d0296d22c11ad40a9b3d6b524a9bb9fb1124665abb2bb8b7d5",
+    "size_bytes": 4344,
+    "mtime_ns": 1793620402376761481
+  },
+  "libraries": [
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "70ea400d4a76d54887e533880f5bcbfdc85b7f0875e1ecbcd0cad7aaa0c23fcf",
+      "size_bytes": 35735440,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "53f02be63c87386924790b86960d4f8db3e74ec178f09ac3e4a1979aac43ebc7",
+      "size_bytes": 4872656,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "667a228e7dacf27b00bb3627421334b378c628024e58483c6f0fb40b6773a7b2",
+      "size_bytes": 10198408,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "size_bytes": 2633224,
+      "mtime_ns": 1766093810000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libm.so.6",
+      "sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "size_bytes": 591800,
+      "mtime_ns": 1788444912000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+      "sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "size_bytes": 133696,
+      "mtime_ns": 1766093810000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libc.so.6",
+      "sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "size_bytes": 1722920,
+      "mtime_ns": 1788444912000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+      "sha256": "390027e5f45f236bd1838bc54bf464c5ff01d260ab9f8b415ea8276641bce505",
+      "size_bytes": 203968,
+      "mtime_ns": 1788444912000000000
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libtriSurface.so",
+      "sha256": "d8a1aca3c9eb8cb55c4100d81073d624436035ad59b4b650279e87e27ccfb42b",
+      "size_bytes": 595296,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/openmpi-system/libPstream.so",
+      "sha256": "297c15da6ade4e73bd2cc8dea5fbae6d6480a5004cca2d40b5cb79a2bded7a7c",
+      "size_bytes": 68160,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libfileFormats.so",
+      "sha256": "51b6cac8342475de1f7ea59a168367f6f1ac7d15d2e3739c5d4f265b41d19c37",
+      "size_bytes": 265688,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libz.so.1.3",
+      "sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3",
+      "size_bytes": 133272,
+      "mtime_ns": 1792616177000000000
+    },
+    {
+      "path": "/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/libsurfMesh.so",
+      "sha256": "43dcce4c58fa26183c9622d8498312c2f3e04136bb53f18e633de27841dba6da",
+      "size_bytes": 1055248,
+      "mtime_ns": 1791477868000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libmpi.so.40.30.6",
+      "sha256": "981c4526cd9184063cb3e8b246f6893dbbe79e4cd8326f06227d1055493de292",
+      "size_bytes": 1246688,
+      "mtime_ns": 1711916708000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libopen-rte.so.40.30.3",
+      "sha256": "56b095bad147da72cb51b305d5cdf25857142ea098940ee99976d5425f380a83",
+      "size_bytes": 801704,
+      "mtime_ns": 1711916708000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libopen-pal.so.40.30.3",
+      "sha256": "0d73f5bcf55d61092c4403b7e2a39f2ca34396086178605029300dd041f7c591",
+      "size_bytes": 740256,
+      "mtime_ns": 1711916708000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libhwloc.so.15.7.0",
+      "sha256": "43db4b0fdcb5052559c3c478ac6435e402679f2c54c77eb9080da5f458726450",
+      "size_bytes": 396320,
+      "mtime_ns": 1713462687000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libevent_core-2.1.so.7.0.1",
+      "sha256": "72dc55af40edeeabcbe8369c8056b3acb629fca9840837255f642a5759de0f77",
+      "size_bytes": 264160,
+      "mtime_ns": 1790191059000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libevent_pthreads-2.1.so.7.0.1",
+      "sha256": "8e03ea005d405f89f9ed77910e40b48aa0cf84a16c40258e4bcd1a72029304e0",
+      "size_bytes": 67360,
+      "mtime_ns": 1790191059000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libudev.so.1.7.8",
+      "sha256": "aa6d64bdfafc40a30b3206e7ae31fde008f013b180aa1ab877ec1bde0a240ca6",
+      "size_bytes": 264712,
+      "mtime_ns": 1791790576000000000
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libcap.so.2.66",
+      "sha256": "1b6d3932cf8b60b2f27f80cdd26d9a296b8a9608fc02b4eccb8fb2fdab73fea2",
+      "size_bytes": 67704,
+      "mtime_ns": 1775747067000000000
+    }
+  ],
+  "candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "environment": {
+    "LD_LIBRARY_PATH": "/opt/openfoam14/thirdparty/platforms/linuxArm64Gcc/gperftools-svn/lib:/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/paraview-5.11:/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/openmpi-system:/opt/openfoam14/thirdparty/platforms/linuxArm64GccDPInt32/lib/openmpi-system:/usr/lib/aarch64-linux-gnu/openmpi/lib:/opt/openfoam-workspace/OpenFOAM/openfoam-14/platforms/linuxArm64GccDPInt32Opt/lib:/opt/site/14/platforms/linuxArm64GccDPInt32Opt/lib:/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib:/opt/openfoam14/thirdparty/platforms/linuxArm64GccDPInt32/lib:/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/dummy",
+    "LD_PRELOAD": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "NVCOMPILER_ACC_DEVICE_TYPE": null,
+    "NVCOMPILER_ACC_CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": "1"
+  },
+  "manual_argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/bin/c29FoundationInitialPhi",
+    "-case",
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control"
+  ],
+  "shared_phi_sha256": null,
+  "inputs_audited": true,
+  "runtime_validated": false,
+  "scientific_acceptance": "NOT ASSESSED",
+  "limitations": "No launch. Recheck immediately before exact manual argv under frozen inputs/environment. C++ logs bindings but does not hash files. Root must compare declared libraries with actual loader evidence."
+}

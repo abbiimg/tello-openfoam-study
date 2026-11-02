@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-11-02T09:59:42.726711+00:00",
+  "method": "Existing active build and its exact UID999 descendant tree adopted into a task-scoped transient supervisor service via systemd AttachProcessesToUnit; no compiler restarted. Idle profile watcher replaced by a direct transient service.",
+  "main_worker_pid": 311811,
+  "main_unit": "native-stdpar-main-20261102T095941Z.service",
+  "main_launch": {
+    "argv": [
+      "systemd-run",
+      "--collect",
+      "--unit=native-stdpar-main-20261102T095941Z.service",
+      "--uid=openfoam",
+      "--nice=15",
+      "--service-type=exec",
+      "--working-directory=/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install",
+      "--property=StandardInput=null",
+      "--property=StandardOutput=append:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native-stdpar-main-20261102T095941Z.service.log",
+      "--property=StandardError=append:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native-stdpar-main-20261102T095941Z.service.log",
+      "--property=Delegate=yes",
+      "/usr/bin/python3",
+      "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/supervise_existing_native_worker.py",
+      "311811",
+      "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/build_minimal_native_stack.py"
+    ],
+    "stdout": "Running as unit: native-stdpar-main-20261102T095941Z.service; invocation ID: 930393d1c37d43378935db14ff21ea76"
+  },
+  "attached_pids": [
+    311811,
+    318460,
+    325900,
+    325904,
+    325906,
+    325937,
+    325939,
+    325955,
+    325957,
+    325980
+  ],
+  "main_service": {
+    "MainPID": "325989",
+    "ControlGroup": "/system.slice/native-stdpar-main-20261102T095941Z.service",
+    "Nice": "15",
+    "User": "openfoam",
+    "Id": "native-stdpar-main-20261102T095941Z.service",
+    "ActiveState": "active",
+    "SubState": "running",
+    "CollectMode": "inactive-or-failed"
+  },
+  "profile_unit": "native-stdpar-profile-20261102T095941Z.service",
+  "profile_launch": {
+    "argv": [
+      "systemd-run",
+      "--collect",
+      "--unit=native-stdpar-profile-20261102T095941Z.service",
+      "--uid=openfoam",
+      "--nice=15",
+      "--service-type=exec",
+      "--working-directory=/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install",
+      "--property=StandardInput=null",
+      "--property=StandardOutput=append:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native-stdpar-profile-20261102T095941Z.service.log",
+      "--property=StandardError=append:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native-stdpar-profile-20261102T095941Z.service.log",
+      "/usr/bin/python3",
+      "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/profile_native_cfd_loop.py"
+    ],
+    "stdout": "Running as unit: native-stdpar-profile-20261102T095941Z.service; invocation ID: 18fa6be1cf044e80b2e3b7c9d66b3262"
+  },
+  "profile_service": {
+    "MainPID": "326002",
+    "ControlGroup": "/system.slice/native-stdpar-profile-20261102T095941Z.service",
+    "Nice": "15",
+    "User": "openfoam",
+    "Id": "native-stdpar-profile-20261102T095941Z.service",
+    "ActiveState": "active",
+    "SubState": "running",
+    "CollectMode": "inactive-or-failed"
+  },
+  "method_reference": "https://www.freedesktop.org/software/systemd/man/latest/org.freedesktop.systemd1.html",
+  "no_global_configuration_change": true,
+  "no_compiler_restart": true
+}

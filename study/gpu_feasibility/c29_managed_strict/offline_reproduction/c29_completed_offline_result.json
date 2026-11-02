@@ -1,0 +1,18 @@
+{
+  "restored_files": 91,
+  "report_sha256": "c82065bd31fc53affb4df68d9559f3e7d93c0b09b05ee7ff93330954a4360087",
+  "checks": 499,
+  "failed": 0,
+  "all_checks_equal_to_original": true,
+  "mechanical_passed": true,
+  "runtime_or_new_science_acceptance": false,
+  "completed_utc": "2026-11-02T15:15:49.477918+00:00",
+  "failure": null,
+  "package_seed_unchanged": true,
+  "restored_tree_unchanged_by_replay": true,
+  "frozen_manifest_sha256": "6b2994a2aae47fdad8dcb57b36add85b48e21d16f8f4be62ea34a408d3cdf884",
+  "CFD_build_GPU_Git_output_publication": false,
+  "actual_restore_commands": 1,
+  "actual_replay_commands": 1,
+  "retry": false
+}

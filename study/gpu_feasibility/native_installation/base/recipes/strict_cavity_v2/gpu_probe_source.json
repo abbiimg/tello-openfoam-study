@@ -1,0 +1,12 @@
+{
+  "generated_utc": "2026-11-02T11:55:56.855581+00:00",
+  "original": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/applications/solvers/incompressible/icoFoam/icoFoam.C",
+  "original_sha256": "f4fe952aa971ff8e25fa0cf87ee3fbd53f6aba022f1a6e1447ea703f17e3972e",
+  "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application/icoFoam.C",
+  "source_sha256": "1bad78d0a0f9b775c1635337f5bf53f72dcae79ea7ed209b3033d64b3f788981",
+  "patch_sha256": "4382bc5ba0bad215a68ec60ca31f209cdf21c99c99f831b6ead43e391751846e",
+  "math_source_reversal_matches": true,
+  "changes": "NVTX first complete loop body plus checked device completion before pop; no equation edits",
+  "vendor_source_or_SDK_changed": false,
+  "binary_name": "icoFoamStrictV2"
+}

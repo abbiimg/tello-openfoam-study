@@ -1,0 +1,10 @@
+Compiling enabled on 1 cores
+wmake /opt/openfoam-workspace/gpu-feasibility/native-stdpar/diagnostics/descriptor_capture_20261102
+Making dependencies: descriptor_capture_control.C
+nvc++ -std=c++17  -stdpar=gpu -gpu=cc121,mem:managed -DFOAM_OFFLOAD -DOPENFOAM=2609 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra --diag_suppress=111,128,177,185,612,998,1098,1428 --display_error_number --diag_suppress=3293 -O3  -DNoRepository  -gpu=cc121,mem:managed,lineinfo -iquote. -IlnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OSspecific/POSIX/lnInclude   -fPIC -c descriptor_capture_control.C -o Make/linuxARM64Nvidia-gpuDPInt32Opt/descriptor_capture_control.o
+"descriptor_capture_control.C", line 52: error #20: identifier "return64" is undefined
+      if(n<=0 || (mode!="stack-ref" && mode!="raw" && mode!="heap-ref"))return64;
+                                                                        ^
+
+1 error detected in the compilation of "descriptor_capture_control.C".
+make: *** [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/wmake/rules/General/transform:42: Make/linuxARM64Nvidia-gpuDPInt32Opt/descriptor_capture_control.o] Error 2

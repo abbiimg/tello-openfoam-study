@@ -1,0 +1,431 @@
+{
+  "kind": "Actual distinct strict-v2 five-step SPUMA CUDA functional gate, not rotor or timing result",
+  "completed_utc": "2026-11-02T11:41:14.193131+00:00",
+  "state": "passed",
+  "case": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+  "protocol_sha256": "103e4fcfb1c9c08053f95a90afd91f62d14129da704731c80136449d2262fffe",
+  "protocol": {
+    "kind": "PREREGISTERED distinct SPUMA strict-v2 functional fixture; not a replacement pass for failed original",
+    "preregistered_utc": "2026-11-02T11:32:00.026075+00:00",
+    "case": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+    "solver_started": false,
+    "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+    "source_annotation": {
+      "kind": "Annotation-only complete first-step NVTX capture; existing full-loop annotation retained",
+      "recorded_utc": "2026-11-02T11:28:31.081352+00:00",
+      "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+      "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+      "upstream_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+      "previous_annotated_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+      "annotated_sha256": "285453fc33b36de47086fa339ed464a2c6e393e52c1d3f546aa2484cb63b40c4",
+      "patch": "/opt/openfoam-workspace/gpu-feasibility/spuma/patches/ico_first_step_annotation.patch",
+      "patch_sha256": "ad0f8fe232488b6d080620114c230ace7a53de129a5dac07b8a21e7a2fc860c5",
+      "range_name": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+      "scope": "One first runTime.loop body after entering time0.005 through all PISO corrections, write and execution log; no source arithmetic or numerical setting changed",
+      "old_binary_and_source_preserved": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/original_attempt",
+      "core_or_FV_rebuild": false,
+      "no_production_change": true
+    },
+    "source_build": {
+      "kind": "Only icoFoam annotation rebuilt, no source arithmetic change",
+      "completed_utc": "2026-11-02T11:29:34.170916+00:00",
+      "command": [
+        "wmake",
+        "-j1",
+        "/opt/openfoam-workspace/gpu-feasibility/spuma/source/applications/solvers/incompressible/icoFoam"
+      ],
+      "returncode": 0,
+      "elapsed_s": 30.96477493501152,
+      "max_jobs": 1,
+      "nice": 15,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/icoFoam_first_step_annotation_build.log",
+      "core_and_finiteVolume_hashes_unchanged": true,
+      "library_hashes": {
+        "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libOpenFOAM.so": "016e1d165ceffc26ea8f5788bf978d07c4db0123f9c414652bce9c77c5b2c534",
+        "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so": "8a99acdc9e4afdd8ff3cb116b44a436e999cffc24dbab24a2ae68d475c4f6fbd"
+      },
+      "annotation": {
+        "kind": "Annotation-only complete first-step NVTX capture; existing full-loop annotation retained",
+        "recorded_utc": "2026-11-02T11:28:31.081352+00:00",
+        "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+        "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+        "upstream_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+        "previous_annotated_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+        "annotated_sha256": "285453fc33b36de47086fa339ed464a2c6e393e52c1d3f546aa2484cb63b40c4",
+        "patch": "/opt/openfoam-workspace/gpu-feasibility/spuma/patches/ico_first_step_annotation.patch",
+        "patch_sha256": "ad0f8fe232488b6d080620114c230ace7a53de129a5dac07b8a21e7a2fc860c5",
+        "range_name": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+        "scope": "One first runTime.loop body after entering time0.005 through all PISO corrections, write and execution log; no source arithmetic or numerical setting changed",
+        "old_binary_and_source_preserved": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/original_attempt",
+        "core_or_FV_rebuild": false,
+        "no_production_change": true
+      },
+      "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+      "binary_sha256": "b861d9d7e5cef7c4624585a9acc54c175220aeb026ade44447b9e69934fd6a1d"
+    },
+    "mesh_cells": 400,
+    "delta_t_s": 0.005,
+    "end_s": 0.025,
+    "steps": 5,
+    "writeInterval": 1,
+    "writePrecision": 17,
+    "p": {
+      "solver": "PCG",
+      "preconditioner": "aDIC",
+      "tolerance": 1e-06,
+      "relTol": 0
+    },
+    "pFinal": {
+      "inherits": "p",
+      "relTol": 0
+    },
+    "U": {
+      "solver": "smoothSolver",
+      "smoother": "twoStageSymGaussSeidel",
+      "tolerance": 1e-05,
+      "relTol": 0
+    },
+    "physical_initial_and_boundary_inputs_from_fresh_stock": true,
+    "stock_source_input_hashes": {
+      "0/p": "0c7040dc8b6010695d2e902f9d483becfb669a27325f3c640231bc0fac478230",
+      "0/U": "a6580fe68dc8ce243701b8910c43aed2d37b7c8a5e513226343a20d44f3b63c5",
+      "constant/transportProperties": "92578ede17bc7d8df6426a2e9a80b85b52ad6a8ce0514f43970fb165765074ad",
+      "system/PDRblockMeshDict": "e09b4c404bd108c398e45efe341463c1e849fe9bfdfc9ec0cb9d98422dcb3e9e",
+      "system/blockMeshDict": "1585d47710325fb71091330c2d6539250958651248cea9fcd1b7c7b105c16f42",
+      "system/decomposeParDict": "a0c4876fbd0a80cc42135ead135c17aca2f0ef0c249d7589d39cc463f57e659d",
+      "system/fvSolution": "d82fca884724449cb9ef9756e8b377485ceb310f445aa3e38221722dad0b3e70",
+      "system/fvSchemes": "98ec9c773a5681cbc6b8636a340786e098b73e14ff6fed37e1689ddf657aacbc",
+      "system/controlDict": "8aa09e55bfc8f43dfe6763b89c5b8d51e1024f544f8265aba4c45a799a5eb194"
+    },
+    "pool": "fixedSizeMemoryPool",
+    "pool_size_GiB": 1,
+    "criteria": {
+      "all_corrector_local_continuity_max": 1e-05,
+      "comparison": "<=",
+      "all_pressure_final_residual_max": 1.05e-06,
+      "all_U_final_residual_max": 1.05e-05,
+      "max_pressure_iterations_exclusive": 1000,
+      "all_five_written_U_p_phi_finite": true,
+      "independent_final_saved_flux_continuity_max_exclusive": 1e-05,
+      "verify_all_closed_wall_fluxes_abs_max_exclusive": 1e-12,
+      "U_norm_max_exclusive": 2,
+      "Ux_max_min_exclusive": 0.1,
+      "Ux_min_max_exclusive": -0.01,
+      "p_abs_max_exclusive": 10,
+      "p_range_min_exclusive": 0.001,
+      "p_reference_abs_max_exclusive": 1e-05,
+      "actual_icoFoam_and_Allrun_returncodes": 0,
+      "actual_child_timeout_forbidden": true,
+      "source_binary_core_FV_observer_env_hashes_unchanged": true,
+      "first_complete_step_CUDA_API_launch_success_required": true,
+      "same_globalTid_filter_required": true,
+      "failed_launch_and_sync_API_calls_allowed": 0,
+      "device_context_sync_after_last_launch_required": true,
+      "no_unique_kernel_activity_or_speed_claim": true
+    },
+    "profiling": {
+      "range": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+      "capture_range_end": "stop",
+      "kill": "none",
+      "scope": "process-tree",
+      "wait": "all",
+      "first_complete_step_only": true,
+      "remaining_four_steps_not_collected": true,
+      "API_not_unique_kernel_counts": true,
+      "NSYS_NVTX_PROFILER_REGISTER_ONLY": 0,
+      "unregistered_string_capture_documentation": "https://docs.nvidia.com/nsight-systems/UserGuide/"
+    },
+    "original_failed_attempt": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/original_attempt/original_attempt_diagnostic.json",
+    "no_posthoc_threshold_relaxation": true,
+    "no_actuator_port_or_CPU_study_change": true,
+    "no_performance_inference": true,
+    "input_hashes": {
+      "0/U": "a6580fe68dc8ce243701b8910c43aed2d37b7c8a5e513226343a20d44f3b63c5",
+      "0/p": "0c7040dc8b6010695d2e902f9d483becfb669a27325f3c640231bc0fac478230",
+      "Allrun": "ee2589911e676b7fd438d52fe417dc8a3dea8cf0544fc23e653f2e4f1d4b421b",
+      "constant/transportProperties": "92578ede17bc7d8df6426a2e9a80b85b52ad6a8ce0514f43970fb165765074ad",
+      "core_executor_gate.json": "4d4c988d3319c69924a4f49496ce4d72ef09d287ebc179bc61680fa2e2357837",
+      "log.poolDeviceMarker": "8b67a62e5e77d071bd5292e8133a47ab42e24e5a7252bc5538af0d799491e4b2",
+      "record_runtime_artifacts.py": "9fb3965ce35ec5b253456aa3b5e3b7716f24a230b3650793e2efba60e38a0340",
+      "run_profiled_ico.py": "02f7f6714e80f6ffef9d0aaeeca070fe51cd821fdd19b2eb37ca40602eb5d509",
+      "system/PDRblockMeshDict": "e09b4c404bd108c398e45efe341463c1e849fe9bfdfc9ec0cb9d98422dcb3e9e",
+      "system/blockMeshDict": "1585d47710325fb71091330c2d6539250958651248cea9fcd1b7c7b105c16f42",
+      "system/controlDict": "a7c7e7e3038c913d91ef417838cafe7117b9a46b1df1b4844d3a67b4f3b6cee6",
+      "system/decomposeParDict": "a0c4876fbd0a80cc42135ead135c17aca2f0ef0c249d7589d39cc463f57e659d",
+      "system/fvSchemes": "98ec9c773a5681cbc6b8636a340786e098b73e14ff6fed37e1689ddf657aacbc",
+      "system/fvSolution": "8f164b0c50de263115b78e687d0ad048ccbfc3b1b6e8e5f80adf5161d4903775"
+    }
+  },
+  "actual_terminal_status": {
+    "state": "succeeded",
+    "returncode": 0,
+    "mcp_job_id": "Allrun-16b960",
+    "recorded_utc": "2026-11-02T11:40:46.144Z",
+    "actual_connector_terminal_result": {
+      "job_id": "Allrun-16b960",
+      "case": "spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+      "app": "Allrun",
+      "command": "bash /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/Allrun",
+      "np": 1,
+      "log": "log.Allrun",
+      "state": "succeeded",
+      "elapsed_s": 267.6,
+      "returncode": 0,
+      "log_tail": ""
+    },
+    "kind": "Actual private strict-v2 Allrun completion; numerical/API validation separate"
+  },
+  "actual_child_receipt": {
+    "kind": "Actual strict-v2 child exit after cleanup, separate from profiler/Allrun",
+    "started_utc": "2026-11-02T11:36:08.522426+00:00",
+    "returned_utc": "2026-11-02T11:40:26.680969+00:00",
+    "returncode": 0,
+    "timed_out": false,
+    "child_identity": {
+      "pid": 367774,
+      "uid": 999,
+      "cwd": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+      "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+      "birth_tick": 15932090,
+      "started_utc": "2026-11-02T11:36:08.522426+00:00"
+    },
+    "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+    "binary_sha256_after_return": "b861d9d7e5cef7c4624585a9acc54c175220aeb026ade44447b9e69934fd6a1d"
+  },
+  "runtime_artifacts_unchanged": {
+    "recorded_utc": "2026-11-02T11:40:26.980510+00:00",
+    "phase": "complete",
+    "files": {
+      "icoFoam": {
+        "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+        "sha256": "b861d9d7e5cef7c4624585a9acc54c175220aeb026ade44447b9e69934fd6a1d"
+      },
+      "libOpenFOAM.so": {
+        "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libOpenFOAM.so",
+        "sha256": "016e1d165ceffc26ea8f5788bf978d07c4db0123f9c414652bce9c77c5b2c534"
+      },
+      "libfiniteVolume.so": {
+        "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib/libfiniteVolume.so",
+        "sha256": "8a99acdc9e4afdd8ff3cb116b44a436e999cffc24dbab24a2ae68d475c4f6fbd"
+      },
+      "observer.so": {
+        "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/smoke/libspuma_cuda_observer.so",
+        "sha256": "734bdabf81820533168429a79f2e6525362177d8975eaf8462936500c7ac2e3a"
+      },
+      "environment": {
+        "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/env.sh",
+        "sha256": "54c421a8d844021d9cd7ac5cd4619fed105670072de5215a88623331dae426ac"
+      }
+    }
+  },
+  "GPU_executor_device_only_marker": {
+    "kind": "actual_SPUMA_pool_executor_and_device_only_output",
+    "executor": "Foam::foamExecutor::parallelFor",
+    "device": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)",
+    "count": 65536,
+    "runtime_seed": 324508639,
+    "compute_capability": 121,
+    "pool_size_bytes": 1073741824,
+    "double_reduction_exact": true,
+    "pool_input_memory_type": 3,
+    "output_memory_type": 2,
+    "output_host_pointer_null": true,
+    "mismatches": 0,
+    "cuda_status": 0,
+    "changed_from_sentinel": 65536,
+    "launch_status": 0,
+    "synchronize_status": 0,
+    "passed": true
+  },
+  "first_complete_CFD_step_API_gate": {
+    "kind": "Actual successful CUDA API execution inside one complete strict-v2 SPUMA icoFoam CFD step",
+    "completed_utc": "2026-11-02T11:41:00.660840+00:00",
+    "state": "passed",
+    "case": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+    "range_name": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+    "nvtx_range": {
+      "start": 31389755,
+      "end": 54326392338,
+      "eventType": 59,
+      "rangeId": null,
+      "category": null,
+      "color": null,
+      "text": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+      "globalTid": 287645200915614,
+      "endGlobalTid": null,
+      "textId": null,
+      "domainId": 0,
+      "uint64Value": null,
+      "int64Value": null,
+      "doubleValue": null,
+      "uint32Value": null,
+      "int32Value": null,
+      "floatValue": null,
+      "jsonTextId": null,
+      "jsonText": null,
+      "binaryData": null,
+      "eventId": 1
+    },
+    "globalTid": 287645200915614,
+    "API_scope": "Inside named range AND same globalTid as its owning thread/process",
+    "launch_api_rows": [
+      {
+        "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+        "name": "cudaLaunchKernel_v7000",
+        "return_value": 0,
+        "calls": 2445,
+        "first_start_ns": 31588139,
+        "last_end_ns": 54309567157
+      }
+    ],
+    "synchronization_api_rows": [
+      {
+        "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+        "name": "cudaDeviceSynchronize_v3020",
+        "return_value": 0,
+        "calls": 2445,
+        "first_start_ns": 39850140,
+        "last_end_ns": 54315889361
+      }
+    ],
+    "successful_launch_api_calls_in_cfd_loop": 2445,
+    "failed_launch_api_calls_in_cfd_loop": 0,
+    "successful_synchronization_api_calls_in_cfd_loop": 2445,
+    "failed_synchronization_api_calls_in_cfd_loop": 0,
+    "last_launch_api_end_ns": 54309567157,
+    "last_successful_sync_end_ns": 54315889361,
+    "final_loop_sync_observed": true,
+    "kernel_activity_tables_whole_trace": {},
+    "kernel_activity_count_scope": "Whole trace only; never used as CFD-loop activity proof",
+    "profiler_kernel_activity_proof": false,
+    "actual_icoFoam_exit_receipt": {
+      "kind": "Actual strict-v2 child exit after cleanup, separate from profiler/Allrun",
+      "started_utc": "2026-11-02T11:36:08.522426+00:00",
+      "returned_utc": "2026-11-02T11:40:26.680969+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "child_identity": {
+        "pid": 367774,
+        "uid": 999,
+        "cwd": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+        "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+        "birth_tick": 15932090,
+        "started_utc": "2026-11-02T11:36:08.522426+00:00"
+      },
+      "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+      "binary_sha256_after_return": "b861d9d7e5cef7c4624585a9acc54c175220aeb026ade44447b9e69934fd6a1d"
+    },
+    "actual_Allrun_status": {
+      "state": "succeeded",
+      "returncode": 0,
+      "mcp_job_id": "Allrun-16b960",
+      "recorded_utc": "2026-11-02T11:40:46.144Z",
+      "actual_connector_terminal_result": {
+        "job_id": "Allrun-16b960",
+        "case": "spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+        "app": "Allrun",
+        "command": "bash /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/Allrun",
+        "np": 1,
+        "log": "log.Allrun",
+        "state": "succeeded",
+        "elapsed_s": 267.6,
+        "returncode": 0,
+        "log_tail": ""
+      },
+      "kind": "Actual private strict-v2 Allrun completion; numerical/API validation separate"
+    },
+    "source_annotation": {
+      "kind": "Annotation-only complete first-step NVTX capture; existing full-loop annotation retained",
+      "recorded_utc": "2026-11-02T11:28:31.081352+00:00",
+      "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+      "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+      "upstream_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+      "previous_annotated_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+      "annotated_sha256": "285453fc33b36de47086fa339ed464a2c6e393e52c1d3f546aa2484cb63b40c4",
+      "patch": "/opt/openfoam-workspace/gpu-feasibility/spuma/patches/ico_first_step_annotation.patch",
+      "patch_sha256": "ad0f8fe232488b6d080620114c230ace7a53de129a5dac07b8a21e7a2fc860c5",
+      "range_name": "SPUMA_CFD_FIRST_COMPLETE_STEP",
+      "scope": "One first runTime.loop body after entering time0.005 through all PISO corrections, write and execution log; no source arithmetic or numerical setting changed",
+      "old_binary_and_source_preserved": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/original_attempt",
+      "core_or_FV_rebuild": false,
+      "no_production_change": true
+    },
+    "report": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.nsys-rep",
+    "sqlite": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.sqlite",
+    "export_command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+      "stats",
+      "--force-export=true",
+      "--report",
+      "cuda_api_sum",
+      "--format",
+      "csv",
+      "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.nsys-rep"
+    ],
+    "export_returncode": 0,
+    "report_sha256": "0413484a62986580eac3ec93bf423dbdb5e4f6750bd0b19911079223c52541f3",
+    "sqlite_sha256": "b97bdf6e0d2301ae0b4d6786ace6095628c93f25c55e69ec2638216902c831d3",
+    "count_scope": "Launch API calls within one named CFD-loop range; runtime and driver layers may both be counted. Not unique GPU kernels or complete device-residence proof.",
+    "no_performance_inference": true,
+    "no_rotor_port_or_production_change": true
+  },
+  "process_API_observations": {
+    "pid": 367774,
+    "nice": 15,
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "successful_kernel_launch_apis": 12606,
+    "failed_kernel_launch_apis": 0,
+    "successful_managed_allocations": 1,
+    "managed_allocated_bytes": 1073741824,
+    "successful_device_synchronizations": 12606,
+    "failed_device_synchronizations": 0,
+    "last_device_synchronize_status": 0,
+    "profiler_kernel_activity_proof": false
+  },
+  "steps": 5,
+  "final_time_s": 0.025,
+  "all_corrector_local_continuity_values": [
+    4.6102574098156475e-09,
+    8.401310773031399e-09,
+    8.770776844746355e-09,
+    4.392088692324134e-09,
+    7.956678820598165e-09,
+    4.757022876582549e-09,
+    4.220880372437246e-09,
+    5.2196539935522275e-09,
+    5.9414088888738795e-09,
+    6.921170271198621e-09
+  ],
+  "peak_all_corrector_local_continuity": 8.770776844746355e-09,
+  "maximum_pressure_final_residual": 9.899502198801274e-07,
+  "maximum_U_final_residual": 9.659247673135766e-06,
+  "independent_CPU_final_flux_continuity": 6.921170270841277e-09,
+  "verified_saved_wall_flux_maxima": {
+    "movingWall": 0.0,
+    "fixedWalls": 0.0
+  },
+  "domain_volume_m3": 0.00010000000000000006,
+  "all_five_written_U_p_phi_finite": true,
+  "final_field_checks": {
+    "U_min": [
+      -0.183964851534721,
+      -0.3565540728846689,
+      -1.2742735197214695e-16
+    ],
+    "U_max": [
+      0.8307235983217616,
+      0.33016434178942217,
+      1.274273519693095e-16
+    ],
+    "p_min": -4.390543003148828,
+    "p_max": 4.863945948953245
+  },
+  "original_full_horizon_screen_still_failed": true,
+  "original_attempt": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/original_attempt/original_attempt_diagnostic.json",
+  "no_threshold_relaxation": true,
+  "no_unique_kernel_activity_claim": true,
+  "no_complete_device_residence_claim": true,
+  "no_performance_inference": true,
+  "no_actuator_or_CPU_study_change": true
+}

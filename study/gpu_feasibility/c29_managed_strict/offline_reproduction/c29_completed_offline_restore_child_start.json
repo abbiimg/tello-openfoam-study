@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_managed_strict_publication_candidate_v2/recipes/restore_completed_evidence.py",
+    "--package",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_managed_strict_publication_candidate_v2",
+    "--seed",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/gpu_feasibility/benchmark_reproduction/shared_seed.zip",
+    "--restore-to",
+    "/opt/openfoam-workspace/cases/c29_offline_completed_replay_20261102"
+  ],
+  "pid": 1777135,
+  "uid": 999,
+  "parent_pid": 1776945,
+  "started_utc": "2026-11-02T15:10:47.904410+00:00",
+  "cwd": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work",
+  "nice": 15,
+  "environment_changes": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "birth_start_ticks": "17220029"
+}

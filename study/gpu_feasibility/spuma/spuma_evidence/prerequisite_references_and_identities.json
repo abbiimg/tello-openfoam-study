@@ -1,0 +1,24 @@
+{
+  "kind": "References only: shared SDK/tool prerequisite installation is not copied",
+  "shared_SDK_root": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9",
+  "CUDA_subdirectory": "cuda/13.3",
+  "SDK_reused_readonly": true,
+  "shared_compiler_gate": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/stdpar_compiler_gate.json",
+  "shared_device_gate": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/stdpar_device_marker_gate.json",
+  "shared_bison_prefix": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/bison",
+  "CFD_seed": "Fresh stock cavity 0/U and 0/p included; no rotor or mapped CFD seed is used",
+  "Umpire_mode": "Not used by this fixed-pool SPUMA test",
+  "excluded": [
+    "SDK/archive/compiler/ELF/binaries",
+    "full upstream or build trees",
+    "credentials",
+    "unrelated private helpers"
+  ],
+  "source_and_binary_identities": {
+    "old_binary_sha256": "ad0e6a9439e88cc13bcc77efb0f618ba0c4dbbf7c2dd199e0b794c64fab6febf",
+    "strict_binary_sha256": "b861d9d7e5cef7c4624585a9acc54c175220aeb026ade44447b9e69934fd6a1d",
+    "original_upstream_source_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+    "original_full_loop_annotation_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+    "strict_first_step_annotation_sha256": "285453fc33b36de47086fa339ed464a2c6e393e52c1d3f546aa2484cb63b40c4"
+  }
+}

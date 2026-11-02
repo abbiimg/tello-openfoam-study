@@ -1,0 +1,161 @@
+[
+  {
+    "stage": "environment_audit",
+    "command": [
+      "bash",
+      "--noprofile",
+      "--norc",
+      "-c",
+      "printf '%s\\n' \"WM_OPTIONS=$WM_OPTIONS\" \"WM_COMPILER=$WM_COMPILER\" \"WM_MPLIB=$WM_MPLIB\" \"WM_PRECISION_OPTION=$WM_PRECISION_OPTION\" \"WM_LABEL_SIZE=$WM_LABEL_SIZE\" \"WM_PROJECT_DIR=$WM_PROJECT_DIR\" \"FOAM_APPBIN=$FOAM_APPBIN\" \"LD_LIBRARY_PATH=$LD_LIBRARY_PATH\"; command -v g++; g++ --version"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 2.0023178910196293,
+    "completed_utc": "2026-11-02T10:34:13.887628+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/environment_audit.log"
+  },
+  {
+    "stage": "wmake_tools",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/wmake/src/Allmake",
+      "-j4"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 4.001646119984798,
+    "completed_utc": "2026-11-02T10:34:17.898368+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/wmake_tools.log"
+  },
+  {
+    "stage": "openfoam_base",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/Allwmake-base",
+      "-j4"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 864.4372112790006,
+    "completed_utc": "2026-11-02T10:48:42.341950+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/openfoam_base.log"
+  },
+  {
+    "stage": "finiteVolume_build",
+    "command": [
+      "wmake",
+      "-j4",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/finiteVolume"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 1274.5707411540207,
+    "completed_utc": "2026-11-02T11:09:56.935183+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/finiteVolume_build.log"
+  },
+  {
+    "stage": "blockMesh_library_build",
+    "command": [
+      "wmake",
+      "-j4",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/mesh/blockMesh"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 32.010888627992244,
+    "completed_utc": "2026-11-02T11:10:28.960636+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/blockMesh_library_build.log"
+  },
+  {
+    "stage": "extrudeModel_build",
+    "command": [
+      "wmake",
+      "-j4",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/mesh/extrudeModel"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 8.003869086009217,
+    "completed_utc": "2026-11-02T11:10:36.976969+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/extrudeModel_build.log"
+  },
+  {
+    "stage": "dynamicMesh_build",
+    "command": [
+      "wmake",
+      "-j4",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/dynamicMesh"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 164.06973195599858,
+    "completed_utc": "2026-11-02T11:13:21.059521+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/dynamicMesh_build.log"
+  },
+  {
+    "stage": "blockMesh_application_build",
+    "command": [
+      "wmake",
+      "-j4",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/applications/utilities/mesh/generation/blockMesh"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 8.00585978498566,
+    "completed_utc": "2026-11-02T11:13:29.081203+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/blockMesh_application_build.log"
+  },
+  {
+    "stage": "icoFoam_build",
+    "command": [
+      "wmake",
+      "-j4",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/applications/solvers/incompressible/icoFoam"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 16.006180513999425,
+    "completed_utc": "2026-11-02T11:13:45.104343+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/icoFoam_build.log"
+  },
+  {
+    "stage": "runtime_dependency_audit",
+    "command": [
+      "ldd",
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 2.001556656003231,
+    "completed_utc": "2026-11-02T11:13:47.116924+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/runtime_dependency_audit.log"
+  },
+  {
+    "stage": "cavity_blockMesh",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/blockMesh",
+      "-case",
+      "/opt/openfoam-workspace/cases/native_cpu_control_pilots_20261102/cavity_native_cpu"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 2.0014246299979277,
+    "completed_utc": "2026-11-02T11:13:49.139881+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/cavity_blockMesh.log"
+  },
+  {
+    "stage": "cavity_icoFoam",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam",
+      "-case",
+      "/opt/openfoam-workspace/cases/native_cpu_control_pilots_20261102/cavity_native_cpu"
+    ],
+    "jobs": 4,
+    "return_code": 0,
+    "elapsed_s": 2.0017994299996644,
+    "completed_utc": "2026-11-02T11:13:51.154084+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/cavity_icoFoam.log"
+  }
+]

@@ -1,0 +1,11 @@
+--- a/wmake/rules/linuxARM64Nvidia-gpu/c++
++++ b/wmake/rules/linuxARM64Nvidia-gpu/c++
+@@ -2,7 +2,7 @@
+ include $(GENERAL_RULES)/Nvidia/c++
+ 
+ c++ARCH    :=
+-c++DEVICE  := -stdpar=gpu -gpu=cc90,mem:unified,managed -DFOAM_OFFLOAD
++c++DEVICE  := -stdpar=gpu -gpu=cc121,mem:managed -DFOAM_OFFLOAD
+ c++WARN    += --diag_suppress=3293
+ 
+ ifneq (,$(strip $(WM_COMPILE_OPTION)))

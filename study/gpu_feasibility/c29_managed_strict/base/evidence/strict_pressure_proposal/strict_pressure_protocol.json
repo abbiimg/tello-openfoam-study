@@ -1,0 +1,46 @@
+{
+  "schema": "c29-strict-pressure-five-fixed-steps-proposal-v1",
+  "protocol": "c29-native-five-fixed-steps-strict-pressure-v1",
+  "created_utc": "2026-11-02T12:46:59.239863+00:00",
+  "state": "SOURCE-ONLY proposal AFTER legacy F14/CPU failure, BEFORE any fresh strict experiment; ROOT REVIEW REQUIRED",
+  "authorized_to_build_restore_or_run": false,
+  "motivation": "Four true first-pressure-corrector global-continuity failures remain in the original .05-relTol F14/CPU experiment. That failed result is retained, not requalified.",
+  "base_candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "base_analyzer_sha256": "74df3cf053b8596ae57d5a04792867130392ca5ef31b59de526b0d1810d4ee16",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "numerical_change": {
+    "p": {
+      "tolerance": 1e-07,
+      "old_relTol": 0.05,
+      "new_relTol": 0
+    },
+    "pFinal": {
+      "tolerance": 1e-07,
+      "relTol": 0
+    },
+    "U": {
+      "tolerance": 1e-07,
+      "relTol": 0.05
+    },
+    "UFinal": {
+      "tolerance": 1e-07,
+      "relTol": 0
+    }
+  },
+  "unchanged": {
+    "dt_s": 0.0001,
+    "start_s": 0.6,
+    "end_s": 0.6005,
+    "steps": 5,
+    "pressure_correctors": 2,
+    "nonorthogonal_correctors": 0,
+    "write_precision": 17,
+    "C29_body_sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+    "C29_includes_sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83",
+    "physical_mesh_initial_U_p_schemes_boundaries_gauge_source_and_controller": "Unchanged pinned seed and fresh warm controller initialization; exact startup field gate repeated"
+  },
+  "residual_formula": "max(1e-7, configuredRelTol*initialResidual)+1e-12 unchanged; strict p uses configuredRelTol=0",
+  "all_other_d600_limits_unchanged": true,
+  "temporal_or_physical_claim": "Five-step functional validation only; stricter pressure solve may still fail. No GPU adoption/performance claim.",
+  "legacy_failed_report_sha256": "9ac760b08a489047db94a3b98ff9733f1569f86f9efaa250999a45f7b3ca61e3"
+}

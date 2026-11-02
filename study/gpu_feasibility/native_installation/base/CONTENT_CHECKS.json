@@ -1,0 +1,96 @@
+{
+  "kind": "Native GPU+same-pin CPU review-candidate path/byte/content checks",
+  "checked_utc": "2026-11-02T13:42:40.306831+00:00",
+  "passed": true,
+  "original_source_and_alias_files_verified": 436,
+  "originals_match_copy_hash_bytes_mtime": true,
+  "trace_subsets": {
+    "device_marker": {
+      "integrity": "ok",
+      "lossless_allowed_row_multisets": true,
+      "no_environment_or_unreferenced_strings": true,
+      "tables": [
+        "CUPTI_ACTIVITY_KIND_RUNTIME",
+        "PROCESSES",
+        "REVIEW_SUBSET_PROVENANCE",
+        "StringIds"
+      ],
+      "actual_process_PID": 245224,
+      "safe_strings": [
+        "cudaDeviceSynchronize_v3020",
+        "cudaLaunchKernel_v7000",
+        "cudaStreamSynchronize_v3020"
+      ],
+      "all_selected_thread_launch_calls": 1,
+      "all_selected_thread_sync_calls": 4,
+      "failed_calls": 0,
+      "window": null
+    },
+    "native_field_current": {
+      "integrity": "ok",
+      "lossless_allowed_row_multisets": true,
+      "no_environment_or_unreferenced_strings": true,
+      "tables": [
+        "CUPTI_ACTIVITY_KIND_RUNTIME",
+        "NVTX_EVENTS",
+        "PROCESSES",
+        "REVIEW_SUBSET_PROVENANCE",
+        "StringIds"
+      ],
+      "actual_process_PID": 327794,
+      "safe_strings": [
+        "cudaLaunchKernelExC_v11060",
+        "cudaStreamSynchronize_v3020",
+        "cudaLaunchKernel_v7000",
+        "cudaDeviceSynchronize_v3020"
+      ],
+      "all_selected_thread_launch_calls": 12,
+      "all_selected_thread_sync_calls": 13,
+      "failed_calls": 0,
+      "window": {
+        "launch_calls": 8,
+        "sync_calls": 9,
+        "failed_calls": 0,
+        "start_ns": 2434169316,
+        "end_ns": 3308872546
+      }
+    },
+    "strict_cavity_v2": {
+      "integrity": "ok",
+      "lossless_allowed_row_multisets": true,
+      "no_environment_or_unreferenced_strings": true,
+      "tables": [
+        "CUPTI_ACTIVITY_KIND_RUNTIME",
+        "NVTX_EVENTS",
+        "PROCESSES",
+        "REVIEW_SUBSET_PROVENANCE",
+        "StringIds"
+      ],
+      "actual_process_PID": 376385,
+      "safe_strings": [
+        "cudaLaunchKernelExC_v11060",
+        "cudaStreamSynchronize_v3020",
+        "cudaDeviceSynchronize_v3020"
+      ],
+      "all_selected_thread_launch_calls": 12,
+      "all_selected_thread_sync_calls": 13,
+      "failed_calls": 0,
+      "window": {
+        "launch_calls": 12,
+        "sync_calls": 13,
+        "failed_calls": 0,
+        "start_ns": 13929079,
+        "end_ns": 111439351
+      }
+    }
+  },
+  "ELF_compiled_archive_payloads": [],
+  "symlinks": [],
+  "full_raw_trace_or_unreviewed_SQLite": [],
+  "targeted_credential_pattern_hits": [],
+  "python_AST_sources_passed": 40,
+  "compiler_CFD_or_GPU_test_launched": false,
+  "delivery_Git_case_vendor_SDK_changes": false,
+  "new_host_rebuild_claim": false,
+  "candidate_not_published": true
+}

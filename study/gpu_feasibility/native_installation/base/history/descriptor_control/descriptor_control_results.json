@@ -1,0 +1,145 @@
+{
+  "completed_utc": "2026-11-02T12:47:00.677319+00:00",
+  "records": [
+    {
+      "mode": "raw",
+      "n": 4096,
+      "argv": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/descriptorCaptureControl",
+        "-case",
+        "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_case",
+        "-mode",
+        "raw",
+        "-n",
+        "4096"
+      ],
+      "actual_child": {
+        "pid": 383987,
+        "uid": 999,
+        "birth_start_ticks": 16354613
+      },
+      "actual_child_return_code": 0,
+      "log": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_evidence/raw_4096.log",
+      "log_sha256": "f6db3fb0ffecc35a3dbe24481a7e6452444755b2e35501ff537c48112c4aaf7f",
+      "diagnostic_lines": [
+        "DIAG_BEGIN mode=raw n=4096 offload_selected=1 descriptor_bytes=24",
+        "DIAG_ATTR name=stack_descriptor address=281474178169320 status=0 type=0 host=0xffffd06739e8 device=0",
+        "DIAG_ATTR name=heap_descriptor address=8661452672 status=0 type=3 host=0x204434780 device=0x204434780",
+        "DIAG_ATTR name=selected_data address=9393143808 status=0 type=3 host=0x22fe00000 device=0x22fe00000",
+        "DIAG_ATTR name=output_data address=9393176576 status=0 type=3 host=0x22fe08000 device=0x22fe08000",
+        "DIAG_RESULT mode=raw mismatches=0 sync=0"
+      ],
+      "binary_sha256": "c092bc4e67259676e4a2837bce7f9d5948a1d7149e64aa1c593f3f4af4c05255",
+      "completed_utc": "2026-11-02T12:46:35.790622+00:00"
+    },
+    {
+      "mode": "heap-ref",
+      "n": 4096,
+      "argv": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/descriptorCaptureControl",
+        "-case",
+        "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_case",
+        "-mode",
+        "heap-ref",
+        "-n",
+        "4096"
+      ],
+      "actual_child": {
+        "pid": 383995,
+        "uid": 999,
+        "birth_start_ticks": 16354817
+      },
+      "actual_child_return_code": 0,
+      "log": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_evidence/heap-ref_4096.log",
+      "log_sha256": "1b9c6b473c7fe99fc61a2b1ac164d9624f8fb52a86d2850c7a48dfe89d968c6f",
+      "diagnostic_lines": [
+        "DIAG_BEGIN mode=heap-ref n=4096 offload_selected=1 descriptor_bytes=24",
+        "DIAG_ATTR name=stack_descriptor address=281474716768216 status=0 type=0 host=0xfffff08197d8 device=0",
+        "DIAG_ATTR name=heap_descriptor address=8661452672 status=0 type=3 host=0x204434780 device=0x204434780",
+        "DIAG_ATTR name=selected_data address=9393209344 status=0 type=3 host=0x22fe10000 device=0x22fe10000",
+        "DIAG_ATTR name=output_data address=9393176576 status=0 type=3 host=0x22fe08000 device=0x22fe08000",
+        "DIAG_RESULT mode=heap-ref mismatches=0 sync=0"
+      ],
+      "binary_sha256": "c092bc4e67259676e4a2837bce7f9d5948a1d7149e64aa1c593f3f4af4c05255",
+      "completed_utc": "2026-11-02T12:46:37.571176+00:00"
+    },
+    {
+      "mode": "stack-ref",
+      "n": 400,
+      "argv": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/descriptorCaptureControl",
+        "-case",
+        "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_case",
+        "-mode",
+        "stack-ref",
+        "-n",
+        "400"
+      ],
+      "actual_child": {
+        "pid": 384003,
+        "uid": 999,
+        "birth_start_ticks": 16354996
+      },
+      "actual_child_return_code": 0,
+      "log": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_evidence/stack-ref_400.log",
+      "log_sha256": "acd68c58d06522659924629474c2c6808d3defa6c4b1b1a22ba0fcfac1d1e6cd",
+      "diagnostic_lines": [
+        "DIAG_BEGIN mode=stack-ref n=400 offload_selected=0 descriptor_bytes=24",
+        "DIAG_ATTR name=stack_descriptor address=281474910333128 status=0 type=0 host=0xfffffc0b28c8 device=0",
+        "DIAG_ATTR name=heap_descriptor address=8661452672 status=0 type=3 host=0x204434780 device=0x204434780",
+        "DIAG_ATTR name=selected_data address=8662411776 status=0 type=3 host=0x20451ea00 device=0x20451ea00",
+        "DIAG_ATTR name=output_data address=8662418944 status=0 type=3 host=0x204520600 device=0x204520600",
+        "DIAG_RESULT mode=stack-ref mismatches=0 sync=0"
+      ],
+      "binary_sha256": "c092bc4e67259676e4a2837bce7f9d5948a1d7149e64aa1c593f3f4af4c05255",
+      "completed_utc": "2026-11-02T12:46:39.308584+00:00"
+    },
+    {
+      "mode": "stack-ref",
+      "n": 4096,
+      "argv": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/descriptorCaptureControl",
+        "-case",
+        "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_case",
+        "-mode",
+        "stack-ref",
+        "-n",
+        "4096"
+      ],
+      "actual_child": {
+        "pid": 384011,
+        "uid": 999,
+        "birth_start_ticks": 16355169
+      },
+      "actual_child_return_code": -6,
+      "log": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/descriptor_control_evidence/stack-ref_4096.log",
+      "log_sha256": "dd1da167653dfe373725f61029c7eaf1859b6bea236ab2c0b14fb3e11d090808",
+      "diagnostic_lines": [
+        "DIAG_BEGIN mode=stack-ref n=4096 offload_selected=1 descriptor_bytes=24",
+        "DIAG_ATTR name=stack_descriptor address=281474322492312 status=0 type=0 host=0xffffd9016b98 device=0",
+        "DIAG_ATTR name=heap_descriptor address=8661452672 status=0 type=3 host=0x204434780 device=0x204434780",
+        "DIAG_ATTR name=selected_data address=9393143808 status=0 type=3 host=0x22fe00000 device=0x22fe00000",
+        "DIAG_ATTR name=output_data address=9393176576 status=0 type=3 host=0x22fe08000 device=0x22fe08000"
+      ],
+      "binary_sha256": "c092bc4e67259676e4a2837bce7f9d5948a1d7149e64aa1c593f3f4af4c05255",
+      "completed_utc": "2026-11-02T12:47:00.673047+00:00"
+    }
+  ],
+  "inputs_unchanged": true,
+  "case_inputs_sha256": {
+    "0/p": "0fd4f30a227253e74aad4a434ed9462686ede8f1ba0b6f8a3531c40d94cfc7e6",
+    "0/U": "954e1ea33a7ccb3a6b3086fa0cd960a05c27fcf7e3a36a82c5ce25f58c070045",
+    "constant/transportProperties": "261eba87dbc7f101785f5c76212e151a2d68c1b98d930a1a6add3bafa391fc51",
+    "system/PDRblockMeshDict": "7cd46b7abe691296d4b008ff22f566d9d9b834463c64dc7cf76ec4ffd6afbab7",
+    "system/blockMeshDict": "6321615ce9d5b6bcbe480eb274b8af308e340b91adebe1c990ad464b01bfbd80",
+    "system/decomposeParDict": "829af8c99f84bc74f6e845106f7ef8344ec04c822e9b3fab4e847b9d0cc305df",
+    "system/fvSolution": "0d85777e484b68253f9c99c56ca2b5c5d69fb7aa5574d31493fdbe0fa282c224",
+    "system/fvSchemes": "c68daea473990cf22575494457ae406a66eed1e14433c6c0428870aff9c6310f",
+    "system/controlDict": "d42dca1cb4bf983fe9974b1e899bcb8a746b393a32ccae35af67678e42add322"
+  },
+  "source_sha256": "e193cf54b3ac5a9580117d6a3c6a6a2b7f10146c392d59f66f0ee30f9db4f663",
+  "binary_sha256": "c092bc4e67259676e4a2837bce7f9d5948a1d7149e64aa1c593f3f4af4c05255",
+  "runner_sha256": "f7516633a653736f9ccaddee1f7ff656996590e1314cca8347d0d921958b9f9f",
+  "no_C29_or_PDE_or_reset": true,
+  "only_one_GPU_child_at_a_time": true
+}

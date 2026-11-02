@@ -1,0 +1,98 @@
+{
+  "checked_utc": "2026-11-02T11:56:50.350429+00:00",
+  "passed": true,
+  "rows": [
+    {
+      "time": "0.005",
+      "field": "U",
+      "relative_L2": 3.710018777681922e-15,
+      "max_absolute": 2.8232461024730346e-15,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.005",
+      "field": "p",
+      "relative_L2": 1.3037842957178397e-13,
+      "max_absolute": 1.3500311979441904e-13,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.01",
+      "field": "U",
+      "relative_L2": 1.2618967837394555e-15,
+      "max_absolute": 1.4475537224895361e-15,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.01",
+      "field": "p",
+      "relative_L2": 4.440447726851035e-14,
+      "max_absolute": 3.885780586188048e-14,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.015",
+      "field": "U",
+      "relative_L2": 8.821556273864133e-16,
+      "max_absolute": 1.4988653308845697e-15,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.015",
+      "field": "p",
+      "relative_L2": 1.7848801708780523e-14,
+      "max_absolute": 1.7541523789077473e-14,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.02",
+      "field": "U",
+      "relative_L2": 8.163145611880083e-16,
+      "max_absolute": 1.5548697241856944e-15,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.02",
+      "field": "p",
+      "relative_L2": 2.883611315516312e-15,
+      "max_absolute": 1.0658141036401503e-14,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.025",
+      "field": "U",
+      "relative_L2": 6.543538630695659e-16,
+      "max_absolute": 1.3994563803303695e-15,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    },
+    {
+      "time": "0.025",
+      "field": "p",
+      "relative_L2": 1.6378677003066643e-14,
+      "max_absolute": 1.509903313490213e-14,
+      "relative_limit": 0.001,
+      "absolute_limit": 0.0001,
+      "passed": true
+    }
+  ],
+  "pressure_offset_fitted": false,
+  "speedup_measured": false
+}

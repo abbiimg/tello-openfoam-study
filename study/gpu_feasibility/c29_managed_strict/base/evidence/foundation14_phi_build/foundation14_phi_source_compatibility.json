@@ -1,0 +1,29 @@
+{
+  "kind": "Private F14 utility v2.2 current-time getter API compatibility",
+  "prepared_utc": "2026-11-02T11:32:46.917773+00:00",
+  "previous_version": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_1_20261102",
+  "prior_build_log_sha256": "1800272e6b44608c4661c3d1969287e1296fa3358a8025e387582f5806b18a1a",
+  "previous_source_sha256": "777f0d26aaa8225751d838d93c3864e7f6cea7c8927b1279da5d4b06dac1205c",
+  "private_source_sha256": "2e461721d515bf1eb5a667c8580e9ce205439f96963492abffa204ccbbb301cb",
+  "patch_sha256": "85f86a37331e1bdca5cf70491a9b9fcbb0924ef97ca13a2b02b3976066e548a4",
+  "reference_module_sha256": "9e1cac27826bb98318b95fabe66fc2350ff5dc8cc2997eb0cee2592b677f4105",
+  "actual_original_phi_constructor": "89:         mesh,\n90:         dimensions::velocity\n91:     ),\n92: \n93:     phi_\n94:     (\n95:         IOobject\n96:         (\n97:             \"phi\",\n98:             runTime.name(),\n99:             mesh,\n100:             IOobject::READ_IF_PRESENT,\n101:             IOobject::AUTO_WRITE\n102:         ),\n103:         linearInterpolate(U_) & mesh.Sf()\n104:     ),\n105: ",
+  "source_and_Make_files": {
+    "C29ExperimentAdmission.H": {
+      "sha256": "539e78eed301027007512b5035f6c90e51bc68ad0c8637ca0e6deb666cdf0cfc"
+    },
+    "foundation14_phi/c29FoundationInitialPhi.C": {
+      "sha256": "2e461721d515bf1eb5a667c8580e9ce205439f96963492abffa204ccbbb301cb"
+    },
+    "foundation14_phi/Make/options": {
+      "sha256": "c103afffb9fe554bf51eed6a1493bca140f37ea8eed82eb96d43bdc965c8f086"
+    },
+    "foundation14_phi/Make/files": {
+      "sha256": "10d56f855e4e88ea0a6f205585b0893656868e33b6cff2d28c3f1c4a16394163"
+    }
+  },
+  "change": "runTime.timeName() -> runTime.name(): actual F14 current-time-name API",
+  "interpolation_IO_semantics_receipt_fields_source_time_physics_changed": false,
+  "candidate_modified": false,
+  "utility_executed": false
+}

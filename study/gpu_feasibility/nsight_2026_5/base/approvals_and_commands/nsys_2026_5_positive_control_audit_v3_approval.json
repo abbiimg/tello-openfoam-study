@@ -1,0 +1,9 @@
+{
+  "decision": "APPROVED_ONE_SMALL_FIELD_NEW_PROFILER_CONTROL",
+  "protocol_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+  "helper_manifest_sha256": "e9e5b59284cbaeeb0c9a54fd4f709e2e44d49cf77b9d198196b5a4b31fd43605",
+  "audit_only_existing_closed_evidence": true,
+  "GPU_or_probe_rerun_authorized": false,
+  "runtime_used_previous_V2_approval_unchanged": true,
+  "root_review": "Approve only re-reading the existing closed report with an exact Linux comm-label schema correction. Actual executable hashes/PID birth/UID/cwd, NVTX/globalPid, successful launch/completion, arithmetic and warning gates remain mandatory. Original V2 audit failure is preserved. Independent static and closed-data review found eight actual attributable kernels and no warning; no new physical execution or large-case qualification."
+}

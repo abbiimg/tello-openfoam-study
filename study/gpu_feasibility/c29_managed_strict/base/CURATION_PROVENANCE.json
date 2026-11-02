@@ -1,0 +1,2571 @@
+{
+  "schema": "c29-managed-strict-curation-v1",
+  "source_files": [
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29BackendAudit.H",
+      "path": "source/legacy_candidate_v2_2/C29BackendAudit.H",
+      "sha256": "f8077bb06aeae459d00ae72246feee920dc75503615216d9ae3a04e1df09eb97",
+      "size_bytes": 2545,
+      "source_mtime_ns": 1793613595423002700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29ExperimentAdmission.H",
+      "path": "source/legacy_candidate_v2_2/C29ExperimentAdmission.H",
+      "sha256": "539e78eed301027007512b5035f6c90e51bc68ad0c8637ca0e6deb666cdf0cfc",
+      "size_bytes": 2447,
+      "source_mtime_ns": 1793616884355138900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29HostSource.H",
+      "path": "source/legacy_candidate_v2_2/C29HostSource.H",
+      "sha256": "4a36578055b549edb41d6f5ef49a4ac6947fac394a1477c05bde9479c247010e",
+      "size_bytes": 6568,
+      "source_mtime_ns": 1793616823297368400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29Operators.H",
+      "path": "source/legacy_candidate_v2_2/C29Operators.H",
+      "sha256": "6d45abbc25844e19d88d259de87b54e76524c5a0083faa946a7c3c3f3f45ed7d",
+      "size_bytes": 2314,
+      "source_mtime_ns": 1793613596221692600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29Restrictions.H",
+      "path": "source/legacy_candidate_v2_2/C29Restrictions.H",
+      "sha256": "d2d7734acee77d59352d8b4579952ad0799e1a211daa5e92a566fde1515bd301",
+      "size_bytes": 8465,
+      "source_mtime_ns": 1793616884761306500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29SourceAccounting.H",
+      "path": "source/legacy_candidate_v2_2/C29SourceAccounting.H",
+      "sha256": "1eea693a249522ba2028092bd9e98a7e669a954e7740e4a65a954772c1488946",
+      "size_bytes": 1747,
+      "source_mtime_ns": 1793616137187858800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29ValidationThresholds.H",
+      "path": "source/legacy_candidate_v2_2/C29ValidationThresholds.H",
+      "sha256": "3eab3c7b099ee4a0cb3191c2c9661ad16a7d8cc6a93961bd213abe85be656e4a",
+      "size_bytes": 446,
+      "source_mtime_ns": 1793616822886627100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29_body_verbatim.inc",
+      "path": "source/legacy_candidate_v2_2/C29_body_verbatim.inc",
+      "sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+      "size_bytes": 4015,
+      "source_mtime_ns": 1793613562206802100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29_includes_verbatim.inc",
+      "path": "source/legacy_candidate_v2_2/C29_includes_verbatim.inc",
+      "sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83",
+      "size_bytes": 82,
+      "source_mtime_ns": 1793613562233756100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/COPYING",
+      "path": "source/legacy_candidate_v2_2/COPYING",
+      "sha256": "a62f4262b9739f43478d025ed9fc5419585ec27b4b50e88f55e3186141e18ef1",
+      "size_bytes": 35646,
+      "source_mtime_ns": 1793613562264538500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/Make/files",
+      "path": "source/legacy_candidate_v2_2/Make/files",
+      "sha256": "36adcfe526eca433a5c7d994576b11a218a2ea3aba7c1d414ba9cea3a04308c5",
+      "size_bytes": 63,
+      "source_mtime_ns": 1793613596632916000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/Make/options",
+      "path": "source/legacy_candidate_v2_2/Make/options",
+      "sha256": "d6b406074314a11c97f7b16613d78c5939df91db42fd9e7441e3cc3ca3de5d09",
+      "size_bytes": 906,
+      "source_mtime_ns": 1793614075171156100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/README.md",
+      "path": "source/legacy_candidate_v2_2/README.md",
+      "sha256": "89785a7da79aa7a63fb946b560da12022665cb6d5b96e80bf1a5cf018159cb1a",
+      "size_bytes": 15019,
+      "source_mtime_ns": 1793616824139210700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/admission_audit.py",
+      "path": "source/legacy_candidate_v2_2/admission_audit.py",
+      "sha256": "ff05a5c9934a6330561d05c06a1ecf112f02245f0d63a46cfbb2419977092770",
+      "size_bytes": 14488,
+      "source_mtime_ns": 1793616885965506900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/audit_candidate.py",
+      "path": "source/legacy_candidate_v2_2/audit_candidate.py",
+      "sha256": "ebc3367e36e30b1fec183974e6850b8f21da96e8cded8ecf535ef1005c4099f0",
+      "size_bytes": 215,
+      "source_mtime_ns": 1793616382657669100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/c29NativeHybridFoam.C",
+      "path": "source/legacy_candidate_v2_2/c29NativeHybridFoam.C",
+      "sha256": "47a113b8221d829c101dfcb2f1fecfebb2cbf942a0e494af30f3a22b9eab479c",
+      "size_bytes": 7335,
+      "source_mtime_ns": 1793617107235719800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/c29NativeHybridFoam_body.txt",
+      "path": "source/legacy_candidate_v2_2/c29NativeHybridFoam_body.txt",
+      "sha256": "affc1578e474cb5d98871b23785fa2ee8c7d777508f8818d4a0249566f95d124",
+      "size_bytes": 6121,
+      "source_mtime_ns": 1793616885166779900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/candidate_manifest.json",
+      "path": "source/legacy_candidate_v2_2/candidate_manifest.json",
+      "sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+      "size_bytes": 24910,
+      "source_mtime_ns": 1793617112272678700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/createC29Fields.H",
+      "path": "source/legacy_candidate_v2_2/createC29Fields.H",
+      "sha256": "46793564b465f720035988be8cf5804ed7321e919caeebff1719598a991b9cf9",
+      "size_bytes": 1252,
+      "source_mtime_ns": 1793613562283129100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/foundation14_phi/Make/files",
+      "path": "source/legacy_candidate_v2_2/foundation14_phi/Make/files",
+      "sha256": "10d56f855e4e88ea0a6f205585b0893656868e33b6cff2d28c3f1c4a16394163",
+      "size_bytes": 75,
+      "source_mtime_ns": 1793613805936415900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/foundation14_phi/Make/options",
+      "path": "source/legacy_candidate_v2_2/foundation14_phi/Make/options",
+      "sha256": "c103afffb9fe554bf51eed6a1493bca140f37ea8eed82eb96d43bdc965c8f086",
+      "size_bytes": 342,
+      "source_mtime_ns": 1793613806350169400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/foundation14_phi/c29FoundationInitialPhi.C",
+      "path": "source/legacy_candidate_v2_2/foundation14_phi/c29FoundationInitialPhi.C",
+      "sha256": "50a412eb35123239a84a4222997f542b0fb05473639a53f5685373a652f9f6f9",
+      "size_bytes": 3338,
+      "source_mtime_ns": 1793616885558835000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/c29InitialPhiControls.txt",
+      "path": "source/legacy_candidate_v2_2/recipe_templates/c29InitialPhiControls.txt",
+      "sha256": "5f7d34e6b3fc9744193268c276c540c453a49070c5ce51508a32711fbd9c3f2a",
+      "size_bytes": 327,
+      "source_mtime_ns": 1793616040266117000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/c29PortControls.txt",
+      "path": "source/legacy_candidate_v2_2/recipe_templates/c29PortControls.txt",
+      "sha256": "67b95db09e8b9b035ae2fb5162a2b94865a6b1062b05f9b4c029f505d2ca6e70",
+      "size_bytes": 682,
+      "source_mtime_ns": 1793616039776125800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/fixed_controlDict_entries.txt",
+      "path": "source/legacy_candidate_v2_2/recipe_templates/fixed_controlDict_entries.txt",
+      "sha256": "ec8159c2afc486f33d32778e56222746fa05bab3db633d454f807e2053e3fa59",
+      "size_bytes": 499,
+      "source_mtime_ns": 1793613808011478700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/native_PISO_entries.txt",
+      "path": "source/legacy_candidate_v2_2/recipe_templates/native_PISO_entries.txt",
+      "sha256": "5b42de6f1f553897f6f8d6fa0aa86188e7c273a19c68bb9b7c254f6d5274ef73",
+      "size_bytes": 233,
+      "source_mtime_ns": 1793613808419034800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/native_transportProperties.txt",
+      "path": "source/legacy_candidate_v2_2/recipe_templates/native_transportProperties.txt",
+      "sha256": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+      "size_bytes": 97,
+      "source_mtime_ns": 1793613807621026200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/reference_seed_geometry.json",
+      "path": "source/legacy_candidate_v2_2/reference_seed_geometry.json",
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "size_bytes": 8480,
+      "source_mtime_ns": 1793613562315837300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/Make/files",
+      "path": "source/legacy_candidate_v2_2/upstream/Make/files",
+      "sha256": "77dd8601a1b9b96698716abbe342f7155da3fd9370fdd4a0f4295a46ea68af48",
+      "size_bytes": 40,
+      "source_mtime_ns": 1793613562143122800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/Make/options",
+      "path": "source/legacy_candidate_v2_2/upstream/Make/options",
+      "sha256": "0e3853fb95fcd3e7b165f157d502a4408f84e2e5b5e7b79e36fff2843d63b6fb",
+      "size_bytes": 142,
+      "source_mtime_ns": 1793613562180822400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/createFields.H",
+      "path": "source/legacy_candidate_v2_2/upstream/createFields.H",
+      "sha256": "4be0977a6349fca8b5675d78a7b27f73baeef2955608abfcabb29aa1e738dd23",
+      "size_bytes": 923,
+      "source_mtime_ns": 1793613562109462500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/icoFoam.C",
+      "path": "source/legacy_candidate_v2_2/upstream/icoFoam.C",
+      "sha256": "29d38d8ad11eb0f388261673ec976fd72524c3086fa8ee37b5669712eec77d12",
+      "size_bytes": 4708,
+      "source_mtime_ns": 1793613562072893800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream_license_header.txt",
+      "path": "source/legacy_candidate_v2_2/upstream_license_header.txt",
+      "sha256": "b5f72125ba1731883595505c9b8379490eb75c27d7635bfc854ad761c1c3f223",
+      "size_bytes": 1214,
+      "source_mtime_ns": 1793613562273389500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream_to_candidate.patch",
+      "path": "source/legacy_candidate_v2_2/upstream_to_candidate.patch",
+      "sha256": "d2097b3ddc0136fbbbbf581726b4dd6725fb098d96aaa366d59d0fd06f220243",
+      "size_bytes": 41012,
+      "source_mtime_ns": 1793617109566634300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/validation_recipe.json",
+      "path": "source/legacy_candidate_v2_2/validation_recipe.json",
+      "sha256": "7a5eb942c662f460283719d964b2e382836707fcd068e9227efac81283341e01",
+      "size_bytes": 4124,
+      "source_mtime_ns": 1793617109600486800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/validation_thresholds.json",
+      "path": "source/legacy_candidate_v2_2/validation_thresholds.json",
+      "sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+      "size_bytes": 3946,
+      "source_mtime_ns": 1793616823731976500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29BackendAudit.H",
+      "path": "source/reviewed_ownership_b/C29BackendAudit.H",
+      "sha256": "f8077bb06aeae459d00ae72246feee920dc75503615216d9ae3a04e1df09eb97",
+      "size_bytes": 2545,
+      "source_mtime_ns": 1793624627593227900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29ExperimentAdmission.H",
+      "path": "source/reviewed_ownership_b/C29ExperimentAdmission.H",
+      "sha256": "539e78eed301027007512b5035f6c90e51bc68ad0c8637ca0e6deb666cdf0cfc",
+      "size_bytes": 2447,
+      "source_mtime_ns": 1793624627370224600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29HostSource.H",
+      "path": "source/reviewed_ownership_b/C29HostSource.H",
+      "sha256": "43543af0b7a18373315d998805d18faf6f0744e225626697edf965f99055565f",
+      "size_bytes": 6855,
+      "source_mtime_ns": 1793624628002562900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29ManagedOwnership.H",
+      "path": "source/reviewed_ownership_b/C29ManagedOwnership.H",
+      "sha256": "c826805f63ba6f158409ceb4af07f19954264eaea0e5cf627458037f992459b9",
+      "size_bytes": 2420,
+      "source_mtime_ns": 1793624628065585400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29Operators.H",
+      "path": "source/reviewed_ownership_b/C29Operators.H",
+      "sha256": "985f1d12610c9ec6e3d45e6d095a4b8ad40d5575f1f72899bfdc3460d5a8eef7",
+      "size_bytes": 3117,
+      "source_mtime_ns": 1793624627999804600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29Restrictions.H",
+      "path": "source/reviewed_ownership_b/C29Restrictions.H",
+      "sha256": "d2d7734acee77d59352d8b4579952ad0799e1a211daa5e92a566fde1515bd301",
+      "size_bytes": 8465,
+      "source_mtime_ns": 1793624627241162900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29SourceAccounting.H",
+      "path": "source/reviewed_ownership_b/C29SourceAccounting.H",
+      "sha256": "1eea693a249522ba2028092bd9e98a7e669a954e7740e4a65a954772c1488946",
+      "size_bytes": 1747,
+      "source_mtime_ns": 1793624627114039800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29ValidationThresholds.H",
+      "path": "source/reviewed_ownership_b/C29ValidationThresholds.H",
+      "sha256": "3eab3c7b099ee4a0cb3191c2c9661ad16a7d8cc6a93961bd213abe85be656e4a",
+      "size_bytes": 446,
+      "source_mtime_ns": 1793624627320599800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29_body_verbatim.inc",
+      "path": "source/reviewed_ownership_b/C29_body_verbatim.inc",
+      "sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+      "size_bytes": 4015,
+      "source_mtime_ns": 1793624627495241400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29_includes_verbatim.inc",
+      "path": "source/reviewed_ownership_b/C29_includes_verbatim.inc",
+      "sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83",
+      "size_bytes": 82,
+      "source_mtime_ns": 1793624627282205300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/COPYING",
+      "path": "source/reviewed_ownership_b/COPYING",
+      "sha256": "a62f4262b9739f43478d025ed9fc5419585ec27b4b50e88f55e3186141e18ef1",
+      "size_bytes": 35646,
+      "source_mtime_ns": 1793624627130101500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/Make/files",
+      "path": "source/reviewed_ownership_b/Make/files",
+      "sha256": "36adcfe526eca433a5c7d994576b11a218a2ea3aba7c1d414ba9cea3a04308c5",
+      "size_bytes": 63,
+      "source_mtime_ns": 1793624627856131700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/Make/options",
+      "path": "source/reviewed_ownership_b/Make/options",
+      "sha256": "d6b406074314a11c97f7b16613d78c5939df91db42fd9e7441e3cc3ca3de5d09",
+      "size_bytes": 906,
+      "source_mtime_ns": 1793624627827593800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/OWNERSHIP_REVIEW.md",
+      "path": "source/reviewed_ownership_b/OWNERSHIP_REVIEW.md",
+      "sha256": "bc03311b0e1d1ac3917ca121536f4d9524acd7b6a17827aa5c114a5be6928ea2",
+      "size_bytes": 4353,
+      "source_mtime_ns": 1793624897848186500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/README.md",
+      "path": "source/reviewed_ownership_b/README.md",
+      "sha256": "89785a7da79aa7a63fb946b560da12022665cb6d5b96e80bf1a5cf018159cb1a",
+      "size_bytes": 15019,
+      "source_mtime_ns": 1793624627400183400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/admission_audit.py",
+      "path": "source/reviewed_ownership_b/admission_audit.py",
+      "sha256": "ff05a5c9934a6330561d05c06a1ecf112f02245f0d63a46cfbb2419977092770",
+      "size_bytes": 14488,
+      "source_mtime_ns": 1793624627161769900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/audit_candidate.py",
+      "path": "source/reviewed_ownership_b/audit_candidate.py",
+      "sha256": "ebc3367e36e30b1fec183974e6850b8f21da96e8cded8ecf535ef1005c4099f0",
+      "size_bytes": 215,
+      "source_mtime_ns": 1793624627339485900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/c29NativeHybridFoam.C",
+      "path": "source/reviewed_ownership_b/c29NativeHybridFoam.C",
+      "sha256": "cadf3d3a4247989801819482372788699c1bea615cdfad71021dc29a89c62ffb",
+      "size_bytes": 8818,
+      "source_mtime_ns": 1793624627971199600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/c29NativeHybridFoam_body.txt",
+      "path": "source/reviewed_ownership_b/c29NativeHybridFoam_body.txt",
+      "sha256": "affc1578e474cb5d98871b23785fa2ee8c7d777508f8818d4a0249566f95d124",
+      "size_bytes": 6121,
+      "source_mtime_ns": 1793624627479485800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/candidate_manifest.json",
+      "path": "source/reviewed_ownership_b/candidate_manifest.json",
+      "sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+      "size_bytes": 24910,
+      "source_mtime_ns": 1793624627304638200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/createC29Fields.H",
+      "path": "source/reviewed_ownership_b/createC29Fields.H",
+      "sha256": "1e2d6793e736870fa6c4cfbb33002cc598fda423ea9c5bf49473ba3ef53eb749",
+      "size_bytes": 1587,
+      "source_mtime_ns": 1793624627988561100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/createC29ManagedPhi.H",
+      "path": "source/reviewed_ownership_b/createC29ManagedPhi.H",
+      "sha256": "a97d96fc8ac03f3fb1005bdedacc894730e9d394f5b4255c6d073f412af365c7",
+      "size_bytes": 1891,
+      "source_mtime_ns": 1793624628023169800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/foundation14_phi/Make/files",
+      "path": "source/reviewed_ownership_b/foundation14_phi/Make/files",
+      "sha256": "10d56f855e4e88ea0a6f205585b0893656868e33b6cff2d28c3f1c4a16394163",
+      "size_bytes": 75,
+      "source_mtime_ns": 1793624627908781300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/foundation14_phi/Make/options",
+      "path": "source/reviewed_ownership_b/foundation14_phi/Make/options",
+      "sha256": "c103afffb9fe554bf51eed6a1493bca140f37ea8eed82eb96d43bdc965c8f086",
+      "size_bytes": 342,
+      "source_mtime_ns": 1793624627875089000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/foundation14_phi/c29FoundationInitialPhi.C",
+      "path": "source/reviewed_ownership_b/foundation14_phi/c29FoundationInitialPhi.C",
+      "sha256": "50a412eb35123239a84a4222997f542b0fb05473639a53f5685373a652f9f6f9",
+      "size_bytes": 3338,
+      "source_mtime_ns": 1793624627765429400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/mechanical_source_check.json",
+      "path": "source/reviewed_ownership_b/mechanical_source_check.json",
+      "sha256": "7c215578c6a44090900eb69d253e59abcde73357f254d3ab29650a496cccf0fa",
+      "size_bytes": 904,
+      "source_mtime_ns": 1793624769604074800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_declaration_reversal_map.json",
+      "path": "source/reviewed_ownership_b/ownership_declaration_reversal_map.json",
+      "sha256": "0afd99ff28bda32427cc5616ed172d41b4eb84158d334d49cc0f2efd22c3e8fc",
+      "size_bytes": 8535,
+      "source_mtime_ns": 1793624629157485500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_only.patch",
+      "path": "source/reviewed_ownership_b/ownership_only.patch",
+      "sha256": "85439b77952af6e249af54bf3576c5517fb570a1e4d0324e5617585fe193dcb9",
+      "size_bytes": 12878,
+      "source_mtime_ns": 1793624628098833000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_proposal_manifest.json",
+      "path": "source/reviewed_ownership_b/ownership_proposal_manifest.json",
+      "sha256": "689b261f3a91f280719ba575d48b4b56187cc442cf032728dd8f80ba63088203",
+      "size_bytes": 16213,
+      "source_mtime_ns": 1793624629135922900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_review_bundle.json",
+      "path": "source/reviewed_ownership_b/ownership_review_bundle.json",
+      "sha256": "c5ea07321225570dfb5c1761c85d7f493de0f518b39d00992676ad6858b5a31f",
+      "size_bytes": 4648,
+      "source_mtime_ns": 1793624899085895200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/c29InitialPhiControls.txt",
+      "path": "source/reviewed_ownership_b/recipe_templates/c29InitialPhiControls.txt",
+      "sha256": "5f7d34e6b3fc9744193268c276c540c453a49070c5ce51508a32711fbd9c3f2a",
+      "size_bytes": 327,
+      "source_mtime_ns": 1793624627623023400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/c29PortControls.txt",
+      "path": "source/reviewed_ownership_b/recipe_templates/c29PortControls.txt",
+      "sha256": "67b95db09e8b9b035ae2fb5162a2b94865a6b1062b05f9b4c029f505d2ca6e70",
+      "size_bytes": 682,
+      "source_mtime_ns": 1793624627700778300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/fixed_controlDict_entries.txt",
+      "path": "source/reviewed_ownership_b/recipe_templates/fixed_controlDict_entries.txt",
+      "sha256": "ec8159c2afc486f33d32778e56222746fa05bab3db633d454f807e2053e3fa59",
+      "size_bytes": 499,
+      "source_mtime_ns": 1793624627641637600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/native_PISO_entries.txt",
+      "path": "source/reviewed_ownership_b/recipe_templates/native_PISO_entries.txt",
+      "sha256": "5b42de6f1f553897f6f8d6fa0aa86188e7c273a19c68bb9b7c254f6d5274ef73",
+      "size_bytes": 233,
+      "source_mtime_ns": 1793624627673927200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/native_transportProperties.txt",
+      "path": "source/reviewed_ownership_b/recipe_templates/native_transportProperties.txt",
+      "sha256": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+      "size_bytes": 97,
+      "source_mtime_ns": 1793624627745044800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/reference_seed_geometry.json",
+      "path": "source/reviewed_ownership_b/reference_seed_geometry.json",
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "size_bytes": 8480,
+      "source_mtime_ns": 1793624627542358200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/Make/files",
+      "path": "source/reviewed_ownership_b/upstream/Make/files",
+      "sha256": "77dd8601a1b9b96698716abbe342f7155da3fd9370fdd4a0f4295a46ea68af48",
+      "size_bytes": 40,
+      "source_mtime_ns": 1793624627956139800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/Make/options",
+      "path": "source/reviewed_ownership_b/upstream/Make/options",
+      "sha256": "0e3853fb95fcd3e7b165f157d502a4408f84e2e5b5e7b79e36fff2843d63b6fb",
+      "size_bytes": 142,
+      "source_mtime_ns": 1793624627931912800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/createFields.H",
+      "path": "source/reviewed_ownership_b/upstream/createFields.H",
+      "sha256": "4be0977a6349fca8b5675d78a7b27f73baeef2955608abfcabb29aa1e738dd23",
+      "size_bytes": 923,
+      "source_mtime_ns": 1793624627812897100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/icoFoam.C",
+      "path": "source/reviewed_ownership_b/upstream/icoFoam.C",
+      "sha256": "29d38d8ad11eb0f388261673ec976fd72524c3086fa8ee37b5669712eec77d12",
+      "size_bytes": 4708,
+      "source_mtime_ns": 1793624627792024500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream_license_header.txt",
+      "path": "source/reviewed_ownership_b/upstream_license_header.txt",
+      "sha256": "b5f72125ba1731883595505c9b8379490eb75c27d7635bfc854ad761c1c3f223",
+      "size_bytes": 1214,
+      "source_mtime_ns": 1793624627573287400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream_to_candidate.patch",
+      "path": "source/reviewed_ownership_b/upstream_to_candidate.patch",
+      "sha256": "d2097b3ddc0136fbbbbf581726b4dd6725fb098d96aaa366d59d0fd06f220243",
+      "size_bytes": 41012,
+      "source_mtime_ns": 1793624627433681100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/validation_recipe.json",
+      "path": "source/reviewed_ownership_b/validation_recipe.json",
+      "sha256": "7a5eb942c662f460283719d964b2e382836707fcd068e9227efac81283341e01",
+      "size_bytes": 4124,
+      "source_mtime_ns": 1793624627197008800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/validation_thresholds.json",
+      "path": "source/reviewed_ownership_b/validation_thresholds.json",
+      "sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+      "size_bytes": 3946,
+      "source_mtime_ns": 1793624627219575100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29BackendAudit.H",
+      "path": "source/managed_strict_v2_3/C29BackendAudit.H",
+      "sha256": "f8077bb06aeae459d00ae72246feee920dc75503615216d9ae3a04e1df09eb97",
+      "size_bytes": 2545,
+      "source_mtime_ns": 1793625150798979800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29ExperimentAdmission.H",
+      "path": "source/managed_strict_v2_3/C29ExperimentAdmission.H",
+      "sha256": "539e78eed301027007512b5035f6c90e51bc68ad0c8637ca0e6deb666cdf0cfc",
+      "size_bytes": 2447,
+      "source_mtime_ns": 1793625150849089900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29HostSource.H",
+      "path": "source/managed_strict_v2_3/C29HostSource.H",
+      "sha256": "43543af0b7a18373315d998805d18faf6f0744e225626697edf965f99055565f",
+      "size_bytes": 6855,
+      "source_mtime_ns": 1793625150891482700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29ManagedOwnership.H",
+      "path": "source/managed_strict_v2_3/C29ManagedOwnership.H",
+      "sha256": "c826805f63ba6f158409ceb4af07f19954264eaea0e5cf627458037f992459b9",
+      "size_bytes": 2420,
+      "source_mtime_ns": 1793625150941800100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29Operators.H",
+      "path": "source/managed_strict_v2_3/C29Operators.H",
+      "sha256": "985f1d12610c9ec6e3d45e6d095a4b8ad40d5575f1f72899bfdc3460d5a8eef7",
+      "size_bytes": 3117,
+      "source_mtime_ns": 1793625151085226700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29Restrictions.H",
+      "path": "source/managed_strict_v2_3/C29Restrictions.H",
+      "sha256": "217b76d552ed28e9c5bd37b010cd036ce87717a79aef8a745716e66d26b93164",
+      "size_bytes": 8630,
+      "source_mtime_ns": 1793625153928536700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29SourceAccounting.H",
+      "path": "source/managed_strict_v2_3/C29SourceAccounting.H",
+      "sha256": "1eea693a249522ba2028092bd9e98a7e669a954e7740e4a65a954772c1488946",
+      "size_bytes": 1747,
+      "source_mtime_ns": 1793625151176449200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29ValidationThresholds.H",
+      "path": "source/managed_strict_v2_3/C29ValidationThresholds.H",
+      "sha256": "3eab3c7b099ee4a0cb3191c2c9661ad16a7d8cc6a93961bd213abe85be656e4a",
+      "size_bytes": 446,
+      "source_mtime_ns": 1793625151246232600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29_body_verbatim.inc",
+      "path": "source/managed_strict_v2_3/C29_body_verbatim.inc",
+      "sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+      "size_bytes": 4015,
+      "source_mtime_ns": 1793625151311762500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29_includes_verbatim.inc",
+      "path": "source/managed_strict_v2_3/C29_includes_verbatim.inc",
+      "sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83",
+      "size_bytes": 82,
+      "source_mtime_ns": 1793625151340004600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/COPYING",
+      "path": "source/managed_strict_v2_3/COPYING",
+      "sha256": "a62f4262b9739f43478d025ed9fc5419585ec27b4b50e88f55e3186141e18ef1",
+      "size_bytes": 35646,
+      "source_mtime_ns": 1793625151524586900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/Make/files",
+      "path": "source/managed_strict_v2_3/Make/files",
+      "sha256": "8287e3a15a2a1220f4aebe8a88c3978e0030ecacf81a70cb55779ff416045bed",
+      "size_bytes": 70,
+      "source_mtime_ns": 1793625153960692300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/Make/options",
+      "path": "source/managed_strict_v2_3/Make/options",
+      "sha256": "d6b406074314a11c97f7b16613d78c5939df91db42fd9e7441e3cc3ca3de5d09",
+      "size_bytes": 906,
+      "source_mtime_ns": 1793625153151899900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/OWNERSHIP_REVIEW.md",
+      "path": "source/managed_strict_v2_3/OWNERSHIP_REVIEW.md",
+      "sha256": "bc03311b0e1d1ac3917ca121536f4d9524acd7b6a17827aa5c114a5be6928ea2",
+      "size_bytes": 4353,
+      "source_mtime_ns": 1793625152387797200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/README.md",
+      "path": "source/managed_strict_v2_3/README.md",
+      "sha256": "89785a7da79aa7a63fb946b560da12022665cb6d5b96e80bf1a5cf018159cb1a",
+      "size_bytes": 15019,
+      "source_mtime_ns": 1793625152590803600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/admission_audit.py",
+      "path": "source/managed_strict_v2_3/admission_audit.py",
+      "sha256": "ff05a5c9934a6330561d05c06a1ecf112f02245f0d63a46cfbb2419977092770",
+      "size_bytes": 14488,
+      "source_mtime_ns": 1793625150706264900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/audit_candidate.py",
+      "path": "source/managed_strict_v2_3/audit_candidate.py",
+      "sha256": "ebc3367e36e30b1fec183974e6850b8f21da96e8cded8ecf535ef1005c4099f0",
+      "size_bytes": 215,
+      "source_mtime_ns": 1793625150748420000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/c29NativeHybridFoam.C",
+      "path": "source/managed_strict_v2_3/c29NativeHybridFoam.C",
+      "sha256": "cadf3d3a4247989801819482372788699c1bea615cdfad71021dc29a89c62ffb",
+      "size_bytes": 8818,
+      "source_mtime_ns": 1793625150985390300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/c29NativeHybridFoam_body.txt",
+      "path": "source/managed_strict_v2_3/c29NativeHybridFoam_body.txt",
+      "sha256": "affc1578e474cb5d98871b23785fa2ee8c7d777508f8818d4a0249566f95d124",
+      "size_bytes": 6121,
+      "source_mtime_ns": 1793625151039117700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/candidate_manifest.json",
+      "path": "source/managed_strict_v2_3/candidate_manifest.json",
+      "sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+      "size_bytes": 24910,
+      "source_mtime_ns": 1793625151398511000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/createC29Fields.H",
+      "path": "source/managed_strict_v2_3/createC29Fields.H",
+      "sha256": "1e2d6793e736870fa6c4cfbb33002cc598fda423ea9c5bf49473ba3ef53eb749",
+      "size_bytes": 1587,
+      "source_mtime_ns": 1793625151628073700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/createC29ManagedPhi.H",
+      "path": "source/managed_strict_v2_3/createC29ManagedPhi.H",
+      "sha256": "a97d96fc8ac03f3fb1005bdedacc894730e9d394f5b4255c6d073f412af365c7",
+      "size_bytes": 1891,
+      "source_mtime_ns": 1793625151730188600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/foundation14_phi/Make/files",
+      "path": "source/managed_strict_v2_3/foundation14_phi/Make/files",
+      "sha256": "10d56f855e4e88ea0a6f205585b0893656868e33b6cff2d28c3f1c4a16394163",
+      "size_bytes": 75,
+      "source_mtime_ns": 1793625153667939200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/foundation14_phi/Make/options",
+      "path": "source/managed_strict_v2_3/foundation14_phi/Make/options",
+      "sha256": "c103afffb9fe554bf51eed6a1493bca140f37ea8eed82eb96d43bdc965c8f086",
+      "size_bytes": 342,
+      "source_mtime_ns": 1793625153728393800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/foundation14_phi/c29FoundationInitialPhi.C",
+      "path": "source/managed_strict_v2_3/foundation14_phi/c29FoundationInitialPhi.C",
+      "sha256": "50a412eb35123239a84a4222997f542b0fb05473639a53f5685373a652f9f6f9",
+      "size_bytes": 3338,
+      "source_mtime_ns": 1793625153055309900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/mechanical_source_check.json",
+      "path": "source/managed_strict_v2_3/mechanical_source_check.json",
+      "sha256": "7c215578c6a44090900eb69d253e59abcde73357f254d3ab29650a496cccf0fa",
+      "size_bytes": 904,
+      "source_mtime_ns": 1793625151921458400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_declaration_reversal_map.json",
+      "path": "source/managed_strict_v2_3/ownership_declaration_reversal_map.json",
+      "sha256": "0afd99ff28bda32427cc5616ed172d41b4eb84158d334d49cc0f2efd22c3e8fc",
+      "size_bytes": 8535,
+      "source_mtime_ns": 1793625152078502600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_only.patch",
+      "path": "source/managed_strict_v2_3/ownership_only.patch",
+      "sha256": "85439b77952af6e249af54bf3576c5517fb570a1e4d0324e5617585fe193dcb9",
+      "size_bytes": 12878,
+      "source_mtime_ns": 1793625152139971400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_proposal_manifest.json",
+      "path": "source/managed_strict_v2_3/ownership_proposal_manifest.json",
+      "sha256": "689b261f3a91f280719ba575d48b4b56187cc442cf032728dd8f80ba63088203",
+      "size_bytes": 16213,
+      "source_mtime_ns": 1793625152234223400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_review_bundle.json",
+      "path": "source/managed_strict_v2_3/ownership_review_bundle.json",
+      "sha256": "c5ea07321225570dfb5c1761c85d7f493de0f518b39d00992676ad6858b5a31f",
+      "size_bytes": 4648,
+      "source_mtime_ns": 1793625152493287600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/c29InitialPhiControls.txt",
+      "path": "source/managed_strict_v2_3/recipe_templates/c29InitialPhiControls.txt",
+      "sha256": "5f7d34e6b3fc9744193268c276c540c453a49070c5ce51508a32711fbd9c3f2a",
+      "size_bytes": 327,
+      "source_mtime_ns": 1793625153215434700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/c29PortControls.txt",
+      "path": "source/managed_strict_v2_3/recipe_templates/c29PortControls.txt",
+      "sha256": "67b95db09e8b9b035ae2fb5162a2b94865a6b1062b05f9b4c029f505d2ca6e70",
+      "size_bytes": 682,
+      "source_mtime_ns": 1793625153267416600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/fixed_controlDict_entries.txt",
+      "path": "source/managed_strict_v2_3/recipe_templates/fixed_controlDict_entries.txt",
+      "sha256": "ec8159c2afc486f33d32778e56222746fa05bab3db633d454f807e2053e3fa59",
+      "size_bytes": 499,
+      "source_mtime_ns": 1793625153318303200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/native_PISO_entries.txt",
+      "path": "source/managed_strict_v2_3/recipe_templates/native_PISO_entries.txt",
+      "sha256": "5b42de6f1f553897f6f8d6fa0aa86188e7c273a19c68bb9b7c254f6d5274ef73",
+      "size_bytes": 233,
+      "source_mtime_ns": 1793625153373725400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/native_transportProperties.txt",
+      "path": "source/managed_strict_v2_3/recipe_templates/native_transportProperties.txt",
+      "sha256": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+      "size_bytes": 97,
+      "source_mtime_ns": 1793625153436885100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/reference_seed_geometry.json",
+      "path": "source/managed_strict_v2_3/reference_seed_geometry.json",
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "size_bytes": 8480,
+      "source_mtime_ns": 1793625152675289400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/Make/files",
+      "path": "source/managed_strict_v2_3/upstream/Make/files",
+      "sha256": "77dd8601a1b9b96698716abbe342f7155da3fd9370fdd4a0f4295a46ea68af48",
+      "size_bytes": 40,
+      "source_mtime_ns": 1793625153837599100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/Make/options",
+      "path": "source/managed_strict_v2_3/upstream/Make/options",
+      "sha256": "0e3853fb95fcd3e7b165f157d502a4408f84e2e5b5e7b79e36fff2843d63b6fb",
+      "size_bytes": 142,
+      "source_mtime_ns": 1793625153901157900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/createFields.H",
+      "path": "source/managed_strict_v2_3/upstream/createFields.H",
+      "sha256": "4be0977a6349fca8b5675d78a7b27f73baeef2955608abfcabb29aa1e738dd23",
+      "size_bytes": 923,
+      "source_mtime_ns": 1793625153512804600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/icoFoam.C",
+      "path": "source/managed_strict_v2_3/upstream/icoFoam.C",
+      "sha256": "29d38d8ad11eb0f388261673ec976fd72524c3086fa8ee37b5669712eec77d12",
+      "size_bytes": 4708,
+      "source_mtime_ns": 1793625153569757900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream_license_header.txt",
+      "path": "source/managed_strict_v2_3/upstream_license_header.txt",
+      "sha256": "b5f72125ba1731883595505c9b8379490eb75c27d7635bfc854ad761c1c3f223",
+      "size_bytes": 1214,
+      "source_mtime_ns": 1793625152800925400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream_to_candidate.patch",
+      "path": "source/managed_strict_v2_3/upstream_to_candidate.patch",
+      "sha256": "d2097b3ddc0136fbbbbf581726b4dd6725fb098d96aaa366d59d0fd06f220243",
+      "size_bytes": 41012,
+      "source_mtime_ns": 1793625152895765200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/validation_recipe.json",
+      "path": "source/managed_strict_v2_3/validation_recipe.json",
+      "sha256": "7a5eb942c662f460283719d964b2e382836707fcd068e9227efac81283341e01",
+      "size_bytes": 4124,
+      "source_mtime_ns": 1793625152951160600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/validation_thresholds.json",
+      "path": "source/managed_strict_v2_3/validation_thresholds.json",
+      "sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+      "size_bytes": 3946,
+      "source_mtime_ns": 1793625152995394200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/build_progress.json",
+      "path": "evidence/build/build_progress.json",
+      "sha256": "27c1a30a3abef7909e472ddf0c76d581d12b9c0c259684e660d990d4ae7ecf1d",
+      "size_bytes": 2592,
+      "source_mtime_ns": 1793625551828448100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/collector_recovery.json",
+      "path": "evidence/build/collector_recovery.json",
+      "sha256": "c2d3950e13e594be4d4430aa6e33995901fe92c4ef881338a7daef8f7c40f71c",
+      "size_bytes": 3805,
+      "source_mtime_ns": 1793625551780895200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/combined_source_manifest.json",
+      "path": "evidence/build/combined_source_manifest.json",
+      "sha256": "7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5",
+      "size_bytes": 6854,
+      "source_mtime_ns": 1793625156425366100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/compile_only_closure.json",
+      "path": "evidence/build/compile_only_closure.json",
+      "sha256": "e07c7d0e4aa685acd5f3509155e44c5c82446eb5eaa4b4ee8f527e90cbdc9196",
+      "size_bytes": 1602,
+      "source_mtime_ns": 1793625620973576400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_actual_child.json",
+      "path": "evidence/build/cpu_actual_child.json",
+      "sha256": "e6cd5b3a8ab067e582c82d4e0c9c7d1e28a01fb7509f96be6747f1943d145278",
+      "size_bytes": 549,
+      "source_mtime_ns": 1793625551638273800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_build.log",
+      "path": "evidence/build/cpu_build.log",
+      "sha256": "2bbb6657879e13b263bc35fe2a95c38220263caf998404190b21ce61e86aa17a",
+      "size_bytes": 2411,
+      "source_mtime_ns": 1793625551511157500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_build_environment.sh",
+      "path": "evidence/build/cpu_build_environment.sh",
+      "sha256": "a36bf440d13dc616dfba0d3bfab4a14f2bd0dc8475350793af32cf60dbfb84b4",
+      "size_bytes": 561,
+      "source_mtime_ns": 1793625551528875100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_compiler_version.log",
+      "path": "evidence/build/cpu_compiler_version.log",
+      "sha256": "59d1cbef41d4ae78d5063d525b7aa13d18dc0493ea00537efc19b2ee398cb5a8",
+      "size_bytes": 246,
+      "source_mtime_ns": 1793625551559485400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_elf_dynamic.log",
+      "path": "evidence/build/cpu_elf_dynamic.log",
+      "sha256": "7b8b0c5c0c455cc9158d13aba7c5b26a4e78c50e9be300fce4f58f5de49e0294",
+      "size_bytes": 2060,
+      "source_mtime_ns": 1793625551574457200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_elf_header.log",
+      "path": "evidence/build/cpu_elf_header.log",
+      "sha256": "691897c911a9b8c412bbdd54ef3a3a139c3cf7eeb73f4f4eb05a0e81f189cbe8",
+      "size_bytes": 954,
+      "source_mtime_ns": 1793625551607838700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_environment_selected.json",
+      "path": "evidence/build/cpu_environment_selected.json",
+      "sha256": "02dd8ca0700312c1be3b7eb998c6811ab12e13b69a8e740c92624c3a49ba660a",
+      "size_bytes": 2771,
+      "source_mtime_ns": 1793625551548694900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_library_identity.json",
+      "path": "evidence/build/cpu_library_identity.json",
+      "sha256": "3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80",
+      "size_bytes": 3198,
+      "source_mtime_ns": 1793625620867326600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_linked_identity.json",
+      "path": "evidence/build/cpu_linked_identity.json",
+      "sha256": "ae0e6c63c99772d58bce4887db8631ff8dc990540684aae4011bcc1da549f088",
+      "size_bytes": 8848,
+      "source_mtime_ns": 1793625551732885000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_method_identity.json",
+      "path": "evidence/build/cpu_method_identity.json",
+      "sha256": "f823eb1e91e0255fce97611b62cbc6a37fe574a20ee78da6e6ed7adb14e749bf",
+      "size_bytes": 5928,
+      "source_mtime_ns": 1793625551623071800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_runtime_dependency_audit.log",
+      "path": "evidence/build/cpu_runtime_dependency_audit.log",
+      "sha256": "358fb74af582956624fa31ce20f36e69ae61a154da1794bdc874d1968220dcb7",
+      "size_bytes": 1509,
+      "source_mtime_ns": 1793625551569397100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_actual_child.json",
+      "path": "evidence/build/gpu_actual_child.json",
+      "sha256": "0acacb8f11a87f1bc531e5bed23f26ea183258f4b5c71a67d27eab05db8e0b06",
+      "size_bytes": 549,
+      "source_mtime_ns": 1793625444302108500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_build.log",
+      "path": "evidence/build/gpu_build.log",
+      "sha256": "bee24f02cf6b39fd58ebbc122fcf0303313885ade2eb4ddc635227d7feff5a62",
+      "size_bytes": 2646,
+      "source_mtime_ns": 1793625444189310000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_build_environment.sh",
+      "path": "evidence/build/gpu_build_environment.sh",
+      "sha256": "2d9369a14f1310b64b8626a2ca0131922684182e9f3cddc3977f0e1f4e7ca64d",
+      "size_bytes": 812,
+      "source_mtime_ns": 1793625444217877800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_compiler_version.log",
+      "path": "evidence/build/gpu_compiler_version.log",
+      "sha256": "df09a623d65bee1bdafc048138252d8028ae0e82be31cfb04770c53e29b27dc7",
+      "size_bytes": 168,
+      "source_mtime_ns": 1793625444246968100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_elf_dynamic.log",
+      "path": "evidence/build/gpu_elf_dynamic.log",
+      "sha256": "96df29ae9359408762c831045b6d6ad6106fcfa71a009918b5ef2425dc9b1007",
+      "size_bytes": 3070,
+      "source_mtime_ns": 1793625444265935600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_elf_header.log",
+      "path": "evidence/build/gpu_elf_header.log",
+      "sha256": "29265401f2326f7761ebc3dd3ff033540b35da401613f40190566e88b9645239",
+      "size_bytes": 941,
+      "source_mtime_ns": 1793625444282297400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_environment_selected.json",
+      "path": "evidence/build/gpu_environment_selected.json",
+      "sha256": "d3b46506118d1deeaf8844e683e76e2fa84131a8a4859eefe6a7839f2eff0182",
+      "size_bytes": 3444,
+      "source_mtime_ns": 1793625444234415500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_library_identity.json",
+      "path": "evidence/build/gpu_library_identity.json",
+      "sha256": "c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff",
+      "size_bytes": 6520,
+      "source_mtime_ns": 1793625620883229400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_linked_identity.json",
+      "path": "evidence/build/gpu_linked_identity.json",
+      "sha256": "698af06f00bfd1cc142252c2e12eb1e2d30f9e1aaab6f09613020987793004d5",
+      "size_bytes": 7419,
+      "source_mtime_ns": 1793625444379066300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_method_identity.json",
+      "path": "evidence/build/gpu_method_identity.json",
+      "sha256": "a9abf670570979210cccefbff481dd206d8ee11ebf988afbac99fcf7ee6404fa",
+      "size_bytes": 5923,
+      "source_mtime_ns": 1793625444298252200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_runtime_dependency_audit.log",
+      "path": "evidence/build/gpu_runtime_dependency_audit.log",
+      "sha256": "9ad85e782dee47b4d6a78b6cd904f6766ccb4a58abe8485996659a1e21ffcecf",
+      "size_bytes": 3386,
+      "source_mtime_ns": 1793625444249471900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/limited_combination.patch",
+      "path": "evidence/build/limited_combination.patch",
+      "sha256": "f3a625e6fcbd2021c563986273a685a8bdd84c6c38df753fefe0dbdcd5cc1ef1",
+      "size_bytes": 1630,
+      "source_mtime_ns": 1793625156267037100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/preparation.json",
+      "path": "evidence/build/preparation.json",
+      "sha256": "1e1fb3a3b9220a54d2fb5f52d7b5f479473e9ad244b20d20bcce86b514273c60",
+      "size_bytes": 922,
+      "source_mtime_ns": 1793625161054678500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/attempt_a_environment_launcher_failure/build_progress.json",
+      "path": "evidence/build/attempt_a_environment_launcher_failure/build_progress.json",
+      "sha256": "a0dc945911f31e408f4282412fca338333e23bd081980435246eeacc52ca891c",
+      "size_bytes": 3610,
+      "source_mtime_ns": 1793625379260412700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/attempt_a_environment_launcher_failure/failure_note.json",
+      "path": "evidence/build/attempt_a_environment_launcher_failure/failure_note.json",
+      "sha256": "9edab8dd161058bed973a33454c61db2323024ef51da2ae50429fe597549d1cf",
+      "size_bytes": 259,
+      "source_mtime_ns": 1793625379275065500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/attempt_b_cpu_collector_substring_failure/build_progress.json",
+      "path": "evidence/build/attempt_b_cpu_collector_substring_failure/build_progress.json",
+      "sha256": "af058cd13eb04be108e7c948e0116b4e6bbb9b809ea9687e035277c5effad066",
+      "size_bytes": 3052,
+      "source_mtime_ns": 1793625551070736500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/C29Restrictions.H",
+      "path": "evidence/strict_pressure_proposal/C29Restrictions.H",
+      "sha256": "217b76d552ed28e9c5bd37b010cd036ce87717a79aef8a745716e66d26b93164",
+      "size_bytes": 8630,
+      "source_mtime_ns": 1793623619307495500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/C29Restrictions_strict_pressure.patch",
+      "path": "evidence/strict_pressure_proposal/C29Restrictions_strict_pressure.patch",
+      "sha256": "8c9e238cd0a7faf38ce1a80b2dff8bd172c91372410d84d1e2bb5320f9a6f8d1",
+      "size_bytes": 1428,
+      "source_mtime_ns": 1793623619362109100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/README.md",
+      "path": "evidence/strict_pressure_proposal/README.md",
+      "sha256": "256572a67c98b4a5bb0b5c68cbe5a6390d3a0d0814b93194ba88e073b947d218",
+      "size_bytes": 4381,
+      "source_mtime_ns": 1793623698321794300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/analyze_five_steps_strict_candidate.py",
+      "path": "evidence/strict_pressure_proposal/analyze_five_steps_strict_candidate.py",
+      "sha256": "300c9ce0ecdb83cc20899c1077c071f4dcb82d412de8ce73f9ba5ae0309c88c5",
+      "size_bytes": 25127,
+      "source_mtime_ns": 1793623619392148200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/analyzer_strict_pressure.patch",
+      "path": "evidence/strict_pressure_proposal/analyzer_strict_pressure.patch",
+      "sha256": "a708d291bd8ba8775975351863ffc48d9c4196945126ebaa69fa75afbc123466",
+      "size_bytes": 5049,
+      "source_mtime_ns": 1793623619412439400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/proposal_build_record.json",
+      "path": "evidence/strict_pressure_proposal/proposal_build_record.json",
+      "sha256": "1210cabd0ea8f87f962b1fda7d11558406d740e1a2c9417b4b6a888880d6d3a1",
+      "size_bytes": 442,
+      "source_mtime_ns": 1793623619472721600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/root_authorization.json",
+      "path": "evidence/strict_pressure_proposal/root_authorization.json",
+      "sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+      "size_bytes": 989,
+      "source_mtime_ns": 1793624015341087300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/source_proposal_manifest.json",
+      "path": "evidence/strict_pressure_proposal/source_proposal_manifest.json",
+      "sha256": "c5883f5ce477e7f28f1bb4ebd0d343b2bde5f9c7f11561956782e6b5e4c57560",
+      "size_bytes": 2380,
+      "source_mtime_ns": 1793623856882263500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_admission.py",
+      "path": "evidence/strict_pressure_proposal/strict_pressure_admission.py",
+      "sha256": "b4102dba7234d31413463975dc1050eb176261ce9d7773acf3c5f8e9b0a8765b",
+      "size_bytes": 4441,
+      "source_mtime_ns": 1793623697882366600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_protocol.json",
+      "path": "evidence/strict_pressure_proposal/strict_pressure_protocol.json",
+      "sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+      "size_bytes": 2124,
+      "source_mtime_ns": 1793623619284010800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_independent_review.json",
+      "path": "evidence/source_review/ownership_candidate_v2_3_independent_review.json",
+      "sha256": "896ad33cae716c4f24d7c9021795685181808536f84b3fba6b735ea8f1ca7e72",
+      "size_bytes": 6834,
+      "source_mtime_ns": 1793625017013316500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_independent_review.md",
+      "path": "evidence/source_review/ownership_candidate_v2_3_independent_review.md",
+      "sha256": "94a09e4b59a74d3601adc34e80f205ca0dc10a57debfa9345cdeaf6623b931c0",
+      "size_bytes": 7171,
+      "source_mtime_ns": 1793625016611025800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/physics_review.json",
+      "path": "evidence/source_review/physics_review.json",
+      "sha256": "0da6c7c2e8f138b115ba1924fd30c5c685df34bae63581b6555e1f7d147e8a6f",
+      "size_bytes": 29122,
+      "source_mtime_ns": 1793612159632207600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/physics_review.md",
+      "path": "evidence/source_review/physics_review.md",
+      "sha256": "87a8d7e98f46ce861fce85c66b99dc05c00cb8c340015782a6cecaaa21a504f6",
+      "size_bytes": 15219,
+      "source_mtime_ns": 1793612159640821700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/root_experiment_authorization.json",
+      "path": "evidence/source_review/root_experiment_authorization.json",
+      "sha256": "6f78fbdfdeefb04409fd8814179aaf1ac544d6eae8af404ee88d0fe1c9b56f74",
+      "size_bytes": 2701,
+      "source_mtime_ns": 1793617561980155100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate_v2_independent_review.json",
+      "path": "evidence/source_review/candidate_v2_independent_review.json",
+      "sha256": "63633a2e72cb49436e680a340fd5050b36a7385281646873c9333fffd0af6c0c",
+      "size_bytes": 3748,
+      "source_mtime_ns": 1793617478314595200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate_v2_independent_review.md",
+      "path": "evidence/source_review/candidate_v2_independent_review.md",
+      "sha256": "e5ad91ddb8b8e7f49faabf8efd4b6f2396cb8a3105a85ce5d78a2fdfdde86abc",
+      "size_bytes": 6191,
+      "source_mtime_ns": 1793617477835721300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/cpu_execution.json",
+      "path": "evidence/strict_initial_runs/cpu_execution.json",
+      "sha256": "50029827db252553386265c81e69b211623a780e0a4f53c6da2992542d683032",
+      "size_bytes": 7090,
+      "source_mtime_ns": 1793625972078753400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/cpu_prelaunch.json",
+      "path": "evidence/strict_initial_runs/cpu_prelaunch.json",
+      "sha256": "089acc90760cb5123f1deba573042dc271af0862ffee6cd82b53a50fcec946f7",
+      "size_bytes": 4054,
+      "source_mtime_ns": 1793625964912097700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/cpu_stdout.log",
+      "path": "evidence/strict_initial_runs/cpu_stdout.log",
+      "sha256": "46cdeb9e014973f997f4d64a5dbb8d4fe217c6124eb1512cbf34ab8e8a9f5586",
+      "size_bytes": 3071,
+      "source_mtime_ns": 1793625971317528500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/f14_execution.json",
+      "path": "evidence/strict_initial_runs/f14_execution.json",
+      "sha256": "052ef4dc4762de24eb1dd352bd384db14773ba25cec3bfdaed2ba0bb9ca05301",
+      "size_bytes": 9357,
+      "source_mtime_ns": 1793625973400273900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/f14_prelaunch.json",
+      "path": "evidence/strict_initial_runs/f14_prelaunch.json",
+      "sha256": "77109f88c8f12ac4ebeb77866058db1b3448758b55a0d6352a5f6b2acd93a295",
+      "size_bytes": 5284,
+      "source_mtime_ns": 1793625967515896200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/f14_stdout.log",
+      "path": "evidence/strict_initial_runs/f14_stdout.log",
+      "sha256": "8fa150881e33a494b846fe2db6110367d6dd2a62425f07b294e5ea6851a75807",
+      "size_bytes": 2018,
+      "source_mtime_ns": 1793625973038666600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/gpu_execution.json",
+      "path": "evidence/strict_initial_runs/gpu_execution.json",
+      "sha256": "2a2cc6d3c5256a20e98d51d8f88eb1006cfc7714c7195adbedca7092d0763c71",
+      "size_bytes": 11021,
+      "source_mtime_ns": 1793625981848039400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/gpu_prelaunch.json",
+      "path": "evidence/strict_initial_runs/gpu_prelaunch.json",
+      "sha256": "1e85a840dfd27af32c01c5d89fb325954120880497704846664b8cf299706641",
+      "size_bytes": 4054,
+      "source_mtime_ns": 1793625966487702900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/gpu_stdout.log",
+      "path": "evidence/strict_initial_runs/gpu_stdout.log",
+      "sha256": "50aa96107852296fc722249fd0999aef8d564537556ce129f26a00d54a0a709f",
+      "size_bytes": 6267,
+      "source_mtime_ns": 1793625977322986900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/initial_field_comparison.json",
+      "path": "evidence/strict_initial_runs/initial_field_comparison.json",
+      "sha256": "81c826eb089d6eb0aa52aa9ee8405944b202e8407853c023cbcc59b59a541489",
+      "size_bytes": 6502,
+      "source_mtime_ns": 1793626067509704200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_execution.json",
+      "path": "evidence/strict_initial_shared_runs/cpu_execution.json",
+      "sha256": "273255876991a65b15c06e8dcb79405580661842345f861a20f3b7feee4fb4b5",
+      "size_bytes": 7168,
+      "source_mtime_ns": 1793626289311661000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_prelaunch.json",
+      "path": "evidence/strict_initial_shared_runs/cpu_prelaunch.json",
+      "sha256": "f82559cc57233d23eb6e5a2a7e98ae42b3149eb4aa0dda182507b9f835ede58b",
+      "size_bytes": 4132,
+      "source_mtime_ns": 1793626283079036700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_stdout.log",
+      "path": "evidence/strict_initial_shared_runs/cpu_stdout.log",
+      "sha256": "62d0327cea2cb03ad1f33113e19970bd9e58c94d38af2838f94a21abdac09b5d",
+      "size_bytes": 3057,
+      "source_mtime_ns": 1793626288817978100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_execution.json",
+      "path": "evidence/strict_initial_shared_runs/gpu_execution.json",
+      "sha256": "5cc910b78f576e296faab75d57ed14dbe6e6ca405a1f3d27304b6d2581bbb2d2",
+      "size_bytes": 11099,
+      "source_mtime_ns": 1793626299546350900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_prelaunch.json",
+      "path": "evidence/strict_initial_shared_runs/gpu_prelaunch.json",
+      "sha256": "ae5113aa04e632ef57261a7695050521fa5abb641f99e5a2f76736616dea2257",
+      "size_bytes": 4132,
+      "source_mtime_ns": 1793626284110304700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_stdout.log",
+      "path": "evidence/strict_initial_shared_runs/gpu_stdout.log",
+      "sha256": "452e03653f3bb6300a2c8fd0ffa9d7283f7dae7f0f9bc4ed93f120a407b1d45a",
+      "size_bytes": 6253,
+      "source_mtime_ns": 1793626295182539200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/initial_field_comparison.json",
+      "path": "evidence/strict_initial_shared_runs/initial_field_comparison.json",
+      "sha256": "6da117692c579c345bcddafab1d1f9a9f92858bbbd63c61f96bd1f56e382a3d7",
+      "size_bytes": 6459,
+      "source_mtime_ns": 1793626335112090600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_execution.json",
+      "path": "evidence/strict_runs/f14_control_five_execution.json",
+      "sha256": "55330fd6ad635905678d397ab42566b98e9f1c0334d3cc96d3812647fad6ac17",
+      "size_bytes": 14583,
+      "source_mtime_ns": 1793626912146955600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_prelaunch.json",
+      "path": "evidence/strict_runs/f14_control_five_prelaunch.json",
+      "sha256": "c1397a2d14b960eb5ee0cf0d73728127f2b6924eeb66d4f7ca1803f418789902",
+      "size_bytes": 5226,
+      "source_mtime_ns": 1793626883213485300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_stdout.log",
+      "path": "evidence/strict_runs/f14_control_five_stdout.log",
+      "sha256": "3bd912aabb5917aca9001dc1c314f4580c3d503541f84a637ef58663a01d2601",
+      "size_bytes": 7866,
+      "source_mtime_ns": 1793626911244877800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_execution.json",
+      "path": "evidence/strict_runs/native_cpu_five_execution.json",
+      "sha256": "5d0acdabf03babfac0369dbb19707a686855828ce416eb86009599e23da555c3",
+      "size_bytes": 9875,
+      "source_mtime_ns": 1793627009113624500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_prelaunch.json",
+      "path": "evidence/strict_runs/native_cpu_five_prelaunch.json",
+      "sha256": "cf1aa3e51b2ac9a0de70e20a5d59613d4286e2a10450b20cc5b28d3579ea99f2",
+      "size_bytes": 4398,
+      "source_mtime_ns": 1793626977442938000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_stdout.log",
+      "path": "evidence/strict_runs/native_cpu_five_stdout.log",
+      "sha256": "deba481994048646771c36189439ff518aa00c5cf9cc12a6fddd7b4693ee55f0",
+      "size_bytes": 21078,
+      "source_mtime_ns": 1793627008070469300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_to_cpu_analysis.json",
+      "path": "evidence/strict_runs/f14_to_cpu_analysis.json",
+      "sha256": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e",
+      "size_bytes": 250900,
+      "source_mtime_ns": 1793627107966329600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_f14_to_cpu_external_gate.json",
+      "path": "evidence/strict_runs/root_f14_to_cpu_external_gate.json",
+      "sha256": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2",
+      "size_bytes": 3287,
+      "source_mtime_ns": 1793627406725046400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit.json",
+      "path": "evidence/strict_runs/root_input_audit.json",
+      "sha256": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926",
+      "size_bytes": 4076,
+      "source_mtime_ns": 1793626803307099300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit_binding_check.json",
+      "path": "evidence/strict_runs/root_input_audit_binding_check.json",
+      "sha256": "97e9786179ee49b809cf44ec19d66907ed975ae5f50a62b75b8f1315d2cbe103",
+      "size_bytes": 728,
+      "source_mtime_ns": 1793626803753293100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_resolved_dictionary_queries.json",
+      "path": "evidence/strict_runs/root_resolved_dictionary_queries.json",
+      "sha256": "46e2e8fefde902c0e38a65ce4f6f2f3438797d8201dc1e1539a7182f4462eeaf",
+      "size_bytes": 3178,
+      "source_mtime_ns": 1793626729154735700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_phase_dictionary_edits.json",
+      "path": "evidence/strict_runs/root_phase_dictionary_edits.json",
+      "sha256": "52b77abdb0364a5015a4a332f5ea6aeb4513bdb2e6be172ee644f0a7fcb11bdd",
+      "size_bytes": 1644,
+      "source_mtime_ns": 1793626728507937500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_launcher_review.json",
+      "path": "evidence/strict_runs/root_launcher_review.json",
+      "sha256": "434e276ff6397c01bbf899c4ac67ce7458b09aca3e703f6dcb32af9802bd477a",
+      "size_bytes": 1196,
+      "source_mtime_ns": 1793626872556894900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/phase_archive.json",
+      "path": "evidence/strict_runs/phase_archive.json",
+      "sha256": "84e8f82e27b15bc22e81529c1297f2f033fd28cefe0f3509ca32fcd21e56e8d0",
+      "size_bytes": 1403,
+      "source_mtime_ns": 1793626712942297800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v1_independent_review.json",
+      "path": "evidence/strict_runs/gpu_profile_v1_independent_review.json",
+      "sha256": "7c4d53e3ae583ef713a7f40a94b1ddd0d071d543f128c65f2ab97d2b9a643c1d",
+      "size_bytes": 2935,
+      "source_mtime_ns": 1793627561961289400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v1_independent_review.md",
+      "path": "evidence/strict_runs/gpu_profile_v1_independent_review.md",
+      "sha256": "f4a3ca791c8226dab7d1de2f0f4c3cf7adcc4c99d797e4b656c2085d28b84e2b",
+      "size_bytes": 4562,
+      "source_mtime_ns": 1793627561560115500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v2_containment_correction.patch",
+      "path": "evidence/strict_runs/gpu_profile_v2_containment_correction.patch",
+      "sha256": "8b0343126fb07a43eb303b3b918164554f617cf821fdcddf0d6f16329b04cc95",
+      "size_bytes": 26684,
+      "source_mtime_ns": 1793627910684949700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_independent_review.json",
+      "path": "evidence/strict_runs/gpu_profile_v3_independent_review.json",
+      "sha256": "e25f8ebaee0d37592f9e2c3725d5fa9e105ae752e553a8f499c49e8605558bc1",
+      "size_bytes": 4722,
+      "source_mtime_ns": 1793628403876715500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_independent_review.md",
+      "path": "evidence/strict_runs/gpu_profile_v3_independent_review.md",
+      "sha256": "450a0c29b55c4f0a3fb8a309fe8a3a56affb00296991e0ed6aa4f8cc38e168e0",
+      "size_bytes": 7000,
+      "source_mtime_ns": 1793628421235139700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_outer_cleanup.patch",
+      "path": "evidence/strict_runs/gpu_profile_v3_outer_cleanup.patch",
+      "sha256": "a1020857615228dc039d5be91e8b10e398243d45ee56290a67bd68ab011d85ee",
+      "size_bytes": 6688,
+      "source_mtime_ns": 1793628202283788600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_approval.json",
+      "path": "evidence/strict_runs/root_gpu_profile_approval.json",
+      "sha256": "9136f75575c895519de036f8776bd7eee7599b0fd2862f1e9e3eb14f8d241067",
+      "size_bytes": 1727,
+      "source_mtime_ns": 1793628492948503800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_static_review.json",
+      "path": "evidence/strict_runs/root_gpu_profile_static_review.json",
+      "sha256": "0a54df85ed933dcb8adcaf205143b11cf1e6157575fa5c780eeb9cb646c64636",
+      "size_bytes": 1098,
+      "source_mtime_ns": 1793628481226815300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/cpu_c29PortControls",
+      "path": "evidence/strict_runs/previous_controls/cpu_c29PortControls",
+      "sha256": "6dbfd12835ac95164fe817bd70015df8ff2dcf406e5c6663b18fe60961820121",
+      "size_bytes": 1187,
+      "source_mtime_ns": 1793626712918225600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/f14_c29InitialPhiControls",
+      "path": "evidence/strict_runs/previous_controls/f14_c29InitialPhiControls",
+      "sha256": "72d92c26616f6f1a549c90832d7e63a9d601d03b4f3d0357d2d98336ef07aadc",
+      "size_bytes": 1001,
+      "source_mtime_ns": 1793626712894646700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/gpu_c29PortControls",
+      "path": "evidence/strict_runs/previous_controls/gpu_c29PortControls",
+      "sha256": "051d30b486ee5a71a019cc07a331d9a7277c77463c5252e81ade0a3087c9181a",
+      "size_bytes": 1187,
+      "source_mtime_ns": 1793626712931897300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/README.md",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/README.md",
+      "sha256": "b367ede7bf39ca625be110de8de5f8cafe10cc2421f73903688be35ca90f8ede",
+      "size_bytes": 4256,
+      "source_mtime_ns": 1793627574752212100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/helper_manifest.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/helper_manifest.json",
+      "sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+      "size_bytes": 1144,
+      "source_mtime_ns": 1793627574925211700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/helper_manifest_initial_source_only.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/helper_manifest_initial_source_only.json",
+      "sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+      "size_bytes": 1144,
+      "source_mtime_ns": 1793627574615810300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/installed_help_verification.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/installed_help_verification.json",
+      "sha256": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+      "size_bytes": 710,
+      "source_mtime_ns": 1793627574663084600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/profile_common.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/profile_common.py",
+      "sha256": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+      "size_bytes": 4427,
+      "source_mtime_ns": 1793627574683793400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/protocol.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/protocol.json",
+      "sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+      "size_bytes": 6142,
+      "source_mtime_ns": 1793627574710163300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/run_actual_gpu_child.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/run_actual_gpu_child.py",
+      "sha256": "f9517e296cfdf56509cce00bcf326fae079df62ead3a211ba119645adc693f5f",
+      "size_bytes": 5401,
+      "source_mtime_ns": 1793627574861333300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/run_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/run_gpu_profile.py",
+      "sha256": "c90b978b18cec12b91fe26eb9a5b84ac1fd1579cfe620fde65364c849beb6dc6",
+      "size_bytes": 4625,
+      "source_mtime_ns": 1793627574872863800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/validate_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_frozen/validate_gpu_profile.py",
+      "sha256": "03e62dc74f76ce15fb7abc4b36358188222403d915886b2b5bf33babd592f1ac",
+      "size_bytes": 7958,
+      "source_mtime_ns": 1793627574898728500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/README.md",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/README.md",
+      "sha256": "b367ede7bf39ca625be110de8de5f8cafe10cc2421f73903688be35ca90f8ede",
+      "size_bytes": 4256,
+      "source_mtime_ns": 1793627574440129500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/helper_manifest.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/helper_manifest.json",
+      "sha256": "784ab973ef7c6c783a3bad611934aa5408b6a3406823dc4ad907fdfc68a1df9f",
+      "size_bytes": 1308,
+      "source_mtime_ns": 1793627574248375200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/helper_manifest_initial_source_only.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/helper_manifest_initial_source_only.json",
+      "sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+      "size_bytes": 1144,
+      "source_mtime_ns": 1793627574280285700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/installed_help_verification.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/installed_help_verification.json",
+      "sha256": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+      "size_bytes": 710,
+      "source_mtime_ns": 1793627574312052800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/profile_common.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/profile_common.py",
+      "sha256": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+      "size_bytes": 4427,
+      "source_mtime_ns": 1793627574360130500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/protocol.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/protocol.json",
+      "sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+      "size_bytes": 6142,
+      "source_mtime_ns": 1793627574416841700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/run_actual_gpu_child.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/run_actual_gpu_child.py",
+      "sha256": "6bf24522a221edaf3966c377025efce1baf58ca0e67c77e5a2dd48850d9e940a",
+      "size_bytes": 5670,
+      "source_mtime_ns": 1793627574472565000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/run_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/run_gpu_profile.py",
+      "sha256": "982921dbd09afc522a13197e99a9b9282a276a0a7f41bb9cf0ca35680924ad03",
+      "size_bytes": 4924,
+      "source_mtime_ns": 1793627574505902100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/validate_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/validate_gpu_profile.py",
+      "sha256": "56539cfa4fe66e6d40454f0901d2777ab18647b23250a7ffc7f24f064a980ed0",
+      "size_bytes": 7994,
+      "source_mtime_ns": 1793627574520332600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/README.md",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/README.md",
+      "sha256": "74c82ba5edf4a7364b3931df39128c238ec95dc4ec5fe301c4c42c8de862e56f",
+      "size_bytes": 5738,
+      "source_mtime_ns": 1793627905395531000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/helper_manifest.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/helper_manifest.json",
+      "sha256": "a488de2a74b25f50d8fcb4644344ee7de1dc91830af444280115750d328e1c13",
+      "size_bytes": 2453,
+      "source_mtime_ns": 1793627910910130600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/helper_manifest_initial_source_only.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/helper_manifest_initial_source_only.json",
+      "sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+      "size_bytes": 1144,
+      "source_mtime_ns": 1793627575068905100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/installed_help_verification.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/installed_help_verification.json",
+      "sha256": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+      "size_bytes": 710,
+      "source_mtime_ns": 1793627575099393400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/owned_cleanup.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/owned_cleanup.py",
+      "sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "size_bytes": 1126,
+      "source_mtime_ns": 1793627738077710100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/profile_common.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/profile_common.py",
+      "sha256": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+      "size_bytes": 4427,
+      "source_mtime_ns": 1793627575129795300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/protocol.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/protocol.json",
+      "sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+      "size_bytes": 6142,
+      "source_mtime_ns": 1793627575160478100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/run_actual_gpu_child.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/run_actual_gpu_child.py",
+      "sha256": "f369ea00340d6d1a2502817b81716a0838f35533f0808ba65f8728c57e997142",
+      "size_bytes": 7431,
+      "source_mtime_ns": 1793627827683169000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/run_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/run_gpu_profile.py",
+      "sha256": "7cf35e20e95c3f69912f312d8d5f34088a4a5f6a2c7d11c9d0915343faa56c5d",
+      "size_bytes": 6197,
+      "source_mtime_ns": 1793627828471294200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/validate_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v2/validate_gpu_profile.py",
+      "sha256": "fc764a1d645fe19f722533689325fee423e018c1e614d8851793e10c670dba0f",
+      "size_bytes": 8191,
+      "source_mtime_ns": 1793627828852940600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/README.md",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/README.md",
+      "sha256": "9aa9005a6f55ddb65f9f2621da15d3ad0f4320616ce53df077c5f4ce710a07d3",
+      "size_bytes": 6739,
+      "source_mtime_ns": 1793628197043739100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/helper_manifest.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/helper_manifest.json",
+      "sha256": "467b014b9fefe74ac76f26e7efe7bb0206994792cbe7e32d85c362dbbca1c5cb",
+      "size_bytes": 1647,
+      "source_mtime_ns": 1793628202442557600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/helper_manifest_initial_source_only.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/helper_manifest_initial_source_only.json",
+      "sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+      "size_bytes": 1144,
+      "source_mtime_ns": 1793628196052519500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/installed_help_verification.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/installed_help_verification.json",
+      "sha256": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+      "size_bytes": 710,
+      "source_mtime_ns": 1793628196075775200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/owned_cleanup.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/owned_cleanup.py",
+      "sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "size_bytes": 1126,
+      "source_mtime_ns": 1793628196103608500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/profile_common.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/profile_common.py",
+      "sha256": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+      "size_bytes": 4427,
+      "source_mtime_ns": 1793628196127525800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/protocol.json",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/protocol.json",
+      "sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+      "size_bytes": 6142,
+      "source_mtime_ns": 1793628196148621100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/run_actual_gpu_child.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/run_actual_gpu_child.py",
+      "sha256": "f369ea00340d6d1a2502817b81716a0838f35533f0808ba65f8728c57e997142",
+      "size_bytes": 7431,
+      "source_mtime_ns": 1793628196171339600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/run_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/run_gpu_profile.py",
+      "sha256": "e0c6f49ef34c1b22fca6327a91fc1c9cb518a9dfe3a43267bc5d75bb1d27f674",
+      "size_bytes": 7317,
+      "source_mtime_ns": 1793628196654031200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/validate_gpu_profile.py",
+      "path": "recipes/profiling_history/gpu_profile_proposal_v3/validate_gpu_profile.py",
+      "sha256": "fc764a1d645fe19f722533689325fee423e018c1e614d8851793e10c670dba0f",
+      "size_bytes": 8191,
+      "source_mtime_ns": 1793628196213772200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_native_c29_cases.py",
+      "path": "recipes/execution/prepare_native_c29_cases.py",
+      "sha256": "d7064bde61a40764965436b4c1935d1a3cd63e54f5a2cf694fae898014c7135c",
+      "size_bytes": 19842,
+      "source_mtime_ns": 1793618493846528900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_pressure_cases.py",
+      "path": "recipes/execution/prepare_strict_pressure_cases.py",
+      "sha256": "a9843f4ce9aed928dde1e8a10de7b49807e475c8dccfd2ca3d5825969394096f",
+      "size_bytes": 13966,
+      "source_mtime_ns": 1793624297902336600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/STRICT_PRESSURE_RESTORATION.md",
+      "path": "recipes/execution/STRICT_PRESSURE_RESTORATION.md",
+      "sha256": "1587a9b806344cf69c38fad9b85c884050077c97607f6659aa697c4739049459",
+      "size_bytes": 5343,
+      "source_mtime_ns": 1793624298307363100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_independent_review.md",
+      "path": "recipes/execution/strict_restoration_independent_review.md",
+      "sha256": "e518cd16f8cb947b05881550d4c6fd343d33854c0c714a2cf9c194f1d529baf1",
+      "size_bytes": 5024,
+      "source_mtime_ns": 1793624768661608500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_independent_review.json",
+      "path": "recipes/execution/strict_restoration_independent_review.json",
+      "sha256": "c92ca39735f9b3e2aa9da2dc72ab11e61bb405e99d73eeca3d2cbeaa73c90832",
+      "size_bytes": 6449,
+      "source_mtime_ns": 1793624768273550900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_source_checks.json",
+      "path": "recipes/execution/strict_restoration_source_checks.json",
+      "sha256": "501f83979f652737546cc4e08e936b982c8b1c088068ed21b0967ff1a5d15057",
+      "size_bytes": 1562,
+      "source_mtime_ns": 1793624359339279800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restorer_root_approval.json",
+      "path": "recipes/execution/strict_restorer_root_approval.json",
+      "sha256": "cd77eec9da45d1ed771d209464908c1e3829c4300962a789d28a543c51487cdd",
+      "size_bytes": 541,
+      "source_mtime_ns": 1793624819522263300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_stdout.json",
+      "path": "recipes/execution/strict_restoration_stdout.json",
+      "sha256": "e336eb15b7037dfe370d7a122d42a881b1072887c2838fc3ae33f71066105f4d",
+      "size_bytes": 7645,
+      "source_mtime_ns": 1793624857660656200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_permission_edits.json",
+      "path": "recipes/execution/strict_initial_permission_edits.json",
+      "sha256": "f6fd42511e0c6d66eb272276ebf6e09b5c3e07c0fc1ce8b51e66149462a031c3",
+      "size_bytes": 1176,
+      "source_mtime_ns": 1793625763794090100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_fallback.json",
+      "path": "recipes/execution/strict_initial_shared_fallback.json",
+      "sha256": "67021dbcb3be8c12f117ef264617b698ab9e68adcac5a178874fbcbd8630897d",
+      "size_bytes": 4045,
+      "source_mtime_ns": 1793626244640043300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_foundation14_fvSolution_adaptation.patch",
+      "path": "recipes/execution/strict_foundation14_fvSolution_adaptation.patch",
+      "sha256": "fa3e03ee021ac3a872445c12866718b8482e1cdce43046316d698428b00679fd",
+      "size_bytes": 488,
+      "source_mtime_ns": 1793624359157028900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_native_fvSolution_adaptation.patch",
+      "path": "recipes/execution/strict_native_fvSolution_adaptation.patch",
+      "sha256": "47f298ef6faede74eba22008ebefede0394278b2c445737ec50058937806012f",
+      "size_bytes": 626,
+      "source_mtime_ns": 1793624359170284900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_dictionary_queries.json",
+      "path": "recipes/execution/strict_dictionary_queries.json",
+      "sha256": "77991f61392dd54b067bdf4bb91ff9ea99e8e39d38d60bdabe676b6ae17b1b0d",
+      "size_bytes": 2896,
+      "source_mtime_ns": 1793625279847784900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_shared_phi.py",
+      "path": "recipes/execution/prepare_strict_shared_phi.py",
+      "sha256": "a4a69148e373816c908bcef0d49cb56d414898c2fd48c4772d19fdf2366a39f7",
+      "size_bytes": 4724,
+      "source_mtime_ns": 1793626235123865000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_shared_initial_launcher.py",
+      "path": "recipes/execution/prepare_shared_initial_launcher.py",
+      "sha256": "377babd096693a0e6b746ba9f80e2bccc2c497e4322a5510b9acb98bba40d9b8",
+      "size_bytes": 1541,
+      "source_mtime_ns": 1793626235507565000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compare_initial_cpu.py",
+      "path": "recipes/execution/compare_initial_cpu.py",
+      "sha256": "071202fdd5e9fa623f98701054e48ebea39d271be78171ce228a665b9292850c",
+      "size_bytes": 3700,
+      "source_mtime_ns": 1793621362788514500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compare_strict_initial.py",
+      "path": "recipes/execution/compare_strict_initial.py",
+      "sha256": "ca513efac524c9b11829ea579f4eeee91217b6765f466e318d486e8fcacae9f7",
+      "size_bytes": 2250,
+      "source_mtime_ns": 1793626049530293500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compare_strict_shared_initial.py",
+      "path": "recipes/execution/compare_strict_shared_initial.py",
+      "sha256": "7b6c8464cc2c514c7360163e0d1537dfb59aec7f248785bda9665552e28092f4",
+      "size_bytes": 2265,
+      "source_mtime_ns": 1793626317503307200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_initial_once.py",
+      "path": "recipes/execution/launch_strict_initial_once.py",
+      "sha256": "e63f63f7db3ca49a33e3d37ae0e4ba3cb08d9817ef4e658c9db99cac8818f8e2",
+      "size_bytes": 7274,
+      "source_mtime_ns": 1793625910315016800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_initial_once.sh",
+      "path": "recipes/execution/launch_strict_initial_once.sh",
+      "sha256": "4d284fe2ec0405fc4271af0160b0a30af18b3599e55144d092fa6ddb1d1e1b2f",
+      "size_bytes": 631,
+      "source_mtime_ns": 1793625910718538800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_shared_initial_once.py",
+      "path": "recipes/execution/launch_strict_shared_initial_once.py",
+      "sha256": "e1d48f61e10ff9bae6982bac9d62fc33f44e73f59ffac5ad0b507f1e017eb2f4",
+      "size_bytes": 7475,
+      "source_mtime_ns": 1793626249312369300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_shared_initial_once.sh",
+      "path": "recipes/execution/launch_strict_shared_initial_once.sh",
+      "sha256": "e397c28ffb4773a65b8151ad34f53bf2cc46cee1b15edfa6b15a7ae54164c27e",
+      "size_bytes": 638,
+      "source_mtime_ns": 1793626249341065400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_f14_five_once.py",
+      "path": "recipes/execution/launch_strict_f14_five_once.py",
+      "sha256": "8cf3c60906086cef87053ec2aacaf627e945baa30e19335395fe11c1bca05745",
+      "size_bytes": 6913,
+      "source_mtime_ns": 1793626818441046400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_f14_five_once.sh",
+      "path": "recipes/execution/launch_strict_f14_five_once.sh",
+      "sha256": "9a0244ed483597ce8a0ca0966f8f10e3c4c49026dc0fb7e99e4e366dd59b2f88",
+      "size_bytes": 296,
+      "source_mtime_ns": 1793626818533206200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_cpu_five_once.py",
+      "path": "recipes/execution/launch_strict_cpu_five_once.py",
+      "sha256": "640db1af9e2388c966fc21970d6c165352b3244dc03f1589438c9f82b7aeb57f",
+      "size_bytes": 9541,
+      "source_mtime_ns": 1793626846637135000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_cpu_five_once.sh",
+      "path": "recipes/execution/launch_strict_cpu_five_once.sh",
+      "sha256": "01660b46209a8e69b0983650d6cb822cc90594acbae257d2d7ddda9688078cd9",
+      "size_bytes": 403,
+      "source_mtime_ns": 1793626818584654700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_five_admission.py",
+      "path": "recipes/execution/prepare_strict_five_admission.py",
+      "sha256": "c685b7bb901a3a646a904af1528d5c4b11bd9cf7773b4c024175fdaa5899dc04",
+      "size_bytes": 4379,
+      "source_mtime_ns": 1793626695219181600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_five_launchers.py",
+      "path": "recipes/execution/prepare_strict_five_launchers.py",
+      "sha256": "8092457c14499f03b8d1f67e71428dfbd3aaf71704f081048c35b0b44fcdce95",
+      "size_bytes": 8064,
+      "source_mtime_ns": 1793626847065796500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_five_launcher_preparation.json",
+      "path": "recipes/execution/strict_five_launcher_preparation.json",
+      "sha256": "890580e4c9d317bc4da1463e98693fcaa6a6da73e83db71865c874e1e30e41e1",
+      "size_bytes": 1394,
+      "source_mtime_ns": 1793626818637992700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/write_strict_external_cpu_gate.py",
+      "path": "recipes/execution/write_strict_external_cpu_gate.py",
+      "sha256": "805234af50a0163dd91283395abc842c3c29f6bdab7ab744180d7a20ce173d64",
+      "size_bytes": 4294,
+      "source_mtime_ns": 1793627396867297800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/analyze_five_steps.py",
+      "path": "recipes/execution/analyze_five_steps.py",
+      "sha256": "74df3cf053b8596ae57d5a04792867130392ca5ef31b59de526b0d1810d4ee16",
+      "size_bytes": 24222,
+      "source_mtime_ns": 1793623463923098100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/analyze_five_steps_v1_f95aec1.py",
+      "path": "recipes/execution/analyze_five_steps_v1_f95aec1.py",
+      "sha256": "f95aec1c7ae5c8a1ea5137927596b4023c6c3ccf9bae956aa9fa806382478053",
+      "size_bytes": 23299,
+      "source_mtime_ns": 1793622745584277600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/analyze_five_steps_v2_1310a87.py",
+      "path": "recipes/execution/analyze_five_steps_v2_1310a87.py",
+      "sha256": "1310a87b6997b6babf3cf4859fc80a8d27564c8a195b7449cf6fad7ef4cc1e53",
+      "size_bytes": 23955,
+      "source_mtime_ns": 1793623447379257200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/FIVE_STEP_ANALYSIS.md",
+      "path": "recipes/execution/FIVE_STEP_ANALYSIS.md",
+      "sha256": "37c11edffae90f99a996b24257625f9724c2c26f9e3148726cb4bcb6bfe19d3c",
+      "size_bytes": 4966,
+      "source_mtime_ns": 1793623889550240800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_provenance.json",
+      "path": "recipes/execution/five_step_analyzer_provenance.json",
+      "sha256": "190e265ffd1dcb8bbb9989e5f08fc40e181b877667d0050581855bebae2b1fda",
+      "size_bytes": 1251,
+      "source_mtime_ns": 1793622629262982900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_source_checks.json",
+      "path": "recipes/execution/five_step_analyzer_source_checks.json",
+      "sha256": "c7d6f840f86312d470d8e3c09db36958c96547f01346043081b35f2d1562ee4f",
+      "size_bytes": 365,
+      "source_mtime_ns": 1793622887628687700
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v1_to_v2.patch",
+      "path": "recipes/execution/five_step_analyzer_v1_to_v2.patch",
+      "sha256": "0f2a34408a5d842ad01eeeae3a9d74d8b93c56dc79ffb23dd8fade6661ff7816",
+      "size_bytes": 4700,
+      "source_mtime_ns": 1793622879066829800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v2_to_v3.patch",
+      "path": "recipes/execution/five_step_analyzer_v2_to_v3.patch",
+      "sha256": "d9f33f42c8b82087e68e0d4e185bd150c484011daa3efaa92f35db3ae746b8ce",
+      "size_bytes": 2824,
+      "source_mtime_ns": 1793623468971717500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v2_parser_changes.json",
+      "path": "recipes/execution/five_step_analyzer_v2_parser_changes.json",
+      "sha256": "80afe2e72157749d32d2a5c27ec663181210dffee4a8573a657369ddfbf03022",
+      "size_bytes": 1106,
+      "source_mtime_ns": 1793622879118578500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v3_parser_changes.json",
+      "path": "recipes/execution/five_step_analyzer_v3_parser_changes.json",
+      "sha256": "9a276f21e442972af43730a2c62ac581451156455d1473045cbfbebdc4405c3c",
+      "size_bytes": 1081,
+      "source_mtime_ns": 1793623469056680100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_parser_v3_reanalysis_record.json",
+      "path": "recipes/execution/five_step_parser_v3_reanalysis_record.json",
+      "sha256": "0681cff3b31fc6dcb229286199483d2f63964733694b231ec63300614a587203",
+      "size_bytes": 12337,
+      "source_mtime_ns": 1793623856391283900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/finalize_five_step_parser_v3_and_strict_proposal.py",
+      "path": "recipes/execution/finalize_five_step_parser_v3_and_strict_proposal.py",
+      "sha256": "7315d827f68fa0c6a8da16e3df68e79414fc6ab8239b12d2136a1aeb6ca578e1",
+      "size_bytes": 5938,
+      "source_mtime_ns": 1793623852262455800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/admit_strict_gpu_profile.py",
+      "path": "recipes/execution/admit_strict_gpu_profile.py",
+      "sha256": "18f8d77b855ae46911287eb9992063403a78c6e9549da311d93cebb6ba48711a",
+      "size_bytes": 3466,
+      "source_mtime_ns": 1793628292990889300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/run_approved_strict_gpu_profile_once.sh",
+      "path": "recipes/execution/run_approved_strict_gpu_profile_once.sh",
+      "sha256": "d3feacebed10e1852132645621fd6524e0b26d445aa018dd411d0fd0446d8849",
+      "size_bytes": 713,
+      "source_mtime_ns": 1793628293397834900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/C29Restrictions.H",
+      "path": "recipes/execution/strict_pressure_proposal/C29Restrictions.H",
+      "sha256": "217b76d552ed28e9c5bd37b010cd036ce87717a79aef8a745716e66d26b93164",
+      "size_bytes": 8630,
+      "source_mtime_ns": 1793623619307495500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/C29Restrictions_strict_pressure.patch",
+      "path": "recipes/execution/strict_pressure_proposal/C29Restrictions_strict_pressure.patch",
+      "sha256": "8c9e238cd0a7faf38ce1a80b2dff8bd172c91372410d84d1e2bb5320f9a6f8d1",
+      "size_bytes": 1428,
+      "source_mtime_ns": 1793623619362109100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/README.md",
+      "path": "recipes/execution/strict_pressure_proposal/README.md",
+      "sha256": "256572a67c98b4a5bb0b5c68cbe5a6390d3a0d0814b93194ba88e073b947d218",
+      "size_bytes": 4381,
+      "source_mtime_ns": 1793623698321794300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/analyze_five_steps_strict_candidate.py",
+      "path": "recipes/execution/strict_pressure_proposal/analyze_five_steps_strict_candidate.py",
+      "sha256": "300c9ce0ecdb83cc20899c1077c071f4dcb82d412de8ce73f9ba5ae0309c88c5",
+      "size_bytes": 25127,
+      "source_mtime_ns": 1793623619392148200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/analyzer_strict_pressure.patch",
+      "path": "recipes/execution/strict_pressure_proposal/analyzer_strict_pressure.patch",
+      "sha256": "a708d291bd8ba8775975351863ffc48d9c4196945126ebaa69fa75afbc123466",
+      "size_bytes": 5049,
+      "source_mtime_ns": 1793623619412439400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/proposal_build_record.json",
+      "path": "recipes/execution/strict_pressure_proposal/proposal_build_record.json",
+      "sha256": "1210cabd0ea8f87f962b1fda7d11558406d740e1a2c9417b4b6a888880d6d3a1",
+      "size_bytes": 442,
+      "source_mtime_ns": 1793623619472721600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/root_authorization.json",
+      "path": "recipes/execution/strict_pressure_proposal/root_authorization.json",
+      "sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+      "size_bytes": 989,
+      "source_mtime_ns": 1793624015341087300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/source_proposal_manifest.json",
+      "path": "recipes/execution/strict_pressure_proposal/source_proposal_manifest.json",
+      "sha256": "c5883f5ce477e7f28f1bb4ebd0d343b2bde5f9c7f11561956782e6b5e4c57560",
+      "size_bytes": 2380,
+      "source_mtime_ns": 1793623856882263500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_admission.py",
+      "path": "recipes/execution/strict_pressure_proposal/strict_pressure_admission.py",
+      "sha256": "b4102dba7234d31413463975dc1050eb176261ce9d7773acf3c5f8e9b0a8765b",
+      "size_bytes": 4441,
+      "source_mtime_ns": 1793623697882366600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_protocol.json",
+      "path": "recipes/execution/strict_pressure_proposal/strict_pressure_protocol.json",
+      "sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+      "size_bytes": 2124,
+      "source_mtime_ns": 1793623619284010800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/geometry_reference/reference_axial_speed.py",
+      "path": "recipes/geometry_reference/reference_axial_speed.py",
+      "sha256": "c223006e824d1d40cc5dcd5d42e8ebc0e3a9a151d5a25f8a3e40ea93faa9699f",
+      "size_bytes": 3784,
+      "source_mtime_ns": 1793620970265754400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/prepare_managed_ownership_proposal.py",
+      "path": "recipes/build/prepare_managed_ownership_proposal.py",
+      "sha256": "22f5c75df417b909ff24922e261ccc046908a3fbf4133f08bbeca09208527f44",
+      "size_bytes": 9473,
+      "source_mtime_ns": 1793624620364822500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/check_ownership_source_only.py",
+      "path": "recipes/build/check_ownership_source_only.py",
+      "sha256": "c1cc096cc1fa5c4e78011b64275878b26981248c5aacaee6c7466c415211dfaa",
+      "size_bytes": 3071,
+      "source_mtime_ns": 1793624763817828200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/prepare_combined_managed_strict.py",
+      "path": "recipes/build/prepare_combined_managed_strict.py",
+      "sha256": "47fdaf37f89040019e1f863e2a058843b9ede4b6f0088a583a8571e617823e6f",
+      "size_bytes": 6775,
+      "source_mtime_ns": 1793625142775584800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py",
+      "path": "recipes/build/build_combined_managed_strict.py",
+      "sha256": "bf11fb1bd7260815c3e9957f15f90d17d45d62d4b794d78cfbfd6a234293035d",
+      "size_bytes": 9790,
+      "source_mtime_ns": 1793625545851001000
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict_at_build_b.py",
+      "path": "recipes/build/build_combined_managed_strict_at_build_b.py",
+      "sha256": "cbb198b1811146ea38163581131a282e0f37d23ee39ac851ee7198084737f795",
+      "size_bytes": 9609,
+      "source_mtime_ns": 1793625372011846100
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/recollect_combined_cpu_only.py",
+      "path": "recipes/build/recollect_combined_cpu_only.py",
+      "sha256": "b402a173d4a26cfe7a1ea13468fd341cdde7768957c4a5ef8f9478183886a63f",
+      "size_bytes": 3668,
+      "source_mtime_ns": 1793625546260004800
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/prepare_c29_gpu_profile_protocol.py",
+      "path": "recipes/build/prepare_c29_gpu_profile_protocol.py",
+      "sha256": "541d6c6fe4a64d960cbfece18cc8c46733466f4b36bcb95cd723c479f83104a7",
+      "size_bytes": 6783,
+      "source_mtime_ns": 1793627160466040300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/preserve_gpu_profile_v1_prepare_v2.py",
+      "path": "recipes/build/preserve_gpu_profile_v1_prepare_v2.py",
+      "sha256": "3fa4e607ed0fbb1e34953893a509b99899fff1f1f066a89e3e271f29d5e2e2bd",
+      "size_bytes": 3099,
+      "source_mtime_ns": 1793627568257750500
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_control_five_execution.json",
+      "path": "evidence/legacy_relTol005/f14_control_five_execution.json",
+      "sha256": "3d1b928dede658a859980a167a634cc389bda7da149af08afae99470f284fb4a",
+      "size_bytes": 13231,
+      "source_mtime_ns": 1793622216663952200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_control_five_prelaunch.json",
+      "path": "evidence/legacy_relTol005/f14_control_five_prelaunch.json",
+      "sha256": "b1ae03c115d4fe3ab988eb250b07245a218a26ad1ab325cccf59a76818b78cf7",
+      "size_bytes": 5023,
+      "source_mtime_ns": 1793622191273587200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_control_five_stdout.log",
+      "path": "evidence/legacy_relTol005/f14_control_five_stdout.log",
+      "sha256": "a2fec021d38e2803d0146d97608df12dda147a599afbe302f03b3a9d86209d9b",
+      "size_bytes": 7845,
+      "source_mtime_ns": 1793622215791476600
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/native_cpu_five_execution.json",
+      "path": "evidence/legacy_relTol005/native_cpu_five_execution.json",
+      "sha256": "bb8576b4c4ba583b23e3a852468d27b296512e000e3bfa7a51290286e616aa2c",
+      "size_bytes": 8126,
+      "source_mtime_ns": 1793622950690940900
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/native_cpu_five_prelaunch.json",
+      "path": "evidence/legacy_relTol005/native_cpu_five_prelaunch.json",
+      "sha256": "e7b6fab4f4b446ce8c6e744cee760ae89b7cd5b50894197b4876f24268418d80",
+      "size_bytes": 4024,
+      "source_mtime_ns": 1793622924079618400
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/native_cpu_five_stdout.log",
+      "path": "evidence/legacy_relTol005/native_cpu_five_stdout.log",
+      "sha256": "6a5b267b57a82e479492307fb660f5e7c36c6b9927844ce96d420becd4d37ca0",
+      "size_bytes": 20851,
+      "source_mtime_ns": 1793622949709858300
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_to_native_cpu_validation_v2.json",
+      "path": "evidence/legacy_relTol005/f14_to_native_cpu_validation_v2.json",
+      "sha256": "5d50d0314f9dd6ce332d40aa436fc42532f08a70d791b2719a04498746543be1",
+      "size_bytes": 235179,
+      "source_mtime_ns": 1793623145656903200
+    },
+    {
+      "source": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_to_native_cpu_validation_v3.json",
+      "path": "evidence/legacy_relTol005/f14_to_native_cpu_validation_v3.json",
+      "sha256": "9ac760b08a489047db94a3b98ff9733f1569f86f9efaa250999a45f7b3ca61e3",
+      "size_bytes": 250666,
+      "source_mtime_ns": 1793623515417212000
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/Allrun",
+      "path": "case_inputs/foundation14_control/Allrun",
+      "sha256": "31af4e71248daeff4eba38d7482d356425d1c64fd28c705dc2ec7406feb72e8d",
+      "size_bytes": 86,
+      "source_mtime_ns": 1793624839914114975
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/benchmark_acceptance.json",
+      "path": "case_inputs/foundation14_control/benchmark_acceptance.json",
+      "sha256": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+      "size_bytes": 3543,
+      "source_mtime_ns": 1793624836574077166
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/benchmark_manifest.json",
+      "path": "case_inputs/foundation14_control/benchmark_manifest.json",
+      "sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+      "size_bytes": 12115,
+      "source_mtime_ns": 1793624839780162015
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/case.foam",
+      "path": "case_inputs/foundation14_control/case.foam",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_mtime_ns": 1793624836574077166
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/case_preparation.json",
+      "path": "case_inputs/foundation14_control/case_preparation.json",
+      "sha256": "eaecd59ae6e68b56afd823d4bddb834d3190b6c3d29f0ba74417e7c363f3f479",
+      "size_bytes": 1823,
+      "source_mtime_ns": 1793624840049235936
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/c29InitialPhiControls",
+      "path": "case_inputs/foundation14_control/constant/c29InitialPhiControls",
+      "sha256": "b8ff0f9732b14354c2453aa1791dae65fbb699eb7da516489982c24ba9b04cf1",
+      "size_bytes": 1002,
+      "source_mtime_ns": 1793626728056565489
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/fvModels",
+      "path": "case_inputs/foundation14_control/constant/fvModels",
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "source_mtime_ns": 1793624836575754967
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/momentumTransport",
+      "path": "case_inputs/foundation14_control/constant/momentumTransport",
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "source_mtime_ns": 1793624836576034367
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/physicalProperties",
+      "path": "case_inputs/foundation14_control/constant/physicalProperties",
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "source_mtime_ns": 1793624836576321667
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/rotorParameters",
+      "path": "case_inputs/foundation14_control/constant/rotorParameters",
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "source_mtime_ns": 1793624837805919066
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/frozen_numerics_helper.py",
+      "path": "case_inputs/foundation14_control/frozen_numerics_helper.py",
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "size_bytes": 29663,
+      "source_mtime_ns": 1793624837809057368
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/geometry.json",
+      "path": "case_inputs/foundation14_control/geometry.json",
+      "sha256": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245",
+      "size_bytes": 8522,
+      "source_mtime_ns": 1793624838468567630
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/run_benchmark.py",
+      "path": "case_inputs/foundation14_control/run_benchmark.py",
+      "sha256": "6e3e6fa94f1b926d0ebdc89cacfd028affb8290be1a14a90cd9c1de03b1230da",
+      "size_bytes": 12116,
+      "source_mtime_ns": 1793624837812896371
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/source_geometry.json",
+      "path": "case_inputs/foundation14_control/source_geometry.json",
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "size_bytes": 8480,
+      "source_mtime_ns": 1793624837813311972
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/source_initialization.json",
+      "path": "case_inputs/foundation14_control/source_initialization.json",
+      "sha256": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f",
+      "size_bytes": 23855,
+      "source_mtime_ns": 1793624837814969373
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/blockMeshDict",
+      "path": "case_inputs/foundation14_control/system/blockMeshDict",
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+      "size_bytes": 743,
+      "source_mtime_ns": 1793624837816477574
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/controlDict",
+      "path": "case_inputs/foundation14_control/system/controlDict",
+      "sha256": "56c516940b8d6b93ee7661e6598b3a3a558fce27c6e18c027fd0ee4b637667e5",
+      "size_bytes": 380,
+      "source_mtime_ns": 1793624839907444172
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/decomposeParDict",
+      "path": "case_inputs/foundation14_control/system/decomposeParDict",
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "size_bytes": 178,
+      "source_mtime_ns": 1793624839100567911
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/fvSchemes",
+      "path": "case_inputs/foundation14_control/system/fvSchemes",
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "source_mtime_ns": 1793624837816870475
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/fvSolution",
+      "path": "case_inputs/foundation14_control/system/fvSolution",
+      "sha256": "e1ed15a5fbb3a3e7d7b4961e6fd418509c5995a5744229f63bd7b312c3beff66",
+      "size_bytes": 361,
+      "source_mtime_ns": 1793624839914663075
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/Allrun",
+      "path": "case_inputs/native_cpu/Allrun",
+      "sha256": "31af4e71248daeff4eba38d7482d356425d1c64fd28c705dc2ec7406feb72e8d",
+      "size_bytes": 86,
+      "source_mtime_ns": 1793624844098820275
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/benchmark_acceptance.json",
+      "path": "case_inputs/native_cpu/benchmark_acceptance.json",
+      "sha256": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+      "size_bytes": 3543,
+      "source_mtime_ns": 1793624840716031836
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/benchmark_manifest.json",
+      "path": "case_inputs/native_cpu/benchmark_manifest.json",
+      "sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+      "size_bytes": 12115,
+      "source_mtime_ns": 1793624843979613320
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/case.foam",
+      "path": "case_inputs/native_cpu/case.foam",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_mtime_ns": 1793624840716031836
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/case_preparation.json",
+      "path": "case_inputs/native_cpu/case_preparation.json",
+      "sha256": "2874dfd92890935967a5221b608588ee9374fd033e18c306d8febfea165c6976",
+      "size_bytes": 1807,
+      "source_mtime_ns": 1793624844273137056
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/c29PortControls",
+      "path": "case_inputs/native_cpu/constant/c29PortControls",
+      "sha256": "154ef54a0be1620f4f64b0d6e53bbf73f5c4cd1b5422475457787737f2626832",
+      "size_bytes": 1181,
+      "source_mtime_ns": 1793626727636565424
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/fvModels",
+      "path": "case_inputs/native_cpu/constant/fvModels",
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "source_mtime_ns": 1793624840718103337
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/momentumTransport",
+      "path": "case_inputs/native_cpu/constant/momentumTransport",
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "source_mtime_ns": 1793624840718360537
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/physicalProperties",
+      "path": "case_inputs/native_cpu/constant/physicalProperties",
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "source_mtime_ns": 1793624840718584337
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/rotorParameters",
+      "path": "case_inputs/native_cpu/constant/rotorParameters",
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "source_mtime_ns": 1793624841987413010
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/transportProperties",
+      "path": "case_inputs/native_cpu/constant/transportProperties",
+      "sha256": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+      "size_bytes": 97,
+      "source_mtime_ns": 1793624844128536689
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/frozen_numerics_helper.py",
+      "path": "case_inputs/native_cpu/frozen_numerics_helper.py",
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "size_bytes": 29663,
+      "source_mtime_ns": 1793624841991468412
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/geometry.json",
+      "path": "case_inputs/native_cpu/geometry.json",
+      "sha256": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245",
+      "size_bytes": 8522,
+      "source_mtime_ns": 1793624842668569521
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/run_benchmark.py",
+      "path": "case_inputs/native_cpu/run_benchmark.py",
+      "sha256": "6e3e6fa94f1b926d0ebdc89cacfd028affb8290be1a14a90cd9c1de03b1230da",
+      "size_bytes": 12116,
+      "source_mtime_ns": 1793624841992569213
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/source_geometry.json",
+      "path": "case_inputs/native_cpu/source_geometry.json",
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "size_bytes": 8480,
+      "source_mtime_ns": 1793624841998999216
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/source_initialization.json",
+      "path": "case_inputs/native_cpu/source_initialization.json",
+      "sha256": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f",
+      "size_bytes": 23855,
+      "source_mtime_ns": 1793624842004569218
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/blockMeshDict",
+      "path": "case_inputs/native_cpu/system/blockMeshDict",
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+      "size_bytes": 743,
+      "source_mtime_ns": 1793624842010021221
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/controlDict",
+      "path": "case_inputs/native_cpu/system/controlDict",
+      "sha256": "bed18970ed2d7b48f6b6e34eb4147e3441a374591614284b9dbb14c8c7580bad",
+      "size_bytes": 371,
+      "source_mtime_ns": 1793624844092696672
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/decomposeParDict",
+      "path": "case_inputs/native_cpu/system/decomposeParDict",
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "size_bytes": 178,
+      "source_mtime_ns": 1793624843303339111
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSchemes",
+      "path": "case_inputs/native_cpu/system/fvSchemes",
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "source_mtime_ns": 1793624842010459821
+    },
+    {
+      "source": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSolution",
+      "path": "case_inputs/native_cpu/system/fvSolution",
+      "sha256": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3",
+      "size_bytes": 359,
+      "source_mtime_ns": 1793624844099870676
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_geometry_reference_20261102/cache/quadrature.csv",
+      "path": "geometry_cache/quadrature.csv",
+      "sha256": "5d786c48c11b80b1f4d45c989f8873d22314c9ea2118fda3bfbdaf3b44930db1",
+      "size_bytes": 457426,
+      "source_mtime_ns": 1793620381733767025
+    },
+    {
+      "source": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_geometry_reference_20261102/cache/rotors.csv",
+      "path": "geometry_cache/rotors.csv",
+      "sha256": "41fe936fc5ad3eb63c3756c808ce9b22c67ed0c5abad17e03c130c0ac3bc75ff",
+      "size_bytes": 268,
+      "source_mtime_ns": 1793620381733767025
+    }
+  ],
+  "source_files_preserved_byte_identically": true,
+  "live_GPU_runtime_evidence_included": false,
+  "compiler_CFD_profiler_or_recipe_execution": false,
+  "external_seed_not_duplicated": true
+}

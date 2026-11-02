@@ -1,0 +1,27 @@
+{
+  "new_tool_positive_control": "PASSED existing32768-element native Field arithmetic only",
+  "classification": "CUDA_API_AND_KERNEL_TIMELINE_OBSERVED",
+  "actual_probe_PID": 1778006,
+  "actual_probe_exit": 0,
+  "launch_API_calls": 8,
+  "successful_sync_API_calls": 9,
+  "attributed_GPU_kernel_rows": 8,
+  "named_range_complete": true,
+  "whole_process_event_completeness_claimed": false,
+  "retained_warning_limitations": [
+    "Not all NVTX events might have been collected.",
+    "Not all CUDA events might have been collected.",
+    "Unified Memory tracing was disabled by the tool."
+  ],
+  "unsupported_driver_warning_count": 0,
+  "runtime_toolkit": "NVHPC private CUDA13.3 runtime; current host driver API13.4",
+  "new_profiler": "Standalone2026.5.1; historical SDK profiler unchanged",
+  "large_C29_profiled_attempt": "FAILED SIGSEGV actualchild-11 before Courant/source; no qualification",
+  "large_C29_plain_attempt": "FAILED same SIGSEGV actualchild-11 without profiler; no qualification",
+  "plain_failure_reconciliation_sha256": "2434244e6fe0c0453d5849c0c082f6485dd66ddde0f57e31ed22df5ad73d8a2f",
+  "C29_2_4_built": false,
+  "GPU_transient_or_rotor_lift_qualified": false,
+  "timing_or_speedup_measured": false,
+  "production_default_changed": false,
+  "all84_CPU_CFD_results_changed": false
+}

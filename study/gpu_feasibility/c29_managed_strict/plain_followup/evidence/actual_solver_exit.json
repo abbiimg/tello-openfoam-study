@@ -1,0 +1,218 @@
+{
+  "started_utc": "2026-11-02T14:46:34.836891+00:00",
+  "wrapper_pid": 1396449,
+  "receipt_sha256": "75dfc4fb23eccd044cfa1d0e80c3b749bd89e97b493f02c8661194427d0ad864",
+  "approval_sha256": "9c4beb885fa6b1ef4eb813ad74f247e033a27c3b9e99dcda5fece99314e18c6e",
+  "protocol_sha256": "e6e58d9e37514f0dc3b3f76bfaaf6a839612faef2fde095f3c38ebf3d24c6395",
+  "binary_sha256": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185",
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "case_before": {
+    "constant/transportProperties": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+    "constant/c29PortControls": "06ddab895c5d219ad256f2f732d592a38f58ea41777f89f4e1f92f569412e497",
+    "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "constant/rotorParameters": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+    "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "0.6/p": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+    "0.6/phi": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+    "0.6/U": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+    "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+    "system/fvSolution": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3",
+    "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "system/controlDict": "bed18970ed2d7b48f6b6e34eb4147e3441a374591614284b9dbb14c8c7580bad",
+    "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+    "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+    "constant/polyMesh/cellProc": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+    "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+    "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+    "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8"
+  },
+  "manual_argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "-case",
+    "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/plain_unprofiled_v2_3"
+  ],
+  "no_profiler_or_tool_injection": true,
+  "loader_overlay": {},
+  "environment": {
+    "WM_OPTIONS": "linuxARM64Nvidia-gpuDPInt32Opt",
+    "FOAM_MEMORY_POOL": "managed; size=64; incr=64",
+    "LD_PRELOAD": null,
+    "LD_LIBRARY_PATH": "/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpuDPInt32/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/fftw-3.3.10/lib64:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/CGAL-4.14.3/lib64:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/boost_1_74_0/lib64:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/dummy:/usr/lib/wsl/lib",
+    "OMP_NUM_THREADS": "1"
+  },
+  "actual_child": {
+    "pid": 1397012,
+    "uid": 999,
+    "birth_start_ticks": 17074725,
+    "cwd": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/plain_unprofiled_v2_3",
+    "exe": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "nice": 15
+  },
+  "completed_utc": "2026-11-02T14:48:19.634913+00:00",
+  "return_code": -11,
+  "actual_child_waited": true,
+  "actions": [],
+  "cleanup_errors": [],
+  "timed_out": false,
+  "cancelled": false,
+  "wrapper_errors": [],
+  "postprocessing_complete": true,
+  "wrapper_status_is_separate": true,
+  "scientific_acceptance": "Separate frozen strict d600 analysis required",
+  "speedup_measured": false,
+  "saved_output_field_sha256": {},
+  "tool_libraries_observed": [],
+  "binary_sha256_after": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185",
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/plain_unprofiled_diagnostic_v1_20261102/native_gpu_five_stdout.log",
+  "log_sha256": "014b20ec8f5cb2e993b0c11a3658c12b3cca3df4afbde8d3d2ae734bbdbce846",
+  "loaded_libraries_observed": [
+    {
+      "path": "/etc/ld.so.cache",
+      "sha256": "512c542d85f732e19a099c877a35d1f5f9a705bf2168063967528c29fe8c8608"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libaccdevaux.so",
+      "sha256": "0dbe92026e13822fa30d09b0342f4d8efd35d0749b2996e9374755e5b9ba4813"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libaccdevice.so",
+      "sha256": "1abd4f424f04666f5d1031d43f20bff84c3ffbec4e14fd136f36672b06755cf0"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libacchost.so",
+      "sha256": "5158bb7f3453d69a7ea4a84ad85ceae5ab86d2ae6866fc73d45ce9d66f1c8501"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libcudanvhpc.so",
+      "sha256": "d32a528662e0ea5cbcb607a92dee4e4dded5638f89119df340b9df480e3a7a78"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvc.so",
+      "sha256": "d3a8bbf8984936497a7a1a1a457654e05380375c2327919f06c0d7ceff37dbba"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvcpumath.so",
+      "sha256": "7647a7a546119231c63664a52c24889bc2ffcf9f074dcf79acfa2b769d9b0f11"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvhpcatm.so",
+      "sha256": "021c35d8da7b2da151654ed2785c460171aa7e2d46ea6b02941f4616753f9324"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvhpcmanaux.so",
+      "sha256": "67551ea9f21fff11e6d4d3144df180d6c568c4d48fe004c6dea397326a6d15a5"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvmalloc.so",
+      "sha256": "644f811d60944ec9b77f9f015d90bf100b6000b9442f5d437183a82244b8bb45"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvomp.so",
+      "sha256": "0c62327b3de7470efbbf1db8913b4f01dd64da7cbb4142fc49979178056c7899"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib/libcudart.so.13.3.29",
+      "sha256": "83b2ccdccdbb285613a97e8be332d1b17cbd55e267e1d2e047adb3081660335e"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/dummy/libPstream.so",
+      "sha256": "6d28006186636537a7e2dac8acb8ce62aafd0020560ed2630c172af458073d7f"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libfileFormats.so",
+      "sha256": "81635273586c62c98497297a01d4956ea7457931a948704976fab73fd8d23700"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "d713f08fe815643117e83fe3a17ce5a8894dac28bed56b10fa8d0a7477bebc76"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "964f1b2ace5618b4967fabef0e6e884dfb0b0cd412a6b7d9c99b6d5d85751c37"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libsurfMesh.so",
+      "sha256": "0fcb754eea91e0e545172b0bf19ac026f9fb72711762b422a00c1deb36f3b8d4"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+      "sha256": "390027e5f45f236bd1838bc54bf464c5ff01d260ab9f8b415ea8276641bce505"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libc.so.6",
+      "sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libdl.so.2",
+      "sha256": "1c16b2692a155191c97d7fdc5ce937d37c242435f05745046a794a9832b16af4"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+      "sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libm.so.6",
+      "sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libpthread.so.0",
+      "sha256": "6f1ab9e7d7de142dc5e2feaf6d19faceff0a0f40d5e225c922899f5362b8c353"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/librt.so.1",
+      "sha256": "93d0d5ab643b50ac1a61c2c7baf670e8aa94973fa5a2584d13db05295d5b5a0e"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4"
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libz.so.1.3",
+      "sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3"
+    },
+    {
+      "path": "/usr/lib/wsl/drivers/nv_asus_woa.inf_arm64_4678bbc474ba512a/libcuda.so.1.1",
+      "sha256": "fea9aef1d3bb1e1f69af479e3d5c92c4a601abdfba045c2fc364953164456706"
+    },
+    {
+      "path": "/usr/lib/wsl/drivers/nv_asus_woa.inf_arm64_4678bbc474ba512a/libnvdiagclt.so.1",
+      "sha256": "d3aa8c8904147b480b501be77a61ac5eb6d7bfac0ccd050b502c52d1e63f88b5"
+    },
+    {
+      "path": "/usr/lib/wsl/drivers/nv_asus_woa.inf_arm64_4678bbc474ba512a/libnvdxgdmal.so.1",
+      "sha256": "49096d8348912fcc9ee5f5e7239be5008394c703e6b74a83beacc309247dc733"
+    },
+    {
+      "path": "/usr/lib/wsl/lib/libcuda.so.1",
+      "sha256": "27a69a2a80a0908564c242a6d408bbeef514ab7ca9aa586ce7e37f2fd2dd1bbc"
+    },
+    {
+      "path": "/usr/lib/wsl/lib/libdxcore.so",
+      "sha256": "0556e5f36424e7167866608b98cf743df37f04a685fa52bd8f6f9ccf32ccd781"
+    },
+    {
+      "path": "/usr/lib/wsl/lib/libnvidia-gpucomp.so",
+      "sha256": "f66a6784e019a8bbc5e53fcc45f20cda8f730f384fd6958d9dc073181fc9432e"
+    }
+  ],
+  "declared_libraries_actually_observed_unchanged": true,
+  "original_case_files_unchanged": true,
+  "added_case_files": [
+    "0.6/c29_initialP",
+    "0.6/c29_initialPhi",
+    "0.6/c29_initialU"
+  ],
+  "time_values": [
+    0.6001
+  ],
+  "source_calls": 0,
+  "controller_updates": 0,
+  "End_marker": false,
+  "nonfinite_log_token": false,
+  "plain_process_gate_passed": false
+}

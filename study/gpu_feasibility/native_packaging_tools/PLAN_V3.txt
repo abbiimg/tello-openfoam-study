@@ -1,0 +1,41 @@
+SOURCE-ONLY V3 PROPOSAL — LONG-PATH NAMESPACE FIX ONLY
+
+Observed native Windows failure, before ZIP creation:
+  The actual 258-character surfaceInterpolationScheme directory can be
+  stat'ed through its ordinary drive path but iterdir fails with WinError 3.
+  Prefixing the SAME native path with \\?\ makes directory enumeration pass.
+  Device+inode identity matches, proving both names refer to the same physical
+  directory. The child file is surfaceInterpolationScheme.C. Evidence:
+    long_path_readonly_proof.json (native3.13.13, source reads only)
+
+V3 is a separate refresh_compact_native_v3.py. V1 and V2 remain unchanged.
+
+Narrow V2-to-V3 change:
+  - Fixed WORKSPACE/OUT/WORK paths use Windows' extended local-drive namespace.
+  - lexical() normalizes before adding \\?\ to ordinary local-drive aliases.
+    Therefore ordinary and extended forms share the same containment checks.
+  - safe_path() permits only the fixed extended local drive after containment;
+    network UNC, other device aliases, reparse points/junctions/symlinks and
+    hardlinks remain rejected. All ancestors are still checked with lstat.
+  - Native interpreter identity comparison canonicalizes both path spellings.
+  - ZIP member names remain only relative_to(OUT).as_posix(); extended path
+    prefixes can never become study/** or cases/** archive keys.
+  - Version/receipt reports identify this namespace change. No registry,
+    profile, filesystem policy or global long-path setting is modified.
+
+No tolerance, data, filter or packaging-integrity policy changes:
+  V2's exact two SPUMA marker exceptions, pinned outer-manifest closure/hash
+  checks, all other filters, CPU84 hashes/membership, raw case bytes/ZipInfo,
+  readonly backup, every-source/every-entry SHA and full CRC, atomic publish
+  and external receipts/checksums remain unchanged.
+
+Allowed checks before root execution:
+  AST/hash/diff; read-only ordinary-versus-extended proof; inert temp directory
+  and small file over300characters under this proposal; read-only source
+  membership inventory. No archive creation, backup, packaging, output write,
+  case/source modification, CFD, GPU, build or Git action.
+
+Root reviews and executes ONLY V3 after closing ALL output writers:
+  & 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\bin\python.exe' `
+    'work\native_compact_refresh_proposal\refresh_compact_native_v3.py' `
+    --execute --confirm-gpu-publications-closed

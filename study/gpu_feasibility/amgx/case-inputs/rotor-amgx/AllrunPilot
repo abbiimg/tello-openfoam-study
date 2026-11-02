@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")"
+source /opt/openfoam14/etc/bashrc
+set -u -o pipefail
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 WM_NCOMPPROCS=1
+export CUDA_CACHE_PATH="$PWD/runtime_cache/cuda"
+export TMPDIR="$PWD/runtime_cache/tmp"
+export XDG_CACHE_HOME="$PWD/runtime_cache"
+export LD_LIBRARY_PATH=/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib:/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/lib:/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+export LD_PRELOAD=/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxLaunchAudit.so
+exec nice -n 15 timeout --signal=TERM --kill-after=15 900 foamRun

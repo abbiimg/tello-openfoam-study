@@ -1,0 +1,15 @@
+{
+  "schema": "c29-real-seed-readonly-preflight-v1",
+  "completed_utc": "2026-11-02T14:37:41.0386841Z",
+  "recipe_sha256": "e3c6fde19e323f29e362a6ae90738fee8ba5f0b04f29eafa4168d0cbb601b264",
+  "actual_exit_code": 0,
+  "read_only_preflight_passed": true,
+  "saved_fields": 30,
+  "canonical_initial_phi": 1,
+  "seed_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+  "seed_not_duplicated_in_package": true,
+  "restored_to": null,
+  "compiler_or_CFD_run": false,
+  "runtime_admission": false,
+  "meaning": "Actual helper default-mode validated full pinned real ZIP/catalogues/all fields; no restore-to option used"
+}

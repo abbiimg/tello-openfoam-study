@@ -1,0 +1,15 @@
+#!/bin/bash
+set -o pipefail
+cd -- "$(dirname -- "$0")" || exit
+test ! -e .spuma-smoke-started || exit 73
+. /opt/openfoam-workspace/gpu-feasibility/spuma/env.sh || exit
+test "$WM_PROJECT_DIR" = /opt/openfoam-workspace/gpu-feasibility/spuma/source || exit
+test "$have_cuda" = true || exit
+test "$have_umpire" = false || exit
+set -e
+touch .spuma-smoke-started
+/usr/bin/python3 record_runtime_artifacts.py start
+/usr/bin/nice -n 15 /opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/blockMesh -pool fixedSizeMemoryPool -poolSize 1 > log.blockMesh 2>&1
+/usr/bin/ldd /opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam > runtime_libraries.txt
+/usr/bin/timeout 900 /usr/bin/nice -n 15 /opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys profile --trace=cuda,nvtx --cuda-trace-scope=process-tree --wait=all --sample=none --cpuctxsw=none --stats=false --force-overwrite=false -o /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool/cavity_icoFoam_time_loop_trace /usr/bin/python3 run_profiled_ico.py > log.icoFoam 2>&1
+/usr/bin/python3 record_runtime_artifacts.py complete

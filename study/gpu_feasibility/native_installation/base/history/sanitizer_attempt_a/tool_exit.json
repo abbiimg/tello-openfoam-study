@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-11-02T12:32:28.796608+00:00",
+  "argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/compute-sanitizer/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--target-processes",
+    "all",
+    "--error-exitcode",
+    "86",
+    "--report-api-errors",
+    "all",
+    "--show-backtrace",
+    "yes",
+    "--print-limit",
+    "20",
+    "--destroy-on-device-error",
+    "context",
+    "--log-file",
+    "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/memcheck_evidence/compute_sanitizer.log",
+    "/usr/bin/python3",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/run_memcheck_child.py"
+  ],
+  "tool": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/compute-sanitizer/compute-sanitizer",
+  "tool_sha256": "0d3307ba0a6451f270b65d3f9f2d80d4e17521c96ed4870b2eb0dfc9cc70de68",
+  "binary_sha256": "940336b28ca1f354398eaac971e5e86e4b401b323dec553cb7cdb5e0888da6a7",
+  "receipt_sha256": "f22848afba3f8fd815fa6a755e476ea8a0cf51f707ff773526f8ba1fefa6a5e9",
+  "source_helpers_sha256": {
+    "run_memcheck.py": "4b859f6e7a2eb93e225d06301378030e65a0ad2ca7ca67c27b5bcd0ee4a623fc",
+    "run_memcheck_child.py": "af2ef494577dd7d438abcbfcc607e45131426a9f37480a73ddc36b66c16b0f9a"
+  },
+  "max_owned_GPU_children": 1,
+  "nice": 15,
+  "available_GiB": 56.34933853149414,
+  "no_vendor_SDK_app_or_input_change": true,
+  "actual_child_status_separate": true,
+  "sanitizer_pid": 381042,
+  "sanitizer_return_code": 86,
+  "completed_utc": "2026-11-02T12:33:38.244011+00:00",
+  "actual_child_receipt_present": true,
+  "actual_child_return_code": -6
+}

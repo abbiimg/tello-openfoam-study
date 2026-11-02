@@ -1,0 +1,49 @@
+SOURCE-ONLY V2 PROPOSAL — NO PACKAGING OR OUTPUT MUTATION
+
+V1 refresh_compact_native.py remains byte-identical at:
+  ed37cfd7b79417b6dc33395ee560419f51c5317912fbbd3e2bc06fab3175507b
+V2 is a separate refresh_compact_native_v2.py; all V1 safety gates remain.
+
+Narrow change:
+  Original blanket dotpath exclusion would omit two zero-byte files from the
+  reviewed SPUMA component inventory, invalidating its extracted manifest.
+  V2 includes ONLY these exact study-relative keys:
+    gpu_feasibility/spuma/spuma_evidence/original_failed/.spuma-smoke-started
+    gpu_feasibility/spuma/spuma_evidence/strict_v2/.strict-v2-started
+
+Required binding before either exception is eligible:
+  - gpu_feasibility/spuma/manifest.json must have exact reviewed SHA256
+    4824419c7cb30822ddb51230c6976e0739028901d795a1365e331001319b4edd.
+  - Both exact keys must be listed there with bytes=0 and empty-file SHA256
+    e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.
+  - Both actual files must exist, be regular files with no hardlinks,
+    symlinks or reparse-point/junction ancestors, and match size/hash.
+  - The selected SPUMA study inventory must equal the entire reviewed outer
+    manifest files mapping plus the outer manifest itself. Thus EVERY
+    manifested file, including every nested manifest, must fit the filter;
+    omitted compressed/hidden/unexpected files fail closed.
+  - The normal source inventory then hashes every included SPUMA file and
+    checks its expected bytes/SHA against that pinned outer manifest.
+  - Historical candidate/review nested manifests remain exact checked bytes;
+    their historical relative namespaces are not misread as new live roots.
+
+All other dotpaths, __pycache__, pyc, gzip and ZIP filtering is unchanged.
+No wildcard or directory-wide hidden-file inclusion is added. The two
+markers enter the ZIP under their exact study/** member names.
+
+Unchanged safeguards:
+  Exact old compact SHA/size/2468 members; immutable readonly native backup;
+  all old cases/** raw records, content hashes and ZipInfo/Unix attributes;
+  fixed paths and ancestor checks; CPU84 cases.zip/CSV/approved hashes and
+  membership; source hashes before/after copying and before/after publish;
+  every archive entry SHA and full CRC; verified same-directory atomic
+  replacement; closed checksums/receipts outside OUT/archives; no CFD or Git.
+
+Review the accompanying minimal V1-to-V2 diff. Root executes V2 only after
+ALL GPU output publications are closed, using existing native Python:
+  & 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\bin\python.exe' `
+    'work\native_compact_refresh_proposal\refresh_compact_native_v2.py' `
+    --execute --confirm-gpu-publications-closed
+
+No-argument execution prints only the plan. No archive refresh, backup,
+study output edit, original source edit or Git action has been performed.

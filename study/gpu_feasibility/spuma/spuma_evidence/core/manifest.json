@@ -1,0 +1,25 @@
+{
+  "kind": "Portable actual core-only GPU evidence; full solver gate remains pending",
+  "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+  "job_id": "Allrun-66de0c",
+  "files": {
+    "core_executor_stdout.log": {
+      "sha256": "8b67a62e5e77d071bd5292e8133a47ab42e24e5a7252bc5538af0d799491e4b2",
+      "bytes": 1949
+    },
+    "core_executor_build.log": {
+      "sha256": "da516350c7e21382f17b1e0af18213f34b8d015c48bf52a0199b3d9671a82d82",
+      "bytes": 2874
+    },
+    "private_build_configuration.json": {
+      "sha256": "fb4b1bd82619654a9649190ec5be15fea0e3e8767f3f1d75114b699ccde3fc35",
+      "bytes": 1653
+    },
+    "core_executor_gate.json": {
+      "sha256": "4d4c988d3319c69924a4f49496ce4d72ef09d287ebc179bc61680fa2e2357837",
+      "bytes": 1377
+    }
+  },
+  "SDK_source_builds_and_binaries_excluded": true,
+  "no_speed_claim": true
+}

@@ -1,0 +1,25 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      c29InitialPhiControls;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+protocol        c29-foundation14-initial-phi-only-v1;
+
+allowInitialPhiExperiment true;
+
+experimentId    "c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46";
+
+experimentReceiptFile "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.foam";
+
+
+// ************************************************************************* //

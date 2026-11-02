@@ -1,0 +1,16 @@
+{
+  "schema": "c29-curation-content-checks-v1",
+  "source_records_verified": 495,
+  "source_destination_bytes_and_original_mtimes_unchanged": true,
+  "python_AST_files": 70,
+  "forbidden_payload_findings": [],
+  "saved_ASCII_fields": 30,
+  "canonical_initial_phi": 1,
+  "native_cross_OS_verification_passes": 2,
+  "CPU_mechanical_checks": 499,
+  "CPU_failed": 0,
+  "legacy_failed": 4,
+  "GPU_transient_qualified": false,
+  "new_offline_recipe_execution": "real pinned seed/field read-only preflight and11 isolated fixtures passed; no fresh restore/build/CFD executed",
+  "source_or_cases_outputs_Git_archives_changed": false
+}

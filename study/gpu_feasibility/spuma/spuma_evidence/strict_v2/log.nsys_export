@@ -1,0 +1,12 @@
+Generating SQLite file /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.sqlite from /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.nsys-rep
+Processing [/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.sqlite] with [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+32.9,17828654257,2445,7291883.1,6489280.0,5304270,32073048,2572456.7,cudaDeviceSynchronize
+26.0,14080636831,2445,5758951.7,5812317.0,21657,200057655,5404389.0,cudaLaunchKernel
+24.5,13246096587,967,13698135.0,12415050.0,10669557,51809027,4329484.1,cudaMemcpy
+11.4,6155444215,457,13469243.4,12250888.0,10676232,45229504,3999988.0,cudaMemset
+5.2,2805877723,439,6391521.0,5817502.0,5118674,23257349,1978831.3,cudaMemcpyAsync
+0.0,10845675,2,5422837.5,5422837.5,1816306,9029369,5100405.8,cuLibraryLoadData
+0.0,1260426,439,2871.1,2705.0,977,44722,2638.5,cuKernelGetName
+0.0,420603,70,6008.6,5386.5,1137,17303,2440.4,cuLibraryGetKernel
+

@@ -1,0 +1,258 @@
+{
+  "schema": "c29-native-windows-field-copy-verification-v1",
+  "all31_exact": true,
+  "fields": 30,
+  "canonical_initial_phi": 1,
+  "source_case_writes": false,
+  "copied_with": "Native PowerShell WSL UNC content copy, independent SHA256",
+  "observations": [
+    {
+      "path": "saved_fields/foundation14_control/0.6001/U",
+      "sha256": "82cf861476af2a740b8eb82fbef51345f108dbaea99a56f77927241862d3f96e",
+      "size_bytes": 61308886,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6001\\U",
+      "source_mtime_utc": "2026-11-02T13:41:31.4445508Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6001/U",
+      "sha256": "4f831291e62fc1cd2fc6b86ca49cd54ea91ba9ec0f39afb36fd76c6120fe80ea",
+      "size_bytes": 61310385,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6001\\U",
+      "source_mtime_utc": "2026-11-02T13:43:07.5245845Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6001/p",
+      "sha256": "b5c5b8afaec0a06a616c0ba94cbf2f5a3a37b7d15be928f519b6f086306a525c",
+      "size_bytes": 19360306,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6001\\p",
+      "source_mtime_utc": "2026-11-02T13:41:32.1405509Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6001/p",
+      "sha256": "c8fa982a5b855cb4b549a97bd2354b843b4d8d3492fcf2a9291f9014b7052622",
+      "size_bytes": 19360241,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6001\\p",
+      "source_mtime_utc": "2026-11-02T13:43:08.2725847Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6001/phi",
+      "sha256": "8bb0dc1beaf2cc53f3c225273aafe52ad83778bc0650cf63375987fae00b02a0",
+      "size_bytes": 65504207,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6001\\phi",
+      "source_mtime_utc": "2026-11-02T13:41:31.9725509Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6001/phi",
+      "sha256": "9a6a3266b4284048d04a1a9c5810d0ba470ae49bd7ac4bea13ea7c04bd4caefd",
+      "size_bytes": 65503450,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6001\\phi",
+      "source_mtime_utc": "2026-11-02T13:43:08.1085847Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6002/U",
+      "sha256": "3f05b1e1360c2d47a7fb02f449b751560dbaee565b4488e2b502c95eaaac5b97",
+      "size_bytes": 61308158,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6002\\U",
+      "source_mtime_utc": "2026-11-02T13:41:37.7885806Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6002/U",
+      "sha256": "1869b1ed3b15593f80865bbc17e5246d619c6995f0a7b64b6a310f5a50602a82",
+      "size_bytes": 61308653,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6002\\U",
+      "source_mtime_utc": "2026-11-02T13:43:12.7365864Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6002/p",
+      "sha256": "37b4f1de3564d81456b8c5c5787e53022bf31373a8b5b0ed80acae0d98d5402c",
+      "size_bytes": 20413984,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6002\\p",
+      "source_mtime_utc": "2026-11-02T13:41:38.4845809Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6002/p",
+      "sha256": "03ada47d6605afda004265ae59c4965c8bc4ec5912175983d84313190970564b",
+      "size_bytes": 20414759,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6002\\p",
+      "source_mtime_utc": "2026-11-02T13:43:13.4165867Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6002/phi",
+      "sha256": "2339b96bfe0f7a288701d0f6f0065f7b4f1c4f9e68d87c229740b492a33dc566",
+      "size_bytes": 65504867,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6002\\phi",
+      "source_mtime_utc": "2026-11-02T13:41:38.3205808Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6002/phi",
+      "sha256": "d3741186179e41ab9341999b50359e2d41b00e06307c37edc6ac84389f6a9444",
+      "size_bytes": 65505638,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6002\\phi",
+      "source_mtime_utc": "2026-11-02T13:43:13.2525866Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6003/U",
+      "sha256": "56a08639ef086b0b2d5c1b563bb566fc0666d0a59ec15667d48476097044a3f4",
+      "size_bytes": 61307683,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6003\\U",
+      "source_mtime_utc": "2026-11-02T13:41:42.2765836Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6003/U",
+      "sha256": "57b4d0ca043c7b4aec9979cc863cc1e04d6f5043504f5309f184b3512d8da893",
+      "size_bytes": 61308039,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6003\\U",
+      "source_mtime_utc": "2026-11-02T13:43:17.3165882Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6003/p",
+      "sha256": "5aac271c19da4031af85658a22372a667c6604e3d46f77f2c52b732b6fecbac6",
+      "size_bytes": 20467138,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6003\\p",
+      "source_mtime_utc": "2026-11-02T13:41:42.9845843Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6003/p",
+      "sha256": "0929304a24e3ab8ce06841aa92c8e7fb0bc800ed4a22bc6175fc769b24eabeed",
+      "size_bytes": 20467538,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6003\\p",
+      "source_mtime_utc": "2026-11-02T13:43:18.0285884Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6003/phi",
+      "sha256": "9e4f544c6425b466bd1f14ecab7f82a004b68ddc86c762241b2c0d6b47d3e1d7",
+      "size_bytes": 65504070,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6003\\phi",
+      "source_mtime_utc": "2026-11-02T13:41:42.8245842Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6003/phi",
+      "sha256": "a2e9dd7452ac5c0ecadc0579ec18a0b79de08d4f2d7f59ce0bf3747092620afd",
+      "size_bytes": 65505435,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6003\\phi",
+      "source_mtime_utc": "2026-11-02T13:43:17.8485884Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6004/U",
+      "sha256": "548d879122051360f3d877b0c6e71e3763c404203ab5d0ac6dc4e626be43b471",
+      "size_bytes": 61308591,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6004\\U",
+      "source_mtime_utc": "2026-11-02T13:41:46.5365879Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6004/U",
+      "sha256": "9433bf83aa2a90510380437288b0f168eb8a9e29556440fc6a39770d3eb12033",
+      "size_bytes": 61306401,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6004\\U",
+      "source_mtime_utc": "2026-11-02T13:43:21.5725899Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6004/p",
+      "sha256": "433fa93bdb20f1d62a2fff5fa1217b11a1001e8ea13921506d005e5a7fb5f0c1",
+      "size_bytes": 20487582,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6004\\p",
+      "source_mtime_utc": "2026-11-02T13:41:47.2285887Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6004/p",
+      "sha256": "40d755c0c5a8f7bca9014cefbf378f7251eb31dc0e2043e7f92934077ed15441",
+      "size_bytes": 20487940,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6004\\p",
+      "source_mtime_utc": "2026-11-02T13:43:23.1245905Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6004/phi",
+      "sha256": "f5d9d9083ceb2d0fa49632ada6f90f2eda5199635f0b9419dd440347e3e72964",
+      "size_bytes": 65505249,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6004\\phi",
+      "source_mtime_utc": "2026-11-02T13:41:47.0645885Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6004/phi",
+      "sha256": "4c7949439a997765d00d9f7bd67bd7b4807cc169c32edcd7489e675881c37fcb",
+      "size_bytes": 65504504,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6004\\phi",
+      "source_mtime_utc": "2026-11-02T13:43:22.5605903Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6005/U",
+      "sha256": "96da08fc683da571b4761dbae327799310924de7f5bc8da5b5e78e71aaacc6c6",
+      "size_bytes": 61307806,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6005\\U",
+      "source_mtime_utc": "2026-11-02T13:41:50.5485860Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6005/U",
+      "sha256": "2710cefc8c1c9edf8e302887fa6354cade57492639d90f3669d7e8ac41b8db78",
+      "size_bytes": 61307700,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6005\\U",
+      "source_mtime_utc": "2026-11-02T13:43:27.3565922Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6005/p",
+      "sha256": "c6bae9c10eaa90b1b052d5b668b31dc527254ae1e29c39fa46a979156837ae64",
+      "size_bytes": 20491688,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6005\\p",
+      "source_mtime_utc": "2026-11-02T13:41:51.2365846Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6005/p",
+      "sha256": "e1da2ab59a111e175c537642afc81669143ac0e6e8cdba6b7b744d3f9b411f60",
+      "size_bytes": 20491622,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6005\\p",
+      "source_mtime_utc": "2026-11-02T13:43:28.0645925Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/foundation14_control/0.6005/phi",
+      "sha256": "a70b18133786bd5ae7e0425f0452db204888e95d72e8557ca7266a74ca07393f",
+      "size_bytes": 65504662,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6005\\phi",
+      "source_mtime_utc": "2026-11-02T13:41:51.0765850Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "saved_fields/native_cpu/0.6005/phi",
+      "sha256": "1d5a66572f95c90bafca5f964b7752e3402c53bab136037a57f6211bda0cfc74",
+      "size_bytes": 65504151,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\native_cpu\\0.6005\\phi",
+      "source_mtime_utc": "2026-11-02T13:43:27.9005925Z",
+      "preserved_bad_copy": null
+    },
+    {
+      "path": "shared_initial/phi",
+      "sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "size_bytes": 65502360,
+      "source": "\\\\wsl.localhost\\NVIDIA-Workbench-ARM64\\opt\\openfoam-workspace\\cases\\native_c29_strict_pressure_20261102\\foundation14_control\\0.6\\phi",
+      "source_mtime_utc": "2026-11-02T13:26:13.0325876Z",
+      "preserved_bad_copy": null
+    }
+  ]
+}

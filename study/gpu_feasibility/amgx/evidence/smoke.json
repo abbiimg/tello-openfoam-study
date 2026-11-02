@@ -1,0 +1,123 @@
+{
+  "kind": "Actual manufactured 3D Poisson GPU AmgX installation smoke; not CFD/performance comparison",
+  "source_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "installed_library": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxsh.so",
+  "library_sha256": "28385b730dccb1f9aabbd9b0caf37ecd478720889398d0df8c65e5d24ce7ef58",
+  "returncode": 0,
+  "details": {
+    "mode": "dDDI",
+    "device": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)",
+    "compute_major": 12,
+    "compute_minor": 1,
+    "managed_memory": 1,
+    "concurrent_managed_access": 0,
+    "async_memory_pools": 1,
+    "rows": 32768,
+    "nnz": 223232,
+    "iterations": 26,
+    "solve_status": 0,
+    "relative_residual_l2": 7.264737283453275e-11,
+    "max_solution_error": 5.863420859952839e-12,
+    "rhs_norm_l2": 1.8209206083135865,
+    "cuda_kernel_launches_during_solve": 1316,
+    "launch_audit_loaded": true,
+    "launch_count_semantics": "successful intercepted launch API calls, not unique kernels",
+    "numerical_pass": true
+  },
+  "steps": [
+    {
+      "name": "archive",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+        "--build",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/build",
+        "--target",
+        "amgx",
+        "--parallel",
+        "1",
+        "--",
+        "-Otarget"
+      ],
+      "returncode": 0,
+      "elapsed_s": 0.717996374994982,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/archive.log"
+    },
+    {
+      "name": "install",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+        "--install",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/build"
+      ],
+      "returncode": 0,
+      "elapsed_s": 0.008143921993905678,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/install.log"
+    },
+    {
+      "name": "compile-launch-audit",
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-shared",
+        "-fPIC",
+        "-I/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/include",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/amgx_install/cuda_launch_audit.cpp",
+        "-ldl",
+        "-o",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxLaunchAudit.so"
+      ],
+      "returncode": 0,
+      "elapsed_s": 0.26595302700297907,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/compile-launch-audit.log"
+    },
+    {
+      "name": "compile-poisson",
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-I/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/include",
+        "-I/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/include",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/amgx_install/poisson_smoke.cpp",
+        "-L/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib",
+        "-lamgxsh",
+        "-L/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/lib",
+        "-lcudart",
+        "-ldl",
+        "-Wl,-rpath,/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib:/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/lib:/usr/lib/wsl/lib",
+        "-o",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/bin/amgx_poisson_smoke"
+      ],
+      "returncode": 0,
+      "elapsed_s": 1.2704079719842412,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/compile-poisson.log"
+    },
+    {
+      "name": "library-linkage",
+      "command": [
+        "ldd",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxsh.so"
+      ],
+      "returncode": 0,
+      "elapsed_s": 0.01690764699014835,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/library-linkage.log"
+    },
+    {
+      "name": "poisson-smoke",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/bin/amgx_poisson_smoke",
+        "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/poisson_config.json"
+      ],
+      "returncode": 0,
+      "elapsed_s": 3.634205659996951,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/logs/poisson-smoke.log"
+    }
+  ],
+  "mpi_enabled": false,
+  "max_build_jobs": 1,
+  "nice_level": 15,
+  "no_production_changes": true,
+  "openfoam_adapter_tested": false,
+  "passed": true
+}

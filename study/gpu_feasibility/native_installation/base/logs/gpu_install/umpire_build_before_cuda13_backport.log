@@ -1,0 +1,75 @@
+[  0%] Built target umpire_tpl_CLI11
+[  1%] Building C object src/tpl/umpire/judy/CMakeFiles/umpire_tpl_judy.dir/judy.c.o
+[  1%] Built target umpire_tpl_json
+[  3%] Building CXX object src/tpl/umpire/camp/CMakeFiles/camp.dir/src/errors.cpp.o
+[  4%] Building CXX object src/tpl/umpire/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  4%] Built target umpire_tpl_judy
+[  6%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/AlignedAllocator.cpp.o
+[  8%] Linking CXX static library ../../../../lib/libcamp.a
+[  8%] Built target camp
+[  9%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/AllocationMap.cpp.o
+[ 11%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/AllocationAdvisor.cpp.o
+[ 13%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/AllocationPrefetcher.cpp.o
+[ 14%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/AllocationStrategy.cpp.o
+[ 16%] Building CXX object src/tpl/umpire/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[ 18%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/DynamicPoolList.cpp.o
+[ 19%] Linking CXX static library ../../../../lib/libfmt.a
+[ 19%] Built target fmt
+[ 21%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/HostResourceFactory.cpp.o
+[ 22%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/FixedMallocPool.cpp.o
+[ 24%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/io.cpp.o
+[ 26%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/MemoryResource.cpp.o
+[ 27%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/MemoryResourceRegistry.cpp.o
+[ 29%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/FixedPool.cpp.o
+[ 31%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/Logger.cpp.o
+[ 32%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/MPI.cpp.o
+[ 34%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/NullMemoryResource.cpp.o
+[ 36%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/MixedPool.cpp.o
+[ 37%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/OutputBuffer.cpp.o
+[ 39%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/mixins/AlignedAllocation.cpp.o
+[ 40%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/allocation_statistics.cpp.o
+[ 42%] Building CXX object src/umpire/util/CMakeFiles/umpire_util.dir/detect_vendor.cpp.o
+[ 42%] Built target umpire_util
+[ 44%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/mixins/AllocateNull.cpp.o
+[ 45%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/mixins/Inspector.cpp.o
+[ 47%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/MonotonicAllocationStrategy.cpp.o
+[ 49%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/NullMemoryResourceFactory.cpp.o
+[ 50%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/FileMemoryResource.cpp.o
+[ 52%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/FileMemoryResourceFactory.cpp.o
+[ 54%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/CudaDeviceMemoryResource.cpp.o
+[ 55%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/NamedAllocationStrategy.cpp.o
+[ 57%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/NamingShim.cpp.o
+[ 59%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/QuickPool.cpp.o
+[ 60%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/ResourceAwarePool.cpp.o
+[ 62%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/CudaDeviceResourceFactory.cpp.o
+[ 63%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/CudaPinnedMemoryResourceFactory.cpp.o
+[ 65%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/SizeLimiter.cpp.o
+[ 67%] Building CXX object src/umpire/resource/CMakeFiles/umpire_resource.dir/CudaUnifiedMemoryResourceFactory.cpp.o
+[ 68%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/SlotPool.cpp.o
+[ 70%] Building CXX object src/umpire/strategy/CMakeFiles/umpire_strategy.dir/ThreadSafeAllocator.cpp.o
+[ 70%] Built target umpire_alloc
+[ 70%] Built target umpire_resource
+[ 72%] Building CXX object src/umpire/event/CMakeFiles/umpire_event.dir/event_store_recorder.cpp.o
+[ 73%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/GenericReallocateOperation.cpp.o
+[ 75%] Building CXX object src/umpire/event/CMakeFiles/umpire_event.dir/json_file_store.cpp.o
+[ 75%] Built target umpire_strategy
+[ 77%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/HostCopyOperation.cpp.o
+[ 78%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/HostMemsetOperation.cpp.o
+[ 80%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/HostReallocateOperation.cpp.o
+[ 81%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/MemoryOperation.cpp.o
+[ 83%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/MemoryOperationRegistry.cpp.o
+[ 85%] Building CXX object src/umpire/op/CMakeFiles/umpire_op.dir/CudaAdviseOperation.cpp.o
+/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/umpire-2025.03.0/src/umpire/op/CudaAdviseOperation.cpp: In member function ‘virtual void umpire::op::CudaAdviseOperation::apply(void*, umpire::util::AllocationRecord*, int, std::size_t)’:
+/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/umpire-2025.03.0/src/umpire/op/CudaAdviseOperation.cpp:24:66: error: could not convert ‘device’ from ‘int’ to ‘cudaMemLocation’
+   24 |   cudaError_t error = ::cudaMemAdvise(src_ptr, length, m_advice, device);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  int
+gmake[2]: *** [src/umpire/op/CMakeFiles/umpire_op.dir/build.make:163: src/umpire/op/CMakeFiles/umpire_op.dir/CudaAdviseOperation.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 86%] Building CXX object src/umpire/event/CMakeFiles/umpire_event.dir/recorder_factory.cpp.o
+[ 88%] Building CXX object src/umpire/event/CMakeFiles/umpire_event.dir/quest_database.cpp.o
+gmake[1]: *** [CMakeFiles/Makefile2:806: src/umpire/op/CMakeFiles/umpire_op.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 88%] Built target umpire_event
+gmake: *** [Makefile:136: all] Error 2

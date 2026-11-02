@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "actual_child_pid": 69516,
+  "actual_waited_exit_code": 0,
+  "started_unix_ns": 1793636981003028000,
+  "ended_unix_ns": 1793637028807258100,
+  "elapsed_seconds": 47.8042306,
+  "before_after_identical": true,
+  "helper_sha256": "a91144e5cb243c4bf17339501f29dc43609906538156ac21937ec42854789e1d",
+  "manifest_sha256": "67b8c09c37c5ed1939152c4f5b7732a377e94bddb8ae007cee10fcd2873f4e79",
+  "archive_sha256_verified_by_child": "18a7676858d22f2ab78e78cd2f8e35c9943938aa948d905fad4afc7a6a001100",
+  "selected_members_verified": 90,
+  "selected_bytes": 2641001310,
+  "field_restore": false,
+  "export_modified": false,
+  "solver_run": false,
+  "runtime_build": false,
+  "job_directory": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\source_export_external_inputs\\real_readonly_20261102T162940Z_f869eb72bd",
+  "child_stdout": {
+    "sha256": "470526b44ed2dac98016f9c383c1b9bac5f3b857c1ef57359c817120f867ec2a",
+    "size_bytes": 298
+  },
+  "child_stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  }
+}

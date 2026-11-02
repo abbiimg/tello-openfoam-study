@@ -1,0 +1,14 @@
+{
+  "kind": "NVTX annotation only for isolating CUDA launch API events in actual CFD time loops",
+  "completed_utc": "2026-11-02T08:26:06.473505+00:00",
+  "openfoam_pin": "b239fea6e48922730477e218c44e8b6a8ab17ade",
+  "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+  "original_sha256": "f4fe952aa971ff8e25fa0cf87ee3fbd53f6aba022f1a6e1447ea703f17e3972e",
+  "annotated_sha256": "29d38d8ad11eb0f388261673ec976fd72524c3086fa8ee37b5669712eec77d12",
+  "patch": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/ico_time_loop_annotation.patch",
+  "patch_sha256": "c0149b2a45317195bb0b7a61375f0087923e667120ab875242683480415b7d82",
+  "range": "NATIVE_STDPAR_CFD_TIME_LOOPS",
+  "scope": "Starts after mesh/field initialization and ends after the last runTime.loop iteration; no equations, solver controls or case inputs changed.",
+  "header": "NVTX3 from pinned private NVHPC26.9 CUDA13.3 SDK",
+  "production_change": false
+}

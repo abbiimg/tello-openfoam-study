@@ -1,0 +1,269 @@
+{
+  "audited_utc": "2026-11-02T11:56:50.164153+00:00",
+  "passed": true,
+  "actual_child": {
+    "pid": 376385,
+    "uid": 999,
+    "birth_start_ticks": 16055770,
+    "state_at_receipt": "R",
+    "cwd": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_gpu",
+    "exe": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/icoFoamStrictV2"
+  },
+  "actual_binary_sha256": "600e691e9afc9d024d1388591b4d188f892d71c33119105568c397903ae6c89f",
+  "range": {
+    "start": 13929079,
+    "end": 111439351,
+    "eventType": 59,
+    "rangeId": null,
+    "category": null,
+    "color": null,
+    "text": "STRICT_CAVITY_V2_FIRST_COMPLETE_STEP",
+    "globalTid": 287789669531201,
+    "endGlobalTid": null,
+    "textId": null,
+    "domainId": 0,
+    "uint64Value": null,
+    "int64Value": null,
+    "doubleValue": null,
+    "uint32Value": null,
+    "int32Value": null,
+    "floatValue": null,
+    "jsonTextId": null,
+    "jsonText": null,
+    "binaryData": null,
+    "eventId": 1464
+  },
+  "process_table_row": {
+    "globalPid": 287789669154816,
+    "pid": 376385,
+    "name": "icoFoamStrictV2"
+  },
+  "decoded_PID": 376385,
+  "decoded_TID": 376385,
+  "mapping_reference": "https://docs.nvidia.com/nsight-systems/AnalysisGuide/",
+  "successful_launch_api_calls": 12,
+  "failed_launch_or_sync_calls": 0,
+  "last_launch_end_ns": 104371893,
+  "post_last_launch_completion": [
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 109933351,
+      "end": 111437639,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaDeviceSynchronize_v3020"
+    }
+  ],
+  "successful_sync_api_calls": 13,
+  "launch_rows": [
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 15865575,
+      "end": 21114441,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 26509163,
+      "end": 30455148,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 34219133,
+      "end": 37394990,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 41889344,
+      "end": 46385697,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 50478579,
+      "end": 53879508,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 57205157,
+      "end": 61208694,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 64969944,
+      "end": 68080265,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 71864010,
+      "end": 75262651,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 78817564,
+      "end": 81900733,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 86061087,
+      "end": 89173824,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 93044337,
+      "end": 96554050,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 101065300,
+      "end": 104371893,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaLaunchKernelExC_v11060"
+    }
+  ],
+  "sync_rows": [
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 21120249,
+      "end": 26482139,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 30459260,
+      "end": 34209869,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 37398462,
+      "end": 40656912,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 46399473,
+      "end": 50433555,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 53882772,
+      "end": 57188421,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 61224806,
+      "end": 64819432,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 68083417,
+      "end": 71432810,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 75267163,
+      "end": 78794284,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 81903549,
+      "end": 86049215,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 89176416,
+      "end": 92220513,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 96558354,
+      "end": 99895475,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 104380997,
+      "end": 107626438,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaStreamSynchronize_v3020"
+    },
+    {
+      "table": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "start": 109933351,
+      "end": 111437639,
+      "globalTid": 287789669531201,
+      "return_value": 0,
+      "name": "cudaDeviceSynchronize_v3020"
+    }
+  ],
+  "launches_captured_after_window": [],
+  "capture_start_message_observed": true,
+  "capture_end_message_observed": true,
+  "kernel_activity_tables": {},
+  "report_sha256": "29f735e992c5473be2339df0f78430cc9805af2628ccc3a804718f39cea1b74d",
+  "count_scope": "API calls, not distinct GPU kernels; runtime and driver layers may both be counted",
+  "speedup_measured": false
+}

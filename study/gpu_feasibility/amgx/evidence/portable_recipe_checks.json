@@ -1,0 +1,26 @@
+{
+  "syntax_checked": [
+    "recipes/build_adapter.sh",
+    "recipes/build_private.sh",
+    "recipes/restore_pilots.py",
+    "recipes/run_poisson.sh",
+    "recipes/test_restore_paths.py",
+    "recorded-recipes/analyze_pilots.py",
+    "recorded-recipes/analyze_rotor_pilot.py",
+    "recorded-recipes/prepare_pilots.py",
+    "recorded-recipes/prepare_rotor_pilot.py",
+    "recorded-recipes/prepare_rotor_pilot.sh"
+  ],
+  "seed_verify": {
+    "verified": true,
+    "archive_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+    "solver_launched": false
+  },
+  "path_fixture_report": "path_fixture_checks.json",
+  "path_fixture_tests_passed": 7,
+  "unsafe_catalogue_names_rejected": 48,
+  "external_seed_files_unchanged": true,
+  "portable_new_host_build_executed": false,
+  "portable_restore_creation_executed": false,
+  "no_solver_launched": true
+}

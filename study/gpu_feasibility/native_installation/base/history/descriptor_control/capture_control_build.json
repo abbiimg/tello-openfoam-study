@@ -1,0 +1,10 @@
+{
+  "source_sha256": "befdbe7fd5fe62c283064220eb5449f33f58065f2c9b013fc49037e78c2e939c",
+  "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/diagnostics/descriptor_capture_20261102/descriptor_capture_control.C",
+  "before_any_control_run": true,
+  "max_compile_jobs": 1,
+  "nice": 15,
+  "completed_utc": "2026-11-02T12:42:35.673805+00:00",
+  "return_code": 2,
+  "log_sha256": "332e55a248fc97a14c661c5738a436bd76cb482fd3f2da74c8fe31a8c169ba95"
+}

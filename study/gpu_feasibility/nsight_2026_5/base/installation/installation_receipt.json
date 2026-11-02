@@ -1,0 +1,30 @@
+{
+  "installed_utc": "2026-11-02T14:41:30.568913+00:00",
+  "source_page": "https://developer.nvidia.com/nsight-systems/get-started",
+  "canonical_download_url": "https://developer.nvidia.com/downloads/assets/tools/secure/nsight-systems/2026_5/nsight-systems-cli-2026.5.1_2026.5.1.161-1_arm64.deb",
+  "final_download_url_without_query": "https://developer.download.nvidia.com/assets/tools/secure/nsight-systems/2026_5/nsight-systems-cli-2026.5.1_2026.5.1.161-1_arm64.deb",
+  "archive_sha256": "087c08b5ddf3ed6f913748f8206d6bbdc225f2aa275ff33af4c487e8b319c8ab",
+  "archive_bytes": 208229554,
+  "checksum_origin": "SHA256 of exact official-HTTPS download; no separate vendor checksum was supplied by the download page",
+  "package_metadata": {
+    "Package": "nsight-systems-cli-2026.5.1",
+    "Version": "2026.5.1.161-265138896106v0",
+    "Architecture": "arm64",
+    "Depends": "libc6, libglib2.0-0"
+  },
+  "extraction_root": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted",
+  "nsys_candidates": [
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted/opt/nvidia/nsight-systems-cli/2026.5.1/bin/nsys",
+      "sha256": "dbe02661b00efbfb4c9c3cd3c2d8df6fecd6e80ac794305892e233e0d712a527"
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted/opt/nvidia/nsight-systems-cli/2026.5.1/target-linux-sbsa-armv8/nsys",
+      "sha256": "dbe02661b00efbfb4c9c3cd3c2d8df6fecd6e80ac794305892e233e0d712a527"
+    }
+  ],
+  "package_scripts_executed": false,
+  "global_or_existing_SDK_files_changed": false,
+  "GPU_or_CFD_executed": false,
+  "default_backend_changed": false
+}

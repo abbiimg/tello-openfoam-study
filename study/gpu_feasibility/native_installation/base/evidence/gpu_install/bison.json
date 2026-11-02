@@ -1,0 +1,16 @@
+{
+  "observed_at_utc": "2026-11-02T06:37:56.870061+00:00",
+  "name": "bison",
+  "version": "2:3.8.2+dfsg-1ubuntu0.24.04.1",
+  "source_url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/b/bison/bison_3.8.2+dfsg-1ubuntu0.24.04.1_arm64.deb",
+  "archive": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/bison_3.8.2+dfsg-1ubuntu0.24.04.1_arm64.deb",
+  "bytes": 740250,
+  "sha256": "3e78faef624171c0e6a04005c5b999fdfa5c2e56da385ade9c9d71966655eae6",
+  "expected_sha256": "3e78faef624171c0e6a04005c5b999fdfa5c2e56da385ade9c9d71966655eae6",
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/bison",
+  "method": "dpkg-deb -x only; no dpkg/apt installation or maintainer scripts",
+  "version_output": "bison (GNU Bison) 3.8.2\nWritten by Robert Corbett and Richard Stallman.\n\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "runtime_data_environment": {
+    "BISON_PKGDATADIR": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/bison/usr/share/bison"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "recorded_utc": "2026-11-02T05:34:30Z",
+  "recorded_utc": "2026-11-02T07:49:55Z",
   "policy": {
     "max_actual_solver_ranks": 16,
     "max_active_jobs": 16,
@@ -83,9 +83,9 @@
     "physics_inputs_changed_by_scheduling": false,
     "cfds_cancelled": [],
     "current_sample": {
-      "utc": "2026-11-02T05:34:29Z",
-      "complete": 80,
-      "cpu_active_ranks": 4,
+      "utc": "2026-11-02T07:49:03Z",
+      "complete": 84,
+      "cpu_active_ranks": 0,
       "suspended_cases": 0,
       "authorized": 99
     },

@@ -1,0 +1,4 @@
+Generating SQLite file /opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.sqlite from /opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.nsys-rep
+Processing [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.sqlite] with [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/target-linux-sbsa-armv8/reports/cuda_gpu_kern_sum.py]... 
+SKIPPED: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.sqlite does not contain CUDA kernel data.
+

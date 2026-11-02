@@ -1,0 +1,24 @@
+{
+  "schema": "c29-plain-diagnostic-helper-freeze-v2",
+  "status": "SOURCE_ONLY_PENDING_ROOT_AND_INDEPENDENT_REVIEW_NO_RUN",
+  "files": {
+    "README.md": "331d07a35baaa28457fb04b052adb144cc7e6bad0add137d49d69f26904e8347",
+    "from_reviewed_V3_child.patch": "44fc97986d1e18667f95b1523f653dcd74f204d4359e7d4092a5ba27c1bdbde0",
+    "owned_cleanup.py": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+    "plain_common.py": "6571e63cad5ad02d6f555ed298731939b253fe30e39fbf10ca9ddf81cabc3f2c",
+    "protocol.json": "e6e58d9e37514f0dc3b3f76bfaaf6a839612faef2fde095f3c38ebf3d24c6395",
+    "run_plain_gpu_once.py": "38e3690aa2b7c766f24700f3f097024b1a06a8c1893e506c2c4eedbda6ac57ba"
+  },
+  "base_V1_manifest_sha256": "4f2f990ab49d230fd1b2e261b3bad6135da61179cb5dda1e45e1cab3b54fb09a",
+  "changed_from_V1": [
+    "run_plain_gpu_once.py"
+  ],
+  "protocol_sha256": "e6e58d9e37514f0dc3b3f76bfaaf6a839612faef2fde095f3c38ebf3d24c6395",
+  "diff": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/plain_gpu_diagnostic_v2_final_save_gate.patch",
+    "sha256": "ce7edc057ff20f7f56cada491422fad4cbd46c5cdbbfcf12ddf65e10fd2cc836"
+  },
+  "owned_cleanup_unchanged": true,
+  "AST_parse_only_no_import_or_execution": true,
+  "case_receipt_build_GPU_GDB_action": false
+}

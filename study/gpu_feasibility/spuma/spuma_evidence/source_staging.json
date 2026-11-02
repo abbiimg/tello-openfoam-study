@@ -1,0 +1,50 @@
+{
+  "kind": "private_pinned_SPUMA_and_Umpire_source_staging",
+  "state": "pinned_sources_staged_no_build",
+  "started_utc": "2026-11-02T07:53:04.038699+00:00",
+  "sources": [
+    {
+      "name": "SPUMA",
+      "url": "https://gitlab.hpc.cineca.it/exafoam/spuma.git",
+      "commit_sha": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+      "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/source",
+      "history_depth": 1,
+      "tracked_worktree_clean": true,
+      "bytes": 213330946,
+      "file_count": 26151,
+      "submodules_fetched": false,
+      "build_started": false,
+      "gitmodules": "[submodule \"cfmesh\"]\n\tpath = plugins/cfmesh\n\turl = https://gitlab.com/openfoam/community/cfmesh.git\n[submodule \"avalanche\"]\n\tpath = plugins/avalanche\n\turl = https://gitlab.com/openfoam/community/avalanche.git\n[submodule \"adios\"]\n\tpath = modules/adios\n\turl = https://gitlab.com/openfoam/modules/adiosfoam.git\n[submodule \"OpenQBMM\"]\n\tpath = modules/OpenQBMM\n\turl = https://github.com/OpenQBMM/OpenQBMM.git\n\tbranch = openfoam.com\n[submodule \"visualization\"]\n\tpath = modules/visualization\n\turl = https://gitlab.com/openfoam/modules/visualization.git\n[submodule \"external-solver\"]\n\tpath = modules/external-solver\n\turl = https://gitlab.com/openfoam/modules/external-solver.git\n[submodule \"turbulence-community\"]\n\tpath = plugins/turbulence-community\n\turl = https://gitlab.com/openfoam/community/tc-turbulence/turbulence-community.git\n[submodule \"plugins/data-community\"]\n\tpath = plugins/data-community\n\turl = https://gitlab.com/openfoam/community/sig-data-modelling/data-community.git\n[submodule \"plugins/research\"]\n\tpath = plugins/research\n\turl = https://gitlab.com/openfoam/community/research.git\n",
+      "actual_project_version": "v2512",
+      "arm64_nvidia_rules_present": true
+    },
+    {
+      "name": "Umpire",
+      "url": "https://github.com/LLNL/Umpire.git",
+      "commit_sha": "1ed0669c57f041baa1f1070693991c3a7a43e7ee",
+      "path": "/opt/openfoam-workspace/gpu-feasibility/spuma/dependencies/Umpire-v2025.03.0",
+      "history_depth": 1,
+      "tracked_worktree_clean": true,
+      "bytes": 9355277,
+      "file_count": 602,
+      "submodules_fetched": false,
+      "build_started": false,
+      "gitmodules": "[submodule \"blt\"]\n\tpath = blt\n\turl = https://github.com/LLNL/blt.git\n[submodule \"src/tpl/umpire/camp\"]\n\tpath = src/tpl/umpire/camp\n\turl = https://github.com/LLNL/camp.git\n[submodule \"scripts/radiuss-spack-configs\"]\n\tpath = scripts/radiuss-spack-configs\n\turl = https://github.com/LLNL/radiuss-spack-configs\n[submodule \"scripts/uberenv\"]\n\tpath = scripts/uberenv\n\turl = https://github.com/LLNL/uberenv\n[submodule \"src/tpl/umpire/fmt\"]\n\tpath = src/tpl/umpire/fmt\n\turl = https://github.com/fmtlib/fmt\n"
+    }
+  ],
+  "source_root": "/opt/openfoam-workspace/gpu-feasibility/spuma",
+  "submodules_fetched": false,
+  "compiler_invoked": false,
+  "build_started": false,
+  "install_started": false,
+  "tutorial_or_CFD_started": false,
+  "shared_install_changed": false,
+  "production_inputs_results_or_writers_changed": false,
+  "index_pack_threads": 1,
+  "network_fetch_timeout_seconds": 180,
+  "git_history_depth": 1,
+  "updated_utc": "2026-11-02T07:53:24.565200+00:00",
+  "active_source": null,
+  "finished_utc": "2026-11-02T07:53:24.565196+00:00",
+  "next_gate": "Wait for root to provide passing shared NVHPC/Umpire gates and an explicit build-budget release; do not invoke Allwmake or CMake."
+}

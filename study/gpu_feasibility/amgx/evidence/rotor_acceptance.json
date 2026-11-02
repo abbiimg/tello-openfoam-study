@@ -1,0 +1,18 @@
+{
+  "kind": "Functional five-step rotor comparison criteria registered before launch",
+  "start_time_s": 0.6,
+  "expected_steps": 5,
+  "pressure_solves_per_step": 2,
+  "native_pressure_abs_tol": 1e-07,
+  "p_first_rel_tol": 0.05,
+  "p_final_rel_tol": 0,
+  "max_volume_weighted_U_relative_L2": 0.002,
+  "max_volume_weighted_p_relative_L2": 0.002,
+  "max_internal_face_phi_relative_L2": 0.002,
+  "max_mean_lift_relative_difference": 0.001,
+  "max_mean_inferred_electrical_relative_difference": 0.001,
+  "continuity": "Report all corrector metrics; flag any deterioration over native plus 1e-12. Final corrector absolute local/global must remain <= 1e-7 for functional gate.",
+  "means": "Trapezoidal time-weighted mean over common first-through-last recorded actuator samples; controller reset is identical in both.",
+  "actual_device": "All nontrivial pressure solves must report positive intercepted successful CUDA launch calls plus checked synchronization and independently recomputed native residual.",
+  "limits": "Five steps prove bounded compatibility only; no steady performance, production adoption, full-field offload or scientific rotor validation."
+}

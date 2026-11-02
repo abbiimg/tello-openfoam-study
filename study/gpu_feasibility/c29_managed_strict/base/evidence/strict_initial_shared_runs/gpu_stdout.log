@@ -1,0 +1,90 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict -case /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu -initialFieldsOnly
+Date   : Nov 02 2026
+Time   : 05:31:25
+Host   : abby-spark
+PID    : 390245
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : managed (size=64MB, incr=64MB)
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+C29_EXPERIMENTAL_UNVALIDATED phase=initial_fields_only backend=gpu case="/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu" id="c29_strict_shared_initial_gpu_20261102_a" inputSnapshot="debe9a0c207d0f855b2cffbe8e48a7665bd69ab5826f52e3d85bc5e929da42cf" launchReceipt="2fdd12b0b6b28705795d35c0fee63f4054c5fdb79847bf996d602f7ac8971538" candidate="562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7" binary="7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185" libraries="c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff"; permission/input audit are NOT runtime acceptance
+C29_DEVICE device=0 managed=1 concurrentManagedAccess=0
+Create mesh for time = 0.6
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+C29_OWNERSHIP name=p kind=GeometricField_descriptor address=0x21da1b080 type=3
+C29_OWNERSHIP name=p.internal kind=descriptor address=0x21da1b180 type=3
+C29_OWNERSHIP name=p.internal kind=data address=0x232fee2d0 type=3
+C29_OWNERSHIP name=p.boundary kind=container_descriptor address=0x21da1b1f8 type=3
+C29_OWNERSHIP name=p.patch0 kind=descriptor address=0x21da1d800 type=3
+C29_OWNERSHIP name=p.patch0 kind=data address=0x2336f8150 type=3
+Reading field U
+
+C29_OWNERSHIP name=U kind=GeometricField_descriptor address=0x21da1bb00 type=3
+C29_OWNERSHIP name=U.internal kind=descriptor address=0x21da1bc00 type=3
+C29_OWNERSHIP name=U.internal kind=data address=0x23551db80 type=3
+C29_OWNERSHIP name=U.boundary kind=container_descriptor address=0x21da1bc78 type=3
+C29_OWNERSHIP name=U.patch0 kind=descriptor address=0x21da1ba00 type=3
+C29_OWNERSHIP name=U.patch0 kind=data address=0x2338464d0 type=3
+Reading/calculating face flux field phi
+
+C29_OWNERSHIP name=phi kind=GeometricField_descriptor address=0x21da1d000 type=3
+C29_OWNERSHIP name=phi.internal kind=descriptor address=0x21da1d100 type=3
+C29_OWNERSHIP name=phi.internal kind=data address=0x244800000 type=3
+C29_OWNERSHIP name=phi.boundary kind=container_descriptor address=0x21da1d178 type=3
+C29_OWNERSHIP name=phi.patch0 kind=descriptor address=0x21da1ca80 type=3
+C29_OWNERSHIP name=phi.patch0 kind=data address=0x2444b20c0 type=3
+C29_OWNERSHIP name=nuEff kind=GeometricField_descriptor address=0x21da1ee00 type=3
+C29_OWNERSHIP name=nuEff.internal kind=descriptor address=0x21da1ef00 type=3
+C29_OWNERSHIP name=nuEff.internal kind=data address=0x237145580 type=3
+C29_OWNERSHIP name=nuEff.boundary kind=container_descriptor address=0x21da1ef78 type=3
+C29_OWNERSHIP name=nuEff.patch0 kind=descriptor address=0x21da1bd80 type=3
+C29_OWNERSHIP name=nuEff.patch0 kind=data address=0x244521740 type=3
+C29_SCOPE static serial constant-nu Euler; hybrid host source; explicit UFinal; native branch identity differs from Foundation14
+C29_LOCAL_CONSTANTS small=2.2204460492503131e-16 great=4503599627370496
+C29_SOURCE whole=29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd body=ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7
+C29_OWNERSHIP name=initialU kind=GeometricField_descriptor address=0x21da1e780 type=3
+C29_OWNERSHIP name=initialU.internal kind=descriptor address=0x21da1e880 type=3
+C29_OWNERSHIP name=initialU.internal kind=data address=0x245ce6040 type=3
+C29_OWNERSHIP name=initialU.boundary kind=container_descriptor address=0x21da1e8f8 type=3
+C29_OWNERSHIP name=initialU.patch0 kind=descriptor address=0x21da1e400 type=3
+C29_OWNERSHIP name=initialU.patch0 kind=data address=0x233994850 type=3
+C29_OWNERSHIP name=initialP kind=GeometricField_descriptor address=0x21da1da80 type=3
+C29_OWNERSHIP name=initialP.internal kind=descriptor address=0x21da1db80 type=3
+C29_OWNERSHIP name=initialP.internal kind=data address=0x242fcc080 type=3
+C29_OWNERSHIP name=initialP.boundary kind=container_descriptor address=0x21da1dbf8 type=3
+C29_OWNERSHIP name=initialP.patch0 kind=descriptor address=0x21da1e000 type=3
+C29_OWNERSHIP name=initialP.patch0 kind=data address=0x232f6b5d0 type=3
+C29_OWNERSHIP name=initialPhi kind=GeometricField_descriptor address=0x21da1f600 type=3
+C29_OWNERSHIP name=initialPhi.internal kind=descriptor address=0x21da1f700 type=3
+C29_OWNERSHIP name=initialPhi.internal kind=data address=0x247203bc0 type=3
+C29_OWNERSHIP name=initialPhi.boundary kind=container_descriptor address=0x21da1f778 type=3
+C29_OWNERSHIP name=initialPhi.patch0 kind=descriptor address=0x21da1c880 type=3
+C29_OWNERSHIP name=initialPhi.patch0 kind=data address=0x2486e9c00 type=3
+C29 initial fields only: no C29 update, no timestep

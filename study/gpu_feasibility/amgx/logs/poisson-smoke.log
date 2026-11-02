@@ -1,0 +1,42 @@
+AMGX version 2.5.0
+Built on Nov  1 2026, 23:31:52
+Compiled with CUDA Runtime 13.0, using CUDA driver 13.4
+The AMGX_initialize_plugins API call is deprecated and can be safely removed.
+           iter      Mem Usage (GB)       residual           rate
+         ----------------------------------------------------------------------
+            Ini             0.65625   1.820921e+00
+              0             0.65625   4.858966e+00         2.6684
+              1              0.6562   1.676590e+00         0.3451
+              2              0.6562   6.754260e-01         0.4029
+              3              0.6562   2.473513e-01         0.3662
+              4              0.6562   9.193353e-02         0.3717
+              5              0.6562   2.865101e-02         0.3116
+              6              0.6562   8.915047e-03         0.3112
+              7              0.6562   3.868553e-03         0.4339
+              8              0.6562   1.659747e-03         0.4290
+              9              0.6562   6.176380e-04         0.3721
+             10              0.6562   2.202592e-04         0.3566
+             11              0.6562   9.266021e-05         0.4207
+             12              0.6562   3.698965e-05         0.3992
+             13              0.6562   1.217759e-05         0.3292
+             14              0.6562   4.558270e-06         0.3743
+             15              0.6562   1.813849e-06         0.3979
+             16              0.6562   7.811486e-07         0.4307
+             17              0.6562   3.228103e-07         0.4133
+             18              0.6562   1.238715e-07         0.3837
+             19              0.6562   4.746526e-08         0.3832
+             20              0.6562   1.981364e-08         0.4174
+             21              0.6562   7.202900e-09         0.3635
+             22              0.6562   2.355934e-09         0.3271
+             23              0.6562   8.543838e-10         0.3627
+             24              0.6562   3.589754e-10         0.4202
+             25              0.6562   1.322852e-10         0.3685
+         ----------------------------------------------------------------------
+         Total Iterations: 26
+         Avg Convergence Rate: 		         0.4074
+         Final Residual: 		   1.322852e-10
+         Total Reduction in Residual: 	   7.264742e-11
+         Maximum Memory Usage: 		          0.656 GB
+         ----------------------------------------------------------------------
+AMGX_SMOKE_JSON {"mode":"dDDI","device":"NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)","compute_major":12,"compute_minor":1,"managed_memory":1,"concurrent_managed_access":0,"async_memory_pools":1,"rows":32768,"nnz":223232,"iterations":26,"solve_status":0,"relative_residual_l2":7.2647372834532747e-11,"max_solution_error":5.8634208599528392e-12,"rhs_norm_l2":1.8209206083135865,"cuda_kernel_launches_during_solve":1316,"launch_audit_loaded":true,"launch_count_semantics":"successful intercepted launch API calls, not unique kernels","numerical_pass":true}
+The AMGX_finalize_plugins API call is deprecated and can be safely removed.

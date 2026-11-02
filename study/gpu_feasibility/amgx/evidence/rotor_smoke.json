@@ -1,0 +1,516 @@
+{
+  "kind": "Actual five-step C29 rotor AmgX/Foundation14 compatibility check; no performance inference",
+  "passed": true,
+  "checks": {
+    "rotor-native_exit_zero": true,
+    "rotor-native_end": true,
+    "rotor-native_no_fatal": true,
+    "rotor-native_no_actuator_recompile": true,
+    "rotor-native_five_steps": true,
+    "rotor-native_fields_saved": true,
+    "rotor-native_bounded_final_continuity": true,
+    "rotor-native_all_frozen_inputs_unchanged": true,
+    "rotor-amgx_exit_zero": true,
+    "rotor-amgx_end": true,
+    "rotor-amgx_no_fatal": true,
+    "rotor-amgx_no_actuator_recompile": true,
+    "rotor-amgx_five_steps": true,
+    "rotor-amgx_fields_saved": true,
+    "rotor-amgx_bounded_final_continuity": true,
+    "rotor-amgx_all_frozen_inputs_unchanged": true,
+    "same_physical_time_steps": true,
+    "U_internal_field_agreement": true,
+    "p_internal_field_agreement": true,
+    "same_pressure_gauge": true,
+    "phi_internal_field_agreement": true,
+    "phi_boundary_field_agreement": true,
+    "ten_actual_gpu_pressure_solves": true,
+    "every_pressure_solve_observed_gpu_work": true,
+    "every_pressure_solve_native_residual_passed": true,
+    "all_pressure_systems_full_cell_count": true,
+    "mean_lift_agreement": true,
+    "mean_inferred_electrical_agreement": true,
+    "no_continuity_deterioration_flags": true,
+    "frozen_original_inputs_unchanged": true,
+    "shared_seed_unchanged": true,
+    "all_private_gpu_libraries_unchanged": true
+  },
+  "fields": {
+    "U": {
+      "internal": {
+        "relative_L2": 8.339548689251902e-06,
+        "max_abs_difference": 0.0002458299999998914,
+        "reference_L2_norm": 0.797041422924521,
+        "components": 2767728,
+        "norm": "volume-weighted cell L2"
+      },
+      "nonuniform_boundary_values": [
+        {
+          "list_index": 1,
+          "components": 171120,
+          "relative_L2": 2.42598060604476e-06,
+          "max_abs_difference": 2.410000000008239e-05,
+          "reference_L2_norm": 217.6436499619727
+        }
+      ]
+    },
+    "p": {
+      "internal": {
+        "relative_L2": 0.00083767102493557,
+        "max_abs_difference": 0.011885600000000052,
+        "reference_L2_norm": 0.2954878661704729,
+        "components": 922576,
+        "norm": "volume-weighted cell L2"
+      },
+      "nonuniform_boundary_values": [
+        {
+          "list_index": 1,
+          "components": 57040,
+          "relative_L2": 8.234200961170623e-05,
+          "max_abs_difference": 1.1997400000001573e-05,
+          "reference_L2_norm": 2.8033748150547946
+        }
+      ]
+    },
+    "phi": {
+      "internal": {
+        "relative_L2": 1.2299536491670764e-05,
+        "max_abs_difference": 5.188999999987593e-09,
+        "reference_L2_norm": 0.04164087740471296,
+        "components": 2739208,
+        "norm": "unweighted internal-face flux L2"
+      },
+      "nonuniform_boundary_values": [
+        {
+          "list_index": 1,
+          "components": 57040,
+          "relative_L2": 2.811489022115496e-06,
+          "max_abs_difference": 6.502999999995489e-10,
+          "reference_L2_norm": 0.005375696997072914
+        }
+      ]
+    }
+  },
+  "means": {
+    "rotor-native": {
+      "vertical_lift_N": 1.3075433154985199,
+      "axial_air_work_W": 5.070075592101547,
+      "inferred_shaft_W": 10.140151182634508,
+      "inferred_electrical_W": 19.13184417874791
+    },
+    "rotor-amgx": {
+      "vertical_lift_N": 1.3075436963049116,
+      "axial_air_work_W": 5.069980141858846,
+      "inferred_shaft_W": 10.139960276398718,
+      "inferred_electrical_W": 19.131509289160753
+    }
+  },
+  "mean_relative_differences": {
+    "vertical_lift_N": 2.912380701047823e-07,
+    "axial_air_work_W": -1.882619715765088e-05,
+    "inferred_shaft_W": -1.8826764251578254e-05,
+    "inferred_electrical_W": -1.7504302461834875e-05
+  },
+  "mean_window_s": [
+    0.600119048,
+    0.600861857
+  ],
+  "cases": {
+    "rotor-native": {
+      "job_id": "AllrunPilot-159cae",
+      "returncode": 0,
+      "steps": 5,
+      "times_s": [
+        0.60011905,
+        0.6002602,
+        0.60042813,
+        0.60062755,
+        0.60086186
+      ],
+      "final_directory": "0.60086186",
+      "continuity": [
+        {
+          "local": 3.71205702e-06,
+          "global_value": -1.94025418e-07,
+          "cumulative": null
+        },
+        {
+          "local": 1.81949242e-11,
+          "global_value": 5.95798598e-12,
+          "cumulative": 5.95798598e-12
+        },
+        {
+          "local": 4.8275131e-06,
+          "global_value": 2.6600353e-07,
+          "cumulative": null
+        },
+        {
+          "local": 3.16410403e-12,
+          "global_value": -1.08135407e-12,
+          "cumulative": 4.87663192e-12
+        },
+        {
+          "local": 2.65230762e-07,
+          "global_value": -8.32906199e-09,
+          "cumulative": null
+        },
+        {
+          "local": 5.66989165e-12,
+          "global_value": 2.57504676e-12,
+          "cumulative": 7.45167868e-12
+        },
+        {
+          "local": 1.31787981e-07,
+          "global_value": -7.87169676e-10,
+          "cumulative": null
+        },
+        {
+          "local": 4.50008989e-12,
+          "global_value": -1.38866399e-12,
+          "cumulative": 6.06301469e-12
+        },
+        {
+          "local": 1.18187047e-07,
+          "global_value": 4.28774398e-09,
+          "cumulative": null
+        },
+        {
+          "local": 5.9747191e-12,
+          "global_value": 2.34444067e-12,
+          "cumulative": 8.40745536e-12
+        }
+      ],
+      "continuity_peaks_all": {
+        "local": 4.8275131e-06,
+        "global_value": 2.6600353e-07,
+        "cumulative": 8.40745536e-12
+      },
+      "continuity_peaks_final": {
+        "local": 1.81949242e-11,
+        "global_value": 5.95798598e-12,
+        "cumulative": 8.40745536e-12
+      },
+      "actual_actuator_samples": [
+        [
+          0.600119048,
+          1.30733445,
+          5.11580769,
+          10.2316154,
+          19.2923077,
+          1.30733445,
+          0.0,
+          0.0
+        ],
+        [
+          0.600260204,
+          1.30746932,
+          5.00651364,
+          10.0130273,
+          18.9088198,
+          1.30746932,
+          0.0,
+          0.0
+        ],
+        [
+          0.600428132,
+          1.30756944,
+          5.04704481,
+          10.0940896,
+          19.0510344,
+          1.30756944,
+          0.0,
+          0.0
+        ],
+        [
+          0.600627546,
+          1.30761707,
+          5.08793661,
+          10.1758732,
+          19.1945144,
+          1.30761707,
+          0.0,
+          0.0
+        ],
+        [
+          0.600861857,
+          1.30758927,
+          5.12941564,
+          10.2588313,
+          19.3400549,
+          1.30758927,
+          0.0,
+          0.0
+        ]
+      ],
+      "log_sha256": "e46c39ac93bdc295cde621c4e7d1146801fb7507c6159be25ff8da943dea68b8"
+    },
+    "rotor-amgx": {
+      "job_id": "AllrunPilot-493108",
+      "returncode": 0,
+      "steps": 5,
+      "times_s": [
+        0.60011905,
+        0.6002602,
+        0.60042813,
+        0.60062755,
+        0.60086186
+      ],
+      "final_directory": "0.60086186",
+      "continuity": [
+        {
+          "local": 3.92347541e-07,
+          "global_value": 1.22915589e-09,
+          "cumulative": null
+        },
+        {
+          "local": 1.70798608e-12,
+          "global_value": 7.58156563e-15,
+          "cumulative": 7.58156563e-15
+        },
+        {
+          "local": 3.60360408e-07,
+          "global_value": -1.41304407e-09,
+          "cumulative": null
+        },
+        {
+          "local": 2.6852734e-13,
+          "global_value": 4.21592326e-16,
+          "cumulative": 8.00315796e-15
+        },
+        {
+          "local": 1.79419144e-08,
+          "global_value": 9.63326681e-11,
+          "cumulative": null
+        },
+        {
+          "local": 2.63598937e-13,
+          "global_value": 1.62761083e-15,
+          "cumulative": 9.63076879e-15
+        },
+        {
+          "local": 9.96358954e-09,
+          "global_value": 1.26526554e-10,
+          "cumulative": null
+        },
+        {
+          "local": 3.98795096e-13,
+          "global_value": 3.06684025e-15,
+          "cumulative": 1.2697609e-14
+        },
+        {
+          "local": 1.10155375e-08,
+          "global_value": 1.17594172e-10,
+          "cumulative": null
+        },
+        {
+          "local": 5.15150002e-13,
+          "global_value": 8.14842158e-15,
+          "cumulative": 2.08460306e-14
+        }
+      ],
+      "continuity_peaks_all": {
+        "local": 3.92347541e-07,
+        "global_value": 1.41304407e-09,
+        "cumulative": 2.08460306e-14
+      },
+      "continuity_peaks_final": {
+        "local": 1.70798608e-12,
+        "global_value": 8.14842158e-15,
+        "cumulative": 2.08460306e-14
+      },
+      "actual_actuator_samples": [
+        [
+          0.600119048,
+          1.30733445,
+          5.11580769,
+          10.2316154,
+          19.2923077,
+          1.30733445,
+          0.0,
+          0.0
+        ],
+        [
+          0.600260204,
+          1.30746954,
+          5.00633572,
+          10.0126714,
+          18.9081955,
+          1.30746954,
+          0.0,
+          0.0
+        ],
+        [
+          0.600428132,
+          1.30756979,
+          5.04696312,
+          10.0939262,
+          19.0507478,
+          1.30756979,
+          0.0,
+          0.0
+        ],
+        [
+          0.600627546,
+          1.30761757,
+          5.08784719,
+          10.1756944,
+          19.1942007,
+          1.30761757,
+          0.0,
+          0.0
+        ],
+        [
+          0.600861857,
+          1.30758992,
+          5.12933874,
+          10.2586775,
+          19.3397851,
+          1.30758992,
+          0.0,
+          0.0
+        ]
+      ],
+      "log_sha256": "d1a0456b652dcbdbf1c3d558be41f72ac94546b1fb7fc8c0477ea2fe84182b1d"
+    }
+  },
+  "amgx_pressure_solves": [
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 12,
+      "successful_cuda_launch_api_calls": 926,
+      "initial_residual": 0.889550505,
+      "native_final_residual": 0.00238876175,
+      "relTol": 0.05,
+      "threshold": 0.044477525250000004,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 32,
+      "successful_cuda_launch_api_calls": 2426,
+      "initial_residual": 0.0152055724,
+      "native_final_residual": 5.9731499e-09,
+      "relTol": 0.0,
+      "threshold": 1e-07,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 13,
+      "successful_cuda_launch_api_calls": 1001,
+      "initial_residual": 0.802342459,
+      "native_final_residual": 0.00160611881,
+      "relTol": 0.05,
+      "threshold": 0.04011712295,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 38,
+      "successful_cuda_launch_api_calls": 2876,
+      "initial_residual": 0.115822098,
+      "native_final_residual": 4.87570891e-09,
+      "relTol": 0.0,
+      "threshold": 1e-07,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 11,
+      "successful_cuda_launch_api_calls": 851,
+      "initial_residual": 0.17076342,
+      "native_final_residual": 0.000264919023,
+      "relTol": 0.05,
+      "threshold": 0.008538171,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 29,
+      "successful_cuda_launch_api_calls": 2201,
+      "initial_residual": 0.00565844559,
+      "native_final_residual": 4.47466107e-09,
+      "relTol": 0.0,
+      "threshold": 1e-07,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 11,
+      "successful_cuda_launch_api_calls": 851,
+      "initial_residual": 0.0925978274,
+      "native_final_residual": 0.000130314311,
+      "relTol": 0.05,
+      "threshold": 0.00462989137,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 28,
+      "successful_cuda_launch_api_calls": 2126,
+      "initial_residual": 0.00378042764,
+      "native_final_residual": 5.54056525e-09,
+      "relTol": 0.0,
+      "threshold": 1e-07,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 11,
+      "successful_cuda_launch_api_calls": 851,
+      "initial_residual": 0.0670856608,
+      "native_final_residual": 0.000118200637,
+      "relTol": 0.05,
+      "threshold": 0.0033542830400000003,
+      "native_stopping_test_passed": true
+    },
+    {
+      "rows": 922576,
+      "nnz": 6400992,
+      "iterations": 29,
+      "successful_cuda_launch_api_calls": 2201,
+      "initial_residual": 0.00354403702,
+      "native_final_residual": 5.72791682e-09,
+      "relTol": 0.0,
+      "threshold": 1e-07,
+      "native_stopping_test_passed": true
+    }
+  ],
+  "successful_cuda_launch_api_calls_total": 16310,
+  "max_native_pressure_final_corrector_residual": 5.9731499e-09,
+  "continuity_flags": [],
+  "mesh_shape": [
+    92,
+    92,
+    109
+  ],
+  "volume_sum_m3": 0.4976639999999998,
+  "actuator_library": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cpu_serial/dynamicCode/platforms/linuxArm64GccDPInt32Opt/lib/librotors_7ae57bb77feaae19c26ff305b44ebb5a6819f2ef.so",
+    "sha256": "402b112e09f36444ac13d19a3a04f3aca24344a632eb7a258fd11fc3a33392ce",
+    "size_bytes": 936008
+  },
+  "adapter_source_sha256": "c2626648f7e8ebd7d0c88766b69f864428f2f6030c68b49b29f5596ec989e127",
+  "adapter_extra_tolerance_safety_factor": 0.1,
+  "adapter_setup": "uncached each solve",
+  "performance_comparison": false,
+  "full_field_gpu_offload": false,
+  "production_default_changed": false,
+  "limitations": [
+    "Five transient steps only, not a stationary lift study or timing benchmark.",
+    "Serial symmetric noncoupled pressure only; velocity, C29 source and other flow work remain CPU.",
+    "Native pressure stopping tolerance retained, but AmgX uses an extra tenfold L2 safety margin.",
+    "Launch counter reports successful CUDA launch API calls, not distinct kernels or a GPU timeline.",
+    "Electrical input is inferred from the unchanged assumed loss map, not measured battery power.",
+    "Both pilots identically reset the actuator controller from the warm flow state; no full source-history continuation claimed."
+  ]
+}

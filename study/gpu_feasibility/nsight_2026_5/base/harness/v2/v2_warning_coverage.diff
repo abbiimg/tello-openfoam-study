@@ -1,0 +1,28 @@
+--- v1/README.md
++++ v2/README.md
+@@ -7,3 +7,5 @@
+ Required results are child0, exact deterministic arithmetic JSON, managed pointer type3/sync0, unchanged case/source/core/binary, actual declared loaded libraries, one complete range bound to the actual main-thread globalTid/PROCESSES row, successful launch APIs and a successful same-thread device/context completion after the last launch. Unsupported-driver diagnostics fail the tool gate. Kernel activity is reported separately only when attributable to that process/correlation and range; absent activity is labeled unavailable and never invented. API counts are not distinct kernel counts.
+ 
+ Use run_control.py once after Root approval. It launches the reviewed child wrapper, exports the CLOSED report and calls audit_control.py. Export/audit may be retried only as separate read-only analysis if necessary, without repeating GPU execution. Raw reports/full SQLite remain private. Any delivery should use a safe minimal API/NVTX/process/kernel subset and full-original hashes. This is dependency/profiler verification, with no speed or lift conclusion. The two failed large transient attempts remain unqualified, 2.4 remains unbuilt and timing remains prohibited.
++
++V2 changes only warning coverage: the identical unsupported-driver expression scans profile.log, export.log and SQLite DIAGNOSTIC_EVENT. A successful gate records all origins scanned; a rejection includes the originating console line or diagnostic row. V1 remains frozen, and the protocol, probe, launch scope, cases and all binary/library identities are unchanged.
+--- v1/audit_control.py
++++ v2/audit_control.py
+@@ -41,8 +41,15 @@
+    r=dict(row);by_pid=r.get('globalPid')==gtid-tid;by_correlation=r.get('correlationId') in correlations
+    if by_pid or ('globalPid' not in columns and by_correlation):kernels.append({'table':table,**r})
+  diagnostics=[dict(r) for r in con.execute('select * from DIAGNOSTIC_EVENT')] if 'DIAGNOSTIC_EVENT' in tables else [];con.close()
+- unsupported=[r for r in diagnostics if re.search(r'driver.*not supported|unsupported.*driver',r.get('text',''),re.I)];require(not unsupported,'New profiler still reports unsupported driver')
+- record={'kind':'New standalone profiler positive control on existing native Field algebra; NOT CFD or performance','passed':True,'classification':'CUDA_API_AND_KERNEL_TIMELINE_OBSERVED' if kernels else 'CUDA_API_OBSERVED_KERNEL_TIMELINE_UNAVAILABLE','actual_child':c,'arithmetic_result':result,'range':window,'process':processes[0],'launch_API_calls':len(launches),'API_rows':apis,'completion_after_last_launch':completion,'kernel_activity_tables_whole_trace':kernel_counts,'attributed_kernel_activity_rows':kernels,'diagnostic_events':diagnostics,'report_sha256':sha(e/'field_control.nsys-rep'),'sqlite_sha256':sha(e/'field_control.sqlite'),'protocol_sha256':sha(HERE/'protocol.json'),'source_sha256':p['source']['sha256'],'core_sha256':p['core_library']['sha256'],'binary_sha256':p['binary']['sha256'],'nsys_sha256':p['nsys']['sha256'],'C29_922576_cell_transient_qualified':False,'timing_authorized':False,'speedup_measured':False,'count_scope':'API counts are not distinct kernels; optional kernel activity is attributed separately. Small algebra success does not repair either failed large transient.'}
++ warning_pattern=r'driver.*not supported|unsupported.*driver';unsupported=[]
++ for origin,console_text in [('profile.log',text),('export.log',(e/'export.log').read_text())]:
++  for line_number,line in enumerate(console_text.splitlines(),1):
++   if re.search(warning_pattern,line,re.I):unsupported.append({'origin':origin,'line':line_number,'text':line})
++ for index,row in enumerate(diagnostics):
++  if re.search(warning_pattern,row.get('text',''),re.I):unsupported.append({'origin':'DIAGNOSTIC_EVENT','row_index':index,'row':row})
++ warning_scan={'pattern':warning_pattern,'origins_scanned':['profile.log','export.log','DIAGNOSTIC_EVENT'],'matches':unsupported}
++ require(not unsupported,'New profiler still reports unsupported driver: '+json.dumps(warning_scan))
++ record={'kind':'New standalone profiler positive control on existing native Field algebra; NOT CFD or performance','passed':True,'classification':'CUDA_API_AND_KERNEL_TIMELINE_OBSERVED' if kernels else 'CUDA_API_OBSERVED_KERNEL_TIMELINE_UNAVAILABLE','actual_child':c,'arithmetic_result':result,'range':window,'process':processes[0],'launch_API_calls':len(launches),'API_rows':apis,'completion_after_last_launch':completion,'kernel_activity_tables_whole_trace':kernel_counts,'attributed_kernel_activity_rows':kernels,'diagnostic_events':diagnostics,'unsupported_driver_warning_scan':warning_scan,'report_sha256':sha(e/'field_control.nsys-rep'),'sqlite_sha256':sha(e/'field_control.sqlite'),'protocol_sha256':sha(HERE/'protocol.json'),'source_sha256':p['source']['sha256'],'core_sha256':p['core_library']['sha256'],'binary_sha256':p['binary']['sha256'],'nsys_sha256':p['nsys']['sha256'],'C29_922576_cell_transient_qualified':False,'timing_authorized':False,'speedup_measured':False,'count_scope':'API counts are not distinct kernels; optional kernel activity is attributed separately. Small algebra success does not repair either failed large transient.'}
+  target=e/'positive_control_gate.json';require(not target.exists(),'Do not overwrite control gate');save(target,record);return record
+ if __name__=='__main__':
+  ap=argparse.ArgumentParser();ap.add_argument('--approval',type=Path,required=True);args=ap.parse_args();print(json.dumps(audit(args.approval),indent=2))

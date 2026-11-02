@@ -1,0 +1,312 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-a4867fc914c1
+Exec   : foamRun
+Date   : Nov 01 2026
+Time   : 23:51:29
+Host   : "abby-spark"
+PID    : 245446
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/amgx_gpu_pilots_20261102/cavity-amgx
+nProcs : 1
+sigFpe : Floating point exception trapping - not supported on this platform
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+Selecting solver incompressibleFluid
+
+Selecting viscosity model constant
+
+Selecting momentum transport model type laminar
+    Selecting laminar stress model Stokes
+Courant Number mean: 0 max: 0
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: Operating solver in transient mode with 1 outer corrector
+PIMPLE: Operating solver in PISO mode
+
+
+
+Starting time loop
+
+Courant Number mean: 0 max: 0
+Time = 0.005s
+
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 9.0684413970161528e-13, No Iterations 104
+smoothSolver:  Solving for Uy, Initial residual = 0.99857139824548147, Final residual = 8.9445353427309322e-13, No Iterations 86
+AMGX version 2.5.0
+Built on Nov  1 2026, 23:31:52
+Compiled with CUDA Runtime 13.0, using CUDA driver 13.4
+The AMGX_initialize_plugins API call is deprecated and can be safely removed.
+AmgXPressure: private serial mode dDDI, GPU0 NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU), compute 12.1
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=23 kernels=234 initial=1 final=4.3810272278377456e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 1, Final residual = 4.3810272278377456e-13, No Iterations 23
+time step continuity errors : sum local = 2.9252531814791451e-15, global = 1.928158007861095e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=23 kernels=234 initial=0.52358844937780302 final=1.7031964860208238e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.52358844937780302, Final residual = 1.7031964860208238e-13, No Iterations 23
+time step continuity errors : sum local = 1.8869827767655532e-15, global = -5.9391567981309409e-20, cumulative = -5.9391567981309409e-20
+ExecutionTime = 1.904199 s  ClockTime = 2 s
+
+Courant Number mean: 0.097680470890656235 max: 0.58572196126516463
+Time = 0.01s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.14703190892112619, Final residual = 8.2222468148541102e-13, No Iterations 99
+smoothSolver:  Solving for Uy, Initial residual = 0.24741017515871411, Final residual = 8.8097762493516456e-13, No Iterations 102
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=24 kernels=244 initial=0.37025795876604589 final=2.6565871876077457e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.37025795876604589, Final residual = 2.6565871876077457e-13, No Iterations 24
+time step continuity errors : sum local = 2.4273809462812385e-15, global = 9.433994886167219e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=24 kernels=244 initial=0.29059117165350845 final=2.2104869955995113e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.29059117165350845, Final residual = 2.2104869955995113e-13, No Iterations 24
+time step continuity errors : sum local = 2.1341900662047551e-15, global = -2.5098727736390064e-19, cumulative = -3.1037884534521005e-19
+ExecutionTime = 2.0956389999999998 s  ClockTime = 2 s
+
+Courant Number mean: 0.14338465844571738 max: 0.75625933907808063
+Time = 0.015s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.045749324806620958, Final residual = 9.2553532302692124e-13, No Iterations 88
+smoothSolver:  Solving for Uy, Initial residual = 0.087399886937118532, Final residual = 8.6304157616144814e-13, No Iterations 98
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=22 kernels=224 initial=0.13819581160145827 final=7.3456951777184872e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.13819581160145827, Final residual = 7.3456951777184872e-13, No Iterations 22
+time step continuity errors : sum local = 5.5251719267020008e-15, global = 1.340032592335896e-20
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=22 kernels=224 initial=0.098579155156707551 final=5.6749292815050438e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.098579155156707551, Final residual = 5.6749292815050438e-13, No Iterations 22
+time step continuity errors : sum local = 4.3501534293281848e-15, global = 5.5338382979796704e-19, cumulative = 2.4300498445275699e-19
+ExecutionTime = 2.2894770000000002 s  ClockTime = 3 s
+
+Courant Number mean: 0.16585352163580142 max: 0.79863143485193233
+Time = 0.02s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.024307729607959395, Final residual = 9.226084209466029e-13, No Iterations 84
+smoothSolver:  Solving for Uy, Initial residual = 0.048218312187001594, Final residual = 9.1363396446240611e-13, No Iterations 96
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=22 kernels=224 initial=0.05536537179040326 final=2.0232534056696906e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.05536537179040326, Final residual = 2.0232534056696906e-13, No Iterations 22
+time step continuity errors : sum local = 1.5101383975585461e-15, global = 3.4121200267812045e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.042685602130864836 final=6.90597057268678e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.042685602130864836, Final residual = 6.90597057268678e-13, No Iterations 21
+time step continuity errors : sum local = 5.1671707218489517e-15, global = -1.1811311966644811e-18, cumulative = -9.3812621221172408e-19
+ExecutionTime = 2.4852970000000001 s  ClockTime = 3 s
+
+Courant Number mean: 0.18054935134020897 max: 0.81799498493501277
+Time = 0.025s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.015173850656596795, Final residual = 9.1657327772662406e-13, No Iterations 83
+smoothSolver:  Solving for Uy, Initial residual = 0.030998535314257315, Final residual = 9.8553705627037192e-13, No Iterations 94
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=22 kernels=224 initial=0.036937724578442369 final=2.344241215793131e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.036937724578442369, Final residual = 2.344241215793131e-13, No Iterations 22
+time step continuity errors : sum local = 1.7401857631517898e-15, global = -5.0995684763893704e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.02866055273945509 final=7.5660332161270309e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.02866055273945509, Final residual = 7.5660332161270309e-13, No Iterations 21
+time step continuity errors : sum local = 5.6286956483145428e-15, global = -7.6886437936803422e-19, cumulative = -1.7069905915797583e-18
+ExecutionTime = 2.66248 s  ClockTime = 3 s
+
+Courant Number mean: 0.19064473669357518 max: 0.82845222342364411
+Time = 0.03s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.010481619663866579, Final residual = 8.7463153045877262e-13, No Iterations 84
+smoothSolver:  Solving for Uy, Initial residual = 0.021527651633518406, Final residual = 8.8670640818395515e-13, No Iterations 93
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.02478477742647096 final=5.4712580383851205e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.02478477742647096, Final residual = 5.4712580383851205e-13, No Iterations 21
+time step continuity errors : sum local = 4.0705927693468035e-15, global = 3.5328883962137655e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.019305725023900617 final=4.4862730309856752e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.019305725023900617, Final residual = 4.4862730309856752e-13, No Iterations 21
+time step continuity errors : sum local = 3.3414330593813147e-15, global = -1.7891916649521392e-19, cumulative = -1.8859097580749724e-18
+ExecutionTime = 2.8437139999999999 s  ClockTime = 3 s
+
+Courant Number mean: 0.19780849857907015 max: 0.83492207097080351
+Time = 0.035s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0075302774926189475, Final residual = 9.0844286734831646e-13, No Iterations 84
+smoothSolver:  Solving for Uy, Initial residual = 0.01562764352202526, Final residual = 8.2466569460949266e-13, No Iterations 92
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.018140847335420235 final=2.7171214330085116e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.018140847335420235, Final residual = 2.7171214330085116e-13, No Iterations 21
+time step continuity errors : sum local = 2.0258429096838088e-15, global = -8.0947894744438094e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=20 kernels=204 initial=0.01411960507594848 final=8.023626684448315e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.01411960507594848, Final residual = 8.023626684448315e-13, No Iterations 20
+time step continuity errors : sum local = 5.986874448845107e-15, global = -2.5725317050398992e-20, cumulative = -1.9116350751253716e-18
+ExecutionTime = 3.0341119999999999 s  ClockTime = 4 s
+
+Courant Number mean: 0.20305148095021108 max: 0.83917028309207509
+Time = 0.04s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.005575163371396589, Final residual = 8.3559003345120697e-13, No Iterations 84
+smoothSolver:  Solving for Uy, Initial residual = 0.011645051520454404, Final residual = 7.8476723810895318e-13, No Iterations 91
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.013424065693755909 final=2.8458109616389752e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.013424065693755909, Final residual = 2.8458109616389752e-13, No Iterations 21
+time step continuity errors : sum local = 2.1236676877481059e-15, global = -1.289988165276437e-18
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=21 kernels=214 initial=0.010443384258897973 final=2.3191839987602052e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.010443384258897973, Final residual = 2.3191839987602052e-13, No Iterations 21
+time step continuity errors : sum local = 1.7308511126571901e-15, global = -6.6372972351254507e-19, cumulative = -2.5753647986379167e-18
+ExecutionTime = 3.2189169999999998 s  ClockTime = 4 s
+
+Courant Number mean: 0.2069682463177418 max: 0.84207965158766163
+Time = 0.045s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0041867124305498887, Final residual = 9.4081318179524564e-13, No Iterations 83
+smoothSolver:  Solving for Uy, Initial residual = 0.0088308948951615288, Final residual = 9.8323835224921962e-13, No Iterations 89
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=20 kernels=204 initial=0.010116455377081217 final=4.9296099662793626e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.010116455377081217, Final residual = 4.9296099662793626e-13, No Iterations 20
+time step continuity errors : sum local = 3.6823967424395475e-15, global = 6.2394233604874473e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=20 kernels=204 initial=0.0078657429282079309 final=3.6828046036504334e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0078657429282079309, Final residual = 3.6828046036504334e-13, No Iterations 20
+time step continuity errors : sum local = 2.7513966912049956e-15, global = 1.0869980429559265e-18, cumulative = -1.4883667556819902e-18
+ExecutionTime = 3.388935 s  ClockTime = 4 s
+
+Courant Number mean: 0.20992813409774208 max: 0.84412647308385602
+Time = 0.05s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0032042778457047048, Final residual = 8.020584310355694e-13, No Iterations 83
+smoothSolver:  Solving for Uy, Initial residual = 0.0067779701483069964, Final residual = 9.6479299615246297e-13, No Iterations 88
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.0077195105858954257 final=3.8080213641507864e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0077195105858954257, Final residual = 3.8080213641507864e-13, No Iterations 19
+time step continuity errors : sum local = 2.8575288441611627e-15, global = 8.1229136152707087e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.005991032928861364 final=2.9386715922770577e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.005991032928861364, Final residual = 2.9386715922770577e-13, No Iterations 19
+time step continuity errors : sum local = 2.202092019879768e-15, global = -2.0342852804516479e-18, cumulative = -3.5226520361336383e-18
+ExecutionTime = 3.5827650000000002 s  ClockTime = 4 s
+
+Courant Number mean: 0.2122272911971817 max: 0.84559679675685862
+Time = 0.055s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0024708191878274797, Final residual = 8.640656002998706e-13, No Iterations 82
+smoothSolver:  Solving for Uy, Initial residual = 0.005247242985314227, Final residual = 9.5516056797802932e-13, No Iterations 87
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.0059203353561821425 final=4.6581606262577667e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0059203353561821425, Final residual = 4.6581606262577667e-13, No Iterations 19
+time step continuity errors : sum local = 3.4862534422033216e-15, global = 6.9565889515709416e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.0045903748164110867 final=3.4281032530276216e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0045903748164110867, Final residual = 3.4281032530276216e-13, No Iterations 19
+time step continuity errors : sum local = 2.5661818530676362e-15, global = 1.1281916374610671e-18, cumulative = -2.3944603986725711e-18
+ExecutionTime = 3.7748879999999998 s  ClockTime = 5 s
+
+Courant Number mean: 0.21402673310101791 max: 0.84666967805597737
+Time = 0.06s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0019150006725553899, Final residual = 9.2006226517097217e-13, No Iterations 81
+smoothSolver:  Solving for Uy, Initial residual = 0.0040876137619789603, Final residual = 9.5190268770142792e-13, No Iterations 86
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.0045663265565172957 final=1.9250657440996541e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0045663265565172957, Final residual = 1.9250657440996541e-13, No Iterations 19
+time step continuity errors : sum local = 1.4397803998882563e-15, global = -2.1366902402857142e-18
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0035420279801655998 final=6.5747644539584881e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0035420279801655998, Final residual = 6.5747644539584881e-13, No Iterations 18
+time step continuity errors : sum local = 4.9128053215814455e-15, global = -5.5090228796031277e-19, cumulative = -2.9453626866328841e-18
+ExecutionTime = 3.960699 s  ClockTime = 5 s
+
+Courant Number mean: 0.21542085339099651 max: 0.84746253995543219
+Time = 0.065s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0014931430114130486, Final residual = 9.7106114069650998e-13, No Iterations 80
+smoothSolver:  Solving for Uy, Initial residual = 0.0031988040346257844, Final residual = 9.5307618538245866e-13, No Iterations 85
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.0035417187256667837 final=3.4512470633812158e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0035417187256667837, Final residual = 3.4512470633812158e-13, No Iterations 19
+time step continuity errors : sum local = 2.5922427572925477e-15, global = 1.0488650167172504e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=19 kernels=194 initial=0.0027438957330612828 final=2.7312071691084611e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0027438957330612828, Final residual = 2.7312071691084611e-13, No Iterations 19
+time step continuity errors : sum local = 2.0524574458927025e-15, global = 2.6436692377194712e-19, cumulative = -2.6809957628609368e-18
+ExecutionTime = 4.1446420000000002 s  ClockTime = 5 s
+
+Courant Number mean: 0.21651667798979138 max: 0.84805470354908208
+Time = 0.07s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0011707191965862555, Final residual = 7.9226271340656637e-13, No Iterations 80
+smoothSolver:  Solving for Uy, Initial residual = 0.002511614482134444, Final residual = 9.5892668393434421e-13, No Iterations 84
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0027588374675329365 final=6.3730758230447025e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0027588374675329365, Final residual = 6.3730758230447025e-13, No Iterations 18
+time step continuity errors : sum local = 4.7664229736087548e-15, global = 9.906315015934994e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0021361047851983467 final=5.0709205961250422e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0021361047851983467, Final residual = 5.0709205961250422e-13, No Iterations 18
+time step continuity errors : sum local = 3.7917296707759889e-15, global = -6.7969430933480878e-19, cumulative = -3.3606900721957454e-18
+ExecutionTime = 4.3344870000000002 s  ClockTime = 5 s
+
+Courant Number mean: 0.21737199446536054 max: 0.84850057464014339
+Time = 0.075s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00092056594422362499, Final residual = 8.278769761620819e-13, No Iterations 79
+smoothSolver:  Solving for Uy, Initial residual = 0.0019771319066759609, Final residual = 9.6845467177643984e-13, No Iterations 83
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0021567064528897873 final=7.7060943127093019e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0021567064528897873, Final residual = 7.7060943127093019e-13, No Iterations 18
+time step continuity errors : sum local = 5.780482132665165e-15, global = 6.6397787769633506e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0016688883479545975 final=6.1361622387951379e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0016688883479545975, Final residual = 6.1361622387951379e-13, No Iterations 18
+time step continuity errors : sum local = 4.5958944790930906e-15, global = -7.9715395631734757e-19, cumulative = -4.1578440285130928e-18
+ExecutionTime = 4.5103070000000001 s  ClockTime = 6 s
+
+Courant Number mean: 0.21804146488106113 max: 0.8488389078363161
+Time = 0.08s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00072503357993752642, Final residual = 8.62084532727804e-13, No Iterations 78
+smoothSolver:  Solving for Uy, Initial residual = 0.0015592057148231643, Final residual = 9.8060716927508801e-13, No Iterations 82
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0016897454748531905 final=5.9815078866888464e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0016897454748531905, Final residual = 5.9815078866888464e-13, No Iterations 18
+time step continuity errors : sum local = 4.4803168334402421e-15, global = 5.3775011622071982e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0013070696613255383 final=4.738882191489761e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0013070696613255383, Final residual = 4.738882191489761e-13, No Iterations 18
+time step continuity errors : sum local = 3.5503194078261654e-15, global = 3.7190040340383879e-19, cumulative = -3.7859436251092539e-18
+ExecutionTime = 4.6946880000000002 s  ClockTime = 6 s
+
+Courant Number mean: 0.21857019426618343 max: 0.84909712570451468
+Time = 0.085s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00057170156368382963, Final residual = 8.9488524163292484e-13, No Iterations 77
+smoothSolver:  Solving for Uy, Initial residual = 0.0012313137902792144, Final residual = 9.9503624132297254e-13, No Iterations 81
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0013266923846755991 final=3.3521572047781239e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0013266923846755991, Final residual = 3.3521572047781239e-13, No Iterations 18
+time step continuity errors : sum local = 2.5171598212452936e-15, global = 1.9347754527615175e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0010256162816563205 final=2.6105878537161416e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0010256162816563205, Final residual = 2.6105878537161416e-13, No Iterations 18
+time step continuity errors : sum local = 1.9608080674094813e-15, global = -1.4435128869662794e-18, cumulative = -5.2294565120755332e-18
+ExecutionTime = 4.8791370000000001 s  ClockTime = 6 s
+
+Courant Number mean: 0.21898715252545078 max: 0.84929521593080848
+Time = 0.09s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00045132224037157902, Final residual = 9.263943311291736e-13, No Iterations 76
+smoothSolver:  Solving for Uy, Initial residual = 0.00097340545391400512, Final residual = 7.8283279729528945e-13, No Iterations 81
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.0010430642633336834 final=2.6125333577115156e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0010430642633336834, Final residual = 2.6125333577115156e-13, No Iterations 18
+time step continuity errors : sum local = 1.9613936285651076e-15, global = -7.9376251580588016e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=17 kernels=174 initial=0.00080622366335094645 final=8.044811605588257e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.00080622366335094645, Final residual = 8.044811605588257e-13, No Iterations 17
+time step continuity errors : sum local = 6.0332131067603276e-15, global = 2.0985572140470175e-19, cumulative = -5.0196007906708316e-18
+ExecutionTime = 5.0479839999999996 s  ClockTime = 6 s
+
+Courant Number mean: 0.21931532140568039 max: 0.84944788833663054
+Time = 0.095s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00035670855529862708, Final residual = 9.5693970720354153e-13, No Iterations 75
+smoothSolver:  Solving for Uy, Initial residual = 0.00077010281764647445, Final residual = 7.9682330895568549e-13, No Iterations 80
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=18 kernels=184 initial=0.00082092904112119312 final=2.0272428494353205e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.00082092904112119312, Final residual = 2.0272428494353205e-13, No Iterations 18
+time step continuity errors : sum local = 1.5237646265071932e-15, global = -5.3419323958674181e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=17 kernels=174 initial=0.0006347293369309005 final=6.3563561945571855e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.0006347293369309005, Final residual = 6.3563561945571855e-13, No Iterations 17
+time step continuity errors : sum local = 4.7744198248986724e-15, global = -1.2763396851693134e-18, cumulative = -6.2959404758401449e-18
+ExecutionTime = 5.2300529999999998 s  ClockTime = 7 s
+
+Courant Number mean: 0.21957391859578418 max: 0.84956599950119205
+Time = 0.1s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00028219528033117001, Final residual = 9.8659805844253566e-13, No Iterations 74
+smoothSolver:  Solving for Uy, Initial residual = 0.00060961696421969996, Final residual = 8.119057028342173e-13, No Iterations 79
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=17 kernels=174 initial=0.00064700787652531024 final=6.3168170187584475e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.00064700787652531024, Final residual = 6.3168170187584475e-13, No Iterations 17
+time step continuity errors : sum local = 4.7416541255006507e-15, global = 4.8050921783207958e-19
+AMGX_PRESSURE_SOLVE rows=400 nnz=1920 iterations=17 kernels=174 initial=0.000500343164379832 final=4.9922852783013085e-13 converged=true
+AmgXPressure:  Solving for p, Initial residual = 0.000500343164379832, Final residual = 4.9922852783013085e-13, No Iterations 17
+time step continuity errors : sum local = 3.7509453652379394e-15, global = 2.6444964183321084e-19, cumulative = -6.0314908340069342e-18
+ExecutionTime = 5.4078660000000003 s  ClockTime = 7 s
+
+End
+
+The AMGX_finalize_plugins API call is deprecated and can be safely removed.

@@ -1,0 +1,15 @@
+{
+  "kind": "Host NVTX annotation only for actual CFD-loop API coverage",
+  "recorded_utc": "2026-11-02T10:10:16.751241+00:00",
+  "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+  "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+  "original_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+  "annotated_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+  "patch": "/opt/openfoam-workspace/gpu-feasibility/spuma/patches/ico_time_loop_annotation.patch",
+  "patch_sha256": "4a9d6155c5b6027d8fbdcb1e950f4fc479b9d6623e4d6d99bb100650f82f7daa",
+  "range_name": "SPUMA_CFD_TIME_LOOPS",
+  "scope": "Push immediately before runTime.loop; pop immediately after loop and before final pool report. No equation, numerical control or case change.",
+  "header": "NVTX3 from reused private NVHPC26.9/CUDA13.3 SDK",
+  "core_or_finiteVolume_rebuild_required": false,
+  "no_production_change": true
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "c29-v2-isolated-path-fixtures-v1",
+  "platform": "windows_bound",
+  "python": "3.13.13 (main, May  8 2026, 20:31:08) [MSC v.1944 64 bit (ARM64)]",
+  "adapter_sha256": {
+    "restore_completed_evidence.py": "1e2be3abf6f567363057a212e0e42892286e3a8087386e8dfa0b117433896847",
+    "replay_completed_cpu_analysis.py": "a7aca1b7e68e70292c24f2180dcd9b6e362c4215e99db68910ba818533ffedd4"
+  },
+  "fixture_source_sha256": "54ae360fba512108a9ed64807f97943c96ba3e1928331cfbf691567047fc75ef",
+  "fixture_root": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5",
+  "results": [
+    {
+      "fixture": "restore-disjoint-new-accepted-without-creation",
+      "pass": true
+    },
+    {
+      "fixture": "restore-package-equal",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\package"
+    },
+    {
+      "fixture": "restore-package-child",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\package"
+    },
+    {
+      "fixture": "restore-package-descendant",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\package"
+    },
+    {
+      "fixture": "restore-seed-dir-equal",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\seed"
+    },
+    {
+      "fixture": "restore-seed-dir-child",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\seed"
+    },
+    {
+      "fixture": "restore-seed-dir-descendant",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\seed"
+    },
+    {
+      "fixture": "restore-package-parent",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\package"
+    },
+    {
+      "fixture": "restore-common-ancestor",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\package"
+    },
+    {
+      "fixture": "restore-seed-file-as-destination",
+      "pass": true,
+      "reason": "Destination overlaps read-only package or seed directory: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\sources\\seed"
+    },
+    {
+      "fixture": "replay-disjoint-new-accepted-without-creation",
+      "pass": true
+    },
+    {
+      "fixture": "replay-inside-package",
+      "pass": true,
+      "reason": "Output overlaps read-only evidence/package"
+    },
+    {
+      "fixture": "replay-inside-evidence",
+      "pass": true,
+      "reason": "Output overlaps read-only evidence/package"
+    },
+    {
+      "fixture": "replay-existing-ancestor",
+      "pass": true,
+      "reason": "Use a new output file"
+    },
+    {
+      "fixture": "restore-real-Windows-junction-parent",
+      "pass": true,
+      "reason": "Link/junction/ancestor: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_package"
+    },
+    {
+      "fixture": "restore-real-Windows-junction-source",
+      "pass": true,
+      "reason": "Link/junction/ancestor: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_package"
+    },
+    {
+      "fixture": "replay-real-Windows-junction-output",
+      "pass": true,
+      "reason": "Link/junction/ancestor: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_package"
+    },
+    {
+      "fixture": "replay-real-Windows-junction-base",
+      "pass": true,
+      "reason": "Link/junction/ancestor: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_base"
+    },
+    {
+      "fixture": "restore-Windows-reparse-attribute-fallback",
+      "pass": true,
+      "reason": "Reparse point/ancestor: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_package"
+    },
+    {
+      "fixture": "replay-Windows-reparse-attribute-fallback",
+      "pass": true,
+      "reason": "Reparse point/ancestor: C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_base"
+    },
+    {
+      "fixture": "inert-source-payloads-unchanged",
+      "pass": true
+    },
+    {
+      "fixture": "no-restored-tree-or-report-created",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "symlink_available": false,
+  "symlink_unavailable_reason": "[WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\abbii\\\\Documents\\\\Codex\\\\2026-10-30\\\\referenced-chatgpt-conversation-this-is-an\\\\work\\\\c29_v2_path_fixtures_rdvh08j5\\\\sources\\\\package' -> 'C:\\\\Users\\\\abbii\\\\Documents\\\\Codex\\\\2026-10-30\\\\referenced-chatgpt-conversation-this-is-an\\\\work\\\\c29_v2_path_fixtures_rdvh08j5\\\\package_link'",
+  "Windows_junctions": [
+    {
+      "path": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_package",
+      "lstat_reparse_attribute": true,
+      "is_junction": true
+    },
+    {
+      "path": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_v2_path_fixtures_rdvh08j5\\junction_base",
+      "lstat_reparse_attribute": true,
+      "is_junction": true
+    }
+  ],
+  "source_helpers_imported_but_no_main_restore_analyze_or_replay_called": true,
+  "only_inert_private_fixture_files_created": true,
+  "case_output_Git_ZIP_CFD_build_GPU_writes": false
+}

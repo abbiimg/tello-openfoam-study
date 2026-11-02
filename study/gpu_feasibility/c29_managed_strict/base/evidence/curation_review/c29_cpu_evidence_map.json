@@ -1,0 +1,440 @@
+{
+  "schema": "read-only-c29-cpu-evidence-map-v1",
+  "created_utc": "2026-11-02T14:16:07.2922064Z",
+  "scope": "Workspace immutable source/startup/completed F14+nativeCPU evidence only; no case/build/private prefix read, live GPU file content read, recipe execution, compilation, simulation or publication",
+  "status": "Mapping complete; all five supplied principal pins and 499 boolean checks pass",
+  "principal_pin_checks": [
+    {
+      "path": "strict_runs/f14_to_cpu_analysis.json",
+      "expected": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e",
+      "actual": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e",
+      "pass": true
+    },
+    {
+      "path": "strict_pressure_proposal/strict_pressure_protocol.json",
+      "expected": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+      "actual": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+      "pass": true
+    },
+    {
+      "path": "strict_runs/root_f14_to_cpu_external_gate.json",
+      "expected": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2",
+      "actual": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2",
+      "pass": true
+    },
+    {
+      "path": "strict_pressure_proposal/root_authorization.json",
+      "expected": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+      "actual": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+      "pass": true
+    },
+    {
+      "path": "strict_runs/root_input_audit.json",
+      "expected": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926",
+      "actual": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926",
+      "pass": true
+    }
+  ],
+  "mechanical": {
+    "checks": 499,
+    "failed": 0,
+    "all_pass": true,
+    "field_comparisons": 15,
+    "source_samples": 5,
+    "overall_acceptance_decided_here": false,
+    "field_summary": [
+      {
+        "field": "U",
+        "steps": 5,
+        "blocks": 10,
+        "max_normalized_RMS": 3.5706690971909314E-07,
+        "max_normalized_max": 7.899263823049269E-07
+      },
+      {
+        "field": "p",
+        "steps": 5,
+        "blocks": 10,
+        "max_normalized_RMS": 1.033469833775196E-06,
+        "max_normalized_max": 5.405231464379313E-06
+      },
+      {
+        "field": "phi",
+        "steps": 5,
+        "blocks": 10,
+        "max_normalized_RMS": 1.7135986943370432E-07,
+        "max_normalized_max": 1.4337817807435926E-06
+      }
+    ]
+  },
+  "field_hashes": [
+    {
+      "time": "0.6001",
+      "field": "U",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/U",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/U",
+      "reference_sha256": "82cf861476af2a740b8eb82fbef51345f108dbaea99a56f77927241862d3f96e",
+      "candidate_sha256": "4f831291e62fc1cd2fc6b86ca49cd54ea91ba9ec0f39afb36fd76c6120fe80ea"
+    },
+    {
+      "time": "0.6001",
+      "field": "p",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/p",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/p",
+      "reference_sha256": "b5c5b8afaec0a06a616c0ba94cbf2f5a3a37b7d15be928f519b6f086306a525c",
+      "candidate_sha256": "c8fa982a5b855cb4b549a97bd2354b843b4d8d3492fcf2a9291f9014b7052622"
+    },
+    {
+      "time": "0.6001",
+      "field": "phi",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/phi",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/phi",
+      "reference_sha256": "8bb0dc1beaf2cc53f3c225273aafe52ad83778bc0650cf63375987fae00b02a0",
+      "candidate_sha256": "9a6a3266b4284048d04a1a9c5810d0ba470ae49bd7ac4bea13ea7c04bd4caefd"
+    },
+    {
+      "time": "0.6002",
+      "field": "U",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/U",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/U",
+      "reference_sha256": "3f05b1e1360c2d47a7fb02f449b751560dbaee565b4488e2b502c95eaaac5b97",
+      "candidate_sha256": "1869b1ed3b15593f80865bbc17e5246d619c6995f0a7b64b6a310f5a50602a82"
+    },
+    {
+      "time": "0.6002",
+      "field": "p",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/p",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/p",
+      "reference_sha256": "37b4f1de3564d81456b8c5c5787e53022bf31373a8b5b0ed80acae0d98d5402c",
+      "candidate_sha256": "03ada47d6605afda004265ae59c4965c8bc4ec5912175983d84313190970564b"
+    },
+    {
+      "time": "0.6002",
+      "field": "phi",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/phi",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/phi",
+      "reference_sha256": "2339b96bfe0f7a288701d0f6f0065f7b4f1c4f9e68d87c229740b492a33dc566",
+      "candidate_sha256": "d3741186179e41ab9341999b50359e2d41b00e06307c37edc6ac84389f6a9444"
+    },
+    {
+      "time": "0.6003",
+      "field": "U",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/U",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/U",
+      "reference_sha256": "56a08639ef086b0b2d5c1b563bb566fc0666d0a59ec15667d48476097044a3f4",
+      "candidate_sha256": "57b4d0ca043c7b4aec9979cc863cc1e04d6f5043504f5309f184b3512d8da893"
+    },
+    {
+      "time": "0.6003",
+      "field": "p",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/p",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/p",
+      "reference_sha256": "5aac271c19da4031af85658a22372a667c6604e3d46f77f2c52b732b6fecbac6",
+      "candidate_sha256": "0929304a24e3ab8ce06841aa92c8e7fb0bc800ed4a22bc6175fc769b24eabeed"
+    },
+    {
+      "time": "0.6003",
+      "field": "phi",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/phi",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/phi",
+      "reference_sha256": "9e4f544c6425b466bd1f14ecab7f82a004b68ddc86c762241b2c0d6b47d3e1d7",
+      "candidate_sha256": "a2e9dd7452ac5c0ecadc0579ec18a0b79de08d4f2d7f59ce0bf3747092620afd"
+    },
+    {
+      "time": "0.6004",
+      "field": "U",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/U",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/U",
+      "reference_sha256": "548d879122051360f3d877b0c6e71e3763c404203ab5d0ac6dc4e626be43b471",
+      "candidate_sha256": "9433bf83aa2a90510380437288b0f168eb8a9e29556440fc6a39770d3eb12033"
+    },
+    {
+      "time": "0.6004",
+      "field": "p",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/p",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/p",
+      "reference_sha256": "433fa93bdb20f1d62a2fff5fa1217b11a1001e8ea13921506d005e5a7fb5f0c1",
+      "candidate_sha256": "40d755c0c5a8f7bca9014cefbf378f7251eb31dc0e2043e7f92934077ed15441"
+    },
+    {
+      "time": "0.6004",
+      "field": "phi",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/phi",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/phi",
+      "reference_sha256": "f5d9d9083ceb2d0fa49632ada6f90f2eda5199635f0b9419dd440347e3e72964",
+      "candidate_sha256": "4c7949439a997765d00d9f7bd67bd7b4807cc169c32edcd7489e675881c37fcb"
+    },
+    {
+      "time": "0.6005",
+      "field": "U",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/U",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/U",
+      "reference_sha256": "96da08fc683da571b4761dbae327799310924de7f5bc8da5b5e78e71aaacc6c6",
+      "candidate_sha256": "2710cefc8c1c9edf8e302887fa6354cade57492639d90f3669d7e8ac41b8db78"
+    },
+    {
+      "time": "0.6005",
+      "field": "p",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/p",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/p",
+      "reference_sha256": "c6bae9c10eaa90b1b052d5b668b31dc527254ae1e29c39fa46a979156837ae64",
+      "candidate_sha256": "e1da2ab59a111e175c537642afc81669143ac0e6e8cdba6b7b744d3f9b411f60"
+    },
+    {
+      "time": "0.6005",
+      "field": "phi",
+      "reference": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/phi",
+      "candidate": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/phi",
+      "reference_sha256": "a70b18133786bd5ae7e0425f0452db204888e95d72e8557ca7266a74ca07393f",
+      "candidate_sha256": "1d5a66572f95c90bafca5f964b7752e3402c53bab136037a57f6211bda0cfc74"
+    }
+  ],
+  "immutable_execution_files": [
+    {
+      "relative_to_execution": "strict_runs/f14_to_cpu_analysis.json",
+      "size_bytes": 250900,
+      "sha256": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e"
+    },
+    {
+      "relative_to_execution": "strict_runs/root_f14_to_cpu_external_gate.json",
+      "size_bytes": 3287,
+      "sha256": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2"
+    },
+    {
+      "relative_to_execution": "strict_runs/root_input_audit.json",
+      "size_bytes": 4076,
+      "sha256": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926"
+    },
+    {
+      "relative_to_execution": "strict_runs/f14_control_five_execution.json",
+      "size_bytes": 14583,
+      "sha256": "55330fd6ad635905678d397ab42566b98e9f1c0334d3cc96d3812647fad6ac17"
+    },
+    {
+      "relative_to_execution": "strict_runs/f14_control_five_prelaunch.json",
+      "size_bytes": 5226,
+      "sha256": "c1397a2d14b960eb5ee0cf0d73728127f2b6924eeb66d4f7ca1803f418789902"
+    },
+    {
+      "relative_to_execution": "strict_runs/f14_control_five_stdout.log",
+      "size_bytes": 7866,
+      "sha256": "3bd912aabb5917aca9001dc1c314f4580c3d503541f84a637ef58663a01d2601"
+    },
+    {
+      "relative_to_execution": "strict_runs/native_cpu_five_execution.json",
+      "size_bytes": 9875,
+      "sha256": "5d0acdabf03babfac0369dbb19707a686855828ce416eb86009599e23da555c3"
+    },
+    {
+      "relative_to_execution": "strict_runs/native_cpu_five_prelaunch.json",
+      "size_bytes": 4398,
+      "sha256": "cf1aa3e51b2ac9a0de70e20a5d59613d4286e2a10450b20cc5b28d3579ea99f2"
+    },
+    {
+      "relative_to_execution": "strict_runs/native_cpu_five_stdout.log",
+      "size_bytes": 21078,
+      "sha256": "deba481994048646771c36189439ff518aa00c5cf9cc12a6fddd7b4693ee55f0"
+    },
+    {
+      "relative_to_execution": "strict_runs/root_input_audit_binding_check.json",
+      "size_bytes": 728,
+      "sha256": "97e9786179ee49b809cf44ec19d66907ed975ae5f50a62b75b8f1315d2cbe103"
+    },
+    {
+      "relative_to_execution": "strict_runs/root_launcher_review.json",
+      "size_bytes": 1196,
+      "sha256": "434e276ff6397c01bbf899c4ac67ce7458b09aca3e703f6dcb32af9802bd477a"
+    },
+    {
+      "relative_to_execution": "strict_runs/root_phase_dictionary_edits.json",
+      "size_bytes": 1644,
+      "sha256": "52b77abdb0364a5015a4a332f5ea6aeb4513bdb2e6be172ee644f0a7fcb11bdd"
+    },
+    {
+      "relative_to_execution": "strict_runs/root_resolved_dictionary_queries.json",
+      "size_bytes": 3178,
+      "sha256": "46e2e8fefde902c0e38a65ce4f6f2f3438797d8201dc1e1539a7182f4462eeaf"
+    },
+    {
+      "relative_to_execution": "strict_runs/phase_archive.json",
+      "size_bytes": 1403,
+      "sha256": "84e8f82e27b15bc22e81529c1297f2f033fd28cefe0f3509ca32fcd21e56e8d0"
+    },
+    {
+      "relative_to_execution": "strict_initial_runs/initial_field_comparison.json",
+      "size_bytes": 6502,
+      "sha256": "81c826eb089d6eb0aa52aa9ee8405944b202e8407853c023cbcc59b59a541489"
+    },
+    {
+      "relative_to_execution": "strict_initial_shared_runs/initial_field_comparison.json",
+      "size_bytes": 6459,
+      "sha256": "6da117692c579c345bcddafab1d1f9a9f92858bbbd63c61f96bd1f56e382a3d7"
+    },
+    {
+      "relative_to_execution": "strict_initial_shared_fallback.json",
+      "size_bytes": 4045,
+      "sha256": "67021dbcb3be8c12f117ef264617b698ab9e68adcac5a178874fbcbd8630897d"
+    },
+    {
+      "relative_to_execution": "strict_pressure_proposal/strict_pressure_protocol.json",
+      "size_bytes": 2124,
+      "sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd"
+    },
+    {
+      "relative_to_execution": "strict_pressure_proposal/root_authorization.json",
+      "size_bytes": 989,
+      "sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56"
+    },
+    {
+      "relative_to_execution": "strict_pressure_proposal/strict_pressure_admission.py",
+      "size_bytes": 4441,
+      "sha256": "b4102dba7234d31413463975dc1050eb176261ce9d7773acf3c5f8e9b0a8765b"
+    },
+    {
+      "relative_to_execution": "analyze_five_steps.py",
+      "size_bytes": 24222,
+      "sha256": "74df3cf053b8596ae57d5a04792867130392ca5ef31b59de526b0d1810d4ee16"
+    },
+    {
+      "relative_to_execution": "compare_initial_cpu.py",
+      "size_bytes": 3700,
+      "sha256": "071202fdd5e9fa623f98701054e48ebea39d271be78171ce228a665b9292850c"
+    },
+    {
+      "relative_to_execution": "compare_strict_initial.py",
+      "size_bytes": 2250,
+      "sha256": "ca513efac524c9b11829ea579f4eeee91217b6765f466e318d486e8fcacae9f7"
+    },
+    {
+      "relative_to_execution": "compare_strict_shared_initial.py",
+      "size_bytes": 2265,
+      "sha256": "7b6c8464cc2c514c7360163e0d1537dfb59aec7f248785bda9665552e28092f4"
+    },
+    {
+      "relative_to_execution": "prepare_native_c29_cases.py",
+      "size_bytes": 19842,
+      "sha256": "d7064bde61a40764965436b4c1935d1a3cd63e54f5a2cf694fae898014c7135c"
+    },
+    {
+      "relative_to_execution": "prepare_strict_pressure_cases.py",
+      "size_bytes": 13966,
+      "sha256": "a9843f4ce9aed928dde1e8a10de7b49807e475c8dccfd2ca3d5825969394096f"
+    },
+    {
+      "relative_to_execution": "prepare_strict_shared_phi.py",
+      "size_bytes": 4724,
+      "sha256": "a4a69148e373816c908bcef0d49cb56d414898c2fd48c4772d19fdf2366a39f7"
+    },
+    {
+      "relative_to_execution": "launch_strict_initial_once.py",
+      "size_bytes": 7274,
+      "sha256": "e63f63f7db3ca49a33e3d37ae0e4ba3cb08d9817ef4e658c9db99cac8818f8e2"
+    },
+    {
+      "relative_to_execution": "launch_strict_initial_once.sh",
+      "size_bytes": 631,
+      "sha256": "4d284fe2ec0405fc4271af0160b0a30af18b3599e55144d092fa6ddb1d1e1b2f"
+    },
+    {
+      "relative_to_execution": "launch_strict_shared_initial_once.py",
+      "size_bytes": 7475,
+      "sha256": "e1d48f61e10ff9bae6982bac9d62fc33f44e73f59ffac5ad0b507f1e017eb2f4"
+    },
+    {
+      "relative_to_execution": "launch_strict_shared_initial_once.sh",
+      "size_bytes": 638,
+      "sha256": "e397c28ffb4773a65b8151ad34f53bf2cc46cee1b15edfa6b15a7ae54164c27e"
+    },
+    {
+      "relative_to_execution": "launch_strict_cpu_five_once.py",
+      "size_bytes": 9541,
+      "sha256": "640db1af9e2388c966fc21970d6c165352b3244dc03f1589438c9f82b7aeb57f"
+    },
+    {
+      "relative_to_execution": "launch_strict_cpu_five_once.sh",
+      "size_bytes": 403,
+      "sha256": "01660b46209a8e69b0983650d6cb822cc90594acbae257d2d7ddda9688078cd9"
+    },
+    {
+      "relative_to_execution": "launch_strict_f14_five_once.py",
+      "size_bytes": 6913,
+      "sha256": "8cf3c60906086cef87053ec2aacaf627e945baa30e19335395fe11c1bca05745"
+    },
+    {
+      "relative_to_execution": "launch_strict_f14_five_once.sh",
+      "size_bytes": 296,
+      "sha256": "9a0244ed483597ce8a0ca0966f8f10e3c4c49026dc0fb7e99e4e366dd59b2f88"
+    },
+    {
+      "relative_to_execution": "write_strict_external_cpu_gate.py",
+      "size_bytes": 4294,
+      "sha256": "805234af50a0163dd91283395abc842c3c29f6bdab7ab744180d7a20ce173d64"
+    }
+  ],
+  "additional_full_groups": [
+    "strict_initial_runs/{cpu,f14,gpu}_{execution,prelaunch}.json and *_stdout.log (all terminal startup only)",
+    "strict_initial_shared_runs/{cpu,gpu}_{execution,prelaunch}.json and *_stdout.log (all terminal startup only)",
+    "strict_runs/previous_controls/* with phase_archive.json",
+    "strict_pressure_proposal/* (source-only reviewed protocol history)",
+    "candidate/ all pinned source/admission/threshold/recipe sources and recipe_templates/",
+    "geometry_reference/ source/provenance plus required frozen geometry cache separately",
+    "managed_strict_combined_v2_3/ whole frozen source-only group",
+    "ownership_candidate_v2_3_source_only_b/ whole frozen source-only group"
+  ],
+  "dependency_map": [
+    {
+      "consumer": "analyze_five_steps.py",
+      "requires": [
+        "execution/compare_initial_cpu.py SHA071202fdd5e9fa623f98701054e48ebea39d271be78171ce228a665b9292850c",
+        "geometry_reference/reference_axial_speed.py SHAc223006e824d1d40cc5dcd5d42e8ebc0e3a9a151d5a25f8a3e40ea93faa9699f",
+        "candidate/validation_thresholds.json SHAd6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+        "strict_pressure_proposal/strict_pressure_admission.py",
+        "strict_runs/root_input_audit.json and logs",
+        "Saved U/p/phi for BOTH roles at .6001/.6002/.6003/.6004/.6005; source references also use .6 U and prior saved U",
+        "geometry cache quadrature.csv SHA5d786c48c11b80b1f4d45c989f8873d22314c9ea2118fda3bfbdaf3b44930db1",
+        "geometry cache rotors.csv SHA41fe936fc5ad3eb63c3756c808ce9b22c67ed0c5abad17e03c130c0ac3bc75ff"
+      ]
+    },
+    {
+      "consumer": "prepare_strict_pressure_cases.py",
+      "requires": [
+        "execution/prepare_native_c29_cases.py SHAd7064bde61a40764965436b4c1935d1a3cd63e54f5a2cf694fae898014c7135c",
+        "candidate/candidate_manifest.json SHA562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7 and its complete source catalogue",
+        "candidate/validation_recipe.json and recipe_templates/",
+        "strict_pressure_proposal/strict_pressure_protocol.json SHA946e8c... and root_authorization.json SHA8ea985...",
+        "benchmark_reproduction/reproduction_manifest.json SHAe75dea5c... and overrides/cpu_serial/benchmark_manifest.json SHA5194b444...",
+        "benchmark_reproduction/shared_seed.zip SHA89c281... 62823211B, already in CPU84 setup",
+        "amgx/evidence/rotor_pilot_manifest.json SHAe3935d...",
+        "External original cached actuator lib SHA402b112... not included binary; rebuild/reproduce procedure must be explicit"
+      ]
+    },
+    {
+      "consumer": "strict initial/shared and CPU launchers",
+      "requires": [
+        "candidate/{audit_candidate.py,admission_audit.py,validation_recipe.json,validation_thresholds.json}",
+        "managed_strict_combined_v2_3/combined_source_manifest.json SHA7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5 and frozen source files",
+        "Strict role control bytes and separately generated unique launch receipts (immutable actual receipt hashes recorded)",
+        "external per-backend library_identity.json (CPU3fadf986... GPUc3e61de1...) and binaries identified by hashes only",
+        "exact startup report and strict audit"
+      ]
+    }
+  ],
+  "limits": [
+    "No current live nativeGPU transient stdout/receipts/traces read or copied; only terminal initial-only GPU records reviewed.",
+    "No actual saved case fields, private cache CSVs, mesh, library binaries or build prefixes were read in this mapping; their hash bindings are reported from immutable records.",
+    "Only startup U/p/phi are exact; transient cross-branch fields are within preregistered thresholds and are not bitwise exact.",
+    "499-check mechanical pass plus Root external gate applies only F14-to-nativeCPU strict shared-phi five fixed steps, not GPU rotor runtime, performance, default adoption or lift optimum.",
+    "Do not relabel legacy relTol.05 continuity failures as strict pass.",
+    "Historical scripts contain hardcoded workspace/private/case paths and one-shot exclusive outputs; preserve immutable originals and provide explicit path alias/dependency map rather than claiming turnkey fresh-host reproduction."
+  ],
+  "recommended_copy_policy": [
+    "Hash each exact workspace file before/after content-only copy; retain original relative layout or record aliases.",
+    "Do not recursively copy strict_runs; explicit allowlist excludes native_gpu_five_stdout.log and any current GPU runtime receipt/profile artifacts.",
+    "Reuse pinned shared_seed.zip/mesh/U/p via existing CPU84 setup assets; do not duplicate immutable mesh or large seed.",
+    "To support independent numerical reevaluation, preserve all 30 saved non-seed U/p/phi outputs or a verified lossless numerical representation plus recorded original hashes. Do not claim hashes alone reproduce field comparisons.",
+    "Canonical initial phi was newly generated by pinned F14 utility; include its exact saved file or supply the pinned utility source/recipe plus canonical SHA.",
+    "Include two small geometry cache CSVs or rebuild procedure+byte verification; analyzer directly requires them.",
+    "Preserve failed computed startup comparison and common-phi fallback policy/receipt history separately.",
+    "Keep legacy relTol.05 report references and original failures distinct.",
+    "Final GPU runtime addendum must wait terminal true-exit review from Root."
+  ]
+}

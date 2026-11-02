@@ -1,0 +1,8 @@
+{
+  "pid": 367774,
+  "uid": 999,
+  "cwd": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+  "birth_tick": 15932090,
+  "started_utc": "2026-11-02T11:36:08.522426+00:00"
+}

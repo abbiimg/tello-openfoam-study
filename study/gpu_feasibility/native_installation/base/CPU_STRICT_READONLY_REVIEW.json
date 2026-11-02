@@ -1,0 +1,40 @@
+{
+  "kind": "Independent read-only CPU/strict copied-evidence check",
+  "reviewer": "/root/final_packaging/native_cpu_curation_map",
+  "copied_files_compared": 197,
+  "copy_mismatches": 0,
+  "final_GCC_prefixed_log_lines": 1620,
+  "lines_containing_compile_c": 1606,
+  "offload_flag_hits": 0,
+  "early_313_line_snapshot_preserved_as_historical": true,
+  "stock_CPU": {
+    "solver_returncode": 0,
+    "steps": 100,
+    "final_time_s": 0.5,
+    "End": true,
+    "continuity_records": 200,
+    "peak_local": 0.000466513,
+    "original_screen_passed": false
+  },
+  "strict_actual_PIDs": {
+    "CPU": 375554,
+    "GPU": 376385
+  },
+  "strict_waited_true_exits_zero": true,
+  "stable_binary_identities_and_no_owned_processes_in_closure": true,
+  "strict_saved_times_s": [
+    0.005,
+    0.01,
+    0.015,
+    0.02,
+    0.025
+  ],
+  "complete_U_p_phi_all_steps": true,
+  "independent_copied_field_comparisons": {
+    "U_p_pairs": 10,
+    "maximum_differences_match_exactly": true,
+    "relative_norm_absolute_difference_at_most": 1e-26
+  },
+  "library_caveat": "Strict receipts preserve ldd loaded_library_candidates_sha256; they are not complete proc-maps observations",
+  "new_solver_compiler_or_GPU_execution": false
+}

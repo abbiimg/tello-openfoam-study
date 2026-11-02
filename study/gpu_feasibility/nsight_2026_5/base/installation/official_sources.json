@@ -1,0 +1,18 @@
+{
+  "accessed_utc_date": "2026-11-02",
+  "download_page": "https://developer.nvidia.com/nsight-systems/get-started",
+  "release_notes": "https://docs.nvidia.com/nsight-systems/ReleaseNotes/",
+  "release_note_fact": "Nsight Systems2026.5.1 lists CUDA13.4 support.",
+  "canonical_archive_url": "https://developer.nvidia.com/downloads/assets/tools/secure/nsight-systems/2026_5/nsight-systems-cli-2026.5.1_2026.5.1.161-1_arm64.deb",
+  "archive_bytes": 208229554,
+  "archive_sha256": "087c08b5ddf3ed6f913748f8206d6bbdc225f2aa275ff33af4c487e8b319c8ab",
+  "checksum_origin": "SHA256 of exact official-HTTPS download; no separate vendor checksum was supplied by the download page",
+  "actual_package_metadata": {
+    "Package": "nsight-systems-cli-2026.5.1",
+    "Version": "2026.5.1.161-265138896106v0",
+    "Architecture": "arm64",
+    "Depends": "libc6, libglib2.0-0"
+  },
+  "package_extracted_not_installed_with_scripts": true,
+  "historical_SDK_profiler_unchanged": true
+}

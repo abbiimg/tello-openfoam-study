@@ -1,0 +1,14 @@
+WM_OPTIONS=linuxARM64GccDPInt32Opt
+WM_COMPILER=Gcc
+WM_MPLIB=none
+WM_PRECISION_OPTION=DP
+WM_LABEL_SIZE=32
+WM_PROJECT_DIR=/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606
+FOAM_APPBIN=/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin
+LD_LIBRARY_PATH=/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64GccDPInt32/lib:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/fftw-3.3.10/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/CGAL-4.14.3/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/ThirdParty-v2606/platforms/linuxARM64Gcc/boost_1_74_0/lib64:/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy
+/usr/bin/g++
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

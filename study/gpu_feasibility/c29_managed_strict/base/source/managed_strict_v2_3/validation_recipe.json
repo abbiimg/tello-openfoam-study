@@ -1,0 +1,95 @@
+{
+  "schema": "c29-native-five-fixed-steps-plan-v1",
+  "status": "Source only; no case restored, built, run or authorized",
+  "cells": 922576,
+  "shared_seed_archive": "outputs/tello_refinement/gpu_feasibility/benchmark_reproduction/shared_seed.zip",
+  "shared_seed_archive_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+  "shared_seed_archive_bytes": 62823211,
+  "reproduction_manifest_sha256": "e75dea5cbaaae870cf568266d95a61cc3fa28a288c4d39113e00aecc08a880c9",
+  "cpu_override_manifest_sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+  "unchanged_input_hashes": {
+    "0.6/U": {
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "size_bytes": 38621951
+    },
+    "0.6/p": {
+      "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+      "size_bytes": 13004937
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426
+    },
+    "system/blockMeshDict": {
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+      "size_bytes": 743
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "size_bytes": 813
+    },
+    "constant/polyMesh/cellProc": {
+      "sha256": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+      "size_bytes": 1845845
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "size_bytes": 85443688
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "size_bytes": 18862641
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "size_bytes": 19220457
+    },
+    "constant/polyMesh/points": {
+      "sha256": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "size_bytes": 37520188
+    }
+  },
+  "geometry": {
+    "rotors": 8,
+    "layout": "square_perimeter",
+    "nearest_spacing_cm": 10,
+    "tilt_deg": 0,
+    "diameter_m": 0.0762,
+    "thickness_m": 0.012,
+    "box_width_m": 0.2762,
+    "battery_input_W": 19.2923076923077
+  },
+  "new_protocol": {
+    "start_s": 0.6,
+    "end_s": 0.6005,
+    "steps": 5,
+    "deltaT_s": 0.0001,
+    "adjustTimeStep": false,
+    "controller": "Fresh process; unchanged warm C29 reset at first .6001 call; no transferred history",
+    "comparison": "Fresh matching Foundation14 control; differs from published adaptive five-step pilots",
+    "initial_phi": "Absent in seed. Require exact initialized U/p/phi agreement. If computed phi differs, STOP or separately authorize/pin one Foundation14-generated common phi copied unchanged to BOTH fresh controls."
+  },
+  "no_case_created": true,
+  "no_solver_launched": true,
+  "source_candidate_version": 2,
+  "experimental_admission": "Explicit unvalidated phase-specific permission; no prior runtime acceptance asserted",
+  "input_launch_binding": "Frozen byte/mtime input audit, binary/library/environment bindings and manual argv receipt; no process runner",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "source_observations": "Matrix/source/air-force/work integration; per-rotor cache/flux/previous-current thrust/index telemetry; no mirror controller-law criterion"
+}

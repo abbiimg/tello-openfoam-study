@@ -1,0 +1,47 @@
+{
+  "amgx_repository": "https://github.com/NVIDIA/AMGX",
+  "amgx_tag": "v2.5.0",
+  "amgx_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "official_release": "https://github.com/NVIDIA/AMGX/releases/tag/v2.5.0",
+  "openfoam_family": "Foundation",
+  "openfoam_version": "14-a4867fc914c1",
+  "tested_platform": "Linux ARM64 / WSL2 / NVIDIA RTX Spark N1X compute 12.1",
+  "cuda_nvcc": "13.0.88",
+  "cmake": "3.31.7",
+  "gcc": "13.3",
+  "cuda_architecture": 121,
+  "linked_runtime": "shared cudart",
+  "mpi_enabled": false,
+  "original_libraries": {
+    "install/lib/libamgxsh.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxsh.so",
+      "bytes": 138946200,
+      "sha256": "28385b730dccb1f9aabbd9b0caf37ecd478720889398d0df8c65e5d24ce7ef58"
+    },
+    "install/lib/libAmgXPressure.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libAmgXPressure.so",
+      "bytes": 81944,
+      "sha256": "dce4bb6ca9e9d6b1060c10636ebec99f5623194c19e11277b57c90fabaa5fc3c"
+    },
+    "install/lib/libamgxLaunchAudit.so": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/lib/libamgxLaunchAudit.so",
+      "bytes": 70872,
+      "sha256": "203edc554f63818c5cf5a3d2c8a76272610270d2d296bff2ea1728a8c519d1d4"
+    },
+    "install/bin/amgx_poisson_smoke": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/install/bin/amgx_poisson_smoke",
+      "bytes": 75624,
+      "sha256": "686a37d43060f8bf03660e4ecbda51c7ed504c8a6f978d0e549c49b9ad9d93bf"
+    }
+  },
+  "external_seed_package": {
+    "relative_study_path": "gpu_feasibility/benchmark_reproduction",
+    "shared_seed_zip_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+    "shared_seed_zip_bytes": 62823211,
+    "description": "Separate previously published seed package; contains the large frozen mesh and warm U,p, not duplicated here.",
+    "cpu_benchmark_manifest_sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+    "reproduction_manifest_sha256_observed": "e75dea5cbaaae870cf568266d95a61cc3fa28a288c4d39113e00aecc08a880c9"
+  },
+  "actuator_library_sha256": "402b112e09f36444ac13d19a3a04f3aca24344a632eb7a258fd11fc3a33392ce",
+  "actuator_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+}

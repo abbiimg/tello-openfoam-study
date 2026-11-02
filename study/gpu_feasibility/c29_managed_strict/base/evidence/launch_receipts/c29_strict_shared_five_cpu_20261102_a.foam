@@ -1,0 +1,12 @@
+schema c29-unvalidated-input-admission-v2;
+experimentId "c29_strict_shared_five_cpu_20261102_a";
+phase five_fixed_steps;
+backend cpu;
+casePath "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu";
+inputsAudited true;
+runtimeValidated false;
+inputSnapshotSha256 "471700564efa5fac4b076a8573c9fb179397e1a3d05d6926c9e182b9b880ef20";
+launchReceiptJsonSha256 "666b17cd1a6912f3b35f2460bd061f8b5498ad1c4a42fa0eb3fbbc080c5d865c";
+candidateManifestSha256 "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7";
+binarySha256 "535cb85ecb08b34b6a6ff08a00d1afc1857b68f041d4e89df309e2dbb5c01e89";
+libraryIdentitySha256 "3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80";

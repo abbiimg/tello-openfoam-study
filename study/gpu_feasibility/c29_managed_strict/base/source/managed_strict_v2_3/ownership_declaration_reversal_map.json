@@ -1,0 +1,82 @@
+[
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "        volVectorField initialU(IOobject(\"c29_initialU\",runTime.timeName(),mesh,\n            IOobject::NO_READ,IOobject::NO_WRITE,false),U);",
+    "after": "        autoPtr<volVectorField> initialUOwner\n        (\n            new volVectorField(IOobject(\"c29_initialU\",runTime.timeName(),mesh,\n            IOobject::NO_READ,IOobject::NO_WRITE,false),U)\n        );\n        volVectorField& initialU=initialUOwner();\n        C29::managedGeometricField(initialU,\"initialU\");"
+  },
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "        volScalarField initialP(IOobject(\"c29_initialP\",runTime.timeName(),mesh,\n            IOobject::NO_READ,IOobject::NO_WRITE,false),p);",
+    "after": "        autoPtr<volScalarField> initialPOwner\n        (\n            new volScalarField(IOobject(\"c29_initialP\",runTime.timeName(),mesh,\n            IOobject::NO_READ,IOobject::NO_WRITE,false),p)\n        );\n        volScalarField& initialP=initialPOwner();\n        C29::managedGeometricField(initialP,\"initialP\");"
+  },
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "        surfaceScalarField initialPhi(IOobject(\"c29_initialPhi\",runTime.timeName(),mesh,\n            IOobject::NO_READ,IOobject::NO_WRITE,false),phi);",
+    "after": "        autoPtr<surfaceScalarField> initialPhiOwner\n        (\n            new surfaceScalarField(IOobject(\"c29_initialPhi\",runTime.timeName(),mesh,\n            IOobject::NO_READ,IOobject::NO_WRITE,false),phi)\n        );\n        surfaceScalarField& initialPhi=initialPhiOwner();\n        C29::managedGeometricField(initialPhi,\"initialPhi\");"
+  },
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "                volScalarField rAU(1.0/UEqn.A());",
+    "after": "                autoPtr<volScalarField> rAUOwner\n                (\n                    new volScalarField(1.0/UEqn.A())\n                );\n                volScalarField& rAU=rAUOwner();\n                C29::managedGeometricField(rAU,\"rAU\");"
+  },
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "                volVectorField HbyA(constrainHbyA(rAU*UEqn.H(),U,p));",
+    "after": "                autoPtr<volVectorField> HbyAOwner\n                (\n                    new volVectorField(constrainHbyA(rAU*UEqn.H(),U,p))\n                );\n                volVectorField& HbyA=HbyAOwner();\n                C29::managedGeometricField(HbyA,\"HbyA\");"
+  },
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "                surfaceScalarField phiHbyA\n                (\n                    \"phiHbyA\",fvc::flux(HbyA)\n                    +fvc::interpolate(rAU)*C29::eulerPhiCorrection(U,phi)\n                );",
+    "after": "                autoPtr<surfaceScalarField> phiHbyAOwner\n                (\n                    new surfaceScalarField(\n                    \"phiHbyA\",fvc::flux(HbyA)\n                    +fvc::interpolate(rAU)*C29::eulerPhiCorrection(U,phi)\n                )\n                );\n                surfaceScalarField& phiHbyA=phiHbyAOwner();\n                C29::managedGeometricField(phiHbyA,\"phiHbyA\");"
+  },
+  {
+    "file": "c29NativeHybridFoam.C",
+    "before": "                    fvScalarMatrix pEqn\n                    (\n                        fvm::laplacian(rAU,p)==fvc::div(phiHbyA)\n                    );",
+    "after": "                    autoPtr<fvScalarMatrix> pEqnOwner\n                    (\n                        new fvScalarMatrix(\n                        fvm::laplacian(rAU,p)==fvc::div(phiHbyA)\n                    )\n                    );\n                    fvScalarMatrix& pEqn=pEqnOwner();\n                    C29::managedMatrix(pEqn,\"pEqn\");"
+  },
+  {
+    "file": "createC29Fields.H",
+    "before": "volScalarField p\n(\n    IOobject\n    (\n        \"p\",\n        runTime.timeName(),\n        mesh,\n        IOobject::MUST_READ,\n        IOobject::AUTO_WRITE\n    ),\n    mesh\n);",
+    "after": "autoPtr<volScalarField> pOwner\n(\n    new volScalarField(\n    IOobject\n    (\n        \"p\",\n        runTime.timeName(),\n        mesh,\n        IOobject::MUST_READ,\n        IOobject::AUTO_WRITE\n    ),\n    mesh\n)\n);\nvolScalarField& p=pOwner();\nC29::managedGeometricField(p,\"p\");"
+  },
+  {
+    "file": "createC29Fields.H",
+    "before": "volVectorField U\n(\n    IOobject\n    (\n        \"U\",\n        runTime.timeName(),\n        mesh,\n        IOobject::MUST_READ,\n        IOobject::AUTO_WRITE\n    ),\n    mesh\n);",
+    "after": "autoPtr<volVectorField> UOwner\n(\n    new volVectorField(\n    IOobject\n    (\n        \"U\",\n        runTime.timeName(),\n        mesh,\n        IOobject::MUST_READ,\n        IOobject::AUTO_WRITE\n    ),\n    mesh\n)\n);\nvolVectorField& U=UOwner();\nC29::managedGeometricField(U,\"U\");"
+  },
+  {
+    "file": "createC29Fields.H",
+    "before": "volScalarField nuEff\n(\n    IOobject(\"nuEff\",runTime.constant(),mesh,IOobject::NO_READ,IOobject::NO_WRITE,false),\n    mesh,nu\n);",
+    "after": "autoPtr<volScalarField> nuEffOwner\n(\n    new volScalarField(\n    IOobject(\"nuEff\",runTime.constant(),mesh,IOobject::NO_READ,IOobject::NO_WRITE,false),\n    mesh,nu\n)\n);\nvolScalarField& nuEff=nuEffOwner();\nC29::managedGeometricField(nuEff,\"nuEff\");"
+  },
+  {
+    "file": "createC29ManagedPhi.H",
+    "before": "surfaceScalarField phi\n(\n    IOobject\n    (\n        \"phi\",\n        runTime.timeName(),\n        mesh,\n        IOobject::READ_IF_PRESENT,\n        IOobject::AUTO_WRITE\n    ),\n    fvc::flux(U)\n);",
+    "after": "autoPtr<surfaceScalarField> phiOwner\n(\n    new surfaceScalarField(\n    IOobject\n    (\n        \"phi\",\n        runTime.timeName(),\n        mesh,\n        IOobject::READ_IF_PRESENT,\n        IOobject::AUTO_WRITE\n    ),\n    fvc::flux(U)\n)\n);\nsurfaceScalarField& phi=phiOwner();\nC29::managedGeometricField(phi,\"phi\");"
+  },
+  {
+    "file": "C29Operators.H",
+    "before": "    surfaceScalarField nuFace(\"c29NuFace\",fvc::interpolate(nuEff));",
+    "after": "    autoPtr<surfaceScalarField> nuFaceOwner\n    (\n        new surfaceScalarField(\"c29NuFace\",fvc::interpolate(nuEff))\n    );\n    surfaceScalarField& nuFace=nuFaceOwner();\n    C29::managedGeometricField(nuFace,\"nuFace\");"
+  },
+  {
+    "file": "C29Operators.H",
+    "before": "    surfaceVectorField devTauCorrFlux\n    (\n        \"devTauCorrFlux\",\n        -nuFace*fvc::dotInterpolate(mesh.Sf(),dev2(T(fvc::grad(U))))\n    );",
+    "after": "    autoPtr<surfaceVectorField> devTauCorrFluxOwner\n    (\n        new surfaceVectorField(\n        \"devTauCorrFlux\",\n        -nuFace*fvc::dotInterpolate(mesh.Sf(),dev2(T(fvc::grad(U))))\n    )\n    );\n    surfaceVectorField& devTauCorrFlux=devTauCorrFluxOwner();\n    C29::managedGeometricField(devTauCorrFlux,\"devTauCorrFlux\");"
+  },
+  {
+    "file": "C29Operators.H",
+    "before": "    surfaceScalarField dPhi\n    (\n        \"c29EulerDeltaPhi\",\n        phi.oldTime()-fvc::dotInterpolate(mesh.Sf(),U.oldTime())\n    );",
+    "after": "    autoPtr<surfaceScalarField> dPhiOwner\n    (\n        new surfaceScalarField(\n        \"c29EulerDeltaPhi\",\n        phi.oldTime()-fvc::dotInterpolate(mesh.Sf(),U.oldTime())\n    )\n    );\n    surfaceScalarField& dPhi=dPhiOwner();\n    C29::managedGeometricField(dPhi,\"dPhi\");"
+  },
+  {
+    "file": "C29Operators.H",
+    "before": "    surfaceScalarField coupling\n    (\n        \"c29EulerCoupling\",\n        scalar(1)-min\n        (\n            mag(dPhi)/(mag(phi.oldTime())+dimensionedScalar\n            (\n                \"small\",phi.dimensions(),std::numeric_limits<scalar>::epsilon()\n            )),\n            scalar(1)\n        )\n    );",
+    "after": "    autoPtr<surfaceScalarField> couplingOwner\n    (\n        new surfaceScalarField(\n        \"c29EulerCoupling\",\n        scalar(1)-min\n        (\n            mag(dPhi)/(mag(phi.oldTime())+dimensionedScalar\n            (\n                \"small\",phi.dimensions(),std::numeric_limits<scalar>::epsilon()\n            )),\n            scalar(1)\n        )\n    )\n    );\n    surfaceScalarField& coupling=couplingOwner();\n    C29::managedGeometricField(coupling,\"coupling\");"
+  },
+  {
+    "file": "C29HostSource.H",
+    "before": "    fvVectorMatrix source(U,UEqn.dimensions());",
+    "after": "    autoPtr<fvVectorMatrix> sourceOwner\n    (\n        new fvVectorMatrix(U,UEqn.dimensions())\n    );\n    fvVectorMatrix& source=sourceOwner();\n    C29::managedMatrix(source,\"source\");"
+  }
+]

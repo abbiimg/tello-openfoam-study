@@ -1,0 +1,23 @@
+{
+  "reviewed_utc": "2026-11-02T10:07:19.934744+00:00",
+  "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/applications/test/std_execution/Test-std_execution.C",
+  "source_sha256": "760498bb1db0d693aa67c502cee743de5d5f3b3fc90e19c12efd14ee2f29805f",
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-std_execution",
+  "binary_sha256": "95b23b6ee0205286a193174ce437d655ecf2884ddf1cbaac9190b88160c57685",
+  "compiled": true,
+  "executed": false,
+  "source_parameters": {
+    "nCells": 10000000,
+    "sequential_interpolation_repeats": 1000,
+    "parallel_interpolation_repeats": 1000
+  },
+  "observed_compiler_warning": "warning #3291-D: function \"lambda []\" captures local object \"N\" by reference, will likely cause an illegal memory access when run on the device [no_device_stack]",
+  "warning_location": "Test-std_execution.C:115",
+  "warning_evidence": "Original compile log inspected in the2026-11-02 09:48UTC health check; a cached resume subsequently replaced the per-stage log. Exact warning is retained here; source and binary hashes are recorded.",
+  "runtime_failure_claimed": false,
+  "replacement_gates": [
+    "native_field_arithmetic_gate.json",
+    "native_field_gpu_api_gate.json",
+    "pending native cavity and CFD-loop GPU API gates"
+  ]
+}

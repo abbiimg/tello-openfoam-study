@@ -1,0 +1,24 @@
+{
+  "decision": "APPROVED_FOR_UNVALIDATED_F14_AND_CPU_FIVE_STEPS",
+  "source_only_review": true,
+  "files": [
+    {
+      "name": "launch_strict_f14_five_once.py",
+      "sha256": "8cf3c60906086cef87053ec2aacaf627e945baa30e19335395fe11c1bca05745"
+    },
+    {
+      "name": "launch_strict_cpu_five_once.py",
+      "sha256": "640db1af9e2388c966fc21970d6c165352b3244dc03f1589438c9f82b7aeb57f"
+    },
+    {
+      "name": "launch_strict_f14_five_once.sh",
+      "sha256": "9a0244ed483597ce8a0ca0966f8f10e3c4c49026dc0fb7e99e4e366dd59b2f88"
+    },
+    {
+      "name": "launch_strict_cpu_five_once.sh",
+      "sha256": "01660b46209a8e69b0983650d6cb822cc90594acbae257d2d7ddda9688078cd9"
+    }
+  ],
+  "strict_input_audit_sha256": "5d28b04d822be3c3513e885e985970223da48329f688ab70408639c7ef55b926",
+  "review": "Fixed new strict cases, exact shared startup, byte-bound independent input audit, unchanged source/cache/mesh, scoped deadline, real child identity, loaded-library hashes and all original input hashes. CPU header corrected after preparation; current hashes supersede only that source-only header hash. No runtime acceptance or GPU stepping authorized by this review."
+}

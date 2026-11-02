@@ -1,0 +1,8 @@
+{
+  "max_jobs": 4,
+  "minimum_available_memory_gib": 20,
+  "memory_allowance_per_new_cpu_job_gib": 2,
+  "nice": 15,
+  "combined_compiler_cap": 10,
+  "reason": "Root authorized nativeGPU4 plus SPUMA2 plus CPU companion4; reduce new CPU concurrency if available memory approaches the20GiB reserve. No timing benchmark during builds."
+}

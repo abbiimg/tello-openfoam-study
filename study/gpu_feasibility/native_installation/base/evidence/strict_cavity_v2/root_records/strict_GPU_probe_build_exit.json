@@ -1,0 +1,12 @@
+{
+  "stage": "strict_GPU_probe_build",
+  "argv": [
+    "wmake",
+    "-j1",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application"
+  ],
+  "return_code": 0,
+  "completed_utc": "2026-11-02T11:56:42.926141+00:00",
+  "log": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/strict_GPU_probe_build.log",
+  "log_sha256": "f7f11bf9f36e08789c91844bd7b03c4ec6c6eadea3f64a36304ae88bc8cd9e61"
+}

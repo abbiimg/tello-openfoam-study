@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eo pipefail
+cd -- "$(dirname -- "$0")"
+. /opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh
+/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/blockMesh > log.blockMesh 2>&1
+/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/icoFoam > log.icoFoam 2>&1

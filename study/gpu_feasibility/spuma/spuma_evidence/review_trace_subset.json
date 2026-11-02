@@ -1,0 +1,68 @@
+{
+  "kind": "Lossless subset of ONLY rows and strings used by frozen first-step checks",
+  "extracted_utc": "2026-11-02T11:56:39.557541+00:00",
+  "source_private_sqlite": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.sqlite",
+  "source_sqlite_sha256": "b97bdf6e0d2301ae0b4d6786ace6095628c93f25c55e69ec2638216902c831d3",
+  "source_private_report": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.nsys-rep",
+  "source_report_sha256": "0413484a62986580eac3ec93bf423dbdb5e4f6750bd0b19911079223c52541f3",
+  "predicate": {
+    "start_at_least": 31389755,
+    "end_at_most": 54326392338,
+    "globalTid": 287645200915614,
+    "launch_name_contains": [
+      "cudaLaunchKernel",
+      "cuLaunchKernel",
+      "cudaGraphLaunch",
+      "cuGraphLaunch",
+      "cudaLaunchCooperativeKernel"
+    ],
+    "sync_name_contains": [
+      "cudaDeviceSynchronize",
+      "cudaStreamSynchronize",
+      "cuCtxSynchronize",
+      "cuStreamSynchronize"
+    ]
+  },
+  "row_counts": {
+    "CUPTI_ACTIVITY_KIND_RUNTIME": 4890,
+    "NVTX_EVENTS": 1,
+    "PROCESSES": 1,
+    "StringIds": 2
+  },
+  "successful_launch_rows": 2445,
+  "successful_sync_rows": 2445,
+  "failed_rows": 0,
+  "StringIds_policy": "Only ids referenced by copied API nameId or NVTX textId; no other StringIds copied",
+  "process_policy": "Only the actual icoFoam pid row; only the complete named NVTX range row",
+  "environment_values_read_or_copied": false,
+  "unrelated_process_or_environment_tables_copied": false,
+  "original_full_report_and_SQLite_unchanged": true,
+  "frozen_gate_or_threshold_changed": false,
+  "no_speed_inference": true,
+  "review_subset": "spuma_evidence/strict_v2/cavity_first_step_trace_review_subset.sqlite",
+  "review_subset_sha256": "5568ec28bdd7dd8ec9f3ee4d2649b7fd27f272e0d8f6b515fd3f93e839e14914",
+  "private_raw_references": [
+    {
+      "private_path": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.nsys-rep",
+      "sha256": "0413484a62986580eac3ec93bf423dbdb5e4f6750bd0b19911079223c52541f3",
+      "bytes": 324893,
+      "omitted_from_candidate": "spuma_evidence/strict_v2/cavity_first_step_trace.nsys-rep",
+      "reason": "Raw report can store target environment by default; full SQLite/StringIds contains unnecessary metadata; private original retained"
+    },
+    {
+      "private_path": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/cavity_first_step_trace.sqlite",
+      "sha256": "b97bdf6e0d2301ae0b4d6786ace6095628c93f25c55e69ec2638216902c831d3",
+      "bytes": 905216,
+      "omitted_from_candidate": "spuma_evidence/strict_v2/cavity_first_step_trace.sqlite",
+      "reason": "Raw report can store target environment by default; full SQLite/StringIds contains unnecessary metadata; private original retained"
+    },
+    {
+      "private_path": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool/cavity_icoFoam_time_loop_trace.nsys-rep",
+      "sha256": "6f839c9280f52fb3b3c503a73be0d0f5708b98bac625f7279a9ba9ac5fcb2c85",
+      "bytes": 150868,
+      "omitted_from_candidate": "spuma_evidence/original_failed/cavity_icoFoam_time_loop_trace.nsys-rep",
+      "reason": "Raw report can store target environment by default; full SQLite/StringIds contains unnecessary metadata; private original retained"
+    }
+  ],
+  "extraction_recipe_sha256": "89ddee5848ec9761698460b43fec205ef2e9733b59b80b851c49201f8b8d651a"
+}

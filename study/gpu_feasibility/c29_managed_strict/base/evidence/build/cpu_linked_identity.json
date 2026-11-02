@@ -1,0 +1,145 @@
+{
+  "schema": "c29-managed-strict-linked-app-v2.3",
+  "backend": "cpu",
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102",
+  "completed_utc": "2026-11-02T13:19:11.644642+00:00",
+  "state": "LINKED_ONLY_NO_APPLICATION_MAIN_INITIALIZATION_OR_CFD_RUN",
+  "binary": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "sha256": "535cb85ecb08b34b6a6ff08a00d1afc1857b68f041d4e89df309e2dbb5c01e89",
+    "size_bytes": 1037696
+  },
+  "library_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/library_identity.json",
+    "sha256": "3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80",
+    "size_bytes": 3198
+  },
+  "method_identity": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/method_identity.json",
+    "sha256": "f823eb1e91e0255fce97611b62cbc6a37fe574a20ee78da6e6ed7adb14e749bf",
+    "size_bytes": 5928
+  },
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "source_files_identical_to_combined_manifest": true,
+  "source_manifest": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/combined_source_manifest.json",
+    "sha256": "7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5",
+    "size_bytes": 6854
+  },
+  "compiler_jobs_max": 1,
+  "both_backends_compiler_jobs_total_max": 2,
+  "nice": 15,
+  "actual_wmake_child": {
+    "pid": 385885,
+    "start_ticks": "16533708",
+    "uid": 999,
+    "nice": 15,
+    "argv": [
+      "/bin/bash",
+      "-c",
+      ". /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/build_environment.sh\nset -e\ncd /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/source\nwmake -j1\n"
+    ],
+    "started_utc": "2026-11-02T13:16:24.705720+00:00",
+    "MemAvailable_kib_at_start": 59140348,
+    "exit_code": 0,
+    "ended_utc": "2026-11-02T13:16:43.078016+00:00"
+  },
+  "actual_compile_and_link_commands": [
+    "g++ -std=c++17 -pthread  -DOPENFOAM=2609 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -floop-optimize -falign-loops -falign-labels -falign-functions -falign-jumps  -DNoRepository -ftemplate-depth=1000  -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/finiteVolume/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/meshTools/lnInclude -DC29_USE_CUDA=0 -DC29_USE_NVTX=1  -I/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include -iquote. -IlnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OpenFOAM/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OSspecific/POSIX/lnInclude   -fPIC -c c29NativeHybridFoam.C -o Make/linuxARM64GccDPInt32Opt/c29NativeHybridFoam.o",
+    "g++ -std=c++17 -pthread  -DOPENFOAM=2609 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -floop-optimize -falign-loops -falign-labels -falign-functions -falign-jumps  -DNoRepository -ftemplate-depth=1000  -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/finiteVolume/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/meshTools/lnInclude -DC29_USE_CUDA=0 -DC29_USE_NVTX=1  -I/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include -iquote. -IlnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OpenFOAM/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OSspecific/POSIX/lnInclude   -fPIC -Xlinker --add-needed -Xlinker --no-as-needed  Make/linuxARM64GccDPInt32Opt/c29NativeHybridFoam.o -L/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib \\"
+  ],
+  "actual_compile_tokens": [
+    "g++",
+    "-std=c++17",
+    "-pthread",
+    "-DOPENFOAM=2609",
+    "-DWM_DP",
+    "-DWM_LABEL_SIZE=32",
+    "-Wall",
+    "-Wextra",
+    "-Wold-style-cast",
+    "-Wnon-virtual-dtor",
+    "-Wno-unused-parameter",
+    "-Wno-invalid-offsetof",
+    "-Wno-attributes",
+    "-Wno-unknown-pragmas",
+    "-O3",
+    "-floop-optimize",
+    "-falign-loops",
+    "-falign-labels",
+    "-falign-functions",
+    "-falign-jumps",
+    "-DNoRepository",
+    "-ftemplate-depth=1000",
+    "-I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/finiteVolume/lnInclude",
+    "-I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/meshTools/lnInclude",
+    "-DC29_USE_CUDA=0",
+    "-DC29_USE_NVTX=1",
+    "-I/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include",
+    "-iquote.",
+    "-IlnInclude",
+    "-I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OpenFOAM/lnInclude",
+    "-I/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/src/OSspecific/POSIX/lnInclude",
+    "-fPIC",
+    "-c",
+    "c29NativeHybridFoam.C",
+    "-o",
+    "Make/linuxARM64GccDPInt32Opt/c29NativeHybridFoam.o"
+  ],
+  "actual_offload_flag_tokens": [],
+  "identity_collector_source_sha256": "bf11fb1bd7260815c3e9957f15f90d17d45d62d4b794d78cfbfd6a234293035d",
+  "artifacts": {
+    "build.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/build.log",
+      "sha256": "2bbb6657879e13b263bc35fe2a95c38220263caf998404190b21ce61e86aa17a",
+      "size_bytes": 2411
+    },
+    "environment.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/environment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "build_environment.sh": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/build_environment.sh",
+      "sha256": "a36bf440d13dc616dfba0d3bfab4a14f2bd0dc8475350793af32cf60dbfb84b4",
+      "size_bytes": 561
+    },
+    "environment_selected.json": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/environment_selected.json",
+      "sha256": "02dd8ca0700312c1be3b7eb998c6811ab12e13b69a8e740c92624c3a49ba660a",
+      "size_bytes": 2771
+    },
+    "compiler_version.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/compiler_version.log",
+      "sha256": "59d1cbef41d4ae78d5063d525b7aa13d18dc0493ea00537efc19b2ee398cb5a8",
+      "size_bytes": 246
+    },
+    "runtime_dependency_audit.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/runtime_dependency_audit.log",
+      "sha256": "358fb74af582956624fa31ce20f36e69ae61a154da1794bdc874d1968220dcb7",
+      "size_bytes": 1509
+    },
+    "elf_dynamic.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/elf_dynamic.log",
+      "sha256": "7b8b0c5c0c455cc9158d13aba7c5b26a4e78c50e9be300fce4f58f5de49e0294",
+      "size_bytes": 2060
+    },
+    "elf_header.log": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/elf_header.log",
+      "sha256": "691897c911a9b8c412bbdd54ef3a3a139c3cf7eeb73f4f4eb05a0e81f189cbe8",
+      "size_bytes": 954
+    },
+    "method_identity.json": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/method_identity.json",
+      "sha256": "f823eb1e91e0255fce97611b62cbc6a37fe574a20ee78da6e6ed7adb14e749bf",
+      "size_bytes": 5928
+    },
+    "actual_child.json": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/actual_child.json",
+      "sha256": "e6cd5b3a8ab067e582c82d4e0c9c7d1e28a01fb7509f96be6747f1943d145278",
+      "size_bytes": 549
+    }
+  },
+  "loaded_at_future_solver_runtime_identity_not_yet_observed": true,
+  "case_inputs_untouched": true
+}

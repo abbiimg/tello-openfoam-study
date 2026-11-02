@@ -1,0 +1,17 @@
+{
+  "schema": "c29-strict-pressure-root-authorization-v1",
+  "protocol": "c29-native-five-fixed-steps-strict-pressure-v1",
+  "protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "decision": "APPROVED_FOR_UNVALIDATED_FIVE_STEPS",
+  "approved_utc": "2026-11-02T12:53:35.2252962Z",
+  "fresh_case_root": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "changes": "Only first pressure relTol 0.05 to 0 at unchanged absolute tolerance; preserve failed legacy records",
+  "preconditions": [
+    "Fresh guarded inputs and exact startup U/p/phi gate repeated",
+    "Root-reviewed combined versioned ownership/strict-restriction candidate before build",
+    "Input, binary, loaded-library and actual terminal receipts bound",
+    "No threshold relaxation or retroactive qualification"
+  ],
+  "runtime_validated": false
+}

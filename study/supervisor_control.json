@@ -1,5 +1,5 @@
 {
-  "stop_launching": false,
+  "stop_launching": true,
   "phase": "stage3_refinement_and_controls",
   "allowed_cases": [
     "finemapped_n4_e19.2923_d1000_az0000",
@@ -20,10 +20,10 @@
     "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
     "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131"
   ],
-  "reason": "Root-audited and authorized single Circle8 inward12.5 mapped medium/fine pair plus existing continuations. Source and physics unchanged; fifteen unstarted deferrals remain held; cap16; no automatic promotion.",
+  "reason": "All84 explicitly selected cases are terminal immutable successes. Drain only this task supervisor/watchdog; preserve15 unstarted deferrals and all physics/results. Root continues archive/analysis and owns final approved-case freeze.",
   "rank_budget": 16,
   "reserved_new_batch_ranks": 0,
-  "updated_utc": "2026-11-02T05:33:43Z",
+  "updated_utc": "2026-11-02T07:48:58Z",
   "priority_cases": [
     "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
     "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131",

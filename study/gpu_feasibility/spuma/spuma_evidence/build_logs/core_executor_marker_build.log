@@ -1,0 +1,20 @@
+Compiling enabled on 1 cores
+wmake /opt/openfoam-workspace/gpu-feasibility/spuma/smoke/spumaPoolDevice
+Making dependencies: spuma_pool_device_marker.C
+nvc++ -std=c++17 -gpu=cc121 -cuda -Dhave_cuda  -DOPENFOAM=2512 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra --diag_suppress=111,128,177,185,612,998,1098,1428 --display_error_number -O3  -DNoRepository  -I/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OpenFOAM/lnInclude -iquote. -IlnInclude -I/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OpenFOAM/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OSspecific/POSIX/lnInclude   -fPIC -c spuma_pool_device_marker.C -o Make/linuxARM64NvidiaDPInt32Opt/spuma_pool_device_marker.o
+"/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OpenFOAM/lnInclude/cudaExecutor.cu", line 257: warning #3560-D: CUDA C++ compilation is unsupported in nvc++; nvcc is the recommended CUDA compiler [cuda_compile]
+      <<<numblocks, nThreadsPerBlock>>>
+      ^
+          detected during instantiation of "void Foam::executor<T>::parallelFor(F &, const Foam::label &) [with T=Foam::cudaExecutor, F=lambda [](Foam::label)->void]" at line 45 of "spuma_pool_device_marker.C"
+
+Remark #3391-D: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OpenFOAM/lnInclude/cudaExecutor.cu", line 319: warning #3560-D: CUDA C++ compilation is unsupported in nvc++; nvcc is the recommended CUDA compiler [cuda_compile]
+      <<<(numBlocks + nStreamingMultiprocessors -1)/nStreamingMultiprocessors, nThreadsPerBlock, maxbytes>>>
+      ^
+          detected during instantiation of "void Foam::executor<T>::reductionSum(F &, resultT *, const Foam::label &) [with T=Foam::cudaExecutor, F=lambda [](Foam::label)->double, resultT=double]" at line 51 of "spuma_pool_device_marker.C"
+
+ptxas /opt/openfoam-workspace/gpu-feasibility/spuma/tmp/nvaccaVffbaiskby2E.ptx, line 307; info    : Potential out of bound access while accessing symbol 'smem' of type '.b8' with instruction type '.b64'.
+nvc++ -std=c++17 -gpu=cc121 -cuda -Dhave_cuda  -DOPENFOAM=2512 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra --diag_suppress=111,128,177,185,612,998,1098,1428 --display_error_number -O3  -DNoRepository  -I/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OpenFOAM/lnInclude -iquote. -IlnInclude -I/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OpenFOAM/lnInclude -I/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/OSspecific/POSIX/lnInclude   -fPIC -Xlinker --add-needed  Make/linuxARM64NvidiaDPInt32Opt/spuma_pool_device_marker.o -L/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/lib \
+    -lcudart -lOpenFOAM -ldl  \
+     -lm -o /opt/openfoam-workspace/gpu-feasibility/spuma/user/platforms/linuxARM64NvidiaDPInt32Opt/bin/Test-spumaPoolDevice

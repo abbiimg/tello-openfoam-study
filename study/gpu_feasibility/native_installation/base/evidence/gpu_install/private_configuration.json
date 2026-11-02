@@ -1,0 +1,15 @@
+{
+  "updated_utc": "2026-11-02T09:01:32.925328+00:00",
+  "source_pin": "b239fea6e48922730477e218c44e8b6a8ab17ade",
+  "rule": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/wmake/rules/linuxARM64Nvidia-gpu/c++",
+  "rule_sha256": "587e5503bab7e5904675db8bd9bbd33e3b80c89ee58ead67031d0cd08ce27e0b",
+  "compiler_device_flags": "-stdpar=gpu -gpu=cc121,mem:managed -DFOAM_OFFLOAD",
+  "environment": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh",
+  "max_build_jobs": 4,
+  "minimum_available_memory_gib": 20,
+  "required_build_nice": 15,
+  "mpi": "none for this single-device smoke build",
+  "umpire_initial_pool_mb": 64,
+  "no_global_path_or_profile_change": true,
+  "no_production_change": true
+}

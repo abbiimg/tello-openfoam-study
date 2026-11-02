@@ -1,0 +1,35 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields -case /opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate
+Date   : Nov 02 2026
+Time   : 01:22:31
+Host   : abby-spark
+PID    : 302674
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : managed (size=64MB, incr=64MB)
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+{"kind":"native Foam Field arithmetic integration","elements":32768,"mismatches":0,"actual_sum":134246400,"expected_sum":134246400,"actual_dot_sum":9894214,"expected_dot_sum":9894214,"pointer_memory_type":3,"synchronize_status":0,"passed":true}
+Collecting data...
+Generating '/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tmp/nsys-openfoam/nsys-report-0829.qdstrm'
+[1/1] [0%                          ] native_field_algebra_cuda_trace.nsys-rep[1/1] [0%                          ] native_field_algebra_cuda_trace.nsys-rep[1/1] [1%                          ] native_field_algebra_cuda_trace.nsys-rep[1/1] [2%                          ] native_field_algebra_cuda_trace.nsys-rep[1/1] [5%                          ] native_field_algebra_cuda_trace.nsys-rep[1/1] [11%                         ] native_field_algebra_cuda_trace.nsys-rep[1/1] [13%                         ] native_field_algebra_cuda_trace.nsys-rep[1/1] [=15%                        ] native_field_algebra_cuda_trace.nsys-rep[1/1] [==19%                       ] native_field_algebra_cuda_trace.nsys-rep[1/1] [==20%                       ] native_field_algebra_cuda_trace.nsys-rep[1/1] [=============59%            ] native_field_algebra_cuda_trace.nsys-rep[1/1] [==============62%           ] native_field_algebra_cuda_trace.nsys-rep[1/1] [================69%         ] native_field_algebra_cuda_trace.nsys-rep[1/1] [=======================96%  ] native_field_algebra_cuda_trace.nsys-rep[1/1] [========================98% ] native_field_algebra_cuda_trace.nsys-rep[1/1] [========================100%] native_field_algebra_cuda_trace.nsys-rep[1/1] [========================100%] native_field_algebra_cuda_trace.nsys-rep
+Generated:
+	/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace.nsys-rep

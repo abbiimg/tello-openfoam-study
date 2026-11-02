@@ -1,0 +1,14 @@
+{
+  "stage": "nvhpc_localrc",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin/makelocalrc",
+    "-x",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin",
+    "-cuda",
+    "13.3"
+  ],
+  "return_code": 0,
+  "elapsed_s": 1.5708429199876264,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/nvhpc_localrc.log",
+  "completed_utc": "2026-11-02T07:44:55.376068+00:00"
+}

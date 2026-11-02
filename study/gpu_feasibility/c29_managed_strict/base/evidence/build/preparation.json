@@ -1,0 +1,21 @@
+{
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+  "combined_source_manifest_sha256": "7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5",
+  "limited_patch_sha256": "f3a625e6fcbd2021c563986273a685a8bdd84c6c38df753fefe0dbdcd5cc1ef1",
+  "changed_source_files": [
+    "C29Restrictions.H",
+    "Make/files"
+  ],
+  "methods": {
+    "cpu": {
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102",
+      "method_identity_sha256": "f823eb1e91e0255fce97611b62cbc6a37fe574a20ee78da6e6ed7adb14e749bf"
+    },
+    "gpu": {
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102",
+      "method_identity_sha256": "a9abf670570979210cccefbff481dd206d8ee11ebf988afbac99fcf7ee6404fa"
+    }
+  },
+  "compiled": false,
+  "application_executed": false
+}

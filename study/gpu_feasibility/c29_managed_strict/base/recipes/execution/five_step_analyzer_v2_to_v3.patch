@@ -1,0 +1,42 @@
+--- analyze_five_steps_v2_1310a87.py
++++ analyze_five_steps.py
+@@ -61,7 +61,7 @@
+     checks.append({'check':name,'pass':bool(ok),'observed':observed,'limit':limit})
+ def finite(value):return bool(np.isfinite(np.asarray(value,dtype=float)).all())
+ def parse_log(path,role):
+-    result={'path':str(path),'missing':not path.is_file(),'errors':[],
++    result={'role':role,'path':str(path),'missing':not path.is_file(),'errors':[],
+         'times':[],'tilt':[],'volumes':[],'courant':[],'residuals':[],
+         'continuity':[],'selections':[],'rotor':[],'source':[],'applied':[]}
+     if result['missing']:return result
+@@ -113,8 +113,11 @@
+     result['end']=bool(re.search(r'(?m)^\s*End\s*$',text))
+     patterns=r'FOAM FATAL|FOAM exiting|Segmentation fault|Floating point exception|cudaError|thrust::system_error|failed to synchronize|did not converge|not converged|reached.*(?:maxIter|maximum.*iterations)'
+     unsupported_trap_banner=r'^\s*sigFpe\s*:\s*Floating point exception trapping\s*-\s*not supported on this platform\s*$'
++    enabled_trap_banner=r'^\s*trapFpe:\s*Floating point exception trapping enabled \(FOAM_SIGFPE\)\.\s*$'
+     result['fatal_or_solver_warning_lines']=[line for line in lines
+-        if re.search(patterns,line,re.I) and not re.match(unsupported_trap_banner,line,re.I)]
++        if re.search(patterns,line,re.I)
++        and not re.match(unsupported_trap_banner,line,re.I)
++        and not re.match(enabled_trap_banner,line)]
+     return result
+ def one(items,step):
+     matches=[r for r in items if r.get('step')==step]
+@@ -274,6 +277,8 @@
+     roles=('f14','cpu','gpu') if stage!='f14-to-cpu' else ('f14','cpu')
+     logs={role:parse_log(logdir/LOGS[role],role) for role in roles}
+     log_checks={role:check_log(log,role,thresholds) for role,log in logs.items()}
++    for role,checks in log_checks.items():
++        for check in checks:check['role']=role
+     references={};reference_records=[];reference_checks=[]
+     for step,time in enumerate(PREVIOUS,1):
+         path=base/'foundation14_control'/time/'U'
+@@ -289,7 +294,7 @@
+             if not matches:continue
+             expected=matches[0]['cached_volume_m3'];s=thresholds['source_identity_tolerances']
+             add(reference_checks,'F14 original/cache volume'+str(r),source_close(original['volume']-expected,expected,s['cached_volume_abs_m3'],s['cached_volume_rel']),original['volume']-expected)
+-    report={'schema':'c29-mechanical-five-step-analysis-v2','requested_stage':stage,
++    report={'schema':'c29-mechanical-five-step-analysis-v3','requested_stage':stage,
+         'thresholds':{'path':str(THRESHOLDS),'sha256':THRESHOLD_SHA},
+         'helper_hashes':{k:{'path':str(p),'sha256':h} for k,(p,h) in HELPERS.items()},
+         'logs':logs,'log_checks':log_checks,'F14_per_rotor_references':reference_records,

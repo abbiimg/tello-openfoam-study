@@ -1,0 +1,7 @@
+{
+  "decision": "APPROVED_ONE_SMALL_FIELD_NEW_PROFILER_CONTROL",
+  "protocol_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+  "helper_manifest_sha256": "1e0c435d93a35da9f25f2bd449f3b393b7dd7536ec23907b01a980d3eccad3c6",
+  "independent_review_sha256": "977c54026e2ad0b1504868ce78d81c96698b678760a43fa4567f1a8efca2dd8a",
+  "scope": "Exactly one existing current native Field arithmetic probe under the newly installed profiler. No CFD, time advance, build, source/case changes or performance conclusions. Large C29 transient remains failed and unqualified. Root reviewed fixed binary/core/input pins, direct-child/outer cleanup, arithmetic and successful same-thread launch/completion gates, warning coverage and separate optional kernel-activity reporting. All prior CFD jobs are terminal."
+}

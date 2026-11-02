@@ -1,0 +1,15 @@
+{
+  "pid": 386394,
+  "start_ticks": "16533740",
+  "uid": 999,
+  "nice": 15,
+  "argv": [
+    "/bin/bash",
+    "-c",
+    ". /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/build_environment.sh\nset -e\ncd /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/source\nwmake -j1\n"
+  ],
+  "started_utc": "2026-11-02T13:16:25.019129+00:00",
+  "MemAvailable_kib_at_start": 59122948,
+  "exit_code": 0,
+  "ended_utc": "2026-11-02T13:17:23.448884+00:00"
+}

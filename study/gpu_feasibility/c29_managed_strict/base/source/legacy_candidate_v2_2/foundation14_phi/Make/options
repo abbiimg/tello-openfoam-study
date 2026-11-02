@@ -1,0 +1,10 @@
+ifndef C29_PHI_APPBIN
+$(error Set C29_PHI_APPBIN to a NEW private Foundation14 utility directory)
+endif
+ifneq ($(WM_PROJECT_VERSION),14)
+$(error This fallback requires the original Foundation14 environment)
+endif
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude
+EXE_LIBS = -lfiniteVolume -lmeshTools

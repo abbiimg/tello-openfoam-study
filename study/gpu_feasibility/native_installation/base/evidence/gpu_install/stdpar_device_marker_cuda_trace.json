@@ -1,0 +1,76 @@
+{
+  "kind": "Additional process-attributed CUDA kernel trace for the already-passed stdpar marker; not CFD or a timing benchmark",
+  "attempted": true,
+  "nsys": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+  "gpu_kernel_execution_proof": "No GPU kernel-activity records collected; capture corroborates CUDA launch API activity only",
+  "completed_utc": "2026-11-02T07:48:57.277997+00:00",
+  "records": [
+    {
+      "name": "nsys_version",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+        "--version"
+      ],
+      "return_code": 0,
+      "elapsed_s": 0.5193196450127289,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/nsys_version.log"
+    },
+    {
+      "name": "device_marker_cuda_profile",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+        "profile",
+        "--trace=cuda",
+        "--sample=none",
+        "--cpuctxsw=none",
+        "--stats=true",
+        "--force-overwrite=true",
+        "-o",
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace",
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker",
+        "324508639"
+      ],
+      "return_code": 0,
+      "elapsed_s": 5.37116715501179,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/device_marker_cuda_profile.log"
+    },
+    {
+      "name": "device_marker_cuda_kernel_stats",
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+        "stats",
+        "--report",
+        "cuda_gpu_kern_sum",
+        "--format",
+        "csv",
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.nsys-rep"
+      ],
+      "return_code": 1,
+      "elapsed_s": 0.4690751380112488,
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/device_marker_cuda_kernel_stats.log"
+    }
+  ],
+  "report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.nsys-rep",
+  "analysis_updated_utc": "2026-11-02T07:58:06.799033+00:00",
+  "stats_retry": {
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+      "stats",
+      "--force-export=true",
+      "--report",
+      "cuda_gpu_kern_sum",
+      "--format",
+      "csv",
+      "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.nsys-rep"
+    ],
+    "return_code": 0,
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/device_marker_cuda_kernel_stats.log"
+  },
+  "observed_cudaLaunchKernel_api_calls": 1,
+  "observation_source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/device_marker_cuda_profile.log",
+  "device_marker_exact_output_gate_remains_separate": true,
+  "schema_tables_containing_kernel": [
+    "ENUM_CUDA_KERNEL_LAUNCH_TYPE"
+  ],
+  "kernel_activity_tables": {}
+}

@@ -1,0 +1,34 @@
+{
+  "launched_utc": "2026-11-02T09:51:04.550848+00:00",
+  "method": "Python Popen start_new_session, stdin DEVNULL, separate file stdout/stderr, close_fds; no dependency on an interactive tool exec session",
+  "records": [
+    {
+      "worker": "main",
+      "pid": 311811,
+      "action": "launched_detached",
+      "argv": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/build_minimal_native_stack.py"
+      ],
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/detached_main_20261102T095102Z.log",
+      "session_id": 311811,
+      "process_group": 311811,
+      "nice": 15
+    },
+    {
+      "worker": "profile",
+      "pid": 312381,
+      "action": "launched_detached",
+      "argv": [
+        "/usr/bin/python3",
+        "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/profile_native_cfd_loop.py"
+      ],
+      "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/detached_profile_20261102T095102Z.log",
+      "session_id": 312381,
+      "process_group": 312381,
+      "nice": 15
+    }
+  ],
+  "prior_worker_loss": "Previous PIDs and tool sessions were absent; exact cause not proven. Completed objects are retained and journal entries are preserved on resume.",
+  "budget_file": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/build_budget.json"
+}

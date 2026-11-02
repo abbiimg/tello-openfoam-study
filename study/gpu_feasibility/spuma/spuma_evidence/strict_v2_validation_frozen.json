@@ -1,0 +1,21 @@
+{
+  "kind": "Mechanical strict-v2 validation frozen BEFORE first CFD launch",
+  "frozen_utc": "2026-11-02T11:35:41.965815+00:00",
+  "frozen_before_CFD_launch": true,
+  "case": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+  "protocol_sha256": "103e4fcfb1c9c08053f95a90afd91f62d14129da704731c80136449d2262fffe",
+  "validator_sha256": {
+    "validate_strict_v2.py": "33b33a554059d9d74c3c0bafef83dd24ea8d0c3eeec86d9a52421f6ea6621030",
+    "audit_strict_v2_first_step.py": "f67ececcfaa783c4b892b0b50d949059c41cac62a6004bd476f92331b2805eba"
+  },
+  "frozen_copies": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/strict_v2_frozen_validators",
+  "runtime_scripts_and_Allrun_syntax_passed": true,
+  "independent_mesh_format_preflight": {
+    "owner_faces": 1640,
+    "internal_faces": 760,
+    "points": 882,
+    "cells": 400
+  },
+  "no_numerical_threshold_changed": true,
+  "no_CFDrun_or_compiler_started": true
+}

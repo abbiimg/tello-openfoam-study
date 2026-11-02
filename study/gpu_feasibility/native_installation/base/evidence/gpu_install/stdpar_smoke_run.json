@@ -1,0 +1,10 @@
+{
+  "stage": "stdpar_smoke_run",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_smoke"
+  ],
+  "return_code": 0,
+  "elapsed_s": 2.5289058779890183,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/stdpar_smoke_run.log",
+  "completed_utc": "2026-11-02T07:45:12.663860+00:00"
+}

@@ -1,0 +1,23 @@
+--- private_v2_2/C29Restrictions.H
++++ private_strict_pressure_v1/C29Restrictions.H
+@@ -80,7 +80,7 @@
+     require(p.dimensions()==dimensionSet(0,2,-2,0,0,0,0),"p must be kinematic");
+     require(phi.dimensions()==dimVolume/dimTime,"phi must be volumetric");
+     require(!p.needReference(),"Current totalPressure anchored gauge required");
+-    require(controls.get<word>("protocol")=="c29-native-five-fixed-steps-v1",
++    require(controls.get<word>("protocol")=="c29-native-five-fixed-steps-strict-pressure-v1",
+         "Unreviewed protocol");
+     require(controls.get<string>("seedArchiveSha256")
+         =="89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+@@ -126,8 +126,10 @@
+             "Changed linear solver unsupported");
+         require(s.get<word>("smoother")==word(i<2?"symGaussSeidel":"GaussSeidel"),
+             "Changed smoother unsupported");
++        // STRICT-PRESSURE v1: only first p relTol changes; U stays .05.
++        const scalar expectedRelTol=(i==0)?scalar(.05):scalar(0);
+         require(near(s.get<scalar>("tolerance"),1e-7)
+-            &&near(s.get<scalar>("relTol"),(i%2)?0:.05),"Changed solver criteria");
++            &&near(s.get<scalar>("relTol"),expectedRelTol),"Changed strict solver criteria");
+         if (i>=2) require(s.getOrDefault<bool>("directSolveCoarsest",false),
+             "Keep pinned directSolveCoarsest true; do not silently substitute");
+     }

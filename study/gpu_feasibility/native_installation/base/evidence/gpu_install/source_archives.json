@@ -1,0 +1,35 @@
+{
+  "updated_utc": "2026-11-02T06:31:43.598709+00:00",
+  "sources": [
+    {
+      "name": "OpenFOAM-v2606",
+      "pin": "b239fea6e48922730477e218c44e8b6a8ab17ade",
+      "source_url": "https://gitlab.com/api/v4/projects/openfoam%2Fcore%2Fopenfoam/repository/archive.tar.gz?sha=b239fea6e48922730477e218c44e8b6a8ab17ade",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/OpenFOAM-v2606-b239fea6e48922730477e218c44e8b6a8ab17ade.tar.gz",
+      "archive_bytes": 53023160,
+      "archive_sha256": "f99f550f3944c3de0b4d7959fed4bd0ccb438d38eff6bbcfa731409528b64c0c",
+      "source_directory": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606",
+      "elapsed_s": 27.111918356007664
+    },
+    {
+      "name": "ThirdParty-v2606",
+      "pin": "b70425b2611c23f26f24bdb97a5e6b48b99ffe0d",
+      "source_url": "https://gitlab.com/api/v4/projects/openfoam%2Fcore%2FThirdParty-common/repository/archive.tar.gz?sha=b70425b2611c23f26f24bdb97a5e6b48b99ffe0d",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/ThirdParty-v2606-b70425b2611c23f26f24bdb97a5e6b48b99ffe0d.tar.gz",
+      "archive_bytes": 81897,
+      "archive_sha256": "1a71c738a5bba2639f2b17e17b426f44ca75c549da6cadef1fe8fa590c5c3e03",
+      "source_directory": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606",
+      "elapsed_s": 0.42246024002088234
+    },
+    {
+      "name": "umpire-2025.03.0",
+      "pin": "v2025.03.0",
+      "source_url": "https://github.com/LLNL/Umpire/releases/download/v2025.03.0/umpire-2025.03.0.tar.gz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/umpire-2025.03.0-v2025.03.0.tar.gz",
+      "archive_bytes": 6703262,
+      "archive_sha256": "3a75ac48f65fba52e1e02b434bcd918c93eede59a39455465c64d1fe8dd6632f",
+      "source_directory": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/umpire-2025.03.0",
+      "elapsed_s": 3.7293441809888463
+    }
+  ]
+}

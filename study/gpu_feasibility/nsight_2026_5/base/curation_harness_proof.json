@@ -1,0 +1,31 @@
+{
+  "status": "SOURCE_EVIDENCE_CANDIDATE_FOR_ROOT_REVIEW_NOT_PUBLISHED",
+  "AST_parsed_sources_no_imports": 22,
+  "original_evidence_sha_bound": true,
+  "original_frozen_helpers_rehashed_unchanged": true,
+  "copied_content_exact": true,
+  "subset_selected_row_multisets_all_equal": true,
+  "subset_integrity_check": "ok",
+  "subset_tables": [
+    "PROCESSES",
+    "NVTX_EVENTS",
+    "CUPTI_ACTIVITY_KIND_RUNTIME",
+    "CUPTI_ACTIVITY_KIND_KERNEL",
+    "DIAGNOSTIC_EVENT",
+    "StringIds"
+  ],
+  "excluded": [
+    "archives",
+    "ELF",
+    "SDK",
+    "build trees",
+    "raw reports",
+    "full SQLite",
+    "captured environment tables",
+    "unrelated process rows",
+    "unrelated StringIds"
+  ],
+  "GPU_profile_application_build_CFD_or_timing_executed_by_curation": false,
+  "installed_nsys_version_only_invoked": true,
+  "default_global_Git_output_ZIP_changes": false
+}

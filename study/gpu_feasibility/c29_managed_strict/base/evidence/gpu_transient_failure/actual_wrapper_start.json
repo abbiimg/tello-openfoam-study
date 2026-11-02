@@ -1,0 +1,12 @@
+{
+  "identity": {
+    "pid": 392593,
+    "uid": 999,
+    "birth_start_ticks": 16845103,
+    "cwd": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu",
+    "exe": "/usr/bin/python3.12",
+    "nice": 15
+  },
+  "receipt_sha256": "074540859b1dbb757122f06fed2b152158773da93138091b598fb3fbdb5f6d68",
+  "started_utc": "2026-11-02T14:08:23.031128+00:00"
+}

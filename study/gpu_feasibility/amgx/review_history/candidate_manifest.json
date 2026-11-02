@@ -1,0 +1,378 @@
+{
+  "kind": "Review-only curated source/recipe/evidence candidate",
+  "source_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "files": {
+    "LICENSES/AmgX-BSD-3-Clause.txt": {
+      "bytes": 1506,
+      "sha256": "6454fa5d1d37757cb3bc520852fc2e1fe5222d805162c7286bd5e852b92087aa"
+    },
+    "LICENSES/OpenFOAM-GPL-3.0.txt": {
+      "bytes": 35646,
+      "sha256": "a62f4262b9739f43478d025ed9fc5419585ec27b4b50e88f55e3186141e18ef1"
+    },
+    "LICENSES/README.txt": {
+      "bytes": 435,
+      "sha256": "ff7e157ffd28d79491180f2965e749a0e3536e98f0e03342428d9536c6f91d98"
+    },
+    "README.md": {
+      "bytes": 6432,
+      "sha256": "0ed8359d6da57b4f980279636bd125e42c162c6ca653e68d85b3829b9fe26074"
+    },
+    "case-inputs/cavity-amgx/0/U": {
+      "bytes": 968,
+      "sha256": "f2b22e66d91f51c1af9ab16c8a686097b9df5faae3ee307cbb0f199e2d187b40"
+    },
+    "case-inputs/cavity-amgx/0/p": {
+      "bytes": 938,
+      "sha256": "c433d48e026228f5420308843ef10601ce657a49c2d0e27bc8c24a70bfb82340"
+    },
+    "case-inputs/cavity-amgx/AllrunPilot": {
+      "bytes": 396,
+      "sha256": "52959df819d3de6122d0cccc860d2fbbfcafec552af17c24af41eaf8b31a528d"
+    },
+    "case-inputs/cavity-amgx/constant/momentumTransport": {
+      "bytes": 770,
+      "sha256": "b8adb3f770cebfe382cb51f67864e7d65119d034d4cfacb6b7eb97e608da5cf0"
+    },
+    "case-inputs/cavity-amgx/constant/physicalProperties": {
+      "bytes": 743,
+      "sha256": "b8edc90db52ca59c3259b2892226ed01e1ef2d0593f9811a2f76019a1be3d940"
+    },
+    "case-inputs/cavity-amgx/system/blockMeshDict": {
+      "bytes": 1270,
+      "sha256": "6370d940a730c92bb0c40b34108bbf058d5c549509071a757cdae5a1a81aa063"
+    },
+    "case-inputs/cavity-amgx/system/controlDict": {
+      "bytes": 1143,
+      "sha256": "56b017c2666dcce7300e62979f79784b3dd67548d558fd64f0b22099890faa15"
+    },
+    "case-inputs/cavity-amgx/system/fvSchemes": {
+      "bytes": 1320,
+      "sha256": "807ea9d86c15176e74e9f94ec999df141660c0ee044433208095cc4948f9bd25"
+    },
+    "case-inputs/cavity-amgx/system/fvSolution": {
+      "bytes": 1472,
+      "sha256": "1128eda0f6c434bf061fac3a6abdda06131bea7c3ddbcd934ccda6bc178a70a2"
+    },
+    "case-inputs/cavity-native/0/U": {
+      "bytes": 968,
+      "sha256": "f2b22e66d91f51c1af9ab16c8a686097b9df5faae3ee307cbb0f199e2d187b40"
+    },
+    "case-inputs/cavity-native/0/p": {
+      "bytes": 938,
+      "sha256": "c433d48e026228f5420308843ef10601ce657a49c2d0e27bc8c24a70bfb82340"
+    },
+    "case-inputs/cavity-native/AllrunPilot": {
+      "bytes": 106,
+      "sha256": "142941f20db870e4cadb22a8e288c5743c3d7a4bd886c4e7bb751e5d3e393860"
+    },
+    "case-inputs/cavity-native/constant/momentumTransport": {
+      "bytes": 770,
+      "sha256": "b8adb3f770cebfe382cb51f67864e7d65119d034d4cfacb6b7eb97e608da5cf0"
+    },
+    "case-inputs/cavity-native/constant/physicalProperties": {
+      "bytes": 743,
+      "sha256": "b8edc90db52ca59c3259b2892226ed01e1ef2d0593f9811a2f76019a1be3d940"
+    },
+    "case-inputs/cavity-native/system/blockMeshDict": {
+      "bytes": 1270,
+      "sha256": "6370d940a730c92bb0c40b34108bbf058d5c549509071a757cdae5a1a81aa063"
+    },
+    "case-inputs/cavity-native/system/controlDict": {
+      "bytes": 1038,
+      "sha256": "9c713d3cc6e532b4b83333429b146e7ae34ff3b0091e265e2018f0b824a250a1"
+    },
+    "case-inputs/cavity-native/system/fvSchemes": {
+      "bytes": 1320,
+      "sha256": "807ea9d86c15176e74e9f94ec999df141660c0ee044433208095cc4948f9bd25"
+    },
+    "case-inputs/cavity-native/system/fvSolution": {
+      "bytes": 1456,
+      "sha256": "ae79128f3e7abc5fc868277c5217ca807b0ea2177880969cf7a451747abfad8a"
+    },
+    "case-inputs/rotor-amgx/AllrunPilot": {
+      "bytes": 654,
+      "sha256": "c363cfad18eead437f2bbe9411d3f8242173fd5d94b31fa4ecf213022d94aa48"
+    },
+    "case-inputs/rotor-amgx/constant/fvModels": {
+      "bytes": 4233,
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+    },
+    "case-inputs/rotor-amgx/constant/momentumTransport": {
+      "bytes": 94,
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8"
+    },
+    "case-inputs/rotor-amgx/constant/physicalProperties": {
+      "bytes": 107,
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b"
+    },
+    "case-inputs/rotor-amgx/constant/rotorParameters": {
+      "bytes": 590,
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d"
+    },
+    "case-inputs/rotor-amgx/geometry.json": {
+      "bytes": 8522,
+      "sha256": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245"
+    },
+    "case-inputs/rotor-amgx/source_geometry.json": {
+      "bytes": 8480,
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436"
+    },
+    "case-inputs/rotor-amgx/source_initialization.json": {
+      "bytes": 23855,
+      "sha256": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f"
+    },
+    "case-inputs/rotor-amgx/system/blockMeshDict": {
+      "bytes": 743,
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4"
+    },
+    "case-inputs/rotor-amgx/system/controlDict": {
+      "bytes": 1482,
+      "sha256": "c0d58cda1275916230470bfbcdc3fa14aada25e4e74ff27603da265ffd8e4dc7"
+    },
+    "case-inputs/rotor-amgx/system/fvSchemes": {
+      "bytes": 426,
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943"
+    },
+    "case-inputs/rotor-amgx/system/fvSolution": {
+      "bytes": 1333,
+      "sha256": "ea6e1dd7900b774342c8faf213031ac3649056502107be88edaa04f5bf81ddab"
+    },
+    "case-inputs/rotor-native/AllrunPilot": {
+      "bytes": 372,
+      "sha256": "b28082841d176d251800914e90b73263a0bdd05d99a7d6cc2c32ecc999be6931"
+    },
+    "case-inputs/rotor-native/constant/fvModels": {
+      "bytes": 4233,
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+    },
+    "case-inputs/rotor-native/constant/momentumTransport": {
+      "bytes": 94,
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8"
+    },
+    "case-inputs/rotor-native/constant/physicalProperties": {
+      "bytes": 107,
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b"
+    },
+    "case-inputs/rotor-native/constant/rotorParameters": {
+      "bytes": 590,
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d"
+    },
+    "case-inputs/rotor-native/geometry.json": {
+      "bytes": 8522,
+      "sha256": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245"
+    },
+    "case-inputs/rotor-native/source_geometry.json": {
+      "bytes": 8480,
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436"
+    },
+    "case-inputs/rotor-native/source_initialization.json": {
+      "bytes": 23855,
+      "sha256": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f"
+    },
+    "case-inputs/rotor-native/system/blockMeshDict": {
+      "bytes": 743,
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4"
+    },
+    "case-inputs/rotor-native/system/controlDict": {
+      "bytes": 1377,
+      "sha256": "e6b5f08a20399e41ef14a951190c56998a22ee8ca7bee4e75d39fd80493dc2f1"
+    },
+    "case-inputs/rotor-native/system/fvSchemes": {
+      "bytes": 426,
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943"
+    },
+    "case-inputs/rotor-native/system/fvSolution": {
+      "bytes": 363,
+      "sha256": "cf30492975ca99d34bb83e7c63a1f8234b4bb6c4a7d224b15b61b00347c16d0e"
+    },
+    "evidence/adapter_build.json": {
+      "bytes": 938,
+      "sha256": "a6a64e6fc8d314a703482b8800928bc671de12b1cc248b4651009b87a3b4ba13"
+    },
+    "evidence/adapter_smoke.json": {
+      "bytes": 12061,
+      "sha256": "d327ce915056028382d8a837e6a9dc0043639e8738ae878383f1c15f7cb55700"
+    },
+    "evidence/build.json": {
+      "bytes": 944,
+      "sha256": "32ea6bab931b769b03846a14d97d3237d779ac826a6526ccc1dad7956eaa664d"
+    },
+    "evidence/configure.json": {
+      "bytes": 1627,
+      "sha256": "b9863d1ccf8f92e8a0e542b56d9defdf9e732fbe73f070ac1c998c4a090955bd"
+    },
+    "evidence/dependencies.json": {
+      "bytes": 904,
+      "sha256": "ee21507e6f4a74a79607354a2dde06be8ab4505af320542e515e324a2225a77d"
+    },
+    "evidence/installation_notes.md": {
+      "bytes": 6680,
+      "sha256": "c873ca328e8627348f3b7297c23a45d6556441daae4d6263aba8abe90df14976"
+    },
+    "evidence/mcp_gpu_run.json": {
+      "bytes": 2734,
+      "sha256": "4d32e67ede7e13b967183d75bd25fbcf3e239b30b8afa013e79d8df75f77360a"
+    },
+    "evidence/mcp_native_run.json": {
+      "bytes": 2949,
+      "sha256": "81004eb131585e16d84e4099cd9484fa01ce22a84d96e80a650cc088b1e0f22b"
+    },
+    "evidence/mcp_rotor_amgx_run.json": {
+      "bytes": 2814,
+      "sha256": "9496db87b563d2d7cfa03f7fe2bb70c418efba515ecb15d7408724cca0d7b3f8"
+    },
+    "evidence/mcp_rotor_native_run.json": {
+      "bytes": 2660,
+      "sha256": "ff0a9dd7492bfab069e4f21864b2c703ef92ff7be33c8d3da11761d65f50fe6f"
+    },
+    "evidence/path_fixture_checks.json": {
+      "bytes": 509,
+      "sha256": "e1cc9eb5e84a339ecafb81948df0fce98c979be9fdf44643f2d4d05794dc3835"
+    },
+    "evidence/pilot_manifest.json": {
+      "bytes": 2797,
+      "sha256": "4089dc5290fa7b21e29614a38feb3b5a87446d0ac2fc1ce6afb022eb55091adb"
+    },
+    "evidence/pins.json": {
+      "bytes": 2337,
+      "sha256": "b2dbc8cea829c2487ac9663df19b0e1d8018fbd6af836df369daac30f3b436a3"
+    },
+    "evidence/portable_recipe_checks.json": {
+      "bytes": 874,
+      "sha256": "8718a83d3d678fc48f153a18ce18d6d0e8924bb46a82219d96618e12c4d1bb43"
+    },
+    "evidence/preflight.json": {
+      "bytes": 5613,
+      "sha256": "67ef6387821a5e11f64efc767c5d6078cdb3ba87e52e07056cdd5fc40fecc7b4"
+    },
+    "evidence/rotor_acceptance.json": {
+      "bytes": 1161,
+      "sha256": "da3727457fe4b99b1bc0f9178ef25f6bab2285be45b205c6bf93ab9223f20e4e"
+    },
+    "evidence/rotor_pilot_manifest.json": {
+      "bytes": 21579,
+      "sha256": "e3935d505571c807de60551137f043f89f2f826861ff5d288a4ca2dddf17e67e"
+    },
+    "evidence/rotor_smoke.json": {
+      "bytes": 14484,
+      "sha256": "c469f531fc56858d48ac48ffb931d379d428c48ca96c740ff5a8399db3a45596"
+    },
+    "evidence/setup_status.json": {
+      "bytes": 2793,
+      "sha256": "77807b781e1524ebb9f3a160a30568a193875da0181a4b8754806b681262d06e"
+    },
+    "evidence/smoke.json": {
+      "bytes": 4568,
+      "sha256": "9d54d1f0765673d1ca8ada4fbe1a856fcb673c79871b5e2d05b1d4c26793a2ab"
+    },
+    "evolved-small-cavity/cavity-amgx/0.1/U": {
+      "bytes": 21271,
+      "sha256": "52166359a1e9a480479ffb8f9afa7f02051313d998dde791cf299fe767b51a46"
+    },
+    "evolved-small-cavity/cavity-amgx/0.1/p": {
+      "bytes": 9355,
+      "sha256": "b828cf1cd0a28cc4ea857e6c5640844af8bd11cb3f8285cf7b4b96c956f59893"
+    },
+    "evolved-small-cavity/cavity-native/0.1/U": {
+      "bytes": 21278,
+      "sha256": "3d07807e159d54ff6948517e99ec2867582d25f68c7d40459756daff9eb6b1ce"
+    },
+    "evolved-small-cavity/cavity-native/0.1/p": {
+      "bytes": 9354,
+      "sha256": "5e096150a07cf44eee7a1be3ee8538ae61d54f3f7502df077ae0f0751127ddba"
+    },
+    "logs/cavity-amgx.log": {
+      "bytes": 24877,
+      "sha256": "800baae7457019426098d87cd96bc5378c07d2480440d9e5ee30d3cca89057d0"
+    },
+    "logs/cavity-native.log": {
+      "bytes": 18748,
+      "sha256": "cb8aa635e3555a8d4141ba96f8d36d557236287b361e16b1826c28939a74f170"
+    },
+    "logs/poisson-smoke.log": {
+      "bytes": 3124,
+      "sha256": "9f5678e5fdff33071727d7d0b66432b992a8dca3db619e711373e61909a4e0fa"
+    },
+    "logs/restore-path-fixtures.log": {
+      "bytes": 1583,
+      "sha256": "75baa83dd5ed480774ccc78835e64fbbde86c082589431740a07686c62322128"
+    },
+    "logs/rotor-amgx.log": {
+      "bytes": 8604,
+      "sha256": "d1a0456b652dcbdbf1c3d558be41f72ac94546b1fb7fc8c0477ea2fe84182b1d"
+    },
+    "logs/rotor-native.log": {
+      "bytes": 6880,
+      "sha256": "e46c39ac93bdc295cde621c4e7d1146801fb7507c6159be25ff8da943dea68b8"
+    },
+    "recipes/build_adapter.sh": {
+      "bytes": 1227,
+      "sha256": "f7a1738e6f730b0ef8ef4d4c1bb517a806d87cb69e5d600db344143347820874"
+    },
+    "recipes/build_private.sh": {
+      "bytes": 2956,
+      "sha256": "e4c8d02b16d4a35af3f49f6751ff47ec8a8848e08048691aff563bd9c572404a"
+    },
+    "recipes/restore_pilots.py": {
+      "bytes": 10177,
+      "sha256": "efc6962bb6ab3eab351b875704d5b9369adf8311c30e75b3142e75415545f7ed"
+    },
+    "recipes/run_poisson.sh": {
+      "bytes": 536,
+      "sha256": "e07c27c581836f5de3084f6ff67e44284280d644489c2274995427a5c671681f"
+    },
+    "recipes/test_restore_paths.py": {
+      "bytes": 7113,
+      "sha256": "3e81e43f0650b44c7815175fe058d68ad99aa94fc56516f20453bac94706bb37"
+    },
+    "recorded-recipes/HISTORICAL_REFERENCES.md": {
+      "bytes": 4120,
+      "sha256": "9a230e13eaf81691cc6065ed31b3cef4735fce95924df95f17a97f6660fe3a86"
+    },
+    "recorded-recipes/analyze_pilots.py": {
+      "bytes": 5071,
+      "sha256": "a1fe5c49c832c7bb0018ab4fc2e8a26b7ddc17efe7412452348f74542e142a43"
+    },
+    "recorded-recipes/analyze_rotor_pilot.py": {
+      "bytes": 12211,
+      "sha256": "d381398cf7abc8f5cbaa0d4ebcc5299046bf559424f28af38e3c5e93415b1a6e"
+    },
+    "recorded-recipes/prepare_pilots.py": {
+      "bytes": 1729,
+      "sha256": "5252c335c25d8209356dd73bb70d02ae403af576c363067ca8e512d6b488867e"
+    },
+    "recorded-recipes/prepare_rotor_pilot.py": {
+      "bytes": 8848,
+      "sha256": "96a80d438f81dac212cffb77a22fe9999f4c3baa4c5156a90c944dffcf177618"
+    },
+    "recorded-recipes/prepare_rotor_pilot.sh": {
+      "bytes": 182,
+      "sha256": "81c45661937277e80e5e0e61d32ef5923a9324b1194b328f873deb9c432b80aa"
+    },
+    "src/AmgXPressure.C": {
+      "bytes": 10716,
+      "sha256": "c2626648f7e8ebd7d0c88766b69f864428f2f6030c68b49b29f5596ec989e127"
+    },
+    "src/cuda_launch_audit.cpp": {
+      "bytes": 2318,
+      "sha256": "2ae62c34c71e30ee193e1b3e16bd10792783844d4fd10412c9036d160ef4f275"
+    },
+    "src/poisson_config.json": {
+      "bytes": 569,
+      "sha256": "fbfc8cd1b4cf9828a5e2792ebc3e264f42fca4152510fe6406c59a4b90933da7"
+    },
+    "src/poisson_smoke.cpp": {
+      "bytes": 6875,
+      "sha256": "cfdc94b55f439ae8840878d92398916af41e503f70651b5860c3f8147947e0ed"
+    }
+  },
+  "file_count": 91,
+  "uncompressed_bytes": 452077,
+  "sdk_and_compiled_binaries_excluded": true,
+  "credentials_excluded_by_explicit_allowlist": true,
+  "published": false,
+  "production_default_changed": false,
+  "revision": "v2: restore path/pin hardening and historical reference map",
+  "previous_candidate_zip_sha256": "b43236350f8896ba2a803dfbadef53473d0e60206b6e04f2eeb6ea30f4cb7fae"
+}

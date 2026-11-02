@@ -1,0 +1,61 @@
+{
+  "review_kind": "independent_read_only_source_review",
+  "verdict": "no_concrete_source_blockers_for_closed_writer_bounded_execution",
+  "blockers": [],
+  "reviewed_files": {
+    "work/native_compact_refresh_proposal/refresh_compact_native.py": "ed37cfd7b79417b6dc33395ee560419f51c5317912fbbd3e2bc06fab3175507b",
+    "work/native_compact_refresh_proposal/PLAN.txt": "36dccbd3c37592987a204b28bc43e6bbc44482f0eb6d7ec7f548c7f01754e47f",
+    "outputs/tello_refinement/package_refinement.py": "910df3d268ab0bcee82ba455d3ef7c9eead4f290abea74b5ccf0295feb854671",
+    "C:/Program Files/Blender Foundation/Blender 5.2/5.2/python/Lib/zipfile/__init__.py": "8fa52baefb0727c55d875e214fffbd543a73e97f27dc4ecf4dd6af04a3de9471"
+  },
+  "source_stable_on_two_reads": true,
+  "independent_raw_bookkeeping_second_review": true,
+  "expected_old_compact": {
+    "sha256": "2037fc17defc301532c51dc349c6323a46ac7a987c222c5b54763865f0fce7dd",
+    "size_bytes": 537362251,
+    "member_count": 2468,
+    "case_count": 84
+  },
+  "expected_protected": {
+    "cases.zip": "ec070b211bad0b5e76d79ffb91c8c66a6cde3d778e4b02d6b9dc43b9472872df",
+    "results/summary.csv": "b0abc1404dadb4f9112ebdec73060f444df5aff67d491b4c96c5eda048a7b2c7",
+    "approved_cases.json": "1b08141dc0929fd0adfaadbca62d97c611af8d7bb9f39d6137a1aa4cddf2c98d"
+  },
+  "source_checked_requirements": {
+    "explicit_execute_and_closed_writers_admission": true,
+    "fixed_native_windows_cpython_3_13_13": true,
+    "all_existing_ancestor_reparse_and_symlink_checks": true,
+    "selected_regular_file_hardlinks_rejected": true,
+    "old_compact_pinned_sha_size_and_member_count": true,
+    "all_four_cpu84_memberships_identical": true,
+    "all_old_case_members_raw_copied": true,
+    "all_old_case_member_metadata_modes_hashes_and_raw_spans_verified": true,
+    "original_study_filter_and_three_compressed_allowlist": true,
+    "compact_receipt_and_candidate_self_recursion_excluded": true,
+    "every_study_source_hash_before_and_after_copy": true,
+    "every_study_source_and_membership_checked_before_and_after_publish": true,
+    "every_candidate_and_published_entry_sha_and_full_crc": true,
+    "readonly_verified_native_backup_before_atomic_same_directory_replace": true,
+    "no_predelete_or_automatic_rollback": true,
+    "no_subprocess_cfd_compiler_git_or_case_writer": true
+  },
+  "limitations": [
+    "Root must close all output writers; helper lock does not coordinate the old fcntl packager and repeated checks are not a hostile-mutation-proof transactional snapshot.",
+    "No helper import, no-argument run, archive opening, backup creation, packaging or runtime verification was performed by this review; proposed checks are not passing execution results.",
+    "Runtime version/path guard does not hash zipfile; this review separately binds the installed zipfile source. Central records are regenerated, with metadata normalization rejected before replacement.",
+    "Readonly backup is an attribute rather than immutable storage. A postpublication failure requires manual review; failure logging is best effort and no automatic rollback occurs.",
+    "Refreshed study entries use native ZipInfo metadata; old Linux study executable modes are not preserved. The exact old metadata-preservation contract covers cases entries."
+  ],
+  "actions_performed": {
+    "read_source_and_existing_review_records": true,
+    "hashed_reviewed_source_files": true,
+    "wrote_only_independent_review_records_outside_proposal": true,
+    "imported_helper": false,
+    "executed_helper": false,
+    "opened_or_validated_archives": false,
+    "ran_cfd_or_gpu_or_compiler": false,
+    "changed_case_or_output_or_git_or_candidate_source": false
+  },
+  "root_writer_closure_confirmation_required_before_execution": true,
+  "execution_authorized_by_this_review": false
+}

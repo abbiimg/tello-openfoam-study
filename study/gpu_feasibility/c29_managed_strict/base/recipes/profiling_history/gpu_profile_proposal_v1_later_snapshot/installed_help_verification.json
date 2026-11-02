@@ -1,0 +1,14 @@
+{
+  "source": "Installed pinned Nsight CLI --help, no application/profiler capture launched",
+  "nsys": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+    "sha256": "ab0bc30cb1ec131a19fbb1ddae8f6bc84314cca34c3019103a70229243054cac"
+  },
+  "profile_help_sha256": "b2ca64a26d1419018887476147ca5bff18f509ec6a12aa198f8c6df0211d1a7f",
+  "export_help_sha256": "e894c4d820e041bad45fccfa88ec13191f76ba22efc59c4c7375fa3741318a9d",
+  "discard_environment_true_supported": true,
+  "first_range_stop_supported": true,
+  "kill_none_wait_all_process_tree_supported": true,
+  "export_SQLite_supported": true,
+  "GPU_or_CFD_run": false
+}

@@ -1,0 +1,10 @@
+{
+  "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/applications/test/std_execution/Test-std_execution.C",
+  "source_sha256": "760498bb1db0d693aa67c502cee743de5d5f3b3fc90e19c12efd14ee2f29805f",
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-std_execution",
+  "compiled": true,
+  "executed": false,
+  "reason": "Upstream timing benchmark: ten million cells with1000 sequential and1000 parallel interpolation repeats; compiler reports reference-captured local N likely unsafe on device in managed mode. No runtime failure is claimed.",
+  "replacement_correctness_gate": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/native_field_arithmetic_gate.json",
+  "replacement_gpu_execution_gate": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/native_field_gpu_api_gate.json"
+}

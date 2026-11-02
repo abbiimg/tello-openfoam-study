@@ -1,0 +1,57 @@
+{
+  "review_kind": "independent_bounded_v2_to_v3_namespace_source_review",
+  "verdict": "no_concrete_source_blockers",
+  "blockers": [],
+  "files": {
+    "work/native_compact_refresh_proposal/refresh_compact_native_v3.py": "d0dd7c34c70fb9bdf63aa46286b396fa584bb2b52b6b446687e77e7c8ad913f0",
+    "work/native_compact_refresh_proposal/PLAN_V3.txt": "9b8a868be144b3627aec365f3f48f6125659ab73f05e166e84363235b7173b53",
+    "work/native_compact_refresh_proposal/refresh_compact_native_v2_to_v3.diff": "4fb90d057f825e31831446fec27b01ddfa597717a3c981339647f9d03b584ff0",
+    "work/native_compact_refresh_proposal/long_path_readonly_proof.json": "6bf53d5beb6a0a5952451018686e2da6fd181a28a2fb2025ae1dff84080f16a4",
+    "work/native_compact_refresh_proposal/v3_inert_long_path_check.json": "fe55338719ac6ac4d3abd253261f53daf1e92944d3dad108f7810d98bf3257c2"
+  },
+  "independent_checks": {
+    "native_python_version": "3.13.13",
+    "AST_parse_passed": true,
+    "supplied_diff_exactly_reconstructed": true,
+    "all_imports_identical": true,
+    "unchanged_existing_function_count": 26,
+    "changed_functions": ["lexical", "safe_path", "check_runtime", "main"],
+    "changed_module_assignments": ["WORKSPACE"],
+    "v1_v2_source_hashes_unchanged": true,
+    "v3_source_stable_on_recheck": true
+  },
+  "source_findings": {
+    "fixed_extended_local_drive_roots": true,
+    "ordinary_aliases_normalized_before_prefix_and_containment": true,
+    "fixed_root_and_drive_reject_network_or_other_device_namespaces": true,
+    "all_existing_ancestor_reparse_symlink_and_file_hardlink_guards_retained": true,
+    "interpreter_identity_compares_both_canonical_spellings": true,
+    "zip_names_remain_relative_posix": true,
+    "SPUMA_manifest_and_marker_guards_unchanged": true,
+    "study_filter_unchanged": true,
+    "CPU84_pins_and_membership_unchanged": true,
+    "raw_case_record_and_ZipInfo_logic_unchanged": true,
+    "backup_source_member_hash_crc_atomic_failure_logic_unchanged": true,
+    "no_registry_or_global_path_policy_change": true
+  },
+  "author_evidence_read_not_rerun": {
+    "actual_v2_failure_before_candidate_or_publication": true,
+    "ordinary_directory_characters": 258,
+    "ordinary_enumeration_failed_WinError": 3,
+    "extended_alias_enumeration_passed_same_device_inode": true,
+    "inert_fixture_characters": 423,
+    "source_membership_count": 1852,
+    "fixture_source_and_bound_receipts_read": true,
+    "archive_success_inferred": false
+  },
+  "limitations": [
+    "All prior v1/v2 review limitations and root closed-writer execution condition remain applicable.",
+    "The path evidence and independent source checks are not completed archive validation or publication.",
+    "No helper or fixture module was imported or executed by this reviewer."
+  ],
+  "helper_or_fixture_imported_or_executed": false,
+  "archives_opened_or_changed": false,
+  "output_case_source_git_registry_cfd_gpu_compiler_changed": false,
+  "only_writes_independent_review_records_outside_proposal": true,
+  "execution_authorized_by_this_review": false
+}

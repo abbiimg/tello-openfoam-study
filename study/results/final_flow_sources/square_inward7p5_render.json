@@ -1,0 +1,69 @@
+{
+  "kind": "actual_fine_square_inward_7p5_flow_snapshot",
+  "source_manifest": "work/tello_final_square_flow_source.json",
+  "render_metadata": {
+    "time": 1.2,
+    "available_times": "1 (1.2 .. 1.2)",
+    "fields": [
+      "U",
+      "p"
+    ],
+    "patches": [
+      "farfield"
+    ],
+    "bounds": [
+      [
+        -0.36,
+        -0.36,
+        -0.6
+      ],
+      [
+        0.36,
+        0.36,
+        0.36
+      ]
+    ],
+    "is_2d": false,
+    "mode": "slice",
+    "slice": {
+      "origin": [
+        0,
+        0,
+        -0.04
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    },
+    "color": {
+      "field": "U",
+      "component": "Magnitude",
+      "range": [
+        0,
+        12
+      ],
+      "data_range": [
+        0.0075616,
+        7.904
+      ]
+    },
+    "view": "+z",
+    "image": "/opt/openfoam-workspace/cases/tello_final_flow_visualization_20261102/finemapped_n8_e19.2923_d0800_am0750/images/U_slice_1.2_1793603884.png"
+  },
+  "instantaneous_time_s": 1.2,
+  "lift_average_interval_s": [
+    0.8,
+    1.2
+  ],
+  "field": "U",
+  "component": "Magnitude",
+  "slice_z_m": -0.04,
+  "range_m_per_s": [
+    0,
+    12
+  ],
+  "not_time_averaged_flow": true,
+  "source_case_inputs_modified": false
+}

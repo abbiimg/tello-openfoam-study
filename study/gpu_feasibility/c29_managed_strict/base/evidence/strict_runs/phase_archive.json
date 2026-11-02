@@ -1,0 +1,21 @@
+{
+  "archived_utc": "2026-11-02T13:38:32.937283+00:00",
+  "controls": {
+    "f14": {
+      "case_control": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/c29InitialPhiControls",
+      "archive": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/f14_c29InitialPhiControls",
+      "sha256": "72d92c26616f6f1a549c90832d7e63a9d601d03b4f3d0357d2d98336ef07aadc"
+    },
+    "cpu": {
+      "case_control": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/c29PortControls",
+      "archive": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/cpu_c29PortControls",
+      "sha256": "6dbfd12835ac95164fe817bd70015df8ff2dcf406e5c6663b18fe60961820121"
+    },
+    "gpu": {
+      "case_control": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/constant/c29PortControls",
+      "archive": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/gpu_c29PortControls",
+      "sha256": "051d30b486ee5a71a019cc07a331d9a7277c77463c5252e81ade0a3087c9181a"
+    }
+  },
+  "source_or_solver_launched": false
+}

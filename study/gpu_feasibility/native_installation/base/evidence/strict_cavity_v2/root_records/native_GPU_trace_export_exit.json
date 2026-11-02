@@ -1,0 +1,17 @@
+{
+  "stage": "native_GPU_trace_export",
+  "argv": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+    "stats",
+    "--force-export=true",
+    "--report",
+    "cuda_api_sum",
+    "--format",
+    "csv",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.nsys-rep"
+  ],
+  "return_code": 0,
+  "completed_utc": "2026-11-02T11:56:49.789909+00:00",
+  "log": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/trace_export.log",
+  "log_sha256": "63c80925a7f7f0b7889a217bba2d5e2612f956cd1a467d5b2c036d59877ac089"
+}

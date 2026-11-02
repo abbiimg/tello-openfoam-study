@@ -1,0 +1,249 @@
+{
+  "closed_utc": "2026-11-02T12:13:54.517304+00:00",
+  "frozen_code_source_and_protocol_unchanged": true,
+  "protocol_sha256": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+  "source_manifest": {
+    "generated_utc": "2026-11-02T11:55:56.855581+00:00",
+    "original": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/applications/solvers/incompressible/icoFoam/icoFoam.C",
+    "original_sha256": "f4fe952aa971ff8e25fa0cf87ee3fbd53f6aba022f1a6e1447ea703f17e3972e",
+    "source": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/strict_v2_application/icoFoam.C",
+    "source_sha256": "1bad78d0a0f9b775c1635337f5bf53f72dcae79ea7ed209b3033d64b3f788981",
+    "patch_sha256": "4382bc5ba0bad215a68ec60ca31f209cdf21c99c99f831b6ead43e391751846e",
+    "math_source_reversal_matches": true,
+    "changes": "NVTX first complete loop body plus checked device completion before pop; no equation edits",
+    "vendor_source_or_SDK_changed": false,
+    "binary_name": "icoFoamStrictV2"
+  },
+  "actual_solver_instances": [
+    {
+      "backend": "native_cpu",
+      "actual_child": {
+        "pid": 375554,
+        "uid": 999,
+        "birth_start_ticks": 16051041,
+        "state_at_receipt": "R",
+        "cwd": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu",
+        "exe": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam"
+      },
+      "actual_child_return_code": 0,
+      "owned_instance_alive": false,
+      "PID_reused_unrelated": false,
+      "binary_sha256_at_launch": "77d1841b6806ddda4ffc3be7c8aca3788b42ca61d5e04ffa8a8a4d352438c3ba",
+      "binary_sha256_current": "77d1841b6806ddda4ffc3be7c8aca3788b42ca61d5e04ffa8a8a4d352438c3ba",
+      "binary_stable": true,
+      "library_identities": {
+        "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfiniteVolume.so": {
+          "launch_sha256": "4f1881d27bd62e95b1cbc10127d9b24c40b62e1aab7164525b6b9ed4946bfb93",
+          "currently_exists": true,
+          "current_sha256": "4f1881d27bd62e95b1cbc10127d9b24c40b62e1aab7164525b6b9ed4946bfb93"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libmeshTools.so": {
+          "launch_sha256": "956a3672d95ac04269f22c4cafb15d4c657e843bcc6a49182e851a2c4250d4d3",
+          "currently_exists": true,
+          "current_sha256": "956a3672d95ac04269f22c4cafb15d4c657e843bcc6a49182e851a2c4250d4d3"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libOpenFOAM.so": {
+          "launch_sha256": "5e00ef9264bac830689c618a79697134bdaea0b55eb98c8a19d621ad1e833256",
+          "currently_exists": true,
+          "current_sha256": "5e00ef9264bac830689c618a79697134bdaea0b55eb98c8a19d621ad1e833256"
+        },
+        "/lib/aarch64-linux-gnu/libstdc++.so.6": {
+          "launch_sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+          "currently_exists": true,
+          "current_sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4"
+        },
+        "/lib/aarch64-linux-gnu/libm.so.6": {
+          "launch_sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+          "currently_exists": true,
+          "current_sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a"
+        },
+        "/lib/aarch64-linux-gnu/libgcc_s.so.1": {
+          "launch_sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+          "currently_exists": true,
+          "current_sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20"
+        },
+        "/lib/aarch64-linux-gnu/libc.so.6": {
+          "launch_sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+          "currently_exists": true,
+          "current_sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy/libPstream.so": {
+          "launch_sha256": "ee2b584f1a73805d9409d4e8087a6c3db7f502249499fb64f7a36a3068150c35",
+          "currently_exists": true,
+          "current_sha256": "ee2b584f1a73805d9409d4e8087a6c3db7f502249499fb64f7a36a3068150c35"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfileFormats.so": {
+          "launch_sha256": "6544683c601c4ab168bde158f0d6ea43e8fc3ae02f2f0f5dad22e7abdb004a27",
+          "currently_exists": true,
+          "current_sha256": "6544683c601c4ab168bde158f0d6ea43e8fc3ae02f2f0f5dad22e7abdb004a27"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libsurfMesh.so": {
+          "launch_sha256": "3bd6a715190bae77bd4e9de401989f06c33cce9205c0adea5f3d54901ab78374",
+          "currently_exists": true,
+          "current_sha256": "3bd6a715190bae77bd4e9de401989f06c33cce9205c0adea5f3d54901ab78374"
+        },
+        "/lib/aarch64-linux-gnu/libz.so.1": {
+          "launch_sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3",
+          "currently_exists": true,
+          "current_sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3"
+        }
+      }
+    },
+    {
+      "backend": "native_gpu",
+      "actual_child": {
+        "pid": 376385,
+        "uid": 999,
+        "birth_start_ticks": 16055770,
+        "state_at_receipt": "R",
+        "cwd": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_gpu",
+        "exe": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/icoFoamStrictV2"
+      },
+      "actual_child_return_code": 0,
+      "owned_instance_alive": false,
+      "PID_reused_unrelated": false,
+      "binary_sha256_at_launch": "600e691e9afc9d024d1388591b4d188f892d71c33119105568c397903ae6c89f",
+      "binary_sha256_current": "600e691e9afc9d024d1388591b4d188f892d71c33119105568c397903ae6c89f",
+      "binary_stable": true,
+      "library_identities": {
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvhpcmanaux.so": {
+          "launch_sha256": "67551ea9f21fff11e6d4d3144df180d6c568c4d48fe004c6dea397326a6d15a5",
+          "currently_exists": true,
+          "current_sha256": "67551ea9f21fff11e6d4d3144df180d6c568c4d48fe004c6dea397326a6d15a5"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvmalloc.so": {
+          "launch_sha256": "644f811d60944ec9b77f9f015d90bf100b6000b9442f5d437183a82244b8bb45",
+          "currently_exists": true,
+          "current_sha256": "644f811d60944ec9b77f9f015d90bf100b6000b9442f5d437183a82244b8bb45"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libfiniteVolume.so": {
+          "launch_sha256": "d713f08fe815643117e83fe3a17ce5a8894dac28bed56b10fa8d0a7477bebc76",
+          "currently_exists": true,
+          "current_sha256": "d713f08fe815643117e83fe3a17ce5a8894dac28bed56b10fa8d0a7477bebc76"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libmeshTools.so": {
+          "launch_sha256": "964f1b2ace5618b4967fabef0e6e884dfb0b0cd412a6b7d9c99b6d5d85751c37",
+          "currently_exists": true,
+          "current_sha256": "964f1b2ace5618b4967fabef0e6e884dfb0b0cd412a6b7d9c99b6d5d85751c37"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libOpenFOAM.so": {
+          "launch_sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb",
+          "currently_exists": true,
+          "current_sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb"
+        },
+        "/lib/aarch64-linux-gnu/libm.so.6": {
+          "launch_sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+          "currently_exists": true,
+          "current_sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libcudanvhpc.so": {
+          "launch_sha256": "d32a528662e0ea5cbcb607a92dee4e4dded5638f89119df340b9df480e3a7a78",
+          "currently_exists": true,
+          "current_sha256": "d32a528662e0ea5cbcb607a92dee4e4dded5638f89119df340b9df480e3a7a78"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libacchost.so": {
+          "launch_sha256": "5158bb7f3453d69a7ea4a84ad85ceae5ab86d2ae6866fc73d45ce9d66f1c8501",
+          "currently_exists": true,
+          "current_sha256": "5158bb7f3453d69a7ea4a84ad85ceae5ab86d2ae6866fc73d45ce9d66f1c8501"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libaccdevaux.so": {
+          "launch_sha256": "0dbe92026e13822fa30d09b0342f4d8efd35d0749b2996e9374755e5b9ba4813",
+          "currently_exists": true,
+          "current_sha256": "0dbe92026e13822fa30d09b0342f4d8efd35d0749b2996e9374755e5b9ba4813"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libaccdevice.so": {
+          "launch_sha256": "1abd4f424f04666f5d1031d43f20bff84c3ffbec4e14fd136f36672b06755cf0",
+          "currently_exists": true,
+          "current_sha256": "1abd4f424f04666f5d1031d43f20bff84c3ffbec4e14fd136f36672b06755cf0"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/lib64/libcudart.so.13": {
+          "launch_sha256": "83b2ccdccdbb285613a97e8be332d1b17cbd55e267e1d2e047adb3081660335e",
+          "currently_exists": true,
+          "current_sha256": "83b2ccdccdbb285613a97e8be332d1b17cbd55e267e1d2e047adb3081660335e"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvhpcatm.so": {
+          "launch_sha256": "021c35d8da7b2da151654ed2785c460171aa7e2d46ea6b02941f4616753f9324",
+          "currently_exists": true,
+          "current_sha256": "021c35d8da7b2da151654ed2785c460171aa7e2d46ea6b02941f4616753f9324"
+        },
+        "/lib/aarch64-linux-gnu/libstdc++.so.6": {
+          "launch_sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+          "currently_exists": true,
+          "current_sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvomp.so": {
+          "launch_sha256": "0c62327b3de7470efbbf1db8913b4f01dd64da7cbb4142fc49979178056c7899",
+          "currently_exists": true,
+          "current_sha256": "0c62327b3de7470efbbf1db8913b4f01dd64da7cbb4142fc49979178056c7899"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvcpumath.so": {
+          "launch_sha256": "7647a7a546119231c63664a52c24889bc2ffcf9f074dcf79acfa2b769d9b0f11",
+          "currently_exists": true,
+          "current_sha256": "7647a7a546119231c63664a52c24889bc2ffcf9f074dcf79acfa2b769d9b0f11"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvc.so": {
+          "launch_sha256": "d3a8bbf8984936497a7a1a1a457654e05380375c2327919f06c0d7ceff37dbba",
+          "currently_exists": true,
+          "current_sha256": "d3a8bbf8984936497a7a1a1a457654e05380375c2327919f06c0d7ceff37dbba"
+        },
+        "/lib/aarch64-linux-gnu/libgcc_s.so.1": {
+          "launch_sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+          "currently_exists": true,
+          "current_sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20"
+        },
+        "/lib/aarch64-linux-gnu/libc.so.6": {
+          "launch_sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+          "currently_exists": true,
+          "current_sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/dummy/libPstream.so": {
+          "launch_sha256": "6d28006186636537a7e2dac8acb8ce62aafd0020560ed2630c172af458073d7f",
+          "currently_exists": true,
+          "current_sha256": "6d28006186636537a7e2dac8acb8ce62aafd0020560ed2630c172af458073d7f"
+        },
+        "/lib/aarch64-linux-gnu/libpthread.so.0": {
+          "launch_sha256": "6f1ab9e7d7de142dc5e2feaf6d19faceff0a0f40d5e225c922899f5362b8c353",
+          "currently_exists": true,
+          "current_sha256": "6f1ab9e7d7de142dc5e2feaf6d19faceff0a0f40d5e225c922899f5362b8c353"
+        },
+        "/lib/aarch64-linux-gnu/librt.so.1": {
+          "launch_sha256": "93d0d5ab643b50ac1a61c2c7baf670e8aa94973fa5a2584d13db05295d5b5a0e",
+          "currently_exists": true,
+          "current_sha256": "93d0d5ab643b50ac1a61c2c7baf670e8aa94973fa5a2584d13db05295d5b5a0e"
+        },
+        "/lib/aarch64-linux-gnu/libdl.so.2": {
+          "launch_sha256": "1c16b2692a155191c97d7fdc5ce937d37c242435f05745046a794a9832b16af4",
+          "currently_exists": true,
+          "current_sha256": "1c16b2692a155191c97d7fdc5ce937d37c242435f05745046a794a9832b16af4"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/target-linux-sbsa-armv8/InjectionDependencies/libToolsInjectionMemoryAllocator.so": {
+          "launch_sha256": "bc91d8b2e00a8810397244cc1b5b16de1280985c42ef9f507e5374138dd03b8b",
+          "currently_exists": true,
+          "current_sha256": "bc91d8b2e00a8810397244cc1b5b16de1280985c42ef9f507e5374138dd03b8b"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libfileFormats.so": {
+          "launch_sha256": "81635273586c62c98497297a01d4956ea7457931a948704976fab73fd8d23700",
+          "currently_exists": true,
+          "current_sha256": "81635273586c62c98497297a01d4956ea7457931a948704976fab73fd8d23700"
+        },
+        "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libsurfMesh.so": {
+          "launch_sha256": "0fcb754eea91e0e545172b0bf19ac026f9fb72711762b422a00c1deb36f3b8d4",
+          "currently_exists": true,
+          "current_sha256": "0fcb754eea91e0e545172b0bf19ac026f9fb72711762b422a00c1deb36f3b8d4"
+        },
+        "/lib/aarch64-linux-gnu/libz.so.1": {
+          "launch_sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3",
+          "currently_exists": true,
+          "current_sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3"
+        }
+      }
+    }
+  ],
+  "strict_case_process_survivors": [],
+  "pipeline_375186_alive": false,
+  "original_main_311811_alive": false,
+  "original_watcher_326002_alive": false,
+  "no_signal_sent_during_closure": true,
+  "original_failed_screen_states_unchanged": true,
+  "no_new_CFD_or_timing": true
+}

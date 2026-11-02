@@ -1,0 +1,22 @@
+{
+  "published_utc": "2026-11-02T09:04:24.562822+00:00",
+  "kind": "Reviewed AmgX source/recipe/functional-evidence publication",
+  "reviewed_candidate_zip_sha256": "70ca92a39552dbd7e05c8b5d231afa17e2ddf805df07b31f330ab1f68dfe98b7",
+  "candidate_members": 92,
+  "candidate_manifest_sha256": "855a1ec73b3a24beb4fbeb0857b32471ffa994008daef8be213d1df29e3c82a0",
+  "independent_review_sha256": "5b9ad6afa4c1d437945cd77a8989dd6c40fee2c0501fd43713e2cc556dd8c7f1",
+  "unchanged_code_evidence_input_field_and_log_files": 90,
+  "documentation_changes": [
+    "README candidate title/pending statement changed to published",
+    "Published manifest regenerated; originals preserved in review_history"
+  ],
+  "excluded": [
+    "SDKs",
+    "compiled libraries/executables/buildtrees",
+    "large duplicate seed/rotor fields",
+    "credentials",
+    "historical private MCP helper"
+  ],
+  "scope": "GPU Poisson, cavity and five-step C29 rotor compatibility; no controlled speed result, settled lift result, new-host rebuild or production default adoption",
+  "publisher_sha256": "a93e37c7ba672054396a66e7e8f6efd333ad3c3ea14ed6ea43bad9001d2227c1"
+}

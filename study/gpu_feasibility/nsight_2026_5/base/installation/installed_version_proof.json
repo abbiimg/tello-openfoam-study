@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted/opt/nvidia/nsight-systems-cli/2026.5.1/bin/nsys",
+    "--version"
+  ],
+  "actual_return_code": 0,
+  "stdout": "NVIDIA Nsight Systems version 2026.5.1.161-265138896106v0\n",
+  "stderr": "",
+  "binary_sha256": "dbe02661b00efbfb4c9c3cd3c2d8df6fecd6e80ac794305892e233e0d712a527",
+  "observed_utc": "2026-11-02T15:33:13.933591+00:00",
+  "application_profile_or_GPU_launched": false
+}

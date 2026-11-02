@@ -1,0 +1,3 @@
+EXE_INC = -gpu=cc121,mem:managed,lineinfo
+
+EXE_LIBS =

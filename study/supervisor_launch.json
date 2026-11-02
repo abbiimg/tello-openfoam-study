@@ -4,9 +4,12 @@
   "app": "Allrun",
   "np": 1,
   "log": "log.supervisor_v7",
-  "state": "running",
+  "state": "succeeded",
   "started_utc": "2026-11-01T22:32:52Z",
   "previous_queue_process": "Allrun-8143ae",
   "physics_restarted": false,
-  "purpose": "Exact 85-case plan; circle frontier angle brackets and four released validations precede low-spacing coverage; normal16 CPU ranks"
+  "purpose": "Completed exact99-input scope:84selected successfulCFD cases,15unstarted deferrals preserved; nativeCPU,normal16-rank policy",
+  "returncode": 0,
+  "finished_utc": "2026-11-02T07:49:04Z",
+  "retired_after_selected_case_count": 84
 }

@@ -1,0 +1,192 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2609                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Project: /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606
+Build  : v2606 OPENFOAM=2609 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict -case /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu
+Date   : Nov 02 2026
+Time   : 05:42:57
+Host   : abby-spark
+PID    : 391146
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+C29_EXPERIMENTAL_UNVALIDATED phase=five_fixed_steps backend=cpu case="/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu" id="c29_strict_shared_five_cpu_20261102_a" inputSnapshot="471700564efa5fac4b076a8573c9fb179397e1a3d05d6926c9e182b9b880ef20" launchReceipt="666b17cd1a6912f3b35f2460bd061f8b5498ad1c4a42fa0eb3fbbc080c5d865c" candidate="562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7" binary="535cb85ecb08b34b6a6ff08a00d1afc1857b68f041d4e89df309e2dbb5c01e89" libraries="3fadf986e56cde01723a7256853c039580923f970a4ba3121028916aa8d97d80"; permission/input audit are NOT runtime acceptance
+C29_DEVICE CPU companion: no CUDA fences. Only valid with independently verified CPU libraries/compiler policy.
+Create mesh for time = 0.6
+
+
+PISO: Operating solver in PISO mode
+
+Reading transportProperties
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+C29_SCOPE static serial constant-nu Euler; hybrid host source; explicit UFinal; native branch identity differs from Foundation14
+C29_LOCAL_CONSTANTS small=2.2204460492503131e-16 great=4503599627370496
+C29_SOURCE whole=29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd body=ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7
+Starting restricted fixed-step time loop
+Time = 0.6001
+
+Courant Number mean: 0.0061512316057805525 max: 0.35128201007592419
+DISK_VOLUME 0 5.47246800000008e-05
+DISK_VOLUME 1 5.472468000000084e-05
+DISK_VOLUME 2 5.4724680000000854e-05
+DISK_VOLUME 3 5.472468000000082e-05
+DISK_VOLUME 4 5.4732240000000841e-05
+DISK_VOLUME 5 5.4732240000000793e-05
+DISK_VOLUME 6 5.473224000000082e-05
+DISK_VOLUME 7 5.4732240000000834e-05
+POWER_BUDGET battery=19.292307692307698 shaft=10.231615384615386 axial=5.1158076923076932
+TILT 0.60009999999999997 1.3073344451158257 5.1158076923076932 10.231615384615386 19.292307692307698 1.3073344451158257 0 0
+C29_ROTOR_AUDIT 0.60009999999999997 0 volume=5.47246800000008e-05 flux=0.00020950541290841671 w=3.8283533664959513 previousThrust=0 thrust=0.16703681722143815 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 1 volume=5.472468000000084e-05 flux=0.00020950640777048864 w=3.8283715459000476 previousThrust=0 thrust=0.16703602403045267 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 2 volume=5.4724680000000854e-05 flux=0.00020950736653126969 w=3.8283890656147541 previousThrust=0 thrust=0.16703525962969912 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 3 volume=5.472468000000082e-05 flux=0.0002095048784965487 w=3.8283436010323966 previousThrust=0 thrust=0.16703724330439226 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 4 volume=5.4732240000000841e-05 flux=0.00021901142313654327 w=4.0015066647471382 previousThrust=0 thrust=0.15980879581488119 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 5 volume=5.4732240000000793e-05 flux=0.00021902330162787217 w=4.0017236938935623 previousThrust=0 thrust=0.15980012875808272 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 6 volume=5.473224000000082e-05 flux=0.00021904338076980862 w=4.0020905552158172 previousThrust=0 thrust=0.15978548029230619 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60009999999999997 7 volume=5.4732240000000834e-05 flux=0.00021903074797307906 w=4.0018597443312336 previousThrust=0 thrust=0.15979469606457358 index=1 dt=0.0001 controllerUpdateObserved=1
+C29_SOURCE_AUDIT 0.60009999999999997 index=1 call=1 dimensions=[0 4 -2 0 0 0 0] implicitBefore=0 sourceBefore=0 implicitAfter=0 craftForce=(0 0 1.3073344451158257) integralPositiveForce=(0 0 1.3073344451158768) forceError=5.1070259132757201e-14 positiveSourceWork=-5.1158076923076949 airPower=5.1158076923076932 workError=-1.7763568394002505e-15
+C29_APPLIED_AIR_AUDIT 0.60009999999999997 force=(0 0 -1.3073344451158773) work=5.1158076923076958 forceError=5.1514348342607263e-14 workError=2.6645352591003757e-15
+C29_SOLVER momentum=UFinal
+smoothSolver:  Solving for Ux, Initial residual = 0.00087858965000055874, Final residual = 2.2584236635472693e-09, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00087797296412233717, Final residual = 2.2587423967707799e-09, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00045277979793372208, Final residual = 1.3297002491481991e-09, No Iterations 2
+C29_SOLVER pressure=p
+GAMG:  Solving for p, Initial residual = 0.90256145264011289, Final residual = 8.9057433576447475e-08, No Iterations 31
+time step continuity errors : sum local = 1.2034240621549247e-11, global = -6.7244117514710973e-12, cumulative = -6.7244117514710973e-12
+C29_SOLVER pressure=pFinal
+GAMG:  Solving for p, Initial residual = 0.012579663032292021, Final residual = 9.8791682316803491e-08, No Iterations 17
+time step continuity errors : sum local = 2.3726728230060529e-11, global = -1.1771711746725377e-11, cumulative = -1.8496123498196474e-11
+ExecutionTime = 10.640000000000001 s  ClockTime = 11 s
+
+Time = 0.6002
+
+Courant Number mean: 0.0061457897723169366 max: 0.35269889206207666
+TILT 0.60019999999999996 1.3074351064351348 5.0006524187063102 10.00130483741262 18.888254100723895 1.3074351064351348 0 0
+C29_ROTOR_AUDIT 0.60019999999999996 0 volume=5.47246800000008e-05 flux=0.00020484310938044152 w=3.7431577376137883 previousThrust=0.16703681722143815 thrust=0.16704948995008706 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 1 volume=5.472468000000084e-05 flux=0.00020484473050261115 w=3.7431873608508632 previousThrust=0.16703602403045267 thrust=0.16704869489640123 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 2 volume=5.4724680000000854e-05 flux=0.0002048464279771704 w=3.7432183792973701 previousThrust=0.16703525962969912 thrust=0.16704792832479898 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 3 volume=5.472468000000082e-05 flux=0.00020484330583111376 w=3.7431613274140787 previousThrust=0.16703724330439226 thrust=0.16704991406663397 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 4 volume=5.4732240000000841e-05 flux=0.00021399908497840686 w=3.9099274025401405 previousThrust=0.15980879581488119 thrust=0.15982127274868599 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 5 volume=5.4732240000000793e-05 flux=0.00021400604090550125 w=3.9100544926627916 previousThrust=0.15980012875808272 thrust=0.15981261686209536 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 6 volume=5.473224000000082e-05 flux=0.00021401711595685303 w=3.9102568423446549 previousThrust=0.15978548029230619 thrust=0.15979798901360828 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60019999999999996 7 volume=5.4732240000000834e-05 flux=0.00021400671012034714 w=3.9100667197312569 previousThrust=0.15979469606457358 thrust=0.15980720057282385 index=2 dt=0.0001 controllerUpdateObserved=1
+C29_SOURCE_AUDIT 0.60019999999999996 index=2 call=2 dimensions=[0 4 -2 0 0 0 0] implicitBefore=0 sourceBefore=0 implicitAfter=0 craftForce=(0 0 1.3074351064351348) integralPositiveForce=(0 0 1.3074351064351062) forceError=2.8643754035329039e-14 positiveSourceWork=-5.0006524187063413 airPower=5.0006524187063102 workError=-3.1086244689504383e-14
+C29_APPLIED_AIR_AUDIT 0.60019999999999996 force=(0 0 -1.3074351064351066) work=5.0006524187063421 forceError=2.8199664825478976e-14 workError=3.1974423109204508e-14
+C29_SOLVER momentum=UFinal
+smoothSolver:  Solving for Ux, Initial residual = 0.017335024998725766, Final residual = 1.482079748595815e-08, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.017333911935307367, Final residual = 1.4819325558633238e-08, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0020470000368225851, Final residual = 2.6412715218834345e-09, No Iterations 2
+C29_SOLVER pressure=p
+GAMG:  Solving for p, Initial residual = 0.78901018861193828, Final residual = 9.0865497675307793e-08, No Iterations 31
+time step continuity errors : sum local = 1.2405140506157167e-11, global = -4.0289211814560369e-12, cumulative = -2.2525044679652511e-11
+C29_SOLVER pressure=pFinal
+GAMG:  Solving for p, Initial residual = 0.082247497941846534, Final residual = 7.0327250315991953e-08, No Iterations 20
+time step continuity errors : sum local = 2.4145762699727733e-12, global = -8.6434461784959055e-13, cumulative = -2.3389389297502101e-11
+ExecutionTime = 15.699999999999999 s  ClockTime = 16 s
+
+Time = 0.6003
+
+Courant Number mean: 0.0061466154559904123 max: 0.35272530669898866
+TILT 0.60029999999999994 1.3075090651738499 5.0306431339114779 10.061286267822956 18.993484680391152 1.3075090651738499 0 0
+C29_ROTOR_AUDIT 0.60029999999999994 0 volume=5.47246800000008e-05 flux=0.00020614500010308068 w=3.7669475655787785 previousThrust=0.16704948995008706 thrust=0.16705852404808647 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 1 volume=5.472468000000084e-05 flux=0.00020614650938705911 w=3.7669751451640456 previousThrust=0.16704869489640123 thrust=0.16705772750164219 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 2 volume=5.4724680000000854e-05 flux=0.00020614827347210086 w=3.76700738080328 previousThrust=0.16704792832479898 thrust=0.16705695864299713 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 3 volume=5.472468000000082e-05 flux=0.00020614522284394496 w=3.7669516357873976 previousThrust=0.16704991406663397 thrust=0.16705894613949102 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 4 volume=5.4732240000000841e-05 flux=0.00021518119257548071 w=3.9315254149195686 previousThrust=0.15982127274868599 thrust=0.15983071316066108 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 5 volume=5.4732240000000793e-05 flux=0.00021518833637343648 w=3.9316559375869389 previousThrust=0.15981261686209536 thrust=0.15982206812786248 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 6 volume=5.473224000000082e-05 flux=0.00021519972959448862 w=3.9318641004732382 previousThrust=0.15979798901360828 thrust=0.15980746033554155 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60029999999999994 7 volume=5.4732240000000834e-05 flux=0.00021518939823825156 w=3.931675338671472 previousThrust=0.15980720057282385 thrust=0.15981666721756801 index=3 dt=0.0001 controllerUpdateObserved=1
+C29_SOURCE_AUDIT 0.60029999999999994 index=3 call=3 dimensions=[0 4 -2 0 0 0 0] implicitBefore=0 sourceBefore=0 implicitAfter=0 craftForce=(0 0 1.3075090651738499) integralPositiveForce=(0 0 1.3075090651738492) forceError=6.6613381477509392e-16 positiveSourceWork=-5.0306431339114948 airPower=5.0306431339114779 workError=-1.6875389974302379e-14
+C29_APPLIED_AIR_AUDIT 0.60029999999999994 force=(0 0 -1.3075090651738512) work=5.0306431339114939 forceError=1.3322676295501878e-15 workError=1.5987211554602254e-14
+C29_SOLVER momentum=UFinal
+smoothSolver:  Solving for Ux, Initial residual = 0.0017043204779768333, Final residual = 1.6211840430175305e-09, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.001704288652342983, Final residual = 1.6218446884231657e-09, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00041633059256659851, Final residual = 5.47938951490649e-10, No Iterations 2
+C29_SOLVER pressure=p
+GAMG:  Solving for p, Initial residual = 0.15219950337076668, Final residual = 9.7252545090322096e-08, No Iterations 27
+time step continuity errors : sum local = 3.0135070615677897e-12, global = 1.6025138945957522e-12, cumulative = -2.178687540290635e-11
+C29_SOLVER pressure=pFinal
+GAMG:  Solving for p, Initial residual = 0.0032095748357526023, Final residual = 9.9117168050614627e-08, No Iterations 13
+time step continuity errors : sum local = 2.7201504180135729e-12, global = 1.1406278494018346e-12, cumulative = -2.0646247553504514e-11
+ExecutionTime = 20.23 s  ClockTime = 21 s
+
+Time = 0.6004
+
+Courant Number mean: 0.0061478751523125564 max: 0.35272869680514035
+TILT 0.60039999999999993 1.3075596159501106 5.0572234159362699 10.11444683187254 19.086748827846563 1.3075596159501106 0 0
+C29_ROTOR_AUDIT 0.60039999999999993 0 volume=5.47246800000008e-05 flux=0.00020731352368122803 w=3.7883003369087769 previousThrust=0.16705852404808647 thrust=0.16706433852777033 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 1 volume=5.472468000000084e-05 flux=0.00020731505629779744 w=3.7883283428572678 previousThrust=0.16705772750164219 thrust=0.16706354047678826 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 2 volume=5.4724680000000854e-05 flux=0.00020731714519931808 w=3.7883665139625275 previousThrust=0.16705695864299713 thrust=0.16706276851159227 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 3 volume=5.472468000000082e-05 flux=0.00020731412464068804 w=3.7883113184158397 previousThrust=0.16705894613949102 thrust=0.1670647575811251 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 4 volume=5.4732240000000841e-05 flux=0.00021621807131023271 w=3.9504699846055886 previousThrust=0.15983071316066108 thrust=0.15983752207758373 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 5 volume=5.4732240000000793e-05 flux=0.0002162254676101813 w=3.9506051206780164 previousThrust=0.15982206812786248 thrust=0.1598288874045288 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 6 volume=5.473224000000082e-05 flux=0.00021623696689985255 w=3.9508152215193331 previousThrust=0.15980746033554155 thrust=0.15981429961155419 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60039999999999993 7 volume=5.4732240000000834e-05 flux=0.00021622656489445031 w=3.9506251689031369 previousThrust=0.15981666721756801 thrust=0.15982350175916774 index=4 dt=0.0001 controllerUpdateObserved=1
+C29_SOURCE_AUDIT 0.60039999999999993 index=4 call=4 dimensions=[0 4 -2 0 0 0 0] implicitBefore=0 sourceBefore=0 implicitAfter=0 craftForce=(0 0 1.3075596159501106) integralPositiveForce=(0 0 1.3075596159500635) forceError=4.7073456244106637e-14 positiveSourceWork=-5.0572234159362539 airPower=5.0572234159362699 workError=1.5987211554602254e-14
+C29_APPLIED_AIR_AUDIT 0.60039999999999993 force=(0 0 -1.3075596159500642) work=5.0572234159362548 forceError=4.6407322429331543e-14 workError=-1.5099033134902129e-14
+C29_SOLVER momentum=UFinal
+smoothSolver:  Solving for Ux, Initial residual = 0.0011243820923018538, Final residual = 1.4423172467559922e-09, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0011240466111391537, Final residual = 1.442593052759116e-09, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00033306425731261603, Final residual = 5.1670005675180612e-10, No Iterations 2
+C29_SOLVER pressure=p
+GAMG:  Solving for p, Initial residual = 0.071426021552854074, Final residual = 8.242598763648142e-08, No Iterations 24
+time step continuity errors : sum local = 2.1604364674505249e-12, global = -6.7729010856438026e-13, cumulative = -2.1323537662068894e-11
+C29_SOLVER pressure=pFinal
+GAMG:  Solving for p, Initial residual = 0.0015263387740887867, Final residual = 7.0723574296778886e-08, No Iterations 10
+time step continuity errors : sum local = 1.7702212294730246e-12, global = 9.094017802634548e-13, cumulative = -2.0414135881805439e-11
+ExecutionTime = 25.260000000000002 s  ClockTime = 26 s
+
+Time = 0.6005
+
+Courant Number mean: 0.0061494071955805465 max: 0.35272731792451795
+TILT 0.60049999999999992 1.3075892418499528 5.0812196572683925 10.162439314536785 19.170946165854012 1.3075892418499528 0 0
+C29_ROTOR_AUDIT 0.60049999999999992 0 volume=5.47246800000008e-05 flux=0.00020837789337132596 w=3.8077498739384663 previousThrust=0.16706433852777033 thrust=0.16706725954208779 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 1 volume=5.472468000000084e-05 flux=0.00020837945183501823 w=3.8077783521989534 previousThrust=0.16706354047678826 thrust=0.16706645996453218 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 2 volume=5.4724680000000854e-05 flux=0.00020838187799899178 w=3.8078226861991431 previousThrust=0.16706276851159227 thrust=0.16706568405489636 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 3 volume=5.472468000000082e-05 flux=0.0002083789529137639 w=3.8077692352657118 previousThrust=0.1670647575811251 thrust=0.16706767435217754 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 4 volume=5.4732240000000841e-05 flux=0.00021714942305574734 w=3.967486495267579 previousThrust=0.15983752207758373 thrust=0.15984199405353539 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 5 volume=5.4732240000000793e-05 flux=0.00021715705515052807 w=3.9676259394924256 previousThrust=0.1598288874045288 thrust=0.15983336928031833 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 6 volume=5.473224000000082e-05 flux=0.00021716855481015469 w=3.9678360470931109 previousThrust=0.15981429961155419 thrust=0.15981880166476001 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_ROTOR_AUDIT 0.60049999999999992 7 volume=5.4732240000000834e-05 flux=0.00021715812608212191 w=3.9676455062339602 previousThrust=0.15982350175916774 thrust=0.15982799893764527 index=5 dt=0.0001 controllerUpdateObserved=1
+C29_SOURCE_AUDIT 0.60049999999999992 index=5 call=5 dimensions=[0 4 -2 0 0 0 0] implicitBefore=0 sourceBefore=0 implicitAfter=0 craftForce=(0 0 1.3075892418499528) integralPositiveForce=(0 0 1.3075892418498953) forceError=5.7509552675583109e-14 positiveSourceWork=-5.0812196572684236 airPower=5.0812196572683925 workError=-3.1086244689504383e-14
+C29_APPLIED_AIR_AUDIT 0.60049999999999992 force=(0 0 -1.307589241849896) work=5.0812196572684236 forceError=5.6843418860808015e-14 workError=3.1086244689504383e-14
+C29_SOLVER momentum=UFinal
+smoothSolver:  Solving for Ux, Initial residual = 0.00094509312396624822, Final residual = 1.3429924626365118e-09, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0009447637608064512, Final residual = 1.3433148761718123e-09, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00030030054839454341, Final residual = 4.9130252069974559e-10, No Iterations 2
+C29_SOLVER pressure=p
+GAMG:  Solving for p, Initial residual = 0.047541172297675759, Final residual = 8.494562931572661e-08, No Iterations 22
+time step continuity errors : sum local = 2.0665718888363224e-12, global = -6.416015174991067e-13, cumulative = -2.1055737399304546e-11
+C29_SOLVER pressure=pFinal
+GAMG:  Solving for p, Initial residual = 0.0011316179817302606, Final residual = 6.3733910618088966e-08, No Iterations 10
+time step continuity errors : sum local = 1.5084871233308387e-12, global = 4.3270662802830237e-13, cumulative = -2.0623030771276244e-11
+ExecutionTime = 30.16 s  ClockTime = 31 s
+
+End

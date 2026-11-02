@@ -1,0 +1,80 @@
+--- refresh_compact_native_v2.py
++++ refresh_compact_native_v3.py
+@@ -1,4 +1,4 @@
+-"""SOURCE-ONLY V2 PROPOSAL: refresh study/** using native Windows file I/O.
++"""SOURCE-ONLY V3 PROPOSAL: refresh study/** using native Windows file I/O.
+ 
+ No work occurs on import or without --execute. Root must review this source and
+ finish/close all GPU publications before executing the guarded command below.
+@@ -30,7 +30,7 @@
+ from datetime import datetime, timezone
+ 
+ 
+-WORKSPACE = Path(r'C:\Users\abbii\Documents\Codex\2026-10-30\referenced-chatgpt-conversation-this-is-an')
++WORKSPACE = Path(r'\\?\C:\Users\abbii\Documents\Codex\2026-10-30\referenced-chatgpt-conversation-this-is-an')
+ OUT = WORKSPACE / 'outputs' / 'tello_refinement'
+ WORK = WORKSPACE / 'work' / 'native_compact_refresh_proposal'
+ NATIVE_PYTHON = Path(r'C:\Program Files\Blender Foundation\Blender 5.2\5.2\python\bin\python.exe')
+@@ -72,7 +72,14 @@
+ 
+ 
+ def lexical(path):
+-    return Path(os.path.abspath(os.fspath(path)))
++    # Native Windows long paths: normalize before adding the namespace. Both
++    # fixed roots and ordinary aliases then share one containment spelling.
++    # ZIP names still come exclusively from relative_to(...).as_posix().
++    text = os.path.normpath(os.path.abspath(os.fspath(path)))
++    drive = Path(text).drive
++    if os.name == 'nt' and len(drive) == 2 and drive[1] == ':':
++        text = '\\\\?\\' + text
++    return Path(text)
+ 
+ 
+ def inside(path, root):
+@@ -87,12 +94,13 @@
+ def safe_path(path, *, root=WORKSPACE, missing_leaf=False):
+     """Check every existing ancestor, including ancestors above WORKSPACE.
+ 
+-    Never resolve an unchecked junction or symlink. The fixed paths are local
+-    drive paths; UNC/device path aliases and reparse points are unsupported.
++    Never resolve an unchecked junction or symlink. Only the fixed extended
++    local-drive namespace is supported; network UNC/other device aliases and
++    reparse points remain unsupported. Every ancestor is checked as before.
+     """
+     path = inside(path, root)
+-    if str(path).startswith(('\\\\', '\\?\\')):
+-        fail(f'UNC/device paths are not supported: {path}')
++    if not str(path).startswith('\\\\?\\') or path.drive.casefold() != WORKSPACE.drive.casefold():
++        fail(f'Only the fixed extended local-drive namespace is supported: {path}')
+     for node in reversed((path,) + tuple(path.parents)):
+         try:
+             st = node.lstat()
+@@ -519,7 +527,7 @@
+     if sys.version_info[:3] != (3, 13, 13):
+         fail(f'Expected pinned CPython 3.13.13, got {sys.version}')
+     executable = lexical(sys.executable)
+-    if os.path.normcase(str(executable)) != os.path.normcase(str(NATIVE_PYTHON)):
++    if os.path.normcase(str(executable)) != os.path.normcase(str(lexical(NATIVE_PYTHON))):
+         fail(f'Use the existing pinned native Python: {NATIVE_PYTHON}')
+     safe_path(WORKSPACE)
+     safe_path(OUT)
+@@ -528,7 +536,8 @@
+ 
+ def main(args):
+     plan = dict(mode='source-only proposal until explicit execution',
+-                helper_version=2, reviewed_SPUMA_manifest_sha256=SPUMA_MANIFEST_SHA256,
++                helper_version=3, native_filesystem_namespace='bounded extended local-drive paths',
++                reviewed_SPUMA_manifest_sha256=SPUMA_MANIFEST_SHA256,
+                 exact_manifest_bound_dotfile_exceptions=sorted(SPUMA_DOTFILE_EXCEPTIONS),
+                 python=str(NATIVE_PYTHON), target=str(COMPACT), pinned_old_sha256=OLD_SHA256,
+                 source_scope='current filtered OUT files -> study/** only',
+@@ -585,7 +594,8 @@
+             fail('Published archive entry verification differs from candidate')
+         added = sorted(set(entries) - set(old_study) - set(cases))
+         removed = sorted(set(old_study) - set(entries))
+-        receipt = dict(format_version=1, helper_version=2, native_windows_io=True,
++        receipt = dict(format_version=1, helper_version=3, native_windows_io=True,
++                       native_filesystem_namespace='bounded extended local-drive paths',
+                        reviewed_SPUMA_manifest_sha256=SPUMA_MANIFEST_SHA256,
+                        exact_manifest_bound_dotfile_exceptions=sorted(SPUMA_DOTFILE_EXCEPTIONS),
+                        every_reviewed_SPUMA_manifest_member_in_study_inventory=True,

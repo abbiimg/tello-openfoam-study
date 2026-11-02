@@ -1,0 +1,8 @@
+ACTUAL_SOLVER_CHILD_EXIT -11
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/tmp/nsys-openfoam/nsys-report-cf1a.qdstrm'
+[1/1] [0%                          ] first_complete_step.nsys-repProcessing events...
+[1/1] [0%                          ] first_complete_step.nsys-rep[1/1] [1%                          ] first_complete_step.nsys-rep[1/1] [2%                          ] first_complete_step.nsys-rep[1/1] [5%                          ] first_complete_step.nsys-rep[1/1] [12%                         ] first_complete_step.nsys-rep[1/1] [13%                         ] first_complete_step.nsys-rep[1/1] [14%                         ] first_complete_step.nsys-rep[1/1] [=16%                        ] first_complete_step.nsys-rep[1/1] [==19%                       ] first_complete_step.nsys-rep[1/1] [==20%                       ] first_complete_step.nsys-rep[1/1] [==21%                       ] first_complete_step.nsys-rep[1/1] [=====29%                    ] first_complete_step.nsys-rep[1/1] [========42%                 ] first_complete_step.nsys-rep[1/1] [=======================96%  ] first_complete_step.nsys-rep[1/1] [========================98% ] first_complete_step.nsys-rep[1/1] [========================100%] first_complete_step.nsys-rep[1/1] [========================100%] first_complete_step.nsys-rep
+Generated:
+	/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/first_complete_step.nsys-rep

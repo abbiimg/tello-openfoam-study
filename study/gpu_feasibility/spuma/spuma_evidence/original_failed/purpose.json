@@ -1,0 +1,63 @@
+{
+  "kind": "Isolated SPUMA GPU installation functional smoke, not rotor or performance study",
+  "prepared_utc": "2026-11-02T11:14:13.445600+00:00",
+  "case": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool",
+  "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+  "mesh_cells": 400,
+  "solver": "icoFoam",
+  "end_s": 0.5,
+  "delta_t_s": 0.005,
+  "physical_case": "standard closed 2D lid-driven cavity, source viscosity and boundaries unchanged",
+  "pool": "fixedSizeMemoryPool",
+  "pool_size_GiB": 1,
+  "source_case_input_hashes": {
+    "0/p": "0c7040dc8b6010695d2e902f9d483becfb669a27325f3c640231bc0fac478230",
+    "0/U": "a6580fe68dc8ce243701b8910c43aed2d37b7c8a5e513226343a20d44f3b63c5",
+    "constant/transportProperties": "92578ede17bc7d8df6426a2e9a80b85b52ad6a8ce0514f43970fb165765074ad",
+    "system/PDRblockMeshDict": "e09b4c404bd108c398e45efe341463c1e849fe9bfdfc9ec0cb9d98422dcb3e9e",
+    "system/blockMeshDict": "1585d47710325fb71091330c2d6539250958651248cea9fcd1b7c7b105c16f42",
+    "system/decomposeParDict": "a0c4876fbd0a80cc42135ead135c17aca2f0ef0c249d7589d39cc463f57e659d",
+    "system/fvSolution": "d82fca884724449cb9ef9756e8b377485ceb310f445aa3e38221722dad0b3e70",
+    "system/fvSchemes": "98ec9c773a5681cbc6b8636a340786e098b73e14ff6fed37e1689ddf657aacbc",
+    "system/controlDict": "8aa09e55bfc8f43dfe6763b89c5b8d51e1024f544f8265aba4c45a799a5eb194"
+  },
+  "adaptations": [
+    "p preconditioner DIC -> supported GPU aDIC",
+    "U smoother symGaussSeidel -> supported GPU twoStageSymGaussSeidel",
+    "write precision6 ->12, output only"
+  ],
+  "marker_log_reused_from": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/pool_executor_marker/log.poolDeviceMarker",
+  "marker_repeated": false,
+  "time_loop_annotation": {
+    "kind": "Host NVTX annotation only for actual CFD-loop API coverage",
+    "recorded_utc": "2026-11-02T10:10:16.751241+00:00",
+    "source_pin": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+    "path": "applications/solvers/incompressible/icoFoam/icoFoam.C",
+    "original_sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46",
+    "annotated_sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a",
+    "patch": "/opt/openfoam-workspace/gpu-feasibility/spuma/patches/ico_time_loop_annotation.patch",
+    "patch_sha256": "4a9d6155c5b6027d8fbdcb1e950f4fc479b9d6623e4d6d99bb100650f82f7daa",
+    "range_name": "SPUMA_CFD_TIME_LOOPS",
+    "scope": "Push immediately before runTime.loop; pop immediately after loop and before final pool report. No equation, numerical control or case change.",
+    "header": "NVTX3 from reused private NVHPC26.9/CUDA13.3 SDK",
+    "core_or_finiteVolume_rebuild_required": false,
+    "no_production_change": true
+  },
+  "first_functional_run_profiled": true,
+  "performance_inference_forbidden": true,
+  "no_CPU_study_change": true,
+  "no_performance_benchmark": true,
+  "no_actuator_port": true,
+  "solver_started": false,
+  "binaries": [
+    "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/blockMesh",
+    "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam"
+  ],
+  "environment": "/opt/openfoam-workspace/gpu-feasibility/spuma/env.sh",
+  "solver_nice_increment": 15,
+  "OMP_NUM_THREADS": 1,
+  "OPENBLAS_NUM_THREADS": 1,
+  "probe_source_sha256": "c47b46171a5dc9efcf5c246c737d4e2e1d82c1db10dfa12592568d2d882c9aef",
+  "observer_source_sha256": "0570bae515f74d9e45349ec8bdcf667a4bcf3434b607def7a441d888f99e96f5",
+  "Allrun_sha256": "06cd4461d3ae318589f2c7aea9f5c2afb87c1644b092c5acbbde1ece25350716"
+}

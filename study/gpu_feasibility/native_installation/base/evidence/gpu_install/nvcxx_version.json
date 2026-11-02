@@ -1,0 +1,11 @@
+{
+  "stage": "nvcxx_version",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin/nvc++",
+    "--version"
+  ],
+  "return_code": 0,
+  "elapsed_s": 0.03255408501718193,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/nvcxx_version.log",
+  "completed_utc": "2026-11-02T07:44:55.409003+00:00"
+}

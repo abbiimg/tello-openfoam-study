@@ -1,0 +1,18 @@
+{
+  "stage": "stdpar_smoke_compile",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin/nvc++",
+    "-std=c++17",
+    "-stdpar=gpu",
+    "-gpu=cc121,mem:managed",
+    "-Minfo=all",
+    "-O2",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_smoke.cpp",
+    "-o",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_smoke"
+  ],
+  "return_code": 0,
+  "elapsed_s": 14.24102171100094,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/stdpar_smoke_compile.log",
+  "completed_utc": "2026-11-02T07:45:10.134662+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "Lossless minimal subset for the named actual-thread CUDA review predicates",
+  "extracted_utc": "2026-11-02T13:35:45.974624+00:00",
+  "source_private_sqlite": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.sqlite",
+  "source_sqlite_sha256": "e4a1cf239a61f02ef06ed6a4aec147d7d71a59befd6f0335f2d787cb373c165e",
+  "source_sqlite_bytes": 356352,
+  "source_private_report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.nsys-rep",
+  "source_report_sha256": "08364a280183730e56c93d4920f69251a8e7989f120418187e62eddccdf70d10",
+  "source_report_bytes": 67672,
+  "globalTid": 285589152972264,
+  "decoded_pid": 245224,
+  "range_name": null,
+  "row_counts": {
+    "CUPTI_ACTIVITY_KIND_RUNTIME": 5,
+    "PROCESSES": 1,
+    "StringIds": 3
+  },
+  "successful_launch_rows": 1,
+  "launch_rows": 1,
+  "sync_rows": 4,
+  "failed_launch_or_sync_rows": 0,
+  "predicate": "All launch/sync rows for the actual solver globalTid across ALL retained trace timestamps, so post-window launch absence remains reviewable; exactly one named complete range when requested and one actual process row",
+  "StringIds_policy": "Only referenced safe API names and the selected static range name",
+  "process_policy": "Exact actual process row retained losslessly; basename or supplied exact owned executable path only",
+  "expected_process_path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker",
+  "environment_policy": "No environment tables or unreferenced StringIds queried/copied. Full originals are only hashed as bytes and remain private.",
+  "no_kernel_timeline_or_speed_claim": true,
+  "originals_unchanged": true,
+  "review_subset": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_gpu_install_publication_candidate/trace_subsets/device_marker/review_subset.sqlite",
+  "review_subset_sha256": "a95908fba77ced45855d372647aaffeea3b7efefdb98829c92590a1d8c130d2b",
+  "extraction_recipe_sha256": "27b87b8a3bde76da72d038a84c4455c6ae496850883963ff25ddb8936b90af21"
+}

@@ -1,0 +1,669 @@
+{
+  "schema": "tello-external-inputs-v1",
+  "description": "Exact optional inputs retained in the separately delivered offline archive; excluded from the current source-repository tree. Restore before frozen mapped reruns or C29 offline replay.",
+  "archive": {
+    "filename": "setup_results.zip",
+    "sha256": "18a7676858d22f2ab78e78cd2f8e35c9943938aa948d905fad4afc7a6a001100",
+    "size_bytes": 1200933912,
+    "members": 3798
+  },
+  "project_identity": [
+    {
+      "path": "study/reproduce_cases.py",
+      "sha256": "8e477b30bb0ab4bb0f04e1f7c7c18c0ea94d61564dba25dbb6f5e32f18f56e41",
+      "size_bytes": 14211
+    }
+  ],
+  "file_count": 90,
+  "total_size_bytes": 2641001310,
+  "groups": {
+    "c29_canonical_starting_flux": {
+      "files": 1,
+      "size_bytes": 65502360
+    },
+    "c29_completed_cpu_fields": {
+      "files": 30,
+      "size_bytes": 1470571333
+    },
+    "cpu_mapped_initial_fields": {
+      "files": 56,
+      "size_bytes": 1028396531
+    },
+    "source_and_seed_archives": {
+      "files": 3,
+      "size_bytes": 76531086
+    }
+  },
+  "files": [
+    {
+      "repository_path": "cases/coarsemapped_n4_e19.2923_d1000_az0000/0.6/U",
+      "archive_member": "cases/coarsemapped_n4_e19.2923_d1000_az0000/0.6/U",
+      "sha256": "2998fa64ec6cb3b7187c489abd54741907de6c192e197b89bdee6c7e907dcd5c",
+      "size_bytes": 10805949,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n4_e19.2923_d1000_az0000/0.6/p",
+      "archive_member": "cases/coarsemapped_n4_e19.2923_d1000_az0000/0.6/p",
+      "sha256": "994e606ce414743deb1ab58cc2802c48e3c171aeee1b1f25a0e584f97e33cdad",
+      "size_bytes": 3860491,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n8_e19.2923_d0800_am1000/0.6/U",
+      "archive_member": "cases/coarsemapped_n8_e19.2923_d0800_am1000/0.6/U",
+      "sha256": "2c9e8bd3fd1d6a1afa59450babe147294a48cdd5df647de7148e9fdbb3f1e935",
+      "size_bytes": 10582457,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n8_e19.2923_d0800_am1000/0.6/p",
+      "archive_member": "cases/coarsemapped_n8_e19.2923_d0800_am1000/0.6/p",
+      "sha256": "3c52266f644cef55eb2afc57dfe17068ca6678bc82fe54db94e798b50df164e7",
+      "size_bytes": 3628335,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n8_e19.2923_d0800_az0000/0.6/U",
+      "archive_member": "cases/coarsemapped_n8_e19.2923_d0800_az0000/0.6/U",
+      "sha256": "0318d336e0cad25f1bee0885d195377ff8fd48b5e290cf343d244d493d8d7763",
+      "size_bytes": 10582232,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n8_e19.2923_d0800_az0000/0.6/p",
+      "archive_member": "cases/coarsemapped_n8_e19.2923_d0800_az0000/0.6/p",
+      "sha256": "49f13d9baa65a83bdf09b7ec1f8faa747ac1cfc5c08f9568557abcccd92dfa85",
+      "size_bytes": 3660276,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n8_e19.2923_d1000_az0000/0.6/U",
+      "archive_member": "cases/coarsemapped_n8_e19.2923_d1000_az0000/0.6/U",
+      "sha256": "78e385d32aa9352cb28ed817f0ef96ac9b08bba3980b94328afc23673017ce89",
+      "size_bytes": 10607944,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/coarsemapped_n8_e19.2923_d1000_az0000/0.6/p",
+      "archive_member": "cases/coarsemapped_n8_e19.2923_d1000_az0000/0.6/p",
+      "sha256": "1fe694c2a38518f7b27a5b43771e1489e7cbdca6c52006d8f2ab5f85db0aa07a",
+      "size_bytes": 3641299,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611/0.6/U",
+      "archive_member": "cases/finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611/0.6/U",
+      "sha256": "f7963e44ccaa29dc01593b3208ae2f5a57e87b40f733d95368216783f95b7087",
+      "size_bytes": 38477491,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611/0.6/p",
+      "archive_member": "cases/finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611/0.6/p",
+      "sha256": "c2e9a6b4aea1c78caeb067b518ca556679f439b95f0ec878a89b5aea9f223ad3",
+      "size_bytes": 12931285,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/0.6/U",
+      "archive_member": "cases/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/0.6/U",
+      "sha256": "bda8c91451354e223d0eca6501ab7adb419c3e5a814f1e3e51bb0a6d08918259",
+      "size_bytes": 38463911,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/0.6/p",
+      "archive_member": "cases/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/0.6/p",
+      "sha256": "ffe6da03861d9cad2ce0b2329af657aaad1c196d004e9f49d7c29d0608f6ff64",
+      "size_bytes": 13089124,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131/0.6/U",
+      "archive_member": "cases/finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131/0.6/U",
+      "sha256": "1aa3eb73196de4893ad213d4e59561463799463aa4360fb1286341817af17a32",
+      "size_bytes": 38512232,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131/0.6/p",
+      "archive_member": "cases/finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131/0.6/p",
+      "sha256": "a21a705b5e8d4ac3b2cb0a183ffc77aac3d2c5ba6c83c60ebafb31b835c6b569",
+      "size_bytes": 12845760,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/0.6/U",
+      "archive_member": "cases/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/0.6/U",
+      "sha256": "a34090c9eb5f8ca5b2a668663f885c1c9d26d85f287edafdd564832f730962fb",
+      "size_bytes": 38565065,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/0.6/p",
+      "archive_member": "cases/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/0.6/p",
+      "sha256": "6e8c78db9325a9e6afe4b0d42e22c9339016dee6792c05055406a6be2cbcd6fe",
+      "size_bytes": 12964887,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n4_e19.2923_d1000_az0000/0.6/U",
+      "archive_member": "cases/finemapped_n4_e19.2923_d1000_az0000/0.6/U",
+      "sha256": "bc76e8534430fb695e126388cf4e025c951483d3d0e4622ddf93ecbfc5ccc325",
+      "size_bytes": 39382304,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n4_e19.2923_d1000_az0000/0.6/p",
+      "archive_member": "cases/finemapped_n4_e19.2923_d1000_az0000/0.6/p",
+      "sha256": "6bddbc0d9aee665c201c560a30817c5e8854d377ea7723a66dc9d31e6270d726",
+      "size_bytes": 13794383,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0750_am1250/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0750_am1250/0.6/U",
+      "sha256": "0b848157146fe147a91a8381b93522a65d69713798f93641a611544d76822702",
+      "size_bytes": 38504262,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0750_am1250/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0750_am1250/0.6/p",
+      "sha256": "5d3d1db38af16e57f3b9d03e9e5253e8a769f32c4b9227288f1bfc57cbb04a7b",
+      "size_bytes": 13175575,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am0500/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am0500/0.6/U",
+      "sha256": "76db20a9f36fba755d32da511b14ab45f6a4bc0787ce808c98114ab08662bc9b",
+      "size_bytes": 38495365,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am0500/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am0500/0.6/p",
+      "sha256": "2308c7b64beb2a5b341ad82c0ec33bd64cc353d1944fac76ef55990c09bae0a0",
+      "size_bytes": 13095544,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am0750/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am0750/0.6/U",
+      "sha256": "abc1763fe67728d320065e643666b6ee2c15d47641731851c1b1d9a27706cd28",
+      "size_bytes": 38477765,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am0750/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am0750/0.6/p",
+      "sha256": "8d600967bf03f56a2fa2bad873fa5333bd3750abf48485e9b2540a23610f280e",
+      "size_bytes": 12908677,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am1000/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am1000/0.6/U",
+      "sha256": "1caa999b1192ee877bdc93040b2b3ee1c2a082d751d9226282e3094283b25908",
+      "size_bytes": 38497652,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am1000/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am1000/0.6/p",
+      "sha256": "0a433ff28b94fa05874ff57ecb3ef7b4e83045b9ca810ded574e493603d0ca65",
+      "size_bytes": 12944638,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am1250/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am1250/0.6/U",
+      "sha256": "45ae4994669ee4a7d08f5f9b8e45d14aed7fd0de3072faa19e977425b58c340e",
+      "size_bytes": 38479705,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_am1250/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_am1250/0.6/p",
+      "sha256": "f3e8cbe19c28499398a98163b3adf03c30486473f0139745e482fbdaceb53500",
+      "size_bytes": 13017289,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_az0000/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_az0000/0.6/U",
+      "sha256": "9e13a9e6021bee8364f2fa23c4d8fbe008e61182068d7aaf8b92679e8b129d16",
+      "size_bytes": 38488979,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0800_az0000/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0800_az0000/0.6/p",
+      "sha256": "7e657ccc6738c515edd2e5b20504704447fe1b8ce0de7ec12a376d7fd62a2745",
+      "size_bytes": 13041847,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0850_am0500/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0850_am0500/0.6/U",
+      "sha256": "fca5e367d7adb1f61b75ce75d819a79d229c8e35d9efc2a39b390bee206db7ba",
+      "size_bytes": 38560472,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d0850_am0500/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d0850_am0500/0.6/p",
+      "sha256": "2ec833d070574fc5f6b39a8c2e5953b32c094d8f755d8de25ca6e66f3ca10996",
+      "size_bytes": 13044385,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d1000_az0000/0.6/U",
+      "archive_member": "cases/finemapped_n8_e19.2923_d1000_az0000/0.6/U",
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "size_bytes": 38621951,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/finemapped_n8_e19.2923_d1000_az0000/0.6/p",
+      "archive_member": "cases/finemapped_n8_e19.2923_d1000_az0000/0.6/p",
+      "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+      "size_bytes": 13004937,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18/0.6/U",
+      "archive_member": "cases/mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18/0.6/U",
+      "sha256": "51ac210f29cd7e3e2ecc17e8bf9a21d73b064dc48dc6dc85266cfb56d59bb61f",
+      "size_bytes": 20261188,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18/0.6/p",
+      "archive_member": "cases/mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18/0.6/p",
+      "sha256": "67022172207adbbdcdc3b1f3eabb25afc16397873c5b05f8e25662f7127191b6",
+      "size_bytes": 6850288,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f/0.6/U",
+      "archive_member": "cases/mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f/0.6/U",
+      "sha256": "97e01c69664a2ae24bfb8897c32181a406ca311dd658dff902b8d85704ada360",
+      "size_bytes": 20250399,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f/0.6/p",
+      "archive_member": "cases/mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f/0.6/p",
+      "sha256": "836f43856f330c86a88c8489c4d701ddfa9c004d085652bef7d6feecd47b7c5b",
+      "size_bytes": 6939880,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6/0.6/U",
+      "archive_member": "cases/mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6/0.6/U",
+      "sha256": "802a9cbe69ee7ef75e744ba03ac198810a79f97e429e612e1ebd12d66103626a",
+      "size_bytes": 20279990,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6/0.6/p",
+      "archive_member": "cases/mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6/0.6/p",
+      "sha256": "07722f0814d3727d0cd274cf59becf753d9c70f25d9f8ed6732a93558119cd88",
+      "size_bytes": 6806202,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c/0.6/U",
+      "archive_member": "cases/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c/0.6/U",
+      "sha256": "d1877d8b9ebca6c71feab7c6dd0354bad552c08ba9acc1203c243eb21ec226fb",
+      "size_bytes": 20306219,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c/0.6/p",
+      "archive_member": "cases/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c/0.6/p",
+      "sha256": "28c97372755ef5992efc273fdec32ffb4c89c598ccb5b3662901e2c640e066cb",
+      "size_bytes": 6870212,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n4_e19.2923_d1000_az0000/0.6/U",
+      "archive_member": "cases/mediummapped_n4_e19.2923_d1000_az0000/0.6/U",
+      "sha256": "7925cc54d8e132a46d78b6d124397ec232a731a5d635966ead371b3395310a03",
+      "size_bytes": 20723028,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n4_e19.2923_d1000_az0000/0.6/p",
+      "archive_member": "cases/mediummapped_n4_e19.2923_d1000_az0000/0.6/p",
+      "sha256": "68794430cd35d464d98bb1c38ea523ee52d5c9175e476a90db71269e695ae6ba",
+      "size_bytes": 7313720,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0750_am1250/0.6/U",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0750_am1250/0.6/U",
+      "sha256": "44ba99266c2b38a26f964bcd5d5e1581d1566737dd42458ad5c653f4abb9eedc",
+      "size_bytes": 20267373,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0750_am1250/0.6/p",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0750_am1250/0.6/p",
+      "sha256": "5a8345d7e3e96df54334c42d96e33e77cfb63662bd8494c9f17210265b379c4d",
+      "size_bytes": 6985835,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_am0750/0.6/U",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_am0750/0.6/U",
+      "sha256": "8d1cbe46b3ec253ed6c72980a291fd3d2ef85b9f56730d5a012bb96277f4a092",
+      "size_bytes": 20257787,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_am0750/0.6/p",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_am0750/0.6/p",
+      "sha256": "8d7cd52ddfa9efd395f729f0d129df6df374d1d8e587aac370b756965e9c82f1",
+      "size_bytes": 6844897,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_am1000/0.6/U",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_am1000/0.6/U",
+      "sha256": "6b75511a85f51e497d0658f4a91f27e8e1f538c3584bac6afc884dd2f08b2e26",
+      "size_bytes": 20262983,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_am1000/0.6/p",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_am1000/0.6/p",
+      "sha256": "79ee609e2dd30576d40e7ba64a80b5a3306a5ad82f1d530058c6e12a9a6f8ff1",
+      "size_bytes": 6867672,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_am1250/0.6/U",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_am1250/0.6/U",
+      "sha256": "49ddb5ed2d350fc7d5e8c9ed15df700eae48f335017a4e7c8fad5f796bcc71e6",
+      "size_bytes": 20252302,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_am1250/0.6/p",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_am1250/0.6/p",
+      "sha256": "4d8316c6fe22182f3c9072c7f1633feca6eeb88b6f31701a94e0da891a322a03",
+      "size_bytes": 6901316,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_az0000/0.6/U",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_az0000/0.6/U",
+      "sha256": "0a4a707e8c9d676b342ae0b121d2d5fee7c64183b3eaee8a0a7f80c9d82af55d",
+      "size_bytes": 20256932,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d0800_az0000/0.6/p",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d0800_az0000/0.6/p",
+      "sha256": "2f56f71de717ac63266d8068f2e6d2f71adcab8aeaeb63c554dc44d579b68be0",
+      "size_bytes": 6918983,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d1000_az0000/0.6/U",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d1000_az0000/0.6/U",
+      "sha256": "82be2bce144124f42f17c7fafffff4d19a836c9bf014dd2101d1ee91f755e12b",
+      "size_bytes": 20330187,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "cases/mediummapped_n8_e19.2923_d1000_az0000/0.6/p",
+      "archive_member": "cases/mediummapped_n8_e19.2923_d1000_az0000/0.6/p",
+      "sha256": "9a03cfcffc95071d80d074b4536f7763e6ee6392ee61ee4f7d3a79a535868f31",
+      "size_bytes": 6894670,
+      "group": "cpu_mapped_initial_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/Ginkgo_upstream_13c917436066.tar.gz",
+      "archive_member": "study/gpu_feasibility/Ginkgo_upstream_13c917436066.tar.gz",
+      "sha256": "4a87e0c7a2de938b4fb5f36038cbde64b09fad1e85ed40572d63402f63625b1b",
+      "size_bytes": 13515120,
+      "group": "source_and_seed_archives"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/OGL_upstream_7c3ced4514fb.tar.gz",
+      "archive_member": "study/gpu_feasibility/OGL_upstream_7c3ced4514fb.tar.gz",
+      "sha256": "cf90e93b7ee8c9cc86f57306142c4b62ccbede1ba7611c16b9fb6bd1c6b543cd",
+      "size_bytes": 192755,
+      "group": "source_and_seed_archives"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/benchmark_reproduction/shared_seed.zip",
+      "archive_member": "study/gpu_feasibility/benchmark_reproduction/shared_seed.zip",
+      "sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+      "size_bytes": 62823211,
+      "group": "source_and_seed_archives"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6001/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6001/U",
+      "sha256": "82cf861476af2a740b8eb82fbef51345f108dbaea99a56f77927241862d3f96e",
+      "size_bytes": 61308886,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6001/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6001/p",
+      "sha256": "b5c5b8afaec0a06a616c0ba94cbf2f5a3a37b7d15be928f519b6f086306a525c",
+      "size_bytes": 19360306,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6001/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6001/phi",
+      "sha256": "8bb0dc1beaf2cc53f3c225273aafe52ad83778bc0650cf63375987fae00b02a0",
+      "size_bytes": 65504207,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6002/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6002/U",
+      "sha256": "3f05b1e1360c2d47a7fb02f449b751560dbaee565b4488e2b502c95eaaac5b97",
+      "size_bytes": 61308158,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6002/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6002/p",
+      "sha256": "37b4f1de3564d81456b8c5c5787e53022bf31373a8b5b0ed80acae0d98d5402c",
+      "size_bytes": 20413984,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6002/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6002/phi",
+      "sha256": "2339b96bfe0f7a288701d0f6f0065f7b4f1c4f9e68d87c229740b492a33dc566",
+      "size_bytes": 65504867,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6003/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6003/U",
+      "sha256": "56a08639ef086b0b2d5c1b563bb566fc0666d0a59ec15667d48476097044a3f4",
+      "size_bytes": 61307683,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6003/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6003/p",
+      "sha256": "5aac271c19da4031af85658a22372a667c6604e3d46f77f2c52b732b6fecbac6",
+      "size_bytes": 20467138,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6003/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6003/phi",
+      "sha256": "9e4f544c6425b466bd1f14ecab7f82a004b68ddc86c762241b2c0d6b47d3e1d7",
+      "size_bytes": 65504070,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6004/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6004/U",
+      "sha256": "548d879122051360f3d877b0c6e71e3763c404203ab5d0ac6dc4e626be43b471",
+      "size_bytes": 61308591,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6004/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6004/p",
+      "sha256": "433fa93bdb20f1d62a2fff5fa1217b11a1001e8ea13921506d005e5a7fb5f0c1",
+      "size_bytes": 20487582,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6004/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6004/phi",
+      "sha256": "f5d9d9083ceb2d0fa49632ada6f90f2eda5199635f0b9419dd440347e3e72964",
+      "size_bytes": 65505249,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6005/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6005/U",
+      "sha256": "96da08fc683da571b4761dbae327799310924de7f5bc8da5b5e78e71aaacc6c6",
+      "size_bytes": 61307806,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6005/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6005/p",
+      "sha256": "c6bae9c10eaa90b1b052d5b668b31dc527254ae1e29c39fa46a979156837ae64",
+      "size_bytes": 20491688,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6005/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/foundation14_control/0.6005/phi",
+      "sha256": "a70b18133786bd5ae7e0425f0452db204888e95d72e8557ca7266a74ca07393f",
+      "size_bytes": 65504662,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6001/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6001/U",
+      "sha256": "4f831291e62fc1cd2fc6b86ca49cd54ea91ba9ec0f39afb36fd76c6120fe80ea",
+      "size_bytes": 61310385,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6001/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6001/p",
+      "sha256": "c8fa982a5b855cb4b549a97bd2354b843b4d8d3492fcf2a9291f9014b7052622",
+      "size_bytes": 19360241,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6001/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6001/phi",
+      "sha256": "9a6a3266b4284048d04a1a9c5810d0ba470ae49bd7ac4bea13ea7c04bd4caefd",
+      "size_bytes": 65503450,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6002/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6002/U",
+      "sha256": "1869b1ed3b15593f80865bbc17e5246d619c6995f0a7b64b6a310f5a50602a82",
+      "size_bytes": 61308653,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6002/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6002/p",
+      "sha256": "03ada47d6605afda004265ae59c4965c8bc4ec5912175983d84313190970564b",
+      "size_bytes": 20414759,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6002/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6002/phi",
+      "sha256": "d3741186179e41ab9341999b50359e2d41b00e06307c37edc6ac84389f6a9444",
+      "size_bytes": 65505638,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6003/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6003/U",
+      "sha256": "57b4d0ca043c7b4aec9979cc863cc1e04d6f5043504f5309f184b3512d8da893",
+      "size_bytes": 61308039,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6003/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6003/p",
+      "sha256": "0929304a24e3ab8ce06841aa92c8e7fb0bc800ed4a22bc6175fc769b24eabeed",
+      "size_bytes": 20467538,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6003/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6003/phi",
+      "sha256": "a2e9dd7452ac5c0ecadc0579ec18a0b79de08d4f2d7f59ce0bf3747092620afd",
+      "size_bytes": 65505435,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6004/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6004/U",
+      "sha256": "9433bf83aa2a90510380437288b0f168eb8a9e29556440fc6a39770d3eb12033",
+      "size_bytes": 61306401,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6004/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6004/p",
+      "sha256": "40d755c0c5a8f7bca9014cefbf378f7251eb31dc0e2043e7f92934077ed15441",
+      "size_bytes": 20487940,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6004/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6004/phi",
+      "sha256": "4c7949439a997765d00d9f7bd67bd7b4807cc169c32edcd7489e675881c37fcb",
+      "size_bytes": 65504504,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6005/U",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6005/U",
+      "sha256": "2710cefc8c1c9edf8e302887fa6354cade57492639d90f3669d7e8ac41b8db78",
+      "size_bytes": 61307700,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6005/p",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6005/p",
+      "sha256": "e1da2ab59a111e175c537642afc81669143ac0e6e8cdba6b7b744d3f9b411f60",
+      "size_bytes": 20491622,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6005/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/saved_fields/native_cpu/0.6005/phi",
+      "sha256": "1d5a66572f95c90bafca5f964b7752e3402c53bab136037a57f6211bda0cfc74",
+      "size_bytes": 65504151,
+      "group": "c29_completed_cpu_fields"
+    },
+    {
+      "repository_path": "study/gpu_feasibility/c29_managed_strict/base/shared_initial/phi",
+      "archive_member": "study/gpu_feasibility/c29_managed_strict/base/shared_initial/phi",
+      "sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "size_bytes": 65502360,
+      "group": "c29_canonical_starting_flux"
+    }
+  ]
+}

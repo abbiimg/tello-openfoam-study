@@ -1,0 +1,154 @@
+{
+  "kind": "Read-only AmgX dependency inventory",
+  "machine": "aarch64",
+  "uid": 999,
+  "gid": 989,
+  "existing_cuda_prefix": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13",
+  "private_target_prefix": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda",
+  "tools": {
+    "nvcc": {
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/bin/nvcc",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:57:39_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0\n"
+    },
+    "cmake": {
+      "command": [
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "cmake version 3.31.7\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n"
+    },
+    "gcc": {
+      "command": [
+        "gcc",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    },
+    "g++": {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    },
+    "make": {
+      "command": [
+        "make",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "GNU Make 4.3\nBuilt for aarch64-unknown-linux-gnu\nCopyright (C) 1988-2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n"
+    },
+    "git": {
+      "command": [
+        "git",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "git version 2.43.0\n"
+    },
+    "mpi": {
+      "command": [
+        "mpicxx",
+        "--showme:command"
+      ],
+      "returncode": 0,
+      "output": "g++\n"
+    }
+  },
+  "headers": {
+    "cuda.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cuda.h"
+    },
+    "cuda_runtime.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cuda_runtime.h"
+    },
+    "cuda_runtime_api.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cuda_runtime_api.h"
+    },
+    "cublas_v2.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cublas_v2.h"
+    },
+    "cusparse.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cusparse.h"
+    },
+    "curand.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/curand.h"
+    },
+    "nvtx3/nvToolsExt.h": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/nvtx3/nvToolsExt.h"
+    },
+    "thrust/version.h": {
+      "exists": false,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/thrust/version.h"
+    },
+    "cub/version.cuh": {
+      "exists": false,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cub/version.cuh"
+    }
+  },
+  "libraries": {
+    "libcudart.so": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcudart.so.13.0.96",
+      "bytes": 707752
+    },
+    "libcublas.so": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcublas.so.13.1.0.3",
+      "bytes": 61918408
+    },
+    "libcublasLt.so": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcublasLt.so.13.1.0.3",
+      "bytes": 629929568
+    },
+    "libcusparse.so": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcusparse.so.12.6.3.3",
+      "bytes": 174842648
+    },
+    "libcurand.so": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcurand.so.10.4.0.35",
+      "bytes": 147889368
+    },
+    "libnvJitLink.so": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libnvJitLink.so.13.0.88",
+      "bytes": 89258944
+    },
+    "libcudadevrt.a": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcudadevrt.a",
+      "bytes": 1024444
+    },
+    "libculibos.a": {
+      "exists": true,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libculibos.a",
+      "bytes": 31370
+    }
+  },
+  "free_bytes": 928104132608,
+  "target_exists": false,
+  "driver_libraries": [
+    "/usr/lib/wsl/lib/libcuda.so",
+    "/usr/lib/wsl/lib/libcuda.so.1",
+    "/usr/lib/wsl/lib/libcuda.so.1.1",
+    "/usr/lib/wsl/lib/libcudadebugger.so.1"
+  ]
+}

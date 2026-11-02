@@ -1,0 +1,13 @@
+// TEMPLATE ONLY: not an actual case, and not approved to execute.
+FoamFile {format ascii;class dictionary;object c29PortControls;}
+protocol c29-native-five-fixed-steps-v1;
+seedArchiveSha256 "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb";
+backend gpu;
+initialPhiPolicy computeFromPinnedU;
+// Custom permission to TEST an UNVALIDATED candidate, never passed tests.
+allowUnvalidatedBackendExperiment false;
+allowInitialFieldsOnlyExperiment false;
+allowFiveStepSourceExperiment false;
+// Choose once in a fresh clone BEFORE auditing; the receipt stays outside it.
+experimentId "ROOT_CHOOSE_UNIQUE_ID";
+experimentReceiptFile "/ROOT_CHOOSE_NEW_PRIVATE_RECEIPT.foam";

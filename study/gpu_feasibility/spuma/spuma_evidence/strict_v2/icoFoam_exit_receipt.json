@@ -1,0 +1,17 @@
+{
+  "kind": "Actual strict-v2 child exit after cleanup, separate from profiler/Allrun",
+  "started_utc": "2026-11-02T11:36:08.522426+00:00",
+  "returned_utc": "2026-11-02T11:40:26.680969+00:00",
+  "returncode": 0,
+  "timed_out": false,
+  "child_identity": {
+    "pid": 367774,
+    "uid": 999,
+    "cwd": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+    "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+    "birth_tick": 15932090,
+    "started_utc": "2026-11-02T11:36:08.522426+00:00"
+  },
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+  "binary_sha256_after_return": "b861d9d7e5cef7c4624585a9acc54c175220aeb026ade44447b9e69934fd6a1d"
+}

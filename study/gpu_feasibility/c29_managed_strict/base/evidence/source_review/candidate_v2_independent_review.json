@@ -1,0 +1,56 @@
+{
+  "kind": "Independent bounded source-only review of C29 v1-to-v2 corrections",
+  "reviewed_date_utc": "2026-11-02",
+  "candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "inventoried_files_verified": 35,
+  "inventoried_hash_mismatches": [],
+  "main_source_sha256": "47a113b8221d829c101dfcb2f1fecfebb2cbf942a0e494af30f3a22b9eab479c",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "v1_to_v2_patch_sha256": "90e3b2d1b9e085e96693e737c5b359bef26add34c975260660b1b2863cc08fd5",
+  "preserved_v1_manifest_sha256": "d8e40e2bbe72d2be2df0018a2f3aa6334aa437bd3c25fbf51df85d342b6525bf",
+  "preserved_v1_files_verified": 30,
+  "preserved_v1_hash_mismatches": [],
+  "original_fvModels_sha256_independently_rechecked": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "verbatim_body_sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+  "verbatim_includes_sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83",
+  "blocking_findings": [],
+  "corrections": {
+    "C1": "Corrected in source: false-default, phase-specific unvalidated permission and receipt; no proof-like flags; initialization skips unused source preparation",
+    "C2": "Corrected in source: dimensions, zero coefficients/source, once-index observation, signed force/work accounting and per-rotor telemetry; no mirror controller-law assertion",
+    "C3": "Corrected in source: compressed/broken-link/ancestor guards, frozen input and manual-launch bindings, explicit common-phi pin and fatal fallback write failure"
+  },
+  "new_native_API_declarations_inspected": {
+    "lduMatrix_hasDiag_hasUpper_hasLower_const": true,
+    "fvMatrix_flat_const_internal_and_boundary_coefficients": true,
+    "VectorSpace_size_and_cdata": true
+  },
+  "nonblocking_observations": [
+    "The coefficient observer legally traverses flat coefficient vectors componentwise, with repeated CUDA pointer-attribute queries; this is validation overhead and unsuitable for an unqualified speed claim"
+  ],
+  "threshold_review": {
+    "status": "Source proposal is coherent for root consideration; not root approval or acceptance",
+    "no_candidate_runtime_results_inspected": true,
+    "separate_cross_branch_and_same_native_backend_gates": true,
+    "exact_startup_and_source_identities_distinct_from_field_tolerances": true,
+    "individual_residual_continuity_Courant_checks": true,
+    "no_posthoc_relaxation_or_averaging_away_failures": true
+  },
+  "remaining_execution_responsibilities": [
+    "Root approval of source and preregistered thresholds, actual build/library readiness and compiler/linker success",
+    "Safe fresh restoration, complete pinned inputs, frozen recheck-to-launch window and actual loaded-library evidence",
+    "Exact initialized U/p/phi, independent reference observations, five matching source/TILT samples and ten pressure corrections",
+    "Complete field/force/power/residual/continuity/Courant comparisons and actual time-loop GPU evidence",
+    "Separate accuracy-qualified performance protocol after builds are idle; no production adoption inferred"
+  ],
+  "scope_receipt": {
+    "candidate_edited": false,
+    "vendor_or_SDK_edited": false,
+    "study_output_or_Git_edited": false,
+    "case_created": false,
+    "compiled": false,
+    "application_or_CFD_run": false,
+    "numerical_acceptance_assessed": false,
+    "execution_approval_given": false
+  },
+  "conclusion": "No C1-C3 source blocker remains; root may consider a controlled unvalidated build/experiment when prerequisites are ready. Compilation, managed/helper legality, exact initialization, numerical parity and performance remain unproven."
+}

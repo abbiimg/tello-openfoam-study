@@ -1,0 +1,22 @@
+{
+  "WM_PROJECT_DIR": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606",
+  "WM_OPTIONS": "linuxARM64Nvidia-gpuDPInt32Opt",
+  "WM_COMPILER": "Nvidia-gpu",
+  "WM_PRECISION_OPTION": "DP",
+  "WM_LABEL_SIZE": "32",
+  "WM_MPLIB": "none",
+  "FOAM_LIBBIN": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib",
+  "FOAM_EXT_LIBBIN": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpuDPInt32/lib",
+  "FOAM_MEMORY_POOL": "managed; size=64; incr=64",
+  "PATH": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin:/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/bin:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/wmake:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/stub-gcc-wrapper:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/bin:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/bin:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tools/bison/usr/bin:/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin",
+  "LD_LIBRARY_PATH": "/opt/openfoam-workspace/OpenFOAM/openfoam-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/site/2609/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpuDPInt32/lib:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/fftw-3.3.10/lib64:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/CGAL-4.14.3/lib64:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/ThirdParty-v2606/platforms/linuxARM64Nvidia-gpu/boost_1_74_0/lib64:/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/dummy:/usr/lib/wsl/lib",
+  "C29_APPBIN": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin",
+  "C29_USE_CUDA": "1",
+  "C29_USE_NVTX": "1",
+  "C29_CUDA_INCLUDE": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include",
+  "C29_CUDA_LIBDIR": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib",
+  "C29_NVTX_INCLUDE": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/include",
+  "WM_NCOMPPROCS": "1",
+  "OMP_NUM_THREADS": "1",
+  "TMPDIR": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/tmp"
+}

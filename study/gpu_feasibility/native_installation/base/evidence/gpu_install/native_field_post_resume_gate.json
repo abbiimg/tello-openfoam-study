@@ -1,0 +1,68 @@
+{
+  "kind": "Native Field arithmetic and actual CUDA launch API recheck after resumed base changed core library hash; not CFD or speed measurement",
+  "completed_utc": "2026-11-02T10:09:18.271781+00:00",
+  "result": {
+    "kind": "native Foam Field arithmetic integration",
+    "elements": 32768,
+    "mismatches": 0,
+    "actual_sum": 134246400,
+    "expected_sum": 134246400,
+    "actual_dot_sum": 9894214,
+    "expected_dot_sum": 9894214,
+    "pointer_memory_type": 3,
+    "synchronize_status": 0,
+    "passed": true
+  },
+  "core_library_sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb",
+  "binary_sha256": "df5772176bdbe30ef5c596b883c844ff39bbd58195319b64eefdfdd284c1d4cb",
+  "successful_launch_api_calls": 8,
+  "launch_api_rows": [
+    {
+      "name": "cudaLaunchKernel_v7000",
+      "return_value": 0,
+      "calls": 8
+    }
+  ],
+  "synchronization_api_rows": [
+    {
+      "name": "cudaDeviceSynchronize_v3020",
+      "return_value": 0,
+      "calls": 1
+    },
+    {
+      "name": "cudaStreamSynchronize_v3020",
+      "return_value": 0,
+      "calls": 8
+    }
+  ],
+  "range_row": {
+    "start": 2434169316,
+    "end": 3308872546,
+    "eventType": 59,
+    "rangeId": null,
+    "category": null,
+    "color": null,
+    "text": "NATIVE_STDPAR_FIELD_ALGEBRA",
+    "globalTid": 286974447779954,
+    "endGlobalTid": null,
+    "textId": null,
+    "domainId": 0,
+    "uint64Value": null,
+    "int64Value": null,
+    "doubleValue": null,
+    "uint32Value": null,
+    "int32Value": null,
+    "floatValue": null,
+    "jsonTextId": null,
+    "jsonText": null,
+    "binaryData": null,
+    "eventId": 40
+  },
+  "profile_log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native_field_after_resume_profile.log",
+  "export_log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native_field_after_resume_export.log",
+  "report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.nsys-rep",
+  "sqlite": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/native_field_algebra_cuda_trace_after_resume.sqlite",
+  "count_scope": "API calls, not distinct GPU kernels; no kernel activity timeline claimed",
+  "original_field_gate_preserved": true,
+  "speedup_measured": false
+}

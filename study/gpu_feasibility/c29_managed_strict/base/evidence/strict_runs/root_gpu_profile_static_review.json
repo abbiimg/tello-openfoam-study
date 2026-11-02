@@ -1,0 +1,12 @@
+{
+  "decision": "APPROVED_FOR_ONE_GPU_FIVE_STEP_FUNCTIONAL_PROFILE",
+  "protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "helper_manifest_sha256": "467b014b9fefe74ac76f26e7efe7bb0206994792cbe7e32d85c362dbbca1c5cb",
+  "independent_review": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_independent_review.json",
+    "sha256": "e25f8ebaee0d37592f9e2c3725d5fa9e105ae752e553a8f499c49e8605558bc1"
+  },
+  "root_review": "Read protocol, direct-child and outer cleanup diffs, independent zero-blocker review and all prerequisite actual CPU/startup receipts. Fixed fresh GPU receipt and separately bound external CPU gate required. Preserve original V1/intermediate/V2 freezes. One owned GPU solver; first complete step only; no observer or preload replacement; real child completion and per-subrange successful launch/completion gates mandatory.",
+  "numerical_acceptance_conferred": false,
+  "performance_or_production_adoption_conferred": false
+}

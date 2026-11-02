@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"job\": {\"job_id\": \"Allrun-08c608\", \"case\": \"spuma_gpu_pilots_20261102/cavity_gpu_fixedpool\", \"app\": \"Allrun\", \"command\": \"bash /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool/Allrun\", \"np\": 1, \"log\": \"log.Allrun\", \"state\": \"stopped\", \"elapsed_s\": 470.5, \"returncode\": -1, \"stop_requested\": \"kill\"}}"
+    }
+  ],
+  "isError": false
+}

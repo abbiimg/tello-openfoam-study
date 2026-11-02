@@ -1,0 +1,42 @@
+{
+  "schema": "c29-gpu-profile-helper-freeze-v2",
+  "status": "SOURCE_ONLY_PENDING_ROOT_AND_INDEPENDENT_REVIEW_NO_RUN",
+  "variant": "V2_OWNED_CHILD_EXCEPTION_CONTAINMENT",
+  "base_protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "original_V1_manifest_sha256": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+  "later_snapshot_manifest_sha256": "784ab973ef7c6c783a3bad611934aa5408b6a3406823dc4ad907fdfc68a1df9f",
+  "files": {
+    "README.md": "74c82ba5edf4a7364b3931df39128c238ec95dc4ec5fe301c4c42c8de862e56f",
+    "helper_manifest_initial_source_only.json": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+    "installed_help_verification.json": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+    "owned_cleanup.py": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+    "profile_common.py": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+    "protocol.json": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+    "run_actual_gpu_child.py": "f369ea00340d6d1a2502817b81716a0838f35533f0808ba65f8728c57e997142",
+    "run_gpu_profile.py": "7cf35e20e95c3f69912f312d8d5f34088a4a5f6a2c7d11c9d0915343faa56c5d",
+    "validate_gpu_profile.py": "fc764a1d645fe19f722533689325fee423e018c1e614d8851793e10c670dba0f"
+  },
+  "changed_from_original_V1": [
+    "README.md",
+    "owned_cleanup.py",
+    "run_actual_gpu_child.py",
+    "run_gpu_profile.py",
+    "validate_gpu_profile.py"
+  ],
+  "containment_diff": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v2_containment_correction.patch",
+    "sha256": "8b0343126fb07a43eb303b3b918164554f617cf821fdcddf0d6f16329b04cc95"
+  },
+  "unchanged_proof_gates": "Same returnValue/globalTid/PROCESSES, momentum/predictor/both-pressure windows, successful completion-after-last-launch, five-step and unchanged numerical limits; additionally fail any wrapper/evidence/cleanup error",
+  "AST_parse_success_no_import_or_execution": [
+    "owned_cleanup.py",
+    "profile_common.py",
+    "run_actual_gpu_child.py",
+    "run_gpu_profile.py",
+    "validate_gpu_profile.py"
+  ],
+  "GPU_or_CFD_run": false,
+  "app_build": false,
+  "case_control_or_permission_changes": false
+}

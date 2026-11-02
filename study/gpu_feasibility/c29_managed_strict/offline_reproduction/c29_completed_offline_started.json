@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-02T15:09:16.571579+00:00",
+  "harness_sha256": "5233344c497d020e8cc72a574e61f0ffb1ac0706ce46c429f326a090d6114a75",
+  "frozen_manifest_sha256": "6b2994a2aae47fdad8dcb57b36add85b48e21d16f8f4be62ea34a408d3cdf884",
+  "review_sha256": "2a498cb7f259c650872688f0c3e0025210103c9d5f85a03cf0ce5e1c8ab3ba82",
+  "destination": "/opt/openfoam-workspace/cases/c29_offline_completed_replay_20261102",
+  "report": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_completed_offline_replay_analysis.json",
+  "numpy_version": "1.26.4",
+  "numpy_file": "/usr/lib/python3/dist-packages/numpy/__init__.py",
+  "python": "/usr/bin/python3",
+  "nice": 15,
+  "authorization": "Root one actual offline restore +499 replay, no CFD/build/GPU, no retry"
+}

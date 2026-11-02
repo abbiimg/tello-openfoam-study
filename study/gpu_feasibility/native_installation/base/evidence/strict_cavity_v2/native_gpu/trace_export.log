@@ -1,0 +1,7 @@
+Generating SQLite file /opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.sqlite from /opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.nsys-rep
+Processing [/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_gpu/strict_gpu_trace.sqlite] with [/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/target-linux-sbsa-armv8/reports/cuda_api_sum.py]... 
+Time (%),Total Time (ns),Num Calls,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+49.2,43954145,12,3662845.4,3438257.0,3044097,5361890,628201.8,cudaStreamSynchronize
+49.1,43792701,12,3649391.8,3399785.0,3083169,5248866,665658.8,cudaLaunchKernelExC
+1.7,1504288,1,1504288.0,1504288.0,1504288,1504288,0.0,cudaDeviceSynchronize
+

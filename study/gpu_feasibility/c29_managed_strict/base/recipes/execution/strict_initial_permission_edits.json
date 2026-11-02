@@ -1,0 +1,32 @@
+{
+  "kind": "Root-authorized initial-only phase admission after reviewed same-source CPU/GPU build",
+  "results": {
+    "native_cpu": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"file\": \"constant/c29PortControls\", \"set\": {\"allowUnvalidatedBackendExperiment\": \"allowUnvalidatedBackendExperiment true;\", \"allowInitialFieldsOnlyExperiment\": \"allowInitialFieldsOnlyExperiment true;\"}, \"removed\": []}"
+        }
+      ],
+      "isError": false
+    },
+    "native_gpu": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"file\": \"constant/c29PortControls\", \"set\": {\"allowUnvalidatedBackendExperiment\": \"allowUnvalidatedBackendExperiment true;\", \"allowInitialFieldsOnlyExperiment\": \"allowInitialFieldsOnlyExperiment true;\"}, \"removed\": []}"
+        }
+      ],
+      "isError": false
+    },
+    "foundation14_control": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"file\": \"constant/c29InitialPhiControls\", \"set\": {\"allowInitialPhiExperiment\": \"allowInitialPhiExperiment true;\"}, \"removed\": []}"
+        }
+      ],
+      "isError": false
+    }
+  }
+}

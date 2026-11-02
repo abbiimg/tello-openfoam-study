@@ -1,0 +1,3 @@
+built wmake-bin (linuxARM64Gcc)
+gcc  -DOPENFOAM=2609 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -O3 -floop-optimize -falign-loops -falign-labels -falign-functions -falign-jumps    -fPIC lemon.c -o /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/tools/linuxARM64Gcc/lemon
+g++ -std=c++17 -pthread  -DOPENFOAM=2609 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -floop-optimize -falign-loops -falign-labels -falign-functions -falign-jumps  -DNoRepository -ftemplate-depth=1000   -fPIC wmkdepend.cc -o /opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/tools/linuxARM64Gcc/wmkdepend

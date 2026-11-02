@@ -1,0 +1,101 @@
+{
+  "kind": "Bounded read-only strict-pressure restoration source review",
+  "reviewed_date_utc": "2026-11-02",
+  "blocking_findings": [],
+  "conclusion": "No source blocker for Root to consider guarded restoration of exactly three fresh roles. This is not restoration execution, resolved-dictionary evidence, combined application approval or runtime qualification.",
+  "pins_verified": {
+    "prepare_strict_pressure_cases.py": "a9843f4ce9aed928dde1e8a10de7b49807e475c8dccfd2ca3d5825969394096f",
+    "STRICT_PRESSURE_RESTORATION.md": "1587a9b806344cf69c38fad9b85c884050077c97607f6659aa697c4739049459",
+    "prepare_native_c29_cases.py": "d7064bde61a40764965436b4c1935d1a3cd63e54f5a2cf694fae898014c7135c",
+    "strict_pressure_protocol.json": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+    "root_authorization.json": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+    "validation_thresholds_expected": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+    "pinned_original_fvSolution": "cf30492975ca99d34bb83e7c63a1f8234b4bb6c4a7d224b15b61b00347c16d0e"
+  },
+  "authorization": {
+    "decision": "APPROVED_FOR_UNVALIDATED_FIVE_STEPS",
+    "approved_utc": "2026-11-02T12:53:35.2252962Z",
+    "fresh_case_root": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102",
+    "runtime_validated": false,
+    "proposal_historical_unapproved_state_not_rewritten": true,
+    "separate_root_authorization_bound_by_fixed_sha": true
+  },
+  "scope_and_physics": {
+    "exact_roles": ["foundation14_control", "native_cpu", "native_gpu"],
+    "role_count": 3,
+    "fourth_phi_role_created": false,
+    "F14_control_passive_initializer_marker_permission": false,
+    "first_p_change": {"old_relTol": 0.05, "new_relTol": 0, "unchanged_tolerance": 1e-7},
+    "F14_adaptation_output_sha256": "e1ed15a5fbb3a3e7d7b4961e6fd418509c5995a5744229f63bd7b312c3beff66",
+    "native_adaptation_output_sha256": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3",
+    "stored_dictionary_diff_previews_recomputed_exactly": true,
+    "changed_pinned_literal_or_absolute_tolerance_rejected": true,
+    "F14_PIMPLE_preserved": true,
+    "native_existing_PIMPLE_to_PISO_adapter_only": true,
+    "pFinal_U_UFinal_and_all_other_fvSolution_bytes_preserved": true,
+    "time_controls_same_as_established_five_step_protocol": {"start_s": 0.6, "end_s": 0.6005, "dt_s": 0.0001, "steps": 5, "write_precision": 17},
+    "physical_U_p_mesh_fvModels_rotorParameters_properties_schemes_geometry_preservation_checks_present": true,
+    "no_phi_silently_restored": true,
+    "fresh_controller_state_only": true,
+    "seed_pin_expected": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+    "F14_private_cached_library_expected": "402b112e09f36444ac13d19a3a04f3aca24344a632eb7a258fd11fc3a33392ce",
+    "F14_private_cache_read_only_after_copy": true,
+    "native_F14_dynamicCode_absent": true,
+    "legacy_cases_and_reports_not_targets": true
+  },
+  "path_copy_and_refusal_review": {
+    "Linux_nonroot_openfoam_required": true,
+    "fixed_root_fresh_or_refused": true,
+    "existing_or_partial_root_not_reused_or_deleted": true,
+    "safe_module_pinned_before_import_and_main_not_called": true,
+    "all_seed_override_frozen_cache_destination_names_checked_before_mkdir": true,
+    "absolute_dotdot_empty_backslash_drive_NUL_and_symlink_or_junction_guards": true,
+    "ZIP_duplicate_inventory_nonregular_symlink_and_encryption_checks": true,
+    "source_lnInclude_leaf_links_only_if_contained_in_frozen_cache": true,
+    "archive_override_and_cache_copies_use_exclusive_content_creation": true,
+    "source_package_frozen_input_and_cache_hash_size_mtime_before_after_checks_present": true,
+    "fresh_file_replacements_limited_to_controlDict_Allrun_fvSolution": true,
+    "native_transportProperties_added_from_pinned_template": true,
+    "no_broad_delete_or_existing_case_mutation_path": true,
+    "hostile_concurrent_filesystem_race_proof_claim": false
+  },
+  "pending_admission_and_execution": {
+    "all_three_native_custom_permissions_false": true,
+    "F14_initial_phi_permission_false": true,
+    "Allrun_inert_exit_code": 64,
+    "UUID_future_receipt_paths_distinct_and_external_to_cases": true,
+    "launch_receipt_files_written": false,
+    "combined_binary_identity_explicitly_not_provided": true,
+    "native_expected_application": "c29ManagedHybridFoamStrict",
+    "pending_inputs_audited": false,
+    "pending_audited_solver_criteria": null,
+    "expected_solver_criteria_separate_from_audited_values": true,
+    "in_memory_pending_false_rejected": "Root input audit has not been performed",
+    "in_memory_null_criteria_rejected_even_with_true_flag": "Strict solver criteria were not audited",
+    "in_memory_admission_tests_mock_only_JSON_IO": true,
+    "resolved_dictionary_queries_or_runtime_solves_inferred": false,
+    "separate_actual_dictionary_startup_launch_library_exit_source_and_continuity_gates_still_required": true
+  },
+  "review_execution": {
+    "AST_parse_passed": true,
+    "direct_process_runner_calls_in_restorer": [],
+    "pure_dictionary_adapter_and_control_template_checks_passed": true,
+    "source_check_and_preview_records_consistent": true,
+    "fresh_root_absent_before_and_after": true,
+    "reviewed_sources_and_pins_unchanged_after_checks": true,
+    "pycache_created": false,
+    "restoration_build_initializer_solver_or_dictionary_utility_executed": false,
+    "case_output_Git_or_source_mutations": false,
+    "ownership_or_shader_memory_patch_review_duplicated": false,
+    "only_files_written": [
+      "work/gpu_actuator_port/execution/strict_restoration_independent_review.md",
+      "work/gpu_actuator_port/execution/strict_restoration_independent_review.json"
+    ]
+  },
+  "limits": [
+    "This is a source review with in-memory literal/template/admission checks; no restoration was executed and no actual OpenFOAM dictionary was resolved.",
+    "Source/cache safety and byte-preservation logic were reviewed; the restorer's actual full package/cache before-after checks will occur only during Root-owned restoration.",
+    "The future combined strict/ownership source, build, binary and loaded-library identity need their separate Root review and gates.",
+    "Prospective permission, prepared metadata, expected dictionary values or passive control markers establish no numerical/runtime qualification or performance result."
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "cpu",
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"file\": \"constant/c29PortControls\", \"set\": {\"allowInitialFieldsOnlyExperiment\": \"allowInitialFieldsOnlyExperiment false;\", \"allowFiveStepSourceExperiment\": \"allowFiveStepSourceExperiment true;\", \"experimentId\": \"experimentId    \\\"c29_strict_shared_five_cpu_20261102_a\\\";\", \"experimentReceiptFile\": \"experimentReceiptFile \\\"/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_cpu_20261102_a.foam\\\";\"}, \"removed\": []}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "role": "gpu",
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"file\": \"constant/c29PortControls\", \"set\": {\"allowInitialFieldsOnlyExperiment\": \"allowInitialFieldsOnlyExperiment false;\", \"allowFiveStepSourceExperiment\": \"allowFiveStepSourceExperiment true;\", \"experimentId\": \"experimentId    \\\"c29_strict_shared_five_gpu_20261102_a\\\";\", \"experimentReceiptFile\": \"experimentReceiptFile \\\"/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.foam\\\";\"}, \"removed\": []}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "role": "f14",
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"file\": \"constant/c29InitialPhiControls\", \"set\": {\"allowInitialPhiExperiment\": \"allowInitialPhiExperiment false;\"}, \"removed\": []}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

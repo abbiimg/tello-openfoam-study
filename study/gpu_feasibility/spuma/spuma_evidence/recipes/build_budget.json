@@ -1,0 +1,11 @@
+{
+  "max_jobs": 2,
+  "nice": 15,
+  "available_RAM_reserve_GiB": 20,
+  "authority": "Root explicitly permits SPUMA2 at the next safe completed-stage boundary, native4,combined6; current one-job stage must not be restarted for concurrency",
+  "handoff": "The running original launcher has a boundary budget guard; after its current stage succeeds, resume only subsequent stages using the journal-aware successor",
+  "extra_probe_claim": null,
+  "extra_probe_reserved_jobs": 0,
+  "reason": "Completed core target boundary permits main1 plus one core-executor proof job; restore main2 only after proof terminal; totalSPUMA<=2",
+  "temporarily_lent_slot": "Returned by root at 2026-11-02T09:22:27Z; successor may use2 only at the next safe completed-stage boundary; native4 plusSPUMA2<=6 with20GiB reserve"
+}

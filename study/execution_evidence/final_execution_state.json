@@ -1,0 +1,637 @@
+{
+  "recorded_utc": "2026-11-02T07:49:04Z",
+  "state": "all_selected_CFD_complete_supervisor_normally_drained",
+  "planned_input_scope": 99,
+  "selected_completed": 84,
+  "unstarted_deferrals": [
+    "coarse_n8_e19.2923_d0750_am0250",
+    "coarse_n8_e19.2923_d0750_am0500",
+    "coarse_n8_e19.2923_d0750_az0000",
+    "coarse_n8_e19.2923_d0900_am0250",
+    "coarse_n8_e19.2923_d0900_am1000",
+    "coarse_n8_e19.2923_d0900_am1250",
+    "coarse_n8_e19.2923_d0900_az0000",
+    "coarselocalbracket_square_perimeter_n8_e19.2923_d0850_am1250_ae9f01add018",
+    "coarsemapped_n8_e19.2923_d0750_am1250",
+    "coarsemapped_n8_e19.2923_d0800_am0500",
+    "coarsemapped_n8_e19.2923_d0800_am0750",
+    "coarsemapped_n8_e19.2923_d0800_am1250",
+    "coarsemapped_n8_e19.2923_d0850_am0500",
+    "mediummapped_n8_e19.2923_d0800_am0500",
+    "mediummapped_n8_e19.2923_d0850_am0500"
+  ],
+  "deferred_count": 15,
+  "active_solver_ranks": 0,
+  "suspended_cases": 0,
+  "open_pause_intervals": 0,
+  "errors": [],
+  "statuses": {
+    "coarse_n4_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-d76eae",
+      "run_status_sha256": "2ebd7c86b32414d187c3c495667e0886a0d236ab776397c16301d5e06150dbb0",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0750_am0750": {
+      "job_id": "Allrun-55f369",
+      "run_status_sha256": "437bea20e6d5335cd215dd49ff8930b633a500d02b439aab5f163b7c201e441f",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0750_am1000": {
+      "job_id": "Allrun-51a830",
+      "run_status_sha256": "9ec91d11bb30d28be4141a923602862d6df9be3a3d33e1f7567c6a4f86cb7152",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0750_am1250": {
+      "job_id": "Allrun-8086fc",
+      "run_status_sha256": "e71f8c70093eb19afaad504b3208baccee91d720d080162371ef7252fa0c3f35",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0800_am0250": {
+      "job_id": "Allrun-bf5aec",
+      "run_status_sha256": "03eb570c16c04b9fb0d3d0725671d46542e4c0985b5f8c2d62e4da8ca43d3948",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0800_am0500": {
+      "job_id": "Allrun-f1f404",
+      "run_status_sha256": "e421dd69e3261e5d7dee83c146abf99b5c3c598090b7637023d7c19d4821b9af",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0800_am0750": {
+      "job_id": "Allrun-f2184d",
+      "run_status_sha256": "5808d10688cd8e7128485d9a3fd656ec619254b29e3d35bf8b2fe33abc0c9a86",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0800_am1000": {
+      "job_id": "Allrun-b41a83",
+      "run_status_sha256": "af88b4e34061bd0c7b4b5cd2057a5b6256ade01e6954adb46f262f74624d9ec5",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0800_am1250": {
+      "job_id": "Allrun-88a60f",
+      "run_status_sha256": "95e46cbacce7b068d0db40b97ef1de56325aa0e19a45c01e406274df4bcc4a71",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0800_az0000": {
+      "job_id": "Allrun-1959f8",
+      "run_status_sha256": "f839ddb44b46118877d4610976b0091a2ba3d5bc7381631a8769edf7f6039d6c",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0850_am0500": {
+      "job_id": "Allrun-9b3591",
+      "run_status_sha256": "a1d2d15c533c071ecbbc7dea6abf90a381f4013d9e1c7d228f36fdc060780013",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0850_am0750": {
+      "job_id": "Allrun-79dba9",
+      "run_status_sha256": "37955ba43f678e104f7f09600d299ad1482654668ba4ffe5752258de88baf31a",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0900_am0500": {
+      "job_id": "Allrun-38485f",
+      "run_status_sha256": "2bf0424faa682bea3a6cda4d02bc68c87e20cd777784fc63a21680005bfcc7df",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0900_am0750": {
+      "job_id": "Allrun-351f13",
+      "run_status_sha256": "bc9096a32a02c755ce98618006e07af97962364d36091cef587049ed84153e93",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0950_am0500": {
+      "job_id": "Allrun-895b85",
+      "run_status_sha256": "797c2632e5452b16bb5651574c568502a2b29d639da3269e1b4b524f55de6cca",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d0950_am0750": {
+      "job_id": "Allrun-40c300",
+      "run_status_sha256": "6f4dcd5b13a51fea9ad269a8f3fa8e4db1cfc298cfcff8f92d15f40154878b4b",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d1000_am0250": {
+      "job_id": "Allrun-0af31d",
+      "run_status_sha256": "11c044fb987664544c3657f14a5c6400f8239da956f2028242179269a21722b3",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d1000_am0500": {
+      "job_id": "Allrun-a657ba",
+      "run_status_sha256": "737a6f2dbb5fef9420195f6d3ab9cd59209818522bc4a21e3164546cabc817bc",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d1000_am0750": {
+      "job_id": "Allrun-596119",
+      "run_status_sha256": "c7193cb8a16469e9e18cdc03d098c70efe5a2fc2a173c66d4c7a12a6eeefbd01",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d1000_am1000": {
+      "job_id": "Allrun-ab62aa",
+      "run_status_sha256": "e47489d3fe205636e1000dd1ac7c96a27b854707f286df3c89408878641bfda3",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d1000_am1250": {
+      "job_id": "Allrun-8c9d97",
+      "run_status_sha256": "cba898d71b0ee64463f57be3372215220685d1b7b5432167d80bb7b8b915797a",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarse_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-3f0319",
+      "run_status_sha256": "8b5968da349477ef41e6987dce0aefafd7d03ac482faea3d0cf1be8c80efd0c5",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am0750_2c7016305731": {
+      "job_id": "Allrun-0ac996",
+      "run_status_sha256": "0a7c4059349843142cf0d87fb6d08faac5be0255e97ab4aa979dc636fb22a482",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am1250_7542942f810a": {
+      "job_id": "Allrun-5a1eb7",
+      "run_status_sha256": "972d36f621791dffad827e7c7484f9781be0b4c6c7f8b7886efee27371c91465",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsecircle_direction_control_circular_ring_n8_e19.2923_d0800_ap1000_3ec130758b9a": {
+      "job_id": "Allrun-b23e76",
+      "run_status_sha256": "c75f2eeb5c6ce53b6cbf56a1efbc167e085abe8cffe4f8ce3a0c0454259f7034",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsecirclefrontierangle_circular_ring_n8_e19.2923_d1000_am1000_7930cec156e1": {
+      "job_id": "Allrun-faea2d",
+      "run_status_sha256": "7101b3cbcaeafd5b110a97785f94176d40e5588d4d96d823e88d02aff0547d76",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsecirclefrontierangle_circular_ring_n8_e19.2923_d1000_ap1000_6c202ac525d1": {
+      "job_id": "Allrun-978ac2",
+      "run_status_sha256": "0158aaeac1fa6f138a1a8f619537967dcec7700ecae3f26e916dd1d80923e747",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609": {
+      "job_id": "Allrun-05811c",
+      "run_status_sha256": "106736f678475a405fd47956bf748e96e0517f8b4ef8d3fd7aad95dd82e080b0",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000": {
+      "job_id": "Allrun-c6b92b",
+      "run_status_sha256": "c4e06601341af4ddd413a37625734955353da903ae9ec65ca805dc8f9fff28db",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarselayoutpilot_square_n8_e19.2923_d0800_az0000": {
+      "job_id": "Allrun-aee6af",
+      "run_status_sha256": "1b574dbacab0c562dd1f0ff5c0b7f65912009bc9a3f78138aa23da45198d5241",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarselocalbracket_square_perimeter_n8_e19.2923_d0800_am1500_b191715e946b": {
+      "job_id": "Allrun-707038",
+      "run_status_sha256": "6b2c892c6618321fd81ec7208a95abf44d7564fe9847eff10a389f7800ff31aa",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsemapped_n4_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-cde7de",
+      "run_status_sha256": "ff0718282540743891b57f102777b583c753627e797cbd1dc774271ed80d6d17",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsemapped_n8_e19.2923_d0800_am1000": {
+      "job_id": "Allrun-5e64f5",
+      "run_status_sha256": "c9bcd6d9203dc32c45b7a81d153e50904306ce7ca000414e0aacfb4e43175688",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsemapped_n8_e19.2923_d0800_az0000": {
+      "job_id": "Allrun-ea962c",
+      "run_status_sha256": "480ad0316aa67a2ce301dfc271dd87c9640da895d2cc30c9d710776c072c854d",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsemapped_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-d0bedf",
+      "run_status_sha256": "4a248158ccea653f34b48c4c37fba4d22cf77d09c8ab78ed86e4ba52a8a776d3",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarserotorcountpilot_n4_e19.2923_d1600_az0000": {
+      "job_id": "Allrun-c3979e",
+      "run_status_sha256": "2ab96af6f4cbdf4031e858816c0bd46112cbe2e4d8594deedfcd85ebd87eea8d",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsesignedpilot_circular_ring_n8_e19.2923_d0667_am1000_96507cf7a9b2": {
+      "job_id": "Allrun-c85755",
+      "run_status_sha256": "a650d9838b2fd69e1bdae53ea57096a9fc9ecab14ee839c0304c5352b698a068",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsesignedpilot_circular_ring_n8_e19.2923_d0667_ap1000_07e802b6805b": {
+      "job_id": "Allrun-22d062",
+      "run_status_sha256": "dd9409a6b7e1f4a2f7611daa0838bb1b3c37611db10eb5917652636d8a7cea84",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsesignedpilot_square_perimeter_n4_e19.2923_d1606_am1000_3a44107e1f4a": {
+      "job_id": "Allrun-ec4557",
+      "run_status_sha256": "c7ec0d560df9c1922d3872d398e7e0d88a31307448d0ef1bd0d4d205fe55970b",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsesignedpilot_square_perimeter_n4_e19.2923_d1606_ap1000_19be4c90b17f": {
+      "job_id": "Allrun-a3cc55",
+      "run_status_sha256": "0d9d54bb4579e233f0d7c4f61acc9a4ba1d8e54c7dcb9ac752a19b943a170bc3",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsesignedpilot_square_perimeter_n8_e19.2923_d0803_am1000_421db3fa1ef6": {
+      "job_id": "Allrun-eef029",
+      "run_status_sha256": "e87ed83006e8aa674844113c579abdcd875609c3452ccd958ae887bc223d3b63",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsesignedpilot_square_perimeter_n8_e19.2923_d0803_ap1000_c873b6e0bf1c": {
+      "job_id": "Allrun-251437",
+      "run_status_sha256": "f261a2e78146a26607a6b932bb0a015e9bda7f42aa76de4e30eac1437c6a3c30",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445": {
+      "job_id": "Allrun-de7ef6",
+      "run_status_sha256": "d340a88c29dc288e6ae02e045ccf423f77c75d74b9934955e42a83a6d868bcdb",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682": {
+      "job_id": "Allrun-ce9130",
+      "run_status_sha256": "9d7f61044709dcfd6de901d341cfe125dd436388cd3104aad4e3222ee0cfed57",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0866_az0000_c256546365f0": {
+      "job_id": "Allrun-23245b",
+      "run_status_sha256": "d3566e8cb885cb313bb59921245a8641e82e254ac2dba1fdb5b0ea765ddc5688",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_circular_ring_n8_e19.2923_d1000_az0000_8ee7d304f5df": {
+      "job_id": "Allrun-0eefa0",
+      "run_status_sha256": "de4f8df6c04da1438f9e56e5a88cc8c22ba915671795a86e93645d8695e0f4fa",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78": {
+      "job_id": "Allrun-e65314",
+      "run_status_sha256": "93d04b72558ef08ffbeb3f17daac3ad5283471ed16ca010928f3fc44ed38972d",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d0400_az0000_9f29ed5af26b": {
+      "job_id": "Allrun-af7de4",
+      "run_status_sha256": "c8748b382cbcd84fcd9474afca75eaf92cf2aaf47b300abf448b0958baab6212",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_am1000_8b093f1e8ad8": {
+      "job_id": "Allrun-4014e0",
+      "run_status_sha256": "594027f83cddb2604fb0fc035e0a40cd9e190f3f75fb7f392d31c4610a87352c",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_ap1000_a0f5298ab023": {
+      "job_id": "Allrun-6a4508",
+      "run_status_sha256": "2a3dac33787c191eb1631dde74ca936aaec2ee47292b15e1b66c2e574390ae34",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_az0000_aab080843db1": {
+      "job_id": "Allrun-f5eba7",
+      "run_status_sha256": "285eb2c3b4bb3675e45b1b574f8c4f0a43ee20be6d1b5ccf7d06d8c7a33e6cc4",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71": {
+      "job_id": "Allrun-732ad3",
+      "run_status_sha256": "bb4466f9cf2762106a86725bae130f8ed792346f3ebe167857d0ede3106370af",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d0400_az0000_0b2978483d8d": {
+      "job_id": "Allrun-63f396",
+      "run_status_sha256": "1ba10e2c46f5c1eaffec99319adf76cce3e184cee7517fc2ac7da9a96cd18740",
+      "validated": true,
+      "returncode": 0
+    },
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d1000_az0000_84d8973bf3ac": {
+      "job_id": "Allrun-d9ef9c",
+      "run_status_sha256": "c64be092740817c6dd2de34735b070d01b952b7e2d0ade96b85fe06db126502e",
+      "validated": true,
+      "returncode": 0
+    },
+    "fine_n4_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-bbe4d1",
+      "run_status_sha256": "21ca2bf06fdf069367510d970650f2ccdec294cdabb1f857df1cc461f8a9843d",
+      "validated": true,
+      "returncode": 0
+    },
+    "fine_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-1ce406",
+      "run_status_sha256": "9780b39d738502f1db3abd2b3db5dd87e42c06fc276ba7fb3539907c1202cb1c",
+      "validated": true,
+      "returncode": 0
+    },
+    "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611": {
+      "job_id": "Allrun-ba436f",
+      "run_status_sha256": "626717cc62cca67d73b48ac7ab1824abf6cfc3ed2fae4b3f2320862db87f5ffc",
+      "validated": true,
+      "returncode": 0
+    },
+    "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88": {
+      "job_id": "Allrun-05119a",
+      "run_status_sha256": "cf043c71a2198ab7114584186a4452e2317a49b3a7d27f33f0e16a820be1ee8b",
+      "validated": true,
+      "returncode": 0
+    },
+    "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131": {
+      "job_id": "Allrun-d0e82d",
+      "run_status_sha256": "e40a45bd9d4af8cbe58574aaf5d8ad62deed038c298ffd265282827e8671811b",
+      "validated": true,
+      "returncode": 0
+    },
+    "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424": {
+      "job_id": "Allrun-cb5aa6",
+      "run_status_sha256": "acacb720f75c7cbe3f2da8796d05420d45f865927732c4a03c7a894e4ff1196f",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n4_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-f89d82",
+      "run_status_sha256": "be56c5fd6bcc6ba401f3eceb963628aa9ea0598649849cb9c3ae6c7cc06a56fd",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0750_am1250": {
+      "job_id": "Allrun-80ec84",
+      "run_status_sha256": "1bef6ff5750a0bf0e9a36f2269f49283ba3f879ce3809021bd59b83cdbad299b",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0800_am0500": {
+      "job_id": "Allrun-5aa723",
+      "run_status_sha256": "158d7beeb47088f18ca990a59344f4cf63b159faae1d500a72a9fe5d679a0e3a",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0800_am0750": {
+      "job_id": "Allrun-76a317",
+      "run_status_sha256": "d1a11776a2ab10a381986dfec1398bf856bcf4bd7033e46d2e462b731a3d3c4d",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0800_am1000": {
+      "job_id": "Allrun-c7cc9d",
+      "run_status_sha256": "b787721422a2bae6a35b9e1f346af63d9f38619cc48722d102acc75757617216",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0800_am1250": {
+      "job_id": "Allrun-178696",
+      "run_status_sha256": "fcb42844ee4e82180edb23e06bbd7002086fa635935725938f5f70e1333e4330",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0800_az0000": {
+      "job_id": "Allrun-717cd1",
+      "run_status_sha256": "5dbe0413b5c67d39ab0f95551afbe4d4bdff8bd18a9b308922236b7e227e85dc",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d0850_am0500": {
+      "job_id": "Allrun-8d4a4b",
+      "run_status_sha256": "5e6843f7a2a8795741154371333230a9bd2f5203e9e2c0e6be817c8134a649a0",
+      "validated": true,
+      "returncode": 0
+    },
+    "finemapped_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-8b62e8",
+      "run_status_sha256": "b7669ca71493feba09c051069bb0db870b3c5141628a6b5d19191ae1e6a0cede",
+      "validated": true,
+      "returncode": 0
+    },
+    "medium_n4_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-7b59dd",
+      "run_status_sha256": "b8a70a8a32644803a96242a3340da2234b5301ce7d49c8c416749b60d82bae36",
+      "validated": true,
+      "returncode": 0
+    },
+    "medium_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-79856e",
+      "run_status_sha256": "f44a659b851d53fd3fc2f1e84f07de03727b1891464a31880cd70d5a2b68fb63",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18": {
+      "job_id": "Allrun-9dd8d0",
+      "run_status_sha256": "23fb3f09c81ac12e2e64aaaf516bd0c4a51df0662a4425b2c7fcb6d7b6c634e8",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f": {
+      "job_id": "Allrun-682935",
+      "run_status_sha256": "0c0f7d2f52bfa7c13188319971c4fd0fc51050a2d909e3e2ddb338171ed83f4f",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6": {
+      "job_id": "Allrun-1418f2",
+      "run_status_sha256": "532b953c940f09230964496292abf51fa569682a63a7e6da522ed6e6d704eda3",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c": {
+      "job_id": "Allrun-77377d",
+      "run_status_sha256": "300f4f1da393757c7b5eb0f52e4a88611bbe8a5decd99683253091486ef5b388",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediumcoldcheck_n8_e19.2923_d0800_am1000": {
+      "job_id": "Allrun-aa773b",
+      "run_status_sha256": "e98ab0f926e8715d7e480cb7fe20b968f62a9d1cc2478636f25fec46d7918085",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediumcoldcheck_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-d7282e",
+      "run_status_sha256": "0d31bf72aae245def3eadc6c4dc1311d897abb693cf08caa217ccebde133094e",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n4_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-862333",
+      "run_status_sha256": "23b13818939ed372311e13eb5eb5d07fae4c2426e922e9b47c41ce376432700d",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n8_e19.2923_d0750_am1250": {
+      "job_id": "Allrun-328b86",
+      "run_status_sha256": "ea3c4a2aae957e6e3331488fad39ba3710e07ad5b5fd789ac00bff34678c0ac1",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n8_e19.2923_d0800_am0750": {
+      "job_id": "Allrun-a60968",
+      "run_status_sha256": "13ce0ad26e4b1fb7f82da28ced554b5e470fd7f8f22eb53e07b81c21c6263525",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n8_e19.2923_d0800_am1000": {
+      "job_id": "Allrun-88efb0",
+      "run_status_sha256": "a48f2340d30c46356d9b69cf07a136eaf47c3abf106ea38b9b3f38d3e97312a7",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n8_e19.2923_d0800_am1250": {
+      "job_id": "Allrun-5662cc",
+      "run_status_sha256": "33c11356cca17f93c24e7bbb6bf95d66704de00579bdf93eea81958ebb924fcd",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n8_e19.2923_d0800_az0000": {
+      "job_id": "Allrun-a1a170",
+      "run_status_sha256": "558548f359257de8315b175662f32d5857378ca2a05efd628b0f9a332e96e692",
+      "validated": true,
+      "returncode": 0
+    },
+    "mediummapped_n8_e19.2923_d1000_az0000": {
+      "job_id": "Allrun-253e01",
+      "run_status_sha256": "a62703acb744a53cb14a902c64ddbdb3312dc07134635978facf39fe18232151",
+      "validated": true,
+      "returncode": 0
+    }
+  },
+  "supervisor_job_id": "Allrun-35daac",
+  "supervisor_returncode": 0,
+  "supervisor_owner": "fbe0d84d38c64e218ebe7d5ed133977c",
+  "own_watchdog_normal_stop_record": "/opt/openfoam-workspace/cases/tello_execution_supervisor/journal/watchdog_stop_fbe0d84d38c64e218ebe7d5ed133977c",
+  "control_before": {
+    "stop_launching": false,
+    "phase": "stage3_refinement_and_controls",
+    "allowed_cases": [
+      "finemapped_n4_e19.2923_d1000_az0000",
+      "finemapped_n8_e19.2923_d0800_am0750",
+      "finemapped_n8_e19.2923_d0800_am1250",
+      "finemapped_n8_e19.2923_d0750_am1250",
+      "finemapped_n8_e19.2923_d0850_am0500",
+      "finemapped_n8_e19.2923_d0800_am0500",
+      "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+      "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+      "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+      "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+      "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+      "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am0750_2c7016305731",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am1250_7542942f810a",
+      "coarsecircle_direction_control_circular_ring_n8_e19.2923_d0800_ap1000_3ec130758b9a",
+      "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
+      "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131"
+    ],
+    "reason": "Root-audited and authorized single Circle8 inward12.5 mapped medium/fine pair plus existing continuations. Source and physics unchanged; fifteen unstarted deferrals remain held; cap16; no automatic promotion.",
+    "rank_budget": 16,
+    "reserved_new_batch_ranks": 0,
+    "updated_utc": "2026-11-02T05:33:43Z",
+    "priority_cases": [
+      "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
+      "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am0750_2c7016305731",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am1250_7542942f810a",
+      "coarsecircle_direction_control_circular_ring_n8_e19.2923_d0800_ap1000_3ec130758b9a",
+      "finemapped_n4_e19.2923_d1000_az0000",
+      "finemapped_n8_e19.2923_d0800_am0750",
+      "finemapped_n8_e19.2923_d0800_am1250",
+      "finemapped_n8_e19.2923_d0750_am1250",
+      "finemapped_n8_e19.2923_d0850_am0500",
+      "finemapped_n8_e19.2923_d0800_am0500",
+      "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+      "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+      "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+      "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+      "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+      "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611"
+    ]
+  },
+  "control_after": {
+    "stop_launching": true,
+    "phase": "stage3_refinement_and_controls",
+    "allowed_cases": [
+      "finemapped_n4_e19.2923_d1000_az0000",
+      "finemapped_n8_e19.2923_d0800_am0750",
+      "finemapped_n8_e19.2923_d0800_am1250",
+      "finemapped_n8_e19.2923_d0750_am1250",
+      "finemapped_n8_e19.2923_d0850_am0500",
+      "finemapped_n8_e19.2923_d0800_am0500",
+      "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+      "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+      "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+      "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+      "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+      "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am0750_2c7016305731",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am1250_7542942f810a",
+      "coarsecircle_direction_control_circular_ring_n8_e19.2923_d0800_ap1000_3ec130758b9a",
+      "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
+      "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131"
+    ],
+    "reason": "All84 explicitly selected cases are terminal immutable successes. Drain only this task supervisor/watchdog; preserve15 unstarted deferrals and all physics/results. Root continues archive/analysis and owns final approved-case freeze.",
+    "rank_budget": 16,
+    "reserved_new_batch_ranks": 0,
+    "updated_utc": "2026-11-02T07:48:58Z",
+    "priority_cases": [
+      "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
+      "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am0750_2c7016305731",
+      "coarsecircle_angle_bracket_circular_ring_n8_e19.2923_d0800_am1250_7542942f810a",
+      "coarsecircle_direction_control_circular_ring_n8_e19.2923_d0800_ap1000_3ec130758b9a",
+      "finemapped_n4_e19.2923_d1000_az0000",
+      "finemapped_n8_e19.2923_d0800_am0750",
+      "finemapped_n8_e19.2923_d0800_am1250",
+      "finemapped_n8_e19.2923_d0750_am1250",
+      "finemapped_n8_e19.2923_d0850_am0500",
+      "finemapped_n8_e19.2923_d0800_am0500",
+      "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+      "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+      "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+      "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+      "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+      "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611"
+    ]
+  },
+  "approved_cases_json_created": false,
+  "root_archive_analysis_or_awake_helpers_changed": false,
+  "simulation_inputs_or_results_changed": false,
+  "CFD_processes_signalled_or_restarted": false,
+  "final_case": "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131",
+  "executor_and_suspension_watchdog_process_scan_clear": true,
+  "matching_task_processes": []
+}

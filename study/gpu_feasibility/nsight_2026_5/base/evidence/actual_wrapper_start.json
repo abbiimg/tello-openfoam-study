@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "pid": 1778000,
+    "uid": 999,
+    "birth_start_ticks": 17247982,
+    "cwd": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate",
+    "exe": "/usr/bin/python3.12",
+    "nice": 15
+  },
+  "started_utc": "2026-11-02T15:15:28.362560+00:00"
+}

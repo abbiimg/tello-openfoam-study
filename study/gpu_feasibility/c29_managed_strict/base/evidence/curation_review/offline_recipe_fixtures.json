@@ -1,0 +1,61 @@
+{
+  "schema": "c29-offline-source-fixtures-v1",
+  "results": [
+    {
+      "fixture": "safe-relative",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "''",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'../x'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'/absolute'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'a//b'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'a/./b'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'a/../b'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'C:/file'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'a\\\\b'",
+      "pass": true
+    },
+    {
+      "fixture": "unsafe-name",
+      "input_repr": "'a\\x00b'",
+      "pass": true
+    },
+    {
+      "fixture": "existing-output-refused-before-writes",
+      "pass": true
+    }
+  ],
+  "AST_pass": true,
+  "case_build_CFD_or_output_changes": false,
+  "all_pass": true
+}

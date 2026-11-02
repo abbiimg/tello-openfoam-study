@@ -705,12 +705,18 @@ def make_plots(out, records, summary):
         ax.set_xlim(0,max(r[k] for r in rows for k in (left_key,right_key))*1.2)
         ax.grid(axis='x',alpha=.2);ax.set_axisbelow(True)
         ax.legend(loc='lower center',bbox_to_anchor=(.5,1.02),ncol=2,fontsize=9)
-        ax.set_title(title+'\nMatched footprint, power, grid, initialization and numerical method',pad=50,fontsize=11)
+        planform = filename == 'planform_lift_comparison.png'
+        subtitle = ('Matched projected box, power, grid and target initialization/numerics' if planform
+                    else 'Matched footprint, power, grid, initialization and numerical method')
+        ax.set_title(title+'\n'+subtitle,pad=50,fontsize=11)
         unsettled = any(not r.get('temporal_screen_passed', False) for r in rows)
         if unsettled:
-            fig.text(.5, .01, '† Preliminary mean: the matched pair fails the late-window lift, gain or input screen.',
+            fig.text(.5, .04 if planform else .01, '† Preliminary mean: the matched pair fails the late-window lift, gain or input screen.',
                      ha='center', fontsize=9)
-        fig.tight_layout(rect=(0, .05 if unsettled else 0, 1, 1));path=out/filename
+        if planform:
+            fig.text(.5, .01, 'Mapped targets match; upstream Square/Circle seed protocols differ: MPI2/direct-off vs serial/direct-on.',
+                     ha='center', fontsize=8)
+        fig.tight_layout(rect=(0, .09 if planform else (.05 if unsettled else 0), 1, 1));path=out/filename
         fig.savefig(path,dpi=170,bbox_inches='tight',pad_inches=.15);plt.close(fig);paths.append(path)
     same_hub_groups={}
     for pair in summary.get('same_hub_tilt_comparisons',[]):
@@ -1114,11 +1120,14 @@ def write_report(out, info, metadata, images):
             'and does not establish cold coarse-grid throughput.</p>' + gpu_image + gpu_table
             + '<p>A separate official stdpar GPU implementation covers incompressible flow. '
             'The pressure-only bridge benchmark above cannot establish its performance. '
-            'At the 2 November 2026 check, official core/develop identifies the GPU-branch merge '
-            '(68a81857, API 2609). No native stdpar OpenFOAM build or actuator test was run here: '
-            'nvc++ is absent, and the Foundation actuator requires a verified target-branch port '
-            'and suitable memory mode. Published large-grid speedups are not measurements for '
-            'this 922,576-cell study. See the '
+            'The early 2 November 2026 source check identified the GPU-branch merge '
+            '(68a81857, API 2609). Subsequent private dependency installations and GPU '
+            'integration tests are tracked in the '
+            '<a href="../gpu_feasibility/GPU_SETUP.md">current GPU setup and validation report</a>. '
+            'They are separate from the completed CPU lift matrix; the Foundation actuator '
+            'requires a verified target-branch port and suitable memory mode for other forks. '
+            'Published large-grid speedups are not measurements for this 922,576-cell study. '
+            'See also the earlier '
             '<a href="../gpu_feasibility/native_stdpar/README.md">source-based feasibility assessment '
             'and local inventory</a>, '
             '<a href="https://gitlab.com/openfoam/core/openfoam/-/tree/develop">official current source</a> '

@@ -1,0 +1,12 @@
+{
+  "return_code": 0,
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted/opt/nvidia/nsight-systems-cli/2026.5.1/bin/nsys",
+    "export",
+    "--type=sqlite",
+    "--force-overwrite=false",
+    "--output",
+    "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/field_control.sqlite",
+    "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/field_control.nsys-rep"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "decision": "APPROVED_FOR_ONE_GPU_FIVE_STEP_FUNCTIONAL_PROFILE",
+  "approved_utc": "2026-11-02T14:08:12.908823+00:00",
+  "protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "helper_manifest_sha256": "467b014b9fefe74ac76f26e7efe7bb0206994792cbe7e32d85c362dbbca1c5cb",
+  "launch_receipt": {
+    "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.json",
+    "sha256": "074540859b1dbb757122f06fed2b152158773da93138091b598fb3fbdb5f6d68"
+  },
+  "exact_shared_startup_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/initial_field_comparison.json",
+    "sha256": "6da117692c579c345bcddafab1d1f9a9f92858bbbd63c61f96bd1f56e382a3d7",
+    "root_asserted_pass": true
+  },
+  "f14_to_cpu_strict_numerical_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_f14_to_cpu_external_gate.json",
+    "sha256": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2",
+    "root_asserted_pass": true
+  },
+  "static_review": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_static_review.json",
+    "sha256": "0a54df85ed933dcb8adcaf205143b11cf1e6157575fa5c780eeb9cb646c64636"
+  },
+  "scope": "One bounded five-step functional profile only. Separate unchanged d600 numerical analysis and Root external review remain mandatory. No performance or production adoption is approved."
+}

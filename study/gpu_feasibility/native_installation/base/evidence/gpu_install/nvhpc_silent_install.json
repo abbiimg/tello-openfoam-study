@@ -1,0 +1,11 @@
+{
+  "stage": "nvhpc_silent_install",
+  "command": [
+    "/bin/bash",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/nvhpc_2026_269_Linux_aarch64_cuda_13.3/install"
+  ],
+  "return_code": 0,
+  "elapsed_s": 37.81047955501708,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/nvhpc_silent_install.log",
+  "completed_utc": "2026-11-02T07:41:36.326301+00:00"
+}

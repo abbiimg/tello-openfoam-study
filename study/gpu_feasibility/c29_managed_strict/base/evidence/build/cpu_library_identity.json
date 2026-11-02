@@ -1,0 +1,70 @@
+{
+  "schema": "c29-private-linked-library-identity-v1",
+  "backend": "cpu",
+  "files": [
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "4f1881d27bd62e95b1cbc10127d9b24c40b62e1aab7164525b6b9ed4946bfb93",
+      "size_bytes": 49923416
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "956a3672d95ac04269f22c4cafb15d4c657e843bcc6a49182e851a2c4250d4d3",
+      "size_bytes": 11513464
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "5e00ef9264bac830689c618a79697134bdaea0b55eb98c8a19d621ad1e833256",
+      "size_bytes": 17548704
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "size_bytes": 2633224
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libm.so.6",
+      "sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "size_bytes": 591800
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+      "sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "size_bytes": 133696
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libc.so.6",
+      "sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "size_bytes": 1722920
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+      "sha256": "390027e5f45f236bd1838bc54bf464c5ff01d260ab9f8b415ea8276641bce505",
+      "size_bytes": 203968
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/dummy/libPstream.so",
+      "sha256": "ee2b584f1a73805d9409d4e8087a6c3db7f502249499fb64f7a36a3068150c35",
+      "size_bytes": 80720
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libfileFormats.so",
+      "sha256": "6544683c601c4ab168bde158f0d6ea43e8fc3ae02f2f0f5dad22e7abdb004a27",
+      "size_bytes": 1673216
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/lib/libsurfMesh.so",
+      "sha256": "3bd6a715190bae77bd4e9de401989f06c33cce9205c0adea5f3d54901ab78374",
+      "size_bytes": 3538616
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libz.so.1.3",
+      "sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3",
+      "size_bytes": 133272
+    }
+  ],
+  "identity_collector_executed_main": false,
+  "basis": "ldd in matching private reviewed environment; no application main/initialization/CFD run",
+  "method_identity_sha256": "f823eb1e91e0255fce97611b62cbc6a37fe574a20ee78da6e6ed7adb14e749bf",
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b"
+}

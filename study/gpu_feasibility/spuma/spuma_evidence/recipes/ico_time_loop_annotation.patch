@@ -1,0 +1,29 @@
+--- a/applications/solvers/incompressible/icoFoam/icoFoam.C
++++ b/applications/solvers/incompressible/icoFoam/icoFoam.C
+@@ -65,6 +65,7 @@
+ \*---------------------------------------------------------------------------*/
+ #include "fvCFD.H"
+ #include "pisoControl.H"
++#include <nvtx3/nvToolsExt.h>
+ 
+ // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+@@ -93,6 +94,9 @@
+     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+     Info<< "\nStarting time loop\n" << endl;
++
++    // Annotation only: isolate actual CFD-loop CUDA API events.
++    nvtxRangePushA("SPUMA_CFD_TIME_LOOPS");
+ 
+     while (runTime.loop())
+     {
+@@ -163,6 +167,8 @@
+         runTime.printExecutionTime(Info);
+     }
+ 
++    nvtxRangePop();
++
+     #include "poolMaxOccupancy.H"
+ 
+     Info<< "End\n" << endl;

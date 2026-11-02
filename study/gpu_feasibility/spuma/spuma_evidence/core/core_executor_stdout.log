@@ -1,0 +1,30 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1ff2d45c-20260926 OPENFOAM=2512 version=v2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /opt/openfoam-workspace/gpu-feasibility/spuma/user/platforms/linuxARM64NvidiaDPInt32Opt/bin/Test-spumaPoolDevice -pool fixedSizeMemoryPool -poolSize 1
+Date   : Nov 02 2026
+Time   : 00:58:35
+Host   : abby-spark
+PID    : 283381
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/pool_executor_marker
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Initializing CUDA devices
+
+CUDA Driver Version / Runtime Version:  13.4 / 13.3
+Number of threads per block: 128
+
+Create fixedSizeMemoryPool
+ 
+{"kind":"actual_SPUMA_pool_executor_and_device_only_output","executor":"Foam::foamExecutor::parallelFor","device":"NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)","count":65536,"runtime_seed":324508639,"compute_capability":121,"pool_size_bytes":1073741824,"double_reduction_exact":true,"pool_input_memory_type":3,"output_memory_type":2,"output_host_pointer_null":true,"mismatches":0,"cuda_status":0,"changed_from_sentinel":65536,"launch_status":0,"synchronize_status":0,"passed":true}

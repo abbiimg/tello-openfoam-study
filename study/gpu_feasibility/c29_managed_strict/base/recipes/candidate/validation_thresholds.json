@@ -1,0 +1,58 @@
+{
+  "schema": "c29-five-fixed-step-validation-thresholds-v2",
+  "status": "Preregistered source proposal before any candidate runtime; root review required; no acceptance result implied",
+  "scope": "Five fixed steps at 1e-4 s from .600 to .6005; pinned flat N8/10cm/922576 seed; functional validation only",
+  "exact_identities": [
+    "C29 whole/body/include hashes and pinned mesh/U/p/rotorParameters/physical bytes",
+    "Parsed initialized U,p,phi numerical values agree exactly before the timestep comparison; shared phi fallback if necessary",
+    "Temporary momentum dimensions [0,4,-2,0,0,0,0]",
+    "Fresh temporary source and every allocated implicit/boundary coefficient are exactly zero before C29; all implicit/boundary coefficients remain exactly zero afterward",
+    "Exactly one C29 call/update per consecutive time index; exactly five TILT/source observations and ten pressure correctors"
+  ],
+  "source_identity_tolerances": {
+    "force_abs_N": 1e-10,
+    "force_rel": 1e-10,
+    "work_abs_W": 1e-9,
+    "work_rel": 1e-10,
+    "cached_volume_abs_m3": 1e-14,
+    "cached_volume_rel": 1e-12
+  },
+  "identity_meaning": "Floating-point source accounting, not CFD uncertainty: positive temporary force matches craftForce, its work is -Pair; applied matrix delta force is -craftForce and work is +Pair. Cached-volume check repeats existing weights, not an independent geometry experiment.",
+  "cross_branch_Foundation14_to_native_CPU": {
+    "each_sample_craft_force_norm_rel": 1e-5,
+    "each_sample_air_shaft_electrical_power_rel": 1e-5,
+    "per_rotor_volume_rel": 1e-8,
+    "per_rotor_mean_axial_speed_rel": 1e-5,
+    "U_normalized_RMS": 1e-4,
+    "U_normalized_max": 1e-3,
+    "p_normalized_RMS": 1e-3,
+    "p_normalized_max": 1e-2,
+    "phi_normalized_RMS": 1e-3,
+    "phi_normalized_max": 1e-2
+  },
+  "same_native_application_CPU_to_GPU": {
+    "each_sample_craft_force_norm_rel": 1e-5,
+    "each_sample_air_shaft_electrical_power_rel": 1e-5,
+    "per_rotor_volume_rel": 1e-8,
+    "per_rotor_mean_axial_speed_rel": 1e-5,
+    "U_normalized_RMS": 1e-5,
+    "U_normalized_max": 1e-4,
+    "p_normalized_RMS": 1e-4,
+    "p_normalized_max": 1e-3,
+    "phi_normalized_RMS": 1e-4,
+    "phi_normalized_max": 1e-3
+  },
+  "field_metric_definition": "At every matching saved step, compare all internal values and boundary values separately. RMS error divided by max(reference RMS, floor); maximum magnitude error divided by max(reference maximum magnitude, floor). U uses vector magnitude. Fixed-total-pressure p is compared absolutely, without subtracting its mean.",
+  "normalization_floors": {"U_m_per_s": 1.0, "p_m2_per_s2": 1.0, "phi_m3_per_s": 1e-9, "force_N": 1e-8, "power_W": 1e-8, "axial_speed_m_per_s": 1.0},
+  "solver_and_flow_checks": {
+    "finite_all_fields_and_diagnostics": true,
+    "actual_selected_solvers": "UFinal, p then pFinal at each step; tolerance1e-7, correct relTol; no solver failures/max-iteration warnings",
+    "each_final_residual": "<=max(1e-7, configuredRelTol*initialResidual)+1e-12; per-component U criterion",
+    "each_corrector_local_continuity_max": 1e-5,
+    "each_corrector_abs_global_continuity_max": 1e-7,
+    "abs_cumulative_continuity_max": 1e-6,
+    "maximum_Courant": 0.9
+  },
+  "decision_rule": "All required checks must pass; failures/near misses remain failures for review. No averaging away a failing sample. If final parity fails, compare saved viscous/Euler/momentum/pressure diagnostics in a separately reviewed diagnostic run. Do not adjust thresholds after seeing results without a new explicitly exploratory protocol.",
+  "limits": "These are practical short-test acceptance proposals, not proof of full cross-branch equivalence, long-time stationarity, ranking accuracy, hardware prediction or performance. Actual GPU launch/memory evidence and exact build/input identities are separate gates. Root approval is separate from permission to perform an unvalidated experiment."
+}

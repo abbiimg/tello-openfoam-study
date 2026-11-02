@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-02T11:55:57.469012+00:00",
+  "identical": true,
+  "cpu_case": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu",
+  "gpu_case": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_gpu",
+  "files": {
+    "0/U": "954e1ea33a7ccb3a6b3086fa0cd960a05c27fcf7e3a36a82c5ce25f58c070045",
+    "0/p": "0fd4f30a227253e74aad4a434ed9462686ede8f1ba0b6f8a3531c40d94cfc7e6",
+    "constant/polyMesh/boundary": "a5f446c6c9f076b3c00698a357d93a7781c5d805491f6d06f6dfea332535efc5",
+    "constant/polyMesh/faces": "670b5994e380ed04587bab1ef990b4f22f64324e04a94db2c3ec8cc247913092",
+    "constant/polyMesh/neighbour": "f711b6ac6b34a4d896f4c9c68c1a8a4514778d2ca32648281782e1e8f4542682",
+    "constant/polyMesh/owner": "ba43836cb2ee63fc257f8b7794f9059ff6cca5dc8d3fc21171f63148bd8f7296",
+    "constant/polyMesh/points": "ce177108fd1562c45cf6549b005c6f19187d3c1fafd569abf01fb4d0fb426780",
+    "constant/transportProperties": "261eba87dbc7f101785f5c76212e151a2d68c1b98d930a1a6add3bafa391fc51",
+    "system/PDRblockMeshDict": "7cd46b7abe691296d4b008ff22f566d9d9b834463c64dc7cf76ec4ffd6afbab7",
+    "system/blockMeshDict": "6321615ce9d5b6bcbe480eb274b8af308e340b91adebe1c990ad464b01bfbd80",
+    "system/controlDict": "2ae17d508e9cdfe0adb9cc63fb1f5ad52da9a2d625feba7605c1990ac5c482b0",
+    "system/decomposeParDict": "829af8c99f84bc74f6e845106f7ef8344ec04c822e9b3fab4e847b9d0cc305df",
+    "system/fvSchemes": "c68daea473990cf22575494457ae406a66eed1e14433c6c0428870aff9c6310f",
+    "system/fvSolution": "3cb7ddc2f7fb53c9a5286e6dc3dd3ce51d55a23771b4c1734e4dd53452e06504"
+  }
+}

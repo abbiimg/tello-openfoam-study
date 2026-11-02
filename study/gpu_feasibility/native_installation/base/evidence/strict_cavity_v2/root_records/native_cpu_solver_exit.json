@@ -1,0 +1,21 @@
+{
+  "stage": "native_cpu_solver",
+  "argv": [
+    "/usr/bin/python3",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/strict_cavity_v2/run_solver_child.py",
+    "--root",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102",
+    "--case",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu",
+    "--evidence",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/evidence/native_cpu",
+    "--",
+    "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/source/OpenFOAM-v2606/platforms/linuxARM64GccDPInt32Opt/bin/icoFoam",
+    "-case",
+    "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu"
+  ],
+  "return_code": 0,
+  "completed_utc": "2026-11-02T11:55:58.104477+00:00",
+  "log": "/opt/openfoam-workspace/cases/strict_cavity_v2_20261102/native_cpu_solver.log",
+  "log_sha256": "39d9ffe4b4b2fa1bb490064d9f4fd0bedae968f1c134652c5f7aa1ab062b5c88"
+}

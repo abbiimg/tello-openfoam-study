@@ -1,0 +1,18 @@
+{
+  "kind": "Actual SPUMA core pool and CUDA-executor gate only",
+  "prepared_utc": "2026-11-02T08:58:00.093251+00:00",
+  "case": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/pool_executor_marker",
+  "extra_probe_claim": "1c825fa463ee4f5c8481e9b3c4bd643e",
+  "main_pipeline_jobs": 1,
+  "extra_probe_jobs": 1,
+  "SPUMA_total_max": 2,
+  "SDK_reused_readonly": true,
+  "compiler_returncode": 0,
+  "compiler_log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/core_executor_marker_build.log",
+  "source_sha256": "c47b46171a5dc9efcf5c246c737d4e2e1d82c1db10dfa12592568d2d882c9aef",
+  "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/user/platforms/linuxARM64NvidiaDPInt32Opt/bin/Test-spumaPoolDevice",
+  "no_solver_tutorial_yet": true,
+  "no_speed_benchmark": true,
+  "no_actuator_port": true,
+  "started": false
+}

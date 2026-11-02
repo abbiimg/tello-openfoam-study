@@ -1,0 +1,27 @@
+test_destination_symlink_ancestor_leaf_and_selected_root_rejected (__main__.PathChecks.test_destination_symlink_ancestor_leaf_and_selected_root_rejected) ... ok
+test_every_external_catalogue_rejects_unsafe_names_before_mkdir (__main__.PathChecks.test_every_external_catalogue_rejects_unsafe_names_before_mkdir) ... ok
+test_external_records_cannot_replace_pinned_controls (__main__.PathChecks.test_external_records_cannot_replace_pinned_controls) ... ok
+test_pinned_cpu_manifest_positive_control (__main__.PathChecks.test_pinned_cpu_manifest_positive_control) ... ok
+test_real_catalogue_and_safe_file_names (__main__.PathChecks.test_real_catalogue_and_safe_file_names) ... ok
+test_self_consistent_replacement_cpu_manifest_rejected (__main__.PathChecks.test_self_consistent_replacement_cpu_manifest_rejected) ... ok
+test_source_symlink_ancestors_leaves_inside_and_dangling_rejected (__main__.PathChecks.test_source_symlink_ancestors_leaves_inside_and_dangling_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.033s
+
+OK
+
+{
+  "kind": "Focused external-path and manifest-pin fixtures",
+  "passed": true,
+  "tests_run": 7,
+  "unsafe_catalogue_names_rejected": 48,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "actual_cpu_manifest_sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+  "real_seed_modified": false,
+  "case_restoration_executed": false,
+  "build_or_solver_launched": false,
+  "scope": "Static unsafe metadata and existing symlink traversal; not a hostile concurrent-filesystem race proof"
+}

@@ -1,0 +1,271 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Copyright (C) YEAR OpenFOAM Foundation
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+License
+    This file is part of OpenFOAM.
+
+    OpenFOAM is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+    for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+
+\*---------------------------------------------------------------------------*/
+
+#include "codedFvModelTemplate.H"
+#include "addToRunTimeSelectionTable.H"
+#include "volFields.H"
+#include "surfaceFields.H"
+#include "read.H"
+#include "fvMatrix.H"
+
+//{{{ begin codeInclude
+#line 4 "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cpu_serial/constant/fvModels!rotors"
+
+#include "PstreamReduceOps.H"
+#include "IOdictionary.H"
+#include "DynamicList.H"
+
+//}}} end codeInclude
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+namespace Foam
+{
+
+namespace fv
+{
+
+// * * * * * * * * * * * * * * * Local Functions * * * * * * * * * * * * * * //
+
+//{{{ begin localCode
+
+//}}} end localCode
+
+
+// * * * * * * * * * * * * * * * Global Functions  * * * * * * * * * * * * * //
+
+extern "C"
+{
+    // Unique function name that can be checked
+    // to ensure the correct library version has been loaded
+    void rotors_7ae57bb77feaae19c26ff305b44ebb5a6819f2ef(bool load)
+    {
+        if (load)
+        {
+            // code that can be explicitly executed after loading
+        }
+        else
+        {
+            // code that can be explicitly executed before unloading
+        }
+    }
+}
+
+// * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
+
+defineTypeNameAndDebug(rotorsFvModelvectorSource, 0);
+
+addRemovableToRunTimeSelectionTable
+(
+    fvModel,
+    rotorsFvModelvectorSource,
+    dictionary
+);
+
+
+const char* const rotorsFvModelvectorSource::SHA1sum =
+    "7ae57bb77feaae19c26ff305b44ebb5a6819f2ef";
+
+
+// * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
+
+rotorsFvModelvectorSource::
+rotorsFvModelvectorSource
+(
+    const word& name,
+    const word& modelType,
+    const fvMesh& mesh,
+    const dictionary& dict
+)
+:
+    fvModel(name, modelType, mesh, dict),
+    zone_(mesh, coeffs(dict))
+{
+    if (false)
+    {
+        Info<<"construct rotors sha1: 7ae57bb77feaae19c26ff305b44ebb5a6819f2ef"
+            " from components\n";
+    }
+}
+
+
+// * * * * * * * * * * * * * * * * Destructor  * * * * * * * * * * * * * * * //
+
+rotorsFvModelvectorSource::
+~rotorsFvModelvectorSource()
+{
+    if (false)
+    {
+        Info<<"destroy rotors sha1: 7ae57bb77feaae19c26ff305b44ebb5a6819f2ef\n";
+    }
+}
+
+
+// * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
+
+void rotorsFvModelvectorSource::addSup
+(
+    const VolField<vector>& field,
+    fvMatrix<vector>& eqn
+) const
+{
+    if (false)
+    {
+        Info<<"rotorsFvModelvectorSource::addSup()\n";
+    }
+
+//{{{ begin code
+    #line 10 "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cpu_serial/constant/fvModels!rotors"
+
+const fvMesh& m=mesh();const vectorField& C=m.C();const scalarField& V=m.V();
+const volVectorField& vel=m.lookupObject<volVectorField>("U");vectorField& S=eqn.source();
+static const IOdictionary prm(IOobject("rotorParameters",m.time().constant(),m,IOobject::MUST_READ,IOobject::NO_WRITE));
+static const List<vector> ctr(prm.lookup("centres")),axis(prm.lookup("normals")),radial(prm.lookup("radials"));
+static const scalar sn=readScalar(prm.lookup("tiltSin")),cs=readScalar(prm.lookup("tiltCos"));
+static const scalar radius=readScalar(prm.lookup("radius")),halfThickness=readScalar(prm.lookup("halfThickness"));
+static const scalar radiusSqr=sqr(radius),maskHalfWidth=max(scalar(.065),radius+halfThickness);
+static const scalar pe=readScalar(prm.lookup("batteryPower")),aux=readScalar(prm.lookup("auxiliaryPower")),etaEsc=readScalar(prm.lookup("etaEsc")),idle=readScalar(prm.lookup("idlePower")),etaMotor=readScalar(prm.lookup("etaMotor")),etaAxial=readScalar(prm.lookup("etaAxial"));
+static const scalar shaftTarget=etaMotor*(etaEsc*(pe-aux)-ctr.size()*idle),airTarget=etaAxial*shaftTarget;
+static List<labelList> ids(ctr.size());static List<scalarField> weights(ctr.size());
+static scalarList volumes(ctr.size(),0.0),thrust(ctr.size(),0.0);static bool initialized=false;
+if(!initialized){
+ const labelListList& cp=m.cellPoints();const pointField& pts=m.points();
+ forAll(ctr,r){
+  DynamicList<label> selected;DynamicList<scalar> frac;
+  forAll(C,i){
+   if(mag(C[i].z()-ctr[r].z())>maskHalfWidth || mag(C[i].x()-ctr[r].x())>maskHalfWidth || mag(C[i].y()-ctr[r].y())>maskHalfWidth)continue;
+   vector lo(great,great,great),hi(-great,-great,-great);
+   forAll(cp[i],j){const point& q=pts[cp[i][j]];for(label k=0;k<3;++k){lo[k]=min(lo[k],q[k]);hi[k]=max(hi[k],q[k]);}}
+   scalar fraction=0;
+   for(label ix=0;ix<16;++ix)for(label iy=0;iy<16;++iy){
+    const scalar x=lo.x()+(ix+.5)*(hi.x()-lo.x())/16.0-ctr[r].x(),y=lo.y()+(iy+.5)*(hi.y()-lo.y())/16.0-ctr[r].y();
+    const scalar aa=x*radial[r].x()+y*radial[r].y(),bb=-x*radial[r].y()+y*radial[r].x();
+    scalar zlo=lo.z()-ctr[r].z(),zhi=hi.z()-ctr[r].z();
+    if(mag(sn)<1e-12){if(aa*aa+bb*bb>radiusSqr)continue;zlo=max(zlo,-halfThickness);zhi=min(zhi,halfThickness);}
+    else{
+     if(bb*bb>radiusSqr)continue;
+     const scalar rr=sqrt(max(0.0,radiusSqr-bb*bb));
+     const scalar z1=(cs*aa-rr)/sn,z2=(cs*aa+rr)/sn;
+     zlo=max(zlo,max((-halfThickness-sn*aa)/cs,min(z1,z2)));
+     zhi=min(zhi,min((halfThickness-sn*aa)/cs,max(z1,z2)));
+    }
+    fraction+=max(0.0,zhi-zlo)/(hi.z()-lo.z());
+   }
+   const scalar w=fraction/256.0;if(w>0){selected.append(i);frac.append(w);volumes[r]+=w*V[i];}
+  }
+  ids[r]=selected;weights[r]=frac;reduce(volumes[r],sumOp<scalar>());
+  if(volumes[r]<=small)FatalErrorInFunction<<"Empty tilted actuator"<<exit(FatalError);
+  Info<<"DISK_VOLUME "<<r<<" "<<volumes[r]<<endl;
+ }
+ Info<<"POWER_BUDGET battery="<<pe<<" shaft="<<shaftTarget<<" axial="<<airTarget<<endl;initialized=true;
+}
+static label last=-1;const bool update=(last!=m.time().timeIndex());scalar totalT=0,totalP=0;vector craftForce(vector::zero);
+forAll(ctr,r){
+ scalar flux=0;forAll(ids[r],j){label i=ids[r][j];flux+=-(vel[i]&axis[r])*weights[r][j]*V[i];}reduce(flux,sumOp<scalar>());
+ const scalar w=flux/volumes[r];
+ if(update){const scalar target=min(.50,(airTarget/ctr.size())/max(w,1.0));const scalar alpha=min(1.0,m.time().deltaTValue()/.03);if(last<0 && m.time().value()>.01)thrust[r]=target;thrust[r]+=(target-thrust[r])*alpha;}
+ // fvMatrix RHS convention: positive S produces negative force on air.
+ forAll(ids[r],j){label i=ids[r][j];S[i]+=thrust[r]*axis[r]*weights[r][j]*V[i]/(1.225*volumes[r]);}
+ totalT+=thrust[r];craftForce+=thrust[r]*axis[r];totalP+=thrust[r]*w;
+}
+if(update){const scalar shaft=totalP/etaAxial,electrical=aux+(shaft/etaMotor+ctr.size()*idle)/etaEsc;Info<<"TILT "<<m.time().value()<<" "<<craftForce.z()<<" "<<totalP<<" "<<shaft<<" "<<electrical<<" "<<totalT<<" "<<craftForce.x()<<" "<<craftForce.y()<<endl;last=m.time().timeIndex();}
+
+//}}} end code
+}
+
+
+void rotorsFvModelvectorSource::addSup
+(
+    const volScalarField& rho,
+    const VolField<vector>& field,
+    fvMatrix<vector>& eqn
+) const
+{
+    if (false)
+    {
+        Info<<"rotorsFvModelvectorSource::addSup()\n";
+    }
+
+//{{{ begin code
+    
+//}}} end code
+}
+
+
+void rotorsFvModelvectorSource::addSup
+(
+    const volScalarField& alpha,
+    const volScalarField& rho,
+    const VolField<vector>& field,
+    fvMatrix<vector>& eqn
+) const
+{
+    if (false)
+    {
+        Info<<"rotorsFvModelvectorSource::addSup()\n";
+    }
+
+//{{{ begin code
+    
+//}}} end code
+}
+
+
+bool rotorsFvModelvectorSource::movePoints()
+{
+    zone_.movePoints();
+    return true;
+}
+
+
+void rotorsFvModelvectorSource::topoChange(const polyTopoChangeMap& map)
+{
+    zone_.topoChange(map);
+}
+
+
+void rotorsFvModelvectorSource::mapMesh(const polyMeshMap& map)
+{
+    zone_.mapMesh(map);
+}
+
+
+void rotorsFvModelvectorSource::distribute
+(
+    const polyDistributionMap& map
+)
+{
+    zone_.distribute(map);
+}
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+} // End namespace Foam
+} // End namespace fv
+
+// ************************************************************************* //
+

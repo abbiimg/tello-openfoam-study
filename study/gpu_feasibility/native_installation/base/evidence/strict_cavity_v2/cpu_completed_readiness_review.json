@@ -1,0 +1,52 @@
+{
+  "reviewed_utc": "2026-11-02T11:34:36.639440+00:00",
+  "vendor_build_complete": true,
+  "vendor_compile_children_all_returned0": true,
+  "actual_GCC_commands_audited": 1620,
+  "offload_commands_observed": [],
+  "runtime_dependency_audit": "/opt/openfoam-workspace/gpu-feasibility/native-cpu-control/logs/runtime_dependency_audit.log",
+  "CUDA_or_Umpire_runtime_dependency_observed": false,
+  "stock_solver_actual_child_return_code": 0,
+  "stock_end_marker": true,
+  "stock_final_time": 0.5,
+  "stock_all_corrector_continuity_max": 0.000466513,
+  "stock_continuity_record_count": 200,
+  "original_stock_screen_passed": false,
+  "original_stock_state_preserved": {
+    "stage": "failed",
+    "updated_utc": "2026-11-02T11:13:51.157800+00:00",
+    "pid": 331683,
+    "nice": 15,
+    "available_memory_GiB": 46.7,
+    "error": "CPU cavity completion/continuity gate failed"
+  },
+  "read_only_final_flux_audit": {
+    "method": "Independent signed face balance and face-triangle tetrahedral cell volumes from ASCII points/faces/owner/neighbour/phi; empty2D faces contribute zero",
+    "case": "/opt/openfoam-workspace/cases/native_cpu_control_pilots_20261102/cavity_native_cpu",
+    "time": "0.5",
+    "deltaT": 0.005,
+    "cells": 400,
+    "faces": 1640,
+    "mesh_extents_m": [
+      0.1,
+      0.1,
+      0.01
+    ],
+    "total_volume": 0.00010000000000000005,
+    "box_volume_crosscheck": 0.00010000000000000002,
+    "min_cell_volume": 2.499999999999957e-07,
+    "max_cell_volume": 2.500000000000098e-07,
+    "dimensionless_local_continuity": 2.3888000000279715e-07,
+    "dimensionless_global_continuity": -7.321375601706845e-19,
+    "max_cell_dimensionless_divergence": 1.8000000000581576e-06,
+    "net_boundary_flux_m3_per_s": 0.0,
+    "finite": true
+  },
+  "strict_v2_run_started": false,
+  "proposed_protocol_sha256": "3e527add722fde2c4c1c8fdc0491f9694d92103891926aa7aea1354b12747ffb",
+  "proposed_helper_sha256": {
+    "prepare_fixture.py": "3f6008cefb104917710d587f6a20f05d146d7ca9f36e80abfcd7f440c1cd3801",
+    "check_cavity_flux.py": "c4bfca0b370fbd3f9d297d79064d1c4e79800a20d67bea2374947e78779c80aa"
+  },
+  "new_native_GPU_run_must_wait_for_original_stock_outcome": true
+}

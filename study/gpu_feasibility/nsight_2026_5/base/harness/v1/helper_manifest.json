@@ -1,0 +1,19 @@
+{
+  "schema": "new-nsys-native-field-control-helper-freeze-v1",
+  "status": "SOURCE_ONLY_PENDING_ROOT_APPROVAL",
+  "files": {
+    "README.md": "bdd70d49e0e7247679e50d7240264ccbca36d2bb8f07d2bd78d51025a8a62158",
+    "audit_control.py": "8912f7431e888575ee301a31ffbf867ad18c4bf90feeaef12dad8ff8eb2f76ff",
+    "control_child.py": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+    "control_common.py": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+    "linked_libraries.json": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+    "owned_cleanup.py": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+    "protocol.json": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+    "run_control.py": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4"
+  },
+  "generator_sha256": "b57cedaa99372963b022b77892420b9f709c1750d5206eeb3a595657196cec68",
+  "source_probe_case_libraries_or_SDK_changed": false,
+  "case_created_or_CFD_run": false,
+  "GPU_run": false,
+  "AST_parse_only_helpers_not_imported": true
+}

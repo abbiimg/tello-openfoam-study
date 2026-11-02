@@ -1,0 +1,44 @@
+{
+  "kind": "Presentation derivative of an actual instantaneous CFD render; no new flow data",
+  "case": "finemapped_n8_e19.2923_d0800_am0750",
+  "source_render": "final_flow_sources/square_inward7p5_U_slice.png",
+  "raw_render_sha256": "2885c4e9b716802a2d05272ba6c00fa3eccdbd04187cbe98eb863dbd2b279b12",
+  "source_manifest_sha256": "4655e619c6bd9632980d8b6a684c0db3e17bd223e7d4c0034656f119cb468f3a",
+  "render_settings_sha256": "28f689fa29456446d3bd818464f8d100665dddcc3040fa773ec6d5e9d9a0947d",
+  "geometry_sha256": "65a037909b134b89a0e848665fd2232e687b163ce2c6c25699f795ed383a9e6d",
+  "summary_csv_sha256": "b0abc1404dadb4f9112ebdec73060f444df5aff67d491b4c96c5eda048a7b2c7",
+  "crop_original_pixels_left_top_right_bottom": [
+    200,
+    150,
+    900,
+    750
+  ],
+  "magnitude_color_range_m_s": [
+    0,
+    12
+  ],
+  "snapshot_time_s": 1.2,
+  "slice_z_m": -0.04,
+  "view": "+z",
+  "mean_interval_s": [
+    0.8,
+    1.2
+  ],
+  "mean_lift_N": 1.3111381053597881,
+  "mean_inferred_electrical_input_W": 19.293344568300032,
+  "field_hashes": {
+    "geometry.json": "65a037909b134b89a0e848665fd2232e687b163ce2c6c25699f795ed383a9e6d",
+    "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+    "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+    "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+    "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+    "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+    "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+    "1.2/U": "e374951e5fb58f385223f94d58140a572cf6fb6f646260d7027d8fc8577c5953",
+    "1.2/p": "2982321f7a02abfb5e512f35a4e85ec867f3614b67c5eed65d5f28d69fbafb02"
+  },
+  "image_sha256": "682bf021c1f3de980abb62327eaab557bf05e81a1fed3b782b0774f29b264072",
+  "publisher_sha256": "9f67e79ff1dde1182cae2237464489728ef454f964fec05628f5df78a8e998c4",
+  "not_time_averaged_flow": true,
+  "not_unique_hardware_optimum": true
+}

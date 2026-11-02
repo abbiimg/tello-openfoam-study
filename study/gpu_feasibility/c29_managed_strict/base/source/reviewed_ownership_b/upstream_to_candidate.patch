@@ -1,0 +1,1029 @@
+--- upstream/icoFoam.C
++++ c29NativeHybridFoam.C
+@@ -25,151 +25,132 @@
+     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ Application
+-    icoFoam
+-
+-Group
+-    grpIncompressibleSolvers
++    c29NativeHybridFoam
+ 
+ Description
+-    Transient solver for incompressible, laminar flow of Newtonian fluids.
+-
+-    \heading Solver details
+-    The solver uses the PISO algorithm to solve the continuity equation:
+-
+-        \f[
+-            \div \vec{U} = 0
+-        \f]
+-
+-    and momentum equation:
+-
+-        \f[
+-            \ddt{\vec{U}}
+-          + \div \left( \vec{U} \vec{U} \right)
+-          - \div \left(\nu \grad \vec{U} \right)
+-          = - \grad p
+-        \f]
+-
+-    Where:
+-    \vartable
+-        \vec{U} | Velocity
+-        p       | Pressure
+-    \endvartable
+-
+-    \heading Required fields
+-    \plaintable
+-        U       | Velocity [m/s]
+-        p       | Kinematic pressure, p/rho [m2/s2]
+-    \endplaintable
+-
++    SOURCE-ONLY CANDIDATE: restricted static constant-nu laminar PISO.
++    Full Foundation14 face-flux deviatoric stress, verbatim host C29 source,
++    explicit UFinal, exact-epsilon Euler phi correction. Hybrid, not a claim
++    of cross-branch equivalence or GPU performance. See README.md.
+ \*---------------------------------------------------------------------------*/
+-
+ #include "fvCFD.H"
+ #include "pisoControl.H"
+-#include <nvtx3/nvToolsExt.h>
+-
+-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+-
+-int main(int argc, char *argv[])
++#include "C29BackendAudit.H"
++#include "C29Restrictions.H"
++#include "C29Operators.H"
++#include "C29HostSource.H"
++int main(int argc,char *argv[])
+ {
+-    argList::addNote
+-    (
+-        "Transient solver for incompressible, laminar flow"
+-        " of Newtonian fluids."
+-    );
+-
+-    #include "postProcess.H"
+-
+-    #include "addCheckCaseOptions.H"
++    argList::addNote("Restricted C29 hybrid source candidate; not validated CFD");
++    argList::addBoolOption("initialFieldsOnly",
++        "Write initial field audit copies and exit without source/time stepping");
+     #include "setRootCaseLists.H"
+     #include "createTime.H"
++    IOdictionary c29Controls
++    (
++        IOobject("c29PortControls",runTime.constant(),runTime,
++            IOobject::MUST_READ,IOobject::NO_WRITE,false)
++    );
++    const bool initialFieldsOnly=args.found("initialFieldsOnly");
++    C29::admitExperiment(c29Controls,initialFieldsOnly,runTime);
++    C29::auditDevice();
+     #include "createMesh.H"
+-
+     pisoControl piso(mesh);
+-
+-    #include "createFields.H"
++    #include "createC29Fields.H"
+     #include "initContinuityErrs.H"
+-
+-    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+-
+-    Info<< "\nStarting time loop\n" << endl;
+-
+-    // Backend audit annotation; does not change solver arithmetic.
+-    nvtxRangePushA("NATIVE_STDPAR_CFD_TIME_LOOPS");
+-
+-    while (runTime.loop())
++    C29::validate(mesh,runTime,U,p,phi,nu,c29Controls);
++    Info.precision(17);
++    Info<<"C29_LOCAL_CONSTANTS small="<<std::numeric_limits<scalar>::epsilon()
++        <<" great="<<scalar(1)/std::numeric_limits<scalar>::epsilon()<<endl;
++    Info<<"C29_SOURCE whole=29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
++        <<" body=ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7"<<endl;
++    // Separate audit objects do not overwrite initialized U,p or supplied phi.
++    // Exact initialized agreement is a future gate, not assumed here.
++    C29::sync("before initial field audit");
++    C29::managedPointer(U.primitiveField().cdata(),U.size(),"initial U");
++    C29::managedPointer(p.primitiveField().cdata(),p.size(),"initial p");
++    C29::managedPointer(phi.primitiveField().cdata(),phi.size(),"initial phi");
+     {
+-        Info<< "Time = " << runTime.timeName() << nl << endl;
+-
+-        #include "CourantNo.H"
+-
+-        // Momentum predictor
+-
+-        fvVectorMatrix UEqn
+-        (
+-            fvm::ddt(U)
+-          + fvm::div(phi, U)
+-          - fvm::laplacian(nu, U)
+-        );
+-
+-        if (piso.momentumPredictor())
++        volVectorField initialU(IOobject("c29_initialU",runTime.timeName(),mesh,
++            IOobject::NO_READ,IOobject::NO_WRITE,false),U);
++        volScalarField initialP(IOobject("c29_initialP",runTime.timeName(),mesh,
++            IOobject::NO_READ,IOobject::NO_WRITE,false),p);
++        surfaceScalarField initialPhi(IOobject("c29_initialPhi",runTime.timeName(),mesh,
++            IOobject::NO_READ,IOobject::NO_WRITE,false),phi);
++        C29::sync("initial audit field copies complete");
++        C29::require(initialU.write()&&initialP.write()&&initialPhi.write(),
++            "Initial audit field write failed");
++    }
++    if (initialFieldsOnly)
++    {
++        Info<<"C29 initial fields only: no C29 update, no timestep"<<endl;
++        return 0;
++    }
++    // Source-only geometry preparation is not part of the initial-only phase.
++    C29::preMaterializeGeometry(mesh);
++    label steps=0;
++    Info<<"Starting restricted fixed-step time loop"<<endl;
++    {
++        C29::Range loops("C29_NATIVE_TIME_LOOPS");
++        while (runTime.loop())
+         {
+-            solve(UEqn == -fvc::grad(p));
++            C29::Range step("C29_NATIVE_TIME_STEP");
++            ++steps;
++            C29::require(steps<=5&&C29::near(runTime.deltaTValue(),1e-4)
++                &&C29::near(runTime.value(),.6+steps*1e-4),"Unexpected clock sequence");
++            C29::require(!mesh.moving()&&!mesh.topoChanging(),"Mesh changed");
++            Info<<"Time = "<<runTime.timeName()<<nl<<endl;
++            #include "CourantNo.H"
++            tmp<fvVectorMatrix> tUEqn=C29::momentum(U,phi,nuEff);
++            fvVectorMatrix& UEqn=tUEqn.ref();
++            C29::applyHostSource(mesh,UEqn);
++            // No relaxation: the input scope forbids relaxation factors.
++            {
++                C29::Range predictorRange("C29_CORE_MOMENTUM_PREDICTOR_UFINAL");
++                auto predictor=(UEqn == -fvc::grad(p));
++                Info<<"C29_SOLVER momentum=UFinal"<<endl;
++                predictor.ref().solve(mesh.solverDict("UFinal"));
++                C29::sync("momentum predictor complete");
++            }
++            while (piso.correct())
++            {
++                C29::Range pressureRange("C29_CORE_PRESSURE_CORRECTOR");
++                volScalarField rAU(1.0/UEqn.A());
++                volVectorField HbyA(constrainHbyA(rAU*UEqn.H(),U,p));
++                surfaceScalarField phiHbyA
++                (
++                    "phiHbyA",fvc::flux(HbyA)
++                    +fvc::interpolate(rAU)*C29::eulerPhiCorrection(U,phi)
++                );
++                // Anchored totalPressure makes adjustPhi a no-op; both branch
++                // helpers internally check p.needReference(). No forced gauge.
++                adjustPhi(phiHbyA,U,p);
++                constrainPressure(p,U,phiHbyA,rAU);
++                while (piso.correctNonOrthogonal())
++                {
++                    fvScalarMatrix pEqn
++                    (
++                        fvm::laplacian(rAU,p)==fvc::div(phiHbyA)
++                    );
++                    pEqn.setReference(pRefCell,pRefValue);
++                    const word selected=p.select(piso.finalInnerIter());
++                    Info<<"C29_SOLVER pressure="<<selected<<endl;
++                    pEqn.solve(selected);
++                    if (piso.finalNonOrthogonalIter())phi=phiHbyA-pEqn.flux();
++                    C29::sync("pressure solve/flux before matrix destruction");
++                }
++                #include "continuityErrs.H"
++                // p.relax() is identity for this guarded no-factor dictionary.
++                U=HbyA-rAU*fvc::grad(p);
++                U.correctBoundaryConditions();
++                C29::sync("PISO velocity and BC correction complete");
++            }
++            runTime.write();
++            runTime.printExecutionTime(Info);
+         }
+-
+-        // --- PISO loop
+-        while (piso.correct())
+-        {
+-            volScalarField rAU(1.0/UEqn.A());
+-            volVectorField HbyA(constrainHbyA(rAU*UEqn.H(), U, p));
+-            surfaceScalarField phiHbyA
+-            (
+-                "phiHbyA",
+-                fvc::flux(HbyA)
+-              + fvc::interpolate(rAU)*fvc::ddtCorr(U, phi)
+-            );
+-
+-            adjustPhi(phiHbyA, U, p);
+-
+-            // Update the pressure BCs to ensure flux consistency
+-            constrainPressure(p, U, phiHbyA, rAU);
+-
+-            // Non-orthogonal pressure corrector loop
+-            while (piso.correctNonOrthogonal())
+-            {
+-                // Pressure corrector
+-
+-                fvScalarMatrix pEqn
+-                (
+-                    fvm::laplacian(rAU, p) == fvc::div(phiHbyA)
+-                );
+-
+-                pEqn.setReference(pRefCell, pRefValue);
+-
+-                pEqn.solve(p.select(piso.finalInnerIter()));
+-
+-                if (piso.finalNonOrthogonalIter())
+-                {
+-                    phi = phiHbyA - pEqn.flux();
+-                }
+-            }
+-
+-            #include "continuityErrs.H"
+-
+-            U = HbyA - rAU*fvc::grad(p);
+-            U.correctBoundaryConditions();
+-        }
+-
+-        runTime.write();
+-
+-        runTime.printExecutionTime(Info);
+     }
+-
+-    nvtxRangePop();
+-
+-    Info<< "End\n" << endl;
+-
++    C29::require(steps==5,"Expected exactly five completed steps");
++    Info<<"End"<<endl;
+     return 0;
+ }
+-
+-
+ // ************************************************************************* //
+--- upstream/createFields.H
++++ createC29Fields.H
+@@ -1,3 +1,5 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Derived from pinned native createFields.H; original hash is in manifest.
+ Info<< "Reading transportProperties\n" << endl;
+ 
+ IOdictionary transportProperties
+@@ -56,3 +58,10 @@
+ scalar pRefValue = 0.0;
+ setRefCell(p, mesh.solutionDict().subDict("PISO"), pRefCell, pRefValue);
+ mesh.setFluxRequired(p.name());
++
++// Constant laminar nuEff. Incompressible alpha/rho model multipliers are one.
++volScalarField nuEff
++(
++    IOobject("nuEff",runTime.constant(),mesh,IOobject::NO_READ,IOobject::NO_WRITE,false),
++    mesh,nu
++);
+--- upstream/Make/files
++++ Make/files
+@@ -1,3 +1,3 @@
+-icoFoam.C
++c29NativeHybridFoam.C
+ 
+-EXE = $(FOAM_APPBIN)/icoFoam
++EXE = $(C29_APPBIN)/c29NativeHybridFoam
+--- upstream/Make/options
++++ Make/options
+@@ -1,7 +1,28 @@
++ifndef C29_APPBIN
++$(error Set C29_APPBIN to a NEW private application-output directory)
++endif
++C29_USE_CUDA ?= 1
++C29_USE_NVTX ?= 1
++ifeq ($(C29_USE_CUDA),1)
++ifndef C29_CUDA_INCLUDE
++$(error Set C29_CUDA_INCLUDE to the reviewed real CUDA runtime headers)
++endif
++ifndef C29_CUDA_LIBDIR
++$(error Set C29_CUDA_LIBDIR to the reviewed real libcudart directory)
++endif
++C29_CUDA_INC = -I$(C29_CUDA_INCLUDE)
++C29_CUDA_LIBS = -L$(C29_CUDA_LIBDIR) -Wl,-rpath,$(C29_CUDA_LIBDIR) -lcudart
++endif
++ifeq ($(C29_USE_NVTX),1)
++ifndef C29_NVTX_INCLUDE
++$(error Set C29_NVTX_INCLUDE to the reviewed NVTX3 include directory)
++endif
++C29_NVTX_INC = -I$(C29_NVTX_INCLUDE)
++endif
+ EXE_INC = \
+     -I$(LIB_SRC)/finiteVolume/lnInclude \
+-    -I$(LIB_SRC)/meshTools/lnInclude
+-
++    -I$(LIB_SRC)/meshTools/lnInclude \
++    -DC29_USE_CUDA=$(C29_USE_CUDA) -DC29_USE_NVTX=$(C29_USE_NVTX) \
++    $(C29_CUDA_INC) $(C29_NVTX_INC)
+ EXE_LIBS = \
+-    -lfiniteVolume \
+-    -lmeshTools
++    -lfiniteVolume -lmeshTools -ldl $(C29_CUDA_LIBS)
+--- /dev/null
++++ C29BackendAudit.H
+@@ -0,0 +1,91 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Application-local annotations/fences; no vendor-library or SDK changes.
++#ifndef C29BackendAudit_H
++#define C29BackendAudit_H
++#include "fvCFD.H"
++#ifndef C29_USE_CUDA
++#define C29_USE_CUDA 0
++#endif
++#ifndef C29_USE_NVTX
++#define C29_USE_NVTX 1
++#endif
++#if C29_USE_NVTX
++#include <nvtx3/nvToolsExt.h>
++#endif
++#if C29_USE_CUDA
++#include <cuda_runtime_api.h>
++#endif
++namespace C29
++{
++class Range
++{
++public:
++    explicit Range(const char* name)
++    {
++#if C29_USE_NVTX
++        nvtxRangePushA(name);
++#else
++        (void)name;
++#endif
++    }
++    ~Range()
++    {
++#if C29_USE_NVTX
++        nvtxRangePop();
++#endif
++    }
++    Range(const Range&) = delete;
++    void operator=(const Range&) = delete;
++};
++#if C29_USE_CUDA
++inline void checked(const cudaError_t result, const char* operation)
++{
++    if (result != cudaSuccess)
++        FatalErrorInFunction << operation << ": "
++            << cudaGetErrorString(result) << Foam::exit(Foam::FatalError);
++}
++#endif
++inline void sync(const char* operation)
++{
++#if C29_USE_CUDA
++    checked(cudaDeviceSynchronize(), operation);
++#else
++    (void)operation;
++#endif
++}
++inline void managedPointer(const void* p, const Foam::label count, const char* name)
++{
++#if C29_USE_CUDA
++    if (!count) return;
++    cudaPointerAttributes attributes{};
++    checked(cudaPointerGetAttributes(&attributes, p), name);
++    if (attributes.type != cudaMemoryTypeManaged)
++        FatalErrorInFunction << name
++            << " must be CUDA-managed in this initial candidate. Unregistered,"
++            << " mapped-host and inferred unified-memory modes are unsupported."
++            << Foam::exit(Foam::FatalError);
++#else
++    (void)p; (void)count; (void)name;
++#endif
++}
++inline void auditDevice()
++{
++#if C29_USE_CUDA
++    int device = -1, managed = 0, concurrent = 0;
++    checked(cudaGetDevice(&device), "cudaGetDevice");
++    checked(cudaDeviceGetAttribute(&managed,cudaDevAttrManagedMemory,device),
++        "cudaDevAttrManagedMemory");
++    checked(cudaDeviceGetAttribute(&concurrent,cudaDevAttrConcurrentManagedAccess,device),
++        "cudaDevAttrConcurrentManagedAccess");
++    if (!managed)
++        FatalErrorInFunction << "Managed memory unavailable"
++            << Foam::exit(Foam::FatalError);
++    Foam::Info<< "C29_DEVICE device=" << device << " managed=" << managed
++        << " concurrentManagedAccess=" << concurrent << Foam::endl;
++#else
++    Foam::Info<< "C29_DEVICE CPU companion: no CUDA fences. Only valid with"
++        << " independently verified CPU libraries/compiler policy." << Foam::endl;
++#endif
++}
++}
++#endif
+--- /dev/null
++++ C29ExperimentAdmission.H
+@@ -0,0 +1,50 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Receipt reader only. Python performs byte auditing before a MANUAL launch.
++// This is permission for an unvalidated experiment, never scientific acceptance.
++#ifndef C29ExperimentAdmission_H
++#define C29ExperimentAdmission_H
++#include "IFstream.H"
++#include "dictionary.H"
++#include "Switch.H"
++namespace C29
++{
++inline void admissionRequire(const bool ok,const char* reason)
++{
++    if (!ok) FatalErrorInFunction<<reason<<Foam::exit(Foam::FatalError);
++}
++inline void readExperimentReceipt
++(
++    const Foam::dictionary& controls,
++    const Foam::word& phase,
++    const Foam::word& backend,const Foam::fileName& actualCase
++)
++{
++    using namespace Foam;
++    const fileName receiptFile(controls.lookup("experimentReceiptFile"));
++    IFstream receiptStream(receiptFile);
++    admissionRequire(receiptStream.good(),"Missing/unreadable experiment receipt");
++    const dictionary receipt(receiptStream);
++    admissionRequire(word(receipt.lookup("schema"))
++        =="c29-unvalidated-input-admission-v2","Unsupported receipt schema");
++    admissionRequire(string(receipt.lookup("experimentId"))
++        ==string(controls.lookup("experimentId")),"Experiment receipt ID mismatch");
++    admissionRequire(word(receipt.lookup("phase"))==phase
++        &&word(receipt.lookup("backend"))==backend,"Receipt phase/backend mismatch");
++    admissionRequire(fileName(receipt.lookup("casePath"))==actualCase,
++        "Receipt belongs to a different actual case path");
++    admissionRequire(bool(Switch(receipt.lookup("inputsAudited")))
++        &&!bool(Switch(receipt.lookup("runtimeValidated"))),
++        "Receipt must attest input audit ONLY, with runtimeValidated false");
++    Info<<"C29_EXPERIMENTAL_UNVALIDATED phase="<<phase<<" backend="<<backend
++        <<" case="<<actualCase<<" id="<<string(receipt.lookup("experimentId"))
++        <<" inputSnapshot="<<string(receipt.lookup("inputSnapshotSha256"))
++        <<" launchReceipt="<<string(receipt.lookup("launchReceiptJsonSha256"))
++        <<" candidate="<<string(receipt.lookup("candidateManifestSha256"))
++        <<" binary="<<string(receipt.lookup("binarySha256"))
++        <<" libraries="<<string(receipt.lookup("libraryIdentitySha256"))
++        <<"; permission/input audit are NOT runtime acceptance"<<endl;
++    // This reader does not hash files. Root must freeze inputs and run the
++    // Python receipt recheck immediately before the exact recorded manual argv.
++}
++}
++#endif
+--- /dev/null
++++ C29HostSource.H
+@@ -0,0 +1,136 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Included C29 fragments are unchanged bytes from the original Foundation14 model.
++#ifndef C29HostSource_H
++#define C29HostSource_H
++#include <limits>
++#include <type_traits>
++#include "C29BackendAudit.H"
++#include "C29SourceAccounting.H"
++// Preserved include fragment MUST be at translation-unit scope.
++#include "C29_includes_verbatim.inc"
++static_assert(std::is_same<Foam::scalar,double>::value, "C29 requires WM_DP");
++namespace C29
++{
++inline void preMaterializeGeometry(const Foam::fvMesh& mesh)
++{
++    // Do not call C29 to prime it: that would change controller timing/logs.
++    (void)mesh.C(); (void)mesh.V();
++    (void)mesh.cellPoints(); (void)mesh.points();
++    sync("C29 lazy geometry construction");
++}
++inline SourceObservation addHostSource
++(
++    const Foam::fvMesh& caseMesh,Foam::fvVectorMatrix& eqn
++)
++{
++    using namespace Foam;
++    sync("before C29 host source / matrix zero-fill");
++    managedPointer(caseMesh.C().primitiveField().cdata(),caseMesh.nCells(),"C");
++    managedPointer(caseMesh.V().cdata(),caseMesh.nCells(),"V");
++    const auto& U = caseMesh.lookupObject<volVectorField>("U");
++    managedPointer(U.primitiveField().cdata(),U.size(),"U");
++    managedPointer(eqn.source().cdata(),eqn.source().size(),"source matrix");
++    managedPointer(caseMesh.points().cdata(),caseMesh.nPoints(),"points");
++    require(eqn.dimensions()==dimensionSet(0,4,-2,0,0,0,0),
++        "C29 source matrix must have integrated kinematic momentum dimensions");
++    const scalar implicitBefore=implicitMaximum(eqn);
++    const scalar sourceBefore=maxMagnitude(eqn.source());
++    require(implicitBefore==0&&sourceBefore==0,
++        "C29 requires a fresh exactly-zero temporary matrix");
++    static label auditedLastIndex=-1,auditedCalls=0;
++    const label callIndex=caseMesh.time().timeIndex();
++    const bool firstAuditedCall=(auditedCalls==0);
++    require(callIndex!=auditedLastIndex
++        &&(firstAuditedCall||callIndex==auditedLastIndex+1),
++        "C29 must be evaluated exactly once per consecutive time index");
++    require(auditedCalls<5,"More than five source evaluations in this protocol");
++    Range range("C29_HOST_SOURCE_VERBATIM");
++    auto mesh = [&caseMesh]() -> const fvMesh& { return caseMesh; };
++    constexpr scalar small = std::numeric_limits<scalar>::epsilon();
++    constexpr scalar great = scalar(1)/small;
++    #include "C29_body_verbatim.inc"
++    sync("after C29 host source");
++    require(update&&last==callIndex,"C29 controller did not update once at this index");
++    const scalar implicitAfter=implicitMaximum(eqn);
++    require(implicitAfter==0,"C29 changed an implicit or boundary coefficient");
++    vector sourceForce(vector::zero);
++    scalar sourceWork=0;
++    forAll(S,i)
++    {
++        sourceForce+=1.225*S[i];
++        sourceWork+=(1.225*S[i])&vel[i];
++    }
++    const scalar forceError=mag(sourceForce-craftForce);
++    const scalar workError=sourceWork+totalP;
++    require(closeIdentity(forceError,mag(craftForce),forceAbs,forceRel),
++        "Integrated positive source force does not match craft force");
++    require(closeIdentity(workError,totalP,workAbs,workRel),
++        "Positive source work must be negative air power");
++    static std::vector<scalar> previousThrust;
++    if (firstAuditedCall)previousThrust.assign(ctr.size(),scalar(0));
++    require(previousThrust.size()==static_cast<std::size_t>(ctr.size()),
++        "Changed source geometry/cache lifetime");
++    forAll(ctr,r)
++    {
++        // Read the SAME unmodified pre-predictor vel reference and existing
++        // cache immediately after C29. This is a diagnostic repetition of its
++        // quadrature, not another source evaluation or independent experiment.
++        scalar auditedFlux=0,auditedVolume=0;
++        forAll(ids[r],j)
++        {
++            const label i=ids[r][j];
++            auditedFlux+=-(vel[i]&axis[r])*weights[r][j]*V[i];
++            auditedVolume+=weights[r][j]*V[i];
++        }
++        const scalar axial=auditedFlux/volumes[r];
++        require(closeIdentity(auditedVolume-volumes[r],volumes[r],volumeAbs,volumeRel),
++            "Cached volume does not match the existing quadrature");
++        Info<<"C29_ROTOR_AUDIT "<<m.time().value()<<" "<<r
++            <<" volume="<<volumes[r]<<" flux="<<auditedFlux<<" w="<<axial
++            <<" previousThrust="<<previousThrust[r]<<" thrust="<<thrust[r]
++            <<" index="<<callIndex<<" dt="<<m.time().deltaTValue()
++            <<" controllerUpdateObserved="<<update<<endl;
++        previousThrust[r]=thrust[r];
++    }
++    ++auditedCalls;auditedLastIndex=callIndex;
++    Info<<"C29_SOURCE_AUDIT "<<m.time().value()<<" index="<<callIndex
++        <<" call="<<auditedCalls<<" dimensions="<<eqn.dimensions()
++        <<" implicitBefore="<<implicitBefore<<" sourceBefore="<<sourceBefore
++        <<" implicitAfter="<<implicitAfter<<" craftForce="<<craftForce
++        <<" integralPositiveForce="<<sourceForce<<" forceError="<<forceError
++        <<" positiveSourceWork="<<sourceWork<<" airPower="<<totalP
++        <<" workError="<<workError<<endl;
++    return SourceObservation{craftForce,totalP};
++}
++inline void applyHostSource(const Foam::fvMesh& mesh,Foam::fvVectorMatrix& UEqn)
++{
++    using namespace Foam;
++    const auto& U=mesh.lookupObject<volVectorField>("U");
++    fvVectorMatrix source(U,UEqn.dimensions());
++    const SourceObservation observation=addHostSource(mesh,source);
++    sync("before applied-source accounting snapshot");
++    managedPointer(UEqn.source().cdata(),UEqn.source().size(),"momentum source");
++    // Validation overhead only. It is not a performance-optimized path.
++    const std::vector<vector> before(UEqn.source().begin(),UEqn.source().end());
++    UEqn-=source;
++    sync("after source subtraction / before accounting and destruction");
++    vector airForce(vector::zero);
++    scalar airWork=0;
++    forAll(UEqn.source(),i)
++    {
++        const vector delta=UEqn.source()[i]-before[i];
++        airForce+=1.225*delta;
++        airWork+=(1.225*delta)&U[i];
++    }
++    const scalar forceError=mag(airForce+observation.craftForce);
++    const scalar workError=airWork-observation.airPower;
++    require(closeIdentity(forceError,mag(observation.craftForce),forceAbs,forceRel),
++        "Applied air-source delta must oppose craft force");
++    require(closeIdentity(workError,observation.airPower,workAbs,workRel),
++        "Applied air-source work must equal signed air power");
++    Info<<"C29_APPLIED_AIR_AUDIT "<<mesh.time().value()<<" force="<<airForce
++        <<" work="<<airWork<<" forceError="<<forceError
++        <<" workError="<<workError<<endl;
++}
++}
++#endif
+--- /dev/null
++++ C29Operators.H
+@@ -0,0 +1,75 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Formulations derived from Foundation14 linearViscousStress,
++// momentumTransportModel::divDevTauCorr, fvmDiv::divc and EulerDdtScheme.
++// Source hashes/references: physics_review.json and candidate_manifest.json.
++#ifndef C29Operators_H
++#define C29Operators_H
++#include <limits>
++#include "C29BackendAudit.H"
++namespace C29
++{
++inline Foam::tmp<Foam::fvVectorMatrix> momentum
++(
++    Foam::volVectorField& U,
++    const Foam::surfaceScalarField& phi,
++    const Foam::volScalarField& nuEff
++)
++{
++    using namespace Foam;
++    Range range("C29_CORE_MOMENTUM_ASSEMBLY");
++    const fvMesh& mesh=U.mesh();
++    surfaceScalarField nuFace("c29NuFace",fvc::interpolate(nuEff));
++    surfaceVectorField devTauCorrFlux
++    (
++        "devTauCorrFlux",
++        -nuFace*fvc::dotInterpolate(mesh.Sf(),dev2(T(fvc::grad(U))))
++    );
++    // Exact F14 divc identity when !fluxRequired(U). No cell-tensor shortcut.
++    tmp<fvVectorMatrix> result
++    (
++        fvm::ddt(U) + fvm::div(phi,U)
++      - fvm::laplacian(nuFace,U)
++      + fvm::Su(fvc::div(devTauCorrFlux),U)
++    );
++    sync("momentum assembly before temporary destruction");
++    return result;
++}
++inline Foam::tmp<Foam::surfaceScalarField> eulerPhiCorrection
++(
++    const Foam::volVectorField& U,
++    const Foam::surfaceScalarField& phi
++)
++{
++    using namespace Foam;
++    // Only static mesh/no MRF/null Uf/constant-density Euler is supported.
++    const fvMesh& mesh=U.mesh();
++    surfaceScalarField dPhi
++    (
++        "c29EulerDeltaPhi",
++        phi.oldTime()-fvc::dotInterpolate(mesh.Sf(),U.oldTime())
++    );
++    surfaceScalarField coupling
++    (
++        "c29EulerCoupling",
++        scalar(1)-min
++        (
++            mag(dPhi)/(mag(phi.oldTime())+dimensionedScalar
++            (
++                "small",phi.dimensions(),std::numeric_limits<scalar>::epsilon()
++            )),
++            scalar(1)
++        )
++    );
++    sync("before Euler noncoupled patch mask");
++    forAll(U.boundaryField(),patchi)
++    {
++        if (!U.boundaryField()[patchi].coupled())
++            coupling.boundaryFieldRef()[patchi] = scalar(0);
++    }
++    const dimensionedScalar rDeltaT=scalar(1)/mesh.time().deltaT();
++    tmp<surfaceScalarField> result(coupling*rDeltaT*dPhi);
++    sync("Euler correction before temporary destruction");
++    return result;
++}
++}
++#endif
+--- /dev/null
++++ C29Restrictions.H
+@@ -0,0 +1,165 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Explicit first validation scope, not a general solver/input adapter.
++#ifndef C29Restrictions_H
++#define C29Restrictions_H
++#include "fvCFD.H"
++#include "OSspecific.H"
++#include "C29ExperimentAdmission.H"
++#include <algorithm>
++#include <cctype>
++#include <limits>
++#include <string>
++namespace C29
++{
++inline void require(const bool ok, const char* reason)
++{
++    if (!ok) FatalErrorInFunction << reason << Foam::exit(Foam::FatalError);
++}
++inline bool near(const Foam::scalar a,const Foam::scalar b)
++{
++    return Foam::mag(a-b) <= 64*std::numeric_limits<Foam::scalar>::epsilon()
++        *Foam::max(Foam::scalar(1),Foam::mag(b));
++}
++inline std::string tokens(const Foam::dictionary& d,const Foam::word& name)
++{
++    std::string s=d.lookup(name).toString();
++    s.erase(std::remove_if(s.begin(),s.end(),[](unsigned char c)
++        {return std::isspace(c);}),s.end());
++    return s;
++}
++inline void allEntries(const Foam::dictionary& d,const std::string& expected)
++{
++    const Foam::wordList keys=d.toc();
++    forAll(keys,i) require(tokens(d,keys[i])==expected,
++        "Unsupported extra/changed numerical scheme entry");
++}
++inline void admitExperiment
++(
++    const Foam::dictionary& controls,const bool initialFieldsOnly,const Foam::Time& runTime
++)
++{
++    using namespace Foam;
++    require(!Pstream::parRun(),"Initial experiment is serial only");
++    require(controls.getOrDefault<bool>("allowUnvalidatedBackendExperiment",false),
++        "Explicit permission for an UNVALIDATED backend experiment is required");
++    require(!controls.found("libraryBackendReviewed")
++        &&!controls.found("sourceMemoryContractReviewed")
++        &&!controls.found("sourceHostHelpersCompletionReviewed"),
++        "Remove obsolete proof-like flags; permission is not acceptance");
++    if (initialFieldsOnly)
++        require(controls.getOrDefault<bool>("allowInitialFieldsOnlyExperiment",false),
++            "Initial-field-only experimental permission is required");
++    else
++        require(controls.getOrDefault<bool>("allowFiveStepSourceExperiment",false),
++            "Unvalidated five-step host-source experimental permission is required");
++#if C29_USE_CUDA
++    require(controls.get<word>("backend")=="gpu","CUDA build requires backend gpu");
++#else
++    require(controls.get<word>("backend")=="cpu","Non-CUDA build requires backend cpu");
++#endif
++    readExperimentReceipt(controls,
++        initialFieldsOnly?"initial_fields_only":"five_fixed_steps",
++        controls.get<word>("backend"),runTime.path());
++}
++inline void validate
++(
++    const Foam::fvMesh& mesh,const Foam::Time& runTime,
++    const Foam::volVectorField& U,const Foam::volScalarField& p,
++    const Foam::surfaceScalarField& phi,const Foam::dimensionedScalar& nu,
++    const Foam::dictionary& controls
++)
++{
++    using namespace Foam;
++    require(!Pstream::parRun(),"Initial candidate supports serial execution only");
++    require(mesh.nCells()==922576,"First protocol requires pinned 922576-cell seed");
++    require(!mesh.moving()&&!mesh.topoChanging(),"Static mesh only");
++    require(!mesh.foundObject<surfaceVectorField>("Uf"),"Uf unsupported");
++    require(nu.dimensions()==dimViscosity&&near(nu.value(),1.5e-5),
++        "Only pinned constant nu=1.5e-5 m2/s supported");
++    require(U.dimensions()==dimVelocity,"U must have velocity dimensions");
++    require(p.dimensions()==dimensionSet(0,2,-2,0,0,0,0),"p must be kinematic");
++    require(phi.dimensions()==dimVolume/dimTime,"phi must be volumetric");
++    require(!p.needReference(),"Current totalPressure anchored gauge required");
++    require(controls.get<word>("protocol")=="c29-native-five-fixed-steps-v1",
++        "Unreviewed protocol");
++    require(controls.get<string>("seedArchiveSha256")
++        =="89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
++        "Unrecognized declared seed; verify actual hashes with audit_candidate.py");
++    const dictionary& time=runTime.controlDict();
++    require(time.get<word>("startFrom")=="startTime","Use explicit startTime");
++    require(near(runTime.value(),.6)&&near(time.get<scalar>("startTime"),.6),
++        "Start must be pinned .600 s");
++    require(near(runTime.deltaTValue(),1e-4)&&near(time.get<scalar>("endTime"),.6005),
++        "Only five fixed 1e-4 s steps are supported");
++    require(!time.getOrDefault<bool>("adjustTimeStep",false),"Adaptive dt unsupported");
++    require(!time.getOrDefault<bool>("runTimeModifiable",false),"Runtime edits unsupported");
++    require(!time.found("functions")||time.subDict("functions").toc().empty(),
++        "Function objects unsupported in this first protocol");
++    require(!time.found("libs")||wordList(time.lookup("libs")).empty(),
++        "Extra runtime libraries unsupported; no second source");
++    const char* blocked[]={"dynamicMeshDict","MRFProperties","fvOptions","fvConstraints"};
++    for (const char* name:blocked)
++        require(!isFile(runTime.constant()/name)&&!isFile(runTime.system()/name),
++            "Dynamic/MRF/options/constraints input unsupported");
++    forAll(U.boundaryField(),patchi)
++    {
++        require(!U.boundaryField()[patchi].coupled(),"Coupled patches unsupported");
++        require(U.boundaryField()[patchi].type()=="pressureInletOutletVelocity"
++            &&p.boundaryField()[patchi].type()=="totalPressure",
++            "Only pinned farfield velocity/totalPressure boundaries supported");
++    }
++    const dictionary& solution=mesh.solutionDict();
++    require(!solution.found("relaxationFactors"),"No relaxationFactors permitted");
++    const dictionary& piso=solution.subDict("PISO");
++    require(piso.get<label>("nCorrectors")==2
++        &&piso.get<label>("nNonOrthogonalCorrectors")==0,
++        "Only 2 PISO correctors and 0 nonorthogonal corrections supported");
++    require(piso.getOrDefault<label>("nOuterCorrectors",1)==1
++        &&!piso.getOrDefault<bool>("consistent",false)
++        &&piso.getOrDefault<bool>("momentumPredictor",true),
++        "Only one outer iteration, inconsistent PISO and momentum predictor supported");
++    const word names[]={"U","UFinal","p","pFinal"};
++    for (label i=0;i<4;++i)
++    {
++        const dictionary& s=mesh.solverDict(names[i]);
++        require(s.get<word>("solver")==word(i<2?"smoothSolver":"GAMG"),
++            "Changed linear solver unsupported");
++        require(s.get<word>("smoother")==word(i<2?"symGaussSeidel":"GaussSeidel"),
++            "Changed smoother unsupported");
++        require(near(s.get<scalar>("tolerance"),1e-7)
++            &&near(s.get<scalar>("relTol"),(i%2)?0:.05),"Changed solver criteria");
++        if (i>=2) require(s.getOrDefault<bool>("directSolveCoarsest",false),
++            "Keep pinned directSolveCoarsest true; do not silently substitute");
++    }
++    const dictionary& schemes=mesh.schemesDict();
++    allEntries(schemes.subDict("ddtSchemes"),"Euler");
++    allEntries(schemes.subDict("interpolationSchemes"),"linear");
++    allEntries(schemes.subDict("laplacianSchemes"),"Gausslinearcorrected");
++    allEntries(schemes.subDict("snGradSchemes"),"corrected");
++    const dictionary& grad=schemes.subDict("gradSchemes");
++    const wordList grads=grad.toc();
++    require(tokens(grad,"grad(U)")=="cellLimitedGausslinear1","Keep limited grad(U)");
++    forAll(grads,i) require(tokens(grad,grads[i])
++        ==(grads[i]=="grad(U)"?"cellLimitedGausslinear1":"Gausslinear"),
++        "Unsupported gradient entry");
++    const dictionary& div=schemes.subDict("divSchemes");
++    const wordList divs=div.toc();
++    require(tokens(div,"div(phi,U)")=="GausslinearUpwindgrad(U)","Keep linearUpwind");
++    forAll(divs,i)
++    {
++        require(divs[i]=="default"||divs[i]=="div(phi,U)"
++            ||divs[i]=="div((nuEff*dev2(T(grad(U)))))","Extra divergence entry unsupported");
++        const std::string expected=divs[i]=="default"?"none":
++            (divs[i]=="div(phi,U)"?"GausslinearUpwindgrad(U)":"Gausslinear");
++        require(tokens(div,divs[i])==expected,"Changed divergence scheme");
++    }
++    require(!mesh.fluxRequired("U"),"U flux correction storage is not ported");
++    const word policy=controls.get<word>("initialPhiPolicy");
++    const bool supplied=isFile(runTime.path()/runTime.timeName()/"phi");
++    require((policy=="computeFromPinnedU"&&!supplied)
++        ||(policy=="sharedPinnedPhi"&&supplied),"Initial phi policy/file mismatch");
++    Info<<"C29_SCOPE static serial constant-nu Euler; hybrid host source;"
++        <<" explicit UFinal; native branch identity differs from Foundation14"<<endl;
++}
++}
++#endif
+--- /dev/null
++++ C29SourceAccounting.H
+@@ -0,0 +1,53 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Wrapper-only observations: no second C29 call, no later corrected-U sample.
++#ifndef C29SourceAccounting_H
++#define C29SourceAccounting_H
++#include "C29Restrictions.H"
++#include "C29ValidationThresholds.H"
++#include <cmath>
++#include <vector>
++namespace C29
++{
++inline bool closeIdentity
++(
++    const Foam::scalar error,const Foam::scalar reference,
++    const Foam::scalar absolute,const Foam::scalar relative
++)
++{
++    return std::isfinite(error)&&std::isfinite(reference)
++        &&Foam::mag(error)<=absolute+relative*Foam::mag(reference);
++}
++template<class FieldType>
++inline Foam::scalar maxMagnitude(const FieldType& field)
++{
++    Foam::scalar maximum=0;
++    managedPointer(field.cdata(),field.size(),"source accounting coefficient/data");
++    forAll(field,i)
++    {
++        const Foam::scalar value=Foam::mag(field[i]);
++        require(std::isfinite(value),"Non-finite source matrix coefficient/data");
++        maximum=Foam::max(maximum,value);
++    }
++    return maximum;
++}
++inline Foam::scalar implicitMaximum(const Foam::fvVectorMatrix& eqn)
++{
++    Foam::scalar maximum=0;
++    // Const accessors and presence checks avoid allocating absent coefficients.
++    if (eqn.hasDiag())maximum=Foam::max(maximum,maxMagnitude(eqn.diag()));
++    if (eqn.hasUpper())maximum=Foam::max(maximum,maxMagnitude(eqn.upper()));
++    if (eqn.hasLower())maximum=Foam::max(maximum,maxMagnitude(eqn.lower()));
++    forAll(eqn.internalCoeffs(),patchi)
++    {
++        maximum=Foam::max(maximum,maxMagnitude(eqn.internalCoeffs()[patchi]));
++        maximum=Foam::max(maximum,maxMagnitude(eqn.boundaryCoeffs()[patchi]));
++    }
++    return maximum;
++}
++struct SourceObservation
++{
++    Foam::vector craftForce;
++    Foam::scalar airPower;
++};
++}
++#endif
+--- /dev/null
++++ C29ValidationThresholds.H
+@@ -0,0 +1,12 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// Preregistered SOURCE-ACCOUNTING tolerances, not CFD uncertainty bounds.
++// Full cross-branch/backend proposal is in validation_thresholds.json.
++#ifndef C29ValidationThresholds_H
++#define C29ValidationThresholds_H
++namespace C29
++{
++constexpr Foam::scalar forceAbs=1e-10,forceRel=1e-10;
++constexpr Foam::scalar workAbs=1e-9,workRel=1e-10;
++constexpr Foam::scalar volumeAbs=1e-14,volumeRel=1e-12;
++}
++#endif
+--- /dev/null
++++ foundation14_phi/Make/files
+@@ -0,0 +1,3 @@
++c29FoundationInitialPhi.C
++
++EXE = $(C29_PHI_APPBIN)/c29FoundationInitialPhi
+--- /dev/null
++++ foundation14_phi/Make/options
+@@ -0,0 +1,10 @@
++ifndef C29_PHI_APPBIN
++$(error Set C29_PHI_APPBIN to a NEW private Foundation14 utility directory)
++endif
++ifneq ($(WM_PROJECT_VERSION),14)
++$(error This fallback requires the original Foundation14 environment)
++endif
++EXE_INC = \
++    -I$(LIB_SRC)/finiteVolume/lnInclude \
++    -I$(LIB_SRC)/meshTools/lnInclude
++EXE_LIBS = -lfiniteVolume -lmeshTools
+--- /dev/null
++++ foundation14_phi/c29FoundationInitialPhi.C
+@@ -0,0 +1,77 @@
++/*---------------------------------------------------------------------------*\
++  =========                 |
++  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
++   \\    /   O peration     | Website: https://openfoam.org
++    \\  /    A nd           | Copyright (C) 2022-2023 OpenFOAM Foundation
++     \\/     M anipulation  |
++-------------------------------------------------------------------------------
++License
++    This file is part of OpenFOAM.
++
++    OpenFOAM is free software: you can redistribute it and/or modify it
++    under the terms of the GNU General Public License as published by
++    the Free Software Foundation, either version 3 of the License, or
++    (at your option) any later version.
++
++    OpenFOAM is distributed in the hope that it will be useful, but WITHOUT
++    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
++    FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
++    for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with OpenFOAM. If not, see <http://www.gnu.org/licenses/>.
++
++Application
++    c29FoundationInitialPhi
++
++Description
++    SOURCE-ONLY fallback initializer, not a flow solver. The phi constructor
++    follows Foundation14 incompressibleFluid.C:93-104. A separately reviewed
++    FRESH seed-only mesh/U clone and explicit marker are required. No C29,
++    pressure solve, time loop, BC correction or field interpolation change.
++\*---------------------------------------------------------------------------*/
++#include "fvCFD.H"
++#include "OSspecific.H"
++#include "../C29ExperimentAdmission.H"
++int main(int argc,char *argv[])
++{
++    #include "setRootCase.H"
++    #include "createTime.H"
++    #include "createMesh.H"
++    IOdictionary admission
++    (
++        IOobject("c29InitialPhiControls",runTime.constant(),mesh,
++            IOobject::MUST_READ,IOobject::NO_WRITE,false)
++    );
++    if
++    (
++        Pstream::parRun() || mesh.nCells()!=922576 || mesh.moving()
++     || mag(runTime.value()-.6)>1e-13
++     || word(admission.lookup("protocol"))!="c29-foundation14-initial-phi-only-v1"
++     || !bool(Switch(admission.lookup("allowInitialPhiExperiment")))
++     || readLabel(runTime.controlDict().lookup("writePrecision"))<17
++     || isFile(runTime.path()/runTime.timeName()/"phi")
++    )
++        FatalErrorInFunction<<"Requires marked fresh serial922576 seed at.6,"
++            <<" writePrecision>=17 and no existing phi"<<exit(FatalError);
++    C29::readExperimentReceipt(admission,"foundation_initial_phi","cpu",runTime.path());
++    volVectorField U
++    (
++        IOobject("U",runTime.timeName(),mesh,IOobject::MUST_READ,IOobject::NO_WRITE),
++        mesh
++    );
++    // Original Foundation14 constructor semantics, including its interpolation.
++    // No phi exists: READ_IF_PRESENT therefore selects this exact fallback.
++    surfaceScalarField phi
++    (
++        IOobject("phi",runTime.timeName(),mesh,
++            IOobject::READ_IF_PRESENT,IOobject::AUTO_WRITE),
++        linearInterpolate(U)&mesh.Sf()
++    );
++    if (!phi.write())
++        FatalErrorInFunction<<"Initial phi write failed; do not admit or copy it"
++            <<exit(FatalError);
++    Info<<"INITIAL_PHI_ONLY: no source, no timestep; hash this fresh output"
++        <<" and copy the SAME bytes into both approved fresh controls"<<endl;
++    return 0;
++}

@@ -1,0 +1,46 @@
+{
+  "source": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/field_algebra_gate/Test-nativeStdparFields.C",
+    "sha256": "046dfc47664ff9b29544bfbb78d395ca9c745623d906b7af844c5c24d416a88b"
+  },
+  "binary_identity_only_no_ELF": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/user/platforms/linuxARM64Nvidia-gpuDPInt32Opt/bin/Test-nativeStdparFields",
+    "sha256": "df5772176bdbe30ef5c596b883c844ff39bbd58195319b64eefdfdd284c1d4cb"
+  },
+  "core_library_identity_only_no_ELF": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libOpenFOAM.so",
+    "sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb"
+  },
+  "library_count": 22,
+  "private_environment_sha256": "7cdcd1f4ce2c612bf83c1d8254fb2942fe92af4a788ae3be75ecf6f209e7947d",
+  "private_environment_export_name_allowlist": [
+    "BISON_PKGDATADIR",
+    "CUDA_CACHE_PATH",
+    "FOAM_CONFIG_MODE",
+    "FOAM_JOB_DIR",
+    "FOAM_MEMORY_POOL",
+    "FOAM_MODULE_PREFIX",
+    "FOAM_RUN",
+    "FOAM_USER_APPBIN",
+    "FOAM_USER_LIBBIN",
+    "LD_LIBRARY_PATH",
+    "NVARCH",
+    "NVCOMPILERS",
+    "OMP_NUM_THREADS",
+    "PATH",
+    "TMPDIR",
+    "WM_NCOMPPROCS",
+    "WM_PROJECT_USER_DIR",
+    "XDG_CONFIG_HOME"
+  ],
+  "scope": "Only fixed compiler/SDK/loader/cache/run paths and flags are included. No captured process environment or environment table is included.",
+  "source_OpenCFD_pin": "b239fea6e48922730477e218c44e8b6a8ab17ade",
+  "compiler": "NVHPC26.9 nvc++26.9-0 CUDA13.3.73",
+  "compile_backend_flags": [
+    "-stdpar=gpu",
+    "-gpu=cc121,mem:managed",
+    "-DFOAM_OFFLOAD"
+  ],
+  "tiny_case_file_count": 9,
+  "mesh_CFD_timesteps": 0
+}

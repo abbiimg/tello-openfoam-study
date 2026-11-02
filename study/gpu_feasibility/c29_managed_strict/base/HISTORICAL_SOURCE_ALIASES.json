@@ -1,0 +1,1396 @@
+{
+  "schema": "c29-historical-source-to-package-aliases-v1",
+  "sources": {
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29BackendAudit.H": [
+      "source/legacy_candidate_v2_2/C29BackendAudit.H",
+      "recipes/candidate/C29BackendAudit.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29ExperimentAdmission.H": [
+      "source/legacy_candidate_v2_2/C29ExperimentAdmission.H",
+      "recipes/candidate/C29ExperimentAdmission.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29HostSource.H": [
+      "source/legacy_candidate_v2_2/C29HostSource.H",
+      "recipes/candidate/C29HostSource.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29Operators.H": [
+      "source/legacy_candidate_v2_2/C29Operators.H",
+      "recipes/candidate/C29Operators.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29Restrictions.H": [
+      "source/legacy_candidate_v2_2/C29Restrictions.H",
+      "recipes/candidate/C29Restrictions.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29SourceAccounting.H": [
+      "source/legacy_candidate_v2_2/C29SourceAccounting.H",
+      "recipes/candidate/C29SourceAccounting.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29ValidationThresholds.H": [
+      "source/legacy_candidate_v2_2/C29ValidationThresholds.H",
+      "recipes/candidate/C29ValidationThresholds.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29_body_verbatim.inc": [
+      "source/legacy_candidate_v2_2/C29_body_verbatim.inc",
+      "recipes/candidate/C29_body_verbatim.inc"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/C29_includes_verbatim.inc": [
+      "source/legacy_candidate_v2_2/C29_includes_verbatim.inc",
+      "recipes/candidate/C29_includes_verbatim.inc"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/COPYING": [
+      "source/legacy_candidate_v2_2/COPYING",
+      "recipes/candidate/COPYING"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/Make/files": [
+      "source/legacy_candidate_v2_2/Make/files",
+      "recipes/candidate/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/Make/options": [
+      "source/legacy_candidate_v2_2/Make/options",
+      "recipes/candidate/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/README.md": [
+      "source/legacy_candidate_v2_2/README.md",
+      "recipes/candidate/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/admission_audit.py": [
+      "source/legacy_candidate_v2_2/admission_audit.py",
+      "recipes/candidate/admission_audit.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/audit_candidate.py": [
+      "source/legacy_candidate_v2_2/audit_candidate.py",
+      "recipes/candidate/audit_candidate.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/c29NativeHybridFoam.C": [
+      "source/legacy_candidate_v2_2/c29NativeHybridFoam.C",
+      "recipes/candidate/c29NativeHybridFoam.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/c29NativeHybridFoam_body.txt": [
+      "source/legacy_candidate_v2_2/c29NativeHybridFoam_body.txt",
+      "recipes/candidate/c29NativeHybridFoam_body.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/candidate_manifest.json": [
+      "source/legacy_candidate_v2_2/candidate_manifest.json",
+      "recipes/candidate/candidate_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/createC29Fields.H": [
+      "source/legacy_candidate_v2_2/createC29Fields.H",
+      "recipes/candidate/createC29Fields.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/foundation14_phi/Make/files": [
+      "source/legacy_candidate_v2_2/foundation14_phi/Make/files",
+      "recipes/candidate/foundation14_phi/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/foundation14_phi/Make/options": [
+      "source/legacy_candidate_v2_2/foundation14_phi/Make/options",
+      "recipes/candidate/foundation14_phi/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/foundation14_phi/c29FoundationInitialPhi.C": [
+      "source/legacy_candidate_v2_2/foundation14_phi/c29FoundationInitialPhi.C",
+      "recipes/candidate/foundation14_phi/c29FoundationInitialPhi.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/c29InitialPhiControls.txt": [
+      "source/legacy_candidate_v2_2/recipe_templates/c29InitialPhiControls.txt",
+      "recipes/candidate/recipe_templates/c29InitialPhiControls.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/c29PortControls.txt": [
+      "source/legacy_candidate_v2_2/recipe_templates/c29PortControls.txt",
+      "recipes/candidate/recipe_templates/c29PortControls.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/fixed_controlDict_entries.txt": [
+      "source/legacy_candidate_v2_2/recipe_templates/fixed_controlDict_entries.txt",
+      "recipes/candidate/recipe_templates/fixed_controlDict_entries.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/native_PISO_entries.txt": [
+      "source/legacy_candidate_v2_2/recipe_templates/native_PISO_entries.txt",
+      "recipes/candidate/recipe_templates/native_PISO_entries.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/recipe_templates/native_transportProperties.txt": [
+      "source/legacy_candidate_v2_2/recipe_templates/native_transportProperties.txt",
+      "recipes/candidate/recipe_templates/native_transportProperties.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/reference_seed_geometry.json": [
+      "source/legacy_candidate_v2_2/reference_seed_geometry.json",
+      "recipes/candidate/reference_seed_geometry.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/Make/files": [
+      "source/legacy_candidate_v2_2/upstream/Make/files",
+      "recipes/candidate/upstream/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/Make/options": [
+      "source/legacy_candidate_v2_2/upstream/Make/options",
+      "recipes/candidate/upstream/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/createFields.H": [
+      "source/legacy_candidate_v2_2/upstream/createFields.H",
+      "recipes/candidate/upstream/createFields.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream/icoFoam.C": [
+      "source/legacy_candidate_v2_2/upstream/icoFoam.C",
+      "recipes/candidate/upstream/icoFoam.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream_license_header.txt": [
+      "source/legacy_candidate_v2_2/upstream_license_header.txt",
+      "recipes/candidate/upstream_license_header.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/upstream_to_candidate.patch": [
+      "source/legacy_candidate_v2_2/upstream_to_candidate.patch",
+      "recipes/candidate/upstream_to_candidate.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/validation_recipe.json": [
+      "source/legacy_candidate_v2_2/validation_recipe.json",
+      "recipes/candidate/validation_recipe.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate/validation_thresholds.json": [
+      "source/legacy_candidate_v2_2/validation_thresholds.json",
+      "recipes/candidate/validation_thresholds.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29BackendAudit.H": [
+      "source/reviewed_ownership_b/C29BackendAudit.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29ExperimentAdmission.H": [
+      "source/reviewed_ownership_b/C29ExperimentAdmission.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29HostSource.H": [
+      "source/reviewed_ownership_b/C29HostSource.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29ManagedOwnership.H": [
+      "source/reviewed_ownership_b/C29ManagedOwnership.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29Operators.H": [
+      "source/reviewed_ownership_b/C29Operators.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29Restrictions.H": [
+      "source/reviewed_ownership_b/C29Restrictions.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29SourceAccounting.H": [
+      "source/reviewed_ownership_b/C29SourceAccounting.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29ValidationThresholds.H": [
+      "source/reviewed_ownership_b/C29ValidationThresholds.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29_body_verbatim.inc": [
+      "source/reviewed_ownership_b/C29_body_verbatim.inc"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/C29_includes_verbatim.inc": [
+      "source/reviewed_ownership_b/C29_includes_verbatim.inc"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/COPYING": [
+      "source/reviewed_ownership_b/COPYING"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/Make/files": [
+      "source/reviewed_ownership_b/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/Make/options": [
+      "source/reviewed_ownership_b/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/OWNERSHIP_REVIEW.md": [
+      "source/reviewed_ownership_b/OWNERSHIP_REVIEW.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/README.md": [
+      "source/reviewed_ownership_b/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/admission_audit.py": [
+      "source/reviewed_ownership_b/admission_audit.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/audit_candidate.py": [
+      "source/reviewed_ownership_b/audit_candidate.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/c29NativeHybridFoam.C": [
+      "source/reviewed_ownership_b/c29NativeHybridFoam.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/c29NativeHybridFoam_body.txt": [
+      "source/reviewed_ownership_b/c29NativeHybridFoam_body.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/candidate_manifest.json": [
+      "source/reviewed_ownership_b/candidate_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/createC29Fields.H": [
+      "source/reviewed_ownership_b/createC29Fields.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/createC29ManagedPhi.H": [
+      "source/reviewed_ownership_b/createC29ManagedPhi.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/foundation14_phi/Make/files": [
+      "source/reviewed_ownership_b/foundation14_phi/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/foundation14_phi/Make/options": [
+      "source/reviewed_ownership_b/foundation14_phi/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/foundation14_phi/c29FoundationInitialPhi.C": [
+      "source/reviewed_ownership_b/foundation14_phi/c29FoundationInitialPhi.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/mechanical_source_check.json": [
+      "source/reviewed_ownership_b/mechanical_source_check.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_declaration_reversal_map.json": [
+      "source/reviewed_ownership_b/ownership_declaration_reversal_map.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_only.patch": [
+      "source/reviewed_ownership_b/ownership_only.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_proposal_manifest.json": [
+      "source/reviewed_ownership_b/ownership_proposal_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/ownership_review_bundle.json": [
+      "source/reviewed_ownership_b/ownership_review_bundle.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/c29InitialPhiControls.txt": [
+      "source/reviewed_ownership_b/recipe_templates/c29InitialPhiControls.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/c29PortControls.txt": [
+      "source/reviewed_ownership_b/recipe_templates/c29PortControls.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/fixed_controlDict_entries.txt": [
+      "source/reviewed_ownership_b/recipe_templates/fixed_controlDict_entries.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/native_PISO_entries.txt": [
+      "source/reviewed_ownership_b/recipe_templates/native_PISO_entries.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/recipe_templates/native_transportProperties.txt": [
+      "source/reviewed_ownership_b/recipe_templates/native_transportProperties.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/reference_seed_geometry.json": [
+      "source/reviewed_ownership_b/reference_seed_geometry.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/Make/files": [
+      "source/reviewed_ownership_b/upstream/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/Make/options": [
+      "source/reviewed_ownership_b/upstream/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/createFields.H": [
+      "source/reviewed_ownership_b/upstream/createFields.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream/icoFoam.C": [
+      "source/reviewed_ownership_b/upstream/icoFoam.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream_license_header.txt": [
+      "source/reviewed_ownership_b/upstream_license_header.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/upstream_to_candidate.patch": [
+      "source/reviewed_ownership_b/upstream_to_candidate.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/validation_recipe.json": [
+      "source/reviewed_ownership_b/validation_recipe.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_source_only_b/validation_thresholds.json": [
+      "source/reviewed_ownership_b/validation_thresholds.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29BackendAudit.H": [
+      "source/managed_strict_v2_3/C29BackendAudit.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29ExperimentAdmission.H": [
+      "source/managed_strict_v2_3/C29ExperimentAdmission.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29HostSource.H": [
+      "source/managed_strict_v2_3/C29HostSource.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29ManagedOwnership.H": [
+      "source/managed_strict_v2_3/C29ManagedOwnership.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29Operators.H": [
+      "source/managed_strict_v2_3/C29Operators.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29Restrictions.H": [
+      "source/managed_strict_v2_3/C29Restrictions.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29SourceAccounting.H": [
+      "source/managed_strict_v2_3/C29SourceAccounting.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29ValidationThresholds.H": [
+      "source/managed_strict_v2_3/C29ValidationThresholds.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29_body_verbatim.inc": [
+      "source/managed_strict_v2_3/C29_body_verbatim.inc"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/C29_includes_verbatim.inc": [
+      "source/managed_strict_v2_3/C29_includes_verbatim.inc"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/COPYING": [
+      "source/managed_strict_v2_3/COPYING"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/Make/files": [
+      "source/managed_strict_v2_3/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/Make/options": [
+      "source/managed_strict_v2_3/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/OWNERSHIP_REVIEW.md": [
+      "source/managed_strict_v2_3/OWNERSHIP_REVIEW.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/README.md": [
+      "source/managed_strict_v2_3/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/admission_audit.py": [
+      "source/managed_strict_v2_3/admission_audit.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/audit_candidate.py": [
+      "source/managed_strict_v2_3/audit_candidate.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/c29NativeHybridFoam.C": [
+      "source/managed_strict_v2_3/c29NativeHybridFoam.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/c29NativeHybridFoam_body.txt": [
+      "source/managed_strict_v2_3/c29NativeHybridFoam_body.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/candidate_manifest.json": [
+      "source/managed_strict_v2_3/candidate_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/createC29Fields.H": [
+      "source/managed_strict_v2_3/createC29Fields.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/createC29ManagedPhi.H": [
+      "source/managed_strict_v2_3/createC29ManagedPhi.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/foundation14_phi/Make/files": [
+      "source/managed_strict_v2_3/foundation14_phi/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/foundation14_phi/Make/options": [
+      "source/managed_strict_v2_3/foundation14_phi/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/foundation14_phi/c29FoundationInitialPhi.C": [
+      "source/managed_strict_v2_3/foundation14_phi/c29FoundationInitialPhi.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/mechanical_source_check.json": [
+      "source/managed_strict_v2_3/mechanical_source_check.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_declaration_reversal_map.json": [
+      "source/managed_strict_v2_3/ownership_declaration_reversal_map.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_only.patch": [
+      "source/managed_strict_v2_3/ownership_only.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_proposal_manifest.json": [
+      "source/managed_strict_v2_3/ownership_proposal_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/ownership_review_bundle.json": [
+      "source/managed_strict_v2_3/ownership_review_bundle.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/c29InitialPhiControls.txt": [
+      "source/managed_strict_v2_3/recipe_templates/c29InitialPhiControls.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/c29PortControls.txt": [
+      "source/managed_strict_v2_3/recipe_templates/c29PortControls.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/fixed_controlDict_entries.txt": [
+      "source/managed_strict_v2_3/recipe_templates/fixed_controlDict_entries.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/native_PISO_entries.txt": [
+      "source/managed_strict_v2_3/recipe_templates/native_PISO_entries.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/recipe_templates/native_transportProperties.txt": [
+      "source/managed_strict_v2_3/recipe_templates/native_transportProperties.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/reference_seed_geometry.json": [
+      "source/managed_strict_v2_3/reference_seed_geometry.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/Make/files": [
+      "source/managed_strict_v2_3/upstream/Make/files"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/Make/options": [
+      "source/managed_strict_v2_3/upstream/Make/options"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/createFields.H": [
+      "source/managed_strict_v2_3/upstream/createFields.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream/icoFoam.C": [
+      "source/managed_strict_v2_3/upstream/icoFoam.C"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream_license_header.txt": [
+      "source/managed_strict_v2_3/upstream_license_header.txt"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/upstream_to_candidate.patch": [
+      "source/managed_strict_v2_3/upstream_to_candidate.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/validation_recipe.json": [
+      "source/managed_strict_v2_3/validation_recipe.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/source/validation_thresholds.json": [
+      "source/managed_strict_v2_3/validation_thresholds.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/build_progress.json": [
+      "evidence/build/build_progress.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/collector_recovery.json": [
+      "evidence/build/collector_recovery.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/combined_source_manifest.json": [
+      "evidence/build/combined_source_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/compile_only_closure.json": [
+      "evidence/build/compile_only_closure.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_actual_child.json": [
+      "evidence/build/cpu_actual_child.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_build.log": [
+      "evidence/build/cpu_build.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_build_environment.sh": [
+      "evidence/build/cpu_build_environment.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_compiler_version.log": [
+      "evidence/build/cpu_compiler_version.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_elf_dynamic.log": [
+      "evidence/build/cpu_elf_dynamic.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_elf_header.log": [
+      "evidence/build/cpu_elf_header.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_environment_selected.json": [
+      "evidence/build/cpu_environment_selected.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_library_identity.json": [
+      "evidence/build/cpu_library_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_linked_identity.json": [
+      "evidence/build/cpu_linked_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_method_identity.json": [
+      "evidence/build/cpu_method_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/cpu_runtime_dependency_audit.log": [
+      "evidence/build/cpu_runtime_dependency_audit.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_actual_child.json": [
+      "evidence/build/gpu_actual_child.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_build.log": [
+      "evidence/build/gpu_build.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_build_environment.sh": [
+      "evidence/build/gpu_build_environment.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_compiler_version.log": [
+      "evidence/build/gpu_compiler_version.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_elf_dynamic.log": [
+      "evidence/build/gpu_elf_dynamic.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_elf_header.log": [
+      "evidence/build/gpu_elf_header.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_environment_selected.json": [
+      "evidence/build/gpu_environment_selected.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_library_identity.json": [
+      "evidence/build/gpu_library_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_linked_identity.json": [
+      "evidence/build/gpu_linked_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_method_identity.json": [
+      "evidence/build/gpu_method_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/gpu_runtime_dependency_audit.log": [
+      "evidence/build/gpu_runtime_dependency_audit.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/limited_combination.patch": [
+      "evidence/build/limited_combination.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/preparation.json": [
+      "evidence/build/preparation.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/attempt_a_environment_launcher_failure/build_progress.json": [
+      "evidence/build/attempt_a_environment_launcher_failure/build_progress.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/attempt_a_environment_launcher_failure/failure_note.json": [
+      "evidence/build/attempt_a_environment_launcher_failure/failure_note.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/managed_strict_combined_v2_3/attempt_b_cpu_collector_substring_failure/build_progress.json": [
+      "evidence/build/attempt_b_cpu_collector_substring_failure/build_progress.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/C29Restrictions.H": [
+      "evidence/strict_pressure_proposal/C29Restrictions.H",
+      "recipes/execution/strict_pressure_proposal/C29Restrictions.H"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/C29Restrictions_strict_pressure.patch": [
+      "evidence/strict_pressure_proposal/C29Restrictions_strict_pressure.patch",
+      "recipes/execution/strict_pressure_proposal/C29Restrictions_strict_pressure.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/README.md": [
+      "evidence/strict_pressure_proposal/README.md",
+      "recipes/execution/strict_pressure_proposal/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/analyze_five_steps_strict_candidate.py": [
+      "evidence/strict_pressure_proposal/analyze_five_steps_strict_candidate.py",
+      "recipes/execution/strict_pressure_proposal/analyze_five_steps_strict_candidate.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/analyzer_strict_pressure.patch": [
+      "evidence/strict_pressure_proposal/analyzer_strict_pressure.patch",
+      "recipes/execution/strict_pressure_proposal/analyzer_strict_pressure.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/proposal_build_record.json": [
+      "evidence/strict_pressure_proposal/proposal_build_record.json",
+      "recipes/execution/strict_pressure_proposal/proposal_build_record.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/root_authorization.json": [
+      "evidence/strict_pressure_proposal/root_authorization.json",
+      "recipes/execution/strict_pressure_proposal/root_authorization.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/source_proposal_manifest.json": [
+      "evidence/strict_pressure_proposal/source_proposal_manifest.json",
+      "recipes/execution/strict_pressure_proposal/source_proposal_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_admission.py": [
+      "evidence/strict_pressure_proposal/strict_pressure_admission.py",
+      "recipes/execution/strict_pressure_proposal/strict_pressure_admission.py",
+      "recipes/execution/strict_pressure_admission.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/strict_pressure_protocol.json": [
+      "evidence/strict_pressure_proposal/strict_pressure_protocol.json",
+      "recipes/execution/strict_pressure_proposal/strict_pressure_protocol.json",
+      "recipes/execution/strict_pressure_protocol.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_independent_review.json": [
+      "evidence/source_review/ownership_candidate_v2_3_independent_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/ownership_candidate_v2_3_independent_review.md": [
+      "evidence/source_review/ownership_candidate_v2_3_independent_review.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/physics_review.json": [
+      "evidence/source_review/physics_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/physics_review.md": [
+      "evidence/source_review/physics_review.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/root_experiment_authorization.json": [
+      "evidence/source_review/root_experiment_authorization.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate_v2_independent_review.json": [
+      "evidence/source_review/candidate_v2_independent_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/candidate_v2_independent_review.md": [
+      "evidence/source_review/candidate_v2_independent_review.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/cpu_execution.json": [
+      "evidence/strict_initial_runs/cpu_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/cpu_prelaunch.json": [
+      "evidence/strict_initial_runs/cpu_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/cpu_stdout.log": [
+      "evidence/strict_initial_runs/cpu_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/f14_execution.json": [
+      "evidence/strict_initial_runs/f14_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/f14_prelaunch.json": [
+      "evidence/strict_initial_runs/f14_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/f14_stdout.log": [
+      "evidence/strict_initial_runs/f14_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/gpu_execution.json": [
+      "evidence/strict_initial_runs/gpu_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/gpu_prelaunch.json": [
+      "evidence/strict_initial_runs/gpu_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/gpu_stdout.log": [
+      "evidence/strict_initial_runs/gpu_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_runs/initial_field_comparison.json": [
+      "evidence/strict_initial_runs/initial_field_comparison.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_execution.json": [
+      "evidence/strict_initial_shared_runs/cpu_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_prelaunch.json": [
+      "evidence/strict_initial_shared_runs/cpu_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/cpu_stdout.log": [
+      "evidence/strict_initial_shared_runs/cpu_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_execution.json": [
+      "evidence/strict_initial_shared_runs/gpu_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_prelaunch.json": [
+      "evidence/strict_initial_shared_runs/gpu_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/gpu_stdout.log": [
+      "evidence/strict_initial_shared_runs/gpu_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/initial_field_comparison.json": [
+      "evidence/strict_initial_shared_runs/initial_field_comparison.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_execution.json": [
+      "evidence/strict_runs/f14_control_five_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_prelaunch.json": [
+      "evidence/strict_runs/f14_control_five_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_control_five_stdout.log": [
+      "evidence/strict_runs/f14_control_five_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_execution.json": [
+      "evidence/strict_runs/native_cpu_five_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_prelaunch.json": [
+      "evidence/strict_runs/native_cpu_five_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_cpu_five_stdout.log": [
+      "evidence/strict_runs/native_cpu_five_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/f14_to_cpu_analysis.json": [
+      "evidence/strict_runs/f14_to_cpu_analysis.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_f14_to_cpu_external_gate.json": [
+      "evidence/strict_runs/root_f14_to_cpu_external_gate.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit.json": [
+      "evidence/strict_runs/root_input_audit.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_input_audit_binding_check.json": [
+      "evidence/strict_runs/root_input_audit_binding_check.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_resolved_dictionary_queries.json": [
+      "evidence/strict_runs/root_resolved_dictionary_queries.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_phase_dictionary_edits.json": [
+      "evidence/strict_runs/root_phase_dictionary_edits.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_launcher_review.json": [
+      "evidence/strict_runs/root_launcher_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/phase_archive.json": [
+      "evidence/strict_runs/phase_archive.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v1_independent_review.json": [
+      "evidence/strict_runs/gpu_profile_v1_independent_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v1_independent_review.md": [
+      "evidence/strict_runs/gpu_profile_v1_independent_review.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v2_containment_correction.patch": [
+      "evidence/strict_runs/gpu_profile_v2_containment_correction.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_independent_review.json": [
+      "evidence/strict_runs/gpu_profile_v3_independent_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_independent_review.md": [
+      "evidence/strict_runs/gpu_profile_v3_independent_review.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_outer_cleanup.patch": [
+      "evidence/strict_runs/gpu_profile_v3_outer_cleanup.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_approval.json": [
+      "evidence/strict_runs/root_gpu_profile_approval.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_profile_static_review.json": [
+      "evidence/strict_runs/root_gpu_profile_static_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/cpu_c29PortControls": [
+      "evidence/strict_runs/previous_controls/cpu_c29PortControls"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/f14_c29InitialPhiControls": [
+      "evidence/strict_runs/previous_controls/f14_c29InitialPhiControls"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/previous_controls/gpu_c29PortControls": [
+      "evidence/strict_runs/previous_controls/gpu_c29PortControls"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/README.md": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/helper_manifest.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/helper_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/helper_manifest_initial_source_only.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/helper_manifest_initial_source_only.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/installed_help_verification.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/installed_help_verification.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/profile_common.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/profile_common.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/protocol.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/protocol.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/run_actual_gpu_child.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/run_actual_gpu_child.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/run_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/run_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_frozen/validate_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_frozen/validate_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/README.md": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/helper_manifest.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/helper_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/helper_manifest_initial_source_only.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/helper_manifest_initial_source_only.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/installed_help_verification.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/installed_help_verification.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/profile_common.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/profile_common.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/protocol.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/protocol.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/run_actual_gpu_child.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/run_actual_gpu_child.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/run_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/run_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v1_later_snapshot/validate_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v1_later_snapshot/validate_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/README.md": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/helper_manifest.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/helper_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/helper_manifest_initial_source_only.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/helper_manifest_initial_source_only.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/installed_help_verification.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/installed_help_verification.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/owned_cleanup.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/owned_cleanup.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/profile_common.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/profile_common.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/protocol.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/protocol.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/run_actual_gpu_child.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/run_actual_gpu_child.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/run_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/run_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v2/validate_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v2/validate_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/README.md": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/README.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/helper_manifest.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/helper_manifest.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/helper_manifest_initial_source_only.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/helper_manifest_initial_source_only.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/installed_help_verification.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/installed_help_verification.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/owned_cleanup.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/owned_cleanup.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/profile_common.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/profile_common.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/protocol.json": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/protocol.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/run_actual_gpu_child.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/run_actual_gpu_child.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/run_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/run_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_proposal_v3/validate_gpu_profile.py": [
+      "recipes/profiling_history/gpu_profile_proposal_v3/validate_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_native_c29_cases.py": [
+      "recipes/execution/prepare_native_c29_cases.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_pressure_cases.py": [
+      "recipes/execution/prepare_strict_pressure_cases.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/STRICT_PRESSURE_RESTORATION.md": [
+      "recipes/execution/STRICT_PRESSURE_RESTORATION.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_independent_review.md": [
+      "recipes/execution/strict_restoration_independent_review.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_independent_review.json": [
+      "recipes/execution/strict_restoration_independent_review.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_source_checks.json": [
+      "recipes/execution/strict_restoration_source_checks.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restorer_root_approval.json": [
+      "recipes/execution/strict_restorer_root_approval.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_restoration_stdout.json": [
+      "recipes/execution/strict_restoration_stdout.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_permission_edits.json": [
+      "recipes/execution/strict_initial_permission_edits.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_fallback.json": [
+      "recipes/execution/strict_initial_shared_fallback.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_foundation14_fvSolution_adaptation.patch": [
+      "recipes/execution/strict_foundation14_fvSolution_adaptation.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_native_fvSolution_adaptation.patch": [
+      "recipes/execution/strict_native_fvSolution_adaptation.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_dictionary_queries.json": [
+      "recipes/execution/strict_dictionary_queries.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_shared_phi.py": [
+      "recipes/execution/prepare_strict_shared_phi.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_shared_initial_launcher.py": [
+      "recipes/execution/prepare_shared_initial_launcher.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compare_initial_cpu.py": [
+      "recipes/execution/compare_initial_cpu.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compare_strict_initial.py": [
+      "recipes/execution/compare_strict_initial.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compare_strict_shared_initial.py": [
+      "recipes/execution/compare_strict_shared_initial.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_initial_once.py": [
+      "recipes/execution/launch_strict_initial_once.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_initial_once.sh": [
+      "recipes/execution/launch_strict_initial_once.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_shared_initial_once.py": [
+      "recipes/execution/launch_strict_shared_initial_once.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_shared_initial_once.sh": [
+      "recipes/execution/launch_strict_shared_initial_once.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_f14_five_once.py": [
+      "recipes/execution/launch_strict_f14_five_once.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_f14_five_once.sh": [
+      "recipes/execution/launch_strict_f14_five_once.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_cpu_five_once.py": [
+      "recipes/execution/launch_strict_cpu_five_once.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/launch_strict_cpu_five_once.sh": [
+      "recipes/execution/launch_strict_cpu_five_once.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_five_admission.py": [
+      "recipes/execution/prepare_strict_five_admission.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_strict_five_launchers.py": [
+      "recipes/execution/prepare_strict_five_launchers.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_five_launcher_preparation.json": [
+      "recipes/execution/strict_five_launcher_preparation.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/write_strict_external_cpu_gate.py": [
+      "recipes/execution/write_strict_external_cpu_gate.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/analyze_five_steps.py": [
+      "recipes/execution/analyze_five_steps.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/analyze_five_steps_v1_f95aec1.py": [
+      "recipes/execution/analyze_five_steps_v1_f95aec1.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/analyze_five_steps_v2_1310a87.py": [
+      "recipes/execution/analyze_five_steps_v2_1310a87.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/FIVE_STEP_ANALYSIS.md": [
+      "recipes/execution/FIVE_STEP_ANALYSIS.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_provenance.json": [
+      "recipes/execution/five_step_analyzer_provenance.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_source_checks.json": [
+      "recipes/execution/five_step_analyzer_source_checks.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v1_to_v2.patch": [
+      "recipes/execution/five_step_analyzer_v1_to_v2.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v2_to_v3.patch": [
+      "recipes/execution/five_step_analyzer_v2_to_v3.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v2_parser_changes.json": [
+      "recipes/execution/five_step_analyzer_v2_parser_changes.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_analyzer_v3_parser_changes.json": [
+      "recipes/execution/five_step_analyzer_v3_parser_changes.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/five_step_parser_v3_reanalysis_record.json": [
+      "recipes/execution/five_step_parser_v3_reanalysis_record.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/finalize_five_step_parser_v3_and_strict_proposal.py": [
+      "recipes/execution/finalize_five_step_parser_v3_and_strict_proposal.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/admit_strict_gpu_profile.py": [
+      "recipes/execution/admit_strict_gpu_profile.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/run_approved_strict_gpu_profile_once.sh": [
+      "recipes/execution/run_approved_strict_gpu_profile_once.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/geometry_reference/reference_axial_speed.py": [
+      "recipes/geometry_reference/reference_axial_speed.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/prepare_managed_ownership_proposal.py": [
+      "recipes/build/prepare_managed_ownership_proposal.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/check_ownership_source_only.py": [
+      "recipes/build/check_ownership_source_only.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/prepare_combined_managed_strict.py": [
+      "recipes/build/prepare_combined_managed_strict.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py": [
+      "recipes/build/build_combined_managed_strict.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict_at_build_b.py": [
+      "recipes/build/build_combined_managed_strict_at_build_b.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/recollect_combined_cpu_only.py": [
+      "recipes/build/recollect_combined_cpu_only.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/prepare_c29_gpu_profile_protocol.py": [
+      "recipes/build/prepare_c29_gpu_profile_protocol.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/preserve_gpu_profile_v1_prepare_v2.py": [
+      "recipes/build/preserve_gpu_profile_v1_prepare_v2.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_control_five_execution.json": [
+      "evidence/legacy_relTol005/f14_control_five_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_control_five_prelaunch.json": [
+      "evidence/legacy_relTol005/f14_control_five_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_control_five_stdout.log": [
+      "evidence/legacy_relTol005/f14_control_five_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/native_cpu_five_execution.json": [
+      "evidence/legacy_relTol005/native_cpu_five_execution.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/native_cpu_five_prelaunch.json": [
+      "evidence/legacy_relTol005/native_cpu_five_prelaunch.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/native_cpu_five_stdout.log": [
+      "evidence/legacy_relTol005/native_cpu_five_stdout.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_to_native_cpu_validation_v2.json": [
+      "evidence/legacy_relTol005/f14_to_native_cpu_validation_v2.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_to_native_cpu_validation_v3.json": [
+      "evidence/legacy_relTol005/f14_to_native_cpu_validation_v3.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/Allrun": [
+      "case_inputs/foundation14_control/Allrun"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/benchmark_acceptance.json": [
+      "case_inputs/foundation14_control/benchmark_acceptance.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/benchmark_manifest.json": [
+      "case_inputs/foundation14_control/benchmark_manifest.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/case.foam": [
+      "case_inputs/foundation14_control/case.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/case_preparation.json": [
+      "case_inputs/foundation14_control/case_preparation.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/c29InitialPhiControls": [
+      "case_inputs/foundation14_control/constant/c29InitialPhiControls"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/fvModels": [
+      "case_inputs/foundation14_control/constant/fvModels"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/momentumTransport": [
+      "case_inputs/foundation14_control/constant/momentumTransport"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/physicalProperties": [
+      "case_inputs/foundation14_control/constant/physicalProperties"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/constant/rotorParameters": [
+      "case_inputs/foundation14_control/constant/rotorParameters"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/frozen_numerics_helper.py": [
+      "case_inputs/foundation14_control/frozen_numerics_helper.py"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/geometry.json": [
+      "case_inputs/foundation14_control/geometry.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/run_benchmark.py": [
+      "case_inputs/foundation14_control/run_benchmark.py"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/source_geometry.json": [
+      "case_inputs/foundation14_control/source_geometry.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/source_initialization.json": [
+      "case_inputs/foundation14_control/source_initialization.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/blockMeshDict": [
+      "case_inputs/foundation14_control/system/blockMeshDict"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/controlDict": [
+      "case_inputs/foundation14_control/system/controlDict"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/decomposeParDict": [
+      "case_inputs/foundation14_control/system/decomposeParDict"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/fvSchemes": [
+      "case_inputs/foundation14_control/system/fvSchemes"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/fvSolution": [
+      "case_inputs/foundation14_control/system/fvSolution"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/Allrun": [
+      "case_inputs/native_cpu/Allrun"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/benchmark_acceptance.json": [
+      "case_inputs/native_cpu/benchmark_acceptance.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/benchmark_manifest.json": [
+      "case_inputs/native_cpu/benchmark_manifest.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/case.foam": [
+      "case_inputs/native_cpu/case.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/case_preparation.json": [
+      "case_inputs/native_cpu/case_preparation.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/c29PortControls": [
+      "case_inputs/native_cpu/constant/c29PortControls"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/fvModels": [
+      "case_inputs/native_cpu/constant/fvModels"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/momentumTransport": [
+      "case_inputs/native_cpu/constant/momentumTransport"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/physicalProperties": [
+      "case_inputs/native_cpu/constant/physicalProperties"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/rotorParameters": [
+      "case_inputs/native_cpu/constant/rotorParameters"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/transportProperties": [
+      "case_inputs/native_cpu/constant/transportProperties"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/frozen_numerics_helper.py": [
+      "case_inputs/native_cpu/frozen_numerics_helper.py"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/geometry.json": [
+      "case_inputs/native_cpu/geometry.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/run_benchmark.py": [
+      "case_inputs/native_cpu/run_benchmark.py"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/source_geometry.json": [
+      "case_inputs/native_cpu/source_geometry.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/source_initialization.json": [
+      "case_inputs/native_cpu/source_initialization.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/blockMeshDict": [
+      "case_inputs/native_cpu/system/blockMeshDict"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/controlDict": [
+      "case_inputs/native_cpu/system/controlDict"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/decomposeParDict": [
+      "case_inputs/native_cpu/system/decomposeParDict"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSchemes": [
+      "case_inputs/native_cpu/system/fvSchemes"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSolution": [
+      "case_inputs/native_cpu/system/fvSolution"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_geometry_reference_20261102/cache/quadrature.csv": [
+      "geometry_cache/quadrature.csv"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_geometry_reference_20261102/cache/rotors.csv": [
+      "geometry_cache/rotors.csv"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/U": [
+      "saved_fields/foundation14_control/0.6001/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/U": [
+      "saved_fields/native_cpu/0.6001/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/p": [
+      "saved_fields/foundation14_control/0.6001/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/p": [
+      "saved_fields/native_cpu/0.6001/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6001/phi": [
+      "saved_fields/foundation14_control/0.6001/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6001/phi": [
+      "saved_fields/native_cpu/0.6001/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/U": [
+      "saved_fields/foundation14_control/0.6002/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/U": [
+      "saved_fields/native_cpu/0.6002/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/p": [
+      "saved_fields/foundation14_control/0.6002/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/p": [
+      "saved_fields/native_cpu/0.6002/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6002/phi": [
+      "saved_fields/foundation14_control/0.6002/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6002/phi": [
+      "saved_fields/native_cpu/0.6002/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/U": [
+      "saved_fields/foundation14_control/0.6003/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/U": [
+      "saved_fields/native_cpu/0.6003/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/p": [
+      "saved_fields/foundation14_control/0.6003/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/p": [
+      "saved_fields/native_cpu/0.6003/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6003/phi": [
+      "saved_fields/foundation14_control/0.6003/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6003/phi": [
+      "saved_fields/native_cpu/0.6003/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/U": [
+      "saved_fields/foundation14_control/0.6004/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/U": [
+      "saved_fields/native_cpu/0.6004/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/p": [
+      "saved_fields/foundation14_control/0.6004/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/p": [
+      "saved_fields/native_cpu/0.6004/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6004/phi": [
+      "saved_fields/foundation14_control/0.6004/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6004/phi": [
+      "saved_fields/native_cpu/0.6004/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/U": [
+      "saved_fields/foundation14_control/0.6005/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/U": [
+      "saved_fields/native_cpu/0.6005/U"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/p": [
+      "saved_fields/foundation14_control/0.6005/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/p": [
+      "saved_fields/native_cpu/0.6005/p"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6005/phi": [
+      "saved_fields/foundation14_control/0.6005/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/0.6005/phi": [
+      "saved_fields/native_cpu/0.6005/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/0.6/phi": [
+      "shared_initial/phi"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.json": [
+      "evidence/launch_receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.foam": [
+      "evidence/launch_receipts/c29_strict_native_cpu_2ead3e1d378e4bba9c58f07988172fa4.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.json": [
+      "evidence/launch_receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.foam": [
+      "evidence/launch_receipts/c29_strict_native_gpu_907d502eb17c479c8d6453efcf7bd458.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.json": [
+      "evidence/launch_receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.foam": [
+      "evidence/launch_receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_cpu_20261102_a.json": [
+      "evidence/launch_receipts/c29_strict_shared_initial_cpu_20261102_a.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_cpu_20261102_a.foam": [
+      "evidence/launch_receipts/c29_strict_shared_initial_cpu_20261102_a.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_gpu_20261102_a.json": [
+      "evidence/launch_receipts/c29_strict_shared_initial_gpu_20261102_a.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_initial_gpu_20261102_a.foam": [
+      "evidence/launch_receipts/c29_strict_shared_initial_gpu_20261102_a.foam"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_cpu_20261102_a.json": [
+      "evidence/launch_receipts/c29_strict_shared_five_cpu_20261102_a.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_cpu_20261102_a.foam": [
+      "evidence/launch_receipts/c29_strict_shared_five_cpu_20261102_a.foam"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_start.json": [
+      "evidence/gpu_transient_failure/actual_solver_start.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_spawn.json": [
+      "evidence/gpu_transient_failure/actual_solver_spawn.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_solver_exit.json": [
+      "evidence/gpu_transient_failure/actual_solver_exit.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_wrapper_start.json": [
+      "evidence/gpu_transient_failure/actual_wrapper_start.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/actual_wrapper_exit.json": [
+      "evidence/gpu_transient_failure/actual_wrapper_exit.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/outer_prelaunch.json": [
+      "evidence/gpu_transient_failure/outer_prelaunch.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/profiler_exit.json": [
+      "evidence/gpu_transient_failure/profiler_exit.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/functional_profile_v1_20261102/profiler.log": [
+      "evidence/gpu_transient_failure/profiler.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/native_gpu_five_stdout.log": [
+      "evidence/gpu_transient_failure/native_gpu_five_stdout.log"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.json": [
+      "evidence/launch_receipts/c29_strict_shared_five_gpu_20261102_a.json"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_shared_five_gpu_20261102_a.foam": [
+      "evidence/launch_receipts/c29_strict_shared_five_gpu_20261102_a.foam"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_cpu_evidence_map.md": [
+      "evidence/curation_review/c29_cpu_evidence_map.md"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_cpu_evidence_map.json": [
+      "evidence/curation_review/c29_cpu_evidence_map.json"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/source/C29ExperimentAdmission.H": [
+      "source/foundation14_phi_actual_v2_2/C29ExperimentAdmission.H"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/source/foundation14_phi/c29FoundationInitialPhi.C": [
+      "source/foundation14_phi_actual_v2_2/foundation14_phi/c29FoundationInitialPhi.C"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/source/foundation14_phi/Make/options": [
+      "source/foundation14_phi_actual_v2_2/foundation14_phi/Make/options"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/source/foundation14_phi/Make/files": [
+      "source/foundation14_phi_actual_v2_2/foundation14_phi/Make/files"
+    ],
+    "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/library_identity.json": [
+      "evidence/foundation14_phi_build/library_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_build.log": [
+      "evidence/foundation14_phi_build/foundation14_phi_build.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_runtime_dependency_audit.log": [
+      "evidence/foundation14_phi_build/foundation14_phi_runtime_dependency_audit.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_elf_dynamic.log": [
+      "evidence/foundation14_phi_build/foundation14_phi_elf_dynamic.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_elf_header.log": [
+      "evidence/foundation14_phi_build/foundation14_phi_elf_header.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_linked_identity.json": [
+      "evidence/foundation14_phi_build/foundation14_phi_linked_identity.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_source_compatibility.json": [
+      "evidence/foundation14_phi_build/foundation14_phi_source_compatibility.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/foundation14_phi_compatibility_from_v2_1.patch": [
+      "evidence/foundation14_phi_build/foundation14_phi_compatibility_from_v2_1.patch"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/phi_utility_v2_build_record.json": [
+      "evidence/foundation14_phi_build/phi_utility_v2_build_record.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/phi_utility_v2_build.log": [
+      "evidence/foundation14_phi_build/phi_utility_v2_build.log"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/f14_phi_header_evidence.json": [
+      "evidence/foundation14_phi_build/f14_phi_header_evidence.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_phi_build_clone.py": [
+      "recipes/execution/prepare_phi_build_clone.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_phi_header_compat.py": [
+      "recipes/execution/prepare_phi_header_compat.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/prepare_phi_time_compat.py": [
+      "recipes/execution/prepare_phi_time_compat.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compile_phi_once.sh": [
+      "recipes/execution/compile_phi_once.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compile_phi_compat_v2_1.sh": [
+      "recipes/execution/compile_phi_compat_v2_1.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/compile_phi_compat_v2_2.sh": [
+      "recipes/execution/compile_phi_compat_v2_2.sh"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/collect_phi_build_record.py": [
+      "recipes/execution/collect_phi_build_record.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/collect_linked_binary_identities.py": [
+      "recipes/execution/collect_linked_binary_identities.py"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/dynamicCode/rotors/codedFvModelTemplate.C": [
+      "source/foundation14_recorded_dynamicCode/codedFvModelTemplate.C"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/dynamicCode/rotors/codedFvModelTemplate.H": [
+      "source/foundation14_recorded_dynamicCode/codedFvModelTemplate.H"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/dynamicCode/rotors/Make/files": [
+      "source/foundation14_recorded_dynamicCode/Make/files"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/dynamicCode/rotors/Make/options": [
+      "source/foundation14_recorded_dynamicCode/Make/options"
+    ],
+    "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/dynamicCode/rotors/Make/SHA1Digest": [
+      "source/foundation14_recorded_dynamicCode/Make/SHA1Digest"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_gpu_v2_3_failed_terminal_reconciliation.json": [
+      "evidence/gpu_transient_failure/root_gpu_v2_3_failed_terminal_reconciliation.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_native_field_copy_verification.json": [
+      "evidence/curation_review/native_field_copy_verification.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_native_field_second_pass.json": [
+      "evidence/curation_review/native_field_second_pass.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_offline_recipe_fixtures.json": [
+      "evidence/curation_review/offline_recipe_fixtures.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_real_seed_preflight.json": [
+      "evidence/curation_review/real_seed_preflight.json"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_restore_completed_evidence_recipe.py": [
+      "recipes/restore_completed_evidence.py"
+    ],
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_replay_completed_cpu_analysis_recipe.py": [
+      "recipes/replay_completed_cpu_analysis.py"
+    ]
+  },
+  "original_absolute_paths_are_not_portability_claims": true,
+  "external_prerequisites": "DEPENDENCY_MAP.json"
+}

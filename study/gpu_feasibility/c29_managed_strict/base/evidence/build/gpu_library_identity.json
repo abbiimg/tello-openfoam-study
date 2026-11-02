@@ -1,0 +1,140 @@
+{
+  "schema": "c29-private-linked-library-identity-v1",
+  "backend": "gpu",
+  "files": [
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvhpcmanaux.so",
+      "sha256": "67551ea9f21fff11e6d4d3144df180d6c568c4d48fe004c6dea397326a6d15a5",
+      "size_bytes": 72568
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvmalloc.so",
+      "sha256": "644f811d60944ec9b77f9f015d90bf100b6000b9442f5d437183a82244b8bb45",
+      "size_bytes": 7461192
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libfiniteVolume.so",
+      "sha256": "d713f08fe815643117e83fe3a17ce5a8894dac28bed56b10fa8d0a7477bebc76",
+      "size_bytes": 510979192
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libmeshTools.so",
+      "sha256": "964f1b2ace5618b4967fabef0e6e884dfb0b0cd412a6b7d9c99b6d5d85751c37",
+      "size_bytes": 88133544
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/cuda/13.3/targets/sbsa-linux/lib/libcudart.so.13.3.29",
+      "sha256": "83b2ccdccdbb285613a97e8be332d1b17cbd55e267e1d2e047adb3081660335e",
+      "size_bytes": 785664
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libOpenFOAM.so",
+      "sha256": "7d4befeac01a410631071f7edcb887de17a8b7937950d5a4ebc14058426bcbfb",
+      "size_bytes": 154189792
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libm.so.6",
+      "sha256": "5e0391562de36de323fb9cb0f2c1b6bd6d034c840b1dac018499f5fe4ded1b4a",
+      "size_bytes": 591800
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libcudanvhpc.so",
+      "sha256": "d32a528662e0ea5cbcb607a92dee4e4dded5638f89119df340b9df480e3a7a78",
+      "size_bytes": 129344
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libacchost.so",
+      "sha256": "5158bb7f3453d69a7ea4a84ad85ceae5ab86d2ae6866fc73d45ce9d66f1c8501",
+      "size_bytes": 2148968
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libaccdevaux.so",
+      "sha256": "0dbe92026e13822fa30d09b0342f4d8efd35d0749b2996e9374755e5b9ba4813",
+      "size_bytes": 467872
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libaccdevice.so",
+      "sha256": "1abd4f424f04666f5d1031d43f20bff84c3ffbec4e14fd136f36672b06755cf0",
+      "size_bytes": 1163352
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvhpcatm.so",
+      "sha256": "021c35d8da7b2da151654ed2785c460171aa7e2d46ea6b02941f4616753f9324",
+      "size_bytes": 81960
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.33",
+      "sha256": "6e3112d35cfc86db7ee85b27e1746f67408e2837ff8628b46386c3eabd5682a4",
+      "size_bytes": 2633224
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvomp.so",
+      "sha256": "0c62327b3de7470efbbf1db8913b4f01dd64da7cbb4142fc49979178056c7899",
+      "size_bytes": 3627296
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvcpumath.so",
+      "sha256": "7647a7a546119231c63664a52c24889bc2ffcf9f074dcf79acfa2b769d9b0f11",
+      "size_bytes": 1789016
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/compilers/lib/libnvc.so",
+      "sha256": "d3a8bbf8984936497a7a1a1a457654e05380375c2327919f06c0d7ceff37dbba",
+      "size_bytes": 447176
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+      "sha256": "f2d3ad2bf0b61f6bc944cc37d7b6ab7f88d2582b41ff989ca164803f56cc5f20",
+      "size_bytes": 133696
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libc.so.6",
+      "sha256": "0f1905dc27dbc6715875c70527bc8da846a10084c9c483e9d8ff76dce8d69d0e",
+      "size_bytes": 1722920
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/dummy/libPstream.so",
+      "sha256": "6d28006186636537a7e2dac8acb8ce62aafd0020560ed2630c172af458073d7f",
+      "size_bytes": 1503168
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+      "sha256": "390027e5f45f236bd1838bc54bf464c5ff01d260ab9f8b415ea8276641bce505",
+      "size_bytes": 203968
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libdl.so.2",
+      "sha256": "1c16b2692a155191c97d7fdc5ce937d37c242435f05745046a794a9832b16af4",
+      "size_bytes": 67440
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libpthread.so.0",
+      "sha256": "6f1ab9e7d7de142dc5e2feaf6d19faceff0a0f40d5e225c922899f5362b8c353",
+      "size_bytes": 67440
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libfileFormats.so",
+      "sha256": "81635273586c62c98497297a01d4956ea7457931a948704976fab73fd8d23700",
+      "size_bytes": 13289936
+    },
+    {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/platforms/linuxARM64Nvidia-gpuDPInt32Opt/lib/libsurfMesh.so",
+      "sha256": "0fcb754eea91e0e545172b0bf19ac026f9fb72711762b422a00c1deb36f3b8d4",
+      "size_bytes": 36628512
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/librt.so.1",
+      "sha256": "93d0d5ab643b50ac1a61c2c7baf670e8aa94973fa5a2584d13db05295d5b5a0e",
+      "size_bytes": 67512
+    },
+    {
+      "path": "/usr/lib/aarch64-linux-gnu/libz.so.1.3",
+      "sha256": "52a1d5c0cbffb3596c7f0636cb1af8e131e00eb77ff92d1353057d5161d420d3",
+      "size_bytes": 133272
+    }
+  ],
+  "identity_collector_executed_main": false,
+  "basis": "ldd in matching private reviewed environment; no application main/initialization/CFD run",
+  "method_identity_sha256": "a9abf670570979210cccefbff481dd206d8ee11ebf988afbac99fcf7ee6404fa",
+  "source_tree_sha256": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b"
+}

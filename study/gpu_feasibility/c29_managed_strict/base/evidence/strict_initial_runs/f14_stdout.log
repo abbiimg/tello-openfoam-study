@@ -1,0 +1,27 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-a4867fc914c1
+Exec   : /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/f14_phi_compat_v2_2_20261102/bin/c29FoundationInitialPhi -case /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control
+Date   : Nov 02 2026
+Time   : 05:26:07
+Host   : "abby-spark"
+PID    : 389287
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control
+nProcs : 1
+sigFpe : Floating point exception trapping - not supported on this platform
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.6
+
+C29_EXPERIMENTAL_UNVALIDATED phase=foundation_initial_phi backend=cpu case="/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control" id="c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46" inputSnapshot="f0aa4f40bf69de318835dfaa69bc02f42d60903edfe9108e01ba41ef3d61f579" launchReceipt="21316981cb55876c7a521139e137386376e14e167d09eb416fe8f50f83d5eef3" candidate="562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7" binary="161be52ffe49e0a5ec62093f4fc92a5a215f1976be141edc3965294fe8fc8888" libraries="91a08df81f64d3d0296d22c11ad40a9b3d6b524a9bb9fb1124665abb2bb8b7d5"; permission/input audit are NOT runtime acceptance
+INITIAL_PHI_ONLY: no source, no timestep; hash this fresh output and copy the SAME bytes into both approved fresh controls

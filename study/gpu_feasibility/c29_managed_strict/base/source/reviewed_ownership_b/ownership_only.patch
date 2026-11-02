@@ -1,0 +1,356 @@
+--- native2.2/c29NativeHybridFoam.C
++++ ownership_source_only/c29NativeHybridFoam.C
+@@ -36,6 +36,7 @@
+ #include "fvCFD.H"
+ #include "pisoControl.H"
+ #include "C29BackendAudit.H"
++#include "C29ManagedOwnership.H"
+ #include "C29Restrictions.H"
+ #include "C29Operators.H"
+ #include "C29HostSource.H"
+@@ -71,12 +72,27 @@
+     C29::managedPointer(p.primitiveField().cdata(),p.size(),"initial p");
+     C29::managedPointer(phi.primitiveField().cdata(),phi.size(),"initial phi");
+     {
+-        volVectorField initialU(IOobject("c29_initialU",runTime.timeName(),mesh,
+-            IOobject::NO_READ,IOobject::NO_WRITE,false),U);
+-        volScalarField initialP(IOobject("c29_initialP",runTime.timeName(),mesh,
+-            IOobject::NO_READ,IOobject::NO_WRITE,false),p);
+-        surfaceScalarField initialPhi(IOobject("c29_initialPhi",runTime.timeName(),mesh,
+-            IOobject::NO_READ,IOobject::NO_WRITE,false),phi);
++        autoPtr<volVectorField> initialUOwner
++        (
++            new volVectorField(IOobject("c29_initialU",runTime.timeName(),mesh,
++            IOobject::NO_READ,IOobject::NO_WRITE,false),U)
++        );
++        volVectorField& initialU=initialUOwner();
++        C29::managedGeometricField(initialU,"initialU");
++        autoPtr<volScalarField> initialPOwner
++        (
++            new volScalarField(IOobject("c29_initialP",runTime.timeName(),mesh,
++            IOobject::NO_READ,IOobject::NO_WRITE,false),p)
++        );
++        volScalarField& initialP=initialPOwner();
++        C29::managedGeometricField(initialP,"initialP");
++        autoPtr<surfaceScalarField> initialPhiOwner
++        (
++            new surfaceScalarField(IOobject("c29_initialPhi",runTime.timeName(),mesh,
++            IOobject::NO_READ,IOobject::NO_WRITE,false),phi)
++        );
++        surfaceScalarField& initialPhi=initialPhiOwner();
++        C29::managedGeometricField(initialPhi,"initialPhi");
+         C29::sync("initial audit field copies complete");
+         C29::require(initialU.write()&&initialP.write()&&initialPhi.write(),
+             "Initial audit field write failed");
+@@ -103,11 +119,13 @@
+             #include "CourantNo.H"
+             tmp<fvVectorMatrix> tUEqn=C29::momentum(U,phi,nuEff);
+             fvVectorMatrix& UEqn=tUEqn.ref();
++            C29::managedMatrix(UEqn,"UEqn_existing_tmp_heap");
+             C29::applyHostSource(mesh,UEqn);
+             // No relaxation: the input scope forbids relaxation factors.
+             {
+                 C29::Range predictorRange("C29_CORE_MOMENTUM_PREDICTOR_UFINAL");
+                 auto predictor=(UEqn == -fvc::grad(p));
++                C29::managedMatrix(predictor(),"predictor_existing_tmp_heap");
+                 Info<<"C29_SOLVER momentum=UFinal"<<endl;
+                 predictor.ref().solve(mesh.solverDict("UFinal"));
+                 C29::sync("momentum predictor complete");
+@@ -115,23 +133,41 @@
+             while (piso.correct())
+             {
+                 C29::Range pressureRange("C29_CORE_PRESSURE_CORRECTOR");
+-                volScalarField rAU(1.0/UEqn.A());
+-                volVectorField HbyA(constrainHbyA(rAU*UEqn.H(),U,p));
+-                surfaceScalarField phiHbyA
++                autoPtr<volScalarField> rAUOwner
+                 (
++                    new volScalarField(1.0/UEqn.A())
++                );
++                volScalarField& rAU=rAUOwner();
++                C29::managedGeometricField(rAU,"rAU");
++                autoPtr<volVectorField> HbyAOwner
++                (
++                    new volVectorField(constrainHbyA(rAU*UEqn.H(),U,p))
++                );
++                volVectorField& HbyA=HbyAOwner();
++                C29::managedGeometricField(HbyA,"HbyA");
++                autoPtr<surfaceScalarField> phiHbyAOwner
++                (
++                    new surfaceScalarField(
+                     "phiHbyA",fvc::flux(HbyA)
+                     +fvc::interpolate(rAU)*C29::eulerPhiCorrection(U,phi)
++                )
+                 );
++                surfaceScalarField& phiHbyA=phiHbyAOwner();
++                C29::managedGeometricField(phiHbyA,"phiHbyA");
+                 // Anchored totalPressure makes adjustPhi a no-op; both branch
+                 // helpers internally check p.needReference(). No forced gauge.
+                 adjustPhi(phiHbyA,U,p);
+                 constrainPressure(p,U,phiHbyA,rAU);
+                 while (piso.correctNonOrthogonal())
+                 {
+-                    fvScalarMatrix pEqn
++                    autoPtr<fvScalarMatrix> pEqnOwner
+                     (
++                        new fvScalarMatrix(
+                         fvm::laplacian(rAU,p)==fvc::div(phiHbyA)
++                    )
+                     );
++                    fvScalarMatrix& pEqn=pEqnOwner();
++                    C29::managedMatrix(pEqn,"pEqn");
+                     pEqn.setReference(pRefCell,pRefValue);
+                     const word selected=p.select(piso.finalInnerIter());
+                     Info<<"C29_SOLVER pressure="<<selected<<endl;
+--- native2.2/createC29Fields.H
++++ ownership_source_only/createC29Fields.H
+@@ -22,8 +22,9 @@
+ );
+ 
+ Info<< "Reading field p\n" << endl;
+-volScalarField p
++autoPtr<volScalarField> pOwner
+ (
++    new volScalarField(
+     IOobject
+     (
+         "p",
+@@ -33,12 +34,16 @@
+         IOobject::AUTO_WRITE
+     ),
+     mesh
++)
+ );
++volScalarField& p=pOwner();
++C29::managedGeometricField(p,"p");
+ 
+ 
+ Info<< "Reading field U\n" << endl;
+-volVectorField U
++autoPtr<volVectorField> UOwner
+ (
++    new volVectorField(
+     IOobject
+     (
+         "U",
+@@ -48,10 +53,13 @@
+         IOobject::AUTO_WRITE
+     ),
+     mesh
++)
+ );
++volVectorField& U=UOwner();
++C29::managedGeometricField(U,"U");
+ 
+ 
+-#include "createPhi.H"
++#include "createC29ManagedPhi.H"
+ 
+ 
+ label pRefCell = 0;
+@@ -60,8 +68,12 @@
+ mesh.setFluxRequired(p.name());
+ 
+ // Constant laminar nuEff. Incompressible alpha/rho model multipliers are one.
+-volScalarField nuEff
++autoPtr<volScalarField> nuEffOwner
+ (
++    new volScalarField(
+     IOobject("nuEff",runTime.constant(),mesh,IOobject::NO_READ,IOobject::NO_WRITE,false),
+     mesh,nu
++)
+ );
++volScalarField& nuEff=nuEffOwner();
++C29::managedGeometricField(nuEff,"nuEff");
+--- native2.2/C29Operators.H
++++ ownership_source_only/C29Operators.H
+@@ -6,6 +6,7 @@
+ #define C29Operators_H
+ #include <limits>
+ #include "C29BackendAudit.H"
++#include "C29ManagedOwnership.H"
+ namespace C29
+ {
+ inline Foam::tmp<Foam::fvVectorMatrix> momentum
+@@ -18,12 +19,21 @@
+     using namespace Foam;
+     Range range("C29_CORE_MOMENTUM_ASSEMBLY");
+     const fvMesh& mesh=U.mesh();
+-    surfaceScalarField nuFace("c29NuFace",fvc::interpolate(nuEff));
+-    surfaceVectorField devTauCorrFlux
++    autoPtr<surfaceScalarField> nuFaceOwner
+     (
++        new surfaceScalarField("c29NuFace",fvc::interpolate(nuEff))
++    );
++    surfaceScalarField& nuFace=nuFaceOwner();
++    C29::managedGeometricField(nuFace,"nuFace");
++    autoPtr<surfaceVectorField> devTauCorrFluxOwner
++    (
++        new surfaceVectorField(
+         "devTauCorrFlux",
+         -nuFace*fvc::dotInterpolate(mesh.Sf(),dev2(T(fvc::grad(U))))
++    )
+     );
++    surfaceVectorField& devTauCorrFlux=devTauCorrFluxOwner();
++    C29::managedGeometricField(devTauCorrFlux,"devTauCorrFlux");
+     // Exact F14 divc identity when !fluxRequired(U). No cell-tensor shortcut.
+     tmp<fvVectorMatrix> result
+     (
+@@ -31,6 +41,7 @@
+       - fvm::laplacian(nuFace,U)
+       + fvm::Su(fvc::div(devTauCorrFlux),U)
+     );
++    C29::managedMatrix(result(),"momentum_result_existing_tmp_heap");
+     sync("momentum assembly before temporary destruction");
+     return result;
+ }
+@@ -43,13 +54,18 @@
+     using namespace Foam;
+     // Only static mesh/no MRF/null Uf/constant-density Euler is supported.
+     const fvMesh& mesh=U.mesh();
+-    surfaceScalarField dPhi
++    autoPtr<surfaceScalarField> dPhiOwner
+     (
++        new surfaceScalarField(
+         "c29EulerDeltaPhi",
+         phi.oldTime()-fvc::dotInterpolate(mesh.Sf(),U.oldTime())
++    )
+     );
+-    surfaceScalarField coupling
++    surfaceScalarField& dPhi=dPhiOwner();
++    C29::managedGeometricField(dPhi,"dPhi");
++    autoPtr<surfaceScalarField> couplingOwner
+     (
++        new surfaceScalarField(
+         "c29EulerCoupling",
+         scalar(1)-min
+         (
+@@ -59,7 +75,10 @@
+             )),
+             scalar(1)
+         )
++    )
+     );
++    surfaceScalarField& coupling=couplingOwner();
++    C29::managedGeometricField(coupling,"coupling");
+     sync("before Euler noncoupled patch mask");
+     forAll(U.boundaryField(),patchi)
+     {
+@@ -68,6 +87,7 @@
+     }
+     const dimensionedScalar rDeltaT=scalar(1)/mesh.time().deltaT();
+     tmp<surfaceScalarField> result(coupling*rDeltaT*dPhi);
++    C29::managedGeometricField(result(),"Euler_result_existing_tmp_heap");
+     sync("Euler correction before temporary destruction");
+     return result;
+ }
+--- native2.2/C29HostSource.H
++++ ownership_source_only/C29HostSource.H
+@@ -5,6 +5,7 @@
+ #include <limits>
+ #include <type_traits>
+ #include "C29BackendAudit.H"
++#include "C29ManagedOwnership.H"
+ #include "C29SourceAccounting.H"
+ // Preserved include fragment MUST be at translation-unit scope.
+ #include "C29_includes_verbatim.inc"
+@@ -109,7 +110,12 @@
+ {
+     using namespace Foam;
+     const auto& U=mesh.lookupObject<volVectorField>("U");
+-    fvVectorMatrix source(U,UEqn.dimensions());
++    autoPtr<fvVectorMatrix> sourceOwner
++    (
++        new fvVectorMatrix(U,UEqn.dimensions())
++    );
++    fvVectorMatrix& source=sourceOwner();
++    C29::managedMatrix(source,"source");
+     const SourceObservation observation=addHostSource(mesh,source);
+     sync("before applied-source accounting snapshot");
+     managedPointer(UEqn.source().cdata(),UEqn.source().size(),"momentum source");
+--- native2.2/vendor/createPhi.H
++++ ownership_source_only/createC29ManagedPhi.H
+@@ -35,8 +35,9 @@
+ 
+ Info<< "Reading/calculating face flux field phi\n" << endl;
+ 
+-surfaceScalarField phi
++autoPtr<surfaceScalarField> phiOwner
+ (
++    new surfaceScalarField(
+     IOobject
+     (
+         "phi",
+@@ -46,7 +47,10 @@
+         IOobject::AUTO_WRITE
+     ),
+     fvc::flux(U)
++)
+ );
++surfaceScalarField& phi=phiOwner();
++C29::managedGeometricField(phi,"phi");
+ 
+ 
+ // ************************************************************************* //
+--- /dev/null
++++ ownership_source_only/C29ManagedOwnership.H
+@@ -0,0 +1,59 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++// SOURCE-ONLY PROPOSAL: address checks, no numerical or controller operation.
++#ifndef C29ManagedOwnership_H
++#define C29ManagedOwnership_H
++#include "C29BackendAudit.H"
++#include <iostream>
++#include <string>
++namespace C29
++{
++inline void ownedAddress(const void* pointer,const Foam::label count,
++    const std::string& name,const char* kind)
++{
++#if C29_USE_CUDA
++    if (!count) return;
++    cudaPointerAttributes attributes{};
++    checked(cudaPointerGetAttributes(&attributes,pointer),name.c_str());
++    if (attributes.type!=cudaMemoryTypeManaged)
++        FatalErrorInFunction<<name.c_str()<<" "<<kind
++            <<" must be CUDA-managed; observed type="<<int(attributes.type)
++            <<Foam::exit(Foam::FatalError);
++    std::cout<<"C29_OWNERSHIP name="<<name<<" kind="<<kind
++        <<" address="<<pointer<<" type="<<int(attributes.type)<<std::endl;
++#else
++    (void)pointer;(void)count;(void)name;(void)kind;
++#endif
++}
++template<class Array> inline void managedArray(const Array& array,
++    const std::string& name)
++{
++    ownedAddress(&array,1,name,"descriptor");
++    ownedAddress(array.cdata(),array.size(),name,"data");
++}
++template<class GeoField> inline void managedGeometricField(const GeoField& field,
++    const char* name)
++{
++    const std::string prefix(name);
++    ownedAddress(&field,1,prefix,"GeometricField_descriptor");
++    managedArray(field.primitiveField(),prefix+".internal");
++    const auto& boundary=field.boundaryField();
++    ownedAddress(&boundary,1,prefix+".boundary","container_descriptor");
++    forAll(boundary,patchi)
++        managedArray(boundary[patchi],prefix+".patch"+std::to_string(patchi));
++}
++template<class Type> inline void managedMatrix(const Foam::fvMatrix<Type>& matrix,
++    const char* name)
++{
++    const std::string prefix(name);
++    ownedAddress(&matrix,1,prefix,"fvMatrix_descriptor");
++    managedArray(matrix.source(),prefix+".source");
++    managedArray(matrix.internalCoeffs(),prefix+".internalCoeffs");
++    managedArray(matrix.boundaryCoeffs(),prefix+".boundaryCoeffs");
++    managedArray(matrix.coeffsOffset(),prefix+".coeffsOffset");
++    // Const getters are reached only for already-existing coefficient storage.
++    if (matrix.hasDiag())managedArray(matrix.diag(),prefix+".diag");
++    if (matrix.hasUpper())managedArray(matrix.upper(),prefix+".upper");
++    if (matrix.hasLower())managedArray(matrix.lower(),prefix+".lower");
++}
++}
++#endif

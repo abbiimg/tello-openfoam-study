@@ -1,0 +1,27 @@
+--- private_v2_1/c29FoundationInitialPhi.C
++++ private_v2_2/c29FoundationInitialPhi.C
+@@ -57,21 +57,21 @@
+      || word(admission.lookup("protocol"))!="c29-foundation14-initial-phi-only-v1"
+      || !bool(Switch(admission.lookup("allowInitialPhiExperiment")))
+      || readLabel(runTime.controlDict().lookup("writePrecision"))<17
+-     || isFile(runTime.path()/runTime.timeName()/"phi")
++     || isFile(runTime.path()/runTime.name()/"phi")
+     )
+         FatalErrorInFunction<<"Requires marked fresh serial922576 seed at.6,"
+             <<" writePrecision>=17 and no existing phi"<<exit(FatalError);
+     C29::readExperimentReceipt(admission,"foundation_initial_phi","cpu",runTime.path());
+     volVectorField U
+     (
+-        IOobject("U",runTime.timeName(),mesh,IOobject::MUST_READ,IOobject::NO_WRITE),
++        IOobject("U",runTime.name(),mesh,IOobject::MUST_READ,IOobject::NO_WRITE),
+         mesh
+     );
+     // Original Foundation14 constructor semantics, including its interpolation.
+     // No phi exists: READ_IF_PRESENT therefore selects this exact fallback.
+     surfaceScalarField phi
+     (
+-        IOobject("phi",runTime.timeName(),mesh,
++        IOobject("phi",runTime.name(),mesh,
+             IOobject::READ_IF_PRESENT,IOobject::AUTO_WRITE),
+         linearInterpolate(U)&mesh.Sf()
+     );

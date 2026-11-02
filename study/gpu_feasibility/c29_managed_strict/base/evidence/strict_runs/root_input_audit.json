@@ -1,0 +1,106 @@
+{
+  "schema": "c29-strict-pressure-input-audit-v1",
+  "protocol": "c29-native-five-fixed-steps-strict-pressure-v1",
+  "protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "validation_thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "inputs_audited": true,
+  "audited_utc": "2026-11-02T13:40:03.035666+00:00",
+  "root_authorization": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_pressure_proposal/root_authorization.json",
+    "sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56"
+  },
+  "authoritative_query_evidence": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_resolved_dictionary_queries.json",
+    "sha256": "46e2e8fefde902c0e38a65ce4f6f2f3438797d8201dc1e1539a7182f4462eeaf"
+  },
+  "startup_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/initial_field_comparison.json",
+    "sha256": "6da117692c579c345bcddafab1d1f9a9f92858bbbd63c61f96bd1f56e382a3d7"
+  },
+  "meaning": "Root inspected expanded foamDictionary results for all aliases; this binds input bytes, not runtime acceptance.",
+  "cases": {
+    "f14": {
+      "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control",
+      "fvSolution": {
+        "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control/system/fvSolution",
+        "sha256": "e1ed15a5fbb3a3e7d7b4961e6fd418509c5995a5744229f63bd7b312c3beff66"
+      },
+      "audited_solver_criteria": {
+        "p": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        },
+        "pFinal": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        },
+        "U": {
+          "tolerance": 1e-07,
+          "relTol": 0.05
+        },
+        "UFinal": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        }
+      }
+    },
+    "cpu": {
+      "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu",
+      "fvSolution": {
+        "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/system/fvSolution",
+        "sha256": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3"
+      },
+      "audited_solver_criteria": {
+        "p": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        },
+        "pFinal": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        },
+        "U": {
+          "tolerance": 1e-07,
+          "relTol": 0.05
+        },
+        "UFinal": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        }
+      },
+      "c29PortControls": {
+        "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_cpu/constant/c29PortControls",
+        "sha256": "154ef54a0be1620f4f64b0d6e53bbf73f5c4cd1b5422475457787737f2626832"
+      }
+    },
+    "gpu": {
+      "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu",
+      "fvSolution": {
+        "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/system/fvSolution",
+        "sha256": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3"
+      },
+      "audited_solver_criteria": {
+        "p": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        },
+        "pFinal": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        },
+        "U": {
+          "tolerance": 1e-07,
+          "relTol": 0.05
+        },
+        "UFinal": {
+          "tolerance": 1e-07,
+          "relTol": 0
+        }
+      },
+      "c29PortControls": {
+        "path": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu/constant/c29PortControls",
+        "sha256": "af490982fba40c5be177ec79e6ef16fb0d7d2e7a92b509e73b0f0bc40091386d"
+      }
+    }
+  }
+}

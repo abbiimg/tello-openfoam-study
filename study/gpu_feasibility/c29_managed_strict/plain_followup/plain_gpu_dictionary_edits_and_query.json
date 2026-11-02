@@ -1,0 +1,20 @@
+{
+  "edit": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"file\": \"constant/c29PortControls\", \"set\": {\"experimentId\": \"experimentId    \\\"c29_plain_unprofiled_2_3_20261102_a\\\";\", \"experimentReceiptFile\": \"experimentReceiptFile \\\"/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/receipts/c29_plain_unprofiled_2_3_20261102_a.foam\\\";\"}, \"removed\": []}"
+      }
+    ],
+    "isError": false
+  },
+  "resolved": {
+    "content": [
+      {
+        "type": "text",
+        "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+      }
+    ],
+    "isError": false
+  }
+}

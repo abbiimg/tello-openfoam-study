@@ -1,0 +1,294 @@
+--- frozen_V1/README.md
++++ cleanup_V2/README.md
+@@ -1,4 +1,8 @@
+ This is a source-only proposal for one native GPU five-step functional profile. Nothing here has been run against the case. It changes no source, build, case, control, receipt, permission, SDK or library. Root owns runtime and must first pass the external F14-to-CPU strict numerical gate.
++
++V2 corrects the V1 containment blocker. The original fa8... freeze and later 784... snapshot are preserved in separate sibling directories. After direct solver Popen, every operation is inside try/finally; an exception in minimal spawn receipt, pidfd setup, identity, start receipt or monitoring stops and reaps the exact Popen-owned child. If pidfd setup failed, only that unreaped direct Popen handle supplies the fallback signal target. Cleanup always attempts TERM/grace/KILL as needed and waits for true terminal status. Atomic true-exit evidence is written before log close and postprocessing. Post-wait scan/hash/parse failures become wrapper errors without changing the actual child status; the validator requires no wrapper/cleanup errors and completed postprocessing. A status-save failure also prints the true child record to the captured fallback stream.
++
++The outer profiler Popen also has a finally guard. Signals mark cancellation; exceptional/timeout cleanup requests the actual wrapper's owned-child cleanup and may signal only birth/UID/cwd/exe-verified solver or wrapper identities. It does not discard the supervisor while an unreaped solver remains unresolved. The normal run bounds remain unchanged; final cleanup waits for actual OS reaping if a hard-killed process has not yet become terminal. No whole-group, unrelated-process or GPU-reset action exists. Capture, returnValue, identity, subrange, numerical and source/case policies are otherwise unchanged.
+ 
+ The future outer runner requires both an explicit Root approval JSON and an existing fresh five-step receipt, plus the explicit --execute-approved-receipt flag. It never issues a receipt or enables a permission. The approval must bind protocol.json and helper_manifest.json SHA256, the receipt path/hash, and the exact shared-startup and external F14-to-CPU numerical gate paths/hashes with root_asserted_pass true. A case's allowFive flag alone cannot authorize this runner.
+ 
+--- /dev/null
++++ cleanup_V2/owned_cleanup.py
+@@ -0,0 +1,26 @@
++"""Stop/reap only a Popen-owned direct child; no PID/group enumeration."""
++import signal,subprocess,traceback
++def stop_and_reap(process,grace_s,pidfd=None):
++ actions=[];errors=[]
++ def send(sig):
++  if process.poll() is not None:return
++  if pidfd is not None:signal.pidfd_send_signal(pidfd,sig)
++  else:process.send_signal(sig) # Unreaped direct child Popen prevents PID reuse.
++  actions.extend(['pidfd' if pidfd is not None else 'direct_Popen_handle',signal.Signals(sig).name])
++ try:
++  if process.poll() is None:
++   try:send(signal.SIGTERM)
++   except ProcessLookupError:pass
++   process.wait(timeout=grace_s)
++ except subprocess.TimeoutExpired:pass
++ except BaseException:errors.append(traceback.format_exc())
++ finally:
++  try:
++   if process.poll() is None:
++    try:send(signal.SIGKILL)
++    except ProcessLookupError:pass
++  except BaseException:errors.append(traceback.format_exc())
++  try:returncode=process.wait()
++  except BaseException:
++   errors.append(traceback.format_exc());returncode=process.returncode
++ return {'return_code':returncode,'actual_child_waited':returncode is not None,'actions':actions,'cleanup_errors':errors}
+--- frozen_V1/run_actual_gpu_child.py
++++ cleanup_V2/run_actual_gpu_child.py
+@@ -1,52 +1,79 @@
+-"""Future profiled direct-child wrapper; source-only until root supplies approval."""
++"""Future direct-child owner; every post-Popen path cleans up and records status."""
+ from pathlib import Path
+-import argparse,json,os,re,signal,subprocess,sys,time
++import argparse,json,os,re,signal,subprocess,sys,time,traceback
+ from profile_common import *
++from owned_cleanup import stop_and_reap
+ def main():
+  parser=argparse.ArgumentParser();parser.add_argument('--approval',type=Path,required=True);parser.add_argument('--receipt',type=Path,required=True);args=parser.parse_args()
+  protocol,approval,receipt=load(args.approval,args.receipt)
+  evidence=Path(protocol['evidence']);outer=json.loads((evidence/'outer_prelaunch.json').read_text())
+  require(outer['receipt_sha256']==sha(args.receipt) and outer['protocol_sha256']==sha(HERE/'protocol.json'),'Outer preflight mismatch')
+- require(outer['foam_companion_sha256']==sha(args.receipt.with_suffix('.foam')),'Receipt companion changed after outer verification')
++ require(outer['foam_companion_sha256']==sha(args.receipt.with_suffix('.foam')),'Receipt companion changed')
+  require(os.geteuid()==999 and os.environ.get('WM_OPTIONS')=='linuxARM64Nvidia-gpuDPInt32Opt','Wrong UID/native GPU environment')
+- require(os.environ.get('NSYS_NVTX_PROFILER_REGISTER_ONLY')=='0','Unregistered capture names require REGISTER_ONLY=0')
++ require(os.environ.get('NSYS_NVTX_PROFILER_REGISTER_ONLY')=='0','Named capture requires REGISTER_ONLY=0')
+  overlay=require_injection_overlay(receipt['environment'],os.environ,Path(protocol['nsys_root']).resolve())
+- # Preserve the inherited injection LD_PRELOAD verbatim. No observer is added.
+  admission=original_admission(protocol);admission.source_audit();same_bound_receipt_files(admission,receipt)
+- require(0<=time.time()-receipt['created_epoch']<=receipt['max_age_s'],'Receipt expired before direct child launch')
++ require(0<=time.time()-receipt['created_epoch']<=receipt['max_age_s'],'Receipt expired before launch')
+  case=Path(protocol['case']);log=Path(protocol['stdout_log']);start_file=evidence/'actual_solver_start.json';exit_file=evidence/'actual_solver_exit.json'
+- require(not log.exists() and not start_file.exists() and not exit_file.exists(),'Refuse to overwrite prior child evidence')
++ require(not log.exists() and not start_file.exists() and not exit_file.exists(),'Refuse prior child evidence')
+  before=case_hashes(case);os.setpriority(os.PRIO_PROCESS,0,max(15,os.getpriority(os.PRIO_PROCESS,0)))
+  start={'started_utc':utc(),'wrapper_pid':os.getpid(),'receipt_sha256':sha(args.receipt),'approval_sha256':sha(args.approval),'protocol_sha256':sha(HERE/'protocol.json'),'binary_sha256':sha(protocol['binary']['path']),'source_tree_sha256':protocol['source_tree_sha256'],'case_before':before,'manual_argv':receipt['manual_argv'],'inherited_injection_preload_preserved':True,'loader_overlay':overlay,'environment':{k:os.environ.get(k) for k in ['WM_OPTIONS','FOAM_MEMORY_POOL','LD_PRELOAD','LD_LIBRARY_PATH','OMP_NUM_THREADS','NSYS_NVTX_PROFILER_REGISTER_ONLY']}}
+- seen=set();timed_out=False;forced=False
++ cancelled=False;timed_out=False;pidfd=None;seen=set();errors=[];cleanup=None
++ def request_stop(signum,frame):
++  nonlocal cancelled
++  cancelled=True
++ signal.signal(signal.SIGTERM,request_stop);signal.signal(signal.SIGINT,request_stop)
++ save(evidence/'actual_wrapper_start.json',{'identity':proc_identity(os.getpid()),'receipt_sha256':sha(args.receipt),'started_utc':utc()})
++ require(not cancelled and not (evidence/'outer_cancel_requested.json').exists(),'Cancelled before launch')
+  with log.open('xb') as stream:
+   child=subprocess.Popen(receipt['manual_argv'],cwd=case,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True)
+-  pidfd=os.pidfd_open(child.pid);identity=proc_identity(child.pid)
+-  require(identity['uid']==999 and identity['cwd']==str(case) and identity['exe']==protocol['binary']['path'] and identity['nice']>=15,'Direct solver child identity mismatch')
+-  start['actual_child']=identity;save(start_file,start)
+-  def forward(signum,frame):
+-   if child.poll() is None:
+-    try:signal.pidfd_send_signal(pidfd,signum)
+-    except ProcessLookupError:pass
+-  signal.signal(signal.SIGTERM,forward);signal.signal(signal.SIGINT,forward)
+-  begin=time.monotonic();term_at=None
+-  while child.poll() is None:
++  try:
++   start['actual_child']={'pid':child.pid,'identity_complete':False}
++   save(evidence/'actual_solver_spawn.json',start) # Atomic ASAP; cleanup covers failure.
++   pidfd=os.pidfd_open(child.pid);identity=proc_identity(child.pid);start['actual_child']=identity;save(start_file,start)
++   require(identity['uid']==999 and identity['cwd']==str(case) and identity['exe']==protocol['binary']['path'] and identity['nice']>=15,'Actual child identity mismatch')
++   begin=time.monotonic()
++   while child.poll() is None:
++    try:
++     for line in (Path('/proc')/str(child.pid)/'maps').read_text().splitlines():
++      parts=line.split(maxsplit=5)
++      if len(parts)==6 and parts[5].startswith('/') and '.so' in parts[5]:
++       path=Path(parts[5].removesuffix(' (deleted)')).resolve()
++       if path.is_file():seen.add(str(path))
++    except (FileNotFoundError,ProcessLookupError,PermissionError):pass
++    if (evidence/'outer_cancel_requested.json').exists():cancelled=True
++    if cancelled:break
++    if time.monotonic()-begin>protocol['solver_timeout_s']:timed_out=True;break
++    time.sleep(.02)
++  except BaseException:errors.append({'stage':'post_Popen_identity_monitor','traceback':traceback.format_exc()})
++  finally:
++   cleanup=stop_and_reap(child,protocol['cleanup_grace_s'],pidfd)
++   if pidfd is not None:
++    try:os.close(pidfd)
++    except OSError:errors.append({'stage':'pidfd_close','traceback':traceback.format_exc()})
++   result={**start,'completed_utc':utc(),**cleanup,'timed_out':timed_out,'cancelled':cancelled,'wrapper_errors':errors,'postprocessing_complete':False,'profiler_status_is_separate':True,'scientific_acceptance':'Separate frozen strict d600 analysis required','speedup_measured':False}
++   try:save(exit_file,result) # Before log-close, hashing, parsing or case scan.
++   except BaseException:errors.append({'stage':'initial_exit_receipt_save','traceback':traceback.format_exc()});print('ACTUAL_SOLVER_CHILD_FALLBACK '+json.dumps(result),file=sys.stderr,flush=True)
++ try:
++  after=case_hashes(case);expected={x['path']:x['sha256'] for x in json.loads(Path(protocol['library_identity']['path']).read_text())['files']}
++  observed={path:sha(path) for path in sorted(seen)};text=log.read_text()
++  result.update(binary_sha256_after=sha(protocol['binary']['path']),log=str(log),log_sha256=sha(log),loaded_libraries_observed=[{'path':path,'sha256':pin} for path,pin in observed.items()],declared_libraries_actually_observed_unchanged=all(observed.get(path)==pin for path,pin in expected.items()),original_case_files_unchanged=all(after.get(path)==pin for path,pin in before.items()),added_case_files=sorted(set(after)-set(before)),time_values=[float(x) for x in re.findall(r'^Time = ([0-9.eE+-]+)',text,re.M)],source_calls=len(re.findall(r'^C29_SOURCE_AUDIT ',text,re.M)),controller_updates=len(re.findall(r'^TILT ',text,re.M)),End_marker=bool(re.search(r'^End\s*$',text,re.M)),nonfinite_log_token=bool(re.search(r'\b(?:nan|[-+]?inf(?:inity)?)\b',text,re.I)),postprocessing_complete=True)
++ except BaseException:errors.append({'stage':'post_wait_evidence_processing','traceback':traceback.format_exc()})
++ finally:
++  result['wrapper_errors']=errors
++  try:save(exit_file,result)
++  except BaseException:
++   errors.append({'stage':'final_exit_receipt_save','traceback':traceback.format_exc()});print('ACTUAL_SOLVER_CHILD_FALLBACK '+json.dumps(result),file=sys.stderr,flush=True)
++  save(evidence/'actual_wrapper_exit.json',{'completed_utc':utc(),'actual_child_launched':True,'actual_child_waited':cleanup['actual_child_waited'],'true_child_return_code':cleanup['return_code'],'wrapper_errors':errors,'cleanup_errors':cleanup['cleanup_errors'],'postprocessing_complete':result['postprocessing_complete']})
++ print('ACTUAL_SOLVER_CHILD_EXIT '+str(cleanup['return_code']),flush=True)
++ if errors or cleanup['cleanup_errors'] or not cleanup['actual_child_waited']:return 1
++ rc=cleanup['return_code'];return rc if rc>=0 else 128-rc
++if __name__=='__main__':
++ try:sys.exit(main())
++ except BaseException as error:
++  if not isinstance(error,SystemExit):
+    try:
+-    for line in (Path('/proc')/str(child.pid)/'maps').read_text().splitlines():
+-     parts=line.split(maxsplit=5)
+-     if len(parts)==6 and parts[5].startswith('/') and '.so' in parts[5]:
+-      p=Path(parts[5].removesuffix(' (deleted)')).resolve()
+-      if p.is_file():seen.add(str(p))
+-   except (FileNotFoundError,ProcessLookupError):pass
+-   if not timed_out and time.monotonic()-begin>protocol['solver_timeout_s']:
+-    timed_out=True;term_at=time.monotonic();signal.pidfd_send_signal(pidfd,signal.SIGTERM)
+-   if timed_out and not forced and time.monotonic()-term_at>protocol['cleanup_grace_s']:
+-    forced=True;signal.pidfd_send_signal(pidfd,signal.SIGKILL)
+-   time.sleep(.02)
+-  returncode=child.wait();os.close(pidfd)
+- after=case_hashes(case);expected={x['path']:x['sha256'] for x in json.loads(Path(protocol['library_identity']['path']).read_text())['files']}
+- observed={p:sha(p) for p in sorted(seen)};text=log.read_text()
+- result={**start,'completed_utc':utc(),'actual_child_waited':True,'return_code':returncode,'timed_out':timed_out,'forced_kill':forced,'binary_sha256_after':sha(protocol['binary']['path']),'log':str(log),'log_sha256':sha(log),'loaded_libraries_observed':[{'path':p,'sha256':pin} for p,pin in observed.items()],'declared_libraries_actually_observed_unchanged':all(observed.get(p)==pin for p,pin in expected.items()),'original_case_files_unchanged':all(after.get(p)==pin for p,pin in before.items()),'added_case_files':sorted(set(after)-set(before)),'time_values':[float(x) for x in re.findall(r'^Time = ([0-9.eE+-]+)',text,re.M)],'source_calls':len(re.findall(r'^C29_SOURCE_AUDIT ',text,re.M)),'controller_updates':len(re.findall(r'^TILT ',text,re.M)),'End_marker':bool(re.search(r'^End\s*$',text,re.M)),'nonfinite_log_token':bool(re.search(r'\b(?:nan|[-+]?inf(?:inity)?)\b',text,re.I)),'profiler_status_is_separate':True,'scientific_acceptance':'Separate frozen strict d600 analyzer required; execution receipt is not numerical acceptance','speedup_measured':False}
+- save(exit_file,result);print('ACTUAL_SOLVER_CHILD_EXIT '+str(returncode),flush=True)
+- return returncode if returncode>=0 else 128-returncode
+-if __name__=='__main__':sys.exit(main())
++    protocol=json.loads((HERE/'protocol.json').read_text());e=Path(protocol['evidence'])
++    if e.is_dir() and not (e/'actual_wrapper_exit.json').exists():save(e/'actual_wrapper_exit.json',{'completed_utc':utc(),'actual_child_launched':(e/'actual_solver_spawn.json').exists(),'wrapper_errors':[{'stage':'wrapper_exit','traceback':traceback.format_exc()}]})
++   except BaseException:pass
++  raise
+--- frozen_V1/run_gpu_profile.py
++++ cleanup_V2/run_gpu_profile.py
+@@ -1,49 +1,78 @@
+-"""Future single-shot functional profile. Requires separate root approval/receipt."""
++"""Future single-shot profile with supervised failure cleanup; no receipt issuance."""
+ from pathlib import Path
+-import argparse,json,os,signal,subprocess,sys,time
++import argparse,json,os,signal,subprocess,sys,time,traceback
+ from profile_common import *
++from owned_cleanup import stop_and_reap
++def request_case_owner_stop(evidence,protocol,notes):
++ try:save(evidence/'outer_cancel_requested.json',{'requested_utc':utc(),'meaning':'Wrapper must stop/reap its own child'})
++ except BaseException:notes.append({'cancel_marker_error':traceback.format_exc()})
++ # Signal only birth/UID/cwd/exe-verified identities, never an arbitrary PID/group.
++ for filename in ['actual_solver_start.json','actual_wrapper_start.json']:
++  file=evidence/filename
++  if not file.exists():continue
++  pidfd=None
++  try:
++   data=json.loads(file.read_text());identity=data.get('actual_child',data.get('identity'));pid=identity['pid']
++   pidfd=os.pidfd_open(pid);live=proc_identity(pid)
++   require(all(live[k]==identity[k] for k in ['pid','uid','birth_start_ticks','cwd','exe']),'Changed timeout identity')
++   require(live['uid']==999 and live['cwd']==protocol['case'],'Refuse unrelated identity')
++   if filename=='actual_solver_start.json':require(live['exe']==protocol['binary']['path'],'Different solver')
++   else:require(str(HERE/'run_actual_gpu_child.py') in (Path('/proc')/str(pid)/'cmdline').read_bytes().decode().split('\0'),'Different wrapper argv')
++   signal.pidfd_send_signal(pidfd,signal.SIGTERM);notes.append({'signal':'SIGTERM','identity':identity})
++  except (FileNotFoundError,ProcessLookupError):pass
++  except BaseException:notes.append({'verified_signal_error':traceback.format_exc()})
++  finally:
++   if pidfd is not None:os.close(pidfd)
++def solver_terminal(evidence):
++ for name in ['actual_solver_exit.json','actual_wrapper_exit.json']:
++  file=evidence/name
++  if not file.exists():continue
++  data=json.loads(file.read_text())
++  if data.get('actual_child_waited') is True or data.get('actual_child_launched') is False:return True
++ return False
+ def main():
+  parser=argparse.ArgumentParser();parser.add_argument('--approval',type=Path,required=True);parser.add_argument('--receipt',type=Path,required=True);parser.add_argument('--execute-approved-receipt',action='store_true');args=parser.parse_args()
+- require(args.execute_approved_receipt,'SOURCE-ONLY proposal: explicit approved execution flag required')
++ require(args.execute_approved_receipt,'SOURCE-ONLY: explicit approved execution flag required')
+  protocol,approval,receipt=load(args.approval,args.receipt)
+- require(os.geteuid()==999 and os.environ.get('WM_OPTIONS')=='linuxARM64Nvidia-gpuDPInt32Opt','Source the exact reviewed native GPU env first')
+- available=int(next(x.split()[1] for x in Path('/proc/meminfo').read_text().splitlines() if x.startswith('MemAvailable:')))
+- require(available>=20*1024**2,'Less than 20 GiB memory reserve; no launch')
++ require(os.geteuid()==999 and os.environ.get('WM_OPTIONS')=='linuxARM64Nvidia-gpuDPInt32Opt','Source reviewed native GPU env first')
++ available=int(next(x.split()[1] for x in Path('/proc/meminfo').read_text().splitlines() if x.startswith('MemAvailable:')));require(available>=20*1024**2,'Memory reserve below 20 GiB')
+  admission=original_admission(protocol);admission.source_audit();admission.verify_receipt(args.receipt)
+- evidence=Path(protocol['evidence']);require(not evidence.exists() and not Path(protocol['stdout_log']).exists(),'Refuse prior evidence/log collision');evidence.mkdir()
++ evidence=Path(protocol['evidence']);require(not evidence.exists() and not Path(protocol['stdout_log']).exists(),'Prior evidence/log collision');evidence.mkdir()
+  os.setpriority(os.PRIO_PROCESS,0,max(15,os.getpriority(os.PRIO_PROCESS,0)))
+  command=[protocol['nsys']['path'],'profile',*protocol['nsys_flags'],'-o',str(evidence/'first_complete_step'),'/usr/bin/python3','-B',str(HERE/'run_actual_gpu_child.py'),'--approval',str(args.approval),'--receipt',str(args.receipt)]
+  env=dict(os.environ);env['NSYS_NVTX_PROFILER_REGISTER_ONLY']='0'
+- preflight={'started_utc':utc(),'protocol_sha256':sha(HERE/'protocol.json'),'receipt_sha256':sha(args.receipt),'foam_companion_sha256':sha(args.receipt.with_suffix('.foam')),'approval_sha256':sha(args.approval),'receipt_verified_before_profiler_injection':True,'command':command,'nice':os.getpriority(os.PRIO_PROCESS,0),'MemAvailable_kib':available,'speedup_measured':False};save(evidence/'outer_prelaunch.json',preflight)
+- timed_out=False;child_cleanup=[]
++ save(evidence/'outer_prelaunch.json',{'started_utc':utc(),'protocol_sha256':sha(HERE/'protocol.json'),'receipt_sha256':sha(args.receipt),'foam_companion_sha256':sha(args.receipt.with_suffix('.foam')),'approval_sha256':sha(args.approval),'receipt_verified_before_profiler_injection':True,'command':command,'nice':os.getpriority(os.PRIO_PROCESS,0),'MemAvailable_kib':available,'speedup_measured':False})
++ cancelled=False;timed_out=False;errors=[];cleanup_notes=[];process=None
++ def request_stop(signum,frame):
++  nonlocal cancelled
++  cancelled=True
++ signal.signal(signal.SIGTERM,request_stop);signal.signal(signal.SIGINT,request_stop)
+  with (evidence/'profiler.log').open('xb') as output:
+   process=subprocess.Popen(command,env=env,cwd=protocol['case'],stdout=output,stderr=subprocess.STDOUT,start_new_session=True)
+-  try:profiler_code=process.wait(timeout=protocol['profiler_timeout_s'])
+-  except subprocess.TimeoutExpired:
+-   timed_out=True;start_file=evidence/'actual_solver_start.json'
+-   if start_file.exists():
+-    identity=json.loads(start_file.read_text())['actual_child'];pid=identity['pid']
+-    try:
+-     pidfd=os.pidfd_open(pid);live=proc_identity(pid)
+-     require(all(live[k]==identity[k] for k in ['pid','uid','birth_start_ticks','cwd','exe']),'Refuse timeout signal to changed child identity')
+-     signal.pidfd_send_signal(pidfd,signal.SIGTERM);child_cleanup.append('SIGTERM to verified actual solver via pidfd')
+-     deadline=time.monotonic()+protocol['cleanup_grace_s']
+-     while time.monotonic()<deadline and (Path('/proc')/str(pid)).exists():time.sleep(.2)
+-     if (Path('/proc')/str(pid)).exists():signal.pidfd_send_signal(pidfd,signal.SIGKILL);child_cleanup.append('SIGKILL to same pidfd after grace')
+-     os.close(pidfd)
+-    except ProcessLookupError:pass
+-   try:profiler_code=process.wait(timeout=protocol['profiler_cleanup_timeout_s'])
+-   except subprocess.TimeoutExpired:
+-    # Actual solver was already handled separately; preserve profiler failure.
+-    process.terminate()
+-    try:profiler_code=process.wait(timeout=30)
+-    except subprocess.TimeoutExpired:process.kill();profiler_code=process.wait()
+- profiler={'completed_utc':utc(),'return_code':profiler_code,'timed_out':timed_out,'verified_child_cleanup':child_cleanup,'actual_solver_exit_is_separate':True,'command':command};save(evidence/'profiler_exit.json',profiler)
+- require(not timed_out and profiler_code==0,'Profiler failed/timed out; preserve true child receipt and partial trace')
+- report=evidence/'first_complete_step.nsys-rep';require(report.is_file(),'No profile report')
++  try:
++   begin=time.monotonic()
++   while process.poll() is None:
++    if cancelled:break
++    if time.monotonic()-begin>protocol['profiler_timeout_s']:timed_out=True;break
++    time.sleep(.2)
++  except BaseException:errors.append({'stage':'profile_monitor','traceback':traceback.format_exc()})
++  finally:
++   if cancelled or timed_out or errors or process.poll() is None:
++    request_case_owner_stop(evidence,protocol,cleanup_notes)
++    try:process.wait(timeout=protocol['profiler_cleanup_timeout_s'])
++    except subprocess.TimeoutExpired:
++     if solver_terminal(evidence):cleanup_notes.append({'profiler_cleanup':stop_and_reap(process,30)})
++     else:
++      # Never kill the supervisor while an unreaped solver remains unresolved.
++      # The direct wrapper's TERM/KILL/final wait owns cleanup even pre-receipt.
++      cleanup_notes.append({'waiting_for_owned_solver_reap':True});process.wait()
++   profiler_code=process.wait()
++   save(evidence/'profiler_exit.json',{'completed_utc':utc(),'return_code':profiler_code,'timed_out':timed_out,'cancelled':cancelled,'outer_wrapper_errors':errors,'verified_child_cleanup':cleanup_notes,'actual_solver_exit_is_separate':True,'command':command})
++ require(not cancelled and not timed_out and not errors and profiler_code==0,'Profile failed/cancelled/timed out; evidence preserved, no rerun')
++ report=evidence/'first_complete_step.nsys-rep';require(report.is_file(),'Missing profile report')
+  export=[protocol['nsys']['path'],'export','--type=sqlite','--force-overwrite=false','--output',str(evidence/'first_complete_step.sqlite'),str(report)]
+  with (evidence/'export.log').open('xb') as output:r=subprocess.run(export,stdout=output,stderr=subprocess.STDOUT,timeout=protocol['export_timeout_s'])
+- save(evidence/'export_exit.json',{'command':export,'return_code':r.returncode,'completed_utc':utc()});require(r.returncode==0,'Trace export failed; do not repeat CFD')
++ save(evidence/'export_exit.json',{'command':export,'return_code':r.returncode,'completed_utc':utc()});require(r.returncode==0,'Export failed; do not rerun CFD')
+  from validate_gpu_profile import validate
+- result=validate(args.approval,args.receipt);print(json.dumps(result,indent=2))
++ print(json.dumps(validate(args.approval,args.receipt),indent=2))
+ if __name__=='__main__':main()
+--- frozen_V1/validate_gpu_profile.py
++++ cleanup_V2/validate_gpu_profile.py
+@@ -9,7 +9,8 @@
+ def device_sync(name):return 'cudaDeviceSynchronize' in name or 'cuCtxSynchronize' in name
+ def validate(approval_path,receipt_path):
+  p,approval,receipt=load(approval_path,receipt_path);e=Path(p['evidence']);run=json.loads((e/'actual_solver_exit.json').read_text());child=run['actual_child']
+- require(run['actual_child_waited'] and run['return_code']==0 and not run['timed_out'] and not run['forced_kill'],'Actual direct solver failed or timed out')
++ require(run['actual_child_waited'] and run['return_code']==0 and not run['timed_out'] and not run['cancelled'],'Actual direct solver failed, cancelled or timed out')
++ require(run['postprocessing_complete'] and not run['wrapper_errors'] and not run['cleanup_errors'],'Direct child success cannot waive wrapper/evidence errors')
+  require(run['receipt_sha256']==sha(receipt_path) and run['approval_sha256']==sha(approval_path),'Different receipt/approval used by child')
+  require(child['uid']==999 and child['cwd']==p['case'] and child['exe']==p['binary']['path'] and child['nice']>=15 and child['birth_start_ticks']>0,'Wrong actual child identity')
+  require(run['binary_sha256']==run['binary_sha256_after']==p['binary']['sha256'],'Binary changed or wrong child')
+@@ -18,7 +19,7 @@
+  require(all(abs(a-b)<1e-12 for a,b in zip(run['time_values'],[.6001,.6002,.6003,.6004,.6005])) and run['End_marker'] and not run['nonfinite_log_token'],'Clock/End/finite log gate failed')
+  require(sha(p['stdout_log'])==run['log_sha256'],'Solver log changed')
+  prof=json.loads((e/'profiler_exit.json').read_text());exp=json.loads((e/'export_exit.json').read_text())
+- require(prof['return_code']==exp['return_code']==0 and not prof['timed_out'],'Profiler/export failed independently of solver')
++ require(prof['return_code']==exp['return_code']==0 and not prof['timed_out'] and not prof['cancelled'] and not prof['outer_wrapper_errors'],'Profiler/export failed independently of solver')
+  text=(e/'profiler.log').read_text()+Path(p['stdout_log']).read_text()
+  require('Capture range started in the application.' in text and 'Capture range ended in the application.' in text,'Named capture did not actually trigger and end')
+  db=e/'first_complete_step.sqlite';con=sqlite3.connect('file:'+str(db)+'?mode=ro',uri=True);con.row_factory=sqlite3.Row

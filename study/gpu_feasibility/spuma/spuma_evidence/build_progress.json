@@ -1,0 +1,14 @@
+{
+  "stage": "minimal_binaries_built_runtime_not_yet_claimed",
+  "updated_utc": "2026-11-02T11:13:42.705509+00:00",
+  "pid": 348508,
+  "nice": 15,
+  "max_build_jobs": 2,
+  "binaries": [
+    "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/blockMesh",
+    "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam"
+  ],
+  "gpu_runtime_or_solver_gate_passed": false,
+  "actuator_port": false,
+  "speed_benchmark": false
+}

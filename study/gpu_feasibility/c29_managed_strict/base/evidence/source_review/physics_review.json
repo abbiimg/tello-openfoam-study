@@ -1,0 +1,223 @@
+{
+  "schema": "c29-native-gpu-static-physics-review-v1",
+  "reviewed_utc": "2026-11-02T09:35:59.590703+00:00",
+  "kind": "Static source/dictionary review only; no application source edit, compilation, SDK action, simulation, network or performance measurement",
+  "source_identity": {
+    "original_path": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/constant/fvModels",
+    "original_fvModels_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "verbatim_body_sha256": "ff02e46f3857af75dfff6f69533c97a7baf2cff2478c2b7e7193d0e8aaaf64a7",
+    "verbatim_includes_sha256": "c51376a789cb9b1b52cff384235ea73522c765d457bdb2af5c330ca9d158da83",
+    "port_plan_sha256": "52fdf7461e12ae84b78b625e605bf36f66241b9a48efd6e0b444c0fdf8510d79",
+    "preflight_sha256": "6dfb824f671e76e1088230e043d8ac2621213cd774121d00b192b1e9572e0cf4",
+    "preflight_script_sha256": "04cd101013f1d2a0939442b098e6f54ba7c45cf8c8791d14dd9e3802c00ef495",
+    "native_root": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606",
+    "local_git_commit_unavailable": true,
+    "native_source_identity": "Actual files are hashed; extracted source has no.git. Bind archive/pin provenance from the build owner before claiming a complete source/binary identity."
+  },
+  "source_hashes": {
+    "/opt/openfoam14/applications/modules/incompressibleFluid/correctPressure.C": "1e6b6d38e1f2730368b5de45a4fc76017b06284748349149da41c90c6d84efb2",
+    "/opt/openfoam14/applications/modules/incompressibleFluid/incompressibleFluid.C": "9e1cac27826bb98318b95fabe66fc2350ff5dc8cc2997eb0cee2592b677f4105",
+    "/opt/openfoam14/applications/modules/incompressibleFluid/incompressibleFluid.H": "d00ede37cd8cb66324dcce4800f74595da8b7bfee2118893d11c6a6e7042af0a",
+    "/opt/openfoam14/applications/modules/incompressibleFluid/momentumPredictor.C": "7921c5f86dcffc46fc7849ac9ec6adfe1c9c261041788406469b545617119d59",
+    "/opt/openfoam14/applications/modules/incompressibleFluid/moveMesh.C": "0e477af60f17f6c7ed877ef40603e52759f600957a95a2cea981be9e30ad5bda",
+    "/opt/openfoam14/applications/modules/incompressibleFluid/setRDeltaT.C": "153f116837e664db4ceac450554b8066911fc0cd9b6085fc8e8e5bfe89f2f177",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/applications/solvers/incompressible/icoFoam/createFields.H": "4be0977a6349fca8b5675d78a7b27f73baeef2955608abfcabb29aa1e738dd23",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/applications/solvers/incompressible/icoFoam/icoFoam.C": "29d38d8ad11eb0f388261673ec976fd72524c3086fa8ee37b5669712eec77d12",
+    "/opt/openfoam14/src/MomentumTransportModels/momentumTransportModels/linearViscousStress/linearViscousStress.C": "cb10dee31fc2fd6e78a42a238fac52b45be918e5f366a4a0b25a72a2054c1fc7",
+    "/opt/openfoam14/src/MomentumTransportModels/momentumTransportModels/laminar/Stokes/Stokes.C": "4b3286e9f430a095857db615b60cdee2d7b75292c33643237d2fc2067aa045ac",
+    "/opt/openfoam14/src/finiteVolume/fvMatrices/fvMatrices.C": "4166664a527321f76e00e5e9bc2ac9c3a8e6dc13f883192fb831163d6a1f2fc3",
+    "/opt/openfoam14/src/finiteVolume/fvMatrices/fvMatrix/fvMatrix.H": "524178a557bb2aebca23c6abecae41551cf9b4adc48f281ddefbaf79a135e0c2",
+    "/opt/openfoam14/src/finiteVolume/fvMatrices/fvMatrix/fvMatrix.C": "a30fee4aac650a538164e174e8290b503de84ac1add6cf04edc1cc425a223dca",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/pressureReference/pressureReference.C": "28ec42d899ab7f27c5c0fe411ec05b1b1957172ae2912111cce52e3c597c2188",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/include/setDeltaT.H": "e691583eb9938999b0bbe19d2aa45b3a4f7dee7fedf718dc0b8221a116b68471",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/include/readTimeControls.H": "1f3e1f439966908cb5093d841beae7ace7139e7e7275b1e80693261a4fdeb6e2",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/include/createTimeControls.H": "65742f3ca422e20fa8210beeb949b9fd47360f111c4bc5b229f3dfcddb612dcc",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/fvModels/fvModel.C": "203ce95e7180191e7f3aa529bd6aae3cb2423fc271e13e442803a7aa0bc55326",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/fvModels/fvModelsTemplates.C": "bc6567f9ed5db36cc311a13e4c453949797dd14e3164645ccb5c56eb07bd67a1",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/solutionControl/pisoControl/pisoControl.C": "e31607d5a63c4aa98d5aabf8b3e3156817664b29a2708aec07ae1669d9a843f8",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/solutionControl/pimpleControl/pimpleControl/pimpleControl.C": "dbcf6c90042433e5f72dfaba8b177575a12a4110ed0e38a47cbb3154acfb0e89",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/ddtSchemes/EulerDdtScheme/EulerDdtScheme.C": "5450404723d4d8089a7aa561b4ec4c01744d4dd941d0f998e4de762c293d356e",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/ddtSchemes/ddtScheme/ddtScheme.C": "2d90a12c627f31e40bfc407b5684e47181c9f7e619daf0776c911b89bec9737b",
+    "/opt/openfoam14/src/OpenFOAM/primitives/Scalar/doubleScalar/doubleScalar.H": "b0d8d82dc7e8b960120b57dba07532c83e8a6454c72234072e7b325649810d06",
+    "/opt/openfoam14/src/OpenFOAM/primitives/Scalar/scalar/scalar.H": "062b82ba4db489d983e664f91fe4e00db4534e170fe41fce28d2264f9f5dc384",
+    "/opt/openfoam14/applications/solvers/foamRun/setDeltaT.H": "dbb70e9b5e8d9e1a47d893f0581d050572e1d5efdd1b39505f95c4e29c0d995d",
+    "/opt/openfoam14/applications/solvers/foamRun/foamRun.C": "5c1e6e34c4bd253f5cc4665a8672f21b6ded2c7a5e391c67419f7586a7b5de91",
+    "/opt/openfoam14/applications/solvers/foamRun/setDeltaT.C": "656a3a8782614b0f14aff03d0925d339eb6e568356c792f61fa4095d1ade5f11",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/primitives/Scalar/doubleScalar/doubleScalar.H": "da0a97a826393b32370797b418cd82e4cf17bfad24bd64b73457b0b48174ce51",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/primitives/Scalar/scalar/scalar.H": "ed1304ef16165f57c901aba51d4f59cc8d8aab168fb2f369d0538fa721f6db60",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/primitives/Scalar/scalar/scalarFwd.H": "c9acab0c3507490c42c263808c54cb9d3c630c6252c536b756505218a4908a95",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/include/setDeltaT.H": "e733dd04016fda24a94da0b3334955608d39db3c811979a963144b1b71fd5445",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/include/readTimeControls.H": "164caff6a0bf0786524696a8f759ee370c60d64da35ea555fdda469104ca449a",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/include/createTimeControls.H": "7636af7d3b6ce111d710a710617c67b298ba0d2f4630c6267a3140a86ba68382",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+    "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750/0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+    "/opt/openfoam14/src/finiteVolume/fields/fvPatchFields/derived/totalPressure/totalPressureFvPatchScalarField.C": "6064940874aee1d845e4b4168b67a518a97b03923fd9885d6a6748b9f556d1cf",
+    "/opt/openfoam14/src/finiteVolume/fields/fvPatchFields/derived/pressureInletOutletVelocity/pressureInletOutletVelocityFvPatchVectorField.C": "359d97cb0746ba9565281778c283b29e609595fefde61dfd6f3fdd2a3df58c8a",
+    "/opt/openfoam14/src/finiteVolume/fields/fvPatchFields/derived/dynamicPressure/dynamicPressureFvPatchScalarField.C": "d6cd19cc4453112b3e96592f6733b9207fe100a23d5162f932a8e43d8815a123",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/incompressible/createPhi.H": "8408c34cfbfa9f8ba60b048cd4ed7407cd1bf2dce04a964ae3a344cc86078674",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/constrainPressure/constrainPressure.C": "f834ee1d752987ea963cc5d3008d3fcf5d3a3f7dc96aebc0ed89ea774ba47584",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/adjustPhi/adjustPhi.C": "794d234061d3bb30e183413394e34c316d2747275985f6ad78058b9ff1b73f27",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/solutionControl/pisoControl/pisoControlI.H": "e9a6640bb5548e5cc84b53d437fc3b63180333273e24a3b9b6bc14dddb0e069f",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/solutionControl/pisoControl/pisoControl.H": "136ac8ccc782ef171d59e226df4357935784bddaf36652fea567413d3f7af1a8",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/fvm/fvmDiv.H": "fd3f2d2cca588a660b82ffc162cb5af9809af61156aab6366380962aa2eb3b56",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/fvm/fvmDiv.C": "1ff2b27df2c552f81995d0db78fd4db89205b7e3b93dc0d220866337387a67b8",
+    "/opt/openfoam14/src/MomentumTransportModels/momentumTransportModels/momentumTransportModel.C": "7e393a1de09c1e4d5f325552d6fc6adc8135309977188f6c56f4b006b159edc8",
+    "/opt/openfoam14/src/OpenFOAM/algorithms/solutionControl/solutionControl.H": "f6954b6e3d9723461d82e6ab0c3f0b702bed36fd90d49891f31444f08d53a607",
+    "/opt/openfoam14/src/OpenFOAM/algorithms/solutionControl/solutionControlI.H": "a0c29bf18b3508fe3d271d620784871e4c24f7f4e211ad95d72ea6d40b87ed6a",
+    "/opt/openfoam14/src/OpenFOAM/algorithms/solutionControl/solutionControl.C": "903bf082f37ec4e484798f35e1befa30e546e8d4123a113d6077e2796a8e1c9d",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fvMatrices/fvMatrix/fvMatrix.H": "bcd44167ecf726d33645848961ed5c6bc4d26ce76e95d24a92d6dc1e4fe026db",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fvMatrices/fvMatrix/fvMatrix.C": "07911387a0b0c2ee02d90b3d8489643252d95eb0a04b47223ee10a0297812053",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/incompressible/createPhi.H": "3bffc7d3f5a4161e528183596a7e029ae7989b1583019db5b77dc2e82313d0cd",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/constrainPressure/constrainPressure.C": "a0c1f2d558785a6d414c519d3f0be241ca815a95490f354cd557665ee682b82b",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/adjustPhi/adjustPhi.C": "0fcf5ae6726f25324ca2c4d1cf8a155792d72f5ec9b7e057ce342699db13a2fd",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/solutionControl/solutionControl/solutionControl.H": "ff8b30ac64e02befa5e687b695dcaa776b95831de7e60fd2c079f49bf3f31d5b",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/solutionControl/solutionControl/solutionControlI.H": "3cbb59cd3dc28b2bf0e97e7ee81cc5cb75631b062998c944c2e638b04ecb7835",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/solutionControl/solutionControl/solutionControl.C": "d76b736ed643b77d50158e44ad8875c0b45dfbc280428cb97efc66a3fded8a71",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/solutionControl/pisoControl/pisoControlI.H": "9ebdc2b6d0987a1ed4a52c59b04c862c2978280c4bcf3e09b96f9285b9c9e03c",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/solutionControl/pisoControl/pisoControl.C": "0100059e65d9a830c7a85e4b5622defe592be6183fe607ce94b29296e0a4caa1",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/solutionControl/pisoControl/pisoControl.H": "9d002189a9eb7e85042541fe1f5cc99e412c2a7e9b8e064abb4ef8c0404894e9",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/fvm/fvmDiv.H": "247bdc108df663df9558a642c75b2e57afe90ec6ace999f917e8cbf1fbf12670",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/fvm/fvmDiv.C": "a466994a91e40fcf06f8dfd89e4c7f435d8419ac03a44bb64277bfe2054563d7",
+    "/opt/openfoam14/src/finiteVolume/solver/solver.C": "bc2d1cae03f67df171d1d5be2d5351f11ef223bd7edbe1c2eeb45af99af43fb9",
+    "/opt/openfoam14/src/finiteVolume/cfdTools/general/findRefCell/findRefCell.C": "4908b91c09dd82829dd7911344a4b7b85e87966f58afab1d41455179583c2d5d",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/fvc/fvcSurfaceIntegrate.C": "a0686a9a6a7f85852237b6bcdaa2cc34c7210e8498e465460726e791e65f5958",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/fvm/fvmSup.H": "2930075cd32b052417e073e204b11894347ef39028b792fd951f05868cb3fcd5",
+    "/opt/openfoam14/src/finiteVolume/finiteVolume/fvm/fvmSup.C": "b3873f26e969e38a8c7a5f410f5b9cbf8b7e5cac809f016f2a6579fd1a937755",
+    "/opt/openfoam14/src/OpenFOAM/matrices/lduMatrix/solvers/GAMG/GAMGSolver.C": "d6c71add5faf45084203e530f38ffa7782692bf43385232636d9ded5d33226e3",
+    "/opt/openfoam14/applications/modules/basicFluidSolver/basicFluidSolver.C": "31d1ec724c56e0ea6fc4f9a5249434015db4af97d9d6fc619cc2ddfeacb23a2d",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/cfdTools/general/findRefCell/findRefCell.C": "8a862c7cdcb5efe99ca8705b5d7f49b0d4e61a0dd46d8f45cf8c86355d231af6",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/fvc/fvcSurfaceIntegrate.C": "e8edde6b0642d945a90b1e5586895c4a122a13e436c82a27300a6f4b59ae9054",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/fvm/fvmSup.H": "b7f4cd52c8ec65c36bca72e2cb77ef42f03732a5e6660649d0410ba4be90f8fc",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/fvm/fvmSup.C": "e72a39bc126226ceaa0995ec5a40521c33de1f49486c6c1a6967b7b712384119",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/OpenFOAM/matrices/lduMatrix/solvers/GAMG/GAMGSolver.C": "6dda8f450f2e2376341106d9281ccca987f87c5c90c805d8ded85a3cad1f98c2",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/ddtSchemes/ddtScheme/ddtScheme.C": "a2cec1518184c3a39883a91d34d90a2aa798b9a053e540a75fd65939fcd66759",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/finiteVolume/ddtSchemes/EulerDdtScheme/EulerDdtScheme.C": "7c13af1cf0d954a802d742e32d97c74fb9a6b3fecb8cff49a474d856bacff2e9",
+    "/opt/openfoam14/src/finiteVolume/fields/fvPatchFields/basic/directionMixed/directionMixedFvPatchField.H": "504eb6c295cef2ef0a0828a9334111c72cc66f2bb40840db8feb01dc22302e35",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fields/fvPatchFields/basic/directionMixed/directionMixedFvPatchField.H": "5c4e00ad730f250d5797c53f45ee7785e29257300073c78320a1b76dc59b6d6b",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fields/fvPatchFields/derived/pressureInletOutletVelocity/pressureInletOutletVelocityFvPatchVectorField.H": "5136a4431070fd9b5d620629991ed02e1313ca7bfbd1787e5727b9abffb8ded8",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fields/fvPatchFields/derived/pressureInletOutletVelocity/pressureInletOutletVelocityFvPatchVectorField.cxx": "83ace0b5d0b17c5d9dcad42bfab3fa7e232300861deef7546e021b1c57a6036e",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/src/finiteVolume/fields/fvPatchFields/derived/totalPressure/totalPressureFvPatchScalarField.cxx": "1cd4b226ffba95e3e9efa6602849cdd82ab9b0cb37978612a61e5a81a37ca51d"
+  },
+  "exact_scalar_aliases": {
+    "precision_required": "WM_DP; assert scalar is double",
+    "foundation_small": 2.220446049250313e-16,
+    "foundation_great": 4503599627370496.0,
+    "native_SMALL": 1e-15,
+    "native_GREAT": 1000000000000000.0,
+    "required": "Function-local lowercase small=numeric_limits<scalar>::epsilon(), great=1/small before including untouched C29 body. Do not alias to native SMALL/GREAT or define global/macro substitutions.",
+    "note": "COMPAT_OPENFOAM_ORG maps lowercase to native values; it does not restore Foundation14 epsilon values."
+  },
+  "continuum_equations": [
+    "div(U)=0",
+    "dU/dt+div(U U)\u2212div[nu(grad(U)+T(grad(U))\u2212(2/3)I div(U))]=\u2212grad(p)\u2212sum_r[T_r n_r W_r/(rho V_r)]",
+    "p is kinematic; nu=1.5e\u22125 m2/s; rho1.225 kg/m3 appears in C29 force conversion only, not as another momentum multiplier"
+  ],
+  "source_matrix": {
+    "provenance": "Both branches matrix operator==(A,B) returnsA\u2212B; F14 fvModels.source(U) creates a zero source matrix with dimensions volume\u00d7velocity/time.",
+    "construct": "fvVectorMatrix sourceMatrix(U,UEqn.dimensions()); addC29Host(mesh,sourceMatrix); UEqn -= sourceMatrix;",
+    "dimensions": "[0 4 \u22122 0 0 0 0] for integrated incompressible momentum; source entry already includes cell volume and1/rho.",
+    "physical_sign": "Positive C29 source is craft-normal direction; subtracting gives force on air opposite it. Directly adding positive C29 source to UEqn reverses the force.",
+    "assembly_order": "Materialize momentum LHS, construct fresh zero temporary, host synchronization/access contract, call C29 once, subtract matrix, then normal relaxation/predictor; keep original UEqn for pressure correction."
+  },
+  "full_laminar_stress": {
+    "foundation_path": "incompressibleMomentumTransportModel::divDevSigma\u2192linearViscousStress::DivDevTau\u2192momentumTransportModel::divDevTauCorr\u2192fvm::divc",
+    "nu_face": "interpolate(alpha*rho*nuEff); present incompressible single phase alpha=rho=1 and laminar nuEff=nu.",
+    "face_correction": "q=\u2212nu_f*fvc::dotInterpolate(mesh.Sf(),dev2(T(fvc::grad(U))))",
+    "lhs": "\u2212fvm::laplacian(nu_f,U)+fvm::Su(fvc::div(q),U)",
+    "divc_identity": "F14 fvmDiv.C102\u2013122: divc(tflux,U)=fvm::Su(fvc::div(tflux()),U), with extra faceFluxCorrectionPtr only if U flux is required.",
+    "current_flux_required": "Only p is explicitly flux-required. For this restricted case no U face-flux pointer needs reproducing; reject or implement it if a future input requires U flux.",
+    "important": "Do not replace with bare\u2212laplacian or silently substitute a cell-centered tensor divergence. Solenoidal continuum simplification does not remove the discrete limited-gradient/face/boundary correction."
+  },
+  "solver_selection": {
+    "original": "PIMPLE1 outer,2 pressure correctors,0 nonorthogonal correctors; momentumPredictor defaulttrue; consistent defaultfalse.",
+    "momentum": "F14 final outer loop marks the momentum solve final before any PISO iteration; UFinal relTol0 is selected. Bare native ico/PISO default momentum solve selects U relTol.05.",
+    "minimal_fix": "Preserve an original UEqn, create auto predictor=(UEqn == \u2212fvc::grad(p)); predictor.ref().solve(mesh.solverDict(\"UFinal\")); do not overwrite UEqn with the pressure-added predictor matrix.",
+    "pressure": "Use native pEqn.solve(p.select(piso.finalInnerIter())) with2 correctors,0 nonorthogonal: p relTol.05 then pFinal relTol0, tolerance1e\u22127.",
+    "relaxation": "No relaxationFactors in original dictionaries: F14 relaxationFactor() returns0; relax() is a no-op. Do not use relax(1), which can enforce diagonal dominance and change source.",
+    "alternative": "Native PIMPLE1outer can be used instead of PISO, but still audit final flags/actual solver dictionaries; explicit UFinal is least ambiguous for the restricted app."
+  },
+  "euler_flux": {
+    "static_conditions": "Fixed mesh, no MRF, Uf invalid/null, incompressible Euler. Then original ddtCorr(U,phi,Uf) reduces to fvcDdtPhiCorr(U,phi).",
+    "foundation": "deltaPhi=phi.oldTime\u2212dotInterpolate(Sf,U.oldTime); c=1\u2212min(abs(deltaPhi)/(abs(phi.oldTime)+dimensioned_epsilon),1); c=0 on every noncoupled U patch; corr=c*deltaPhi/deltaT.",
+    "native": "ddtPhiCoeff_ default\u22121, so standard interior limiter FORM agrees. Native SMALL is1e\u221215 versus F14 epsilon; native zeroes fixed-value/cyclicAMI patches instead of every noncoupled patch.",
+    "current_farfield": "pressureInletOutletVelocity inherits directionMixed fixesValue=true in both branches, so current noncoupled farfield zeroing agrees. Difference is not a boundary-mask bug for this case.",
+    "minimal_exact_helper": "Construct F14-style Euler correction locally with DP epsilon and!coupled mask and use interpolate(rAU)*corr in phiHbyA. No native core edit required; do not call the experimental correction variant.",
+    "scope": "This helper is not a general moving-mesh, rho-weighted, MRF or other-time-scheme port."
+  },
+  "pressure_flux_bc": {
+    "steps": [
+      "rAU=1/UEqn.A; HbyA=constrainHbyA(rAU*UEqn.H,U,p)",
+      "phiHbyA=flux(HbyA)+interpolate(rAU)*EulerCorrection",
+      "constrainPressure before pressure solve; laplacian(rAU,p)=div(phiHbyA), since C29 adds no mass/pressure source",
+      "phi=phiHbyA\u2212pEqn.flux on final nonorthogonal correction; report each continuity correction",
+      "p.relax is identity for current no-factor dictionary; U=HbyA\u2212rAU*grad(p); U.correctBoundaryConditions"
+    ],
+    "no_op_conditions": "Static mesh/no MRF/no extra fvConstraints; consistent=false. Assert these conditions rather than pretending a generic module port.",
+    "adjustPhi": "Both implementations guard internally with p.needReference; native unconditional call is not itself a present-case physics mismatch.",
+    "farfield": "Keep totalPressure p0=0 and pressureInletOutletVelocity with zero imposed tangential velocity, kinematic p units, volumetric phi. Do not replace totalPressure by fixedValue0.",
+    "gauge": "totalPressure fixes p; p.needReference=false, and setReference is inactive unless forceReference is true. Never force a new gauge. Compare absolute p for this fixed-total-pressure case.",
+    "branch_bc_note": "F14 totalPressure includes a tangential-velocity energy term; it vanishes for current zero tangential input. Nonzero/function-valued tangential inputs need a separate adapter."
+  },
+  "dictionary_changes": [
+    "Fresh private cases only; renamed application, no duplicate fvModels/fvOptions C29 evaluation. Preserve original fvModels as provenance/reference, not another active source.",
+    "Native transportProperties with dimensioned nu[0 2\u22121 0 0 0 0]1.5e\u22125; do not change physical viscosity or add another density factor.",
+    "If keeping pisoControl/createFields, translate original PIMPLE2-pressure/0-nonorth settings into PISO; retain U/UFinal,p/pFinal/smoothers/tolerances and explicitly select UFinal.",
+    "Keep Euler; grad(U) cellLimited Gauss linear1; div(phi,U) Gauss linearUpwind grad(U); laplacian Gauss linear corrected; interpolation linear; snGrad corrected. The old vol-tensor div entry alone does not reproduce the face-flux stress.",
+    "First cross-branch controls use the exact same fixed step sequence on a fresh Foundation14 reference and native candidate: adjustTimeStep false, explicit deltaT, no adjustable-write step rounding/function-object limits. Bare icoFoam does not reproduce Foundation14 adaptive ordering.",
+    "Preserve identical shared warm mesh/U/p/rotorParameters/geometry, initial phi policy and source reset semantics; record hashes and startup time."
+  ],
+  "controller_invariants": [
+    "C29 body/include bytes unchanged; one process/one mesh per source-cache lifetime; no moving/topology-changing mesh.",
+    "Cache16\u00d716 horizontal quadrature/vertical intersections and global per-rotor volume reductions; no geometry/mask optimization.",
+    "w_r=\u2212volume-weighted(U\u00b7axis), airTarget per rotor, floor1 m/s, cap0.50 N, alpha=min(1,deltaT/.03).",
+    "Update thrust once per timeIndex, before momentum predictor; do not call in pressure loop or pre-call at startup for cache priming.",
+    "Warm first call at time>0.01 initializes target instantaneously; cold does not. Start/source/timeIndex and actual deltaT must match reference.",
+    "Keep density1.225 and original signed work/shaft/electrical diagnostics; do not log a newly corrected velocity in place of original pre-predictor sampling."
+  ],
+  "host_gpu_contract": "The source loops remain host work. Verify chosen managed/unified mode and synchronization before host U/C/V/mesh/S access and before GPU use of modified source; temporary source zero-fill must be complete. Standard library/Field operations used inside C29 must satisfy host completion semantics. Do not infer safety on WSL from core arithmetic alone.",
+  "unresolved_branch_differences": [
+    "Native global scalar constants outside the local C29/Euler helpers still differ from Foundation14.",
+    "Field/ldu/boundary data layout, limiter/interpolation implementation, Euler old-time registration, gradient/laplacian and floating-point reduction order may differ.",
+    "GAMG source recognizes directSolveCoarsest, but availability/performance/device execution of chosen smoothers and direct solve is not proven by that source declaration.",
+    "Fresh native parser/runtime-selection support for the actual saved U,p/BC syntax and complete finiteVolume libraries must be tested after builds.",
+    "The archive extraction has no local.git; source archive/pin, patches, compiler flags, libraries and binary hashes must be linked to the new method identity; never reuse CPU be7 signature.",
+    "Parent reports native/SPUMA core GPU arithmetic gates passed; remaining library/full-solver and C29 application gates are not established by this static review."
+  ],
+  "validation_gates": [
+    {
+      "gate": "source/input identity",
+      "requirements": "Exact original/body/include hashes; local alias values/DP/label-size logs; mesh/U/p/geometry/rotorParameters hash match; all supported-scope assertions."
+    },
+    {
+      "gate": "matrix/source sign",
+      "requirements": "Fresh source matrix has zero implicit/boundary coefficients and correct dimensions; rho\u00d7sum(applied negative integrated source)=\u2212craftForce. Nonzero source points air opposite craft normal; no duplicate source."
+    },
+    {
+      "gate": "clock/controller/geometry",
+      "requirements": "Per-rotor volumes/weighted flux/controller states and TILT/work logs match fresh Foundation reference at identical times/steps, cold and warm first-call behavior; exactly one TILT per time index."
+    },
+    {
+      "gate": "discrete equation/BC parity",
+      "requirements": "Compare viscous face flux/correction source, UEqn coefficients/H/rAU, Euler correction, phiHbyA, pressure matrices/fluxes, actual UFinal,p,pFinal selection and BC/gauge values on shared seed."
+    },
+    {
+      "gate": "functional cross-branch",
+      "requirements": "Fresh Foundation14 fixed-step versus ported native CPU reference, then same native application CPU versus GPU; predefine tolerances and inspect U,p,phi/force/work/residuals/all continuity corrections; preserve all discrepancies."
+    },
+    {
+      "gate": "GPU functional evidence",
+      "requirements": "Full finiteVolume/application link and actual GPU work inside pressure/momentum time loops, supported memory access, no source-physics downgrade; core arithmetic/startup-only kernels do not suffice."
+    },
+    {
+      "gate": "performance only later",
+      "requirements": "Only after accuracy passes, compare representative end-to-end wall time to best valid CPU reference with matched steps/inputs/accuracy and declared startup/cache/source work. This review records no speed or production-adoption claim."
+    }
+  ],
+  "conclusion": "Plan is source-level viable only with the listed mandatory corrections/explicit restricted scope. No C29 application was compiled/run or numerically validated by this review; root owns a separate candidate implementation.",
+  "no_original_vendor_sdk_case_or_preserved_fragment_edits": true
+}

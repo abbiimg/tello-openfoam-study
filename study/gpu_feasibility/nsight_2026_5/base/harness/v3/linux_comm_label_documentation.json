@@ -1,0 +1,10 @@
+{
+  "source": "Linux man-pages proc_pid_comm(5)",
+  "url": "https://man7.org/linux/man-pages/man5/proc_pid_comm.5.html",
+  "accessed_UTC_date": "2026-11-02",
+  "supported_fact": "Linux comm truncates labels to TASK_COMM_LEN16 including the terminating null, hence15 bytes for this ASCII executable basename.",
+  "selected_probe_basename": "Test-nativeStdparFields",
+  "exact_comm15": "Test-nativeStdp",
+  "qualification": "This is an exact alternative metadata label only. It is not independent executable identity or a blanket assertion about every Nsight PROCESSES.name value.",
+  "no_GPU_rerun": true
+}

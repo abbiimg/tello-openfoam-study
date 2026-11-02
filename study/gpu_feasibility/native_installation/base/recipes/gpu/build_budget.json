@@ -1,0 +1,8 @@
+{
+  "max_jobs": 4,
+  "minimum_available_memory_gib": 20,
+  "nice": 15,
+  "reason": "Root released four native stdpar jobs after all84 CPU CFD and AmgX integration completed; SPUMA may use two separately. Preserve at least20GiB available RAM and read between stages.",
+  "early_field_probe_borrowed_spuma_slot": false,
+  "borrow_authorization": "Root relay confirms SPUMA budget pinned1 during this single-TU probe; native main4+probe1+SPUMA1=global6. Return flag after compile/link."
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "Exact two-file backport of official LLNL CUDA13 memory-API compatibility into pinned Umpire2025.03.0",
+  "completed_utc": "2026-11-02T07:52:08.210028+00:00",
+  "base_archive_sha256": "3a75ac48f65fba52e1e02b434bcd918c93eede59a39455465c64d1fe8dd6632f",
+  "upstream_commit": "03c43d88537e4932b9d6dac8591abcd8c25a61ae",
+  "files": [
+    {
+      "path": "src/umpire/op/CudaAdviseOperation.cpp",
+      "upstream_url": "https://raw.githubusercontent.com/LLNL/Umpire/03c43d88537e4932b9d6dac8591abcd8c25a61ae/src/umpire/op/CudaAdviseOperation.cpp",
+      "upstream_commit": "03c43d88537e4932b9d6dac8591abcd8c25a61ae",
+      "original_sha256": "c9ed61563e9bd52ae5d0ae03a119360c5c48f73b80e3373de01a85c485f70420",
+      "patched_sha256": "75339e9b5126bfaef2ba32ff45c95ef2f53e9f165d6ede4e1a229ae66ea98bde"
+    },
+    {
+      "path": "src/umpire/op/CudaMemPrefetchOperation.cpp",
+      "upstream_url": "https://raw.githubusercontent.com/LLNL/Umpire/03c43d88537e4932b9d6dac8591abcd8c25a61ae/src/umpire/op/CudaMemPrefetchOperation.cpp",
+      "upstream_commit": "03c43d88537e4932b9d6dac8591abcd8c25a61ae",
+      "original_sha256": "1d7fe2b60c743170c020b7783b49c7399746d6c31c360e74778a024497abd2f7",
+      "patched_sha256": "797d68020038071494fb750caf4f185638068c13ceb0f32eb0d26f33032fce15"
+    }
+  ],
+  "patch": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/provenance/umpire_cuda13_backport.patch",
+  "patch_sha256": "c2fc9a5681285ed78491e82a26148ba4cb95227e763fa190dbfade88ebf16106",
+  "reason": "CUDA13 cudaMemAdvise/cudaMemPrefetchAsync changed device arguments to cudaMemLocation; official OpenFOAM config still selects Umpire2025.03.0.",
+  "allocator_algorithm_changes": false,
+  "production_changes": false
+}

@@ -1,0 +1,40 @@
+
+CUDA Driver Version:           13040
+
+Device Number:                 0
+Device Name:                   NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)
+Device Revision Number:        12.1
+Global Memory Size:            109555161497
+Number of Multiprocessors:     48
+Concurrent Copy and Execution: Yes
+Total Constant Memory:         65536
+Total Shared Memory per Block: 49152
+Registers per Block:           65536
+Warp Size:                     32
+Maximum Threads per Block:     1024
+Maximum Block Dimensions:      1024, 1024, 64
+Maximum Grid Dimensions:       2147483647 x 65535 x 65535
+Maximum Memory Pitch:          2147483647B
+Texture Alignment:             512B
+Clock Rate:                    1048 MHz
+Execution Timeout:             Yes
+Integrated Device:             Yes
+Can Map Host Memory:           Yes
+Compute Mode:                  default
+Concurrent Kernels:            Yes
+ECC Enabled:                   No
+Memory Clock Rate:             1048 MHz
+Memory Bus Width:              0 bits
+L2 Cache Size:                 25165824 bytes
+Max Threads Per SMP:           1536
+Async Engines:                 1
+Unified Addressing:            Yes
+Managed Memory:                Yes
+Concurrent Managed Memory:     No
+Preemption Supported:          Yes
+Cooperative Launch:            Yes
+Cluster Launch:                Yes
+Unified Function Pointers:     Yes
+Unified Memory:                No
+Memory Models Flags:           -gpu=mem:separate
+Default Target:                cc121

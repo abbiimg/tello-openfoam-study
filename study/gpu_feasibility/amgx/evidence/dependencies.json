@@ -1,0 +1,22 @@
+{
+  "source_commit": "cc1cebdbb32b14d33762d4ddabcb2e23c1669f47",
+  "cuda_overlay": "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13",
+  "reused_prefix_read_only": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13",
+  "new_components": [
+    {
+      "component": "libcusolver",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcusolver/linux-sbsa/libcusolver-linux-sbsa-12.0.4.66-archive.tar.xz",
+      "sha256": "882c480bedd5ec6e416fe0a9edb7bfdd78f6ffa885310870e4a04d8fce8e655d",
+      "bytes": 291337460,
+      "version": "12.0.4.66"
+    }
+  ],
+  "manifest_sha256": "fce66717a81c510ffeb89ecc3e79849ab34af3b80139f750876d9033e31d71c2",
+  "no_global_changes": true,
+  "max_build_jobs": 2,
+  "nice_level": 15,
+  "cccl_headers": [
+    "/opt/openfoam-workspace/gpu-feasibility/amgx-cuda/cuda13/include/cccl/thrust/version.h"
+  ],
+  "cusolver_present": true
+}

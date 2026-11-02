@@ -1,0 +1,98 @@
+{
+  "kind": "Lossless safe selected-row subset of the ONE closed current-Nsight Field control",
+  "original_sqlite_sha256": "9b42e088184eca91acad3fc86a479417d7cc16653187c95965afbf6a32dd36e0",
+  "original_report_sha256": "6140a06f276c9b037bc64f3c075cbad8e8ef02a1e41a600f83a9ed6621795a7f",
+  "original_private_gate_sha256": "8497e7bef6ba44436cac1bda9affd02c79cb756568518453632b9430a214c846",
+  "subset_sha256": "5602699ee2bbe13bb003480e3e14d3031120c3779b0b33d326e0d985d2945f87",
+  "selected_table_multisets": {
+    "PROCESSES": {
+      "rows": 1,
+      "column_count": 3,
+      "original_selected_row_multiset_sha256": "0ceaef27c5d81341cf9fb85a0e78bb3a3c3f6c032016ffe30cfd2285e5bb7807",
+      "subset_row_multiset_sha256": "0ceaef27c5d81341cf9fb85a0e78bb3a3c3f6c032016ffe30cfd2285e5bb7807",
+      "equal": true
+    },
+    "NVTX_EVENTS": {
+      "rows": 1,
+      "column_count": 21,
+      "original_selected_row_multiset_sha256": "df7f3862b845b03494555ec03ce23510d420787a55ee2cbe082394467d59d062",
+      "subset_row_multiset_sha256": "df7f3862b845b03494555ec03ce23510d420787a55ee2cbe082394467d59d062",
+      "equal": true
+    },
+    "CUPTI_ACTIVITY_KIND_RUNTIME": {
+      "rows": 17,
+      "column_count": 8,
+      "original_selected_row_multiset_sha256": "75b3547a98130a059a9252e43ff14eb4f518e877e5ce74e038df97416ddb9d55",
+      "subset_row_multiset_sha256": "75b3547a98130a059a9252e43ff14eb4f518e877e5ce74e038df97416ddb9d55",
+      "equal": true
+    },
+    "CUPTI_ACTIVITY_KIND_KERNEL": {
+      "rows": 8,
+      "column_count": 40,
+      "original_selected_row_multiset_sha256": "3db7db45a0d85e1ec0ad27ccecef962ffcb462fa0dc8f41275152fb01f677d2d",
+      "subset_row_multiset_sha256": "3db7db45a0d85e1ec0ad27ccecef962ffcb462fa0dc8f41275152fb01f677d2d",
+      "equal": true
+    },
+    "DIAGNOSTIC_EVENT": {
+      "rows": 4,
+      "column_count": 6,
+      "original_selected_row_multiset_sha256": "3e548f9850f73a3b8ce191c9850869031c1dd3807af5550354ae6e5267b0c8ec",
+      "subset_row_multiset_sha256": "3e548f9850f73a3b8ce191c9850869031c1dd3807af5550354ae6e5267b0c8ec",
+      "equal": true
+    },
+    "StringIds": {
+      "rows": 18,
+      "column_count": 2,
+      "original_selected_row_multiset_sha256": "d7d494fa7506cce642e069c1a3e92bf6548fe3f58dfd61f50a36d05f5f304c80",
+      "subset_row_multiset_sha256": "d7d494fa7506cce642e069c1a3e92bf6548fe3f58dfd61f50a36d05f5f304c80",
+      "equal": true
+    }
+  },
+  "StringIds_exactly_referenced_and_allowlisted": [
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    97,
+    98,
+    99,
+    100,
+    102,
+    103,
+    104,
+    106,
+    107,
+    108,
+    109,
+    111
+  ],
+  "actual_PID": 1778006,
+  "actual_globalTid": 311304969199958,
+  "actual_globalPid": 311304967421952,
+  "launch_API_calls": 8,
+  "successful_sync_API_calls": 9,
+  "post_last_device_completion_count": 1,
+  "attributed_kernel_rows": 8,
+  "all_kernel_correlations_match_actual_launches": true,
+  "target_warning_text_allowlist": [
+    "Not all CUDA events might have been collected.",
+    "Not all NVTX events might have been collected.",
+    "Number of CUDA events collected: \t36.",
+    "Unified Memory trace is currently not supported for Tegra iGPU device, disabling."
+  ],
+  "retained_incomplete_event_warning_texts": [
+    "Unified Memory trace is currently not supported for Tegra iGPU device, disabling.",
+    "Not all NVTX events might have been collected.",
+    "Not all CUDA events might have been collected.",
+    "Number of CUDA events collected: \t36."
+  ],
+  "environment_tables_or_unrelated_processes_or_strings_copied": false,
+  "raw_private_evidence_changed": false,
+  "GPU_application_or_CFD_rerun": false,
+  "speedup_measured": false,
+  "large_C29_transient_qualified": false,
+  "integrity_check": "ok",
+  "qualification": "The named algebra range is complete; incomplete-event diagnostics prohibit claiming that every event in the whole process was captured."
+}

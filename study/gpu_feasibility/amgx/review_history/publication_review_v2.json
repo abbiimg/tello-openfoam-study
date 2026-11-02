@@ -1,0 +1,99 @@
+{
+  "kind": "Read-only focused AMGX publication v2 review",
+  "reviewed_at_local_date": "2026-11-02",
+  "reviewer": "/root/final_packaging",
+  "recommendation": "Both v1 review blockers resolved; acceptable for root-approved source/recipe/evidence publication within the existing compatibility-only scope.",
+  "unresolved_blockers": [],
+  "supersedes_findings_from": "work/amgx_publication_review.json",
+  "candidate": {
+    "directory": "work/amgx_publication_candidate",
+    "archive": "work/amgx_publication_candidate.zip",
+    "archive_sha256": "70ca92a39552dbd7e05c8b5d231afa17e2ddf805df07b31f330ab1f68dfe98b7",
+    "archive_bytes": 167745,
+    "members": 92,
+    "crc_bad_member": null,
+    "manifest_inventory_exact": true,
+    "manifest_hash_or_size_failures": [],
+    "zip_directory_payload_differences": [],
+    "duplicate_or_unsafe_zip_names": [],
+    "zip_symlinks": [],
+    "previous_archive_sha256": "b43236350f8896ba2a803dfbadef53473d0e60206b6e04f2eeb6ea30f4cb7fae",
+    "previous_archive_preserved_and_verified": true,
+    "added_files": [
+      "evidence/path_fixture_checks.json",
+      "logs/restore-path-fixtures.log",
+      "recipes/test_restore_paths.py",
+      "recorded-recipes/HISTORICAL_REFERENCES.md"
+    ],
+    "changed_files": [
+      "README.md",
+      "evidence/pins.json",
+      "evidence/portable_recipe_checks.json",
+      "manifest.json",
+      "recipes/restore_pilots.py"
+    ],
+    "removed_files": [],
+    "changed_original_historical_numerical_source_input_field_or_log_payloads": []
+  },
+  "resolved_findings": {
+    "F1": {
+      "resolved": true,
+      "fixed_cpu_manifest_sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+      "seed_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+      "guards": [
+        "All shared, override and frozen-input catalogue keys validated before destination creation.",
+        "Absolute, empty, dot/dot-dot, backslash, colon/drive and NUL paths rejected.",
+        "Source and destination resolved containment below their exact selected roots.",
+        "Existing ancestor, leaf and dangling symlinks rejected, including selected root and external source paths.",
+        "Fixed CPU manifest checked against both metadata and file bytes; external catalogue records/inventories bound to its frozen inputs.",
+        "Fresh-root and exclusive destination-file creation preserved; containment rechecked after parent creation."
+      ],
+      "independent_real_read_only_seed_gate_passed": true,
+      "independent_in_memory_unsafe_catalogue_rejections": 48,
+      "independent_replacement_manifest_metadata_rejection": true,
+      "independent_replacement_control_record_rejection": true,
+      "owner_filesystem_fixture_tests_passed": 7,
+      "owner_fixture_failures_errors_skips": [0, 0, 0],
+      "filesystem_symlink_fixture_source_log_and_report_reviewed": true,
+      "filesystem_fixture_rerun_by_reviewer": false,
+      "scope": "Static metadata and existing filesystem symlinks; no hostile concurrent-filesystem race-proof claim."
+    },
+    "F2": {
+      "resolved": true,
+      "reference_map": "recorded-recipes/HISTORICAL_REFERENCES.md",
+      "clarifications": [
+        "Recorded scripts explicitly not runnable in curated locations; supported portable entry points are recipes/.",
+        "Moved sibling manifests/MCP receipts/source identified under evidence/ and src/.",
+        "Absent source_pin response, original provisioning/build scripts, full build logs and private helper/clone material explicitly local-only.",
+        "External frozen seed and original actuator library provenance distinguished from portable private source recompilation.",
+        "Large final rotor fields explicitly local-only; small final cavity fields included.",
+        "No original recorded-script or installation-note bytes silently rewritten."
+      ]
+    }
+  },
+  "independent_syntax_check": {
+    "python_ast_scripts_checked": 6,
+    "failures": [],
+    "candidate_bytecode_or_cache_created": false,
+    "shell_scripts": "Unchanged from the four scripts syntax-checked in v1 review."
+  },
+  "scientific_scope_unchanged": {
+    "rotor_gpu_pressure_solves": 10,
+    "successful_observed_launch_api_calls": 16310,
+    "max_final_corrector_native_residual": 5.9731499e-9,
+    "native_inferred_electrical_mean_W": 19.13184417874791,
+    "amgx_inferred_electrical_mean_W": 19.131509289160753,
+    "electrical_target_W": 19.2923077,
+    "qualification": "Five-step controller-reset compatibility only; no speedup, settled/equal-power optimum, new-host rebuild, fresh portable restoration, full-field offload or production-default claim. Rotor final-field norms remain reported/analyzer-checked rather than independently recomputed from this small bundle."
+  },
+  "review_boundaries": {
+    "candidate_or_study_mutated": false,
+    "seed_mutated": false,
+    "host_fixture_files_created": false,
+    "case_created": false,
+    "build_install_simulation_benchmark_or_packager_run": false,
+    "git_or_publication_action": false,
+    "network_used": false,
+    "only_outputs_written": ["work/amgx_publication_review_v2.md", "work/amgx_publication_review_v2.json"]
+  }
+}

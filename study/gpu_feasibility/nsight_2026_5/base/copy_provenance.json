@@ -1,0 +1,517 @@
+{
+  "copies": [
+    {
+      "candidate_path": "installation/installation_receipt.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/installation_receipt.json",
+      "source_sha256": "bee7c3f2dee1f71914e99c407c5fca0fe4b48b508f857f4f8220b13fd7609f59",
+      "copied_sha256": "bee7c3f2dee1f71914e99c407c5fca0fe4b48b508f857f4f8220b13fd7609f59",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/install_current_nsight_private.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/install_current_nsight_private.py",
+      "source_sha256": "539ed85a3a4be5ff534cdbc7938c8372d2d014592818f57a2a4e942c159b6fb2",
+      "copied_sha256": "539ed85a3a4be5ff534cdbc7938c8372d2d014592818f57a2a4e942c159b6fb2",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/install_current_nsight_private_initial_metadata_assert.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/install_current_nsight_private_initial_metadata_assert.py",
+      "source_sha256": "deae4c5d95ca124ff96d1dbecdc224543c0ad55fefb1e515ed7946f133734fe3",
+      "copied_sha256": "deae4c5d95ca124ff96d1dbecdc224543c0ad55fefb1e515ed7946f133734fe3",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/README.md",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/README.md",
+      "source_sha256": "bdd70d49e0e7247679e50d7240264ccbca36d2bb8f07d2bd78d51025a8a62158",
+      "copied_sha256": "bdd70d49e0e7247679e50d7240264ccbca36d2bb8f07d2bd78d51025a8a62158",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/audit_control.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/audit_control.py",
+      "source_sha256": "8912f7431e888575ee301a31ffbf867ad18c4bf90feeaef12dad8ff8eb2f76ff",
+      "copied_sha256": "8912f7431e888575ee301a31ffbf867ad18c4bf90feeaef12dad8ff8eb2f76ff",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/control_child.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/control_child.py",
+      "source_sha256": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+      "copied_sha256": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/control_common.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/control_common.py",
+      "source_sha256": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+      "copied_sha256": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/helper_manifest.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/helper_manifest.json",
+      "source_sha256": "1690e43f873dae69a3efb8eaa47b7b68771872ebba588f524bb5fb2baa2257ec",
+      "copied_sha256": "1690e43f873dae69a3efb8eaa47b7b68771872ebba588f524bb5fb2baa2257ec",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/linked_libraries.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/linked_libraries.json",
+      "source_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "copied_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/owned_cleanup.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/owned_cleanup.py",
+      "source_sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "copied_sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/protocol.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/protocol.json",
+      "source_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+      "copied_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v1/run_control.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/run_control.py",
+      "source_sha256": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+      "copied_sha256": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/README.md",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/README.md",
+      "source_sha256": "caaad6f59860d3494d78733dbcd3b9521f7f54de8a315944f134be345ce1efe0",
+      "copied_sha256": "caaad6f59860d3494d78733dbcd3b9521f7f54de8a315944f134be345ce1efe0",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/audit_control.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/audit_control.py",
+      "source_sha256": "905fbd10ba8cb4fc77c0d913315d74ba136a4602e623b3dd1b5c48064d5cda07",
+      "copied_sha256": "905fbd10ba8cb4fc77c0d913315d74ba136a4602e623b3dd1b5c48064d5cda07",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/control_child.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/control_child.py",
+      "source_sha256": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+      "copied_sha256": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/control_common.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/control_common.py",
+      "source_sha256": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+      "copied_sha256": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/helper_manifest.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/helper_manifest.json",
+      "source_sha256": "1e0c435d93a35da9f25f2bd449f3b393b7dd7536ec23907b01a980d3eccad3c6",
+      "copied_sha256": "1e0c435d93a35da9f25f2bd449f3b393b7dd7536ec23907b01a980d3eccad3c6",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/linked_libraries.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/linked_libraries.json",
+      "source_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "copied_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/owned_cleanup.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/owned_cleanup.py",
+      "source_sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "copied_sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/protocol.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/protocol.json",
+      "source_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+      "copied_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/run_control.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/run_control.py",
+      "source_sha256": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+      "copied_sha256": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v2/v2_warning_coverage.diff",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/v2_warning_coverage.diff",
+      "source_sha256": "22b4ff9f56d49972d30060a789d642cb686967372875cb6a5d407044517a016c",
+      "copied_sha256": "22b4ff9f56d49972d30060a789d642cb686967372875cb6a5d407044517a016c",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/README.md",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/README.md",
+      "source_sha256": "9e656eaecfd1ef20dd52102a9e7271c328818a306e746e056b7fec0c5f01bb73",
+      "copied_sha256": "9e656eaecfd1ef20dd52102a9e7271c328818a306e746e056b7fec0c5f01bb73",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/audit_control.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/audit_control.py",
+      "source_sha256": "1d5b854377d30e84bbfcf6024fb8e3287a3afa6b97978327c769fb4bca288895",
+      "copied_sha256": "1d5b854377d30e84bbfcf6024fb8e3287a3afa6b97978327c769fb4bca288895",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/control_child.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/control_child.py",
+      "source_sha256": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+      "copied_sha256": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/control_common.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/control_common.py",
+      "source_sha256": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+      "copied_sha256": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/helper_manifest.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/helper_manifest.json",
+      "source_sha256": "e9e5b59284cbaeeb0c9a54fd4f709e2e44d49cf77b9d198196b5a4b31fd43605",
+      "copied_sha256": "e9e5b59284cbaeeb0c9a54fd4f709e2e44d49cf77b9d198196b5a4b31fd43605",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/linked_libraries.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/linked_libraries.json",
+      "source_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "copied_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/linux_comm_label_documentation.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/linux_comm_label_documentation.json",
+      "source_sha256": "743bab9ffbad20b548014cf2417779b8784bd071d01d732f22458356cca22bbe",
+      "copied_sha256": "743bab9ffbad20b548014cf2417779b8784bd071d01d732f22458356cca22bbe",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/owned_cleanup.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/owned_cleanup.py",
+      "source_sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "copied_sha256": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/protocol.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/protocol.json",
+      "source_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+      "copied_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/run_control.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/run_control.py",
+      "source_sha256": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+      "copied_sha256": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/v2_warning_coverage.diff",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/v2_warning_coverage.diff",
+      "source_sha256": "22b4ff9f56d49972d30060a789d642cb686967372875cb6a5d407044517a016c",
+      "copied_sha256": "22b4ff9f56d49972d30060a789d642cb686967372875cb6a5d407044517a016c",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "harness/v3/v3_process_label_audit.diff",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v3/v3_process_label_audit.diff",
+      "source_sha256": "f1c679ade58416e410a0972f83572e30515b824987a40c5817daab2ac14609af",
+      "copied_sha256": "f1c679ade58416e410a0972f83572e30515b824987a40c5817daab2ac14609af",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "reviews/nsys_2026_5_positive_control_independent_review.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_independent_review.json",
+      "source_sha256": "977c54026e2ad0b1504868ce78d81c96698b678760a43fa4567f1a8efca2dd8a",
+      "copied_sha256": "977c54026e2ad0b1504868ce78d81c96698b678760a43fa4567f1a8efca2dd8a",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "reviews/nsys_2026_5_positive_control_independent_review.md",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_independent_review.md",
+      "source_sha256": "b80aa81a83de2abdb296583887144cd14cb81bab95aba9bd7a463e0de53fb6d9",
+      "copied_sha256": "b80aa81a83de2abdb296583887144cd14cb81bab95aba9bd7a463e0de53fb6d9",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "reviews/nsys_2026_5_process_label_audit_independent_review.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_process_label_audit_independent_review.json",
+      "source_sha256": "74b305e78fdec7e935316eb3561c40d33e17de19bc865f82b0a5abe864aa1d62",
+      "copied_sha256": "74b305e78fdec7e935316eb3561c40d33e17de19bc865f82b0a5abe864aa1d62",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "reviews/nsys_2026_5_process_label_audit_independent_review.md",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_process_label_audit_independent_review.md",
+      "source_sha256": "274c1c70cadb6592c0c7c95e14014744c20f6dc72e0c87e64e6e73dd05efbc82",
+      "copied_sha256": "274c1c70cadb6592c0c7c95e14014744c20f6dc72e0c87e64e6e73dd05efbc82",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "approvals_and_commands/nsys_2026_5_positive_control_approval.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_approval.json",
+      "source_sha256": "9e16cc3647c7a98e7b54ff011ecfdd54d44b7fd7baa9be523ecb3c081a857b97",
+      "copied_sha256": "9e16cc3647c7a98e7b54ff011ecfdd54d44b7fd7baa9be523ecb3c081a857b97",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "approvals_and_commands/nsys_2026_5_positive_control_audit_v3_approval.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_audit_v3_approval.json",
+      "source_sha256": "1715c1bdd80cc98b26f82e98a6673fb161e85033da8c5ab48db21fd687556861",
+      "copied_sha256": "1715c1bdd80cc98b26f82e98a6673fb161e85033da8c5ab48db21fd687556861",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "approvals_and_commands/run_approved_new_nsight_control.sh",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/run_approved_new_nsight_control.sh",
+      "source_sha256": "99f30c1900854681223c21043d5b89fd6e35d2f5f2130f449957fd638d0feeec",
+      "copied_sha256": "99f30c1900854681223c21043d5b89fd6e35d2f5f2130f449957fd638d0feeec",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "approvals_and_commands/audit_existing_new_nsight_control_v3.sh",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/audit_existing_new_nsight_control_v3.sh",
+      "source_sha256": "4584da80f45e86dbde82dad5bf2ae8d274a1a34d9a1231e60bb737f83d067662",
+      "copied_sha256": "4584da80f45e86dbde82dad5bf2ae8d274a1a34d9a1231e60bb737f83d067662",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/original_V2_audit_metadata_failure.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_original_audit_failure.json",
+      "source_sha256": "b0a982e949b130e5f3b67076dd04dfaae6f0077c2b3d1d1e27e5f4e73cb6aa09",
+      "copied_sha256": "b0a982e949b130e5f3b67076dd04dfaae6f0077c2b3d1d1e27e5f4e73cb6aa09",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/prepare_new_nsys_control_source_only.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/prepare_new_nsys_control_source_only.py",
+      "source_sha256": "b57cedaa99372963b022b77892420b9f709c1750d5206eeb3a595657196cec68",
+      "copied_sha256": "b57cedaa99372963b022b77892420b9f709c1750d5206eeb3a595657196cec68",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/prepare_new_nsys_control_warning_v2.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/prepare_new_nsys_control_warning_v2.py",
+      "source_sha256": "320e73063fdf03f01c58e6432c206abf8c7b2a272a094e00703086f028e73807",
+      "copied_sha256": "320e73063fdf03f01c58e6432c206abf8c7b2a272a094e00703086f028e73807",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/prepare_new_nsys_control_label_v3.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/prepare_new_nsys_control_label_v3.py",
+      "source_sha256": "3a07541ea2479bf068ace880729b0692c2ba739c80e0b2d7bd7e19f63dd83ad4",
+      "copied_sha256": "3a07541ea2479bf068ace880729b0692c2ba739c80e0b2d7bd7e19f63dd83ad4",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/extract_current_nsight_safe_subset.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/extract_current_nsight_safe_subset.py",
+      "source_sha256": "60c3ca9e1197a81e5b1fa11fad3f3db2a3cc68c630b1f02f45ba0687ab0027e0",
+      "copied_sha256": "60c3ca9e1197a81e5b1fa11fad3f3db2a3cc68c630b1f02f45ba0687ab0027e0",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "recipes/curate_current_nsight_publication_candidate.py",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/curate_current_nsight_publication_candidate.py",
+      "source_sha256": "69409aaabc2904013379f7ffc08c4238b1a193159745910eb0a34b21702a2b99",
+      "copied_sha256": "69409aaabc2904013379f7ffc08c4238b1a193159745910eb0a34b21702a2b99",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "probe_source/Test-nativeStdparFields.C",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/field_algebra_gate/Test-nativeStdparFields.C",
+      "source_sha256": "046dfc47664ff9b29544bfbb78d395ca9c745623d906b7af844c5c24d416a88b",
+      "copied_sha256": "046dfc47664ff9b29544bfbb78d395ca9c745623d906b7af844c5c24d416a88b",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "probe_source/Make/files",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/field_algebra_gate/Make/files",
+      "source_sha256": "309cb9fbc5e3d5e2b45eb2a177607a1d292ce343058b36ca3fbea52a358742dc",
+      "copied_sha256": "309cb9fbc5e3d5e2b45eb2a177607a1d292ce343058b36ca3fbea52a358742dc",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "probe_source/Make/options",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/field_algebra_gate/Make/options",
+      "source_sha256": "aea7267a50ebe8f4b651fffeab28a256b4a62875e3dbeb413f4ed08287aad1aa",
+      "copied_sha256": "aea7267a50ebe8f4b651fffeab28a256b4a62875e3dbeb413f4ed08287aad1aa",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "probe_source/linked_libraries.json",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal/linked_libraries.json",
+      "source_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "copied_sha256": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/0/p",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/0/p",
+      "source_sha256": "0fd4f30a227253e74aad4a434ed9462686ede8f1ba0b6f8a3531c40d94cfc7e6",
+      "copied_sha256": "0fd4f30a227253e74aad4a434ed9462686ede8f1ba0b6f8a3531c40d94cfc7e6",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/0/U",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/0/U",
+      "source_sha256": "954e1ea33a7ccb3a6b3086fa0cd960a05c27fcf7e3a36a82c5ce25f58c070045",
+      "copied_sha256": "954e1ea33a7ccb3a6b3086fa0cd960a05c27fcf7e3a36a82c5ce25f58c070045",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/constant/transportProperties",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/constant/transportProperties",
+      "source_sha256": "261eba87dbc7f101785f5c76212e151a2d68c1b98d930a1a6add3bafa391fc51",
+      "copied_sha256": "261eba87dbc7f101785f5c76212e151a2d68c1b98d930a1a6add3bafa391fc51",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/system/PDRblockMeshDict",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/system/PDRblockMeshDict",
+      "source_sha256": "7cd46b7abe691296d4b008ff22f566d9d9b834463c64dc7cf76ec4ffd6afbab7",
+      "copied_sha256": "7cd46b7abe691296d4b008ff22f566d9d9b834463c64dc7cf76ec4ffd6afbab7",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/system/blockMeshDict",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/system/blockMeshDict",
+      "source_sha256": "6321615ce9d5b6bcbe480eb274b8af308e340b91adebe1c990ad464b01bfbd80",
+      "copied_sha256": "6321615ce9d5b6bcbe480eb274b8af308e340b91adebe1c990ad464b01bfbd80",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/system/decomposeParDict",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/system/decomposeParDict",
+      "source_sha256": "829af8c99f84bc74f6e845106f7ef8344ec04c822e9b3fab4e847b9d0cc305df",
+      "copied_sha256": "829af8c99f84bc74f6e845106f7ef8344ec04c822e9b3fab4e847b9d0cc305df",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/system/fvSolution",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/system/fvSolution",
+      "source_sha256": "0d85777e484b68253f9c99c56ca2b5c5d69fb7aa5574d31493fdbe0fa282c224",
+      "copied_sha256": "0d85777e484b68253f9c99c56ca2b5c5d69fb7aa5574d31493fdbe0fa282c224",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/system/fvSchemes",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/system/fvSchemes",
+      "source_sha256": "c68daea473990cf22575494457ae406a66eed1e14433c6c0428870aff9c6310f",
+      "copied_sha256": "c68daea473990cf22575494457ae406a66eed1e14433c6c0428870aff9c6310f",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "tiny_Time_only_case/system/controlDict",
+      "source_path": "/opt/openfoam-workspace/cases/native_stdpar_gpu_pilots_20261102/field_algebra_gate/system/controlDict",
+      "source_sha256": "d42dca1cb4bf983fe9974b1e899bcb8a746b393a32ccae35af67678e42add322",
+      "copied_sha256": "d42dca1cb4bf983fe9974b1e899bcb8a746b393a32ccae35af67678e42add322",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "probe_source/private_native_environment.sh",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/env.sh",
+      "source_sha256": "7cdcd1f4ce2c612bf83c1d8254fb2942fe92af4a788ae3be75ecf6f209e7947d",
+      "copied_sha256": "7cdcd1f4ce2c612bf83c1d8254fb2942fe92af4a788ae3be75ecf6f209e7947d",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/actual_start.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/actual_start.json",
+      "source_sha256": "cac9d7a2349b219030d7902dd580e054c294d08491ffca87409c189f78e6edbd",
+      "copied_sha256": "cac9d7a2349b219030d7902dd580e054c294d08491ffca87409c189f78e6edbd",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/actual_exit.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/actual_exit.json",
+      "source_sha256": "20153f5d735de6ccb57f64825d9408fbcee42c1231a7e7ee1f97cfef3bf34130",
+      "copied_sha256": "20153f5d735de6ccb57f64825d9408fbcee42c1231a7e7ee1f97cfef3bf34130",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/actual_spawn.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/actual_spawn.json",
+      "source_sha256": "d90e02c31dca0b9d170cd0d367308f04b3535f37cc353b7df5af486de0b87b08",
+      "copied_sha256": "d90e02c31dca0b9d170cd0d367308f04b3535f37cc353b7df5af486de0b87b08",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/actual_wrapper_start.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/actual_wrapper_start.json",
+      "source_sha256": "9eb69f8971ad6143cdb6b7751ed05cc1cfd82e44bff9c228a73643007ad7fc90",
+      "copied_sha256": "9eb69f8971ad6143cdb6b7751ed05cc1cfd82e44bff9c228a73643007ad7fc90",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/wrapper_exit.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/wrapper_exit.json",
+      "source_sha256": "0c4e91648897f7539795804de42f034b522c1656119fcdd5f38e1e66a93216d1",
+      "copied_sha256": "0c4e91648897f7539795804de42f034b522c1656119fcdd5f38e1e66a93216d1",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/prelaunch.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/prelaunch.json",
+      "source_sha256": "4292f72a5ed70dc75616d93c2b83a38cb9965367bef98375e9b5edcd64801da9",
+      "copied_sha256": "4292f72a5ed70dc75616d93c2b83a38cb9965367bef98375e9b5edcd64801da9",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/profile_exit.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/profile_exit.json",
+      "source_sha256": "8c4b029f88f8d2e4ecb3232a61e50d57b7fa27fe18893fe692dddf3abdbbc24a",
+      "copied_sha256": "8c4b029f88f8d2e4ecb3232a61e50d57b7fa27fe18893fe692dddf3abdbbc24a",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/export_exit.json",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/export_exit.json",
+      "source_sha256": "ac26cc9f3a87eb007e43132002870d28d7eb2513bddd752091cdfabca0a5b296",
+      "copied_sha256": "ac26cc9f3a87eb007e43132002870d28d7eb2513bddd752091cdfabca0a5b296",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/probe_stdout.log",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/probe_stdout.log",
+      "source_sha256": "9b01ae31880c73d03717116d2547b67eb182c4e45aa1fce6e08d09fdabd769e4",
+      "copied_sha256": "9b01ae31880c73d03717116d2547b67eb182c4e45aa1fce6e08d09fdabd769e4",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/profile.log",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/profile.log",
+      "source_sha256": "86f775ab30116e63602178d58219258a5ae6d192151015c4a2417beb32a44693",
+      "copied_sha256": "86f775ab30116e63602178d58219258a5ae6d192151015c4a2417beb32a44693",
+      "exact_content_copy": true
+    },
+    {
+      "candidate_path": "evidence/export.log",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/export.log",
+      "source_sha256": "151bdc23bee98936e83f2a5d35653f7d5da94161207a71d2d6a29e3840ca5943",
+      "copied_sha256": "151bdc23bee98936e83f2a5d35653f7d5da94161207a71d2d6a29e3840ca5943",
+      "exact_content_copy": true
+    }
+  ],
+  "method": "Exclusive content writes, flush/fsync and immediate byte equality; no filesystem metadata copying",
+  "source_or_case_or_binary_mutations": false
+}

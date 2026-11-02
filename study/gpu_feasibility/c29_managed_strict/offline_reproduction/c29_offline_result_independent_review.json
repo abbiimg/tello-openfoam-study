@@ -1,0 +1,151 @@
+{
+  "schema": "independent-completed-c29-offline-result-review-v1",
+  "reviewed_utc": "2026-11-02T15:17:15.5119987Z",
+  "conclusion": "PASS: terminal once-only offline restore/replay receipts reconcile without a blocker; no runtime/GPU/science adoption implied.",
+  "blocking_findings": [],
+  "frozen_manifest_sha256": "6b2994a2aae47fdad8dcb57b36add85b48e21d16f8f4be62ea34a408d3cdf884",
+  "result_failure": null,
+  "actual_commands": {
+    "restore": 1,
+    "replay": 1,
+    "retry": false
+  },
+  "children": [
+    {
+      "role": "restore",
+      "pid": 1777135,
+      "parent_pid": 1776945,
+      "uid": 999,
+      "nice": 15,
+      "birth_start_ticks": "17220029",
+      "command_start_exit_equal": true,
+      "pid_start_exit_equal": true,
+      "actual_waited": true,
+      "exit": 0,
+      "cleanup_actions": [],
+      "no_solver_build_or_GPU_command": true,
+      "wall_s": 162.7117738459783,
+      "started_utc": "2026-11-02T15:10:47.904410+00:00",
+      "completed_utc": "2026-11-02T15:13:30.616161+00:00",
+      "log_sha256_recorded": "fefbe3349287c4e98b4ae63ed72c7817e7e37a9e08b9a442040fc823a6107865",
+      "log_bytes_independently_read": false
+    },
+    {
+      "role": "replay",
+      "pid": 1777156,
+      "parent_pid": 1776945,
+      "uid": 999,
+      "nice": 15,
+      "birth_start_ticks": "17236460",
+      "command_start_exit_equal": true,
+      "pid_start_exit_equal": true,
+      "actual_waited": true,
+      "exit": 0,
+      "cleanup_actions": [],
+      "no_solver_build_or_GPU_command": true,
+      "wall_s": 46.544672965974314,
+      "started_utc": "2026-11-02T15:13:32.220526+00:00",
+      "completed_utc": "2026-11-02T15:14:18.765178+00:00",
+      "log_sha256_recorded": "ae8b7e0ea3181fb21e8cc612641a742dccabed71f2130ca03aa449d2291aade3",
+      "log_bytes_independently_read": false
+    }
+  ],
+  "restored_catalogue": {
+    "before_files": 91,
+    "after_files": 91,
+    "hash_size_mtime_mismatches": [],
+    "unchanged": true,
+    "original_harness_exact_inventory_hash_gate_reported": 91,
+    "target_case_tree_read_by_reviewer": false
+  },
+  "source_snapshots": {
+    "package_before_files": 518,
+    "package_after_files": 518,
+    "package_hash_size_mtime_mismatches": [],
+    "seed_before_files": 8,
+    "seed_after_files": 8,
+    "seed_hash_size_mtime_mismatches": [],
+    "unchanged": true,
+    "original_frozen_manifest_pin_matches": true,
+    "snapshot_manifest_before_after_sha256": "6b2994a2aae47fdad8dcb57b36add85b48e21d16f8f4be62ea34a408d3cdf884",
+    "snapshot_seed_before_after_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+    "snapshot_seed_before_after_size_bytes": 62823211
+  },
+  "analysis": {
+    "replay_report_sha256": "c82065bd31fc53affb4df68d9559f3e7d93c0b09b05ee7ff93330954a4360087",
+    "report_hash_matches_terminal_result": true,
+    "original_report_sha256": "9514a88c2ac7fbfce110eae39cc7edc0c8d2614e7bc21c6d28150a294951190e",
+    "original_report_pin_matches": true,
+    "checks": 499,
+    "failed": 0,
+    "all_boolean_checks_true": true,
+    "all_checks_equal_original_independently_compared": true,
+    "source_samples_equal_original_independently_compared": true,
+    "field_hash_comparison_rows": 15,
+    "field_hash_differences": [],
+    "mechanical_passed": true,
+    "pressure_protocol": "strict-pressure-v1",
+    "numpy_version": "1.26.4",
+    "runtime_admission": false,
+    "compiler_or_CFD_run": false,
+    "overall_acceptance_decided_here": false
+  },
+  "closed_receipt_hashes": [
+    {
+      "path": "work/c29_completed_offline_result.json",
+      "sha256": "188e9c8cbf97631d5887af444f5e6362e977c099a864f908a4e72d86bdffbffe",
+      "size_bytes": 640
+    },
+    {
+      "path": "work/c29_completed_offline_before_inputs.json",
+      "sha256": "6403c7419042ed3ef73613f35da09192cde319db7caee360a829798a9385cc13",
+      "size_bytes": 115286
+    },
+    {
+      "path": "work/c29_completed_offline_after_inputs.json",
+      "sha256": "8d9e2d6ba85a0e4e92bd15b7352ee14ceaa36dcdc970f5e846b43f314c032128",
+      "size_bytes": 133487
+    },
+    {
+      "path": "work/c29_completed_offline_restore_child_start.json",
+      "sha256": "75af4ce6a57c961eb677e8e5a65d04a638d89b89bed09e1410d6f1b24f0f6ed0",
+      "size_bytes": 1069
+    },
+    {
+      "path": "work/c29_completed_offline_restore_child_exit.json",
+      "sha256": "33e11846eed9745b57bcfaf8f3c27e9fa408522d22c8c3ce57818f9eaa976f44",
+      "size_bytes": 1175
+    },
+    {
+      "path": "work/c29_completed_offline_replay_child_start.json",
+      "sha256": "1511ded4c887e17d73c2965a4e802151d527a239d346ef2f82960074dadd04b5",
+      "size_bytes": 871
+    },
+    {
+      "path": "work/c29_completed_offline_replay_child_exit.json",
+      "sha256": "0fbe51866dfbeb012d72f0264382ddf01b6d8ec25b704dfca8d8ba30d2aeacaf",
+      "size_bytes": 977
+    },
+    {
+      "path": "work/c29_completed_offline_restored_catalogue_before.json",
+      "sha256": "92154a8cf893b794b9fdafd9d504ba2e43f9b88d7dbcef85af88ed83df2170cb",
+      "size_bytes": 17159
+    }
+  ],
+  "limitations": [
+    "Review independently reconciles closed records and reports; no target tree, package/seed payloads or runtime logs reopened.",
+    "True child status is supported by the frozen reviewed parent harness actual-wait receipts, with matching start/exit PID/command; no new process observation was attempted after termination.",
+    "Snapshot hash/size/mtime equality is independently recomputed between recorded snapshots; source and case bytes were not rehashed here.",
+    "Offline historical evidence replay is distinct from a new CFD run, GPU transient qualification, speedup, production default or lift measurement."
+  ],
+  "reviewer_actions": {
+    "included_code_imported_or_run": false,
+    "restore_replay_CFD_GPU_build_launched": false,
+    "target_tree_read": false,
+    "source_case_output_Git_ZIP_mutated": false,
+    "written_files": [
+      "work/c29_offline_result_independent_review.json",
+      "work/c29_offline_result_independent_review.md"
+    ]
+  }
+}

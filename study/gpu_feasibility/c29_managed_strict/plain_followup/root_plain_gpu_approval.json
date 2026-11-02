@@ -1,0 +1,34 @@
+{
+  "decision": "APPROVED_FOR_ONE_UNPROFILED_GPU_DIAGNOSTIC_SAME_2_3",
+  "approved_utc": "2026-11-02T14:45:39.808778+00:00",
+  "protocol_sha256": "e6e58d9e37514f0dc3b3f76bfaaf6a839612faef2fde095f3c38ebf3d24c6395",
+  "helper_manifest_sha256": "ed3bd4f82fe29b361cae7a1da5fedbabfb3394e5021a55ae2ed0007dbad0ee8f",
+  "launch_receipt": {
+    "path": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/receipts/c29_plain_unprofiled_2_3_20261102_a.json",
+    "sha256": "75dfc4fb23eccd044cfa1d0e80c3b749bd89e97b493f02c8661194427d0ad864"
+  },
+  "fresh_clone_preparation": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/plain_gpu_fresh_clone_preparation.json",
+    "sha256": "f28f05447812b6c74e81ebbb0c8583b5d9de543b673430db214ecf3b05d908bd"
+  },
+  "root_f14_cpu_external_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_f14_to_cpu_external_gate.json",
+    "sha256": "9d1a7729b4368eba60bb7f298836c5f1866dde3dd6e9ab31e4221359edd9cfa2",
+    "root_asserted_pass": true
+  },
+  "exact_shared_startup_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_initial_shared_runs/initial_field_comparison.json",
+    "sha256": "6da117692c579c345bcddafab1d1f9a9f92858bbbd63c61f96bd1f56e382a3d7",
+    "root_asserted_pass": true
+  },
+  "native_windows_31_field_integrity_gate": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/c29_native_field_second_pass.json",
+    "sha256": "fb1e406931638d8eb774fae83b3a9d2ad28eb58349d9d63f85831f020f349e20",
+    "root_asserted_pass": true
+  },
+  "independent_review": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/plain_gpu_diagnostic_v2_independent_review.json",
+    "sha256": "c37cdfceaed267e0e3eb49ea4d8ab3f21b35e06936f812b9e9041f6cf6125c5a"
+  },
+  "scope": "One same-binary 180s direct unprofiled functional diagnostic. No debugger, profiler, observer, source/build/tolerance change. Numerical/GPU execution/performance qualification remain separate."
+}

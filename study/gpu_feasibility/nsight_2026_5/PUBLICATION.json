@@ -1,0 +1,14 @@
+{
+  "published_utc": "2026-11-02T15:54:37.552928+00:00",
+  "candidate_manifest_sha256": "a4a01612725c3596547add66005cdce60dfe45878b6eb9257b42620f40dae77d",
+  "independent_review_sha256": "a1627f5a593a41951dcdd01123a0ac58f0641609a5a741fbf7370d032f23c551",
+  "candidate_files_copied_exact": 85,
+  "GPU_application_executions": 1,
+  "later_audit_only_no_GPU_repeat": true,
+  "launch_API_calls": 8,
+  "synchronization_API_calls": 9,
+  "attributed_kernel_records": 8,
+  "large_C29_status": "FAILED_UNQUALIFIED; profiled and plain",
+  "performance_claim": false,
+  "GitHub_action": false
+}

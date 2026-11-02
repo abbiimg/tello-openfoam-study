@@ -1,0 +1,7 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating '/opt/openfoam-workspace/gpu-feasibility/native-stdpar/tmp/nsys-openfoam/nsys-report-aceb.qdstrm'
+[1/1] [0%                          ] field_control.nsys-repProcessing events...
+[1/1] [0%                          ] field_control.nsys-rep[1/1] [1%                          ] field_control.nsys-rep[1/1] [2%                          ] field_control.nsys-rep[1/1] [5%                          ] field_control.nsys-rep[1/1] [13%                         ] field_control.nsys-rep[1/1] [==19%                       ] field_control.nsys-rep[1/1] [==20%                       ] field_control.nsys-rep[1/1] [=====32%                    ] field_control.nsys-rep[1/1] [=======36%                  ] field_control.nsys-rep[1/1] [==========47%               ] field_control.nsys-rep[1/1] [=======================96%  ] field_control.nsys-rep[1/1] [========================98% ] field_control.nsys-rep[1/1] [========================100%] field_control.nsys-rep[1/1] [========================100%] field_control.nsys-rep
+Generated:
+	/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/field_control.nsys-rep

@@ -1,0 +1,26 @@
+{
+  "kind": "Preserve original failed screen before authorized graceful diagnostic stop",
+  "recorded_utc": "2026-11-02T11:22:49.344711+00:00",
+  "mcp_job_id": "Allrun-08c608",
+  "original_horizon_s": 0.5,
+  "original_steps": 100,
+  "original_all_corrector_continuity_limit": 1e-05,
+  "observed_peak_all_corrector_continuity": 0.000255613348367,
+  "original_screen_failed": true,
+  "control_preimage": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool/controlDict.before_intentional_stop",
+  "control_sha256_before": "be1f54e4ffef7ea71a8268377ea4012c62c7d49b999e1d33fc3934e4e037ccf1",
+  "requested_mode": "write",
+  "source_or_binary_changed": false,
+  "no_performance_inference": true,
+  "native_signal": {
+    "requested_utc": "2026-11-02T11:24:12.083708+00:00",
+    "pid": 359303,
+    "uid": 999,
+    "birth_tick": 15806675,
+    "exe": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+    "cwd": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool",
+    "signal": "SIGTERM",
+    "pidfd_verified": true,
+    "reason": "MCP Allrun stop killed outer shell but left detached private solver; preserve live wrapper for actual child receipt"
+  }
+}

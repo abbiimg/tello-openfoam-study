@@ -1,0 +1,15 @@
+# Same-pin OpenCFD CPU control
+
+This is a private CPU companion to the native stdpar GPU installation. It uses a fresh extraction of OpenCFD core SHA `b239fea6e48922730477e218c44e8b6a8ab17ade` (API2609) and ThirdParty SHA `b70425b2611c23f26f24bdb97a5e6b48b99ffe0d`. The original archives were rehashed against the recorded SHA256 values, copied into this prefix, and independently extracted. No source, generated file, object or library is shared with the mutable GPU tree.
+
+Prefix: `/opt/openfoam-workspace/gpu-feasibility/native-cpu-control`. Settings: system GCC/G++ 13.3.0, `linuxARM64GccDPInt32Opt`, double precision, 32-bit labels, optimized build, MPI `none`, and thread environment variables set to1. The command-local environment excludes the private GPU compiler and CUDA paths; it supplies no `FOAM_OFFLOAD` or GPU compiler flags. Bison is separately extracted inside this prefix from the already verified Ubuntu package. No new download or system installation was needed.
+
+The pipeline builds wmake, base libraries, finiteVolume and the mesh libraries required by blockMesh/icoFoam, then those two applications. It skips the large upstream timing benchmark. It runs only the standard400-cell cavity in `/opt/openfoam-workspace/cases/native_cpu_control_pilots_20261102/cavity_native_cpu`, checking completion at time0.5, finite fields and local continuity below1e-5. The reviewed C29 candidate is not built or run by this pipeline.
+
+The build runs as `openfoam`, Nice=15 in a task-scoped transient systemd service with private log files and automatic collection after exit. `service.json` records its exact unit, command and PID. The dynamic budget permits at most4 CPU compilation jobs; the session's other budgets are native GPU4 and SPUMA2, for a combined ceiling10. New CPU stages retain a20GiB available-memory reserve plus a2GiB allowance per proposed CPU job, reducing new concurrency or waiting when memory is pressured. Existing GPU/SPUMA stages are untouched.
+
+Run `prepare_cpu_tree.py` as WSL user `openfoam` after creating the task prefix writable by that user; then run `launch_cpu_service.py` as root solely to create the transient service. `build_cpu_control.py` sources only this prefix's `env.sh`. It records selected non-secret environment settings, actual compiler commands, per-stage journal entries and an eventual runtime dependency audit. The final acceptance manifest is `provenance/native_cpu_cavity_gate.json`; a started build is not a completed smoke test.
+
+The companion supports two later validation steps: Foundation14 to the same-pin CPU port, then same-pin CPU to native GPU. GCC and NVHPC use different compiler/runtime backends, so a later timing comparison describes those complete builds. No speed measurement is made while builds are active, and no production input, GPU installation, driver, global profile or default compiler is changed.
+
+Monitor `build_progress.json`, `provenance/build_journal.json`, and the current unit in `service.json`. The helper refuses to overlay an existing pilot case. Root owns the later actuator port, matched-case acceptance decisions, timing experiment and reviewed publication.

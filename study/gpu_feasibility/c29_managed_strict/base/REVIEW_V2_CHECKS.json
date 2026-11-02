@@ -1,0 +1,37 @@
+{
+  "schema": "c29-managed2.3-publication-review-fixes-v2",
+  "original_candidate_manifest_sha256": "4ec8be722d8ac4baee36dd5582c1b1fc7140c7831e92b56677e844c6c1773d0a",
+  "changed_original_indexed_paths": [
+    "README.md",
+    "REPRODUCTION.md",
+    "recipes/replay_completed_cpu_analysis.py",
+    "recipes/restore_completed_evidence.py"
+  ],
+  "unchanged_original_indexed_paths": 503,
+  "all_original_raw_fields_logs_receipts_physics_sources_unchanged": true,
+  "historical_source_records": 495,
+  "historical_source_records_unchanged_at_current_paths": 493,
+  "two_generated_v1_adapter_originals_retained_byte_identically_in_history": true,
+  "fixes": [
+    "canonical restore destination disjoint from package and seed directory in both directions",
+    "lexical link/junction/reparse ancestors rejected before resolution for inputs/output",
+    "replay explicit inputs/output guarded before included-code imports and output rechecked before exclusive write",
+    "descriptive propeller diameter corrected to7.62cm radius0.0381m; runtime geometry unchanged"
+  ],
+  "Windows_fixtures": {
+    "count": 22,
+    "all_pass": true,
+    "real_junctions": 2,
+    "reparse_attribute_fallback_exercised": true,
+    "native_symlink_creation_available": false
+  },
+  "Linux_fixtures": {
+    "count": 26,
+    "all_pass": true,
+    "real_symlink_and_dangling_attacks": true
+  },
+  "actual_restore_or_numerical_replay_executed": false,
+  "CFD_build_GPU_case_output_Git_ZIP_changes": false,
+  "source_doc_diff_sha256": "e2647df36b3a043f772e66db644a019c081d45b724efd64e255cd62cc54377bf",
+  "original_v1_candidate_unchanged": true
+}

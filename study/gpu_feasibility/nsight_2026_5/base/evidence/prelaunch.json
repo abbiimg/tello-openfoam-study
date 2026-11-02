@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-02T15:15:26.522785+00:00",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/extracted/opt/nvidia/nsight-systems-cli/2026.5.1/bin/nsys",
+    "profile",
+    "--trace=cuda,nvtx",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--capture-range=nvtx",
+    "--nvtx-capture=NATIVE_STDPAR_FIELD_ALGEBRA",
+    "--capture-range-end=stop",
+    "--kill=none",
+    "--cuda-trace-scope=process-tree",
+    "--wait=all",
+    "--discard-environment=true",
+    "--stats=false",
+    "--force-overwrite=false",
+    "-o",
+    "/opt/openfoam-workspace/gpu-feasibility/nsight-systems-2026.5.1/native_field_positive_control_20261102/field_control",
+    "/usr/bin/python3",
+    "-B",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_proposal_v2/control_child.py",
+    "--approval",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/nsys_2026_5_positive_control_approval.json"
+  ],
+  "approval_sha256": "9e16cc3647c7a98e7b54ff011ecfdd54d44b7fd7baa9be523ecb3c081a857b97",
+  "protocol_sha256": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+  "CPU_GPU_speed_test": false
+}

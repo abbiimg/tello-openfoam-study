@@ -1,0 +1,19 @@
+{
+  "state": "succeeded",
+  "returncode": 0,
+  "mcp_job_id": "Allrun-16b960",
+  "recorded_utc": "2026-11-02T11:40:46.144Z",
+  "actual_connector_terminal_result": {
+    "job_id": "Allrun-16b960",
+    "case": "spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+    "app": "Allrun",
+    "command": "bash /opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2/Allrun",
+    "np": 1,
+    "log": "log.Allrun",
+    "state": "succeeded",
+    "elapsed_s": 267.6,
+    "returncode": 0,
+    "log_tail": ""
+  },
+  "kind": "Actual private strict-v2 Allrun completion; numerical/API validation separate"
+}

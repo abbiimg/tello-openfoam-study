@@ -1,0 +1,30 @@
+{
+  "initial_prefix_bytes": 1778384896,
+  "total_bytes": 6904150881,
+  "ranges": [
+    {
+      "index": 0,
+      "start": 1778384896,
+      "end": 3059826391,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/nvhpc_2026_269_Linux_aarch64_cuda_13.3.tar.gz.range0"
+    },
+    {
+      "index": 1,
+      "start": 3059826392,
+      "end": 4341267887,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/nvhpc_2026_269_Linux_aarch64_cuda_13.3.tar.gz.range1"
+    },
+    {
+      "index": 2,
+      "start": 4341267888,
+      "end": 5622709383,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/nvhpc_2026_269_Linux_aarch64_cuda_13.3.tar.gz.range2"
+    },
+    {
+      "index": 3,
+      "start": 5622709384,
+      "end": 6904150880,
+      "path": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/downloads/nvhpc_2026_269_Linux_aarch64_cuda_13.3.tar.gz.range3"
+    }
+  ]
+}

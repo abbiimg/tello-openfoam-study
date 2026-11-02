@@ -1,0 +1,12 @@
+schema c29-unvalidated-input-admission-v2;
+experimentId "c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46";
+phase foundation_initial_phi;
+backend cpu;
+casePath "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control";
+inputsAudited true;
+runtimeValidated false;
+inputSnapshotSha256 "f0aa4f40bf69de318835dfaa69bc02f42d60903edfe9108e01ba41ef3d61f579";
+launchReceiptJsonSha256 "21316981cb55876c7a521139e137386376e14e167d09eb416fe8f50f83d5eef3";
+candidateManifestSha256 "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7";
+binarySha256 "161be52ffe49e0a5ec62093f4fc92a5a215f1976be141edc3965294fe8fc8888";
+libraryIdentitySha256 "91a08df81f64d3d0296d22c11ad40a9b3d6b524a9bb9fb1124665abb2bb8b7d5";

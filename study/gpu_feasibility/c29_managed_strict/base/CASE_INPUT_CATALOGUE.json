@@ -1,0 +1,298 @@
+{
+  "foundation14_control": {
+    "0.6/U": {
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "0.6/p": {
+      "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "0.6/phi": {
+      "sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "delivery": "shared_initial/phi"
+    },
+    "Allrun": {
+      "sha256": "31af4e71248daeff4eba38d7482d356425d1c64fd28c705dc2ec7406feb72e8d",
+      "delivery": "case_inputs/foundation14_control/Allrun"
+    },
+    "benchmark_acceptance.json": {
+      "sha256": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+      "delivery": "case_inputs/foundation14_control/benchmark_acceptance.json"
+    },
+    "benchmark_manifest.json": {
+      "sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+      "delivery": "case_inputs/foundation14_control/benchmark_manifest.json"
+    },
+    "case.foam": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "case_inputs/foundation14_control/case.foam"
+    },
+    "case_preparation.json": {
+      "sha256": "eaecd59ae6e68b56afd823d4bddb834d3190b6c3d29f0ba74417e7c363f3f479",
+      "delivery": "case_inputs/foundation14_control/case_preparation.json"
+    },
+    "constant/c29InitialPhiControls": {
+      "sha256": "b8ff0f9732b14354c2453aa1791dae65fbb699eb7da516489982c24ba9b04cf1",
+      "delivery": "case_inputs/foundation14_control/constant/c29InitialPhiControls"
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "delivery": "case_inputs/foundation14_control/constant/fvModels"
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "delivery": "case_inputs/foundation14_control/constant/momentumTransport"
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "delivery": "case_inputs/foundation14_control/constant/physicalProperties"
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/cellProc": {
+      "sha256": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/points": {
+      "sha256": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "delivery": "case_inputs/foundation14_control/constant/rotorParameters"
+    },
+    "dynamicCode/platforms/linuxArm64GccDPInt32Opt/lib/librotors_7ae57bb77feaae19c26ff305b44ebb5a6819f2ef.so": {
+      "sha256": "402b112e09f36444ac13d19a3a04f3aca24344a632eb7a258fd11fc3a33392ce",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/Make/SHA1Digest": {
+      "sha256": "df172e8c8e38ded0d1c2444fd6333451028ca245bc93dd679dcf4f9679d4263a",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/Make/files": {
+      "sha256": "67c840d4f8c9b4bab28c7414cef00bc826e71cd6e6475cb80b948f5dcac7ed57",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/Make/linuxArm64GccDPInt32Opt/codedFvModelTemplate.C.dep": {
+      "sha256": "fd6d4597fc2521dff1e161323341c9a5f2e6231c0dcbbe722bd0f9907a3797ac",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/Make/linuxArm64GccDPInt32Opt/codedFvModelTemplate.o": {
+      "sha256": "f3e9fb265626cd378a3b483328a4812a15c8b450a4eb0e333d4a771a44cb4c6f",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/Make/linuxArm64GccDPInt32Opt/files": {
+      "sha256": "171366624c9bb3814cb2a346a3e2c9f20b0f722fb3240870a95b42380ba535b5",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/Make/options": {
+      "sha256": "21b8c629db5ff3ca324a14402ba1600ba3ceade029da53670e2cbf006912b2d6",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/codedFvModelTemplate.C": {
+      "sha256": "64c8dba28325ff52528d56a2a97567cce67952e11dab624a055833d698477035",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/codedFvModelTemplate.H": {
+      "sha256": "aa920deb2006f8fc0d0fe6ac6146b650b9038f5c1d8081328b6ed3b657a1b7bc",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/lnInclude/codedFvModelTemplate.C": {
+      "sha256": "64c8dba28325ff52528d56a2a97567cce67952e11dab624a055833d698477035",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "dynamicCode/rotors/lnInclude/codedFvModelTemplate.H": {
+      "sha256": "aa920deb2006f8fc0d0fe6ac6146b650b9038f5c1d8081328b6ed3b657a1b7bc",
+      "delivery": "historical cached build: ELF/objects excluded; selected source/Make included separately"
+    },
+    "frozen_numerics_helper.py": {
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "delivery": "case_inputs/foundation14_control/frozen_numerics_helper.py"
+    },
+    "geometry.json": {
+      "sha256": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245",
+      "delivery": "case_inputs/foundation14_control/geometry.json"
+    },
+    "run_benchmark.py": {
+      "sha256": "6e3e6fa94f1b926d0ebdc89cacfd028affb8290be1a14a90cd9c1de03b1230da",
+      "delivery": "case_inputs/foundation14_control/run_benchmark.py"
+    },
+    "source_geometry.json": {
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "delivery": "case_inputs/foundation14_control/source_geometry.json"
+    },
+    "source_initialization.json": {
+      "sha256": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f",
+      "delivery": "case_inputs/foundation14_control/source_initialization.json"
+    },
+    "system/blockMeshDict": {
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+      "delivery": "case_inputs/foundation14_control/system/blockMeshDict"
+    },
+    "system/controlDict": {
+      "sha256": "56c516940b8d6b93ee7661e6598b3a3a558fce27c6e18c027fd0ee4b637667e5",
+      "delivery": "case_inputs/foundation14_control/system/controlDict"
+    },
+    "system/decomposeParDict": {
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "delivery": "case_inputs/foundation14_control/system/decomposeParDict"
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "delivery": "case_inputs/foundation14_control/system/fvSchemes"
+    },
+    "system/fvSolution": {
+      "sha256": "e1ed15a5fbb3a3e7d7b4961e6fd418509c5995a5744229f63bd7b312c3beff66",
+      "delivery": "case_inputs/foundation14_control/system/fvSolution"
+    }
+  },
+  "native_cpu": {
+    "0.6/U": {
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "0.6/c29_initialP": {
+      "sha256": "06de105d9a3a7f9d1e23e444003136fa9b0c9f266896af421aef72909118cd8b",
+      "delivery": "historical startup audit observation: hashes/reports only; not an input or dependency of offline 499-check replay"
+    },
+    "0.6/c29_initialPhi": {
+      "sha256": "fe5b7cea82f191e136f84cf63c4405a766f68bb3dae231bb0a4c27ffe4a3d5c4",
+      "delivery": "historical startup audit observation: hashes/reports only; not an input or dependency of offline 499-check replay"
+    },
+    "0.6/c29_initialU": {
+      "sha256": "9d2314cb3494848c2dee843e0a3c68fa4138dacb7c9e9f013445e9fe68d86216",
+      "delivery": "historical startup audit observation: hashes/reports only; not an input or dependency of offline 499-check replay"
+    },
+    "0.6/p": {
+      "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "0.6/phi": {
+      "sha256": "f5bb13f6e8d90b181bb6e711d09b80d251e4598f63651f8b3cddc26b238b342c",
+      "delivery": "shared_initial/phi"
+    },
+    "Allrun": {
+      "sha256": "31af4e71248daeff4eba38d7482d356425d1c64fd28c705dc2ec7406feb72e8d",
+      "delivery": "case_inputs/native_cpu/Allrun"
+    },
+    "benchmark_acceptance.json": {
+      "sha256": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+      "delivery": "case_inputs/native_cpu/benchmark_acceptance.json"
+    },
+    "benchmark_manifest.json": {
+      "sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+      "delivery": "case_inputs/native_cpu/benchmark_manifest.json"
+    },
+    "case.foam": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "case_inputs/native_cpu/case.foam"
+    },
+    "case_preparation.json": {
+      "sha256": "2874dfd92890935967a5221b608588ee9374fd033e18c306d8febfea165c6976",
+      "delivery": "case_inputs/native_cpu/case_preparation.json"
+    },
+    "constant/c29PortControls": {
+      "sha256": "154ef54a0be1620f4f64b0d6e53bbf73f5c4cd1b5422475457787737f2626832",
+      "delivery": "case_inputs/native_cpu/constant/c29PortControls"
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "delivery": "case_inputs/native_cpu/constant/fvModels"
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "delivery": "case_inputs/native_cpu/constant/momentumTransport"
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "delivery": "case_inputs/native_cpu/constant/physicalProperties"
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/cellProc": {
+      "sha256": "6766abb9db0550f9b53c1711c6a105bb19cb52da2abaa8ee9770c9bc867133c2",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/polyMesh/points": {
+      "sha256": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "delivery": "external pinned shared_seed.zip and CPU catalogue"
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "delivery": "case_inputs/native_cpu/constant/rotorParameters"
+    },
+    "constant/transportProperties": {
+      "sha256": "00384bc49543c0616cc2b2c226eb8c139dbf685b25bb577d78e756db5019f6a4",
+      "delivery": "case_inputs/native_cpu/constant/transportProperties"
+    },
+    "frozen_numerics_helper.py": {
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "delivery": "case_inputs/native_cpu/frozen_numerics_helper.py"
+    },
+    "geometry.json": {
+      "sha256": "d5f69e56b2e63f544c27e0892e79b2c6c115f11b9ffb1ea593addf7787eb8245",
+      "delivery": "case_inputs/native_cpu/geometry.json"
+    },
+    "run_benchmark.py": {
+      "sha256": "6e3e6fa94f1b926d0ebdc89cacfd028affb8290be1a14a90cd9c1de03b1230da",
+      "delivery": "case_inputs/native_cpu/run_benchmark.py"
+    },
+    "source_geometry.json": {
+      "sha256": "bd0f83388e19db2098ac163f9d02d806981b895705c86eb54e239d0a83515436",
+      "delivery": "case_inputs/native_cpu/source_geometry.json"
+    },
+    "source_initialization.json": {
+      "sha256": "8ed30f0f3f79978c717a16c183697bd6134b649784d28b2f131a7c537a767d0f",
+      "delivery": "case_inputs/native_cpu/source_initialization.json"
+    },
+    "system/blockMeshDict": {
+      "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+      "delivery": "case_inputs/native_cpu/system/blockMeshDict"
+    },
+    "system/controlDict": {
+      "sha256": "bed18970ed2d7b48f6b6e34eb4147e3441a374591614284b9dbb14c8c7580bad",
+      "delivery": "case_inputs/native_cpu/system/controlDict"
+    },
+    "system/decomposeParDict": {
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "delivery": "case_inputs/native_cpu/system/decomposeParDict"
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "delivery": "case_inputs/native_cpu/system/fvSchemes"
+    },
+    "system/fvSolution": {
+      "sha256": "5e0fb706620bb2eb2b5f45b4d3c73324ab233e8c41fbeec9b3739fbaaef3d2b3",
+      "delivery": "case_inputs/native_cpu/system/fvSolution"
+    }
+  }
+}

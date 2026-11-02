@@ -1,0 +1,22 @@
+{
+  "schema": "new-nsys-native-field-control-helper-freeze-v2",
+  "status": "SOURCE_ONLY_PENDING_ROOT_APPROVAL",
+  "files": {
+    "README.md": "caaad6f59860d3494d78733dbcd3b9521f7f54de8a315944f134be345ce1efe0",
+    "audit_control.py": "905fbd10ba8cb4fc77c0d913315d74ba136a4602e623b3dd1b5c48064d5cda07",
+    "control_child.py": "a24523eaebbd02a4bc52515845e57616e7c30fd90b6de85173a78631a91c606c",
+    "control_common.py": "7eb82429f85cb29fc003c5524b2400cda8e38f867275a668d960069a4c1e2260",
+    "linked_libraries.json": "c8adc9b33e82a62ff7b5828a34acee652206c430e182284d955982e7ddcf4c5e",
+    "owned_cleanup.py": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+    "protocol.json": "49e877f00bafe1aa4a5246cfb6fca025399269add13737152eadad547e0ae951",
+    "run_control.py": "aa0329a59102ed20fcace3ae05bf50e776163b3cc43c4f6924955cab43d0a1c4"
+  },
+  "generator_sha256": "320e73063fdf03f01c58e6432c206abf8c7b2a272a094e00703086f028e73807",
+  "source_probe_case_libraries_or_SDK_changed": false,
+  "case_created_or_CFD_run": false,
+  "GPU_run": false,
+  "AST_parse_only_helpers_not_imported": true,
+  "previous_frozen_manifest_sha256": "1690e43f873dae69a3efb8eaa47b7b68771872ebba588f524bb5fb2baa2257ec",
+  "source_only_correction": "Identical unsupported-driver regex also scans profile.log/export.log; origin evidence retained.",
+  "limited_diff_sha256": "22b4ff9f56d49972d30060a789d642cb686967372875cb6a5d407044517a016c"
+}

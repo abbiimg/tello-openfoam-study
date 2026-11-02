@@ -1,0 +1,137 @@
+[
+  {
+    "stage": "wmake_tools",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/wmake/src/Allmake",
+      "-j1"
+    ],
+    "returncode": 0,
+    "elapsed_s": 8.00327180000022,
+    "completed_utc": "2026-11-02T08:04:31.554570+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/wmake_tools.log",
+    "max_build_jobs": 1,
+    "nice": 15
+  },
+  {
+    "stage": "base_libraries",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/Allwmake-base",
+      "-j1"
+    ],
+    "returncode": 0,
+    "elapsed_s": 5288.068551842007,
+    "completed_utc": "2026-11-02T09:32:39.678058+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/base_libraries.log",
+    "max_build_jobs": 1,
+    "nice": 15
+  },
+  {
+    "stage": "finiteVolume_library",
+    "command": [
+      "wmake",
+      "-j2",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/finiteVolume"
+    ],
+    "returncode": 2,
+    "elapsed_s": 4787.9381549009995,
+    "completed_utc": "2026-11-02T10:52:32.064668+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/finiteVolume_library.log",
+    "max_build_jobs": 2,
+    "nice": 15
+  },
+  {
+    "stage": "finiteVolume_library",
+    "command": [
+      "wmake",
+      "-j2",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/finiteVolume"
+    ],
+    "returncode": 0,
+    "elapsed_s": 8.557700376986759,
+    "completed_utc": "2026-11-02T10:55:53.725411+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/finiteVolume_library_link_retry1.log",
+    "max_build_jobs": 2,
+    "nice": 15,
+    "retry_of": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/finiteVolume_library.log",
+    "reason": "Confirmed generated CUDA linkstub -fpic GOT limit; own narrowly filtered -fPIC trampoline",
+    "preserved_object_count": 432,
+    "cached_objects_byte_and_mtime_unchanged": true,
+    "preserved_inventory": "/opt/openfoam-workspace/gpu-feasibility/spuma/provenance/finiteVolume_preserved_objects.json",
+    "preserved_inventory_sha256": "6ca984fd84563d108d458ae1127a2d6b5b6d8ba3e8b19884914a5e86ec8b2c38"
+  },
+  {
+    "stage": "blockMesh_library",
+    "command": [
+      "wmake",
+      "-j2",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/mesh/blockMesh"
+    ],
+    "returncode": 0,
+    "elapsed_s": 138.06824659797712,
+    "completed_utc": "2026-11-02T10:58:12.026178+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/blockMesh_library.log",
+    "max_build_jobs": 2,
+    "nice": 15
+  },
+  {
+    "stage": "extrudeModel_library",
+    "command": [
+      "wmake",
+      "-j2",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/mesh/extrudeModel"
+    ],
+    "returncode": 0,
+    "elapsed_s": 48.04839472999447,
+    "completed_utc": "2026-11-02T10:59:00.122537+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/extrudeModel_library.log",
+    "max_build_jobs": 2,
+    "nice": 15
+  },
+  {
+    "stage": "dynamicMesh_library",
+    "command": [
+      "wmake",
+      "-j2",
+      "libso",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/src/dynamicMesh"
+    ],
+    "returncode": 0,
+    "elapsed_s": 820.372563270008,
+    "completed_utc": "2026-11-02T11:12:40.546740+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/dynamicMesh_library.log",
+    "max_build_jobs": 2,
+    "nice": 15
+  },
+  {
+    "stage": "blockMesh_binary",
+    "command": [
+      "wmake",
+      "-j2",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/applications/utilities/mesh/generation/blockMesh"
+    ],
+    "returncode": 0,
+    "elapsed_s": 20.0085123879835,
+    "completed_utc": "2026-11-02T11:13:00.613388+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/blockMesh_binary.log",
+    "max_build_jobs": 2,
+    "nice": 15
+  },
+  {
+    "stage": "icoFoam_binary",
+    "command": [
+      "wmake",
+      "-j2",
+      "/opt/openfoam-workspace/gpu-feasibility/spuma/source/applications/solvers/incompressible/icoFoam"
+    ],
+    "returncode": 0,
+    "elapsed_s": 42.01624458099832,
+    "completed_utc": "2026-11-02T11:13:42.679003+00:00",
+    "log": "/opt/openfoam-workspace/gpu-feasibility/spuma/logs/icoFoam_binary.log",
+    "max_build_jobs": 2,
+    "nice": 15
+  }
+]

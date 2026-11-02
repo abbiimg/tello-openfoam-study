@@ -1,0 +1,55 @@
+{
+  "schema": "independent-source-export-reproduction-review-v1",
+  "reviewed_utc": "2026-11-02T16:28:36.5302482Z",
+  "reviewer": "/root/source_export_repro_review",
+  "conclusion": "GO for source-only publication of restore helper and external mapping",
+  "blockers": [],
+  "helper_sha256": "a91144e5cb243c4bf17339501f29dc43609906538156ac21937ec42854789e1d",
+  "manifest_sha256": "67b8c09c37c5ed1939152c4f5b7732a377e94bddb8ae007cee10fcd2873f4e79",
+  "test_source_sha256": "b04c261a93e213d885d56ae30ad90eebb46134996330f502ec57f6767af09734",
+  "test_receipt_sha256": "f094905a97839107fe67fa9f94f7ad468734d3062e155b038852b50e46e73dbc",
+  "inert_checks_passed": 22,
+  "inert_checks_failed": 0,
+  "archive_sha256": "18a7676858d22f2ab78e78cd2f8e35c9943938aa948d905fad4afc7a6a001100",
+  "archive_bytes": 1200933912,
+  "archive_members": 3798,
+  "semantic_external_files": 90,
+  "semantic_external_bytes": 2641001310,
+  "independently_checked": [
+    "56 warm-start paths match original committed HEAD exactly",
+    "30 C29 saved field paths and one canonical phi match saved-field catalogue",
+    "Three exact upstream/seed archive paths complete 90-file omission set",
+    "All90 paths/hash/size match closed verified compact archive catalogue",
+    "CLI pins exact manifest plus matching project source identity",
+    "Whole archive SHA and every selected member checked before destination publication",
+    "Pre-existing mismatches fail without overwrites; exact matches skipped",
+    "Selected files staged completely before first publication",
+    "Explicit Windows non-overwriting rename and POSIX atomic create-if-absent link",
+    "Lexical ancestor symlink/junction/reparse rejection and Windows long-path namespace",
+    "No bulk extraction/network/CFD/build; only explicit90 payloads can publish",
+    "Cleanup limited to exact fresh task-owned staging files",
+    "22 closed meaningful inert checks include actual junction, >400char path and competing destination"
+  ],
+  "operating_assumption": "Trusted local project tree is not concurrently modified during restoration; no adversarial directory-replacement race resistance is claimed.",
+  "reproduction_findings": [
+    "Exact delivered84 rerun needs external mapped0.6/U,p restored before reproduce_cases.py",
+    "Generated meshes may be omitted because delivered reproducer rebuilds blockMesh/checkMesh and checks frozen hashes",
+    "Keep0/U,p,constant/system textual inputs,Allrun,initialization metadata and mapped helper",
+    "Parameters mode is only for explicitly selected legacy square cold cases",
+    "Fresh flat layout/count pilot generation is available separately and is not the exact delivered mapped dataset",
+    "C29 offline499-check analysis also requires external saved fields,canonicalphi and sharedseed",
+    "Historical GPU build/launch recipes are guarded workstation artifacts; fresh-host rebuild was not qualified"
+  ],
+  "mutations": [
+    "This review JSON only; no scientific archive, deliverable, export or index mutation"
+  ],
+  "source_files_reviewed": [
+    "restore_external_inputs.py",
+    "test_restore_external_inputs.py",
+    "external_inputs_manifest.json",
+    "study/reproduce_cases.py",
+    "study/run_cases.py",
+    "C29 restore/replay recipes",
+    "benchmark reproduction instructions"
+  ]
+}

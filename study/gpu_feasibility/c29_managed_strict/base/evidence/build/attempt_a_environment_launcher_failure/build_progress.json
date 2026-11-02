@@ -1,0 +1,52 @@
+{
+  "schema": "c29-managed-strict-compile-only-worker-v2.3",
+  "worker_pid": 384943,
+  "started_utc": "2026-11-02T13:14:59.982539+00:00",
+  "status": "failed_preserve_evidence",
+  "jobs_max_total": 2,
+  "nice": 15,
+  "minimum_reserve_GiB": 20,
+  "backends": {
+    "cpu": {
+      "pid": 385126,
+      "start_ticks": "16525268",
+      "uid": 999,
+      "nice": 15,
+      "argv": [
+        "/bin/bash",
+        "-c",
+        "set -e\n. /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/build_environment.sh\ncd /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102/source\nwmake -j1\n"
+      ],
+      "started_utc": "2026-11-02T13:15:00.301408+00:00",
+      "MemAvailable_kib_at_start": 59102672,
+      "status": "failed_preserve_evidence",
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_cpu_managed_strict_v2_3_20261102",
+      "exit_code": 1,
+      "error": "wmake failed; preserve objects/logs, no rebuild",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py\", line 104, in main\n    result=collect(backend,prefix,method,manifest,child)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py\", line 26, in collect\n    assert child['exit_code']==0,'wmake failed; preserve objects/logs, no rebuild'\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError: wmake failed; preserve objects/logs, no rebuild\n"
+    },
+    "gpu": {
+      "pid": 385499,
+      "start_ticks": "16525305",
+      "uid": 999,
+      "nice": 15,
+      "argv": [
+        "/bin/bash",
+        "-c",
+        "set -e\n. /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/build_environment.sh\ncd /opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/source\nwmake -j1\n"
+      ],
+      "started_utc": "2026-11-02T13:15:00.674848+00:00",
+      "MemAvailable_kib_at_start": 59097888,
+      "status": "failed_preserve_evidence",
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102",
+      "exit_code": 1,
+      "error": "wmake failed; preserve objects/logs, no rebuild",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py\", line 104, in main\n    result=collect(backend,prefix,method,manifest,child)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/native_stdpar_install/large_flux_diagnosis/build_combined_managed_strict.py\", line 26, in collect\n    assert child['exit_code']==0,'wmake failed; preserve objects/logs, no rebuild'\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError: wmake failed; preserve objects/logs, no rebuild\n"
+    }
+  },
+  "application_executed": false,
+  "case_mutated": false,
+  "worker_source_sha256": "eaf24b0be11e19e80862d98fd8ca877930fe822cdf81e61aa41db5795cfaeedb",
+  "MemAvailable_kib": 59101760,
+  "ended_utc": "2026-11-02T13:15:02.832745+00:00"
+}

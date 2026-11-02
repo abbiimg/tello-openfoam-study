@@ -1,0 +1,57 @@
+{
+  "schema": "root-c29-plain-same2.3-failed-terminal-reconciliation-v1",
+  "reconciled_utc": "2026-11-02T14:52:03.809488+00:00",
+  "actual_child": {
+    "pid": 1397012,
+    "uid": 999,
+    "birth_start_ticks": 17074725,
+    "cwd": "/opt/openfoam-workspace/cases/native_c29_gpu_diagnostics_20261102/plain_unprofiled_v2_3",
+    "exe": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/bin/c29ManagedHybridFoamStrict",
+    "nice": 15
+  },
+  "actual_child_waited": true,
+  "actual_child_return_code": -11,
+  "wrapper_return_code": 1,
+  "wrapper_errors": [],
+  "cleanup_errors": [],
+  "original_owned_child_no_longer_alive": true,
+  "no_profiler_observer_or_debugger_injection": true,
+  "binary_unchanged": "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185",
+  "initial_audit_fields_exact_same_bytes_as_qualified_shared_startup": {
+    "0.6/c29_initialP": "06de105d9a3a7f9d1e23e444003136fa9b0c9f266896af421aef72909118cd8b",
+    "0.6/c29_initialPhi": "fe5b7cea82f191e136f84cf63c4405a766f68bb3dae231bb0a4c27ffe4a3d5c4",
+    "0.6/c29_initialU": "9d2314cb3494848c2dee843e0a3c68fa4138dacb7c9e9f013445e9fe68d86216"
+  },
+  "entered_time_headers_s": [
+    0.6001
+  ],
+  "completed_timesteps": 0,
+  "source_calls": 0,
+  "controller_updates": 0,
+  "End_marker": false,
+  "input_and_actual_loaded_library_bytes_rechecked_unchanged": true,
+  "added_case_files": [
+    "0.6/c29_initialP",
+    "0.6/c29_initialPhi",
+    "0.6/c29_initialU"
+  ],
+  "actual_exit_receipt": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/plain_unprofiled_diagnostic_v1_20261102/actual_solver_exit.json",
+    "sha256": "573a15379a2e175317fc99ad803a0f17cfd58cec30b94fd51922fc396b5c3188"
+  },
+  "stdout": {
+    "path": "/opt/openfoam-workspace/gpu-feasibility/native-c29-validation/native_gpu_managed_strict_v2_3_20261102/plain_unprofiled_diagnostic_v1_20261102/native_gpu_five_stdout.log",
+    "sha256": "014b20ec8f5cb2e993b0c11a3658c12b3cca3df4afbde8d3d2ae734bbdbce846"
+  },
+  "root_approval": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/root_plain_gpu_approval.json",
+    "sha256": "9c4beb885fa6b1ef4eb813ad74f247e033a27c3b9e99dcda5fece99314e18c6e"
+  },
+  "fresh_clone_preparation": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/plain_gpu_fresh_clone_preparation.json",
+    "sha256": "f28f05447812b6c74e81ebbb0c8583b5d9de543b673430db214ecf3b05d908bd"
+  },
+  "interpretation": "The first-step failure reproduces without Nsight/tool injection. Profiling is not required to reproduce it; exact host instruction/device-kernel cause remains unproven.",
+  "qualification": "Native full-size GPU transient remains UNQUALIFIED. No GPU rotor lift, accepted full-step CUDA proof, CPU/GPU transient parity or speed measurement.",
+  "decision": "No causally unsupported2.4 build or timing. Preserve source-only proposal. Complete dependency verification, evidence curation and delivery with this explicit limitation."
+}

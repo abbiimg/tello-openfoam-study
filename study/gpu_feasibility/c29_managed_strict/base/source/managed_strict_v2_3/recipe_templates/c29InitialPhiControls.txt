@@ -1,0 +1,6 @@
+// Fallback marker for a NEW seed-only mesh/U clone, not an existing case.
+FoamFile {format ascii;class dictionary;object c29InitialPhiControls;}
+protocol c29-foundation14-initial-phi-only-v1;
+allowInitialPhiExperiment false;
+experimentId "ROOT_CHOOSE_UNIQUE_ID";
+experimentReceiptFile "/ROOT_CHOOSE_NEW_PRIVATE_RECEIPT.foam";

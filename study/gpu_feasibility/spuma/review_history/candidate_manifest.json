@@ -1,0 +1,740 @@
+{
+  "kind": "Complete source/evidence-only SPUMA candidate index; NOT published/approved",
+  "created_utc": "2026-11-02T11:59:45.773689+00:00",
+  "evidence_manifest_sha256": "f93ca9231d85204b891512bbdc8dd6b6d17be6001129bd8e6ae3aaf1183fc901",
+  "files": {
+    "SPUMA_FUNCTIONAL_TEST.md": {
+      "bytes": 5841,
+      "sha256": "3ecfbff4d0082e97e696672242e289afb7ba33a6a501a2611e9e8185a39d466d"
+    },
+    "spuma_evidence/README.md": {
+      "bytes": 5841,
+      "sha256": "3ecfbff4d0082e97e696672242e289afb7ba33a6a501a2611e9e8185a39d466d"
+    },
+    "spuma_evidence/UPSTREAM_COPYING": {
+      "bytes": 35592,
+      "sha256": "9b8035bdd2179a4ab021988af062b72daad26ca77703cf6745d2f3d9dc49cc65"
+    },
+    "spuma_evidence/build_logs/base_libraries.log": {
+      "bytes": 1628582,
+      "sha256": "5d8bd1dd02272d64ca2b525f055eb48c773b852afec61540f574ab8f662e302e"
+    },
+    "spuma_evidence/build_logs/blockMesh_binary.log": {
+      "bytes": 2226,
+      "sha256": "49d7f94e06f54083aa8cd90962044a3df24b1b74649ba21f8457bb8349075fb6"
+    },
+    "spuma_evidence/build_logs/blockMesh_library.log": {
+      "bytes": 45711,
+      "sha256": "b6cee36c1649c777270e49fc24217dfe829f19dd1595f4c4a9d119373a209ac9"
+    },
+    "spuma_evidence/build_logs/core_executor_marker_build.log": {
+      "bytes": 2874,
+      "sha256": "da516350c7e21382f17b1e0af18213f34b8d015c48bf52a0199b3d9671a82d82"
+    },
+    "spuma_evidence/build_logs/cuda_observer_build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spuma_evidence/build_logs/dynamicMesh_library.log": {
+      "bytes": 301111,
+      "sha256": "c96888fed1846330f95dc56029a46da758d38f79211776bcd2d45167cf6c73dc"
+    },
+    "spuma_evidence/build_logs/extrudeModel_library.log": {
+      "bytes": 18087,
+      "sha256": "e97b7a3157bc73b0beb454df4992f466b07a5d79e357db66ae5805671fd4a660"
+    },
+    "spuma_evidence/build_logs/finiteVolume_library.log": {
+      "bytes": 1661024,
+      "sha256": "7cc8bc076b3884cd6276b371cb70c26d0d6909a00ea28161cae9d283bf8e2cef"
+    },
+    "spuma_evidence/build_logs/finiteVolume_library_link_retry1.log": {
+      "bytes": 75560,
+      "sha256": "49a9c829551210178c3d1f562fe76fd6f028a82aaee5611630ded81f3f67d9c6"
+    },
+    "spuma_evidence/build_logs/generated_registration_sources/348871_reg6iJADu.c": {
+      "bytes": 12834,
+      "sha256": "fd9b42c9ed322a02ebe02e6bd21444eb21951c3b229ea67e6d9ba61ed92ff581"
+    },
+    "spuma_evidence/build_logs/generated_registration_sources/350118_regiX8AGP.c": {
+      "bytes": 993,
+      "sha256": "d0dad864a556c79a5240f48598306b0342833aa710d1dc46133f13bb8e4e12b4"
+    },
+    "spuma_evidence/build_logs/generated_registration_sources/350901_regryf9Qj.c": {
+      "bytes": 352,
+      "sha256": "3bd436b080efac41a3ff9f9e9507c295c0697f70f3407dc3e80aa8935be2eda8"
+    },
+    "spuma_evidence/build_logs/generated_registration_sources/356456_regWOxi4S.c": {
+      "bytes": 3113,
+      "sha256": "c88179e4901944bb1a673794bddfe3d66725976c3a321d550b2c944f227e225b"
+    },
+    "spuma_evidence/build_logs/icoFoam_binary.log": {
+      "bytes": 6589,
+      "sha256": "9f492339cfb2e5c465b29eec5848aba4c525b0b7cff71478d6172efd0f93a400"
+    },
+    "spuma_evidence/build_logs/icoFoam_first_step_annotation_build.log": {
+      "bytes": 6589,
+      "sha256": "d333f329422382268364a876c9b3b8d08ab0ea40f95e93e7d3ba0ff3fe57efb3"
+    },
+    "spuma_evidence/build_logs/stub_gcc_wrapper.jsonl": {
+      "bytes": 6685,
+      "sha256": "32f7b5d09aef8f82c0cf5683c7255771529a2c6093fc1956b8fddcf754ab40e1"
+    },
+    "spuma_evidence/build_logs/wmake_tools.log": {
+      "bytes": 2064,
+      "sha256": "ce9edc5d5a43080a7926e80eba780245dcbbcc597dceccf2603ed11c404813ce"
+    },
+    "spuma_evidence/build_progress.json": {
+      "bytes": 511,
+      "sha256": "38d9809b250ed66d6546300825171896b900d8455aa4cc5a8562827f6fdf518a"
+    },
+    "spuma_evidence/core/core_executor_build.log": {
+      "bytes": 2874,
+      "sha256": "da516350c7e21382f17b1e0af18213f34b8d015c48bf52a0199b3d9671a82d82"
+    },
+    "spuma_evidence/core/core_executor_gate.json": {
+      "bytes": 1377,
+      "sha256": "4d4c988d3319c69924a4f49496ce4d72ef09d287ebc179bc61680fa2e2357837"
+    },
+    "spuma_evidence/core/core_executor_stdout.log": {
+      "bytes": 1949,
+      "sha256": "8b67a62e5e77d071bd5292e8133a47ab42e24e5a7252bc5538af0d799491e4b2"
+    },
+    "spuma_evidence/core/manifest.json": {
+      "bytes": 858,
+      "sha256": "507ea732b31eff51db638f098a47277f97131f68c0ac00ce16aafbd9d548cec0"
+    },
+    "spuma_evidence/core/private_build_configuration.json": {
+      "bytes": 1653,
+      "sha256": "fb4b1bd82619654a9649190ec5be15fea0e3e8767f3f1d75114b699ccde3fc35"
+    },
+    "spuma_evidence/finiteVolume_link_retry.json": {
+      "bytes": 919,
+      "sha256": "f2a81a07fac0121e8cd9e91aaed88f93361ac3226f6ca2837bb9b13c639ed534"
+    },
+    "spuma_evidence/finiteVolume_preserved_objects.json": {
+      "bytes": 95385,
+      "sha256": "6ca984fd84563d108d458ae1127a2d6b5b6d8ba3e8b19884914a5e86ec8b2c38"
+    },
+    "spuma_evidence/ico_first_step_annotation.json": {
+      "bytes": 1148,
+      "sha256": "4c8867696589a028152418f0d61f2658798d5cb5b9cd3b1c64f18ea6e6caa8ce"
+    },
+    "spuma_evidence/ico_first_step_build.json": {
+      "bytes": 2313,
+      "sha256": "44313626f49066d703dea7d44cf8f85d65554eb09be1afa0d1657f9fba16804d"
+    },
+    "spuma_evidence/ico_time_loop_annotation.json": {
+      "bytes": 962,
+      "sha256": "68a480158daa533a6eb94151b8c3c2bca935cdfab8d74bbcf9bf63bd4d2b8d3a"
+    },
+    "spuma_evidence/manifest.json": {
+      "bytes": 31692,
+      "sha256": "f93ca9231d85204b891512bbdc8dd6b6d17be6001129bd8e6ae3aaf1183fc901"
+    },
+    "spuma_evidence/minimal_build_journal.json": {
+      "bytes": 4363,
+      "sha256": "c325be6bb7c3df1a289f42ecfc632df46c9e64733e87041d4f25666d9f8f7b39"
+    },
+    "spuma_evidence/original_attempt_diagnostic.json": {
+      "bytes": 4498,
+      "sha256": "58f55f48fac4453922bd673e354d7bb02527bb8184c16da5841a62bab06499b0"
+    },
+    "spuma_evidence/original_failed/.spuma-smoke-started": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spuma_evidence/original_failed/0/U": {
+      "bytes": 1143,
+      "sha256": "a6580fe68dc8ce243701b8910c43aed2d37b7c8a5e513226343a20d44f3b63c5"
+    },
+    "spuma_evidence/original_failed/0/p": {
+      "bytes": 1104,
+      "sha256": "0c7040dc8b6010695d2e902f9d483becfb669a27325f3c640231bc0fac478230"
+    },
+    "spuma_evidence/original_failed/Allrun": {
+      "bytes": 1247,
+      "sha256": "06cd4461d3ae318589f2c7aea9f5c2afb87c1644b092c5acbbde1ece25350716"
+    },
+    "spuma_evidence/original_failed/connector_stop_response.json": {
+      "bytes": 458,
+      "sha256": "53b4a59c041c3b26ed94c8b729b1ee0f5aeab9268fc49b7dd5e74651335c225f"
+    },
+    "spuma_evidence/original_failed/constant/polyMesh/boundary": {
+      "bytes": 1370,
+      "sha256": "a7ad37b68b42356e4e39b59f6012e647a24158d3866026e3f9c661999d7ba032"
+    },
+    "spuma_evidence/original_failed/constant/polyMesh/faces": {
+      "bytes": 31318,
+      "sha256": "e3283010e411ccfd14150731a93f1d6914de26999922f8b0af596e6e94b719ed"
+    },
+    "spuma_evidence/original_failed/constant/polyMesh/neighbour": {
+      "bytes": 3854,
+      "sha256": "26d316878ecf613a33edf419316fd7dee8ad0f525ccf5a8f2af53f0295df3ae3"
+    },
+    "spuma_evidence/original_failed/constant/polyMesh/owner": {
+      "bytes": 7079,
+      "sha256": "e6da5c768328a062cc06b85dcb278e7cbe1c1af3b143f3e0a4039c053cdb2943"
+    },
+    "spuma_evidence/original_failed/constant/polyMesh/points": {
+      "bytes": 15096,
+      "sha256": "b0b0ad693bb4aa8400390519b51d0519e0a7caa279b8764a9844ea772a31f67d"
+    },
+    "spuma_evidence/original_failed/constant/transportProperties": {
+      "bytes": 867,
+      "sha256": "92578ede17bc7d8df6426a2e9a80b85b52ad6a8ce0514f43970fb165765074ad"
+    },
+    "spuma_evidence/original_failed/controlDict.before_intentional_stop": {
+      "bytes": 1189,
+      "sha256": "be1f54e4ffef7ea71a8268377ea4012c62c7d49b999e1d33fc3934e4e037ccf1"
+    },
+    "spuma_evidence/original_failed/core_executor_gate.json": {
+      "bytes": 1377,
+      "sha256": "4d4c988d3319c69924a4f49496ce4d72ef09d287ebc179bc61680fa2e2357837"
+    },
+    "spuma_evidence/original_failed/icoFoam_exit_receipt.json": {
+      "bytes": 447,
+      "sha256": "8a9e91624a611d85fe4f71ac40fcada758dc391976004d8c4dc8af0691ccf674"
+    },
+    "spuma_evidence/original_failed/intentional_stop_audit.json": {
+      "bytes": 1254,
+      "sha256": "9fc2084d9d164a5e4687ccedd467469143a2c0e3b12df038452c93eff5ba3e55"
+    },
+    "spuma_evidence/original_failed/log.Allrun": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spuma_evidence/original_failed/log.blockMesh": {
+      "bytes": 2612,
+      "sha256": "ad212d61cce8231cbe05cb9bbcdff0739d8b9f767d965be1dc334c23f2026c66"
+    },
+    "spuma_evidence/original_failed/log.icoFoam": {
+      "bytes": 16719,
+      "sha256": "abec7905eeefacc021cfb24eaeb4599f25f0b87854a10dfb1b49e8a844f9f26a"
+    },
+    "spuma_evidence/original_failed/log.poolDeviceMarker": {
+      "bytes": 1949,
+      "sha256": "8b67a62e5e77d071bd5292e8133a47ab42e24e5a7252bc5538af0d799491e4b2"
+    },
+    "spuma_evidence/original_failed/purpose.json": {
+      "bytes": 3652,
+      "sha256": "cfb718e07f9dc818703d314c41672ae9064e0a105c16471adf4fe17168219a30"
+    },
+    "spuma_evidence/original_failed/record_runtime_artifacts.py": {
+      "bytes": 830,
+      "sha256": "1436619e57bb24f5d369e043887dc0cabb618def937e8b9be03c68dbb5b3ca3c"
+    },
+    "spuma_evidence/original_failed/run_profiled_ico.py": {
+      "bytes": 1135,
+      "sha256": "102f314ae508f7f9a6c11749e8b80e51ca390dea01b3a3213d52b960d8655863"
+    },
+    "spuma_evidence/original_failed/run_status.json": {
+      "bytes": 4498,
+      "sha256": "58f55f48fac4453922bd673e354d7bb02527bb8184c16da5841a62bab06499b0"
+    },
+    "spuma_evidence/original_failed/runtime_artifacts_start.json": {
+      "bytes": 947,
+      "sha256": "d1804a24eaa6800011e1f141d2c70e10794e6c83960065ae9767a23b1891e515"
+    },
+    "spuma_evidence/original_failed/runtime_libraries.txt": {
+      "bytes": 3053,
+      "sha256": "e8bf355bb485d8fcfb94b290830fda4205116f9c663d9c2412be1c7c55582c68"
+    },
+    "spuma_evidence/original_failed/system/PDRblockMeshDict": {
+      "bytes": 1262,
+      "sha256": "e09b4c404bd108c398e45efe341463c1e849fe9bfdfc9ec0cb9d98422dcb3e9e"
+    },
+    "spuma_evidence/original_failed/system/blockMeshDict": {
+      "bytes": 1447,
+      "sha256": "1585d47710325fb71091330c2d6539250958651248cea9fcd1b7c7b105c16f42"
+    },
+    "spuma_evidence/original_failed/system/controlDict": {
+      "bytes": 1189,
+      "sha256": "be1f54e4ffef7ea71a8268377ea4012c62c7d49b999e1d33fc3934e4e037ccf1"
+    },
+    "spuma_evidence/original_failed/system/decomposeParDict": {
+      "bytes": 917,
+      "sha256": "a0c4876fbd0a80cc42135ead135c17aca2f0ef0c249d7589d39cc463f57e659d"
+    },
+    "spuma_evidence/original_failed/system/fvSchemes": {
+      "bytes": 1210,
+      "sha256": "98ec9c773a5681cbc6b8636a340786e098b73e14ff6fed37e1689ddf657aacbc"
+    },
+    "spuma_evidence/original_failed/system/fvSolution": {
+      "bytes": 1323,
+      "sha256": "405eb2152882c47792a68181ca860b7470227295ca9c674a762ac452f94581a8"
+    },
+    "spuma_evidence/prerequisite_references_and_identities.json": {
+      "bytes": 1457,
+      "sha256": "d0f213b93b9cec525f1111e1d7c73ac3a8f65aa5fde77026c115a90c0727007f"
+    },
+    "spuma_evidence/private_build_configuration.json": {
+      "bytes": 2891,
+      "sha256": "789e1c845ff34254ac53f431138ccda726572bd9b2c52d62f02fced00caef37d"
+    },
+    "spuma_evidence/protocol_strict_v2.json": {
+      "bytes": 8459,
+      "sha256": "103e4fcfb1c9c08053f95a90afd91f62d14129da704731c80136449d2262fffe"
+    },
+    "spuma_evidence/recipes/audit_strict_process_identity.py": {
+      "bytes": 2360,
+      "sha256": "d36742532b9a139bfc6d01084c7f7c2d569feb1d68ec98d35c96d8464c9a53ac"
+    },
+    "spuma_evidence/recipes/audit_strict_v2_first_step.py": {
+      "bytes": 6390,
+      "sha256": "f67ececcfaa783c4b892b0b50d949059c41cac62a6004bd476f92331b2805eba"
+    },
+    "spuma_evidence/recipes/build_budget.json": {
+      "bytes": 815,
+      "sha256": "0b45f996a22d7cf6492acfde369245282d7ed964f2f79e819b60b6d7335f0d8f"
+    },
+    "spuma_evidence/recipes/build_minimal_spuma.py": {
+      "bytes": 5230,
+      "sha256": "3cbb6a612fb2aeee03bb3854ce8fa89ff25cc6bff27e32449ea713c776d72903"
+    },
+    "spuma_evidence/recipes/build_smoke_helpers.py": {
+      "bytes": 2523,
+      "sha256": "acd1c9c913ef4ae04228fd62022dcff2f4caf8adc1f6d774b9f6c17b92631db3"
+    },
+    "spuma_evidence/recipes/configure_private_build.py": {
+      "bytes": 4434,
+      "sha256": "8e24440eae5342e9b8d89429a1c544448a2d672e8cadec02e82e90d1e24b209a"
+    },
+    "spuma_evidence/recipes/cuda_runtime_observer.cpp": {
+      "bytes": 3764,
+      "sha256": "0570bae515f74d9e45349ec8bdcf667a4bcf3434b607def7a441d888f99e96f5"
+    },
+    "spuma_evidence/recipes/extract_review_trace_subset.py": {
+      "bytes": 8061,
+      "sha256": "89ddee5848ec9761698460b43fec205ef2e9733b59b80b851c49201f8b8d651a"
+    },
+    "spuma_evidence/recipes/freeze_original_attempt.py": {
+      "bytes": 3836,
+      "sha256": "61e939fe4d72d737c68b4d97b88e2aa57dad8c3412a9a8183534b1740a376fbe"
+    },
+    "spuma_evidence/recipes/freeze_strict_validation.py": {
+      "bytes": 3186,
+      "sha256": "1809dd518b04e2740b3f6a0b24709372cb83c81f3d55dabdf010c6bba1f4e484"
+    },
+    "spuma_evidence/recipes/ico_first_step_annotation.patch": {
+      "bytes": 1153,
+      "sha256": "ad0f8fe232488b6d080620114c230ace7a53de129a5dac07b8a21e7a2fc860c5"
+    },
+    "spuma_evidence/recipes/ico_time_loop_annotation.patch": {
+      "bytes": 839,
+      "sha256": "4a9d6155c5b6027d8fbdcb1e950f4fc479b9d6623e4d6d99bb100650f82f7daa"
+    },
+    "spuma_evidence/recipes/install_stub_pic_wrapper.py": {
+      "bytes": 2714,
+      "sha256": "9af2493399d8655d6a83ea105ae254dcbf6807ec71759e34547cac50fa5da2d9"
+    },
+    "spuma_evidence/recipes/instrument_first_step.py": {
+      "bytes": 2686,
+      "sha256": "a26d9e90cb01e52a110ac81e810edc7d96be9bc0e3bbe47dcffeade87544967d"
+    },
+    "spuma_evidence/recipes/instrument_ico_time_loop.py": {
+      "bytes": 2501,
+      "sha256": "b52f8abfdec9bc2b1f3d4d93bae3d6df66a22f676956e8e5c197f8d4e7d975e9"
+    },
+    "spuma_evidence/recipes/prepare_core_executor_gate.py": {
+      "bytes": 4533,
+      "sha256": "b579c1dc189c90526b9be62b61b28a9a64f190e11a50908036d110a40951be42"
+    },
+    "spuma_evidence/recipes/prepare_publication_candidate.py": {
+      "bytes": 16516,
+      "sha256": "3ebfe9756cdeb831cc98b4be5ac61bf2eee50a4e00c0a08a05b99deefa6920fd"
+    },
+    "spuma_evidence/recipes/prepare_smoke_case.py": {
+      "bytes": 7107,
+      "sha256": "fedfa16164f18a60bc7477e07bfe6edf87f7a9ee6fe07239473c396d5d486ccd"
+    },
+    "spuma_evidence/recipes/prepare_strict_v2.py": {
+      "bytes": 8306,
+      "sha256": "5b81bdde5199ecd266ab43d5323af3d9506a637b0bfdce51c1857cd2c62715d8"
+    },
+    "spuma_evidence/recipes/private_env.sh": {
+      "bytes": 2369,
+      "sha256": "54c421a8d844021d9cd7ac5cd4619fed105670072de5215a88623331dae426ac"
+    },
+    "spuma_evidence/recipes/rebuild_first_step_ico.py": {
+      "bytes": 2146,
+      "sha256": "b37ba33a824142c68e70838c1c0569c71c8323cb5272447aea5286298b97f564"
+    },
+    "spuma_evidence/recipes/retry_finiteVolume_link.py": {
+      "bytes": 3366,
+      "sha256": "8ae492de1b1d44498d1cdb19a299f4a566cecad529979ab83f2ed97779785cbe"
+    },
+    "spuma_evidence/recipes/run_core_executor_gate.py": {
+      "bytes": 2308,
+      "sha256": "b5f1ed3ae5d85ac79f46d0f253aba45057288470d5bd9178ad4fffce620b45a5"
+    },
+    "spuma_evidence/recipes/spuma_pool_device_marker.C": {
+      "bytes": 4089,
+      "sha256": "c47b46171a5dc9efcf5c246c737d4e2e1d82c1db10dfa12592568d2d882c9aef"
+    },
+    "spuma_evidence/recipes/stage_private_spuma_sources.py": {
+      "bytes": 3914,
+      "sha256": "db5d9cb88ecce0087168bd8d71a07fa1bde3c0cb4678bb480bec0e9ce299ab6e"
+    },
+    "spuma_evidence/recipes/stub_gcc_wrapper.py": {
+      "bytes": 1612,
+      "sha256": "159c73ecec300accad206c50deea9943fe3ec3a1ca46903eb87e91e9a57e57ef"
+    },
+    "spuma_evidence/recipes/validate_strict_v2.py": {
+      "bytes": 9592,
+      "sha256": "33b33a554059d9d74c3c0bafef83dd24ea8d0c3eeec86d9a52421f6ea6621030"
+    },
+    "spuma_evidence/review_trace_subset.json": {
+      "bytes": 3564,
+      "sha256": "b9e9b4bc2fef5ae950c405df798007da3a93fd26609e3be374bf4e27d15e4bee"
+    },
+    "spuma_evidence/source_staging.json": {
+      "bytes": 3517,
+      "sha256": "5337f2ea48cfccb6b16dadcb5628b842f408c7b6ae9e77fa4b3b1a6077f3a478"
+    },
+    "spuma_evidence/spuma_strict_v2_cfd_first_step_gpu_gate.json": {
+      "bytes": 5867,
+      "sha256": "f6b9bfdec677f57a093b16f6265cfdc769597912befaea3bf658bed058f9d7b4"
+    },
+    "spuma_evidence/spuma_strict_v2_tutorial_gate.json": {
+      "bytes": 20747,
+      "sha256": "8678dcea08f57f6a0b56a904ebe21651135767643125ea108661688c21eec804"
+    },
+    "spuma_evidence/strict_v2/.strict-v2-started": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spuma_evidence/strict_v2/0/U": {
+      "bytes": 1143,
+      "sha256": "a6580fe68dc8ce243701b8910c43aed2d37b7c8a5e513226343a20d44f3b63c5"
+    },
+    "spuma_evidence/strict_v2/0/p": {
+      "bytes": 1104,
+      "sha256": "0c7040dc8b6010695d2e902f9d483becfb669a27325f3c640231bc0fac478230"
+    },
+    "spuma_evidence/strict_v2/0.005/U": {
+      "bytes": 22000,
+      "sha256": "4c179e40d07b1df23c341fd58158543e7ff3ae2a9edb2e06768aad61b67ccda5"
+    },
+    "spuma_evidence/strict_v2/0.005/p": {
+      "bytes": 9334,
+      "sha256": "810f0c4ba103076900a135e747fbfbf9f1b7641442f400b1af46ea9a412b6a09"
+    },
+    "spuma_evidence/strict_v2/0.005/phi": {
+      "bytes": 19230,
+      "sha256": "28a8d4f6c342ac7ca9671cf08e41b81062698f133c231bf7e8f9e8ddebb345b7"
+    },
+    "spuma_evidence/strict_v2/0.005/uniform/cumulativeContErr": {
+      "bytes": 1011,
+      "sha256": "4a7d0d4d1ffece11434d392dddeb128b70677068176d5a6665e97764f6456850"
+    },
+    "spuma_evidence/strict_v2/0.005/uniform/functionObjects/functionObjectProperties": {
+      "bytes": 941,
+      "sha256": "06d7361b88f330633025edb7d9825ddf68cd9900240a7084ee25f6239568a6c8"
+    },
+    "spuma_evidence/strict_v2/0.005/uniform/time": {
+      "bytes": 1070,
+      "sha256": "c6678792d1f4a457607c4037c7fe51715f0b8ab82fdb3aef2b5c25f6d9a79758"
+    },
+    "spuma_evidence/strict_v2/0.01/U": {
+      "bytes": 21896,
+      "sha256": "df9f55a180d5b34d8b72225bd9e6d4f2fb9ed097ce942b4ea57a32cee9ae25dd"
+    },
+    "spuma_evidence/strict_v2/0.01/p": {
+      "bytes": 9455,
+      "sha256": "c4d2bf4cc008b8d86a83c9b9d710c1b1c1ccc3bf5d260b67368b6562fe97f9cd"
+    },
+    "spuma_evidence/strict_v2/0.01/phi": {
+      "bytes": 19195,
+      "sha256": "ee14b950a03504c9009c3e16ac286241f93e1fe061cb4249e6ebb2346583b941"
+    },
+    "spuma_evidence/strict_v2/0.01/uniform/cumulativeContErr": {
+      "bytes": 1009,
+      "sha256": "b8a0b3028686ae0cb952f3a15f860bfad09011fea66e527c443182596b4d3d50"
+    },
+    "spuma_evidence/strict_v2/0.01/uniform/functionObjects/functionObjectProperties": {
+      "bytes": 940,
+      "sha256": "0400a6c4f1cf66072af8be2870998b7fe807300c105232af4d76018177c9fa03"
+    },
+    "spuma_evidence/strict_v2/0.01/uniform/time": {
+      "bytes": 1068,
+      "sha256": "90f59ab05bb73409d9675520492613b96d8b33179aeb599a911e5a6cdd008c9e"
+    },
+    "spuma_evidence/strict_v2/0.015/U": {
+      "bytes": 21839,
+      "sha256": "cfa950972a62005af49b04fb82a8e6bb845fed70e679c02d59251446a8f87a8a"
+    },
+    "spuma_evidence/strict_v2/0.015/p": {
+      "bytes": 9503,
+      "sha256": "4ac37319d2650a6f4d641daefa85535c4e7554956c8daa625097ad5a04055989"
+    },
+    "spuma_evidence/strict_v2/0.015/phi": {
+      "bytes": 19218,
+      "sha256": "48b28238fc991be5e56bb5445fa6a9ba1d8214c8bcca6cd22c2780699be63285"
+    },
+    "spuma_evidence/strict_v2/0.015/uniform/cumulativeContErr": {
+      "bytes": 1012,
+      "sha256": "5bcec93f59b232ad211f1bd91029c68ba38cc8d7fe41e7a89b4aa0bae72a221a"
+    },
+    "spuma_evidence/strict_v2/0.015/uniform/functionObjects/functionObjectProperties": {
+      "bytes": 941,
+      "sha256": "cffcdd3f8ae3806b26723bef795c27009bb00b51a2dac5c3e19038b0a98cbd40"
+    },
+    "spuma_evidence/strict_v2/0.015/uniform/time": {
+      "bytes": 1070,
+      "sha256": "bdcb87faf7d2decfc426f6d51cbd8fd8694c450d2c28f4b124e7ce1091861bb4"
+    },
+    "spuma_evidence/strict_v2/0.02/U": {
+      "bytes": 21804,
+      "sha256": "171a8966b4a8064d0e3933a53ce036a454e0ce2efe37d30ed9ae7caa6875f0d8"
+    },
+    "spuma_evidence/strict_v2/0.02/p": {
+      "bytes": 9490,
+      "sha256": "174d7d660bdb5029e169947b4d9f8be7dd722beff6b51283a8c2e5ec57be6b18"
+    },
+    "spuma_evidence/strict_v2/0.02/phi": {
+      "bytes": 19186,
+      "sha256": "515103405bc6f7dd9b9961eda3ffc95acb195221de9269386dd68b8746277911"
+    },
+    "spuma_evidence/strict_v2/0.02/uniform/cumulativeContErr": {
+      "bytes": 1010,
+      "sha256": "7924319f55a52b433d6a36bb078ba294b615557eb27ae72aa0457596d1f88e79"
+    },
+    "spuma_evidence/strict_v2/0.02/uniform/functionObjects/functionObjectProperties": {
+      "bytes": 940,
+      "sha256": "5f71a94d8065ed60a13f79ca8d3eee32f81a3f94779232e75cc7376bbb2f2ca7"
+    },
+    "spuma_evidence/strict_v2/0.02/uniform/time": {
+      "bytes": 1068,
+      "sha256": "7e66029da2403b0019daac8e26e5a33c73ce7a2a1b35c8c0a997f90a7cedc81c"
+    },
+    "spuma_evidence/strict_v2/0.025/U": {
+      "bytes": 21762,
+      "sha256": "3fb3153fbc66b235b28ce04313aea9ce60e0dfb90dcf984ba9dfe89c634fda9c"
+    },
+    "spuma_evidence/strict_v2/0.025/p": {
+      "bytes": 9542,
+      "sha256": "8ea90f34f5e146f03953e22ffa527f6999ea662400bb85cbaa8ca424cbca15fd"
+    },
+    "spuma_evidence/strict_v2/0.025/phi": {
+      "bytes": 19200,
+      "sha256": "7e486fd8481a69c93ef08f844774f4834f1af5119f237ead0d6e90ebc0e756ef"
+    },
+    "spuma_evidence/strict_v2/0.025/uniform/cumulativeContErr": {
+      "bytes": 1011,
+      "sha256": "7685d9ffaea16fe04c6ad5e7f4fc50c7dd2ebdf24b3c67359c4f575c1dfd599f"
+    },
+    "spuma_evidence/strict_v2/0.025/uniform/functionObjects/functionObjectProperties": {
+      "bytes": 941,
+      "sha256": "149c9b9b7e7fd91a63045390eb2dbca0a16e9829d50b4c6a7865e2809e1ba8fa"
+    },
+    "spuma_evidence/strict_v2/0.025/uniform/time": {
+      "bytes": 1070,
+      "sha256": "9840a98dd129b37a53a97ad109b785cce75fef3ba684605693d7001fe7aeeb18"
+    },
+    "spuma_evidence/strict_v2/Allrun": {
+      "bytes": 1476,
+      "sha256": "ee2589911e676b7fd438d52fe417dc8a3dea8cf0544fc23e653f2e4f1d4b421b"
+    },
+    "spuma_evidence/strict_v2/cavity_first_step_trace_review_subset.sqlite": {
+      "bytes": 217088,
+      "sha256": "5568ec28bdd7dd8ec9f3ee4d2649b7fd27f272e0d8f6b515fd3f93e839e14914"
+    },
+    "spuma_evidence/strict_v2/constant/polyMesh/boundary": {
+      "bytes": 1370,
+      "sha256": "a7ad37b68b42356e4e39b59f6012e647a24158d3866026e3f9c661999d7ba032"
+    },
+    "spuma_evidence/strict_v2/constant/polyMesh/faces": {
+      "bytes": 31318,
+      "sha256": "e3283010e411ccfd14150731a93f1d6914de26999922f8b0af596e6e94b719ed"
+    },
+    "spuma_evidence/strict_v2/constant/polyMesh/neighbour": {
+      "bytes": 3854,
+      "sha256": "26d316878ecf613a33edf419316fd7dee8ad0f525ccf5a8f2af53f0295df3ae3"
+    },
+    "spuma_evidence/strict_v2/constant/polyMesh/owner": {
+      "bytes": 7079,
+      "sha256": "e6da5c768328a062cc06b85dcb278e7cbe1c1af3b143f3e0a4039c053cdb2943"
+    },
+    "spuma_evidence/strict_v2/constant/polyMesh/points": {
+      "bytes": 45007,
+      "sha256": "e74c6d6c854685e46e73583186b8642d115f2fd2f01aeb5bc30a933142852dd0"
+    },
+    "spuma_evidence/strict_v2/constant/transportProperties": {
+      "bytes": 867,
+      "sha256": "92578ede17bc7d8df6426a2e9a80b85b52ad6a8ce0514f43970fb165765074ad"
+    },
+    "spuma_evidence/strict_v2/core_executor_gate.json": {
+      "bytes": 1377,
+      "sha256": "4d4c988d3319c69924a4f49496ce4d72ef09d287ebc179bc61680fa2e2357837"
+    },
+    "spuma_evidence/strict_v2/icoFoam_child_identity.json": {
+      "bytes": 329,
+      "sha256": "0dcbe5879373919f71f4301977248c3f21e4089554632a06109fbde8ba737e61"
+    },
+    "spuma_evidence/strict_v2/icoFoam_exit_receipt.json": {
+      "bytes": 818,
+      "sha256": "845e3c46e7bb30e2519d082d7da9cd6ab4672e913e1a8c6ff9b2b243b4db2b40"
+    },
+    "spuma_evidence/strict_v2/log.Allrun": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spuma_evidence/strict_v2/log.blockMesh": {
+      "bytes": 2812,
+      "sha256": "5a6aab1656f99e144abdcacf54a47231d8aaf2c9d3b50832abe256d29f10d3d8"
+    },
+    "spuma_evidence/strict_v2/log.icoFoam": {
+      "bytes": 10275,
+      "sha256": "645dba1593023d7e316b694d1d34e26a194c73c32d8ec1677923d1fab271c505"
+    },
+    "spuma_evidence/strict_v2/log.nsys_export": {
+      "bytes": 1282,
+      "sha256": "1dc2845da6fad4a62b3dda7b3de29a9ab5b48bb18fb0d08c42e9138d67585aca"
+    },
+    "spuma_evidence/strict_v2/log.poolDeviceMarker": {
+      "bytes": 1949,
+      "sha256": "8b67a62e5e77d071bd5292e8133a47ab42e24e5a7252bc5538af0d799491e4b2"
+    },
+    "spuma_evidence/strict_v2/protocol_strict_v2.json": {
+      "bytes": 8459,
+      "sha256": "103e4fcfb1c9c08053f95a90afd91f62d14129da704731c80136449d2262fffe"
+    },
+    "spuma_evidence/strict_v2/record_runtime_artifacts.py": {
+      "bytes": 942,
+      "sha256": "9fb3965ce35ec5b253456aa3b5e3b7716f24a230b3650793e2efba60e38a0340"
+    },
+    "spuma_evidence/strict_v2/run_profiled_ico.py": {
+      "bytes": 1599,
+      "sha256": "02f7f6714e80f6ffef9d0aaeeca070fe51cd821fdd19b2eb37ca40602eb5d509"
+    },
+    "spuma_evidence/strict_v2/run_status.json": {
+      "bytes": 630,
+      "sha256": "7657f227a101106ea8aeaa9bf1e2b325b6dadc940ad45a80bda5c05ac7581998"
+    },
+    "spuma_evidence/strict_v2/runtime_artifacts_complete.json": {
+      "bytes": 1198,
+      "sha256": "df6a6c51d1ba21d4ff1e6943976758a2a885d6dad929b40b17fdc94d6bcf157a"
+    },
+    "spuma_evidence/strict_v2/runtime_artifacts_start.json": {
+      "bytes": 1195,
+      "sha256": "b96d1854c6134c3325e1ffc26b57bdb2fa42b333f64034dc9c1f2db8faea74e3"
+    },
+    "spuma_evidence/strict_v2/runtime_libraries.txt": {
+      "bytes": 3053,
+      "sha256": "7c6eb09ab9fff595b41210b61f0ee2c6004966f676615cd27c7503663a334888"
+    },
+    "spuma_evidence/strict_v2/system/PDRblockMeshDict": {
+      "bytes": 1262,
+      "sha256": "e09b4c404bd108c398e45efe341463c1e849fe9bfdfc9ec0cb9d98422dcb3e9e"
+    },
+    "spuma_evidence/strict_v2/system/blockMeshDict": {
+      "bytes": 1447,
+      "sha256": "1585d47710325fb71091330c2d6539250958651248cea9fcd1b7c7b105c16f42"
+    },
+    "spuma_evidence/strict_v2/system/controlDict": {
+      "bytes": 1190,
+      "sha256": "a7c7e7e3038c913d91ef417838cafe7117b9a46b1df1b4844d3a67b4f3b6cee6"
+    },
+    "spuma_evidence/strict_v2/system/decomposeParDict": {
+      "bytes": 917,
+      "sha256": "a0c4876fbd0a80cc42135ead135c17aca2f0ef0c249d7589d39cc463f57e659d"
+    },
+    "spuma_evidence/strict_v2/system/fvSchemes": {
+      "bytes": 1210,
+      "sha256": "98ec9c773a5681cbc6b8636a340786e098b73e14ff6fed37e1689ddf657aacbc"
+    },
+    "spuma_evidence/strict_v2/system/fvSolution": {
+      "bytes": 1320,
+      "sha256": "8f164b0c50de263115b78e687d0ad048ccbfc3b1b6e8e5f80adf5161d4903775"
+    },
+    "spuma_evidence/strict_v2_process_identity_audit.json": {
+      "bytes": 1084,
+      "sha256": "c551ecfe2ff69cf94c96fb397d48ebaa58e0e48c246eba30838245963acd6f62"
+    },
+    "spuma_evidence/strict_v2_validation_frozen.json": {
+      "bytes": 962,
+      "sha256": "796d68e7043cae0d8f03dbe06f2d4af4a0bb365f8875e0b176c358700940ec09"
+    },
+    "spuma_evidence/stub_pic_wrapper_install.json": {
+      "bytes": 1171,
+      "sha256": "8b2fa5dede3d96cfa864b86b83c026707c1d548b18e5a2e7108926051fd7eea2"
+    },
+    "spuma_evidence/upstream_rules/applications/solvers/incompressible/icoFoam/Make/files": {
+      "bytes": 40,
+      "sha256": "77dd8601a1b9b96698716abbe342f7155da3fd9370fdd4a0f4295a46ea68af48"
+    },
+    "spuma_evidence/upstream_rules/applications/solvers/incompressible/icoFoam/Make/options": {
+      "bytes": 142,
+      "sha256": "0e3853fb95fcd3e7b165f157d502a4408f84e2e5b5e7b79e36fff2843d63b6fb"
+    },
+    "spuma_evidence/upstream_rules/applications/utilities/mesh/generation/blockMesh/Make/options": {
+      "bytes": 263,
+      "sha256": "74291a38155dbe2f1e2cd2358cf495b2b9ec6b890b640a9a2e57a7bc446ed826"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/General/Nvidia/c": {
+      "bytes": 440,
+      "sha256": "09221f6d0f7ab5c82a5eb693a6ad8228926ea488e8ce1a7d522097d52a272b50"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/General/Nvidia/c++": {
+      "bytes": 1582,
+      "sha256": "39d42a893dfc37b9bb3a352b579cfeaacd383e3675daae941b79ec33cce57ce5"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/General/Nvidia/link-c": {
+      "bytes": 303,
+      "sha256": "0bc4ddc0b22f1dd65eb1a9833ff63cc7731aac2129a57f0e7e5464daf64628e9"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/General/Nvidia/link-c++": {
+      "bytes": 289,
+      "sha256": "2afed856c48f1749fb08080dbb1173a580fcc3e5f663daf38be76fd3d8ce0280"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/General/Nvidia/openmp": {
+      "bytes": 164,
+      "sha256": "82710321f8bdb67ab2602e52804ff6315760076bf600e914c587a2844512b646"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/linuxARM64Nvidia/c": {
+      "bytes": 525,
+      "sha256": "900abc01506f155c4e9c04a2eb8f99e699a95530cec813e6337e994fd367b9eb"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/linuxARM64Nvidia/c++": {
+      "bytes": 620,
+      "sha256": "79673358416a7ab0442d819c62be8c87013d21dc8e02ab13eb749c15a04b5668"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/linuxARM64Nvidia/general": {
+      "bytes": 358,
+      "sha256": "57506853866dafd044040c7523ca723bd32db5c70f86c13ee38b8175db6f860f"
+    },
+    "spuma_evidence/upstream_rules/wmake/rules/linuxARM64Nvidia/mplibOPENMPI": {
+      "bytes": 180,
+      "sha256": "d6105770fddba6c47a6bdda778a2a274ac85353df4d92084570cab0aa3a59e0a"
+    },
+    "spuma_evidence/upstream_rules_manifest.json": {
+      "bytes": 1462,
+      "sha256": "9e51c1bea4c7d6945f4a53420883b8c7c69f63ac84c89bfdda16e9d02f757a89"
+    },
+    "spuma_evidence/upstream_source/icoFoam.first_step_annotation.C": {
+      "bytes": 5133,
+      "sha256": "285453fc33b36de47086fa339ed464a2c6e393e52c1d3f546aa2484cb63b40c4"
+    },
+    "spuma_evidence/upstream_source/icoFoam.original_full_loop_annotation.C": {
+      "bytes": 4858,
+      "sha256": "3790fc63ee3efc3ba5aa468f4920fe22fdb5a30173e5dc5f623a1681ef8edd1a"
+    },
+    "spuma_evidence/upstream_source/icoFoam.upstream.C": {
+      "bytes": 4697,
+      "sha256": "af28cc5b2fea2c5f25d3a09d274e5b17268eb2fea1c247eeebc7f2a445dcfd46"
+    },
+    "spuma_original_attempt_diagnostic.json": {
+      "bytes": 4498,
+      "sha256": "58f55f48fac4453922bd673e354d7bb02527bb8184c16da5841a62bab06499b0"
+    },
+    "spuma_strict_v2_first_step_gpu_gate.json": {
+      "bytes": 5867,
+      "sha256": "f6b9bfdec677f57a093b16f6265cfdc769597912befaea3bf658bed058f9d7b4"
+    },
+    "spuma_strict_v2_tutorial_gate.json": {
+      "bytes": 20747,
+      "sha256": "8678dcea08f57f6a0b56a904ebe21651135767643125ea108661688c21eec804"
+    }
+  },
+  "exclusions": "SDK/archive/ELF/build trees/credentials/unrelated helpers excluded; minimal referenced-string trace subset only"
+}

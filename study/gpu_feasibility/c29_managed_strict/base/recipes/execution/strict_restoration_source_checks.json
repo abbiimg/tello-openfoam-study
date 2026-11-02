@@ -1,0 +1,26 @@
+{
+  "kind": "Strict restorer source-only audit",
+  "script_sha256": "a9843f4ce9aed928dde1e8a10de7b49807e475c8dccfd2ca3d5825969394096f",
+  "documentation_sha256": "1587a9b806344cf69c38fad9b85c884050077c97607f6659aa697c4739049459",
+  "AST_parse": true,
+  "default_plan_previously_executed_only": true,
+  "safe_module_sha256": "d7064bde61a40764965436b4c1935d1a3cd63e54f5a2cf694fae898014c7135c",
+  "strict_protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "root_authorization_sha256": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+  "thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "original_fvSolution_sha256": "cf30492975ca99d34bb83e7c63a1f8234b4bb6c4a7d224b15b61b00347c16d0e",
+  "input_delta_patches": {
+    "strict_foundation14_fvSolution_adaptation.patch": "fa3e03ee021ac3a872445c12866718b8482e1cdce43046316d698428b00679fd",
+    "strict_native_fvSolution_adaptation.patch": "47f298ef6faede74eba22008ebefede0394278b2c445737ec50058937806012f"
+  },
+  "fixed_new_root": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102",
+  "exact_roles": [
+    "foundation14_control",
+    "native_cpu",
+    "native_gpu"
+  ],
+  "fresh_root_currently_absent": true,
+  "original_failed_cases_and_reports_untouched": true,
+  "no_restoration_build_initializer_solver_dictionary_utility_or_receipt": true,
+  "meaning": "Syntax/source guard review and literal delta of known pinned input only. Actual expanded dictionary audit and all runtime gates remain required."
+}

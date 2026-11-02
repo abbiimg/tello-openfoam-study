@@ -1,0 +1,52 @@
+{
+  "kind": "Actual private managed stdpar compiler/runtime installation gate; not CFD",
+  "completed_utc": "2026-11-02T07:45:12.665356+00:00",
+  "sdk": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9",
+  "nvhpc_version": "26.9",
+  "compiler_flags": [
+    "-std=c++17",
+    "-stdpar=gpu",
+    "-gpu=cc121,mem:managed",
+    "-Minfo=all",
+    "-O2"
+  ],
+  "source_sha256": "40efe0eb0a01876365e4bf203ae2c78bd92bdba4829986a531367e00783abd57",
+  "binary_sha256": "9643857ac95607da4fcad8f9227407432e87b9d53d49114a399c739761d7697f",
+  "runtime": {
+    "stage": "stdpar_smoke_run",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_smoke"
+    ],
+    "return_code": 0,
+    "elapsed_s": 2.5289058779890183,
+    "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/stdpar_smoke_run.log",
+    "completed_utc": "2026-11-02T07:45:12.663860+00:00"
+  },
+  "result": {
+    "kind": "managed stdpar installation smoke",
+    "device": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)",
+    "device_count": 1,
+    "compute_major": 12,
+    "compute_minor": 1,
+    "cuda_runtime_version": 13030,
+    "cuda_driver_version": 13040,
+    "pointer_memory_type": 3,
+    "elements": 1048576,
+    "iterations": 128,
+    "sum": 135266304,
+    "expected_sum": 135266304,
+    "exact_element_check": true,
+    "cuda_synchronize_status": 0,
+    "cuda_last_error": 0,
+    "elapsed_s": 1.051905696
+  },
+  "trace": {
+    "attempted": true,
+    "nsys": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/nvhpc/Linux_aarch64/26.9/profilers/13.3/Nsight_Systems/bin/nsys",
+    "gpu_kernel_execution_proof": "No GPU kernel-activity records collected; capture corroborates CUDA launch API activity only",
+    "test": "separate device-only stdpar marker",
+    "observed_cudaLaunchKernel_api_calls": 1,
+    "report": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/smoke/stdpar_device_marker_cuda_trace.nsys-rep"
+  },
+  "no_production_backend_change": true
+}

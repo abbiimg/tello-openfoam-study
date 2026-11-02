@@ -1,0 +1,27 @@
+{
+  "kind": "Supplementary read-only identity/retirement verification; frozen validators unchanged",
+  "completed_utc": "2026-11-02T11:42:57.819736+00:00",
+  "globalTid": 287645200915614,
+  "decoded_pid": 367774,
+  "decoded_tid": 367774,
+  "actual_child_identity": {
+    "pid": 367774,
+    "uid": 999,
+    "cwd": "/opt/openfoam-workspace/cases/spuma_gpu_pilots_20261102/cavity_gpu_fixedpool_strict_v2",
+    "binary": "/opt/openfoam-workspace/gpu-feasibility/spuma/source/platforms/linuxARM64NvidiaDPInt32Opt/bin/icoFoam",
+    "birth_tick": 15932090,
+    "started_utc": "2026-11-02T11:36:08.522426+00:00"
+  },
+  "PROCESSES_table_row": {
+    "globalPid": 287645200547840,
+    "pid": 367774,
+    "name": "icoFoam"
+  },
+  "identity_matches": true,
+  "documented_formula": "PID=(globalTid // 0x1000000) % 0x1000000; TID=globalTid % 0x1000000",
+  "primary_source": "https://docs.nvidia.com/nsight-systems/AnalysisGuide/",
+  "both_owned_case_process_lists_empty": true,
+  "remaining_owned_jobs": [],
+  "frozen_gate_or_criteria_changed": false,
+  "no_CFDrun_or_performance_inference": true
+}

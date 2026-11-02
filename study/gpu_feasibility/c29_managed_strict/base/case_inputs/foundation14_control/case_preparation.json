@@ -1,0 +1,41 @@
+{
+  "case": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/foundation14_control",
+  "role": "foundation14_control",
+  "application": "foamRun",
+  "backend": "cpu",
+  "strict_protocol": "c29-native-five-fixed-steps-strict-pressure-v1",
+  "strict_protocol_sha256": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+  "thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "base_candidate_manifest_sha256": "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7",
+  "combined_candidate_binary_and_source_identity": "NOT PROVIDED; root review/build/identity still required",
+  "time_controls": {
+    "start": 0.6,
+    "end": 0.6005,
+    "dt": 0.0001,
+    "steps": 5,
+    "write_precision": 17
+  },
+  "only_changed_linear_setting": "First p relTol .05 -> 0; tolerance1e-7, U/UFinal/pFinal unchanged",
+  "foundation_PIMPLE_retained": true,
+  "native_PISO_adapter": false,
+  "adapted_existing_files": [
+    "system/controlDict",
+    "Allrun",
+    "system/fvSolution"
+  ],
+  "added_passive_control": "constant/c29InitialPhiControls",
+  "initial_phi": "Absent; exact initialized U/p/phi gate must be repeated",
+  "source_controller": "Fresh warm reinitialization; no advanced state transferred",
+  "all_custom_experimental_permissions": false,
+  "unique_future_receipt": "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/receipts/c29_strict_foundation14_control_56055b0966ae47c8b8ad4dbd1a34bb46.foam",
+  "launch_receipt_issued": false,
+  "F14_cached_library_only": true,
+  "cached_rebuild_allowed": false,
+  "foundation_reference_environment": {
+    "WM_PROJECT_VERSION": "14",
+    "WM_OPTIONS": "linuxArm64GccDPInt32Opt"
+  },
+  "no_initializer_solver_or_build": true,
+  "runtime_validated": false,
+  "performance_claim": false
+}

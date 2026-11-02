@@ -1,0 +1,14 @@
+{
+  "stage": "native_std_execution_build",
+  "updated_utc": "2026-11-02T09:33:24.012040+00:00",
+  "pid": 285659,
+  "nice": 15,
+  "max_build_jobs": 4,
+  "command": [
+    "wmake",
+    "-j4",
+    "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/source/OpenFOAM-v2606/applications/test/std_execution"
+  ],
+  "log": "/opt/openfoam-workspace/gpu-feasibility/native-stdpar/logs/native_std_execution_build.log",
+  "available_kb": 55658092
+}

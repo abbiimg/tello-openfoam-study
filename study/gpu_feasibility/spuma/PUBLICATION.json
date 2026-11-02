@@ -1,0 +1,26 @@
+{
+  "kind": "Root-approved local SPUMA source/recipe/functional-evidence publication",
+  "published_utc": "2026-11-02T12:27:54.057596+00:00",
+  "reviewed_candidate_manifest_sha256": "4e05d46beb20b8ac83019610b99cd315f7cd676eeccdb2994225453630041e94",
+  "reviewed_candidate_files_including_manifest": 184,
+  "reviewed_candidate_bytes_including_manifest": 4953742,
+  "independent_review_sha256": "3d421c20a54e7c468e7be5c4c2f9414c6e825b84572152419d9dc7aa6779dc79",
+  "source_commit": "1ff2d45c002b7afb599b9dd8c4c6874666242349",
+  "original_candidate_payload_changes": [],
+  "unchanged_code_inputs_gates_logs_fields_and_historical_payload_files": 184,
+  "copy_strategy": "Content-only copies; immutable payload bytes verified, filesystem metadata not asserted",
+  "resumed_verified_candidate_subset_after_Windows_copystat_error": true,
+  "additions": [
+    "README.md",
+    "PUBLICATION.json",
+    "manifest.json",
+    "review_history/"
+  ],
+  "root_summary_status": "Strict five-step cavity functional pass; original longer failure preserved",
+  "limits": [
+    "No actuator/rotor result, speedup, long-time validation, CPU equivalence or new-host rebuild",
+    "No unique-kernel timeline/full device-residence assertion",
+    "SDK/full source/build trees/binaries/full raw reports/environment data excluded"
+  ],
+  "publisher_sha256": "955608b006b78397048d4ded208aee20d86ba41fb8760d1d90a0492717c25794"
+}

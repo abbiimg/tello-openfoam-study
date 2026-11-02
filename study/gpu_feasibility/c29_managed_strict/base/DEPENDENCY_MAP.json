@@ -1,0 +1,48 @@
+{
+  "schema": "c29-managed-strict-repro-dependency-map-v1",
+  "publication_status": "UNPUBLISHED_REVIEW_CANDIDATE",
+  "external_peer_dependencies": {
+    "native_installation": {
+      "intended_peer_path": "../native_installation",
+      "published_manifest_sha256": "c2a8a8f963c96d55dd303c9f8f771e089e637de40fdbb7462e90b5a3debdf5e9",
+      "purpose": "same-pin CPU/GPU source/toolchain/SDK pins, safe installation recipes and current Field/cavity evidence",
+      "binaries_SDK_archives_not_duplicated": true
+    },
+    "benchmark_reproduction": {
+      "intended_peer_path": "../benchmark_reproduction",
+      "seed_path": "../benchmark_reproduction/shared_seed.zip",
+      "seed_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+      "seed_bytes": 62823211,
+      "reproduction_manifest_sha256": "e75dea5cbaaae870cf568266d95a61cc3fa28a288c4d39113e00aecc08a880c9",
+      "cpu_manifest_sha256": "5194b4442563947edc79af4f273dc67bc1b486b39e08d740352627d40c607f80",
+      "purpose": "identical initial0.6 U/p and mesh; source/override catalogue",
+      "already_in_CPU84_setup_package": true
+    },
+    "amgx_cache_evidence": {
+      "intended_peer_path": "../amgx/evidence/rotor_pilot_manifest.json",
+      "sha256": "e3935d505571c807de60551137f043f89f2f826861ff5d288a4ca2dddf17e67e",
+      "purpose": "historical cached-library evidence required by original guarded restorer; not an AmgX dependency of native CFD"
+    }
+  },
+  "scientific_pins": {
+    "combined_manifest": "7e4492d4d644e3b03211315f0a0c692db5b6652edb063cf2779a6ff1db9cbaf5",
+    "source_tree": "ad01489971b0b65d86eaf5f88fb51347ed9337bd1afeb570a6fc8c003c49f99b",
+    "ownership_manifest": "689b261f3a91f280719ba575d48b4b56187cc442cf032728dd8f80ba63088203",
+    "ownership_review": "896ad33cae716c4f24d7c9021795685181808536f84b3fba6b735ea8f1ca7e72",
+    "strict_protocol": "946e8c2a0e566cbfb5e494af2da1cf94ba3f3102567c8db36135fd1a758de8fd",
+    "strict_root_authorization": "8ea985fb7143d34fecfa2e6b7277b971466fbe9426a5013db98f4ebdfd259b56",
+    "original_acceptance_limits": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+    "whole_original_fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+  },
+  "saved_fields": "SAVED_FIELD_CATALOGUE.json",
+  "initial_phi": "shared_initial/phi",
+  "input_catalogue": "CASE_INPUT_CATALOGUE.json",
+  "offline_tools": [
+    "recipes/restore_completed_evidence.py",
+    "recipes/replay_completed_cpu_analysis.py"
+  ],
+  "historical_one_shot_scripts_portable_without_adaptation": false,
+  "fresh_host_rebuild_tested": false,
+  "GPU_transient_qualified": false,
+  "unpublished_followon_2_4_sources_included": false
+}

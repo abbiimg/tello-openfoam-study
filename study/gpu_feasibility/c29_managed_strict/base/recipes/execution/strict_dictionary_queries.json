@@ -1,0 +1,41 @@
+{
+  "kind": "Read-only authoritative expanded strict fvSolution solver queries",
+  "roles": {
+    "foundation14_control": {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "native_cpu": {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    "native_gpu": {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "solvers\n{\n    p\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    pFinal\n    {\n        directSolveCoarsest yes;\n        solver          GAMG;\n        smoother        GaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n    U\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0.05;\n    }\n    UFinal\n    {\n        solver          smoothSolver;\n        smoother        symGaussSeidel;\n        tolerance       1e-07;\n        relTol          0;\n    }\n}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  }
+}

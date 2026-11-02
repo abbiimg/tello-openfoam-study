@@ -1,0 +1,23 @@
+{
+  "schema": "c29-managed2.3-v2-candidate-freeze-v1",
+  "candidate": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_managed_strict_publication_candidate_v2",
+  "manifest_sha256": "6b2994a2aae47fdad8dcb57b36add85b48e21d16f8f4be62ea34a408d3cdf884",
+  "indexed_files": 517,
+  "total_files": 518,
+  "total_bytes": 1540334067,
+  "unchanged_v1_indexed_paths": 503,
+  "changed_v1_indexed_paths": [
+    "README.md",
+    "REPRODUCTION.md",
+    "recipes/replay_completed_cpu_analysis.py",
+    "recipes/restore_completed_evidence.py"
+  ],
+  "original495_source_payload_bytes_preserved": true,
+  "original_candidate_manifest_sha256": "4ec8be722d8ac4baee36dd5582c1b1fc7140c7831e92b56677e844c6c1773d0a",
+  "original_candidate_full_manifest_still_exact": true,
+  "Python_AST_files": 73,
+  "path_fixtures_passed": 48,
+  "source_doc_diff": "C:\\Users\\abbii\\Documents\\Codex\\2026-10-30\\referenced-chatgpt-conversation-this-is-an\\work\\c29_managed_v2_source_doc.patch",
+  "source_doc_diff_sha256": "e2647df36b3a043f772e66db644a019c081d45b724efd64e255cd62cc54377bf",
+  "actual_restore_replay_CFD_build_GPU_publication": false
+}

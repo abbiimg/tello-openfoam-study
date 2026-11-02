@@ -1,0 +1,24 @@
+{
+  "kind": "Parser-only v3 after original F14 and nativeCPU runs",
+  "old_sha256": "1310a87b6997b6babf3cf4859fc80a8d27564c8a195b7449cf6fad7ef4cc1e53",
+  "new_sha256": "74df3cf053b8596ae57d5a04792867130392ca5ef31b59de526b0d1810d4ee16",
+  "patch_sha256": "d9f33f42c8b82087e68e0d4e185bd150c484011daa3efaa92f35db3ae746b8ce",
+  "changes": [
+    "Exempt exact native trapFpe enabled startup banner; retain other fatal FPE matching",
+    "Label each log and log check with f14/cpu/gpu role",
+    "Report schema v3"
+  ],
+  "metric_and_acceptance_functions_AST_identical": [
+    "field_metrics",
+    "compare_fields",
+    "compare_samples",
+    "source_close",
+    "near_time",
+    "check_log"
+  ],
+  "thresholds_sha256": "d6001e84a626ea18d806859c18600f69ab703c03660817545e97d7a367e0be9b",
+  "v2_failed_report_preserved_sha256": "5d50d0314f9dd6ce332d40aa436fc42532f08a70d791b2719a04498746543be1",
+  "numeric_criteria_changed": false,
+  "new_CFD_experiments": false,
+  "timing": "Parser-only correction after both original five-step runs; does not claim prospective analyzer authorship."
+}

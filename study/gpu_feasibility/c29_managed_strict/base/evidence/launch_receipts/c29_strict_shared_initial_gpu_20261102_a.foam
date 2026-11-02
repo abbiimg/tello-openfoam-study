@@ -1,0 +1,12 @@
+schema c29-unvalidated-input-admission-v2;
+experimentId "c29_strict_shared_initial_gpu_20261102_a";
+phase initial_fields_only;
+backend gpu;
+casePath "/opt/openfoam-workspace/cases/native_c29_strict_pressure_20261102/native_gpu";
+inputsAudited true;
+runtimeValidated false;
+inputSnapshotSha256 "debe9a0c207d0f855b2cffbe8e48a7665bd69ab5826f52e3d85bc5e929da42cf";
+launchReceiptJsonSha256 "2fdd12b0b6b28705795d35c0fee63f4054c5fdb79847bf996d602f7ac8971538";
+candidateManifestSha256 "562ff512bf2d5da044226bbc88a6fa8a1f4373395e12d93dbb364f3b4ff3cfe7";
+binarySha256 "7056d5f5bcffb88119881752361f09d40459126af065fd37cdc45288c00d9185";
+libraryIdentitySha256 "c3e61de12b03e5406d5c1155d932b2de5b27c7198dd99e29c1228ccd18deadff";

@@ -1,0 +1,28 @@
+{
+  "schema": "c29-gpu-profile-helper-freeze-v3",
+  "status": "SOURCE_ONLY_PENDING_ROOT_AND_INDEPENDENT_REVIEW_NO_RUN",
+  "protocol_sha256": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+  "base_V2_manifest_sha256": "a488de2a74b25f50d8fcb4644344ee7de1dc91830af444280115750d328e1c13",
+  "changed_from_V2": [
+    "README.md",
+    "run_gpu_profile.py"
+  ],
+  "files": {
+    "README.md": "9aa9005a6f55ddb65f9f2621da15d3ad0f4320616ce53df077c5f4ce710a07d3",
+    "helper_manifest_initial_source_only.json": "fa8bc924e0e5de55457167c873f84d297a297c9679ced2e70316d313de455b93",
+    "installed_help_verification.json": "d8dbfaa2ef8c2dc3e6bf4ca5d7c2d6187dbda82fb7f23e74d6b5705dd8109bd9",
+    "owned_cleanup.py": "c50601d01b0513cfe94892578e2a00b4d2f3fba58b7c312cbeeb81b778b67203",
+    "profile_common.py": "c4b7ea1bff5f011f9573634042cadd768978cc66b8f75f12952db3fbe2cdfa62",
+    "protocol.json": "ef302349a02d6fc507773e9a7ec70d8c7176db51fbf3046f424e7e8381148cf0",
+    "run_actual_gpu_child.py": "f369ea00340d6d1a2502817b81716a0838f35533f0808ba65f8728c57e997142",
+    "run_gpu_profile.py": "e0c6f49ef34c1b22fca6327a91fc1c9cb518a9dfe3a43267bc5d75bb1d27f674",
+    "validate_gpu_profile.py": "fc764a1d645fe19f722533689325fee423e018c1e614d8851793e10c670dba0f"
+  },
+  "diff": {
+    "path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/gpu_actuator_port/execution/strict_runs/gpu_profile_v3_outer_cleanup.patch",
+    "sha256": "a1020857615228dc039d5be91e8b10e398243d45ee56290a67bd68ab011d85ee"
+  },
+  "GPU_or_CFD_run": false,
+  "app_build": false,
+  "case_control_or_permission_changes": false
+}
