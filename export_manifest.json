@@ -94,7 +94,7 @@
   "live_case_zip_read": false,
   "byte_preservation": "All copied bytes SHA-256 verified; .gitattributes * -text prevents EOL conversion.",
   "copied_file_count": 3106,
-  "copied_bytes": 118876341,
+  "copied_bytes": 118877885,
   "source_groups": {
     "case_input": 1286,
     "repository_documentation": 9,
@@ -13240,9 +13240,9 @@
     },
     {
       "repository_path": "EXTERNAL_INPUTS.md",
-      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/github_export_EXTERNAL_INPUTS.md",
-      "size_bytes": 3069,
-      "sha256": "1e6187df9b4833a6828042f58e47743ba1d80b3fa9b0537e835003cbda446886",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/github_export_hf_EXTERNAL_INPUTS.candidate.md",
+      "size_bytes": 3737,
+      "sha256": "c17f8c9905160f9a91c33aba5069e51fb4f3f9ffa106eea517a1cc5fb4f9b30b",
       "source_mode": 420,
       "kind": "repository_documentation",
       "frozen_recorded_sha256": null,
@@ -13250,9 +13250,9 @@
     },
     {
       "repository_path": "README.md",
-      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/github_export_final_README.md",
-      "size_bytes": 8418,
-      "sha256": "09ca9c77b82fd79171aa3406c8fd51ce7eb45e920608d35a2b07c329f76ee854",
+      "source_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/github_export_hf_README.candidate.md",
+      "size_bytes": 9294,
+      "sha256": "d277c2a3a23c70679b0860dd9c462338643a03949262b917761f9d3acc8284fa",
       "source_mode": 420,
       "kind": "repository_documentation",
       "frozen_recorded_sha256": null,
@@ -33996,7 +33996,7 @@
   "ordinary_blob_cap_bytes": 104857600,
   "whole_task_marked_complete": false,
   "large_evolved_fields_copied": false,
-  "final_sync_utc": "2026-11-02T16:42:00.7435990Z",
+  "final_sync_utc": "2026-11-02T16:42:00.743599Z",
   "GPU_validation_saved_fields_copied": false,
   "retained_frozen_dependencies": 416,
   "reviewed_GPU_bundle_pins": [
@@ -34352,5 +34352,13 @@
   "GPU_validation_saved_field_count": 0,
   "curated_small_fixture_evidence_included": true,
   "external_frozen_dependencies": 56,
-  "CPU_lift_matrix_evolved_fields_copied": false
+  "CPU_lift_matrix_evolved_fields_copied": false,
+  "verified_external_artifact_links": {
+    "dataset": "abmorsego/tello-openfoam-study-data",
+    "hf_commit": "569c8e3ba7121eef5105cb5695a0271029d44c1b",
+    "verification_receipt_sha256": "4fe26ce26bb83a0b2263da508fa419a15d84111be780ac625bba43bf81db0c40",
+    "github_scientific_snapshot": "99a2858a67042320dccf4b08214194249a5ec209",
+    "original_scientific_freeze_unchanged": true,
+    "external_manifest_and_restore_helper_unchanged": true
+  }
 }

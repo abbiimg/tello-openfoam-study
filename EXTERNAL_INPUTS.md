@@ -13,7 +13,7 @@ Every original path, ZIP member, size and SHA256 is in [external_inputs_manifest
 18a7676858d22f2ab78e78cd2f8e35c9943938aa948d905fad4afc7a6a001100
 ```
 
-No download URL is assumed here. Supply the separately delivered local archive. Inspect a restore plan first, then opt into restoration using the commands printed by the guarded helper's `--help`; its required inputs are `--project-root` and `--archive`, and writing requires `--restore`.
+Download the [verified setup_results.zip](https://huggingface.co/datasets/abmorsego/tello-openfoam-study-data/resolve/569c8e3ba7121eef5105cb5695a0271029d44c1b/setup_results.zip) and [checksum file](https://huggingface.co/datasets/abmorsego/tello-openfoam-study-data/resolve/569c8e3ba7121eef5105cb5695a0271029d44c1b/SHA256SUMS) from the [pinned evidence dataset](https://huggingface.co/datasets/abmorsego/tello-openfoam-study-data/tree/569c8e3ba7121eef5105cb5695a0271029d44c1b). Full archived case fields are available separately as [cases.zip](https://huggingface.co/datasets/abmorsego/tello-openfoam-study-data/resolve/569c8e3ba7121eef5105cb5695a0271029d44c1b/cases.zip). After downloading, supply the local archive to the guarded restore helper. Inspect a restore plan first, then opt into restoration using the commands printed by the guarded helper's `--help`; its required inputs are `--project-root` and `--archive`, and writing requires `--restore`.
 
 ```bash
 python3 tools/restore_external_inputs.py --project-root "$PWD" --archive /path/to/setup_results.zip
