@@ -1,0 +1,106 @@
+{
+  "study": "Tello-sized synchronized tilted actuator spacing refinement",
+  "official_sources": [
+    {
+      "url": "https://www.ryzerobotics.com/tello/specs",
+      "claims": {
+        "approximate_mass_with_battery_and_propellers_g": 80,
+        "propeller_diameter_inches": 3,
+        "battery_capacity_mAh": 1100,
+        "nominal_battery_voltage_V": 3.8,
+        "maximum_flight_time_min": 13
+      }
+    },
+    {
+      "url": "https://dl-cdn.ryzerobotics.com/downloads/Tello/20180404/Tello_User_Manual_V1.2_EN.pdf",
+      "page": 21,
+      "claims": {
+        "mass_including_propeller_guards_g": 87,
+        "battery_energy_Wh": 4.18,
+        "battery_capacity_mAh": 1100,
+        "nominal_battery_voltage_V": 3.8,
+        "maximum_flight_time_min": 13,
+        "endurance_test_forward_speed_kmh": 15,
+        "endurance_test_wind": "windless"
+      }
+    }
+  ],
+  "estimated_power": {
+    "formula": "rated battery energy Wh / (maximum endurance minutes / 60)",
+    "rated_energy_Wh": 4.18,
+    "endurance_minutes": 13,
+    "estimated_reference_battery_power_W": 19.29230769230769,
+    "lower_power_sensitivity_usable_energy_fraction": 0.8,
+    "lower_power_sensitivity_W": 15.433846153846154,
+    "status": "Inference from rated energy and forward-flight endurance; not a measured hover, peak, motor or shaft power. Usable energy during the published test is unspecified."
+  },
+  "loss_model": {
+    "auxiliary_W": 0.5,
+    "esc_efficiency": 0.95,
+    "idle_W_per_motor": 0.1,
+    "motor_conversion": 0.6,
+    "axial_fraction": 0.5
+  },
+  "loss_model_formula": "shaft_W = motor_conversion * (esc_efficiency * (battery_W - auxiliary_W) - rotors * idle_W_per_motor); axial_W = axial_fraction * shaft_W",
+  "loss_model_status": "Explicit assumptions retained from the earlier study; no efficiencies were fitted to Tello mass, endurance or thrust.",
+  "aircraft_mass_assumption": {
+    "mass_kg": 0.08,
+    "status": "Hypothetical identical 80 g total mass for both layouts: no added motor, propeller, frame or synchronizer mass. Guarded 87 g reference is reported separately."
+  },
+  "geometry_status": "Default diameter is exactly 0.0762 m, the published 3-inch size. Geometry is a finite actuator cylinder, not stock Tello blade, frame, guard or fuselage CAD; no stock Tello motor calibration.",
+  "geometry_model": "Four square corners; eight adds the four side midpoints. d is original-to-added neighboring center spacing; square side is 2*d. All centers lie at z=0.",
+  "tilt_convention": "Positive points craft thrust up/out and forces air down/in; negative raises outer blade edges and spreads downwash outward.",
+  "synchronization_assumption": "Blade contact is assumed avoided by synchronization; no explicit blades or phase-resolved blade passage are modeled.",
+  "fluid": {
+    "density_kg_m3": 1.225,
+    "kinematic_viscosity_m2_s": 1.5e-05,
+    "flow_model": "laminar incompressible transient"
+  },
+  "default_geometry": {
+    "diameter_m": 0.0762,
+    "radius_m": 0.0381,
+    "thickness_m": 0.012
+  },
+  "default_time_window": {
+    "end_s": 0.8,
+    "averaging_start_s": 0.4,
+    "averaging_stop_s": 0.8,
+    "averaging_duration_s": 0.4
+  },
+  "default_mesh_levels": {
+    "coarse": {
+      "inner_xy": 42,
+      "outer_xy_each_side": 9,
+      "below": 28,
+      "z_core": 21,
+      "above": 20,
+      "cells": 248400
+    },
+    "medium": {
+      "inner_xy": 56,
+      "outer_xy_each_side": 9,
+      "below": 34,
+      "z_core": 28,
+      "above": 26,
+      "cells": 481888
+    },
+    "fine": {
+      "inner_xy": 70,
+      "outer_xy_each_side": 11,
+      "below": 42,
+      "z_core": 35,
+      "above": 32,
+      "cells": 922576
+    }
+  },
+  "quadrature_subcells": 16,
+  "quadrature_subcells_xy": 16,
+  "quadrature_subcells_per_cell": 256,
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "averaging": "Arithmetic time integration and convergence checks must use the per-case averaging_start_s and averaging_stop_s; no results are generated here.",
+  "limitations": [
+    "Actuator-only reaction thrust; forces on frames, guards and fuselage are not modeled.",
+    "Electrical conversion and unresolved blade-loss factors are assumed, not measured.",
+    "The actuator model resolves shared flow interaction, not synchronized blade timing."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PROPOSED_FOR_ISOLATED_BENCHMARK_ONLY; not CFD validated or adopted",
+  "physics_change": false,
+  "pressure_algorithm_changes": "Foundation14 GAMG to strict-double Ginkgo CG with symmetric V-cycle AMG; pressure residual tolerances retained. Full CFD comparison is required.",
+  "p": {
+    "solver": "GKOCG",
+    "executor": "cuda",
+    "ranksPerGPU": 2,
+    "forceHostBuffer": true,
+    "splitMPIComm": true,
+    "MPIxRankOffload": false,
+    "matrixFormat": "Csr",
+    "scaling": -1.0,
+    "updateSysMatrix": true,
+    "updateRHS": true,
+    "updateInitGuess": true,
+    "adaptMinIter": false,
+    "minIter": 0,
+    "evalFrequency": 1,
+    "tolerance": 1e-7,
+    "relTol": 0.05,
+    "maxIter": 1000,
+    "verbose": 1,
+    "export": false,
+    "preconditioner": {
+      "preconditioner": "Multigrid",
+      "type": "Schwarz",
+      "caching": 0,
+      "reuseHierarchy": true,
+      "maxHierarchyReuses": 0,
+      "skipSorting": false,
+      "minCoarseRows": 64,
+      "maxLevels": 20,
+      "smoother": "Jacobi",
+      "relaxationFactor": 0.9,
+      "maxIterSmoother": 1,
+      "cycle": "v",
+      "coarseSolverConfig": {
+        "solver": "Jacobi",
+        "relTol": 0.0,
+        "maxIter": 20,
+        "relaxationFactor": 0.9
+      }
+    }
+  },
+  "pFinal": "Inherit p, override relTol=0, exactly as current CPU case",
+  "rationale": [
+    "A single GPU owner and two real MPI ranks satisfy OGL's current parallel lifecycle without pretending serial execution is parallel.",
+    "Explicit host staging is required because installed MPI is not CUDA aware.",
+    "Matrix coefficients, right-hand side and initial guess must update on every pressure solve.",
+    "Negative scaling multiplies both matrix and right-hand side, preserving the pressure equation while giving the Laplacian positive diagonal.",
+    "Reused aggregation should update coarse matrix values on each new matrix; no stale full preconditioner is deliberately cached.",
+    "Fixed Jacobi smoothing and coarse iteration counts avoid an adaptive nonlinear inner CG preconditioner. This is a candidate, not a performance optimum."
+  ],
+  "required_validation": [
+    "Actual CUDA library link and real CUDA-buffer MPI gather/scatter must pass first.",
+    "Execution agent alone launches a bounded new CFD benchmark; never edit a production case.",
+    "Compare against the best existing CPU method rerun from identical actual mesh and frozen initial0.6 U,p under the same host load.",
+    "Keep all physical inputs, actuator model, losses, time stepping, U solver, mesh and output windows unchanged.",
+    "Check pressure convergence, continuity, fields, controller/lift and power agreement; record GPU ownership/host staging and process timing.",
+    "Check the anchored pressure operator is SPD after scaling and the actual V-cycle uses transpose restriction/prolongation, matching pre/post smoothing, and positive coarse Jacobi polynomial; CG requires a fixed SPD preconditioner.",
+    "Audit globally reduced interface matvecs and OpenFOAM-equivalent residual normalization. Matching tolerance numbers alone is insufficient.",
+    "Record a distinct numerical-method signature for CUDA/AMG/communicator settings rather than presenting this as identical CPU numerics.",
+    "Include decomposition, first matrix setup and transfer overhead in end-to-end elapsed time; also report steady solver timing separately if available.",
+    "No production adoption or claimed speedup until the full CFD correctness and timing comparison passes."
+  ],
+  "source_links": {
+    "matrix_and_rhs_updates": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/lduLduBase.hpp",
+    "matrix_persistence": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/DevicePersistent/DistributedMatrixAdapter.hpp",
+    "communicators": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/DevicePersistent/ExecutorHandler.hpp",
+    "multigrid": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/Preconditioner/Multigrid.hpp",
+    "coarse_solver": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/src/Preconditioner/CoarseSolver.cpp",
+    "stopping_criterion": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/src/StoppingCriterion.cpp"
+  }
+}

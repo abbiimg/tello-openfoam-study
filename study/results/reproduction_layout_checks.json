@@ -1,0 +1,204 @@
+{
+  "checked_utc": "2026-11-01T19:56:23.443440+00:00",
+  "passed": true,
+  "no_flow_solver_launched": true,
+  "no_actual_case_writes": true,
+  "actual_input_hashes_unchanged": true,
+  "delivered_generator_source_hashes_unchanged": true,
+  "test_scope": "Fresh three-pilot regeneration, delivered-mode input copying with cold preparation, mesh/checkMesh only, validate-only nonmutation and safe legacy-parameter rejection",
+  "actual_case_root": "/opt/openfoam-workspace/cases/tello_refinement",
+  "scratch_root": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/layout_reproduction_20261101T195511Z_c85846",
+  "commands_logged_under": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/layout_reproduction_20261101T195511Z_c85846/checks",
+  "regenerated": [
+    {
+      "case": "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+      "rotors": 8,
+      "layout": "circular_ring",
+      "purpose": "layout_comparison",
+      "experiment_stage": "layout_pilot",
+      "nearest_spacing_cm": 6.6274169979695134,
+      "stored_distance_cm": 6.6274169979695134,
+      "distance_parameter_definition": "nearest horizontal rotor-center distance",
+      "actual_projected_box_m": [
+        0.23620000000000002,
+        0.2362
+      ],
+      "centers_normals_radials_identical": true,
+      "physical_dictionaries_byte_identical": true,
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "geometry_json_byte_identical": false,
+      "physical_and_operating_geometry_metadata_identical": true,
+      "provenance_only_geometry_differences": {
+        "generated_base_square_parameter_cm": {
+          "actual": null,
+          "regenerated": 6.6274169979695134,
+          "present_in_actual": false
+        }
+      },
+      "cold_archive_gate_passed": true,
+      "cold_preparation_sha256": "2b291f964bfb0173d3cf1b3ec0601539f8f8390301a1999200c478f101128882"
+    },
+    {
+      "case": "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+      "rotors": 8,
+      "layout": "square_perimeter",
+      "purpose": "layout_comparison",
+      "experiment_stage": "layout_pilot",
+      "nearest_spacing_cm": 8.0,
+      "stored_distance_cm": 8.0,
+      "distance_parameter_definition": "nearest horizontal rotor-center distance",
+      "actual_projected_box_m": [
+        0.23620000000000002,
+        0.23620000000000002
+      ],
+      "centers_normals_radials_identical": true,
+      "physical_dictionaries_byte_identical": true,
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "geometry_json_byte_identical": false,
+      "physical_and_operating_geometry_metadata_identical": true,
+      "provenance_only_geometry_differences": {
+        "generated_base_square_parameter_cm": {
+          "actual": null,
+          "regenerated": 8.0,
+          "present_in_actual": false
+        }
+      },
+      "cold_archive_gate_passed": true,
+      "cold_preparation_sha256": "bb0333898ffba47087fd2f6d7a790dd0e2c2aecc7e0e49093116958d12efb022"
+    },
+    {
+      "case": "coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+      "rotors": 4,
+      "layout": "square_perimeter",
+      "purpose": "layout_comparison",
+      "experiment_stage": "rotor_count_pilot",
+      "nearest_spacing_cm": 16.0,
+      "stored_distance_cm": 16.0,
+      "distance_parameter_definition": "nearest horizontal rotor-center distance",
+      "actual_projected_box_m": [
+        0.23620000000000002,
+        0.23620000000000002
+      ],
+      "centers_normals_radials_identical": true,
+      "physical_dictionaries_byte_identical": true,
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "geometry_json_byte_identical": true,
+      "physical_and_operating_geometry_metadata_identical": true,
+      "provenance_only_geometry_differences": {},
+      "cold_archive_gate_passed": true,
+      "cold_preparation_sha256": "d29dd206b0ef360e1faa08cdb5fe8ff78e68cda4470d6e96ef8acc2e91ca03eb"
+    }
+  ],
+  "delivered_copies": [
+    {
+      "case": "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+      "cold_preparation_copied_byte_identical": true,
+      "all_recorded_inputs_byte_identical": true,
+      "actual_geometry_json_byte_identical": true,
+      "mesh_rebuilt_from_recorded_dictionary": false,
+      "mesh_origin": "copied_supplied_mesh",
+      "checkMesh_passed": true,
+      "cold_archive_gate_passed": true,
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "no_solver_logs_or_evolved_fields": true
+    },
+    {
+      "case": "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+      "cold_preparation_copied_byte_identical": true,
+      "all_recorded_inputs_byte_identical": true,
+      "actual_geometry_json_byte_identical": true,
+      "mesh_rebuilt_from_recorded_dictionary": false,
+      "mesh_origin": "copied_supplied_mesh",
+      "checkMesh_passed": true,
+      "cold_archive_gate_passed": true,
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "no_solver_logs_or_evolved_fields": true
+    },
+    {
+      "case": "coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+      "cold_preparation_copied_byte_identical": true,
+      "all_recorded_inputs_byte_identical": true,
+      "actual_geometry_json_byte_identical": true,
+      "mesh_rebuilt_from_recorded_dictionary": true,
+      "mesh_origin": "rebuilt_from_omitted_mesh",
+      "checkMesh_passed": true,
+      "cold_archive_gate_passed": true,
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "no_solver_logs_or_evolved_fields": true
+    }
+  ],
+  "parameter_mode_rejections": [
+    {
+      "case": "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+      "rejected_before_generation": true,
+      "correct_delivered_command_provided": true,
+      "correct_pilot_generator_command_provided": true,
+      "generator_stage": "layout",
+      "legacy_square_d_misinterpretation_prevented": true
+    },
+    {
+      "case": "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+      "rejected_before_generation": true,
+      "correct_delivered_command_provided": true,
+      "correct_pilot_generator_command_provided": true,
+      "generator_stage": "layout",
+      "legacy_square_d_misinterpretation_prevented": true
+    },
+    {
+      "case": "coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+      "rejected_before_generation": true,
+      "correct_delivered_command_provided": true,
+      "correct_pilot_generator_command_provided": true,
+      "generator_stage": "rotor_count",
+      "legacy_square_d_misinterpretation_prevented": true
+    }
+  ],
+  "actual_input_sha256": {
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/geometry.json": "294062c03c452598c13098baf4c14501e250e19f5b66d92af9fa6958a51f09f9",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/cold_preparation.json": "2b291f964bfb0173d3cf1b3ec0601539f8f8390301a1999200c478f101128882",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/constant/rotorParameters": "7444c53b5668c517773c633c00cfe58d7bf5ffab2c4b272575fd14b27aa9f55b",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000/system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/geometry.json": "d4a53a2a01e141710248bc8f9017505af7956d9102d3a87ded9f83538ba280e2",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/cold_preparation.json": "bb0333898ffba47087fd2f6d7a790dd0e2c2aecc7e0e49093116958d12efb022",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/constant/rotorParameters": "4bbd058841707b98e6d30458f8ff0d14c99dc3ff08bd9ef6a623f36624871878",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000/system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/geometry.json": "be7ce68004cb4e07eb8faf6d3df56928586f9c371b32f2f850170e3229435e39",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/cold_preparation.json": "d29dd206b0ef360e1faa08cdb5fe8ff78e68cda4470d6e96ef8acc2e91ca03eb",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/constant/rotorParameters": "a345a6a464afa066c6c0f36df080a9d23a67b234d113e6b20b4f174744d41dfc",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000/system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/generate_layout_pilots.py": "9f724d8588410b72192a1b7ab3461bfec5991d445939e917ec70d1e8a012f23d",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/generate_tello.py": "e37029a02e4f726e19495bec13700f356beb2f5ab4a4b5b8df23ee3c1007ee98",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/base_generator.py": "e63f585607c7847996c1975f6ce8dcacf59efc72c18566b1c875b69d11e2508f",
+    "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/study_metadata.json": "b32189f2f6a2c95a80338f864edc25937d4976e4a1f3f8e7025e2b72980cbfd7"
+  }
+}

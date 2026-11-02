@@ -1,0 +1,14 @@
+-- Auto detecting accelerator devices
+-- Skip CUDA detection OGL_BUILD_CUDA=ON
+-- Skip HIP detection OGL_BUILD_HIP=OFF
+-- using OGL_GINKGO_DIR /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
+-- The CUDA compiler identification is NVIDIA 13.0.88 with host compiler GNU 13.3.0
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found CUDAToolkit: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include (found version "13.0.88")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE

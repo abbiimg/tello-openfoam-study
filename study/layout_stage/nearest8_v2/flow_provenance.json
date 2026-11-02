@@ -1,0 +1,560 @@
+{
+  "schema": "tello-nearest8-fine-layout-flow-v1",
+  "published_utc": "2026-11-02T03:46:13.255032+00:00",
+  "snapshot_time_s": 1.2,
+  "snapshot_not_time_average": true,
+  "render_request": {
+    "field": "U",
+    "component": "Magnitude",
+    "mode": "slice",
+    "slice_normal": "z",
+    "slice_origin": [
+      0,
+      0,
+      -0.04
+    ],
+    "view": "+z",
+    "time": "1.2",
+    "range": [
+      0,
+      12
+    ],
+    "colormap": "viridis",
+    "background": "light",
+    "width": 1100,
+    "height": 900,
+    "zoom": 1.8
+  },
+  "crop_pixels_xy": [
+    200,
+    150,
+    900,
+    750
+  ],
+  "required_cases": {
+    "square_flat": "finemapped_n8_e19.2923_d0800_az0000",
+    "square_inward10": "finemapped_n8_e19.2923_d0800_am1000",
+    "circle_flat": "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+    "circle_inward10": "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424"
+  },
+  "master_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/results/statistics.json",
+  "master_sha256": "32b5701beb239f240ed7bc5a4d38fcd43c514703852eb151ea95058e03da9b10",
+  "render_metadata_sha256": "80426eb0a0ba4aadde3e325089869059771b7d902924041c2d468da624d05af6",
+  "source_manifest_sha256": "da7e2b25ff8c7fe46f34ee622ee3fb3f4c94a9cf827cefe2259c2dbe091ff73e",
+  "publisher_sha256": "7635a87fbba8e43dbe9ba08210a795d2d7085e4cafe3f92ca82830e8a47e16a8",
+  "panels": [
+    {
+      "id": "square_flat",
+      "case": "finemapped_n8_e19.2923_d0800_az0000",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_az0000",
+      "native_image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_az0000/images/U_slice_1.2_1793584663.png",
+      "published_png": "flow_sources/square_flat_native.png",
+      "png_sha256": "7341e6901cd7624bcd663a30b7254483cb77d3632df82703e09c4d5cd8766a00",
+      "published_geometry": "flow_sources/square_flat_geometry.json",
+      "geometry_sha256": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0076396,
+            7.7999
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_az0000/images/U_slice_1.2_1793584663.png"
+      },
+      "source_manifest_hashes": {
+        "geometry.json": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "1ead6d98381004922443f4db474405702178263e8761823c8413c013dafbc96e",
+        "1.2/p": "dd1d824b65bc047b8e00d72250ad7e81e9a3d672e32c94cf6afd868bb27188a2"
+      },
+      "source_fresh_hashes": {
+        "geometry.json": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "1ead6d98381004922443f4db474405702178263e8761823c8413c013dafbc96e",
+        "1.2/p": "dd1d824b65bc047b8e00d72250ad7e81e9a3d672e32c94cf6afd868bb27188a2"
+      },
+      "clone_fresh_hashes": {
+        "geometry.json": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "1ead6d98381004922443f4db474405702178263e8761823c8413c013dafbc96e",
+        "1.2/p": "dd1d824b65bc047b8e00d72250ad7e81e9a3d672e32c94cf6afd868bb27188a2"
+      },
+      "mean_lift_N": 1.2952624863035826,
+      "mean_lift_window_s": [
+        0.8,
+        1.2
+      ],
+      "mean_lift_source": "Actual completed master primary-window statistics, not instantaneous field integration",
+      "source_master_row_sha256": "0e04d64075b72e31aa695095a00f51fa9d2195973f9fb94449f1b67f405393fc",
+      "qualified_for_comparison": true,
+      "half_window_drift_percent": 0.030909251774971724,
+      "late_window_stability_screen_passed": true
+    },
+    {
+      "id": "square_inward10",
+      "case": "finemapped_n8_e19.2923_d0800_am1000",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am1000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_am1000",
+      "native_image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_am1000/images/U_slice_1.2_1793584663.png",
+      "published_png": "flow_sources/square_inward10_native.png",
+      "png_sha256": "a84b528b1e0709c4c03289c4d32b4bbf2120668e1aa133eed5e3c9e91f10cee1",
+      "published_geometry": "flow_sources/square_inward10_geometry.json",
+      "geometry_sha256": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0073579,
+            7.9358
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_am1000/images/U_slice_1.2_1793584663.png"
+      },
+      "source_manifest_hashes": {
+        "geometry.json": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "551fe2dbd77721d8016c5c331bb9e7a82b641856bbb5c5156043184bcd29c327",
+        "1.2/p": "00c5a5407ce164f2f683629f09fa1e08f115b2c2dc79666eb35d37e3e9fadf06"
+      },
+      "source_fresh_hashes": {
+        "geometry.json": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "551fe2dbd77721d8016c5c331bb9e7a82b641856bbb5c5156043184bcd29c327",
+        "1.2/p": "00c5a5407ce164f2f683629f09fa1e08f115b2c2dc79666eb35d37e3e9fadf06"
+      },
+      "clone_fresh_hashes": {
+        "geometry.json": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "551fe2dbd77721d8016c5c331bb9e7a82b641856bbb5c5156043184bcd29c327",
+        "1.2/p": "00c5a5407ce164f2f683629f09fa1e08f115b2c2dc79666eb35d37e3e9fadf06"
+      },
+      "mean_lift_N": 1.3106824583409604,
+      "mean_lift_window_s": [
+        0.8,
+        1.2
+      ],
+      "mean_lift_source": "Actual completed master primary-window statistics, not instantaneous field integration",
+      "source_master_row_sha256": "2e77b1ed3f2701586b871e0b81192bac74da660c765cb3029152ac56f7b4f433",
+      "qualified_for_comparison": true,
+      "half_window_drift_percent": -0.05683528913060184,
+      "late_window_stability_screen_passed": true
+    },
+    {
+      "id": "circle_flat",
+      "case": "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "native_image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/images/U_slice_1.2_1793590737.png",
+      "published_png": "flow_sources/circle_flat_native.png",
+      "png_sha256": "721497771425fdfaa7b2e8589d32a037498555f848d104c9130fa35f4f91c2b0",
+      "published_geometry": "flow_sources/circle_flat_geometry.json",
+      "geometry_sha256": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0085127,
+            7.6923
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/images/U_slice_1.2_1793590737.png"
+      },
+      "source_manifest_hashes": {
+        "geometry.json": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "ff98d234403aa87dfaaaba36f091a2b4b58363c30ec5d88d538aae9d3717ae3f",
+        "1.2/p": "a1e0601e6fa8e9a99ce8a6d27462372ae48d585b8f9b150202185a2dfd64ef9c"
+      },
+      "source_fresh_hashes": {
+        "geometry.json": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "ff98d234403aa87dfaaaba36f091a2b4b58363c30ec5d88d538aae9d3717ae3f",
+        "1.2/p": "a1e0601e6fa8e9a99ce8a6d27462372ae48d585b8f9b150202185a2dfd64ef9c"
+      },
+      "clone_fresh_hashes": {
+        "geometry.json": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "ff98d234403aa87dfaaaba36f091a2b4b58363c30ec5d88d538aae9d3717ae3f",
+        "1.2/p": "a1e0601e6fa8e9a99ce8a6d27462372ae48d585b8f9b150202185a2dfd64ef9c"
+      },
+      "mean_lift_N": 1.2919397287845193,
+      "mean_lift_window_s": [
+        0.8,
+        1.2
+      ],
+      "mean_lift_source": "Actual completed master primary-window statistics, not instantaneous field integration",
+      "source_master_row_sha256": "798586bf95611603aa48338e3836b2ba06c7cb337f016787f65c3324a3e70e9e",
+      "qualified_for_comparison": true,
+      "half_window_drift_percent": -0.012076635663951335,
+      "late_window_stability_screen_passed": true
+    },
+    {
+      "id": "circle_inward10",
+      "case": "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "native_image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/images/U_slice_1.2_1793590737.png",
+      "published_png": "flow_sources/circle_inward10_native.png",
+      "png_sha256": "eaa92de3a691d4b977278ce6c6d0d32e7c84ab86d4d8a75c8ce45e1d294d9ccd",
+      "published_geometry": "flow_sources/circle_inward10_geometry.json",
+      "geometry_sha256": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0088479,
+            7.8033
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/images/U_slice_1.2_1793590737.png"
+      },
+      "source_manifest_hashes": {
+        "geometry.json": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "ebef60a88b6c4aad845ac556dce6c1db78ed9395227b79482e7363c4b692c907",
+        "1.2/p": "99f2faa0592824884581a0ff3a14f60021a70bcff9834edf6379bb6ed34050de"
+      },
+      "source_fresh_hashes": {
+        "geometry.json": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "ebef60a88b6c4aad845ac556dce6c1db78ed9395227b79482e7363c4b692c907",
+        "1.2/p": "99f2faa0592824884581a0ff3a14f60021a70bcff9834edf6379bb6ed34050de"
+      },
+      "clone_fresh_hashes": {
+        "geometry.json": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+        "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+        "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+        "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+        "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+        "1.2/U": "ebef60a88b6c4aad845ac556dce6c1db78ed9395227b79482e7363c4b692c907",
+        "1.2/p": "99f2faa0592824884581a0ff3a14f60021a70bcff9834edf6379bb6ed34050de"
+      },
+      "mean_lift_N": 1.3081783684007646,
+      "mean_lift_window_s": [
+        0.8,
+        1.2
+      ],
+      "mean_lift_source": "Actual completed master primary-window statistics, not instantaneous field integration",
+      "source_master_row_sha256": "11a09347e11d4a4d5cfb5b787441486d3973f5971edd4f9ab58570a87044ab95",
+      "qualified_for_comparison": true,
+      "half_window_drift_percent": -0.17635396826426594,
+      "late_window_stability_screen_passed": true
+    }
+  ],
+  "source_and_clone_hashes_verified": true,
+  "interpretation": "Actual instantaneous CFD velocity magnitude; averaged force labels are a separate statistic. Actuator model, no resolved blades or phase. No automated winner or isolated layout-effect claim.",
+  "source_and_clone_hashes_unchanged_after_publication": true,
+  "assembled_image": "flow_comparison.png",
+  "assembled_image_sha256": "b4c74249d6c7f110a223cb4b55b9e650e8b03a34d042bd524f9276279580a2f6"
+}

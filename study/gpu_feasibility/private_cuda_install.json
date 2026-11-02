@@ -1,0 +1,140 @@
+{
+  "kind": "Checksum-verified private CUDA SDK component installation; no drivers/global installation",
+  "prefix": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13",
+  "manifest_sha256": "fce66717a81c510ffeb89ecc3e79849ab34af3b80139f750876d9033e31d71c2",
+  "components": {
+    "cuda_nvcc": {
+      "component": "cuda_nvcc",
+      "version": "13.0.88",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_nvcc/linux-sbsa/cuda_nvcc-linux-sbsa-13.0.88-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/cuda_nvcc-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "01b01e10aa2662ad1b3aeab3317151d7d6d4a650eeade55ded504f6b7fced18e",
+      "compressed_bytes": 22383012,
+      "download_s": 2.659372138004983,
+      "unpacked_regular_bytes": 97095587
+    },
+    "cuda_cudart": {
+      "component": "cuda_cudart",
+      "version": "13.0.96",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_cudart/linux-sbsa/cuda_cudart-linux-sbsa-13.0.96-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/cuda_cudart-linux-sbsa-13.0.96-archive.tar.xz",
+      "sha256": "e2c78564330a09d890f98a066a2082a32c78256ffcc6bccca1696bd2abbaf445",
+      "compressed_bytes": 1489276,
+      "download_s": 0.3776932820037473,
+      "unpacked_regular_bytes": 7257356
+    },
+    "cuda_crt": {
+      "component": "cuda_crt",
+      "version": "13.0.88",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_crt/linux-sbsa/cuda_crt-linux-sbsa-13.0.88-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/cuda_crt-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "c03b92941ba7bf58a4992231ceb572477784ef450ce678f6545bed02392cae50",
+      "compressed_bytes": 79916,
+      "download_s": 0.21868539499701,
+      "unpacked_regular_bytes": 891390
+    },
+    "cuda_cccl": {
+      "component": "cuda_cccl",
+      "version": "13.0.85",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_cccl/linux-sbsa/cuda_cccl-linux-sbsa-13.0.85-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/cuda_cccl-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "eca22ded176804a78afcba3fe1909e7d473366ee1cb9f3784080df23bc8e74d5",
+      "compressed_bytes": 990368,
+      "download_s": 0.3993644129950553,
+      "unpacked_regular_bytes": 13806254
+    },
+    "cuda_culibos": {
+      "component": "cuda_culibos",
+      "version": "13.0.85",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_culibos/linux-sbsa/cuda_culibos-linux-sbsa-13.0.85-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/cuda_culibos-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "ab5ecee37c8adc7efbc2a88ab091de9d978924c4d7f66c3e0c42f23983a1beb3",
+      "compressed_bytes": 21444,
+      "download_s": 0.20718723299796693,
+      "unpacked_regular_bytes": 31370
+    },
+    "libnvvm": {
+      "component": "libnvvm",
+      "version": "13.0.88",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libnvvm/linux-sbsa/libnvvm-linux-sbsa-13.0.88-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/libnvvm-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "f94feb1a0da0c55ceb5c7f039c1f0ffad5d162e0fedfb565efb87771187ddcfd",
+      "compressed_bytes": 38570872,
+      "download_s": 8.25065119699866,
+      "unpacked_regular_bytes": 127068503
+    },
+    "libcusparse": {
+      "component": "libcusparse",
+      "version": "12.6.3.3",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcusparse/linux-sbsa/libcusparse-linux-sbsa-12.6.3.3-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/libcusparse-linux-sbsa-12.6.3.3-archive.tar.xz",
+      "sha256": "50c9fb74e8468af559150f3f072cc2793a5ff70792fa79962146096385cf7346",
+      "compressed_bytes": 308854880,
+      "download_s": 58.80841859300563,
+      "unpacked_regular_bytes": 388743127
+    },
+    "libcurand": {
+      "component": "libcurand",
+      "version": "10.4.0.35",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcurand/linux-sbsa/libcurand-linux-sbsa-10.4.0.35-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/libcurand-linux-sbsa-10.4.0.35-archive.tar.xz",
+      "sha256": "12a0afe1ee73e806924fc6c9bdd33a47a970d31967a634ec9ab2f0662a502ed2",
+      "compressed_bytes": 87176908,
+      "download_s": 13.952128108008765,
+      "unpacked_regular_bytes": 298123534
+    },
+    "libcufft": {
+      "component": "libcufft",
+      "version": "12.0.0.61",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcufft/linux-sbsa/libcufft-linux-sbsa-12.0.0.61-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/libcufft-linux-sbsa-12.0.0.61-archive.tar.xz",
+      "sha256": "5361f3b22a50923204e07f7ff601150dc67aab6b0fff26c47bd3ac0a50c921a0",
+      "compressed_bytes": 354230580,
+      "download_s": 81.9725466939999,
+      "unpacked_regular_bytes": 576885696
+    },
+    "libnvjitlink": {
+      "component": "libnvjitlink",
+      "version": "13.0.88",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libnvjitlink/linux-sbsa/libnvjitlink-linux-sbsa-13.0.88-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/libnvjitlink-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "b7c25896af24ea88309301c8325449cd3d4907b3f1db4060f43a8ca8f4738cdc",
+      "compressed_bytes": 49924684,
+      "download_s": 14.456169630997465,
+      "unpacked_regular_bytes": 217887561
+    },
+    "cuda_nvtx": {
+      "component": "cuda_nvtx",
+      "version": "13.0.85",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_nvtx/linux-sbsa/cuda_nvtx-linux-sbsa-13.0.85-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/cuda_nvtx-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "6f50a3729091aa5a0ae61cda979ea020e09aeb7c07cec0c8962949599d2b72c6",
+      "compressed_bytes": 94612,
+      "download_s": 0.4065168800007086,
+      "unpacked_regular_bytes": 571531
+    },
+    "libcublas": {
+      "component": "libcublas",
+      "version": "13.1.0.3",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libcublas/linux-sbsa/libcublas-linux-sbsa-13.1.0.3-archive.tar.xz",
+      "archive": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/downloads/cuda13/libcublas-linux-sbsa-13.1.0.3-archive.tar.xz",
+      "sha256": "18832d4798b0a4fc75fa90d58c1780203713ca2e35751a2492262e58f2620c50",
+      "compressed_bytes": 1084803912,
+      "download_s": 211.9578029330005,
+      "unpacked_regular_bytes": 1734079221
+    }
+  },
+  "elapsed_s": 299.08372223000333,
+  "max_parallel_download_or_decompress_cpus": 2,
+  "compressed_total_bytes": 1948620464,
+  "unpacked_regular_total_bytes": 3462441130,
+  "nvcc_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:57:39_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0\n",
+  "supported_gpu_codes": "sm_75\nsm_80\nsm_86\nsm_87\nsm_88\nsm_89\nsm_90\nsm_100\nsm_110\nsm_103\nsm_120\nsm_121\n",
+  "sm121_supported": true,
+  "no_driver_changes": true,
+  "no_system_package_changes": true,
+  "no_cfd_launched": true,
+  "private_layout_aliases": {
+    "lib64": "lib"
+  }
+}

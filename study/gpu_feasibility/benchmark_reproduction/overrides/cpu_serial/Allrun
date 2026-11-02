@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")"
+source /opt/openfoam14/etc/bashrc
+set -u -o pipefail
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+export CUDA_CACHE_PATH="$PWD/runtime_cache/cuda"
+export TMPDIR="$PWD/runtime_cache/tmp"
+export XDG_CACHE_HOME="$PWD/runtime_cache"
+python3 ./run_benchmark.py --run

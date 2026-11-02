@@ -1,0 +1,166 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 3f18290..fa4e423 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -125,7 +125,7 @@ if("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
+       "${CMAKE_CXX_FLAGS_RELEASE} \
+     -fno-omit-frame-pointer \
+     -Rpass=loop-vectorize \
+-    -ffast-math \
++    -fno-fast-math \
+     "
+       # * Rpass-analysis=loop-vectorize  -Rpass-missed=loop-vectorize
+   )
+@@ -143,7 +143,7 @@ elseif("${CMAKE_CXX_COMPILER_ID}" MATCHES "GNU")
+ 
+   set(CMAKE_CXX_FLAGS_RELEASE
+       "${CMAKE_CXX_FLAGS_RELEASE} \
+-      -ffast-math \
++      -fno-fast-math \
+       -march=native  \
+       -ftree-vectorize \
+       -rdynamic \
+diff --git a/include/OGL/Preconditioner/Cholesky.hpp b/include/OGL/Preconditioner/Cholesky.hpp
+index 3e79118..e2bab8d 100644
+--- a/include/OGL/Preconditioner/Cholesky.hpp
++++ b/include/OGL/Preconditioner/Cholesky.hpp
+@@ -40,8 +40,8 @@ public:
+         if (factorization_ == "ParICT") {
+             msg += "\n\tfillInLimit: " + std::to_string(fillInLimit_);
+         }
+-        msg += word("\n\tskipSorting: ") + Switch(skip_sorting_).c_str() +
+-               "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).c_str();
++        msg += word("\n\tskipSorting: ") + Switch(skip_sorting_).asText() +
++               "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).asText();
+         MLOG_0(verbose_, msg)
+     }
+ 
+diff --git a/include/OGL/Preconditioner/ISAI.hpp b/include/OGL/Preconditioner/ISAI.hpp
+index 9ae20bb..6995ab7 100644
+--- a/include/OGL/Preconditioner/ISAI.hpp
++++ b/include/OGL/Preconditioner/ISAI.hpp
+@@ -33,8 +33,8 @@ public:
+         word msg =
+             "\nGenerate ISAI preconditioner:\n\ttype: " + type_ +
+             "\n\tsparsityPower: " + std::to_string(sparsityPower_) +
+-            "\n\tskipSorting: " + Switch(skip_sorting_).c_str() +
+-            "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).c_str();
++            "\n\tskipSorting: " + Switch(skip_sorting_).asText() +
++            "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).asText();
+         MLOG_0(verbose_, msg)
+     }
+ 
+diff --git a/include/OGL/Preconditioner/Jacobi.hpp b/include/OGL/Preconditioner/Jacobi.hpp
+index 00fcc19..fa7cb3c 100644
+--- a/include/OGL/Preconditioner/Jacobi.hpp
++++ b/include/OGL/Preconditioner/Jacobi.hpp
+@@ -36,8 +36,8 @@ public:
+         word msg =
+             "\nGenerate BJ preconditioner:\n\tprecision: " + precision_ +
+             "\n\tmaxBlockSize: " + std::to_string(max_block_size_) +
+-            "\n\tskipSorting: " + Switch(skip_sorting_).c_str() +
+-            "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).c_str();
++            "\n\tskipSorting: " + Switch(skip_sorting_).asText() +
++            "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).asText();
+         MLOG_0(verbose_, msg)
+     }
+ 
+diff --git a/include/OGL/Preconditioner/LU.hpp b/include/OGL/Preconditioner/LU.hpp
+index bf9edad..ea7aeed 100644
+--- a/include/OGL/Preconditioner/LU.hpp
++++ b/include/OGL/Preconditioner/LU.hpp
+@@ -40,8 +40,8 @@ public:
+         if (factorization_ == "ParILUT") {
+             msg += "\n\tfillInLimit: " + std::to_string(fillInLimit_);
+         }
+-        msg += word("\n\tskipSorting: ") + Switch(skip_sorting_).c_str() +
+-               "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).c_str();
++        msg += word("\n\tskipSorting: ") + Switch(skip_sorting_).asText() +
++               "\n\tmultiLevelSchwarz: " + Switch(multi_level_schwarz_).asText();
+         MLOG_0(verbose_, msg)
+     }
+ 
+diff --git a/include/OGL/Preconditioner/Multigrid.hpp b/include/OGL/Preconditioner/Multigrid.hpp
+index 75ddd3b..4de1652 100644
+--- a/include/OGL/Preconditioner/Multigrid.hpp
++++ b/include/OGL/Preconditioner/Multigrid.hpp
+@@ -140,7 +140,7 @@ public:
+             "\n\trelaxationFactor: " + std::to_string(relaxFac_) +
+             "\n\tmaxIterSmoother: " + std::to_string(maxIterS_) +
+             "\n\tcoarsening: " + coarsening_ + "\n\tcycle: " + cycleName_ +
+-            "\n\treuseHierarchy: " + Switch(reuseHierarchy_).c_str() +
++            "\n\treuseHierarchy: " + Switch(reuseHierarchy_).asText() +
+             "\n\tmaxHierarchyReuses: " + std::to_string(maxHierarchyReuses_);
+         MLOG_0(verbose_, msg)
+     }
+diff --git a/include/OGL/lduLduBase.hpp b/include/OGL/lduLduBase.hpp
+index e584adb..52ab380 100644
+--- a/include/OGL/lduLduBase.hpp
++++ b/include/OGL/lduLduBase.hpp
+@@ -165,13 +165,13 @@ public:
+                const FieldField<Field, scalar> &interfaceIntCoeffs,
+                const lduInterfaceFieldPtrsList &interfaces,
+                const dictionary &solverControls)
+-        : OGL_Info(fieldName, solverControls, matrix.mesh().thisDb()),
++        : OGL_Info(fieldName, solverControls, matrix.mesh().db()),
+           MatrixType::solver(fieldName, matrix, interfaceBouCoeffs,
+                              interfaceIntCoeffs, interfaces, solverControls),
+-          SolverFactory{solverControls, matrix.mesh().thisDb(), fieldName},
+-          Preconditioner(fieldName, matrix.mesh().thisDb(), solverControls,
++          SolverFactory{solverControls, matrix.mesh().db(), fieldName},
++          Preconditioner(fieldName, matrix.mesh().db(), solverControls,
+                          solverControls.lookupOrDefault<label>("verbose", 0)),
+-          db_(matrix.mesh().thisDb()),
++          db_(matrix.mesh().db()),
+           solver_controls_(solverControls),
+           verbose_(solverControls.lookupOrDefault<label>("verbose", 0)),
+           field_name_(fieldName),
+@@ -193,11 +193,11 @@ public:
+      */
+     lduLduBase(const word &fieldName, const MatrixType &matrix,
+                const dictionary &solverControls)
+-        : OGL_Info(fieldName, solverControls, matrix.mesh().thisDb()),
+-          SolverFactory{solverControls, matrix.mesh().thisDb(), fieldName},
+-          Preconditioner(fieldName, matrix.mesh().thisDb(), solverControls,
++        : OGL_Info(fieldName, solverControls, matrix.mesh().db()),
++          SolverFactory{solverControls, matrix.mesh().db(), fieldName},
++          Preconditioner(fieldName, matrix.mesh().db(), solverControls,
+                          this->get_verbose()),
+-          db_(matrix.mesh().thisDb()),
++          db_(matrix.mesh().db()),
+           solver_controls_(solverControls),
+           verbose_(solverControls.lookupOrDefault<label>("verbose", 0))
+     {}
+diff --git a/src/MatrixWrapper/HostMatrix.cpp b/src/MatrixWrapper/HostMatrix.cpp
+index bf15006..f3ee96f 100644
+--- a/src/MatrixWrapper/HostMatrix.cpp
++++ b/src/MatrixWrapper/HostMatrix.cpp
+@@ -256,7 +256,7 @@ std::shared_ptr<SparsityPattern> HostMatrixWrapper::compute_interface_sparsity(
+ #ifdef WITH_ESI_VERSION
+             const label neighbPatchId = patch.neighbPatchID();
+ #else
+-            const label neighbPatchId = patch.nbrPatchID();
++            const label neighbPatchId = patch.nbrPatchIndex();
+ #endif
+             const labelUList &cols = addr_.patchAddr(neighbPatchId);
+ 
+diff --git a/include/fvCFD.H b/include/fvCFD.H
+new file mode 100644
+index 0000000..68eaf74
+--- /dev/null
++++ b/include/fvCFD.H
+@@ -0,0 +1,14 @@
++// Isolated Foundation14 compatibility umbrella; no numerical implementation.
++#pragma once
++#include "Time.H"
++#include "fvMesh.H"
++#include "volFields.H"
++#include "surfaceFields.H"
++#include "fvMatrices.H"
++#include "fvc.H"
++#include "fvm.H"
++#include "IOdictionary.H"
++#include "Pstream.H"
++#include "Switch.H"
++#include "OSspecific.H"
++using namespace Foam;

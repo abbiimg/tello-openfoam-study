@@ -1,0 +1,177 @@
+{
+  "description": "Actual coarse-grid final pilot velocity snapshots, not time-averaged flow",
+  "source_cases": [
+    {
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_visualization_20261101/coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+      "snapshot_time_s": 1.2,
+      "source_hashes": {
+        "geometry.json": "be7ce68004cb4e07eb8faf6d3df56928586f9c371b32f2f850170e3229435e39",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "constant/polyMesh/boundary": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+        "constant/polyMesh/faces": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+        "constant/polyMesh/neighbour": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+        "constant/polyMesh/owner": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+        "constant/polyMesh/points": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+        "1.2/U": "1f506e7ce7e3f4a4188e84b79a6ca4e14eef52ee861520ca3cd8041ede3a759d",
+        "1.2/p": "1cfde283fc49d4724a96038bb4a096a473a8359ee193b300d51d78716122203c"
+      },
+      "copied_hashes": {
+        "geometry.json": "be7ce68004cb4e07eb8faf6d3df56928586f9c371b32f2f850170e3229435e39",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "constant/polyMesh/boundary": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+        "constant/polyMesh/faces": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+        "constant/polyMesh/neighbour": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+        "constant/polyMesh/owner": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+        "constant/polyMesh/points": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+        "1.2/U": "1f506e7ce7e3f4a4188e84b79a6ca4e14eef52ee861520ca3cd8041ede3a759d",
+        "1.2/p": "1cfde283fc49d4724a96038bb4a096a473a8359ee193b300d51d78716122203c"
+      },
+      "source_unchanged": true,
+      "layout": "square_perimeter",
+      "rotors": 4,
+      "nearest_spacing_m": 0.16
+    },
+    {
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_visualization_20261101/coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+      "snapshot_time_s": 1.2,
+      "source_hashes": {
+        "geometry.json": "d4a53a2a01e141710248bc8f9017505af7956d9102d3a87ded9f83538ba280e2",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "constant/polyMesh/boundary": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+        "constant/polyMesh/faces": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+        "constant/polyMesh/neighbour": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+        "constant/polyMesh/owner": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+        "constant/polyMesh/points": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+        "1.2/U": "d4f01a275312e59c24bd54f24c7190877c8a349c164e37916cfed289f1a2793e",
+        "1.2/p": "81ca1ed36966c4ecd660eb19850e4c8483b06ed36a6b933114f062056fb2fa01"
+      },
+      "copied_hashes": {
+        "geometry.json": "d4a53a2a01e141710248bc8f9017505af7956d9102d3a87ded9f83538ba280e2",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "constant/polyMesh/boundary": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+        "constant/polyMesh/faces": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+        "constant/polyMesh/neighbour": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+        "constant/polyMesh/owner": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+        "constant/polyMesh/points": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+        "1.2/U": "d4f01a275312e59c24bd54f24c7190877c8a349c164e37916cfed289f1a2793e",
+        "1.2/p": "81ca1ed36966c4ecd660eb19850e4c8483b06ed36a6b933114f062056fb2fa01"
+      },
+      "source_unchanged": true,
+      "layout": "square_perimeter",
+      "rotors": 8,
+      "nearest_spacing_m": 0.08
+    },
+    {
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_visualization_20261101/coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+      "snapshot_time_s": 1.2,
+      "source_hashes": {
+        "geometry.json": "294062c03c452598c13098baf4c14501e250e19f5b66d92af9fa6958a51f09f9",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "constant/polyMesh/boundary": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+        "constant/polyMesh/faces": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+        "constant/polyMesh/neighbour": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+        "constant/polyMesh/owner": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+        "constant/polyMesh/points": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+        "1.2/U": "ddf09d8ea8c5277edf9d95b7bcd4813647931a21b062c0b8d6911fb8f3277e83",
+        "1.2/p": "f6579e40bba0478064fe013f4e5063d2741a8b424b98171caefd9a302e3230d1"
+      },
+      "copied_hashes": {
+        "geometry.json": "294062c03c452598c13098baf4c14501e250e19f5b66d92af9fa6958a51f09f9",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "constant/polyMesh/boundary": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+        "constant/polyMesh/faces": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+        "constant/polyMesh/neighbour": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+        "constant/polyMesh/owner": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+        "constant/polyMesh/points": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+        "1.2/U": "ddf09d8ea8c5277edf9d95b7bcd4813647931a21b062c0b8d6911fb8f3277e83",
+        "1.2/p": "f6579e40bba0478064fe013f4e5063d2741a8b424b98171caefd9a302e3230d1"
+      },
+      "source_unchanged": true,
+      "layout": "circular_ring",
+      "rotors": 8,
+      "nearest_spacing_m": 0.06627416997969514
+    }
+  ],
+  "render_requests_for_logical_cases": [
+    {
+      "case": "coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+      "field": "U",
+      "mode": "slice",
+      "time": "1.2",
+      "slice_normal": "z",
+      "slice_origin": [
+        0,
+        0,
+        -0.04
+      ],
+      "view": "+z",
+      "range": [
+        0,
+        12
+      ],
+      "colormap": "viridis",
+      "background": "light",
+      "width": 1100,
+      "height": 900,
+      "zoom": 1.8,
+      "rendered_image_sha256": "6c29e7523b253d107d45504a818c6b85e0af8fb2fa56a9e3831947b425c0b2b5"
+    },
+    {
+      "case": "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+      "field": "U",
+      "mode": "slice",
+      "time": "1.2",
+      "slice_normal": "z",
+      "slice_origin": [
+        0,
+        0,
+        -0.04
+      ],
+      "view": "+z",
+      "range": [
+        0,
+        12
+      ],
+      "colormap": "viridis",
+      "background": "light",
+      "width": 1100,
+      "height": 900,
+      "zoom": 1.8,
+      "rendered_image_sha256": "0007cce0154fca3f239cce742895ea0a493160b3f6a9450b2cbce1be17e17c14"
+    },
+    {
+      "case": "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+      "field": "U",
+      "mode": "slice",
+      "time": "1.2",
+      "slice_normal": "z",
+      "slice_origin": [
+        0,
+        0,
+        -0.04
+      ],
+      "view": "+z",
+      "range": [
+        0,
+        12
+      ],
+      "colormap": "viridis",
+      "background": "light",
+      "width": 1100,
+      "height": 900,
+      "zoom": 1.8,
+      "rendered_image_sha256": "110675fa833eeced4f26c770a9031e831ca2ac23af98864eec0c1931f0d1ae2c"
+    }
+  ],
+  "renderer": "Connected OpenFOAM render tool / ParaView5.11",
+  "common_crop_pixels_xy": [
+    200,
+    150,
+    900,
+    750
+  ],
+  "note": "Rendering ran on separate verified copies. Original CFD inputs and fields were unchanged."
+}

@@ -1,0 +1,117 @@
+{
+  "kind": "Bounded pressure-offload feasibility preflight; no GPU CFD speedup measured",
+  "prepared_unix_s": 1793561111.364861,
+  "recommendation": "Keep the current circle pilots and CPU cases running unchanged. Do not start a full GPU dependency build for the current pilot deadline: no tested drop-in Foundation14/serial adapter was found.",
+  "viable_engineering_path": "An isolated, pinned OGL/Ginkgo Foundation14 port is the best candidate reviewed; it requires API fixes, an MPI execution path or a real serial-initialization port, a CUDA13 ARM64 toolchain, a library build and an execution-owned equivalence/throughput benchmark before adoption.",
+  "actual_local": {
+    "machine": "aarch64",
+    "gcc": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "tools": {
+      "g++": "/usr/bin/g++",
+      "make": "/usr/bin/make",
+      "cmake": null,
+      "ninja": null,
+      "nvcc": null,
+      "pip3": null
+    },
+    "openfoam_family": "Foundation14",
+    "precision": "double",
+    "label_bits": 32,
+    "cuda_driver_kernel_passed": true,
+    "mpi_cuda_capability_lines": [
+      "mca:mpi:base:param:mpi_cuda_support:value:false",
+      "mca:mpi:base:param:mpi_built_with_cuda_support:value:false"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "OGL/Ginkgo",
+      "commit": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+      "result": "Best investigated port candidate, not currently build/run compatible without changes",
+      "evidence": [
+        "README advertises Foundation6+; current checked-in CI matrix lists only ESIv2512.",
+        "Actual Foundation14 compile-only API subset fails for thisDb() and nbrPatchID(). Substitutions db() and nbrPatch().index() pass that subset only; full adapter not compiled.",
+        "Current DeviceIdHandler aborts when Pstream::parRun() is false, incompatible with the current plain serial foamRun runner.",
+        "CMake defaults force GPU-aware MPI, but installed MPI reports no CUDA-buffer support; an isolated build must disable that assumption/use host buffers or provide validated CUDA-aware MPI.",
+        "CUDA target links cudart,cublas,cusparse,curand,cufft,NVTX. Toolkit/compiler/libraries and CMake are absent locally.",
+        "Farfield-only scalar pressure matrices fit documented boundary/block limitations; CPU assembly, source terms and non-offloaded work remain."
+      ]
+    },
+    {
+      "name": "petsc4foam",
+      "result": "Not the shortest Foundation14 route",
+      "evidence": [
+        "Its primary README explicitly requires OpenFOAM-v1912+ or recent OpenFOAM.com master, plus PETSc3.23+; no tested Foundation14 claim.",
+        "Needs a separate adapter port and CUDA-enabled PETSc dependency build; neither is installed."
+      ]
+    },
+    {
+      "name": "community amgx4foam + NVIDIA AmgX",
+      "commit": "52dee12055c10d25a37e76291485b8aeb1cd42cf",
+      "result": "Not drop-in on this installation",
+      "evidence": [
+        "Inspected Make/options requires external foam2csr and hard-codes a CUDA11.6 include directory.",
+        "Wrapper source uses removed mesh().thisDb() and unconditionally includes cyclicAMILduInterface.H, absent from the installed Foundation14 source.",
+        "NVIDIA AmgX itself being GPU-capable does not establish compatibility of this separate wrapper."
+      ]
+    }
+  ],
+  "toolchain_archive_compressed_bytes": 1948620464,
+  "toolchain_downloaded_or_installed": false,
+  "source_checkout_paths": [
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL",
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/amgx4foam"
+  ],
+  "actual_build_activity": "Only g++ -fsyntax-only API subset checks, one CPU at a time; no shared-library or CUDA build",
+  "no_solver_launched": true,
+  "no_production_case_edits_or_stops": true,
+  "no_global_driver_or_openfoam_changes": true,
+  "isolated_build_constraints": {
+    "cpu_jobs_max": 2,
+    "prefix": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload",
+    "install_note": "OGL installs to $FOAM_USER_LIBBIN explicitly. Override that variable to a private lib directory for the build/install subprocess; CMAKE_INSTALL_PREFIX alone does not isolate its install destination. Never modify the global shell/OpenFOAM environment."
+  },
+  "timing_context": {
+    "source": "Execution agent existing log/progress estimates; not measured GPU timings",
+    "priority_circle_pilots_estimated_minutes": [
+      45,
+      90
+    ],
+    "fine_batch_estimated_remaining_hours": [
+      6,
+      11
+    ],
+    "pressure_profile_fraction": null,
+    "observation": "Typical existing logs show pressure GAMG about15\u201316 iterations and fewer momentum iterations, but this does not establish a pressure CPU percentage."
+  },
+  "net_time": {
+    "status": "Unproven; no speedup estimate claimed",
+    "break_even_condition": "setup_port_build_validate_time < remaining_CPU_wall_time * (1 - 1 / measured_end_to_end_speedup)",
+    "qualification": "Single-GPU contention across concurrent cases and CPU matrix assembly must be measured; pressure-kernel timing alone is insufficient.",
+    "current_deadline": "No evidence the port/toolchain/build/validation can amortize within the priority pilot45\u201390minute window."
+  },
+  "bounded_next_step": [
+    "If pursuing reuse beyond the current pilots: a30\u201345minute isolated Foundation14 header/translation-unit port spike using pinned OGL and Ginkgo plus private ARM64 CMake, with at most2build CPUs. Stop on broad API changes; install nothing globally.",
+    "Only after that passes, fetch checksum-verified CUDA13 linux-sbsa components into the isolated prefix, set architecture121 explicitly, disable unverified GPU-aware MPI, and build at most2CPUs.",
+    "Execution agent alone should then run one short isolated pressure-offload clone, matching mesh, initial0.6U,p, physics and CPU validation checks; compare end-to-end elapsed time and aggregate throughput before any production change."
+  ],
+  "sources": {
+    "ogl_readme": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/README.md",
+    "ogl_ci_matrix": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/.github/workflows/test_matrix.json",
+    "ogl_solver_api": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/lduLduBase.hpp",
+    "ogl_foundation_patch_api": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/src/MatrixWrapper/HostMatrix.cpp",
+    "ogl_parallel_only": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/DevicePersistent/ExecutorHandler.hpp",
+    "ogl_build": "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/CMakeLists.txt",
+    "petsc4foam_requirements": "https://gitlab.com/petsc/petsc4foam/-/blob/main/README.md",
+    "amgx_wrapper_build": "https://github.com/maorz1998/amgx4foam/blob/52dee12055c10d25a37e76291485b8aeb1cd42cf/src/amgx4Foam/Make/options",
+    "amgx_wrapper_api": "https://github.com/maorz1998/amgx4foam/blob/52dee12055c10d25a37e76291485b8aeb1cd42cf/src/amgx4Foam/solvers/amgxSolver.C",
+    "nvidia_toolkit_manifest": "https://developer.download.nvidia.com/compute/cuda/redist/redistrib_13.0.2.json",
+    "nvidia_device_architecture": "https://developer.nvidia.com/cuda/gpus",
+    "ginkgo_cuda_dependencies": "https://raw.githubusercontent.com/ginkgo-project/ginkgo/develop/cuda/CMakeLists.txt"
+  },
+  "evidence_files": [
+    "cuda_driver_probe.json",
+    "foundation14_api_probe.json",
+    "cuda_toolchain_package_preflight.json"
+  ]
+}

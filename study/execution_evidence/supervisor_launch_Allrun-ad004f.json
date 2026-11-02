@@ -1,0 +1,11 @@
+{
+  "job_id": "Allrun-ad004f",
+  "case": "tello_execution_supervisor",
+  "app": "Allrun",
+  "command": "bash /opt/openfoam-workspace/cases/tello_execution_supervisor/Allrun",
+  "np": 1,
+  "log": "log.Allrun",
+  "state": "running",
+  "elapsed_s": 0,
+  "hint": "Still running. Poll with job_status('Allrun-ad004f') or solver_progress('tello_execution_supervisor')."
+}

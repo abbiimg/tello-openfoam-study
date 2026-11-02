@@ -1,0 +1,994 @@
+{
+  "status": "mapped_ready_no_solver_run",
+  "prepared_unix_s": 1793582052.5510347,
+  "case": "/opt/openfoam-workspace/cases/tello_circle_candidate_inputs_20261101/_mapped_design_f8eb66b157f14249b9a6f3614019a544/build/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+  "source_case": "/opt/openfoam-workspace/cases/tello_refinement/coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+  "source_time_directory": "0.6",
+  "case_logical": "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+  "source_case_logical": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+  "source_case_absolute_historical": "/opt/openfoam-workspace/cases/tello_refinement/coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+  "source_case_reference": {
+    "case_name": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+    "archive_member_prefix": "cases/coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609/",
+    "source_time_directory": "0.6",
+    "historical_study_root_name": "tello_refinement",
+    "original_source_time_fields_in_archive": "not guaranteed; hashes identify the original fields",
+    "initialized_target_rerun_requires_live_source": false
+  },
+  "initialization_method": "mapped_coarse_fields",
+  "initialization_family": "mapped",
+  "initialization_source_case": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+  "initialization_source_time_s": 0.6,
+  "initialization_start_time_s": 0.6,
+  "target_start_time_s": 0.6,
+  "source_time_confirmed_by_mapFields": [
+    "0.6"
+  ],
+  "target_end_time_s": 1.2,
+  "target_averaging_start_s": 0.7999999999999999,
+  "target_averaging_stop_s": 1.2,
+  "run_control_provenance": {
+    "startFrom": [
+      "startTime"
+    ],
+    "startTime": [
+      "0.59999999999999998"
+    ],
+    "stopAt": [
+      "endTime"
+    ],
+    "endTime": [
+      "1.2"
+    ],
+    "writeControl": [
+      "adjustableRunTime"
+    ],
+    "writeInterval": [
+      "0.10000000000000001"
+    ],
+    "writeFormat": [
+      "ascii"
+    ],
+    "writePrecision": [
+      "9"
+    ],
+    "writeCompression": [
+      "false"
+    ],
+    "timeFormat": [
+      "general"
+    ],
+    "timePrecision": [
+      "8"
+    ]
+  },
+  "mapping_method": "interpolate",
+  "consistent_geometry": true,
+  "map_command": [
+    "mapFields",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+    "-sourceTime",
+    "0.6",
+    "-consistent",
+    "-mapMethod",
+    "interpolate"
+  ],
+  "source_case_files_before": {
+    "geometry.json": {
+      "sha256": "698c2c65c9e8821808170ad33c90ad7213f030d0bfb06411376e7b6c7174c6a8",
+      "size_bytes": 10637,
+      "mtime_ns": 1793575949333946309
+    },
+    "0.6/U": {
+      "sha256": "4033750a55d15d70808667905e74c06dfa2c342833098715d42e502ee771fb6d",
+      "size_bytes": 10603632,
+      "mtime_ns": 1793579819857737331
+    },
+    "0.6/p": {
+      "sha256": "7a3fa176d7b6d2a11893904321ed8f6791d75362f90537c11830b4aa6b1c5939",
+      "size_bytes": 3630174,
+      "mtime_ns": 1793579820157737139
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793575947338783852
+    },
+    "constant/rotorParameters": {
+      "sha256": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+      "size_bytes": 1161,
+      "mtime_ns": 1793575947539219774
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793575947174019374
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793575947174072574
+    },
+    "constant/polyMesh/points": {
+      "sha256": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+      "size_bytes": 10174302,
+      "mtime_ns": 1793577010897426942
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+      "size_bytes": 22199531,
+      "mtime_ns": 1793577011453425390
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+      "size_bytes": 4954854,
+      "mtime_ns": 1793577011581425033
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+      "size_bytes": 4812846,
+      "mtime_ns": 1793577011005426641
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+      "size_bytes": 812,
+      "mtime_ns": 1793577011581425033
+    }
+  },
+  "portable_map_command": [
+    "mapFields",
+    "<EXTRACTED_ARCHIVE_ROOT>/cases/coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+    "-sourceTime",
+    "0.6",
+    "-consistent",
+    "-mapMethod",
+    "interpolate"
+  ],
+  "portable_map_command_requirements": "Remapping requires independently available original source 0.6/U,p and source mesh matching the recorded hashes. The source case archive prefix does not guarantee its intermediate 0.6 fields are stored.",
+  "initialized_rerun_policy": "Prefer the archived target mesh, mapped 0.6/U,p, frozen inputs/helper/Allrun and initialization.json. verify-only and the initialized warm runner do not require a live source case or remapping.",
+  "source_case_files_after": {
+    "geometry.json": {
+      "sha256": "698c2c65c9e8821808170ad33c90ad7213f030d0bfb06411376e7b6c7174c6a8",
+      "size_bytes": 10637,
+      "mtime_ns": 1793575949333946309
+    },
+    "0.6/U": {
+      "sha256": "4033750a55d15d70808667905e74c06dfa2c342833098715d42e502ee771fb6d",
+      "size_bytes": 10603632,
+      "mtime_ns": 1793579819857737331
+    },
+    "0.6/p": {
+      "sha256": "7a3fa176d7b6d2a11893904321ed8f6791d75362f90537c11830b4aa6b1c5939",
+      "size_bytes": 3630174,
+      "mtime_ns": 1793579820157737139
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793575947338783852
+    },
+    "constant/rotorParameters": {
+      "sha256": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+      "size_bytes": 1161,
+      "mtime_ns": 1793575947539219774
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793575947174019374
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793575947174072574
+    },
+    "constant/polyMesh/points": {
+      "sha256": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+      "size_bytes": 10174302,
+      "mtime_ns": 1793577010897426942
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+      "size_bytes": 22199531,
+      "mtime_ns": 1793577011453425390
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+      "size_bytes": 4954854,
+      "mtime_ns": 1793577011581425033
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+      "size_bytes": 4812846,
+      "mtime_ns": 1793577011005426641
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+      "size_bytes": 812,
+      "mtime_ns": 1793577011581425033
+    }
+  },
+  "source_unchanged": true,
+  "invariants": {
+    "rotors": 8,
+    "battery_power_W": 19.29230769230769,
+    "distance_cm": 7.999999999999992,
+    "tilt_deg": -10.0,
+    "diameter_m": 0.0762,
+    "radius_m": 0.0381,
+    "thickness_m": 0.012,
+    "half_thickness_m": 0.006,
+    "centers": [
+      [
+        0.0965685424949238,
+        0.04,
+        0.0
+      ],
+      [
+        0.04000000000000001,
+        0.0965685424949238,
+        0.0
+      ],
+      [
+        -0.039999999999999994,
+        0.0965685424949238,
+        0.0
+      ],
+      [
+        -0.0965685424949238,
+        0.040000000000000015,
+        0.0
+      ],
+      [
+        -0.09656854249492382,
+        -0.03999999999999999,
+        0.0
+      ],
+      [
+        -0.040000000000000056,
+        -0.09656854249492378,
+        0.0
+      ],
+      [
+        0.04000000000000002,
+        -0.09656854249492379,
+        0.0
+      ],
+      [
+        0.09656854249492378,
+        -0.04000000000000006,
+        0.0
+      ]
+    ],
+    "normals": [
+      [
+        -0.16042999720436046,
+        -0.06645228065352382,
+        0.984807753012208
+      ],
+      [
+        -0.06645228065352383,
+        -0.16042999720436046,
+        0.984807753012208
+      ],
+      [
+        0.06645228065352382,
+        -0.16042999720436046,
+        0.984807753012208
+      ],
+      [
+        0.16042999720436046,
+        -0.06645228065352385,
+        0.984807753012208
+      ],
+      [
+        0.16042999720436046,
+        0.06645228065352381,
+        0.984807753012208
+      ],
+      [
+        0.06645228065352392,
+        0.1604299972043604,
+        0.984807753012208
+      ],
+      [
+        -0.06645228065352386,
+        0.16042999720436044,
+        0.984807753012208
+      ],
+      [
+        -0.1604299972043604,
+        0.06645228065352393,
+        0.984807753012208
+      ]
+    ],
+    "radials": [
+      [
+        0.9238795325112867,
+        0.3826834323650898,
+        0.0
+      ],
+      [
+        0.38268343236508984,
+        0.9238795325112867,
+        0.0
+      ],
+      [
+        -0.3826834323650897,
+        0.9238795325112867,
+        0.0
+      ],
+      [
+        -0.9238795325112867,
+        0.3826834323650899,
+        0.0
+      ],
+      [
+        -0.9238795325112868,
+        -0.38268343236508967,
+        0.0
+      ],
+      [
+        -0.38268343236509034,
+        -0.9238795325112865,
+        0.0
+      ],
+      [
+        0.38268343236509,
+        -0.9238795325112866,
+        0.0
+      ],
+      [
+        0.9238795325112865,
+        -0.3826834323650904,
+        0.0
+      ]
+    ],
+    "domain_xy_m": 0.36,
+    "domain_z_m": [
+      -0.6,
+      0.36
+    ],
+    "loss_model": {
+      "auxiliary_W": 0.5,
+      "esc_efficiency": 0.95,
+      "idle_W_per_motor": 0.1,
+      "motor_conversion": 0.6,
+      "axial_fraction": 0.5
+    },
+    "target_shaft_power_W": 10.231615384615383,
+    "target_air_power_W": 5.115807692307691,
+    "quadrature_subcells_xy": 16,
+    "quadrature_subcells_per_cell": 256,
+    "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+  },
+  "actual_target_cells": 481888,
+  "source_field_cells": {
+    "U": 248400,
+    "p": 248400
+  },
+  "mapped_field_cells": {
+    "U": 481888,
+    "p": 481888
+  },
+  "source_invariants": {
+    "rotors": 8,
+    "battery_power_W": 19.29230769230769,
+    "distance_cm": 7.999999999999992,
+    "tilt_deg": -10.0,
+    "diameter_m": 0.0762,
+    "radius_m": 0.0381,
+    "thickness_m": 0.012,
+    "half_thickness_m": 0.006,
+    "centers": [
+      [
+        0.0965685424949238,
+        0.04,
+        0.0
+      ],
+      [
+        0.04000000000000001,
+        0.0965685424949238,
+        0.0
+      ],
+      [
+        -0.039999999999999994,
+        0.0965685424949238,
+        0.0
+      ],
+      [
+        -0.0965685424949238,
+        0.040000000000000015,
+        0.0
+      ],
+      [
+        -0.09656854249492382,
+        -0.03999999999999999,
+        0.0
+      ],
+      [
+        -0.040000000000000056,
+        -0.09656854249492378,
+        0.0
+      ],
+      [
+        0.04000000000000002,
+        -0.09656854249492379,
+        0.0
+      ],
+      [
+        0.09656854249492378,
+        -0.04000000000000006,
+        0.0
+      ]
+    ],
+    "normals": [
+      [
+        -0.16042999720436046,
+        -0.06645228065352382,
+        0.984807753012208
+      ],
+      [
+        -0.06645228065352383,
+        -0.16042999720436046,
+        0.984807753012208
+      ],
+      [
+        0.06645228065352382,
+        -0.16042999720436046,
+        0.984807753012208
+      ],
+      [
+        0.16042999720436046,
+        -0.06645228065352385,
+        0.984807753012208
+      ],
+      [
+        0.16042999720436046,
+        0.06645228065352381,
+        0.984807753012208
+      ],
+      [
+        0.06645228065352392,
+        0.1604299972043604,
+        0.984807753012208
+      ],
+      [
+        -0.06645228065352386,
+        0.16042999720436044,
+        0.984807753012208
+      ],
+      [
+        -0.1604299972043604,
+        0.06645228065352393,
+        0.984807753012208
+      ]
+    ],
+    "radials": [
+      [
+        0.9238795325112867,
+        0.3826834323650898,
+        0.0
+      ],
+      [
+        0.38268343236508984,
+        0.9238795325112867,
+        0.0
+      ],
+      [
+        -0.3826834323650897,
+        0.9238795325112867,
+        0.0
+      ],
+      [
+        -0.9238795325112867,
+        0.3826834323650899,
+        0.0
+      ],
+      [
+        -0.9238795325112868,
+        -0.38268343236508967,
+        0.0
+      ],
+      [
+        -0.38268343236509034,
+        -0.9238795325112865,
+        0.0
+      ],
+      [
+        0.38268343236509,
+        -0.9238795325112866,
+        0.0
+      ],
+      [
+        0.9238795325112865,
+        -0.3826834323650904,
+        0.0
+      ]
+    ],
+    "domain_xy_m": 0.36,
+    "domain_z_m": [
+      -0.6,
+      0.36
+    ],
+    "loss_model": {
+      "auxiliary_W": 0.5,
+      "esc_efficiency": 0.95,
+      "idle_W_per_motor": 0.1,
+      "motor_conversion": 0.6,
+      "axial_fraction": 0.5
+    },
+    "target_shaft_power_W": 10.231615384615383,
+    "target_air_power_W": 5.115807692307691,
+    "quadrature_subcells_xy": 16,
+    "quadrature_subcells_per_cell": 256,
+    "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+  },
+  "metadata_numeric_tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-14
+  },
+  "actual_source_and_target_fvModels_and_rotorParameters_byte_identical": true,
+  "actual_source_and_target_physicalProperties_and_momentumTransport_byte_identical": true,
+  "target_inputs_before_preparation": {
+    "geometry.json": {
+      "sha256": "b518af366c76e7139caf4e2443673d9a2afa185bb46defc22e938b29db666f81",
+      "size_bytes": 12674,
+      "mtime_ns": 1793582031559538512
+    },
+    "0/U": {
+      "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+      "size_bytes": 203,
+      "mtime_ns": 1793582029649323100
+    },
+    "0/p": {
+      "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+      "size_bytes": 191,
+      "mtime_ns": 1793582029649349700
+    },
+    "system/blockMeshDict": {
+      "sha256": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+      "size_bytes": 738,
+      "mtime_ns": 1793582029666278386
+    },
+    "system/controlDict": {
+      "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "size_bytes": 1099,
+      "mtime_ns": 1793582031296468222
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "mtime_ns": 1793582029649469600
+    },
+    "system/fvSolution": {
+      "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+      "size_bytes": 368,
+      "mtime_ns": 1793582030925393172
+    },
+    "Allrun": {
+      "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+      "size_bytes": 1367,
+      "mtime_ns": 1793582031060463771
+    },
+    "prepare_mapped.py": {
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "size_bytes": 29663,
+      "mtime_ns": 1793582031080467901
+    },
+    "system/decomposeParDict": {
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "size_bytes": 178,
+      "mtime_ns": 1793582031100310531
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793582030508868757
+    },
+    "constant/rotorParameters": {
+      "sha256": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+      "size_bytes": 1161,
+      "mtime_ns": 1793582030509162057
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793582030509230158
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793582030509290458
+    },
+    "preparation_history/cold_preparation.json": {
+      "sha256": "a26222da7f36aa4b7492fa90aacd597009b0898d9842032358a26d6f9a6f8d2c",
+      "size_bytes": 675,
+      "mtime_ns": 1793582030464874464
+    },
+    "preparation_history/cold_geometry.json": {
+      "sha256": "f5578dc12389063239f143596fa7bef2c155687459546f5c34e897e9d7be1d31",
+      "size_bytes": 10674,
+      "mtime_ns": 1793582030496262739
+    },
+    "generate_mapped_design.py": {
+      "sha256": "23967daddda88e7ae88651d0e8a283dd76a180a48429db19e5420fc67fc3beaa",
+      "size_bytes": 17358,
+      "mtime_ns": 1793582030520467074
+    }
+  },
+  "target_inputs_after_preparation": {
+    "geometry.json": {
+      "sha256": "b518af366c76e7139caf4e2443673d9a2afa185bb46defc22e938b29db666f81",
+      "size_bytes": 12674,
+      "mtime_ns": 1793582031559538512
+    },
+    "0/U": {
+      "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+      "size_bytes": 203,
+      "mtime_ns": 1793582029649323100
+    },
+    "0/p": {
+      "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+      "size_bytes": 191,
+      "mtime_ns": 1793582029649349700
+    },
+    "system/blockMeshDict": {
+      "sha256": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+      "size_bytes": 738,
+      "mtime_ns": 1793582029666278386
+    },
+    "system/controlDict": {
+      "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "size_bytes": 1099,
+      "mtime_ns": 1793582031296468222
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "mtime_ns": 1793582029649469600
+    },
+    "system/fvSolution": {
+      "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+      "size_bytes": 368,
+      "mtime_ns": 1793582030925393172
+    },
+    "Allrun": {
+      "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+      "size_bytes": 1367,
+      "mtime_ns": 1793582031060463771
+    },
+    "prepare_mapped.py": {
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "size_bytes": 29663,
+      "mtime_ns": 1793582031080467901
+    },
+    "system/decomposeParDict": {
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "size_bytes": 178,
+      "mtime_ns": 1793582031100310531
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793582030508868757
+    },
+    "constant/rotorParameters": {
+      "sha256": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+      "size_bytes": 1161,
+      "mtime_ns": 1793582030509162057
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793582030509230158
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793582030509290458
+    },
+    "preparation_history/cold_preparation.json": {
+      "sha256": "a26222da7f36aa4b7492fa90aacd597009b0898d9842032358a26d6f9a6f8d2c",
+      "size_bytes": 675,
+      "mtime_ns": 1793582030464874464
+    },
+    "preparation_history/cold_geometry.json": {
+      "sha256": "f5578dc12389063239f143596fa7bef2c155687459546f5c34e897e9d7be1d31",
+      "size_bytes": 10674,
+      "mtime_ns": 1793582030496262739
+    },
+    "generate_mapped_design.py": {
+      "sha256": "23967daddda88e7ae88651d0e8a283dd76a180a48429db19e5420fc67fc3beaa",
+      "size_bytes": 17358,
+      "mtime_ns": 1793582030520467074
+    }
+  },
+  "seeded_fields": {
+    "0.6/U": {
+      "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+      "size_bytes": 203,
+      "mtime_ns": 1793582029649323100
+    },
+    "0.6/p": {
+      "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+      "size_bytes": 191,
+      "mtime_ns": 1793582029649349700
+    }
+  },
+  "mapped_fields": {
+    "0.6/U": {
+      "sha256": "d1877d8b9ebca6c71feab7c6dd0354bad552c08ba9acc1203c243eb21ec226fb",
+      "size_bytes": 20306219,
+      "mtime_ns": 1793582048532474206
+    },
+    "0.6/p": {
+      "sha256": "28c97372755ef5992efc273fdec32ffb4c89c598ccb5b3662901e2c640e066cb",
+      "size_bytes": 6870212,
+      "mtime_ns": 1793582047916474276
+    }
+  },
+  "target_mesh": {
+    "constant/polyMesh/points": {
+      "sha256": "41fb4ecf23ec793f460f21499cbe042154247cd2e0998ce95347e389c1f2413c",
+      "size_bytes": 19234158,
+      "mtime_ns": 1793582033340471269
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "bacdae0671f0a8928c124bd59092396d0a99f787694515aa285d7dbb3eabc7b2",
+      "size_bytes": 44128922,
+      "mtime_ns": 1793582033804471965
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "7fe0712a4455dda0c2a2fba4b2b344e8d3784ed073f04b6e5264dacfc7d711c6",
+      "size_bytes": 9901320,
+      "mtime_ns": 1793582033872472067
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "dbe1c94b95e82009afafacf7704f6385fcc4b5a0dab992e935dc8747ee746a26",
+      "size_bytes": 9672882,
+      "mtime_ns": 1793582033420471389
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "57065df0a3c8aae04b4ecb15609d955d6a4549ef48b8c6911c7fa03adcfaa539",
+      "size_bytes": 813,
+      "mtime_ns": 1793582033876472073
+    }
+  },
+  "preparation_logs": {
+    "log.blockMesh": {
+      "sha256": "660ad04db373e67cdbbc431982003e48f7245e137ad667195851ee8d7e88f4fa",
+      "size_bytes": 2076,
+      "mtime_ns": 1793582033876472073
+    },
+    "log.checkMesh": {
+      "sha256": "38b3a7056b39e897bf3a2e15eff38b615333a4981237ea1c70118c51625f0925",
+      "size_bytes": 2657,
+      "mtime_ns": 1793582042577378540
+    },
+    "log.mapFields": {
+      "sha256": "f942443e625a7e66f6b762c3cbb749be5c99fbb479f0280d719ef2861dcfb3fa",
+      "size_bytes": 1848,
+      "mtime_ns": 1793582052344473832
+    }
+  },
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "frozen_helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+  "mpi_ranks": 1,
+  "execution_mode": "serial",
+  "solver_configuration": {
+    "schema": "openfoam-foundation14-numerical-method-v1",
+    "openfoam_family": "Foundation",
+    "openfoam_major_version": 14,
+    "fvSolution": {
+      "PIMPLE": {
+        "nCorrectors": [
+          "2"
+        ],
+        "nNonOrthogonalCorrectors": [
+          "0"
+        ],
+        "nOuterCorrectors": [
+          "1"
+        ]
+      },
+      "solvers": {
+        "U": {
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "UFinal": {
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "p": {
+          "directSolveCoarsest": [
+            "true"
+          ],
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "GaussSeidel"
+          ],
+          "solver": [
+            "GAMG"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "pFinal": {
+          "directSolveCoarsest": [
+            "true"
+          ],
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "GaussSeidel"
+          ],
+          "solver": [
+            "GAMG"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        }
+      }
+    },
+    "fvSchemes": {
+      "ddtSchemes": {
+        "default": [
+          "Euler"
+        ]
+      },
+      "divSchemes": {
+        "default": [
+          "none"
+        ],
+        "div((nuEff*dev2(T(grad(U)))))": [
+          "Gauss",
+          "linear"
+        ],
+        "div(phi,U)": [
+          "Gauss",
+          "linearUpwind",
+          "grad",
+          "(",
+          "U",
+          ")"
+        ]
+      },
+      "gradSchemes": {
+        "default": [
+          "Gauss",
+          "linear"
+        ],
+        "grad(U)": [
+          "cellLimited",
+          "Gauss",
+          "linear",
+          "1"
+        ]
+      },
+      "interpolationSchemes": {
+        "default": [
+          "linear"
+        ]
+      },
+      "laplacianSchemes": {
+        "default": [
+          "Gauss",
+          "linear",
+          "corrected"
+        ]
+      },
+      "snGradSchemes": {
+        "default": [
+          "corrected"
+        ]
+      },
+      "wallDist": {
+        "method": [
+          "meshWave"
+        ]
+      }
+    },
+    "time_stepping": {
+      "application": [
+        "foamRun"
+      ],
+      "solver": [
+        "incompressibleFluid"
+      ],
+      "deltaT": [
+        "0.0001"
+      ],
+      "adjustTimeStep": [
+        "true"
+      ],
+      "maxCo": [
+        "0.90000000000000002"
+      ],
+      "maxDeltaT": [
+        "0.00080000000000000004"
+      ]
+    },
+    "decomposition": {
+      "hierarchicalCoeffs": {
+        "n": [
+          "(",
+          "1",
+          "1",
+          "1",
+          ")"
+        ],
+        "order": [
+          "xyz"
+        ]
+      },
+      "method": [
+        "hierarchical"
+      ],
+      "numberOfSubdomains": [
+        "1"
+      ]
+    }
+  },
+  "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+  "pressure_direct_solve_coarsest": {
+    "p": true,
+    "pFinal": true
+  },
+  "optional_direct_coarsest": {
+    "requested": true,
+    "edit": "literal p-block insertion/replacement, preserving $p",
+    "effective_after": {
+      "p": true,
+      "pFinal": true
+    },
+    "all_other_solver_entries_unchanged": true
+  },
+  "numerical_signature_excludes": [
+    "startFrom",
+    "startTime",
+    "endTime",
+    "stopAt",
+    "write/output controls",
+    "averaging windows",
+    "initialization regime"
+  ],
+  "phi_policy": "Not copied or mapped: solver reconstructs phi from mapped U.",
+  "controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+  "study_role": "validation",
+  "role": "Mapped/reinitialized validation, averaging 0.8-1.2 s; no solver launched by preparation.",
+  "reconstruction_policy": "None: serial foamRun writes directly; mapped 0.6 inputs remain frozen",
+  "generic_mapped_design": {
+    "wrapper_sha256": "23967daddda88e7ae88651d0e8a283dd76a180a48429db19e5420fc67fc3beaa",
+    "precursor_history_preserved": true,
+    "source_unchanged_verified_by_wrapper": true,
+    "planned_published_case": "/opt/openfoam-workspace/cases/tello_circle_candidate_inputs_20261101/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+    "preparation_case_absolute_historical": "/opt/openfoam-workspace/cases/tello_circle_candidate_inputs_20261101/_mapped_design_f8eb66b157f14249b9a6f3614019a544/build/mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c"
+  }
+}

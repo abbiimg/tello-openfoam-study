@@ -1,0 +1,11 @@
+{
+  "kind": "Isolated CUDA build progress; no CFD",
+  "pid": 155557,
+  "unix_s": 1793567248.0804358,
+  "elapsed_s": 3454.6384001390106,
+  "max_build_cpus": 2,
+  "objects": 432,
+  "graph_units": 431,
+  "hard_limit_s": 5400,
+  "log": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda-build.log"
+}

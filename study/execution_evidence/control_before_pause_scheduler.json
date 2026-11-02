@@ -1,0 +1,13 @@
+{
+  "stop_launching": false,
+  "phase": "layout_flat_pilots",
+  "allowed_cases": [
+    "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+    "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+    "coarserotorcountpilot_n4_e19.2923_d1600_az0000"
+  ],
+  "reason": "Three explicitly authorized staged flat pilots only: square/circle N8 first, matched N4 automatically after BOTH successful validated layout exits. All optimization remains held.",
+  "temporary_rank_budget": 18,
+  "optimization_rank_budget": 16,
+  "updated_utc": "2026-11-01T19:20:00Z"
+}

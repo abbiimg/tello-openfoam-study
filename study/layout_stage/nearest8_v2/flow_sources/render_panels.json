@@ -1,0 +1,319 @@
+{
+  "schema": "tello-layout-fine-flow-panels-v1",
+  "snapshot_time_s": 1.2,
+  "snapshot_not_time_average": true,
+  "panels": [
+    {
+      "id": "square_flat",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_az0000",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0076396,
+            7.7999
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_az0000/images/U_slice_1.2_1793584663.png"
+      }
+    },
+    {
+      "id": "square_inward10",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am1000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_am1000",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0073579,
+            7.9358
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_am1000/images/U_slice_1.2_1793584663.png"
+      }
+    },
+    {
+      "id": "circle_flat",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0085127,
+            7.6923
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88/images/U_slice_1.2_1793590737.png"
+      }
+    },
+    {
+      "id": "circle_inward10",
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "render_request": {
+        "field": "U",
+        "component": "Magnitude",
+        "mode": "slice",
+        "slice_normal": "z",
+        "slice_origin": [
+          0,
+          0,
+          -0.04
+        ],
+        "view": "+z",
+        "time": "1.2",
+        "range": [
+          0,
+          12
+        ],
+        "colormap": "viridis",
+        "background": "light",
+        "width": 1100,
+        "height": 900,
+        "zoom": 1.8
+      },
+      "renderer_metadata": {
+        "time": 1.2,
+        "available_times": "1 (1.2 .. 1.2)",
+        "fields": [
+          "U",
+          "p"
+        ],
+        "patches": [
+          "farfield"
+        ],
+        "bounds": [
+          [
+            -0.36,
+            -0.36,
+            -0.6
+          ],
+          [
+            0.36,
+            0.36,
+            0.36
+          ]
+        ],
+        "is_2d": false,
+        "mode": "slice",
+        "slice": {
+          "origin": [
+            0,
+            0,
+            -0.04
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ]
+        },
+        "color": {
+          "field": "U",
+          "component": "Magnitude",
+          "range": [
+            0,
+            12
+          ],
+          "data_range": [
+            0.0088479,
+            7.8033
+          ]
+        },
+        "view": "+z",
+        "image": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424/images/U_slice_1.2_1793590737.png"
+      }
+    }
+  ]
+}

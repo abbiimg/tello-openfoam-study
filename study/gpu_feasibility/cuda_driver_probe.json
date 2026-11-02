@@ -1,0 +1,84 @@
+{
+  "kind": "Actual local CUDA driver/kernel probe; not a CFD benchmark",
+  "steps": [
+    {
+      "api": "cuInit",
+      "returncode": 0
+    },
+    {
+      "api": "cuDriverGetVersion",
+      "returncode": 0
+    },
+    {
+      "api": "cuDeviceGetCount",
+      "returncode": 0
+    },
+    {
+      "api": "cuDeviceGet",
+      "returncode": 0
+    },
+    {
+      "api": "cuDeviceGetName",
+      "returncode": 0
+    },
+    {
+      "api": "cuDeviceComputeCapability",
+      "returncode": 0
+    },
+    {
+      "api": "cuDeviceTotalMem_v2",
+      "returncode": 0
+    },
+    {
+      "api": "cuCtxCreate_v2",
+      "returncode": 0
+    },
+    {
+      "api": "cuMemGetInfo_v2",
+      "returncode": 0
+    },
+    {
+      "api": "cuMemAlloc_v2",
+      "returncode": 0
+    },
+    {
+      "api": "cuMemcpyHtoD_v2",
+      "returncode": 0
+    },
+    {
+      "api": "cuModuleLoadData",
+      "returncode": 0
+    },
+    {
+      "api": "cuModuleGetFunction",
+      "returncode": 0
+    },
+    {
+      "api": "cuLaunchKernel",
+      "returncode": 0
+    },
+    {
+      "api": "cuCtxSynchronize",
+      "returncode": 0
+    },
+    {
+      "api": "cuMemcpyDtoH_v2",
+      "returncode": 0
+    }
+  ],
+  "driver_version": 13040,
+  "device_count": 1,
+  "device_name": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)",
+  "compute_capability": [
+    12,
+    1
+  ],
+  "device_total_bytes": 109555161497,
+  "context_memory_free_bytes": 109326571929,
+  "kernel_result": 42,
+  "kernel_expected": 42,
+  "kernel_passed": true,
+  "cleanup_memory_rc": 0,
+  "cleanup_module_rc": 0,
+  "cleanup_context_rc": 0
+}

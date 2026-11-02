@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------
+A call to mkdir was unable to create the desired directory:
+
+  Directory: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/tmp/ompi.abby-spark.999
+  Error:     Permission denied
+
+Please check to ensure you have adequate permissions to perform
+the desired operation.
+--------------------------------------------------------------------------
+[abby-spark:172589] [[37379,0],0] ORTE_ERROR_LOG: Error in file ../../../orte/util/session_dir.c at line 107
+[abby-spark:172589] [[37379,0],0] ORTE_ERROR_LOG: Error in file ../../../orte/util/session_dir.c at line 346
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  orte_session_dir failed
+  --> Returned value Error (-1) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------

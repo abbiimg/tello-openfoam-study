@@ -1,0 +1,91 @@
+{
+  "description": "Actual finest-grid final velocity snapshots, not time-averaged flow",
+  "source_cases": [
+    {
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/fine_n4_e19.2923_d1000_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_visualization_20261101/fine_n4_e19.2923_d1000_az0000",
+      "snapshot_time_s": 1.2,
+      "source_field_hashes": {
+        "1.2/U": "7a4b300a950b9c98c2505dfd7f42d34f5578e3e7552e60d6abe2967ac0b29d73",
+        "1.2/p": "dbd2751254afc044aadec8980b7c94fda143a9e1484e2ae97b9289d39a1d7644",
+        "geometry.json": "f17e1db110a83010b7cfc167495688c12c4576fb48071c03a0a104e25edadc86"
+      },
+      "copied_field_hashes": {
+        "1.2/U": "7a4b300a950b9c98c2505dfd7f42d34f5578e3e7552e60d6abe2967ac0b29d73",
+        "1.2/p": "dbd2751254afc044aadec8980b7c94fda143a9e1484e2ae97b9289d39a1d7644",
+        "geometry.json": "f17e1db110a83010b7cfc167495688c12c4576fb48071c03a0a104e25edadc86"
+      },
+      "source_unchanged": true
+    },
+    {
+      "source_case": "/opt/openfoam-workspace/cases/tello_refinement/fine_n8_e19.2923_d1000_az0000",
+      "visualization_copy": "/opt/openfoam-workspace/cases/tello_visualization_20261101/fine_n8_e19.2923_d1000_az0000",
+      "snapshot_time_s": 1.2,
+      "source_field_hashes": {
+        "1.2/U": "24549f36e1ff8f8e4dd1f9d8c06f46d7135fd382e9585512d3d18509a2db98a1",
+        "1.2/p": "b08b3c455b71d1b993f9cbec7b431aed42d222881d90037199195241ddaf5457",
+        "geometry.json": "684ed9f04498bd92869c93858713d3c0ae14071eb3d30fc801f52933591c75cf"
+      },
+      "copied_field_hashes": {
+        "1.2/U": "24549f36e1ff8f8e4dd1f9d8c06f46d7135fd382e9585512d3d18509a2db98a1",
+        "1.2/p": "b08b3c455b71d1b993f9cbec7b431aed42d222881d90037199195241ddaf5457",
+        "geometry.json": "684ed9f04498bd92869c93858713d3c0ae14071eb3d30fc801f52933591c75cf"
+      },
+      "source_unchanged": true
+    }
+  ],
+  "renderer": "Connected OpenFOAM render tool / ParaView5.11",
+  "render_requests_for_logical_cases": [
+    {
+      "case": "fine_n4_e19.2923_d1000_az0000",
+      "field": "U",
+      "mode": "slice",
+      "time": "1.2",
+      "slice_normal": "z",
+      "slice_origin": [
+        0,
+        0,
+        -0.04
+      ],
+      "view": "+z",
+      "range": [
+        0,
+        12
+      ],
+      "colormap": "viridis",
+      "background": "light",
+      "width": 1100,
+      "height": 900,
+      "zoom": 1.8
+    },
+    {
+      "case": "fine_n8_e19.2923_d1000_az0000",
+      "field": "U",
+      "mode": "slice",
+      "time": "1.2",
+      "slice_normal": "z",
+      "slice_origin": [
+        0,
+        0,
+        -0.04
+      ],
+      "view": "+z",
+      "range": [
+        0,
+        12
+      ],
+      "colormap": "viridis",
+      "background": "light",
+      "width": 1100,
+      "height": 900,
+      "zoom": 1.8
+    }
+  ],
+  "common_crop_pixels_xy": [
+    200,
+    150,
+    900,
+    750
+  ],
+  "note": "Copy original inputs/mesh/final fields to a separate visualization case before rendering if originals are frozen."
+}

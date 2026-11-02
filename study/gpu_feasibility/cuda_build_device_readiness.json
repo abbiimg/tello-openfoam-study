@@ -1,0 +1,68 @@
+{
+  "kind": "Actual Foundation14 CUDA adapter build/device readiness; no CFD speedup result",
+  "status": "compiled_and_real_device_MPI_verified; three fresh CFD benchmarks handed to execution",
+  "openfoam": "Installed Foundation14, linuxArm64 GCC13.3, double precision,32-bit labels; global installation unchanged",
+  "source_commits": {
+    "OGL": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+    "Ginkgo": "13c9174360667ad8ae8f1d9e8523c554f2c06e7d"
+  },
+  "private_prefix": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload",
+  "cuda_sdk": {
+    "official_redistribution": "13.0.2 Linux SBSA components",
+    "nvcc_version": "13.0.88",
+    "target_architecture": "SM121",
+    "sha256_verified_compressed_bytes": 1948620464,
+    "measured_regular_unpacked_bytes": 3462441130,
+    "download_extract_elapsed_s": 299.08372223000333,
+    "merged_prefix_uses_hardlinks_to_components": true,
+    "size_note": "Regular unpacked bytes are measured logical file sizes. The merged prefix and component tree share hardlinks and must not be added as separate disk copies. Full allocated-tree traversal is deferred during controlled CFD timing.",
+    "driver_changes": false,
+    "system_package_changes": false
+  },
+  "optimized_build": {
+    "passed": true,
+    "actual_wall_s": 3461.7158401980123,
+    "max_parallel_build_jobs": 2,
+    "translation_units": 431,
+    "cuda_translation_units": 178,
+    "library": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/libOGL.so",
+    "library_sha256": "2b569ed469026d4da1fe90e76bf61982c23b850c3f4b1e4be59c22c8bd25b692"
+  },
+  "actual_device_MPI_gate": {
+    "passed": true,
+    "returncode": 0,
+    "elapsed_s": 7.4581809869996505,
+    "mpi_ranks": 2,
+    "gpu_owners": 1,
+    "owner_actual_Ginkgo_description": "CudaExecutor on device 0 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)) with host ReferenceExecutor",
+    "inactive_actual_Ginkgo_description": "ReferenceExecutor",
+    "actual_host_device_MPI_gather_scatter_tested": true,
+    "actual_CUDA_norm1_norm2_mean_kernels_tested": true,
+    "force_host_buffer": true,
+    "gpu_aware_MPI_assumed": false,
+    "unrounded_numerical_assertion_absolute_tolerance": 1e-12,
+    "console_rounding_note": "The norm2 console value uses the default6 significant digits; the native assertion checks the unrounded computed value against sqrt(222) to1e-12.",
+    "is_CFD": false
+  },
+  "fresh_benchmark_root": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101",
+  "fresh_variants": ["cpu_serial", "cpu_mpi2", "cuda_mpi2"],
+  "benchmark_inputs": "Exact same frozen922576-cell mesh and0.6 U,p, same source/controller reset/physics/time-step controls;0.6–0.62 s. Per-case input/initial/library closure hashes verified as openfoam before handoff.",
+  "benchmark_acceptance": "benchmark_acceptance.json, copied and frozen in all three cases before any fresh benchmark solver launch",
+  "benchmark_launch_owner": "Execution agent only; no CFD launched by this preparation/build task",
+  "cuda_is_production_default": false,
+  "full_CFD_accuracy_validated": false,
+  "CFD_speedup_measured_by_this_task": false,
+  "production_case_changes": false,
+  "evidence_files": [
+    "cuda_build_gate.json",
+    "cuda_link_mpi_gate.json",
+    "private_cuda_install.json",
+    "cuda_method_audit.json",
+    "cuda_runtime_audit_patch.json",
+    "foundation14_ogl_compat.patch",
+    "foundation14_ogl_cuda_runtime_audit.patch",
+    "benchmark_preparation.json",
+    "benchmark_acceptance.json"
+  ],
+  "package_policy": "Preserve small reproducible source/provenance/patch/log artifacts. Do not package SDK/build trees. No heavy builds, compression, SDK hashing or tree traversal during controlled CFD timing."
+}

@@ -1,0 +1,31 @@
+{
+  "utc": "2026-11-01T20:28:00Z",
+  "all_sixteen_pauses_reconfirmed": true,
+  "same_cfd_jobs_and_pids_preserved": true,
+  "physics_restarts": 0,
+  "controlled_manager_handoff": "Old owner safely SIGCONT then new owner SIGSTOP on identical processes; no CFD restart",
+  "post_milestone_dry_run_resumed_medium": [
+    "mediummapped_n4_e19.2923_d1000_az0000",
+    "mediummapped_n8_e19.2923_d0750_am1250",
+    "mediummapped_n8_e19.2923_d0800_am0750",
+    "mediummapped_n8_e19.2923_d0800_am1000",
+    "mediummapped_n8_e19.2923_d0800_am1250",
+    "mediummapped_n8_e19.2923_d0800_az0000",
+    "mediummapped_n8_e19.2923_d1000_az0000"
+  ],
+  "post_milestone_dry_run_kept_fine": [
+    "finemapped_n4_e19.2923_d1000_az0000",
+    "finemapped_n8_e19.2923_d0750_am1250",
+    "finemapped_n8_e19.2923_d0800_am0500",
+    "finemapped_n8_e19.2923_d0800_am0750",
+    "finemapped_n8_e19.2923_d0800_am1000",
+    "finemapped_n8_e19.2923_d0800_am1250",
+    "finemapped_n8_e19.2923_d0800_az0000",
+    "finemapped_n8_e19.2923_d0850_am0500",
+    "finemapped_n8_e19.2923_d1000_az0000"
+  ],
+  "normal_rank_cap": 16,
+  "reserved_ranks": 6,
+  "watchdog_budget_aware": true,
+  "concurrency_scope": "CPU-active cases"
+}

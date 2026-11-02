@@ -1,0 +1,80 @@
+{
+  "kind": "Geometric calculation, not CFD or a lift estimate",
+  "units": "cm",
+  "propeller_diameter": 7.62,
+  "square_d": 8.0,
+  "equal_width": 23.62,
+  "circle_orientation_deg": 22.5,
+  "circle_center_radius": 8.659137602339152,
+  "circle_nearest_spacing_at_equal_width": 6.6274169979695206,
+  "circle_width_at_equal_nearest_spacing": 26.93370849898476,
+  "square_centers": [
+    [
+      -8.0,
+      -8.0
+    ],
+    [
+      0.0,
+      -8.0
+    ],
+    [
+      8.0,
+      -8.0
+    ],
+    [
+      8.0,
+      0.0
+    ],
+    [
+      8.0,
+      8.0
+    ],
+    [
+      0.0,
+      8.0
+    ],
+    [
+      -8.0,
+      8.0
+    ],
+    [
+      -8.0,
+      0.0
+    ]
+  ],
+  "circle_equal_width_centers": [
+    [
+      8.0,
+      3.3137084989847607
+    ],
+    [
+      3.313708498984761,
+      8.0
+    ],
+    [
+      -3.3137084989847603,
+      8.0
+    ],
+    [
+      -8.0,
+      3.3137084989847616
+    ],
+    [
+      -8.000000000000002,
+      -3.31370849898476
+    ],
+    [
+      -3.3137084989847656,
+      -7.999999999999998
+    ],
+    [
+      3.3137084989847625,
+      -7.999999999999999
+    ],
+    [
+      7.999999999999998,
+      -3.313708498984766
+    ]
+  ],
+  "footprint_definition": "axis-aligned width and depth of flat swept disks"
+}

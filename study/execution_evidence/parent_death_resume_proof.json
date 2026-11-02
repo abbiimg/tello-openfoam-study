@@ -1,0 +1,11 @@
+{
+  "case": "finemapped_n8_e19.2923_d1000_az0000",
+  "solver_pid": 124577,
+  "birth_ticks": 9659610,
+  "killed_helper_pid": 142238,
+  "helper_returncode": -9,
+  "watchdog_resumed_same_solver": true,
+  "wrapper_alive": true,
+  "exit_file_absent": true,
+  "proof_passed": true
+}

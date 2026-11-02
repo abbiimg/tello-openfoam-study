@@ -1,0 +1,260 @@
+{
+  "role": "Short solver performance and numerical-equivalence probe; not a completed lift study",
+  "baseline": "/opt/openfoam-workspace/cases/tello_warm_probe/fine_n8_e19.2923_d1000_az0000",
+  "direct_coarsest": "/opt/openfoam-workspace/cases/tello_solver_probe/fine_direct_n8_e19.2923_d1000_az0000",
+  "identical_initial_and_physical_inputs": {
+    "0.6/U": true,
+    "0.6/p": true,
+    "constant/fvModels": true,
+    "constant/rotorParameters": true,
+    "system/controlDict": true,
+    "system/fvSchemes": true,
+    "system/decomposeParDict": true,
+    "constant/polyMesh/points": true,
+    "constant/polyMesh/faces": true,
+    "constant/polyMesh/owner": true,
+    "constant/polyMesh/neighbour": true,
+    "constant/polyMesh/boundary": true
+  },
+  "baseline_stats": {
+    "interval_s": [
+      0.61,
+      0.62
+    ],
+    "master_rank_cpu_seconds": 315.72153000000003,
+    "clock_seconds": 317.0,
+    "master_rank_cpu_seconds_per_simulated_second": 31572.152999999977,
+    "pressure_final_iterations_median": 15.0,
+    "pressure_final_iterations_range": [
+      12,
+      19
+    ],
+    "completed_steps": 44,
+    "diagnostic_mean_vertical_force_N": 1.292588319633654,
+    "diagnostic_mean_inferred_input_W": 19.346871606238892,
+    "final_vertical_force_N": 1.29202735,
+    "total_master_rank_cpu_seconds": 730.509713
+  },
+  "direct_stats": {
+    "interval_s": [
+      0.61,
+      0.62
+    ],
+    "master_rank_cpu_seconds": 250.83813899999998,
+    "clock_seconds": 251.0,
+    "master_rank_cpu_seconds_per_simulated_second": 25083.813899999976,
+    "pressure_final_iterations_median": 15.0,
+    "pressure_final_iterations_range": [
+      12,
+      19
+    ],
+    "completed_steps": 44,
+    "diagnostic_mean_vertical_force_N": 1.292588319633654,
+    "diagnostic_mean_inferred_input_W": 19.346871599312482,
+    "final_vertical_force_N": 1.29202735,
+    "total_master_rank_cpu_seconds": 430.646309
+  },
+  "fields": {
+    "U": {
+      "cells": 922576,
+      "norm_definition": "Unweighted internal-cell discrete L2; equal mesh in both cases",
+      "absolute_L2": 4.4103017797511045e-06,
+      "relative_L2": 2.42071213852037e-09,
+      "max_absolute_component_difference": 6.000000007944095e-08,
+      "max_absolute_vector_difference": 6.1351446233641e-08,
+      "baseline_sha256": "81f55038023794eed7e3d9b550616ba36eaa4a014ec4c54bf18a96e3dc705dfc",
+      "direct_sha256": "c71d47f8c1d3bb1f23851aefa1e3ba8eb78044521cab24d7cfda9aef1dcab310"
+    },
+    "p": {
+      "cells": 922576,
+      "norm_definition": "Unweighted internal-cell discrete L2; equal mesh in both cases",
+      "absolute_L2": 0.0001505226454816641,
+      "relative_L2": 1.1935380394622982e-07,
+      "max_absolute_component_difference": 5.999999999062311e-07,
+      "max_absolute_vector_difference": null,
+      "baseline_sha256": "f98d5261f6bd70704813a7d17077a0a87e5d5e2970c1750e8949fc15168ed22b",
+      "direct_sha256": "a3c3400383f24204ec5bebacd492b25c8db8018ff8f92241190b53b1dd5236bb"
+    }
+  },
+  "matched_interval_cpu_speed_ratio": 1.258666370507557,
+  "diagnostic_mean_vertical_force_difference_percent": 0.0,
+  "final_vertical_force_difference_percent": 0.0,
+  "timing_trend": [
+    {
+      "interval_s": [
+        0.6005,
+        0.605
+      ],
+      "baseline": {
+        "interval_s": [
+          0.6005,
+          0.605
+        ],
+        "master_rank_cpu_seconds": 141.76445976277654,
+        "clock_seconds": 142.08221628816847,
+        "master_rank_cpu_seconds_per_simulated_second": 31503.21328061737,
+        "pressure_final_iterations_median": 18.5,
+        "pressure_final_iterations_range": [
+          16,
+          24
+        ],
+        "completed_steps": 18,
+        "diagnostic_mean_vertical_force_N": 1.3048366005813046,
+        "diagnostic_mean_inferred_input_W": 19.939831098240006,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 730.509713
+      },
+      "direct": {
+        "interval_s": [
+          0.6005,
+          0.605
+        ],
+        "master_rank_cpu_seconds": 91.59596951186404,
+        "clock_seconds": 92.66346724843086,
+        "master_rank_cpu_seconds_per_simulated_second": 20354.659891525574,
+        "pressure_final_iterations_median": 18.5,
+        "pressure_final_iterations_range": [
+          16,
+          24
+        ],
+        "completed_steps": 18,
+        "diagnostic_mean_vertical_force_N": 1.3048366005813046,
+        "diagnostic_mean_inferred_input_W": 19.939831103880827,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 430.646309
+      }
+    },
+    {
+      "interval_s": [
+        0.605,
+        0.61
+      ],
+      "baseline": {
+        "interval_s": [
+          0.605,
+          0.61
+        ],
+        "master_rank_cpu_seconds": 220.53203238196627,
+        "clock_seconds": 220.6742200703608,
+        "master_rank_cpu_seconds_per_simulated_second": 44106.40647639322,
+        "pressure_final_iterations_median": 19,
+        "pressure_final_iterations_range": [
+          19,
+          20
+        ],
+        "completed_steps": 21,
+        "diagnostic_mean_vertical_force_N": 1.296192019326538,
+        "diagnostic_mean_inferred_input_W": 19.91884513224889,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 730.509713
+      },
+      "direct": {
+        "interval_s": [
+          0.605,
+          0.61
+        ],
+        "master_rank_cpu_seconds": 68.75575562291962,
+        "clock_seconds": 68.0929691100984,
+        "master_rank_cpu_seconds_per_simulated_second": 13751.151124583912,
+        "pressure_final_iterations_median": 19,
+        "pressure_final_iterations_range": [
+          19,
+          20
+        ],
+        "completed_steps": 21,
+        "diagnostic_mean_vertical_force_N": 1.296192019326538,
+        "diagnostic_mean_inferred_input_W": 19.918845137325636,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 430.646309
+      }
+    },
+    {
+      "interval_s": [
+        0.61,
+        0.615
+      ],
+      "baseline": {
+        "interval_s": [
+          0.61,
+          0.615
+        ],
+        "master_rank_cpu_seconds": 244.83548719104874,
+        "clock_seconds": 246.5312323760969,
+        "master_rank_cpu_seconds_per_simulated_second": 48967.097438209705,
+        "pressure_final_iterations_median": 16,
+        "pressure_final_iterations_range": [
+          14,
+          19
+        ],
+        "completed_steps": 21,
+        "diagnostic_mean_vertical_force_N": 1.292674060170657,
+        "diagnostic_mean_inferred_input_W": 19.356072793040585,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 730.509713
+      },
+      "direct": {
+        "interval_s": [
+          0.61,
+          0.615
+        ],
+        "master_rank_cpu_seconds": 95.05039703719913,
+        "clock_seconds": 95.32421214103636,
+        "master_rank_cpu_seconds_per_simulated_second": 19010.07940743981,
+        "pressure_final_iterations_median": 16,
+        "pressure_final_iterations_range": [
+          14,
+          19
+        ],
+        "completed_steps": 21,
+        "diagnostic_mean_vertical_force_N": 1.292674060170657,
+        "diagnostic_mean_inferred_input_W": 19.356072779187777,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 430.646309
+      }
+    },
+    {
+      "interval_s": [
+        0.615,
+        0.62
+      ],
+      "baseline": {
+        "interval_s": [
+          0.615,
+          0.62
+        ],
+        "master_rank_cpu_seconds": 70.88604280895129,
+        "clock_seconds": 70.46876762390309,
+        "master_rank_cpu_seconds_per_simulated_second": 14177.208561790245,
+        "pressure_final_iterations_median": 14,
+        "pressure_final_iterations_range": [
+          12,
+          17
+        ],
+        "completed_steps": 23,
+        "diagnostic_mean_vertical_force_N": 1.292502579096651,
+        "diagnostic_mean_inferred_input_W": 19.337670419437192,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 730.509713
+      },
+      "direct": {
+        "interval_s": [
+          0.615,
+          0.62
+        ],
+        "master_rank_cpu_seconds": 155.78774196280085,
+        "clock_seconds": 155.67578785896364,
+        "master_rank_cpu_seconds_per_simulated_second": 31157.548392560144,
+        "pressure_final_iterations_median": 14,
+        "pressure_final_iterations_range": [
+          12,
+          17
+        ],
+        "completed_steps": 23,
+        "diagnostic_mean_vertical_force_N": 1.292502579096651,
+        "diagnostic_mean_inferred_input_W": 19.337670419437192,
+        "final_vertical_force_N": 1.29202735,
+        "total_master_rank_cpu_seconds": 430.646309
+      }
+    }
+  ]
+}

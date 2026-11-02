@@ -1,0 +1,205 @@
+{
+  "rotors": 8,
+  "battery_power_W": 19.29230769230769,
+  "distance_cm": 10,
+  "tilt_deg": -2.5,
+  "level": "coarse",
+  "tag": "",
+  "diameter_m": 0.0762,
+  "radius_m": 0.0381,
+  "thickness_m": 0.012,
+  "half_thickness_m": 0.006,
+  "centers": [
+    [
+      -0.1,
+      -0.1,
+      0
+    ],
+    [
+      0.1,
+      -0.1,
+      0
+    ],
+    [
+      0.1,
+      0.1,
+      0
+    ],
+    [
+      -0.1,
+      0.1,
+      0
+    ],
+    [
+      0.0,
+      -0.1,
+      0
+    ],
+    [
+      0.1,
+      0.0,
+      0
+    ],
+    [
+      0.0,
+      0.1,
+      0
+    ],
+    [
+      -0.1,
+      0.0,
+      0
+    ]
+  ],
+  "normals": [
+    [
+      0.030843564597231896,
+      0.030843564597231896,
+      0.9990482215818578
+    ],
+    [
+      -0.030843564597231896,
+      0.030843564597231896,
+      0.9990482215818578
+    ],
+    [
+      -0.030843564597231896,
+      -0.030843564597231896,
+      0.9990482215818578
+    ],
+    [
+      0.030843564597231896,
+      -0.030843564597231896,
+      0.9990482215818578
+    ],
+    [
+      -0.0,
+      0.043619387365336,
+      0.9990482215818578
+    ],
+    [
+      -0.043619387365336,
+      -0.0,
+      0.9990482215818578
+    ],
+    [
+      -0.0,
+      -0.043619387365336,
+      0.9990482215818578
+    ],
+    [
+      0.043619387365336,
+      -0.0,
+      0.9990482215818578
+    ]
+  ],
+  "radials": [
+    [
+      -0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    [
+      0.7071067811865475,
+      0.7071067811865475,
+      0
+    ],
+    [
+      -0.7071067811865475,
+      0.7071067811865475,
+      0
+    ],
+    [
+      0.0,
+      -1.0,
+      0
+    ],
+    [
+      1.0,
+      0.0,
+      0
+    ],
+    [
+      0.0,
+      1.0,
+      0
+    ],
+    [
+      -1.0,
+      0.0,
+      0
+    ]
+  ],
+  "footprint_side_m": 0.276163745874904,
+  "projected_footprint_m": 0.276163745874904,
+  "footprint_m": 0.276163745874904,
+  "projected_footprint_xy_m": [
+    0.276163745874904,
+    0.276163745874904
+  ],
+  "forcing_footprint_side_m": 0.2766509071329216,
+  "forcing_footprint_xy_m": [
+    0.2766509071329216,
+    0.2766509071329216
+  ],
+  "forcing_z_extent_m": [
+    -0.007656187988110397,
+    0.007656187988110397
+  ],
+  "flat_footprint_side_m": 0.2762,
+  "geometric_volume_per_rotor_m3": 5.4724407742529756e-05,
+  "sum_geometric_actuator_volumes_m3": 0.00043779526194023805,
+  "mesh_cells": 248400,
+  "mesh_cells_xyz": [
+    60,
+    60,
+    69
+  ],
+  "mesh_inner_xy_cells": 42,
+  "mesh_outer_xy_cells_each_side": 9,
+  "mesh_z_cells": [
+    28,
+    21,
+    20
+  ],
+  "domain_xy_m": 0.36,
+  "domain_z_m": [
+    -0.6,
+    0.36
+  ],
+  "fine_core_halfwidth_m": 0.168,
+  "z_core_halfwidth_m": 0.042,
+  "inner_xy_cell_width_m": 0.008,
+  "inner_z_cell_width_m": 0.004,
+  "loss_model": {
+    "auxiliary_W": 0.5,
+    "esc_efficiency": 0.95,
+    "idle_W_per_motor": 0.1,
+    "motor_conversion": 0.6,
+    "axial_fraction": 0.5
+  },
+  "target_shaft_power_W": 10.231615384615383,
+  "target_air_power_W": 5.115807692307691,
+  "quadrature_subcells": 16,
+  "quadrature_subcells_xy": 16,
+  "quadrature_subcells_per_cell": 256,
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "averaging_duration_s": 0.4,
+  "averaging_start_s": 0.4,
+  "averaging_stop_s": 0.8,
+  "aircraft_mass_assumption_kg": 0.08,
+  "aircraft_weight_reference_N": 0.784532,
+  "no_added_mass_assumption": true,
+  "execution": {
+    "mpi_ranks": 2,
+    "threads_per_rank": 1,
+    "decomposition": "hierarchical (2 1 1)",
+    "start": "cold uniform rest",
+    "runner_sha256": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482"
+  }
+}

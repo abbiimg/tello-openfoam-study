@@ -1,0 +1,144 @@
+{
+  "utc": "2026-11-02T00:24:25Z",
+  "cases": [
+    {
+      "case": "finemapped_n8_e19.2923_d0800_am0500",
+      "identity": {
+        "case": "finemapped_n8_e19.2923_d0800_am0500",
+        "job_id": "Allrun-5aa723",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 136079,
+        "birth_ticks": 9980026,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0500",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 136068,
+        "cpu_ticks": 151274
+      },
+      "pause_intervals": [
+        {
+          "owner_id": "0601d07abe044bd2999eca0d53cfa380",
+          "requested_epoch": 1793561452.655368,
+          "requested_utc": "2026-11-01T19:30:52Z",
+          "reason": "Root-approved reversible pause of exactly nine fine serial refinements to prioritize layout then rotor-count pilots; preserve exact solver/controller memory",
+          "cpu_ticks_before_stop": 198845,
+          "resumed_epoch": 1793564823.7577314,
+          "confirmed_epoch": 1793561452.6579864,
+          "confirmed_utc": "2026-11-01T19:30:52Z",
+          "cpu_ticks_after_stop": 198845,
+          "resumed_utc": "2026-11-01T20:27:03Z",
+          "resume_reason": "Supervisor shutdown or exception",
+          "cpu_ticks_before_resume": 198846
+        },
+        {
+          "owner_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+          "requested_epoch": 1793564842.1462057,
+          "requested_utc": "2026-11-01T20:27:22Z",
+          "reason": "Preserve all sixteen unrelated serial refinements during layout/count pilots; afterward resume seven medium cases only, keep nine fine cases paused, and reserve six ranks for a separately authorized signed-angle batch",
+          "cpu_ticks_before_stop": 200441,
+          "resumed_epoch": 1793578884.3337626,
+          "confirmed_epoch": 1793564842.146902,
+          "confirmed_utc": "2026-11-01T20:27:22Z",
+          "cpu_ticks_after_stop": 200441,
+          "owner_transfers": [
+            {
+              "utc": "2026-11-01T22:19:12Z",
+              "old_owner": "131a9506f81747d49353ab506ad0b364",
+              "new_owner": "fd1d4c2004a74ff2a4093a2ed47cef56"
+            },
+            {
+              "utc": "2026-11-01T22:33:03Z",
+              "old_owner": "fd1d4c2004a74ff2a4093a2ed47cef56",
+              "new_owner": "fbe0d84d38c64e218ebe7d5ed133977c"
+            }
+          ],
+          "resumed_utc": "2026-11-02T00:21:24Z",
+          "resume_reason": "Staged pilots complete; resume released group within reserved rank budget",
+          "cpu_ticks_before_resume": 200441
+        }
+      ],
+      "progress": {
+        "case": "finemapped_n8_e19.2923_d0800_am0500",
+        "scheduler_state": "running",
+        "physical_time_s": 0.637137247,
+        "solver_cpu_s": 2165.40249,
+        "solver_clock_s": 19598.0
+      },
+      "inputs_unchanged": true
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0850_am0500",
+      "identity": {
+        "case": "finemapped_n8_e19.2923_d0850_am0500",
+        "job_id": "Allrun-8d4a4b",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 131285,
+        "birth_ticks": 9803462,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0850_am0500",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 131268,
+        "cpu_ticks": 327879
+      },
+      "pause_intervals": [
+        {
+          "owner_id": "0601d07abe044bd2999eca0d53cfa380",
+          "requested_epoch": 1793561452.646465,
+          "requested_utc": "2026-11-01T19:30:52Z",
+          "reason": "Root-approved reversible pause of exactly nine fine serial refinements to prioritize layout then rotor-count pilots; preserve exact solver/controller memory",
+          "cpu_ticks_before_stop": 375412,
+          "resumed_epoch": 1793564823.7514403,
+          "confirmed_epoch": 1793561452.6527193,
+          "confirmed_utc": "2026-11-01T19:30:52Z",
+          "cpu_ticks_after_stop": 375413,
+          "resumed_utc": "2026-11-01T20:27:03Z",
+          "resume_reason": "Supervisor shutdown or exception",
+          "cpu_ticks_before_resume": 375413
+        },
+        {
+          "owner_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+          "requested_epoch": 1793564842.144552,
+          "requested_utc": "2026-11-01T20:27:22Z",
+          "reason": "Preserve all sixteen unrelated serial refinements during layout/count pilots; afterward resume seven medium cases only, keep nine fine cases paused, and reserve six ranks for a separately authorized signed-angle batch",
+          "cpu_ticks_before_stop": 377185,
+          "resumed_epoch": 1793578507.7745376,
+          "confirmed_epoch": 1793564842.1453223,
+          "confirmed_utc": "2026-11-01T20:27:22Z",
+          "cpu_ticks_after_stop": 377186,
+          "owner_transfers": [
+            {
+              "utc": "2026-11-01T22:19:12Z",
+              "old_owner": "131a9506f81747d49353ab506ad0b364",
+              "new_owner": "fd1d4c2004a74ff2a4093a2ed47cef56"
+            },
+            {
+              "utc": "2026-11-01T22:33:03Z",
+              "old_owner": "fd1d4c2004a74ff2a4093a2ed47cef56",
+              "new_owner": "fbe0d84d38c64e218ebe7d5ed133977c"
+            }
+          ],
+          "resumed_utc": "2026-11-02T00:15:07Z",
+          "resume_reason": "Staged pilots complete; resume released group within reserved rank budget",
+          "cpu_ticks_before_resume": 377186
+        }
+      ],
+      "progress": {
+        "case": "finemapped_n8_e19.2923_d0850_am0500",
+        "scheduler_state": "running",
+        "physical_time_s": 0.707119922,
+        "solver_cpu_s": 4298.43285,
+        "solver_clock_s": 21799.0
+      },
+      "inputs_unchanged": true
+    }
+  ],
+  "all_study_pause_intervals_closed": true,
+  "active_solver_ranks": 16,
+  "suspended_cases": 0,
+  "physics_restarts": 0,
+  "approved_unstarted_deferrals": 15
+}

@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-01T19:20:00Z",
+  "plan_revision": 4,
+  "case": "coarserotorcountpilot_n4_e19.2923_d1600_az0000",
+  "prerequisites": [
+    "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+    "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000"
+  ],
+  "maximum_pilot_ranks": 18,
+  "base_optimization_ranks": 16,
+  "queued_optimization_dispatch": false
+}

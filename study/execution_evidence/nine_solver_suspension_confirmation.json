@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-01T19:31:11Z",
+  "solver_pids": [
+    124577,
+    124579,
+    128230,
+    128246,
+    128268,
+    128280,
+    131282,
+    131285,
+    136079
+  ],
+  "all_stopped_state_T": true,
+  "all_cpu_ticks_unchanged": true,
+  "cfd_jobs_stopped_discarding": 0,
+  "cfd_jobs_restarted": 0,
+  "same_wrapper_jobs_preserved": true,
+  "cpu_active_ranks": 9,
+  "suspended_ranks": 9,
+  "resume_after_succeeded": [
+    "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+    "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+    "coarserotorcountpilot_n4_e19.2923_d1600_az0000"
+  ],
+  "resume_rank_cap": 16,
+  "watchdog_parent_death_proof": "execution_evidence/parent_death_resume_proof.json"
+}

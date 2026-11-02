@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "recorded_utc": "2026-11-02T05:34:30Z",
+  "policy": {
+    "max_actual_solver_ranks": 16,
+    "max_active_jobs": 16,
+    "old_screening_mpi_ranks": 2,
+    "new_mapped_validation_ranks": 1,
+    "new_pressure_direct_solve_coarsest": true,
+    "pressure_final_tolerance": 1e-07,
+    "concurrency_scope": "CPU-active jobs/ranks; suspended memory holders are counted separately",
+    "new_cold_validation_ranks": 1,
+    "temporary_pilot_exception": "18 only for the three explicitly named flat pilots; now inactive"
+  },
+  "initialization_decision": {
+    "source": "Same-geometry completed coarse case, exact time0.6 U,p",
+    "start_s": 0.6,
+    "settling_until_s": 0.8,
+    "averaging_window_s": [
+      0.8,
+      1.2
+    ],
+    "controller": "Reinitialized by the unchanged source; not a full controller-state continuation",
+    "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "source_and_motor_loss_model_changed": false,
+    "scope": "Mapped/reinitialized validation family only; cold validation families start at0"
+  },
+  "interrupted_stop_instruction": {
+    "executed": false,
+    "cancelled_cases": [],
+    "reconciliation": "The prior turn was interrupted before any stop tool or stop-audit preparation; both cold fine controls completed normally to 1.2 s.",
+    "both_cold_fine_runs_retained_as_successful": true
+  },
+  "timing_interpretation": "The eight late-observed connector completion times include the delay before observation. Measured solver ClockTime and actual log timestamps, recorded in execution_resume_audit.json, distinguish this from CPU usage and solver wall time. Do not treat connector elapsed_s alone as measured solve duration.",
+  "solver_probe_evidence": [
+    "execution_evidence/tello_solver_probe_comparison.json",
+    "execution_evidence/tello_serial_vs_direct_comparison.json",
+    "execution_evidence/tello_serial_vs_baseline_comparison.json"
+  ],
+  "solver_probe_interpretation": "Numerical differences were small; timing varied with load. These short probes validate execution and numerical equivalence, not completed aerodynamic lift results or a uniform wall-time speedup.",
+  "original_33_case_audit": "execution_resume_audit.json",
+  "continuous_control_extensions": "control_changes.json",
+  "live_execution_manifest": "run_manifest.json",
+  "detached_supervisor": {
+    "job_id": "Allrun-35daac",
+    "plan": "supervisor_plan.json",
+    "live_state": "supervisor_state.json",
+    "launch": "supervisor_launch.json",
+    "source": "detached_supervisor.py",
+    "backend": "Installed OpenFOAM MCP JobManager with durable wrapper exit files",
+    "lock": "/opt/openfoam-workspace/cases/tello_execution_supervisor/supervisor.lock",
+    "scope": "Task-scoped process; no OS service/startup entry or external notifications",
+    "ownership": "Sole case dispatcher; transient assistant dispatcher disabled",
+    "extension_policy": "Only explicit case entries in a new plan revision; no arbitrary directory discovery",
+    "previous_recorded_job_id": "Allrun-35daac",
+    "plan_revision": 28,
+    "authorized_case_count": 99,
+    "authoritative_journal": "/opt/openfoam-workspace/cases/tello_execution_supervisor/journal",
+    "windows_publication": "Best-effort mirrors; a Windows reader lock cannot stop CFD dispatch",
+    "script_sha256": "79455e54bc757e22102bf919d564dc7fca83c179a7f6010d45e62f7102d919f1"
+  },
+  "initialization_families": {
+    "mapped": "Exact same-geometry coarse0.6 U,p; controller reinitialized; settle to0.8 then average0.8\u20131.2",
+    "cold": "Uniform rest at0; average0.8\u20131.2 for the new flat/signed/spacing pilots",
+    "os_resume": "SIGCONT on the identical stopped process; full live flow/controller state preserved without reinitialization"
+  },
+  "resource_scheduling": {
+    "ledger": "scheduler_pauses.json",
+    "control": "scheduling_control.json",
+    "signals": "SIGSTOP/CONT on exact serial foamRun PIDs only; no discarding CFD stop/restart",
+    "identity_checks": [
+      "explicit case whitelist",
+      "openfoam UID",
+      "exact case cwd",
+      "PID birth ticks",
+      "foamRun command",
+      "live wrapper/no exit file",
+      "one MPI rank"
+    ],
+    "guard": "Normal-exit cleanup plus detached parent-death budget-aware resume guard",
+    "benchmark_guard": "Task-scoped idle/deadline restoration of only the pre-benchmark active group",
+    "all_signals_audited": true,
+    "physics_inputs_changed_by_scheduling": false,
+    "cfds_cancelled": [],
+    "current_sample": {
+      "utc": "2026-11-02T05:34:29Z",
+      "complete": 80,
+      "cpu_active_ranks": 4,
+      "suspended_cases": 0,
+      "authorized": 99
+    },
+    "live_authoritative_state": "supervisor_state.json"
+  },
+  "actual_cuda_benchmark": {
+    "scope": "Private performance/accuracy probe0.6\u20130.62, not a completed lift-study result",
+    "evidence_manifest": "gpu_feasibility/benchmark_evidence_manifest.json",
+    "best_fresh_cpu": "cpu_mpi2",
+    "full_wall_s": {
+      "cpu_serial": 237.57867109599465,
+      "cpu_mpi2": 137.43455597100547,
+      "cuda_mpi2": 250.12985353000113
+    },
+    "gpu_full_wall_reduction_percent": -81.99924448605994,
+    "gpu_steady_throughput_ratio": 0.5262436431374927,
+    "actual_ginkgo_executor_records": [
+      "[OGL LOG]1][ExecutorHandler.hpp:170] OGL_RUNTIME_EXECUTOR rank=1 owner=0 description=ReferenceExecutor",
+      "[OGL LOG]0][ExecutorHandler.hpp:178] OGL_RUNTIME_EXECUTOR rank=0 owner=1 device_id=0 description=CudaExecutor on device 0 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)) with host ReferenceExecutor"
+    ],
+    "practical_speed_gate_passed": false,
+    "continuity_flag_retained": true,
+    "production_default": "native CPU",
+    "production_solver_switches": 0,
+    "private_benchmark_runs": 3,
+    "extra_tuning_runs": 0,
+    "fixed_host_load": "All live study Foams stopped; analyzer stopped; build/probe workers quiet; telemetry recorded",
+    "reservation": "Study cap14 plus private maximum2 = global16 during timing; normal16 restored afterward"
+  }
+}

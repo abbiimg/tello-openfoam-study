@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-01T19:36:41Z",
+  "solver_pids": [
+    124577,
+    124579,
+    124582,
+    124584,
+    128230,
+    128246,
+    128268,
+    128280,
+    128272,
+    128282,
+    128292,
+    128299,
+    131282,
+    131285,
+    136079,
+    136091
+  ],
+  "all_stopped_state_T": true,
+  "all_cpu_ticks_unchanged": true,
+  "cpu_active_ranks": 2,
+  "suspended_ranks": 16,
+  "cfd_terminations": 0,
+  "cfd_restarts": 0,
+  "watchdog_protected": true,
+  "resume_rank_cap": 16
+}

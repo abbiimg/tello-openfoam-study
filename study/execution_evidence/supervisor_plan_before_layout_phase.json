@@ -1,0 +1,1553 @@
+{
+  "revision": 2,
+  "authorized_case_count": 62,
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "max_solver_ranks": 16,
+  "max_jobs": 16,
+  "authorization": "Explicit root authorization for original33, six mapped baselines, twelve d8 plateau validations, two cold sensitivity checks, and final nine neighboring mapped validations; no circle CFD.",
+  "extension_policy": "Root may atomically add specifically authorized case entries and increment revision. Existing case entries remain unchanged. No directory-based discovery is authorized.",
+  "created_utc": "2026-11-01T18:28:36Z",
+  "supervisor_script_sha256": "cc6d3d1afeeedf9e189debf40f9e930daf1f1097a9350221f45e0447b8ab7247",
+  "cases": [
+    {
+      "case": "coarse_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 2,
+      "priority": 4000,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10,
+      "tilt_deg": 0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0800_am0750",
+      "mpi_ranks": 2,
+      "priority": 4001,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n4_e19.2923_d1000_az0000",
+      "mpi_ranks": 2,
+      "priority": 4002,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 4,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d1000_am0250",
+      "mpi_ranks": 2,
+      "priority": 4003,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10,
+      "tilt_deg": -2.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d1000_am0500",
+      "mpi_ranks": 2,
+      "priority": 4004,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10,
+      "tilt_deg": -5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d1000_am0750",
+      "mpi_ranks": 2,
+      "priority": 4005,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d1000_am1000",
+      "mpi_ranks": 2,
+      "priority": 4006,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10,
+      "tilt_deg": -10,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d1000_am1250",
+      "mpi_ranks": 2,
+      "priority": 4007,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "fine_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 2,
+      "priority": 4008,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ]
+    },
+    {
+      "case": "medium_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 2,
+      "priority": 4009,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ]
+    },
+    {
+      "case": "fine_n4_e19.2923_d1000_az0000",
+      "mpi_ranks": 2,
+      "priority": 4010,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 4,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ]
+    },
+    {
+      "case": "medium_n4_e19.2923_d1000_az0000",
+      "mpi_ranks": 2,
+      "priority": 4011,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 4,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0800_az0000",
+      "mpi_ranks": 2,
+      "priority": 4012,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8,
+      "tilt_deg": 0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0800_am0250",
+      "mpi_ranks": 2,
+      "priority": 4013,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8,
+      "tilt_deg": -2.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0800_am0500",
+      "mpi_ranks": 2,
+      "priority": 4014,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8,
+      "tilt_deg": -5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0800_am1000",
+      "mpi_ranks": 2,
+      "priority": 4015,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8,
+      "tilt_deg": -10,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0800_am1250",
+      "mpi_ranks": 2,
+      "priority": 4016,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0850_am0500",
+      "mpi_ranks": 2,
+      "priority": 4017,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.5,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0850_am0750",
+      "mpi_ranks": 2,
+      "priority": 4018,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.5,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0950_am0500",
+      "mpi_ranks": 2,
+      "priority": 4019,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9.5,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0950_am0750",
+      "mpi_ranks": 2,
+      "priority": 4020,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9.5,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0750_am0750",
+      "mpi_ranks": 2,
+      "priority": 4021,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0750_am1000",
+      "mpi_ranks": 2,
+      "priority": 4022,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -10,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0750_am1250",
+      "mpi_ranks": 2,
+      "priority": 4023,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0900_am0500",
+      "mpi_ranks": 2,
+      "priority": 4024,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9,
+      "tilt_deg": -5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0900_am0750",
+      "mpi_ranks": 2,
+      "priority": 4025,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 26,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "input_hashes": {
+        "geometry.json": "6925a6ce07cbb77cd36f7bec701100cd7ac11d460b76acc1d7f0b684bbc6d7c8",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "b2969ef9203dfc185d85cf3b1453734e4e81a132e1662f4aee94df8ed91792cd",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+        "0.6/p": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de"
+      }
+    },
+    {
+      "case": "finemapped_n4_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 27,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 4,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "input_hashes": {
+        "geometry.json": "0e7ea1e4ff7a41d5c88366613e6886b7e40a40ff2eac2258e692c6380badd68b",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "2c95f078cc8e7fb6e8044bbb3c7cd00e7556c28b02c2bbf644c45446caefa13b",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "ffcca75b277a91886eb19f246b2d45070bd3ea0fe925fcf1dc8231193eb4e478",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "bc76e8534430fb695e126388cf4e025c951483d3d0e4622ddf93ecbfc5ccc325",
+        "0.6/p": "6bddbc0d9aee665c201c560a30817c5e8854d377ea7723a66dc9d31e6270d726"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 1028,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "input_hashes": {
+        "geometry.json": "624583dcae1d2454dc3bc211c4e8f41cf9264ba4199d2ebe81a90446c587dbe2",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "75ffb3610a9790c19020e2b86b50df74722263433bea3c1acba4bffccb254573",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "82be2bce144124f42f17c7fafffff4d19a836c9bf014dd2101d1ee91f755e12b",
+        "0.6/p": "9a03cfcffc95071d80d074b4536f7763e6ee6392ee61ee4f7d3a79a535868f31"
+      }
+    },
+    {
+      "case": "mediummapped_n4_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 1029,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 4,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "input_hashes": {
+        "geometry.json": "4715bd3cfd9583f8fc3846a08327c2aee93bcaea7ac088f05a751fd8592d70a7",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "2c95f078cc8e7fb6e8044bbb3c7cd00e7556c28b02c2bbf644c45446caefa13b",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "c69196d6a2c8ed38f1aa1922577fe723f7fcd15a58fd2d576630e3c17c0b1fb5",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "7925cc54d8e132a46d78b6d124397ec232a731a5d635966ead371b3395310a03",
+        "0.6/p": "68794430cd35d464d98bb1c38ea523ee52d5c9175e476a90db71269e695ae6ba"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0800_am0750",
+      "mpi_ranks": 1,
+      "priority": 30,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "65a037909b134b89a0e848665fd2232e687b163ce2c6c25699f795ed383a9e6d",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1355e75c38235cb9d59f2b9fbbf5a0598c095177b55e271f7c50deb06b88e859",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "06492927e1c7b8c5869654a1bfd75854d91eedefe6c31b39a9d074e83c29e110",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "abc1763fe67728d320065e643666b6ee2c15d47641731851c1b1d9a27706cd28",
+        "0.6/p": "8d600967bf03f56a2fa2bad873fa5333bd3750abf48485e9b2540a23610f280e"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0800_am1000",
+      "mpi_ranks": 1,
+      "priority": 31,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -10.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "5d902ccbdbeede5a077907a0e54a16e98e3f6b59116127eb7208cc758ef49bd4",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "1b7b44996da0bedd34f3bf560a6438eea7b7d675a86c7098e2b38ae2d69d947f",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "1caa999b1192ee877bdc93040b2b3ee1c2a082d751d9226282e3094283b25908",
+        "0.6/p": "0a433ff28b94fa05874ff57ecb3ef7b4e83045b9ca810ded574e493603d0ca65"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0800_am1250",
+      "mpi_ranks": 1,
+      "priority": 32,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "27c1beaaa637b1ddcfe76701fe38cf6055ff905912cf18b2c654eefba38b2dae",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "8a22e7c0aa6f334f5df9ada2ccae0fafb9354a59fdaad94a49149c0a2dd73600",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "bb091bdaa5213d9b50290ae5f8ba5d31f5e6acc29c7573811811b500cfc016e7",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "45ae4994669ee4a7d08f5f9b8e45d14aed7fd0de3072faa19e977425b58c340e",
+        "0.6/p": "f3e8cbe19c28499398a98163b3adf03c30486473f0139745e482fbdaceb53500"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0800_az0000",
+      "mpi_ranks": 1,
+      "priority": 33,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1756134ec25fd0d5f9a44f3f44d51e248b671c6d340794c9758bdffa37b8543f",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "035fc19e5f06bda21a3c8e0789d714551da7b9136455c37900802c3b85d85537",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "9e13a9e6021bee8364f2fa23c4d8fbe008e61182068d7aaf8b92679e8b129d16",
+        "0.6/p": "7e657ccc6738c515edd2e5b20504704447fe1b8ce0de7ec12a376d7fd62a2745"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0800_am0750",
+      "mpi_ranks": 1,
+      "priority": 1034,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "706f9ba1ef11abed904bd97f5134d62321fa356dd36f31d0a39e2a6903b386e9",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1355e75c38235cb9d59f2b9fbbf5a0598c095177b55e271f7c50deb06b88e859",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "8f532e26482e2adad53c68d238cd0ddb15b22372cee835424c313a15d0fa3b37",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "8d1cbe46b3ec253ed6c72980a291fd3d2ef85b9f56730d5a012bb96277f4a092",
+        "0.6/p": "8d7cd52ddfa9efd395f729f0d129df6df374d1d8e587aac370b756965e9c82f1"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0800_am1000",
+      "mpi_ranks": 1,
+      "priority": 1035,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -10.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "f41bce98d2e402259d4c7d1483cddbb04cefa96156468edd1ccb33bcb0851b9e",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "5d902ccbdbeede5a077907a0e54a16e98e3f6b59116127eb7208cc758ef49bd4",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "9b4c00e88b93d721dc0347eab8c0c4ea65c245bf45c80da20ab11419f31003a3",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "6b75511a85f51e497d0658f4a91f27e8e1f538c3584bac6afc884dd2f08b2e26",
+        "0.6/p": "79ee609e2dd30576d40e7ba64a80b5a3306a5ad82f1d530058c6e12a9a6f8ff1"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0800_am1250",
+      "mpi_ranks": 1,
+      "priority": 1036,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "9c3a1108102b684d08ffa3545c764b01098cbcebca4da5173304f0a3234e21bc",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "8a22e7c0aa6f334f5df9ada2ccae0fafb9354a59fdaad94a49149c0a2dd73600",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "9d7c04766841032573905e211d674ed94995e863b91970c39f9a7b372015d9c5",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "49ddb5ed2d350fc7d5e8c9ed15df700eae48f335017a4e7c8fad5f796bcc71e6",
+        "0.6/p": "4d8316c6fe22182f3c9072c7f1633feca6eeb88b6f31701a94e0da891a322a03"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0800_az0000",
+      "mpi_ranks": 1,
+      "priority": 1037,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "d0e5fe7a0c2f1f4181e0511b65f1a3b7f7e133952e19633279dc773bc00b7464",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1756134ec25fd0d5f9a44f3f44d51e248b671c6d340794c9758bdffa37b8543f",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "83e530ba7cc9d6e741bce0c67140aef1a2b95cc332692925818b00c0cb6e890a",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "0a4a707e8c9d676b342ae0b121d2d5fee7c64183b3eaee8a0a7f80c9d82af55d",
+        "0.6/p": "2f56f71de717ac63266d8068f2e6d2f71adcab8aeaeb63c554dc44d579b68be0"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 2038,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "input_hashes": {
+        "geometry.json": "2ea8075a1f26b7b47b62b3ca68deced12f96101e0c1cc48f76d61373cc1fcbce",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "654e1411bcce41f2d773337e13da1bff7d285f65e32106f721bb9999138c16e5",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "78e385d32aa9352cb28ed817f0ef96ac9b08bba3980b94328afc23673017ce89",
+        "0.6/p": "1fe694c2a38518f7b27a5b43771e1489e7cbdca6c52006d8f2ab5f85db0aa07a"
+      }
+    },
+    {
+      "case": "coarsemapped_n4_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 2039,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 4,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "input_hashes": {
+        "geometry.json": "610a19fcc3ab738c5e8600cf5c642db224b1bde9977a8e4f00733dba4cf069ae",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "2c95f078cc8e7fb6e8044bbb3c7cd00e7556c28b02c2bbf644c45446caefa13b",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "c1ebbfdb3c0a35d943cc5917e334e0cbe2c34de9a5a9442de5cf5fe8b1e1a9f7",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "2998fa64ec6cb3b7187c489abd54741907de6c192e197b89bdee6c7e907dcd5c",
+        "0.6/p": "994e606ce414743deb1ab58cc2802c48e3c171aeee1b1f25a0e584f97e33cdad"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0750_am1250",
+      "mpi_ranks": 1,
+      "priority": 40,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "58fb8890c7aa52d30d7a3364398372e4f70759d978941ae8bc414de1145fad82",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "e0d6d1a51ed83d7683b90e6b2608cbdbaccc27c9cb7ea2601410e7e494682779",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "e07a9a5e40c729ac24f9339363b5da54fe0512560d1f5b391d7a445796d9babc",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "0b848157146fe147a91a8381b93522a65d69713798f93641a611544d76822702",
+        "0.6/p": "5d3d1db38af16e57f3b9d03e9e5253e8a769f32c4b9227288f1bfc57cbb04a7b"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0850_am0500",
+      "mpi_ranks": 1,
+      "priority": 41,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 8.5,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "ade793dd61e0f8f44bbcf4575850d49ab1acf7c46ac4a09b8b7cb79802f8d762",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "ecef5c027cf93848b3eec8c0b75ffa4a55691be37006547e847c3a8ed19d81fd",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "0c3e670da10fad2e757c6ee64a993529e4584b7dfb0360dbfb24b1ef4003dc56",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "fca5e367d7adb1f61b75ce75d819a79d229c8e35d9efc2a39b390bee206db7ba",
+        "0.6/p": "2ec833d070574fc5f6b39a8c2e5953b32c094d8f755d8de25ca6e66f3ca10996"
+      }
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d0800_am0500",
+      "mpi_ranks": 1,
+      "priority": 42,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "fine",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "b96c0a2cc1d2c7f53ff1a48d65c615d48972434c04bee9de2b9a499398b8c7bd",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "7a408cbf92a81bc10007ebf5751df2be10da5e51223480f6e0966e0ef5e44cd6",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "4b755927f4140a34e64d7bd230708c0dc4be3d1f4225c686ba514efc0de651a1",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "76db20a9f36fba755d32da511b14ab45f6a4bc0787ce808c98114ab08662bc9b",
+        "0.6/p": "2308c7b64beb2a5b341ad82c0ec33bd64cc353d1944fac76ef55990c09bae0a0"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0750_am1250",
+      "mpi_ranks": 1,
+      "priority": 1043,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "492b27f083ef7b249ac952a8af9dea6423d241a6986230a705625e6b55b13061",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "e0d6d1a51ed83d7683b90e6b2608cbdbaccc27c9cb7ea2601410e7e494682779",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "5c292abed63d4617aec702d95c40b76756d5d7d755fe292d4a8c12882c77cfea",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "44ba99266c2b38a26f964bcd5d5e1581d1566737dd42458ad5c653f4abb9eedc",
+        "0.6/p": "5a8345d7e3e96df54334c42d96e33e77cfb63662bd8494c9f17210265b379c4d"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0850_am0500",
+      "mpi_ranks": 1,
+      "priority": 1044,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.5,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "d1e49afcf6e9eba76584c5f084d1b46b35c2f48316dd6c3580ed0f99f51dfcce",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "ecef5c027cf93848b3eec8c0b75ffa4a55691be37006547e847c3a8ed19d81fd",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "7b6be168f3f401ef7538543293784d3e3aaaff49222ba5a9c788f282818e4795",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "1ce03746b40df98473c31b46b679a718ffb2319828b3cea8eb3fc62ef2dd15db",
+        "0.6/p": "abe4b4fbb0609d4ecbfa2a531fe7ef2ddaa3f5403ae4a1d1338c97e87a1ab313"
+      }
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d0800_am0500",
+      "mpi_ranks": 1,
+      "priority": 1045,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "1e16ec24a143a68c67bab304b4090f920d4f6983f0bb13f6601873cce1e741eb",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "7a408cbf92a81bc10007ebf5751df2be10da5e51223480f6e0966e0ef5e44cd6",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "72934ad7e8e5641f5c79a7e6fd913b3f4983b26ca9f17923d89bd3e98ba4d163",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "1c891d8f0674904b6642b9067a2e269f17d420a38abd2cc382a83ad3055e1829",
+        "0.6/p": "cfad81c9d8a7dd6f4ee17df1d880920fb486111194f812c0fd299765551ec979"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0800_am0750",
+      "mpi_ranks": 1,
+      "priority": 2046,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -7.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "11c0671de1066d208a22f2753370ad69ee02c7f866cf30cb9a4f5f113f153265",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1355e75c38235cb9d59f2b9fbbf5a0598c095177b55e271f7c50deb06b88e859",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "6bcfec97dcb153d8f22fe389a97b04336cd0a3e0be299fd2f82837e6ab0a2c76",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "2b7d7e958cacfb20169029ac04735a24238d3fa5ee5df8694a3316688625464c",
+        "0.6/p": "b91f8f15b806627a28d6e8d74acd8b291e8a7a0c4b52ad7f61573e2eeccb9ea9"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0800_am1000",
+      "mpi_ranks": 1,
+      "priority": 2047,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -10.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "ead8d18a0a18cb048365c26e20bea6bd8b805065b57bb63f1ac415588531d779",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "5d902ccbdbeede5a077907a0e54a16e98e3f6b59116127eb7208cc758ef49bd4",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "ea9935e175ff5bf25c732473f046113e4f41c51edb608facbbce68a5b5497f41",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "2c9e8bd3fd1d6a1afa59450babe147294a48cdd5df647de7148e9fdbb3f1e935",
+        "0.6/p": "3c52266f644cef55eb2afc57dfe17068ca6678bc82fe54db94e798b50df164e7"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0800_am1250",
+      "mpi_ranks": 1,
+      "priority": 2048,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "8da8d0c57c333cb2fed2e26fd35455ece634ba5c6ac2dfa6cd531b0061397852",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "8a22e7c0aa6f334f5df9ada2ccae0fafb9354a59fdaad94a49149c0a2dd73600",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "ac492b0373372fe415e19e594ce1446168e53fafddd065bafd9b97bf34913dc2",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "388c2fd9e97f4a8bc13906376a8e8999ed54d76f805543bc72d78afb3a85c93c",
+        "0.6/p": "b80f75eaa5b4a94f3e343af62e634a9cc6a676b19c122adcadbd339ed56ddd63"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0800_az0000",
+      "mpi_ranks": 1,
+      "priority": 2049,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "de3aeedab6976acff2843b10f2afdc827cfe739d878922356451fa5f20dbc7a0",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1756134ec25fd0d5f9a44f3f44d51e248b671c6d340794c9758bdffa37b8543f",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "3b3c569fc2f13c1c82618440dce3c4a14e2580456a1e25bfdcaec3c30c773ce2",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "0318d336e0cad25f1bee0885d195377ff8fd48b5e290cf343d244d493d8d7763",
+        "0.6/p": "49f13d9baa65a83bdf09b7ec1f8faa747ac1cfc5c08f9568557abcccd92dfa85"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0750_am1250",
+      "mpi_ranks": 1,
+      "priority": 2050,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "6862dcaa6c7a5999a4affee833a1d972228e9e927ea65f7f59454d58ee208a16",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "e0d6d1a51ed83d7683b90e6b2608cbdbaccc27c9cb7ea2601410e7e494682779",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "c00279b0d52e6840ec4d01065051d5278a0c496dfaca03deff15df15ea5b3fb6",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "f704b8828325fd4b0d62ae1108a3951b8b8f76b3440d5fecec36ef93859bcd2d",
+        "0.6/p": "15a2cc41b573a7a256860063794fd71fd5802b4bf9da69fd89835bce4db3902d"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0850_am0500",
+      "mpi_ranks": 1,
+      "priority": 2051,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.5,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "6c21e42cf517872f6e5bd24b04921e827a8bd2fd5dd31c8e0d81b9fd5c544ecb",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "ecef5c027cf93848b3eec8c0b75ffa4a55691be37006547e847c3a8ed19d81fd",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "b3ac8da62ac339671211bc20be20ce93112700de2792ac6d312d7c89642fcba3",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "c6217b94c9f3008bc99052fe2d7b9cd397da7d983e7b4688e44c40dbbfac4f93",
+        "0.6/p": "7fff042cd46cd0b634ed00b541274e4bc32f1c32975036e247611329f1b6c659"
+      }
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d0800_am0500",
+      "mpi_ranks": 1,
+      "priority": 2052,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -5.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_neighbor_preparation.json",
+      "input_hashes": {
+        "geometry.json": "a2ded942b4d4697d996570aa0aed3b0751014fdafb1ff1d1229a12a91c92933f",
+        "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "7a408cbf92a81bc10007ebf5751df2be10da5e51223480f6e0966e0ef5e44cd6",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+        "initialization.json": "7527c3e3bd0a59adbce5898a9ee6776ff055c79390a5a9de05bf7b8c6b6cabe0",
+        "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+        "0.6/U": "93a2ce1b3b8b940deb765ef2574f0e35f91dc4eccb7438470047b9be82843192",
+        "0.6/p": "a96ae5341f13085f581079f3055149b4a8ab441bab13250d02fcc92fbd3fd047"
+      }
+    },
+    {
+      "case": "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+      "mpi_ranks": 1,
+      "priority": 3053,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 10.0,
+      "tilt_deg": 0.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "7dd4c570bf102b5dc17c80f62e16a5d81ba7d76e42dbf92def4b7ebe0dac0bfc",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      }
+    },
+    {
+      "case": "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+      "mpi_ranks": 1,
+      "priority": 3054,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "medium",
+      "rotors": 8,
+      "distance_cm": 8.0,
+      "tilt_deg": -10.0,
+      "averaging_window_s": [
+        0.7999999999999999,
+        1.2
+      ],
+      "readiness_journal": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_peak_validation_preparation.json",
+      "input_hashes": {
+        "geometry.json": "d6c46e65194cac2deca83e42e7ed2970157da26c3d30df5e82e5737d22f0e2a6",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "5d902ccbdbeede5a077907a0e54a16e98e3f6b59116127eb7208cc758ef49bd4",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0900_az0000",
+      "mpi_ranks": 2,
+      "priority": 4055,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9,
+      "tilt_deg": 0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "5d7a22ee1d388c75f5edee1f64bbb69658b3dc8120abdc1995dfda4398f4939f",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "13afe9832ab0fc38ec646f58ecc26fbee8071fbfdf95ed4aa064f3a4b0f0357c",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0900_am0250",
+      "mpi_ranks": 2,
+      "priority": 4056,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9,
+      "tilt_deg": -2.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "ec47e36619e78545f2b91e28053883dc0397b5a50e657d3e417986ac2c96f250",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "0f307081621616d7c6b389aaabb92d197896eba6e1e17c99768cebd3c3b0914a",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0900_am1000",
+      "mpi_ranks": 2,
+      "priority": 4057,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9,
+      "tilt_deg": -10,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "2c62411a50ba86d5ff8816eb6494bb24de789aebe69cf7a3b63046a79734541a",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "1519d5873d77d266c989e4a49b1ea94100327ed53cc40d2ae3d2a6348573dd70",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0900_am1250",
+      "mpi_ranks": 2,
+      "priority": 4058,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 9,
+      "tilt_deg": -12.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "b325609fc555624311681f265e912b7b83982d62a32837f09e8afa12cceb149b",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "01e13e4b4151c94e64006acdf3d4f2bf4c96480dc2548cf4fe5622cc199f7d76",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0750_az0000",
+      "mpi_ranks": 2,
+      "priority": 4059,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": 0,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "6ada1ae8963ca9a28d66bae84b55ebe005b39dd2692fae778c2ef87aa8e26be7",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "329a23b60b070f2f3db599297390b86cc0f0385b307565521de05a87bb04c69c",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0750_am0250",
+      "mpi_ranks": 2,
+      "priority": 4060,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -2.5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "09b004f8337931419cd93e5dc4836789b03a8e027cf5929275d7670f20c97abc",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "11b2ec9024f876485960731a37d5854d174ccc8f81cc59dc7bd266907d610422",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    },
+    {
+      "case": "coarse_n8_e19.2923_d0750_am0500",
+      "mpi_ranks": 2,
+      "priority": 4061,
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "level": "coarse",
+      "rotors": 8,
+      "distance_cm": 7.5,
+      "tilt_deg": -5,
+      "averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "input_hashes": {
+        "geometry.json": "cbc37d12e8e6f26d5850c3b01959bceedc766b45fe0ad5850eef67dfc3d183e4",
+        "Allrun": "d7c9adae708ac495d7142d319fc3279eab6db62838d6126efb8ab7b1718f7482",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "363bcc954184ca01ad928fc84ea78019546bda009fb2d2baeefcd7d38cd9b0e5",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "43b6026090f9800d6814a9142400091a2c46e7c70a4b659f057bc21c40121bc9",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "6859187c3b969346ed8a7871c669d5bea8845b85e8e0854a1d5f0e0d5e994841",
+        "system/decomposeParDict": "f0735b39cbea47a1a72dd8b1b6f5935025f80f126c50b759ffdc60eae5f1a8e6"
+      }
+    }
+  ],
+  "runtime_hardening": "Authoritative runtime journal on Linux; Windows publication retries and defers without blocking dispatch. Case authorization and physics unchanged."
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "Actual private optimized SM121 CUDA Ginkgo/OGL build; no CFD",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+    "--build",
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda",
+    "--target",
+    "OGL",
+    "--parallel",
+    "2",
+    "--",
+    "-Otarget"
+  ],
+  "max_build_cpus": 2,
+  "time_limit_s": 5400,
+  "elapsed_s": 3461.7158401980123,
+  "returncode": 0,
+  "timed_out": false,
+  "library": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/libOGL.so",
+  "library_exists": true,
+  "no_global_changes": true,
+  "no_cfd_launched": true,
+  "compile_graph_units": 431,
+  "cuda_units": 178,
+  "planning_gate": 3604.777650759894,
+  "library_sha256": "2b569ed469026d4da1fe90e76bf61982c23b850c3f4b1e4be59c22c8bd25b692"
+}

@@ -1,0 +1,137 @@
+{
+  "utc": "2026-11-02T06:09:45Z",
+  "summary": {
+    "authorized": 99,
+    "complete": 81,
+    "active_solver_ranks": 3,
+    "suspended_cases": 0,
+    "eligible_queued": 0,
+    "errors": []
+  },
+  "cases": [
+    {
+      "case": "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+      "level": "fine",
+      "rotors": 8,
+      "physical_time_s": 1.17988679,
+      "recent_window_wall_s": 602.0,
+      "recent_window_cpu_s": 602.4268000000011,
+      "cpu_per_wall": 1.0007089700996696,
+      "physical_s_per_wall_s": 3.684986710963467e-05,
+      "remaining_h_at_recent_rate": 0.15161527614619216,
+      "utc_finish_at_recent_rate": "2026-11-02T06:18:51Z"
+    },
+    {
+      "case": "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
+      "level": "medium",
+      "rotors": 8,
+      "physical_time_s": 0.881410925,
+      "recent_window_wall_s": 599.0,
+      "recent_window_cpu_s": 598.6006499999999,
+      "cpu_per_wall": 0.9993333055091818,
+      "physical_s_per_wall_s": 0.00011733424540901495,
+      "remaining_h_at_recent_rate": 0.7542296366187602,
+      "utc_finish_at_recent_rate": "2026-11-02T06:55:00Z"
+    },
+    {
+      "case": "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131",
+      "level": "fine",
+      "rotors": 8,
+      "physical_time_s": 0.70454716,
+      "recent_window_wall_s": 601.0,
+      "recent_window_cpu_s": 599.95325,
+      "cpu_per_wall": 0.9982583194675542,
+      "physical_s_per_wall_s": 3.877488851913465e-05,
+      "remaining_h_at_recent_rate": 3.5493535673474153,
+      "utc_finish_at_recent_rate": "2026-11-02T09:42:43Z"
+    }
+  ],
+  "current_tail_h_at_recent_rates": 3.5493535673474153,
+  "signed_coarse_tail_h_at_recent_rates": 0,
+  "selected_circle125_pair": [
+    {
+      "case": "mediumcircle_inward125_followon_circular_ring_n8_mapped_e97d1c5927e6",
+      "level": "medium",
+      "rotors": 8,
+      "physical_time_s": 0.881410925,
+      "recent_window_wall_s": 599.0,
+      "recent_window_cpu_s": 598.6006499999999,
+      "cpu_per_wall": 0.9993333055091818,
+      "physical_s_per_wall_s": 0.00011733424540901495,
+      "remaining_h_at_recent_rate": 0.7542296366187602,
+      "utc_finish_at_recent_rate": "2026-11-02T06:55:00Z"
+    },
+    {
+      "case": "finecircle_inward125_followon_circular_ring_n8_mapped_48d4c2c14131",
+      "level": "fine",
+      "rotors": 8,
+      "physical_time_s": 0.70454716,
+      "recent_window_wall_s": 601.0,
+      "recent_window_cpu_s": 599.95325,
+      "cpu_per_wall": 0.9982583194675542,
+      "physical_s_per_wall_s": 3.877488851913465e-05,
+      "remaining_h_at_recent_rate": 3.5493535673474153,
+      "utc_finish_at_recent_rate": "2026-11-02T09:42:43Z"
+    }
+  ],
+  "completed_mapped_circle_references": [
+    {
+      "case": "mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f",
+      "level": "medium",
+      "mapped_physical_duration_s": 0.6,
+      "actual_wall_h": 1.1365801137023501,
+      "active_wall_h": 1.1365801137023501
+    },
+    {
+      "case": "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+      "level": "medium",
+      "mapped_physical_duration_s": 0.6,
+      "actual_wall_h": 0.9680064425203535,
+      "active_wall_h": 0.9680064425203535
+    },
+    {
+      "case": "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "level": "fine",
+      "mapped_physical_duration_s": 0.6,
+      "actual_wall_h": 2.0116599416070513,
+      "active_wall_h": 2.0116599416070513
+    },
+    {
+      "case": "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "level": "fine",
+      "mapped_physical_duration_s": 0.6,
+      "actual_wall_h": 2.0408135924074386,
+      "active_wall_h": 2.0408135924074386
+    }
+  ],
+  "conditional_pair_projection": {
+    "medium": {
+      "completed_same_circle_reference_h": [
+        1.1365801137023501,
+        0.9680064425203535
+      ],
+      "current_same_level_rate_projection_h": [
+        1.4204435038183783
+      ],
+      "empirical_envelope_h": [
+        0.9680064425203535,
+        1.4204435038183783
+      ]
+    },
+    "fine": {
+      "completed_same_circle_reference_h": [
+        2.0116599416070513,
+        2.0408135924074386
+      ],
+      "current_same_level_rate_projection_h": [
+        4.52285665429416,
+        4.298314528600641
+      ],
+      "empirical_envelope_h": [
+        2.0116599416070513,
+        4.52285665429416
+      ]
+    }
+  },
+  "limitations": "Rate projections and empirical duration envelope, not guarantees. First60solver-clock seconds excluded from available samples. The selected inward12.5 Circle medium/fine pair is authorized and running; no additional cases inferred. No numerics, backend, or resource policy changed."
+}

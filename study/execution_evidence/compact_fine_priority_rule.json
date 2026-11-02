@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-01T22:17:54Z",
+  "case": "finemapped_n8_e19.2923_d0750_am1250",
+  "after_cases_started": [
+    "coarsespacingseed_circular_ring_n8_e19.2923_d1000_az0000_8ee7d304f5df",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d1000_az0000_84d8973bf3ac",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0866_az0000_c256546365f0",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_az0000_aab080843db1",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_am1000_8b093f1e8ad8",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_ap1000_a0f5298ab023"
+  ],
+  "resume_before_low_coverage": true,
+  "other_fine_holds": [
+    "finemapped_n4_e19.2923_d1000_az0000",
+    "finemapped_n8_e19.2923_d0800_am0500",
+    "finemapped_n8_e19.2923_d0850_am0500"
+  ],
+  "normal_rank_cap": 16,
+  "no_physics_change": true
+}

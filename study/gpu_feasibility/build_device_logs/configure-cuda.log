@@ -1,0 +1,143 @@
+-- Auto detecting accelerator devices
+-- Skip CUDA detection OGL_BUILD_CUDA=ON
+-- Skip HIP detection OGL_BUILD_HIP=OFF
+-- using OGL_GINKGO_DIR /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
+-- Found CUDAToolkit: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include (found version "13.0.88")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found NVTX: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/nvtx3
+-- Found libcudacxx: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/cmake/libcudacxx/libcudacxx-config.cmake (found suitable version "3.0.1.0", minimum required is "3.0.1.0")
+-- Found Thrust: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/cmake/thrust/thrust-config.cmake (found version "3.0.1.0")
+-- Found CUB: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/cmake/cub/cub-config.cmake (found suitable version "3.0.1.0", minimum required is "3.0.1.0")
+-- Enable custom thrust namespace for cuda
+-- Performing Test Ginkgo_C_COVERAGE_SUPPORTED
+-- Performing Test Ginkgo_C_COVERAGE_SUPPORTED - Success
+-- Performing Test Ginkgo_C_TSAN_SUPPORTED
+-- Performing Test Ginkgo_C_TSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_C_ASAN_SUPPORTED
+-- Performing Test Ginkgo_C_ASAN_SUPPORTED - Success
+-- Performing Test Ginkgo_C_LSAN_SUPPORTED
+-- Performing Test Ginkgo_C_LSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_C_UBSAN_SUPPORTED
+-- Performing Test Ginkgo_C_UBSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_CXX_COVERAGE_SUPPORTED
+-- Performing Test Ginkgo_CXX_COVERAGE_SUPPORTED - Success
+-- Performing Test Ginkgo_CXX_TSAN_SUPPORTED
+-- Performing Test Ginkgo_CXX_TSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_CXX_ASAN_SUPPORTED
+-- Performing Test Ginkgo_CXX_ASAN_SUPPORTED - Success
+-- Performing Test Ginkgo_CXX_LSAN_SUPPORTED
+-- Performing Test Ginkgo_CXX_LSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_CXX_UBSAN_SUPPORTED
+-- Performing Test Ginkgo_CXX_UBSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_HIP_COVERAGE_SUPPORTED
+-- Performing Test Ginkgo_HIP_COVERAGE_SUPPORTED - Success
+-- Performing Test Ginkgo_HIP_TSAN_SUPPORTED
+-- Performing Test Ginkgo_HIP_TSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_HIP_ASAN_SUPPORTED
+-- Performing Test Ginkgo_HIP_ASAN_SUPPORTED - Success
+-- Performing Test Ginkgo_HIP_LSAN_SUPPORTED
+-- Performing Test Ginkgo_HIP_LSAN_SUPPORTED - Success
+-- Performing Test Ginkgo_HIP_UBSAN_SUPPORTED
+-- Performing Test Ginkgo_HIP_UBSAN_SUPPORTED - Success
+-- Performing Test GKO_SIZE_T_IS_UINT64_T
+-- Performing Test GKO_SIZE_T_IS_UINT64_T - Success
+-- Could NOT find VTune (missing: VTune_EXECUTABLE VTune_LIBRARY VTune_INCLUDE_DIR) 
+-- Could NOT find METIS (missing: METIS_LIBRARY METIS_GKLIB_LIBRARY METIS_INCLUDE_DIR) 
+-- Found MPI_CXX: /usr/lib/aarch64-linux-gnu/openmpi/lib/libmpi_cxx.so (found suitable version "3.1", minimum required is "3.1")
+-- Found MPI: TRUE (found suitable version "3.1", minimum required is "3.1") found components: CXX
+-- Could NOT find cudss (missing: cudss_DIR)
+-- cuDSS 0.8.0 or newer not found — gko::ext::cuda::solver::Cudss will not be built
+-- 
+---------------------------------------------------------------------------------------------------------
+--
+--    Summary of Configuration for Ginkgo (version 2.0.0 with tag develop, shortrev 13c9174)
+--    Ginkgo configuration:
+--        CMAKE_BUILD_TYPE:                                Release
+--        BUILD_SHARED_LIBS:                               ON
+--        CMAKE_INSTALL_PREFIX:                            /opt/openfoam-workspace/gpu-feasibility/pressure-offload/install-cuda
+--        PROJECT_SOURCE_DIR:                              /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
+--        PROJECT_BINARY_DIR:                              /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo
+--        CMAKE_CXX_COMPILER:                              GNU 13.3.0 on platform Linux aarch64
+--                                                         /usr/bin/c++
+--    User configuration:
+--      Enabled modules:
+--        GINKGO_BUILD_OMP:                                OFF
+--        GINKGO_BUILD_MPI:                                ON
+--        GINKGO_BUILD_REFERENCE:                          ON
+--        GINKGO_BUILD_CUDA:                               ON
+--        GINKGO_BUILD_HIP:                                OFF
+--        GINKGO_BUILD_SYCL:                               OFF
+--      Enabled features:
+--        GINKGO_MIXED_PRECISION:                          OFF
+--        GINKGO_HAVE_GPU_AWARE_MPI:                       OFF
+--        GINKGO_ENABLE_HALF:                              OFF
+--        GINKGO_ENABLE_BFLOAT16:                          OFF
+--      Tests, benchmarks and examples:
+--        GINKGO_BUILD_TESTS:                              OFF
+--        GINKGO_FAST_TESTS:                               OFF
+--        GINKGO_BUILD_EXAMPLES:                           OFF
+--        GINKGO_EXTLIB_EXAMPLE:                           
+--        GINKGO_BUILD_BENCHMARKS:                         OFF
+--        GINKGO_BENCHMARK_ENABLE_TUNING:                  OFF
+--      Documentation:
+--        GINKGO_BUILD_DOC:                                OFF
+--        GINKGO_VERBOSE_LEVEL:                            1
+--    
+---------------------------------------------------------------------------------------------------------
+--
+--      Developer Tools:
+--        GINKGO_DEVEL_TOOLS:                              OFF
+--        GINKGO_WITH_CLANG_TIDY:                          OFF
+--        GINKGO_WITH_IWYU:                                OFF
+--        GINKGO_CHECK_CIRCULAR_DEPS:                      OFF
+--        GINKGO_WITH_CCACHE:                              OFF
+---------------------------------------------------------------------------------------------------------
+--
+--      Components:
+--        GINKGO_BUILD_PAPI_SDE:                           OFF
+--
+--  Detailed information (More compiler flags, module configuration) can be found in detailed.log
+--   
+--
+--  Now, run  cmake --build .  to compile Ginkgo!
+--
+---------------------------------------------------------------------------------------------------------
+
+Compile against FoamFoundation version of OpenFOAM
+-- 
++------------------------------------------------------------------------------+
+ 
+	    ███████      █████████  █████      
+	  ███▒▒▒▒▒███   ███▒▒▒▒▒███▒▒███       
+	 ███     ▒▒███ ███     ▒▒▒  ▒███       
+	▒███      ▒███▒███          ▒███       
+	▒███      ▒███▒███    █████ ▒███       
+	▒▒███     ███ ▒▒███  ▒▒███  ▒███      █
+	 ▒▒▒███████▒   ▒▒█████████  ███████████
+	   ▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒ 
+       -     OpenFOAM     Ginkgo     Layer
+                                       
+         Version:  Git commit: 7c3ced4-dirty
+
++------------------------------------------------------------------------------+
+ Build information:
+--	CMAKE_BUILD_TYPE = Release
+--	CMAKE_CXX_COMPILER = GNU@13.3.0
++------------------------------------------------------------------------------+
+ Third-Party dependencies:
+ -- 	OGL_GINKGO_DIR = /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
++------------------------------------------------------------------------------+
+ OGL components:
+ -- 	OGL_BUILD_CUDA = ON
+ -- 	OGL_BUILD_HIP = OFF
+ -- 	OGL_BUILD_OMP = OFF
+ -- 	OGL_BUILD_SYCL = OFF
+ -- 	OGL_BUILD_UNITTEST = OFF
++------------------------------------------------------------------------------+
+ OGL definitions:
++------------------------------------------------------------------------------+
+-- Configuring done (4.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda

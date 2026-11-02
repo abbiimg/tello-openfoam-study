@@ -1,0 +1,23 @@
+diff --git a/include/OGL/DevicePersistent/ExecutorHandler.hpp b/include/OGL/DevicePersistent/ExecutorHandler.hpp
+index 4667854..4bf578a 100644
+--- a/include/OGL/DevicePersistent/ExecutorHandler.hpp
++++ b/include/OGL/DevicePersistent/ExecutorHandler.hpp
+@@ -164,10 +164,18 @@ struct ExecutorInitFunctor {
+                 gko::CudaExecutor::get_num_devices());
+             auto out_msg = msg(executor_name_, id);
+             if (!device_id_handler_.is_owner()) {
++                const auto actual_exec = std::string("OGL_RUNTIME_EXECUTOR rank=") +
++                    std::to_string(Pstream::myProcNo()) +
++                    " owner=0 description=" + host_exec->get_description();
++                LOG_0(verbose_, actual_exec)
+                 return host_exec;
+             }
+             LOG_0(verbose_, out_msg)
+             auto ret = gko::share(gko::CudaExecutor::create(id, host_exec));
++            const auto actual_exec = std::string("OGL_RUNTIME_EXECUTOR rank=") +
++                std::to_string(Pstream::myProcNo()) + " owner=1 device_id=" +
++                std::to_string(id) + " description=" + ret->get_description();
++            LOG_0(verbose_, actual_exec)
+             return ret;
+         }
+         if (executor_name_ == "sycl" || executor_name_ == "dpcpp") {

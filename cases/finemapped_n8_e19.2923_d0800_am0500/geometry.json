@@ -1,0 +1,409 @@
+{
+  "rotors": 8,
+  "battery_power_W": 19.29230769230769,
+  "distance_cm": 8.0,
+  "tilt_deg": -5.0,
+  "level": "fine",
+  "tag": "mapped",
+  "diameter_m": 0.0762,
+  "radius_m": 0.0381,
+  "thickness_m": 0.012,
+  "half_thickness_m": 0.006,
+  "centers": [
+    [
+      -0.08,
+      -0.08,
+      0
+    ],
+    [
+      0.08,
+      -0.08,
+      0
+    ],
+    [
+      0.08,
+      0.08,
+      0
+    ],
+    [
+      -0.08,
+      0.08,
+      0
+    ],
+    [
+      0.0,
+      -0.08,
+      0
+    ],
+    [
+      0.08,
+      0.0,
+      0
+    ],
+    [
+      0.0,
+      0.08,
+      0
+    ],
+    [
+      -0.08,
+      0.0,
+      0
+    ]
+  ],
+  "normals": [
+    [
+      0.061628416716219346,
+      0.061628416716219346,
+      0.9961946980917455
+    ],
+    [
+      -0.061628416716219346,
+      0.061628416716219346,
+      0.9961946980917455
+    ],
+    [
+      -0.061628416716219346,
+      -0.061628416716219346,
+      0.9961946980917455
+    ],
+    [
+      0.061628416716219346,
+      -0.061628416716219346,
+      0.9961946980917455
+    ],
+    [
+      -0.0,
+      0.08715574274765817,
+      0.9961946980917455
+    ],
+    [
+      -0.08715574274765817,
+      -0.0,
+      0.9961946980917455
+    ],
+    [
+      -0.0,
+      -0.08715574274765817,
+      0.9961946980917455
+    ],
+    [
+      0.08715574274765817,
+      -0.0,
+      0.9961946980917455
+    ]
+  ],
+  "radials": [
+    [
+      -0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    [
+      0.7071067811865475,
+      0.7071067811865475,
+      0
+    ],
+    [
+      -0.7071067811865475,
+      0.7071067811865475,
+      0
+    ],
+    [
+      0.0,
+      -1.0,
+      0
+    ],
+    [
+      1.0,
+      0.0,
+      0
+    ],
+    [
+      0.0,
+      1.0,
+      0
+    ],
+    [
+      -1.0,
+      0.0,
+      0
+    ]
+  ],
+  "footprint_side_m": 0.23605515618516637,
+  "projected_footprint_m": 0.23605515618516637,
+  "footprint_m": 0.23605515618516637,
+  "projected_footprint_xy_m": [
+    0.23605515618516637,
+    0.23605515618516637
+  ],
+  "forcing_footprint_side_m": 0.2369559049075629,
+  "forcing_footprint_xy_m": [
+    0.2369559049075629,
+    0.2369559049075629
+  ],
+  "forcing_z_extent_m": [
+    -0.009297801987236242,
+    0.009297801987236242
+  ],
+  "flat_footprint_side_m": 0.23620000000000002,
+  "geometric_volume_per_rotor_m3": 5.4724407742529756e-05,
+  "sum_geometric_actuator_volumes_m3": 0.00043779526194023805,
+  "mesh_cells": 922576,
+  "mesh_cells_xyz": [
+    92,
+    92,
+    109
+  ],
+  "mesh_inner_xy_cells": 70,
+  "mesh_outer_xy_cells_each_side": 11,
+  "mesh_z_cells": [
+    42,
+    35,
+    32
+  ],
+  "domain_xy_m": 0.36,
+  "domain_z_m": [
+    -0.6,
+    0.36
+  ],
+  "fine_core_halfwidth_m": 0.168,
+  "z_core_halfwidth_m": 0.042,
+  "inner_xy_cell_width_m": 0.0048000000000000004,
+  "inner_z_cell_width_m": 0.0024000000000000002,
+  "loss_model": {
+    "auxiliary_W": 0.5,
+    "esc_efficiency": 0.95,
+    "idle_W_per_motor": 0.1,
+    "motor_conversion": 0.6,
+    "axial_fraction": 0.5
+  },
+  "target_shaft_power_W": 10.231615384615383,
+  "target_air_power_W": 5.115807692307691,
+  "quadrature_subcells": 16,
+  "quadrature_subcells_xy": 16,
+  "quadrature_subcells_per_cell": 256,
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "averaging_duration_s": 0.4,
+  "averaging_start_s": 0.7999999999999999,
+  "averaging_stop_s": 1.2,
+  "study_role": "validation",
+  "configured_end_time_s": 1.2,
+  "aircraft_mass_assumption_kg": 0.08,
+  "aircraft_weight_reference_N": 0.784532,
+  "no_added_mass_assumption": true,
+  "initialization_method": "mapped_coarse_fields",
+  "initialization_family": "mapped",
+  "initialization_start_time_s": 0.6,
+  "initialization_source_time_s": 0.6,
+  "initialization_source_case": "coarse_n8_e19.2923_d0800_am0500",
+  "initialization_source_case_absolute_historical": "/opt/openfoam-workspace/cases/tello_refinement/coarse_n8_e19.2923_d0800_am0500",
+  "initialization_source_case_reference": {
+    "case_name": "coarse_n8_e19.2923_d0800_am0500",
+    "archive_member_prefix": "cases/coarse_n8_e19.2923_d0800_am0500/",
+    "source_time_directory": "0.6",
+    "historical_study_root_name": "tello_refinement",
+    "original_source_time_fields_in_archive": "not guaranteed; hashes identify the original fields",
+    "initialized_target_rerun_requires_live_source": false
+  },
+  "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+  "solver_configuration": {
+    "schema": "openfoam-foundation14-numerical-method-v1",
+    "openfoam_family": "Foundation",
+    "openfoam_major_version": 14,
+    "fvSolution": {
+      "PIMPLE": {
+        "nCorrectors": [
+          "2"
+        ],
+        "nNonOrthogonalCorrectors": [
+          "0"
+        ],
+        "nOuterCorrectors": [
+          "1"
+        ]
+      },
+      "solvers": {
+        "U": {
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "UFinal": {
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "p": {
+          "directSolveCoarsest": [
+            "true"
+          ],
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "GaussSeidel"
+          ],
+          "solver": [
+            "GAMG"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "pFinal": {
+          "directSolveCoarsest": [
+            "true"
+          ],
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "GaussSeidel"
+          ],
+          "solver": [
+            "GAMG"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        }
+      }
+    },
+    "fvSchemes": {
+      "ddtSchemes": {
+        "default": [
+          "Euler"
+        ]
+      },
+      "divSchemes": {
+        "default": [
+          "none"
+        ],
+        "div((nuEff*dev2(T(grad(U)))))": [
+          "Gauss",
+          "linear"
+        ],
+        "div(phi,U)": [
+          "Gauss",
+          "linearUpwind",
+          "grad",
+          "(",
+          "U",
+          ")"
+        ]
+      },
+      "gradSchemes": {
+        "default": [
+          "Gauss",
+          "linear"
+        ],
+        "grad(U)": [
+          "cellLimited",
+          "Gauss",
+          "linear",
+          "1"
+        ]
+      },
+      "interpolationSchemes": {
+        "default": [
+          "linear"
+        ]
+      },
+      "laplacianSchemes": {
+        "default": [
+          "Gauss",
+          "linear",
+          "corrected"
+        ]
+      },
+      "snGradSchemes": {
+        "default": [
+          "corrected"
+        ]
+      },
+      "wallDist": {
+        "method": [
+          "meshWave"
+        ]
+      }
+    },
+    "time_stepping": {
+      "application": [
+        "foamRun"
+      ],
+      "solver": [
+        "incompressibleFluid"
+      ],
+      "deltaT": [
+        "0.0001"
+      ],
+      "adjustTimeStep": [
+        "true"
+      ],
+      "maxCo": [
+        "0.90000000000000002"
+      ],
+      "maxDeltaT": [
+        "0.00080000000000000004"
+      ]
+    },
+    "decomposition": {
+      "hierarchicalCoeffs": {
+        "n": [
+          "(",
+          "1",
+          "1",
+          "1",
+          ")"
+        ],
+        "order": [
+          "xyz"
+        ]
+      },
+      "method": [
+        "hierarchical"
+      ],
+      "numberOfSubdomains": [
+        "1"
+      ]
+    }
+  },
+  "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+  "pressure_direct_solve_coarsest": {
+    "p": true,
+    "pFinal": true
+  },
+  "execution": {
+    "mpi_ranks": 1,
+    "execution_mode": "serial",
+    "threads_per_rank": 1,
+    "decomposition": "none performed; declared hierarchy (1 1 1)",
+    "start": "mapped U,p at 0.6 s; static actuator controller reinitialized",
+    "runner_sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+    "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef"
+  }
+}

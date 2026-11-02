@@ -1,0 +1,6 @@
+FoamFile { format ascii; class dictionary; object controlDict; }
+application foamRun; solver incompressibleFluid;
+startFrom startTime; startTime 0; stopAt endTime; endTime 0.8; deltaT .0001;
+writeControl adjustableRunTime; writeInterval .1; writeFormat ascii; writePrecision 9;
+writeCompression off; timeFormat general; timePrecision 8; runTimeModifiable true;
+adjustTimeStep yes; maxCo .9; maxDeltaT .0008;

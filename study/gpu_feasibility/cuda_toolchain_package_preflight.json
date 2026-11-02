@@ -1,0 +1,174 @@
+{
+  "kind": "Official ARM64 package availability/size preflight; no package downloaded or installed",
+  "manifest_url": "https://developer.download.nvidia.com/compute/cuda/redist/redistrib_13.0.2.json",
+  "manifest_sha256": "fce66717a81c510ffeb89ecc3e79849ab34af3b80139f750876d9033e31d71c2",
+  "packages": {
+    "cuda_nvcc": {
+      "version": "13.0.88",
+      "relative_path": "cuda_nvcc/linux-sbsa/cuda_nvcc-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "01b01e10aa2662ad1b3aeab3317151d7d6d4a650eeade55ded504f6b7fced18e",
+      "md5": "4defe04ac10e7231bfa63cbd72dd8e21",
+      "size": "22383012"
+    },
+    "cuda_cudart": {
+      "version": "13.0.96",
+      "relative_path": "cuda_cudart/linux-sbsa/cuda_cudart-linux-sbsa-13.0.96-archive.tar.xz",
+      "sha256": "e2c78564330a09d890f98a066a2082a32c78256ffcc6bccca1696bd2abbaf445",
+      "md5": "ff3140b2fb00f583295484fe36f77995",
+      "size": "1489276"
+    },
+    "cuda_crt": {
+      "version": "13.0.88",
+      "relative_path": "cuda_crt/linux-sbsa/cuda_crt-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "c03b92941ba7bf58a4992231ceb572477784ef450ce678f6545bed02392cae50",
+      "md5": "3db54b1fb543f00c1cca085569bffd9e",
+      "size": "79916"
+    },
+    "cuda_cccl": {
+      "version": "13.0.85",
+      "relative_path": "cuda_cccl/linux-sbsa/cuda_cccl-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "eca22ded176804a78afcba3fe1909e7d473366ee1cb9f3784080df23bc8e74d5",
+      "md5": "e50b07ae0a9920ce07a107a5c7030157",
+      "size": "990368"
+    },
+    "libcublas": {
+      "version": "13.1.0.3",
+      "relative_path": "libcublas/linux-sbsa/libcublas-linux-sbsa-13.1.0.3-archive.tar.xz",
+      "sha256": "18832d4798b0a4fc75fa90d58c1780203713ca2e35751a2492262e58f2620c50",
+      "md5": "5773abd5980d9a7af9c0732700287156",
+      "size": "1084803912"
+    },
+    "libcusparse": {
+      "version": "12.6.3.3",
+      "relative_path": "libcusparse/linux-sbsa/libcusparse-linux-sbsa-12.6.3.3-archive.tar.xz",
+      "sha256": "50c9fb74e8468af559150f3f072cc2793a5ff70792fa79962146096385cf7346",
+      "md5": "fed1a66a5af73ab124faf01e886c4470",
+      "size": "308854880"
+    },
+    "libcurand": {
+      "version": "10.4.0.35",
+      "relative_path": "libcurand/linux-sbsa/libcurand-linux-sbsa-10.4.0.35-archive.tar.xz",
+      "sha256": "12a0afe1ee73e806924fc6c9bdd33a47a970d31967a634ec9ab2f0662a502ed2",
+      "md5": "1aa3ad816d7bd327c2561712426c471a",
+      "size": "87176908"
+    },
+    "libcusolver": {
+      "version": "12.0.4.66",
+      "relative_path": "libcusolver/linux-sbsa/libcusolver-linux-sbsa-12.0.4.66-archive.tar.xz",
+      "sha256": "882c480bedd5ec6e416fe0a9edb7bfdd78f6ffa885310870e4a04d8fce8e655d",
+      "md5": "c43e9ec46e165d5af53df9353eee9512",
+      "size": "291337460"
+    },
+    "cuda_nvtx": {
+      "version": "13.0.85",
+      "relative_path": "cuda_nvtx/linux-sbsa/cuda_nvtx-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "6f50a3729091aa5a0ae61cda979ea020e09aeb7c07cec0c8962949599d2b72c6",
+      "md5": "1a2ed71befd31ee92a91b12ee257c406",
+      "size": "94612"
+    }
+  },
+  "listed_packages_compressed_total_bytes": 1797210344,
+  "ginkgo_cuda_build_source": "https://raw.githubusercontent.com/ginkgo-project/ginkgo/develop/cmake/cuda.cmake",
+  "relevant_build_lines": [
+    "find_package(CUDAToolkit REQUIRED)",
+    "find_package(NVTX REQUIRED)",
+    "    find_package("
+  ],
+  "standard_ginkgo_cuda_backend_packages": {
+    "cuda_nvcc": {
+      "version": "13.0.88",
+      "relative_path": "cuda_nvcc/linux-sbsa/cuda_nvcc-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "01b01e10aa2662ad1b3aeab3317151d7d6d4a650eeade55ded504f6b7fced18e",
+      "md5": "4defe04ac10e7231bfa63cbd72dd8e21",
+      "size": "22383012"
+    },
+    "libnvvm": {
+      "version": "13.0.88",
+      "relative_path": "libnvvm/linux-sbsa/libnvvm-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "f94feb1a0da0c55ceb5c7f039c1f0ffad5d162e0fedfb565efb87771187ddcfd",
+      "md5": "b9730ee7e25db76caa843c858af31d98",
+      "size": "38570872"
+    },
+    "cuda_cudart": {
+      "version": "13.0.96",
+      "relative_path": "cuda_cudart/linux-sbsa/cuda_cudart-linux-sbsa-13.0.96-archive.tar.xz",
+      "sha256": "e2c78564330a09d890f98a066a2082a32c78256ffcc6bccca1696bd2abbaf445",
+      "md5": "ff3140b2fb00f583295484fe36f77995",
+      "size": "1489276"
+    },
+    "cuda_crt": {
+      "version": "13.0.88",
+      "relative_path": "cuda_crt/linux-sbsa/cuda_crt-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "c03b92941ba7bf58a4992231ceb572477784ef450ce678f6545bed02392cae50",
+      "md5": "3db54b1fb543f00c1cca085569bffd9e",
+      "size": "79916"
+    },
+    "cuda_cccl": {
+      "version": "13.0.85",
+      "relative_path": "cuda_cccl/linux-sbsa/cuda_cccl-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "eca22ded176804a78afcba3fe1909e7d473366ee1cb9f3784080df23bc8e74d5",
+      "md5": "e50b07ae0a9920ce07a107a5c7030157",
+      "size": "990368"
+    },
+    "cuda_culibos": {
+      "version": "13.0.85",
+      "relative_path": "cuda_culibos/linux-sbsa/cuda_culibos-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "ab5ecee37c8adc7efbc2a88ab091de9d978924c4d7f66c3e0c42f23983a1beb3",
+      "md5": "86aa2f9aca3cddc7c61d6029ce22a5d3",
+      "size": "21444"
+    },
+    "libcublas": {
+      "version": "13.1.0.3",
+      "relative_path": "libcublas/linux-sbsa/libcublas-linux-sbsa-13.1.0.3-archive.tar.xz",
+      "sha256": "18832d4798b0a4fc75fa90d58c1780203713ca2e35751a2492262e58f2620c50",
+      "md5": "5773abd5980d9a7af9c0732700287156",
+      "size": "1084803912"
+    },
+    "libcusparse": {
+      "version": "12.6.3.3",
+      "relative_path": "libcusparse/linux-sbsa/libcusparse-linux-sbsa-12.6.3.3-archive.tar.xz",
+      "sha256": "50c9fb74e8468af559150f3f072cc2793a5ff70792fa79962146096385cf7346",
+      "md5": "fed1a66a5af73ab124faf01e886c4470",
+      "size": "308854880"
+    },
+    "libcurand": {
+      "version": "10.4.0.35",
+      "relative_path": "libcurand/linux-sbsa/libcurand-linux-sbsa-10.4.0.35-archive.tar.xz",
+      "sha256": "12a0afe1ee73e806924fc6c9bdd33a47a970d31967a634ec9ab2f0662a502ed2",
+      "md5": "1aa3ad816d7bd327c2561712426c471a",
+      "size": "87176908"
+    },
+    "libcufft": {
+      "version": "12.0.0.61",
+      "relative_path": "libcufft/linux-sbsa/libcufft-linux-sbsa-12.0.0.61-archive.tar.xz",
+      "sha256": "5361f3b22a50923204e07f7ff601150dc67aab6b0fff26c47bd3ac0a50c921a0",
+      "md5": "d4a1bd6640e13b13bc919ba6d5128290",
+      "size": "354230580"
+    },
+    "libnvjitlink": {
+      "version": "13.0.88",
+      "relative_path": "libnvjitlink/linux-sbsa/libnvjitlink-linux-sbsa-13.0.88-archive.tar.xz",
+      "sha256": "b7c25896af24ea88309301c8325449cd3d4907b3f1db4060f43a8ca8f4738cdc",
+      "md5": "3febdc80a7af025dc93a2091bb97648e",
+      "size": "49924684"
+    },
+    "cuda_nvtx": {
+      "version": "13.0.85",
+      "relative_path": "cuda_nvtx/linux-sbsa/cuda_nvtx-linux-sbsa-13.0.85-archive.tar.xz",
+      "sha256": "6f50a3729091aa5a0ae61cda979ea020e09aeb7c07cec0c8962949599d2b72c6",
+      "md5": "1a2ed71befd31ee92a91b12ee257c406",
+      "size": "94612"
+    }
+  },
+  "standard_backend_listed_compressed_bytes": 1948620464,
+  "size_note": "Official NVIDIA full archives, not an optimized shared-only install; CMake/OGL/Ginkgo source/build space is additional. cuSOLVER is not a standard Ginkgo CUDA target dependency in the inspected source.",
+  "actual_cuda_link_targets": [
+    "CUDA::cudart",
+    "CUDA::cublas",
+    "CUDA::cusparse",
+    "CUDA::curand",
+    "CUDA::cufft",
+    "nvtx::nvtx"
+  ],
+  "cuda_link_source": "https://raw.githubusercontent.com/ginkgo-project/ginkgo/develop/cuda/CMakeLists.txt"
+}

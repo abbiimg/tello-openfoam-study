@@ -1,0 +1,19 @@
+{
+  "case": "finecircle_inward125_followon_circular_ring_n8_e19.2923_d0800_am1250_e09f7d7d9ee0",
+  "status": "prepared_no_solver_run",
+  "study_role": "validation",
+  "purpose": "layout_comparison",
+  "initialization": "cold",
+  "mpi_ranks": 1,
+  "direct_coarsest_edit": {
+    "requested": true,
+    "edit": "literal p-block insertion/replacement, preserving $p",
+    "effective_after": {
+      "p": true,
+      "pFinal": true
+    },
+    "all_other_solver_entries_unchanged": true
+  },
+  "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+  "runner_sha256": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9"
+}

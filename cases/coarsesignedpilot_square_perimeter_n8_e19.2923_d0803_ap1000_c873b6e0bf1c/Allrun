@@ -1,0 +1,28 @@
+#!/bin/bash
+# Fresh cold-start serial sensitivity run; use the non-root OpenFOAM account.
+set -e
+cd "$(dirname "$0")"
+if ! command -v foamRun >/dev/null 2>&1; then
+    source /opt/openfoam14/etc/bashrc
+fi
+set -u -o pipefail
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+test "$(id -u)" != 0 || { echo "Use the non-root OpenFOAM account." >&2; exit 2; }
+if [ -e log.foamRun ] || [ -e .cold-solver-started ] || compgen -G 'processor*' >/dev/null; then
+    echo "Refusing a previously started/decomposed case." >&2
+    exit 2
+fi
+test "$(foamDictionary system/controlDict -entry startFrom -value)" = startTime
+test "$(foamDictionary system/controlDict -entry startTime -value)" = 0
+test "$(foamDictionary system/controlDict -entry stopAt -value)" = endTime
+test "$(foamDictionary system/decomposeParDict -entry numberOfSubdomains -value)" = 1
+blockMesh > log.blockMesh 2>&1
+checkMesh > log.checkMesh 2>&1
+grep -q 'Mesh OK\.' log.checkMesh
+date -u +%FT%TZ > .cold-solver-started
+foamRun > log.foamRun 2>&1
+grep -q '^End[[:space:]]*$' log.foamRun
+if grep -q 'FOAM FATAL' log.foamRun; then
+    echo "Solver reported a fatal error." >&2
+    exit 3
+fi

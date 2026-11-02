@@ -1,0 +1,44 @@
+#!/bin/bash
+# Cold-start, two-rank runner. Launch this script once, outside mpirun.
+set -e
+cd "$(dirname "$0")"
+if ! command -v foamRun >/dev/null 2>&1; then
+    source /opt/openfoam14/etc/bashrc
+fi
+set -u -o pipefail
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+
+# Preserve existing experiments and prevent accidental duplicate launches.
+if [ -e log.foamRun ] || [ -d processor0 ] || [ -d processor1 ]; then
+    echo "Refusing to overwrite a previously started case." >&2
+    exit 2
+fi
+test "$(foamDictionary system/controlDict -entry startFrom -value)" = startTime
+test "$(foamDictionary system/controlDict -entry startTime -value)" = 0
+test "$(foamDictionary system/controlDict -entry stopAt -value)" = endTime
+test "$(foamDictionary system/decomposeParDict -entry numberOfSubdomains -value)" = 2
+
+blockMesh > log.blockMesh 2>&1
+checkMesh > log.checkMesh 2>&1
+grep -q 'Mesh OK\.' log.checkMesh
+decomposePar > log.decomposePar 2>&1
+
+# Make the custom dictionary unambiguous on each rank, independently of
+# OpenFOAM's fallback lookup from processor directories to the parent case.
+for rank in 0 1; do
+    cp constant/rotorParameters "processor${rank}/constant/rotorParameters"
+    cmp constant/rotorParameters "processor${rank}/constant/rotorParameters"
+done
+
+# Independent MPI jobs must not all bind themselves to the same first cores.
+mpi_options=(--bind-to none -np 2)
+if [ "$(id -u)" = 0 ]; then
+    mpi_options=(--allow-run-as-root "${mpi_options[@]}")
+fi
+mpirun "${mpi_options[@]}" foamRun -parallel > log.foamRun 2>&1
+grep -q '^End[[:space:]]*$' log.foamRun
+if grep -q 'FOAM FATAL' log.foamRun; then
+    echo "Solver reported a fatal error." >&2
+    exit 3
+fi
+reconstructPar -noZero > log.reconstructPar 2>&1

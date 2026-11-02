@@ -1,0 +1,126 @@
+[
+  {
+    "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_az0000",
+    "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_az0000",
+    "snapshot_time_s": 1.2,
+    "source_hashes": {
+      "geometry.json": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "1ead6d98381004922443f4db474405702178263e8761823c8413c013dafbc96e",
+      "1.2/p": "dd1d824b65bc047b8e00d72250ad7e81e9a3d672e32c94cf6afd868bb27188a2"
+    },
+    "copied_hashes": {
+      "geometry.json": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "1ead6d98381004922443f4db474405702178263e8761823c8413c013dafbc96e",
+      "1.2/p": "dd1d824b65bc047b8e00d72250ad7e81e9a3d672e32c94cf6afd868bb27188a2"
+    },
+    "source_unchanged": true,
+    "layout": null,
+    "rotors": 8,
+    "nearest_spacing_m": null
+  },
+  {
+    "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am1000",
+    "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finemapped_n8_e19.2923_d0800_am1000",
+    "snapshot_time_s": 1.2,
+    "source_hashes": {
+      "geometry.json": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "551fe2dbd77721d8016c5c331bb9e7a82b641856bbb5c5156043184bcd29c327",
+      "1.2/p": "00c5a5407ce164f2f683629f09fa1e08f115b2c2dc79666eb35d37e3e9fadf06"
+    },
+    "copied_hashes": {
+      "geometry.json": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "551fe2dbd77721d8016c5c331bb9e7a82b641856bbb5c5156043184bcd29c327",
+      "1.2/p": "00c5a5407ce164f2f683629f09fa1e08f115b2c2dc79666eb35d37e3e9fadf06"
+    },
+    "source_unchanged": true,
+    "layout": null,
+    "rotors": 8,
+    "nearest_spacing_m": null
+  },
+  {
+    "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+    "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+    "snapshot_time_s": 1.2,
+    "source_hashes": {
+      "geometry.json": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "ff98d234403aa87dfaaaba36f091a2b4b58363c30ec5d88d538aae9d3717ae3f",
+      "1.2/p": "a1e0601e6fa8e9a99ce8a6d27462372ae48d585b8f9b150202185a2dfd64ef9c"
+    },
+    "copied_hashes": {
+      "geometry.json": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "ff98d234403aa87dfaaaba36f091a2b4b58363c30ec5d88d538aae9d3717ae3f",
+      "1.2/p": "a1e0601e6fa8e9a99ce8a6d27462372ae48d585b8f9b150202185a2dfd64ef9c"
+    },
+    "source_unchanged": true,
+    "layout": "circular_ring",
+    "rotors": 8,
+    "nearest_spacing_m": 0.07999999999999992
+  },
+  {
+    "source_case": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+    "visualization_copy": "/opt/openfoam-workspace/cases/tello_layout_fine_visualization_20261102/finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+    "snapshot_time_s": 1.2,
+    "source_hashes": {
+      "geometry.json": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "ebef60a88b6c4aad845ac556dce6c1db78ed9395227b79482e7363c4b692c907",
+      "1.2/p": "99f2faa0592824884581a0ff3a14f60021a70bcff9834edf6379bb6ed34050de"
+    },
+    "copied_hashes": {
+      "geometry.json": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+      "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "constant/polyMesh/boundary": "349e4c9d60d5be796b293cb49cffbbe65186c4769cbfae83bf870140a2a170a9",
+      "constant/polyMesh/faces": "0cbcab24baaf06420a5ba641880cf86c48368d25ecabeed1eb959b0663f84f89",
+      "constant/polyMesh/neighbour": "0a2c11068fce47d61ec0a6e81648b8b6c1b451d59a90fcd87eeab432f642fc13",
+      "constant/polyMesh/owner": "a2d00c88d889da1163dec5c85910198c968bddbe6e152a93ff87f82b91765ccb",
+      "constant/polyMesh/points": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+      "1.2/U": "ebef60a88b6c4aad845ac556dce6c1db78ed9395227b79482e7363c4b692c907",
+      "1.2/p": "99f2faa0592824884581a0ff3a14f60021a70bcff9834edf6379bb6ed34050de"
+    },
+    "source_unchanged": true,
+    "layout": "circular_ring",
+    "rotors": 8,
+    "nearest_spacing_m": 0.07999999999999992
+  }
+]

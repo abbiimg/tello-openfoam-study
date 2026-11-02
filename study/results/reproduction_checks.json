@@ -1,0 +1,66 @@
+{
+  "no_solver_launched": true,
+  "root": "/opt/openfoam-workspace/cases/tello_reproduction_checks_final",
+  "cold_parameter_cases": [
+    {
+      "case": "coarse_n8_e19.2923_d0800_am0750",
+      "level": "coarse",
+      "source_averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "reproduced_averaging_window_s": [
+        0.4,
+        0.8
+      ],
+      "numerical_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+      "actual_controls_and_physics_byte_identical": true
+    },
+    {
+      "case": "medium_n8_e19.2923_d1000_az0000",
+      "level": "medium",
+      "source_averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "reproduced_averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "numerical_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+      "actual_controls_and_physics_byte_identical": true
+    },
+    {
+      "case": "fine_n4_e19.2923_d1000_az0000",
+      "level": "fine",
+      "source_averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "reproduced_averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "numerical_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+      "actual_controls_and_physics_byte_identical": true
+    }
+  ],
+  "mapped_benchmark": "fine_direct_n8_e19.2923_d1000_az0000",
+  "audit_metadata_byte_identical": true,
+  "full_mesh_copy_verified": true,
+  "initial_0_6_fields_verified": true,
+  "historical_source_access_denied_during_portability_verification": true,
+  "omitted_mesh_rebuilt_checked_and_all_hashes_matched": true,
+  "validate_only_wrote_nothing": true,
+  "duplicate_case_rejected": true,
+  "rank_mismatch_rejected": true,
+  "original_inputs_and_generation_tools_unchanged": true,
+  "no_evolved_fields_or_solver_logs_copied": true,
+  "paraview_marker_copy_and_creation_verified": true,
+  "original_marker_unchanged": true,
+  "verification_kind": "Actual input reproduction and mesh-rebuild checks; no flow solver run",
+  "tested_script_sha256": {
+    "reproduce_cases.py": "f40848f93e745938e1c44313e0573649b19e6c1012a5199c91297b16ad5c15e6",
+    "run_cases.py": "f70308f185136842af8083683ea2ba661f16f42afe0574f97ada8e5d7bc6c228"
+  }
+}

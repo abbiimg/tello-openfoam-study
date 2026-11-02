@@ -1,0 +1,16 @@
+{
+  "kind": "One-time CUDA/Reference executor audit logging only; no numerical change",
+  "adapter_object_count_before_change": 0,
+  "pre_adapter_compilation": true,
+  "original_header_sha256": "5b0fb4f1d21256b7ed51d57c78e075fd4268f32f81986c54f9651bd9c5a36691",
+  "resulting_header_sha256": "ad07ed7eb3ee6782b67abb062b4cf9e9845bee709e9998297a311265496f1d4b",
+  "patch": "foundation14_ogl_cuda_runtime_audit.patch",
+  "patch_sha256": "3de643ef0f6f1b4089024ff00e701cbcd96c56834985a5b827c251cf0a7296e3",
+  "actual_runtime_fields": [
+    "Pstream rank",
+    "actual owner",
+    "Ginkgo get_description",
+    "CUDA device_id"
+  ],
+  "no_production_case_changes": true
+}

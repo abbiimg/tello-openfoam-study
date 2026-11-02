@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-01T23:23:13Z",
+  "case": "finemapped_n4_e19.2923_d1000_az0000",
+  "actual_nearest_spacing_cm": 20.0,
+  "original_identity": {
+    "case": "finemapped_n4_e19.2923_d1000_az0000",
+    "job_id": "Allrun-f89d82",
+    "mpi_ranks": 1,
+    "level": "fine",
+    "pid": 124579,
+    "birth_ticks": 9659612,
+    "os_state": "R",
+    "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n4_e19.2923_d1000_az0000",
+    "uid": 999,
+    "command": "foamRun",
+    "ppid": 124543,
+    "cpu_ticks": 471766
+  },
+  "open_pause_before_release": {
+    "owner_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+    "requested_epoch": 1793564842.0872564,
+    "requested_utc": "2026-11-01T20:27:22Z",
+    "reason": "Preserve all sixteen unrelated serial refinements during layout/count pilots; afterward resume seven medium cases only, keep nine fine cases paused, and reserve six ranks for a separately authorized signed-angle batch",
+    "cpu_ticks_before_stop": 521259,
+    "resumed_epoch": null,
+    "confirmed_epoch": 1793564842.0933902,
+    "confirmed_utc": "2026-11-01T20:27:22Z",
+    "cpu_ticks_after_stop": 521259,
+    "owner_transfers": [
+      {
+        "utc": "2026-11-01T22:19:12Z",
+        "old_owner": "131a9506f81747d49353ab506ad0b364",
+        "new_owner": "fd1d4c2004a74ff2a4093a2ed47cef56"
+      },
+      {
+        "utc": "2026-11-01T22:33:03Z",
+        "old_owner": "fd1d4c2004a74ff2a4093a2ed47cef56",
+        "new_owner": "fbe0d84d38c64e218ebe7d5ed133977c"
+      }
+    ]
+  },
+  "release_when_capacity_available": true,
+  "resume_precedes_new_dispatch": true,
+  "other_fine_holders": [
+    "finemapped_n8_e19.2923_d0800_am0500",
+    "finemapped_n8_e19.2923_d0850_am0500"
+  ],
+  "normal_rank_cap": 16,
+  "physics_input_changes": 0,
+  "solver_restart": false
+}

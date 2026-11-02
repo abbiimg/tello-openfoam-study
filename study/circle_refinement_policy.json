@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-11-02T00:30:30Z",
+  "decision_timing": "Before circle8 inward10 coarse completion and before any circle medium result",
+  "objective": "Maximum gross vertical lift; smaller footprint is secondary for unresolved close results",
+  "scope": "One bounded circle refinement cycle, without another circle spacing/angle grid",
+  "medium_baseline": "Promote the completed stable circle8 flat reference now",
+  "coarse_to_medium": {
+    "candidates": "Best stable flat circle and strongest tested own-spacing tilted circle",
+    "screening_gap_percent": 3.0,
+    "widen_if": "Observed matched resolution, late-window or initialization variation is larger",
+    "meaning": "Adaptive triage only; not a confidence interval or numerical-error bound"
+  },
+  "medium_to_fine": {
+    "primary_finalists_maximum": 1,
+    "partner_cases_maximum": 1,
+    "partner_purpose": "Its same-spacing flat or tilted reference when required for a paired tilt comparison",
+    "retain_if": "Medium gap is within about 2 percent of the comparable square frontier, or within a larger observed refinement/late-window/initialization envelope; unresolved medium drift also prevents confident rejection",
+    "release_timing": "After circle medium and pending tilt results identify the smallest useful fine comparison",
+    "meaning": "Screening policy only; remaining uncertainty must be reported"
+  },
+  "coarse_context": {
+    "cold_square_inward10_reference_N": 1.292996585,
+    "stable_circle8_flat_N": 1.25545215443,
+    "stable_circle10_inward10_N": 1.26448027725,
+    "warning": "These frontier gaps vary layout, spacing and tilt; they are not isolated planform or tilt effects"
+  },
+  "reporting": "Best tested region within the stated actuator model; no continuous or global optimum claim"
+}

@@ -1,0 +1,957 @@
+{
+  "status": "mapped_ready_no_solver_run",
+  "prepared_unix_s": 1793555583.7065485,
+  "case": "/opt/openfoam-workspace/cases/tello_refinement/coarsemapped_n8_e19.2923_d1000_az0000",
+  "source_case": "/opt/openfoam-workspace/cases/tello_refinement/coarse_n8_e19.2923_d1000_az0000",
+  "source_time_directory": "0.6",
+  "case_logical": "coarsemapped_n8_e19.2923_d1000_az0000",
+  "source_case_logical": "coarse_n8_e19.2923_d1000_az0000",
+  "source_case_absolute_historical": "/opt/openfoam-workspace/cases/tello_refinement/coarse_n8_e19.2923_d1000_az0000",
+  "source_case_reference": {
+    "case_name": "coarse_n8_e19.2923_d1000_az0000",
+    "archive_member_prefix": "cases/coarse_n8_e19.2923_d1000_az0000/",
+    "source_time_directory": "0.6",
+    "historical_study_root_name": "tello_refinement",
+    "original_source_time_fields_in_archive": "not guaranteed; hashes identify the original fields",
+    "initialized_target_rerun_requires_live_source": false
+  },
+  "initialization_method": "mapped_coarse_fields",
+  "initialization_family": "mapped",
+  "initialization_source_case": "coarse_n8_e19.2923_d1000_az0000",
+  "initialization_source_time_s": 0.6,
+  "initialization_start_time_s": 0.6,
+  "target_start_time_s": 0.6,
+  "source_time_confirmed_by_mapFields": [
+    "0.6"
+  ],
+  "target_end_time_s": 1.2,
+  "target_averaging_start_s": 0.7999999999999999,
+  "target_averaging_stop_s": 1.2,
+  "run_control_provenance": {
+    "startFrom": [
+      "startTime"
+    ],
+    "startTime": [
+      "0.59999999999999998"
+    ],
+    "stopAt": [
+      "endTime"
+    ],
+    "endTime": [
+      "1.2"
+    ],
+    "writeControl": [
+      "adjustableRunTime"
+    ],
+    "writeInterval": [
+      "0.10000000000000001"
+    ],
+    "writeFormat": [
+      "ascii"
+    ],
+    "writePrecision": [
+      "9"
+    ],
+    "writeCompression": [
+      "false"
+    ],
+    "timeFormat": [
+      "general"
+    ],
+    "timePrecision": [
+      "8"
+    ]
+  },
+  "mapping_method": "interpolate",
+  "consistent_geometry": true,
+  "map_command": [
+    "mapFields",
+    "/opt/openfoam-workspace/cases/tello_refinement/coarse_n8_e19.2923_d1000_az0000",
+    "-sourceTime",
+    "0.6",
+    "-consistent",
+    "-mapMethod",
+    "interpolate"
+  ],
+  "source_case_files_before": {
+    "geometry.json": {
+      "sha256": "5e5eb3d3942d77247e85e9735d08b4302ea27b246d57c1b85ce728c7274da9d2",
+      "size_bytes": 3189,
+      "mtime_ns": 1793465748308809802
+    },
+    "0.6/U": {
+      "sha256": "78e385d32aa9352cb28ed817f0ef96ac9b08bba3980b94328afc23673017ce89",
+      "size_bytes": 10607944,
+      "mtime_ns": 1793467521292501044
+    },
+    "0.6/p": {
+      "sha256": "1fe694c2a38518f7b27a5b43771e1489e7cbdca6c52006d8f2ab5f85db0aa07a",
+      "size_bytes": 3641299,
+      "mtime_ns": 1793467520132493817
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793465680726336315
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "mtime_ns": 1793465680726381115
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793465680683943064
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793465680683959964
+    },
+    "constant/polyMesh/points": {
+      "sha256": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+      "size_bytes": 10174302,
+      "mtime_ns": 1793465792315389292
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+      "size_bytes": 22199531,
+      "mtime_ns": 1793465792479389237
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+      "size_bytes": 4954854,
+      "mtime_ns": 1793465792507389228
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+      "size_bytes": 4812846,
+      "mtime_ns": 1793465792339389284
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+      "size_bytes": 812,
+      "mtime_ns": 1793465792507389228
+    }
+  },
+  "portable_map_command": [
+    "mapFields",
+    "<EXTRACTED_ARCHIVE_ROOT>/cases/coarse_n8_e19.2923_d1000_az0000",
+    "-sourceTime",
+    "0.6",
+    "-consistent",
+    "-mapMethod",
+    "interpolate"
+  ],
+  "portable_map_command_requirements": "Remapping requires independently available original source 0.6/U,p and source mesh matching the recorded hashes. The source case archive prefix does not guarantee its intermediate 0.6 fields are stored.",
+  "initialized_rerun_policy": "Prefer the archived target mesh, mapped 0.6/U,p, frozen inputs/helper/Allrun and initialization.json. verify-only and the initialized warm runner do not require a live source case or remapping.",
+  "source_case_files_after": {
+    "geometry.json": {
+      "sha256": "5e5eb3d3942d77247e85e9735d08b4302ea27b246d57c1b85ce728c7274da9d2",
+      "size_bytes": 3189,
+      "mtime_ns": 1793465748308809802
+    },
+    "0.6/U": {
+      "sha256": "78e385d32aa9352cb28ed817f0ef96ac9b08bba3980b94328afc23673017ce89",
+      "size_bytes": 10607944,
+      "mtime_ns": 1793467521292501044
+    },
+    "0.6/p": {
+      "sha256": "1fe694c2a38518f7b27a5b43771e1489e7cbdca6c52006d8f2ab5f85db0aa07a",
+      "size_bytes": 3641299,
+      "mtime_ns": 1793467520132493817
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793465680726336315
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "mtime_ns": 1793465680726381115
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793465680683943064
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793465680683959964
+    },
+    "constant/polyMesh/points": {
+      "sha256": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+      "size_bytes": 10174302,
+      "mtime_ns": 1793465792315389292
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+      "size_bytes": 22199531,
+      "mtime_ns": 1793465792479389237
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+      "size_bytes": 4954854,
+      "mtime_ns": 1793465792507389228
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+      "size_bytes": 4812846,
+      "mtime_ns": 1793465792339389284
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+      "size_bytes": 812,
+      "mtime_ns": 1793465792507389228
+    }
+  },
+  "source_unchanged": true,
+  "invariants": {
+    "rotors": 8,
+    "battery_power_W": 19.29230769230769,
+    "distance_cm": 10.0,
+    "tilt_deg": 0.0,
+    "diameter_m": 0.0762,
+    "radius_m": 0.0381,
+    "thickness_m": 0.012,
+    "half_thickness_m": 0.006,
+    "centers": [
+      [
+        -0.1,
+        -0.1,
+        0
+      ],
+      [
+        0.1,
+        -0.1,
+        0
+      ],
+      [
+        0.1,
+        0.1,
+        0
+      ],
+      [
+        -0.1,
+        0.1,
+        0
+      ],
+      [
+        0.0,
+        -0.1,
+        0
+      ],
+      [
+        0.1,
+        0.0,
+        0
+      ],
+      [
+        0.0,
+        0.1,
+        0
+      ],
+      [
+        -0.1,
+        0.0,
+        0
+      ]
+    ],
+    "normals": [
+      [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "radials": [
+      [
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0
+      ],
+      [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0
+      ],
+      [
+        0.7071067811865475,
+        0.7071067811865475,
+        0
+      ],
+      [
+        -0.7071067811865475,
+        0.7071067811865475,
+        0
+      ],
+      [
+        0.0,
+        -1.0,
+        0
+      ],
+      [
+        1.0,
+        0.0,
+        0
+      ],
+      [
+        0.0,
+        1.0,
+        0
+      ],
+      [
+        -1.0,
+        0.0,
+        0
+      ]
+    ],
+    "domain_xy_m": 0.36,
+    "domain_z_m": [
+      -0.6,
+      0.36
+    ],
+    "loss_model": {
+      "auxiliary_W": 0.5,
+      "esc_efficiency": 0.95,
+      "idle_W_per_motor": 0.1,
+      "motor_conversion": 0.6,
+      "axial_fraction": 0.5
+    },
+    "target_shaft_power_W": 10.231615384615383,
+    "target_air_power_W": 5.115807692307691,
+    "quadrature_subcells_xy": 16,
+    "quadrature_subcells_per_cell": 256,
+    "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+  },
+  "actual_target_cells": 248400,
+  "source_field_cells": {
+    "U": 248400,
+    "p": 248400
+  },
+  "mapped_field_cells": {
+    "U": 248400,
+    "p": 248400
+  },
+  "source_invariants": {
+    "rotors": 8,
+    "battery_power_W": 19.29230769230769,
+    "distance_cm": 10,
+    "tilt_deg": 0,
+    "diameter_m": 0.0762,
+    "radius_m": 0.0381,
+    "thickness_m": 0.012,
+    "half_thickness_m": 0.006,
+    "centers": [
+      [
+        -0.1,
+        -0.1,
+        0
+      ],
+      [
+        0.1,
+        -0.1,
+        0
+      ],
+      [
+        0.1,
+        0.1,
+        0
+      ],
+      [
+        -0.1,
+        0.1,
+        0
+      ],
+      [
+        0.0,
+        -0.1,
+        0
+      ],
+      [
+        0.1,
+        0.0,
+        0
+      ],
+      [
+        0.0,
+        0.1,
+        0
+      ],
+      [
+        -0.1,
+        0.0,
+        0
+      ]
+    ],
+    "normals": [
+      [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "radials": [
+      [
+        -0.7071067811865475,
+        -0.7071067811865475,
+        0
+      ],
+      [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0
+      ],
+      [
+        0.7071067811865475,
+        0.7071067811865475,
+        0
+      ],
+      [
+        -0.7071067811865475,
+        0.7071067811865475,
+        0
+      ],
+      [
+        0.0,
+        -1.0,
+        0
+      ],
+      [
+        1.0,
+        0.0,
+        0
+      ],
+      [
+        0.0,
+        1.0,
+        0
+      ],
+      [
+        -1.0,
+        0.0,
+        0
+      ]
+    ],
+    "domain_xy_m": 0.36,
+    "domain_z_m": [
+      -0.6,
+      0.36
+    ],
+    "loss_model": {
+      "auxiliary_W": 0.5,
+      "esc_efficiency": 0.95,
+      "idle_W_per_motor": 0.1,
+      "motor_conversion": 0.6,
+      "axial_fraction": 0.5
+    },
+    "target_shaft_power_W": 10.231615384615383,
+    "target_air_power_W": 5.115807692307691,
+    "quadrature_subcells_xy": 16,
+    "quadrature_subcells_per_cell": 256,
+    "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd"
+  },
+  "metadata_numeric_tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-14
+  },
+  "actual_source_and_target_fvModels_and_rotorParameters_byte_identical": true,
+  "actual_source_and_target_physicalProperties_and_momentumTransport_byte_identical": true,
+  "target_inputs_before_preparation": {
+    "geometry.json": {
+      "sha256": "2ea8075a1f26b7b47b62b3ca68deced12f96101e0c1cc48f76d61373cc1fcbce",
+      "size_bytes": 8129,
+      "mtime_ns": 1793555577454569513
+    },
+    "0/U": {
+      "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+      "size_bytes": 203,
+      "mtime_ns": 1793472382716718190
+    },
+    "0/p": {
+      "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+      "size_bytes": 191,
+      "mtime_ns": 1793472382716749090
+    },
+    "system/blockMeshDict": {
+      "sha256": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+      "size_bytes": 738,
+      "mtime_ns": 1793472382743575594
+    },
+    "system/controlDict": {
+      "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "size_bytes": 1099,
+      "mtime_ns": 1793555577370859683
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "mtime_ns": 1793472382721970291
+    },
+    "system/fvSolution": {
+      "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+      "size_bytes": 368,
+      "mtime_ns": 1793555577171327496
+    },
+    "Allrun": {
+      "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+      "size_bytes": 1367,
+      "mtime_ns": 1793555577250859210
+    },
+    "prepare_mapped.py": {
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "size_bytes": 29663,
+      "mtime_ns": 1793555577270257086
+    },
+    "system/decomposeParDict": {
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "size_bytes": 178,
+      "mtime_ns": 1793555577286879352
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793472382743710094
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "mtime_ns": 1793472382743793594
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793472382716779590
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793472382721796491
+    }
+  },
+  "target_inputs_after_preparation": {
+    "geometry.json": {
+      "sha256": "2ea8075a1f26b7b47b62b3ca68deced12f96101e0c1cc48f76d61373cc1fcbce",
+      "size_bytes": 8129,
+      "mtime_ns": 1793555577454569513
+    },
+    "0/U": {
+      "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+      "size_bytes": 203,
+      "mtime_ns": 1793472382716718190
+    },
+    "0/p": {
+      "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+      "size_bytes": 191,
+      "mtime_ns": 1793472382716749090
+    },
+    "system/blockMeshDict": {
+      "sha256": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+      "size_bytes": 738,
+      "mtime_ns": 1793472382743575594
+    },
+    "system/controlDict": {
+      "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+      "size_bytes": 1099,
+      "mtime_ns": 1793555577370859683
+    },
+    "system/fvSchemes": {
+      "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+      "size_bytes": 426,
+      "mtime_ns": 1793472382721970291
+    },
+    "system/fvSolution": {
+      "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+      "size_bytes": 368,
+      "mtime_ns": 1793555577171327496
+    },
+    "Allrun": {
+      "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+      "size_bytes": 1367,
+      "mtime_ns": 1793555577250859210
+    },
+    "prepare_mapped.py": {
+      "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "size_bytes": 29663,
+      "mtime_ns": 1793555577270257086
+    },
+    "system/decomposeParDict": {
+      "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+      "size_bytes": 178,
+      "mtime_ns": 1793555577286879352
+    },
+    "constant/fvModels": {
+      "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "size_bytes": 4233,
+      "mtime_ns": 1793472382743710094
+    },
+    "constant/rotorParameters": {
+      "sha256": "228b2bbd107748e1ec9de9cffb11c3596e58434b77cf23c3754263f3d12af79d",
+      "size_bytes": 590,
+      "mtime_ns": 1793472382743793594
+    },
+    "constant/physicalProperties": {
+      "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+      "size_bytes": 107,
+      "mtime_ns": 1793472382716779590
+    },
+    "constant/momentumTransport": {
+      "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+      "size_bytes": 94,
+      "mtime_ns": 1793472382721796491
+    }
+  },
+  "seeded_fields": {
+    "0.6/U": {
+      "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+      "size_bytes": 203,
+      "mtime_ns": 1793472382716718190
+    },
+    "0.6/p": {
+      "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+      "size_bytes": 191,
+      "mtime_ns": 1793472382716749090
+    }
+  },
+  "mapped_fields": {
+    "0.6/U": {
+      "sha256": "78e385d32aa9352cb28ed817f0ef96ac9b08bba3980b94328afc23673017ce89",
+      "size_bytes": 10607944,
+      "mtime_ns": 1793555582454847508
+    },
+    "0.6/p": {
+      "sha256": "1fe694c2a38518f7b27a5b43771e1489e7cbdca6c52006d8f2ab5f85db0aa07a",
+      "size_bytes": 3641299,
+      "mtime_ns": 1793555582186846859
+    }
+  },
+  "target_mesh": {
+    "constant/polyMesh/points": {
+      "sha256": "1a58f4ef142cd41760b57be666296cc22f1c0a35da51279b9d10a457b8652a01",
+      "size_bytes": 10174302,
+      "mtime_ns": 1793555578054858222
+    },
+    "constant/polyMesh/faces": {
+      "sha256": "367067c07689f9c65cc659a9f7c8c8cbb5160d7bab87e043a9781922da3fba2c",
+      "size_bytes": 22199531,
+      "mtime_ns": 1793555578234857210
+    },
+    "constant/polyMesh/owner": {
+      "sha256": "65e9f44675a8c04845aa87dddd09ec3b420af52bede5de364d67bd58ea1c7286",
+      "size_bytes": 4954854,
+      "mtime_ns": 1793555578262857053
+    },
+    "constant/polyMesh/neighbour": {
+      "sha256": "f8ca9cea54c14417db6f50100ee29c8463a298b3f4480906a248344c3d1b33ae",
+      "size_bytes": 4812846,
+      "mtime_ns": 1793555578090858019
+    },
+    "constant/polyMesh/boundary": {
+      "sha256": "201640f0372f6d70dc8c69dd64a81ef1488e101463e6bfd71a2bec982c06c855",
+      "size_bytes": 812,
+      "mtime_ns": 1793555578262857053
+    }
+  },
+  "preparation_logs": {
+    "log.blockMesh": {
+      "sha256": "f31d94a1370c807b8897e4ea9b3e355fa2a8816de5c6318e6ee94781e7000498",
+      "size_bytes": 1967,
+      "mtime_ns": 1793555578262857053
+    },
+    "log.checkMesh": {
+      "sha256": "7b369c82c52b5f4289c95e55fe490af35b4d4052b9ab7cd2a1383c2b36c749e1",
+      "size_bytes": 2550,
+      "mtime_ns": 1793555579812194978
+    },
+    "log.mapFields": {
+      "sha256": "2d6fd72e9f188c3652e865eb17caa94ab50cf6d28eaf5c203713dee805cab5f4",
+      "size_bytes": 1552,
+      "mtime_ns": 1793555583610850332
+    }
+  },
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "frozen_helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+  "mpi_ranks": 1,
+  "execution_mode": "serial",
+  "solver_configuration": {
+    "schema": "openfoam-foundation14-numerical-method-v1",
+    "openfoam_family": "Foundation",
+    "openfoam_major_version": 14,
+    "fvSolution": {
+      "PIMPLE": {
+        "nCorrectors": [
+          "2"
+        ],
+        "nNonOrthogonalCorrectors": [
+          "0"
+        ],
+        "nOuterCorrectors": [
+          "1"
+        ]
+      },
+      "solvers": {
+        "U": {
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "UFinal": {
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "p": {
+          "directSolveCoarsest": [
+            "true"
+          ],
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "GaussSeidel"
+          ],
+          "solver": [
+            "GAMG"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "pFinal": {
+          "directSolveCoarsest": [
+            "true"
+          ],
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "GaussSeidel"
+          ],
+          "solver": [
+            "GAMG"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        }
+      }
+    },
+    "fvSchemes": {
+      "ddtSchemes": {
+        "default": [
+          "Euler"
+        ]
+      },
+      "divSchemes": {
+        "default": [
+          "none"
+        ],
+        "div((nuEff*dev2(T(grad(U)))))": [
+          "Gauss",
+          "linear"
+        ],
+        "div(phi,U)": [
+          "Gauss",
+          "linearUpwind",
+          "grad",
+          "(",
+          "U",
+          ")"
+        ]
+      },
+      "gradSchemes": {
+        "default": [
+          "Gauss",
+          "linear"
+        ],
+        "grad(U)": [
+          "cellLimited",
+          "Gauss",
+          "linear",
+          "1"
+        ]
+      },
+      "interpolationSchemes": {
+        "default": [
+          "linear"
+        ]
+      },
+      "laplacianSchemes": {
+        "default": [
+          "Gauss",
+          "linear",
+          "corrected"
+        ]
+      },
+      "snGradSchemes": {
+        "default": [
+          "corrected"
+        ]
+      },
+      "wallDist": {
+        "method": [
+          "meshWave"
+        ]
+      }
+    },
+    "time_stepping": {
+      "application": [
+        "foamRun"
+      ],
+      "solver": [
+        "incompressibleFluid"
+      ],
+      "deltaT": [
+        "0.0001"
+      ],
+      "adjustTimeStep": [
+        "true"
+      ],
+      "maxCo": [
+        "0.90000000000000002"
+      ],
+      "maxDeltaT": [
+        "0.00080000000000000004"
+      ]
+    },
+    "decomposition": {
+      "hierarchicalCoeffs": {
+        "n": [
+          "(",
+          "1",
+          "1",
+          "1",
+          ")"
+        ],
+        "order": [
+          "xyz"
+        ]
+      },
+      "method": [
+        "hierarchical"
+      ],
+      "numberOfSubdomains": [
+        "1"
+      ]
+    }
+  },
+  "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+  "pressure_direct_solve_coarsest": {
+    "p": true,
+    "pFinal": true
+  },
+  "optional_direct_coarsest": {
+    "requested": true,
+    "edit": "literal p-block insertion/replacement, preserving $p",
+    "effective_after": {
+      "p": true,
+      "pFinal": true
+    },
+    "all_other_solver_entries_unchanged": true
+  },
+  "numerical_signature_excludes": [
+    "startFrom",
+    "startTime",
+    "endTime",
+    "stopAt",
+    "write/output controls",
+    "averaging windows",
+    "initialization regime"
+  ],
+  "phi_policy": "Not copied or mapped: solver reconstructs phi from mapped U.",
+  "controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+  "study_role": "validation",
+  "role": "Mapped/reinitialized validation, averaging 0.8-1.2 s; no solver launched by preparation.",
+  "reconstruction_policy": "None: serial foamRun writes directly; mapped 0.6 inputs remain frozen"
+}

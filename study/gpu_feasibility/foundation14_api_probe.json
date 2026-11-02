@@ -1,0 +1,68 @@
+{
+  "kind": "Compile-only API subset check, not a complete OGL build or CFD benchmark",
+  "openfoam_dir": "/opt/openfoam14",
+  "ogl_commit": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+  "build_cpu_limit": 1,
+  "tests": [
+    {
+      "name": "upstream_api",
+      "returncode": 1,
+      "elapsed_s": 3.2077285800041864,
+      "compiler_output": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/upstream_api.cpp: In function \u2018const Foam::objectRegistry& ogl_registry(const Foam::lduMatrix&)\u2019:\n/opt/openfoam-workspace/gpu-feasibility/pressure-offload/upstream_api.cpp:7:73: error: \u2018const class Foam::lduMesh\u2019 has no member named \u2018thisDb\u2019\n    7 | const objectRegistry& ogl_registry(const lduMatrix& m) {return m.mesh().thisDb();}\n      |                                                                         ^~~~~~\n/opt/openfoam-workspace/gpu-feasibility/pressure-offload/upstream_api.cpp: In function \u2018Foam::label ogl_neighbour(const Foam::cyclicFvPatch&)\u2019:\n/opt/openfoam-workspace/gpu-feasibility/pressure-offload/upstream_api.cpp:15:55: error: \u2018const class Foam::cyclicFvPatch\u2019 has no member named \u2018nbrPatchID\u2019; did you mean \u2018nbrPatch\u2019?\n   15 | label ogl_neighbour(const cyclicFvPatch& p) {return p.nbrPatchID();}\n      |                                                       ^~~~~~~~~~\n      |                                                       nbrPatch\n",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/upstream_api.cpp",
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-fsyntax-only",
+        "-DNoRepository",
+        "-DWM_DP",
+        "-DWM_LABEL_SIZE=32",
+        "-I/opt/openfoam14/src/OpenFOAM/lnInclude",
+        "-I/opt/openfoam14/src/OSspecific/POSIX/lnInclude",
+        "-I/opt/openfoam14/src/finiteVolume/lnInclude",
+        "-I/opt/openfoam14/src/meshTools/lnInclude",
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/upstream_api.cpp"
+      ]
+    },
+    {
+      "name": "registry_db_adaptation",
+      "returncode": 1,
+      "elapsed_s": 5.284145177996834,
+      "compiler_output": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/registry_db_adaptation.cpp: In function \u2018Foam::label ogl_neighbour(const Foam::cyclicFvPatch&)\u2019:\n/opt/openfoam-workspace/gpu-feasibility/pressure-offload/registry_db_adaptation.cpp:15:55: error: \u2018const class Foam::cyclicFvPatch\u2019 has no member named \u2018nbrPatchID\u2019; did you mean \u2018nbrPatch\u2019?\n   15 | label ogl_neighbour(const cyclicFvPatch& p) {return p.nbrPatchID();}\n      |                                                       ^~~~~~~~~~\n      |                                                       nbrPatch\n",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/registry_db_adaptation.cpp",
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-fsyntax-only",
+        "-DNoRepository",
+        "-DWM_DP",
+        "-DWM_LABEL_SIZE=32",
+        "-I/opt/openfoam14/src/OpenFOAM/lnInclude",
+        "-I/opt/openfoam14/src/OSspecific/POSIX/lnInclude",
+        "-I/opt/openfoam14/src/finiteVolume/lnInclude",
+        "-I/opt/openfoam14/src/meshTools/lnInclude",
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/registry_db_adaptation.cpp"
+      ]
+    },
+    {
+      "name": "both_foundation14_api_adaptations",
+      "returncode": 0,
+      "elapsed_s": 5.6730336750042625,
+      "compiler_output": "",
+      "source_path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/both_foundation14_api_adaptations.cpp",
+      "command": [
+        "g++",
+        "-std=c++17",
+        "-fsyntax-only",
+        "-DNoRepository",
+        "-DWM_DP",
+        "-DWM_LABEL_SIZE=32",
+        "-I/opt/openfoam14/src/OpenFOAM/lnInclude",
+        "-I/opt/openfoam14/src/OSspecific/POSIX/lnInclude",
+        "-I/opt/openfoam14/src/finiteVolume/lnInclude",
+        "-I/opt/openfoam14/src/meshTools/lnInclude",
+        "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/both_foundation14_api_adaptations.cpp"
+      ]
+    }
+  ]
+}

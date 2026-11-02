@@ -1,0 +1,202 @@
+{
+  "status": "all_six_ready_verified_no_solver_launched_by_preparation",
+  "cases": [
+    "coarsemapped_n4_e19.2923_d1000_az0000",
+    "coarsemapped_n8_e19.2923_d1000_az0000",
+    "finemapped_n4_e19.2923_d1000_az0000",
+    "finemapped_n8_e19.2923_d1000_az0000",
+    "mediummapped_n4_e19.2923_d1000_az0000",
+    "mediummapped_n8_e19.2923_d1000_az0000"
+  ],
+  "intended_initialization": "Same-geometry coarse exact0.6 U,p; controller reinitialized",
+  "intended_primary_window_s": [
+    0.8,
+    1.2
+  ],
+  "execution_configuration": "Serial rank1; directSolveCoarsest=yes for p and inherited pFinal; authorized after serial benchmark",
+  "execution_ranks": 1,
+  "pressure_direct_solve_coarsest": true,
+  "preparation_tools_sha256": {
+    "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+    "Allrun_warm.template": "655703d45595b517743aa513c68110ba2f4835e5db1f33cfbd9c4b9e4d5dc797",
+    "Allrun_warm_serial.template": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+    "decomposeParDict_serial.template": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+  },
+  "prepared_cases": [
+    {
+      "case": "coarsemapped_n4_e19.2923_d1000_az0000",
+      "path": "/opt/openfoam-workspace/cases/tello_refinement/coarsemapped_n4_e19.2923_d1000_az0000",
+      "source_case": "coarse_n4_e19.2923_d1000_az0000",
+      "status": "ready_verified_not_launched",
+      "mesh_cells": 248400,
+      "source_time_s": 0.6,
+      "start_time_s": 0.6,
+      "end_time_s": 1.2,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "mpi_ranks": 1,
+      "execution_mode": "serial",
+      "pressure_direct_solve_coarsest": {
+        "p": true,
+        "pFinal": true
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "mapped_field_sha256": {
+        "0.6/U": "2998fa64ec6cb3b7187c489abd54741907de6c192e197b89bdee6c7e907dcd5c",
+        "0.6/p": "994e606ce414743deb1ab58cc2802c48e3c171aeee1b1f25a0e584f97e33cdad"
+      },
+      "source_unchanged": true,
+      "owner": "openfoam",
+      "prepared_unix_s": 1793555576.787025
+    },
+    {
+      "case": "coarsemapped_n8_e19.2923_d1000_az0000",
+      "path": "/opt/openfoam-workspace/cases/tello_refinement/coarsemapped_n8_e19.2923_d1000_az0000",
+      "source_case": "coarse_n8_e19.2923_d1000_az0000",
+      "status": "ready_verified_not_launched",
+      "mesh_cells": 248400,
+      "source_time_s": 0.6,
+      "start_time_s": 0.6,
+      "end_time_s": 1.2,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "mpi_ranks": 1,
+      "execution_mode": "serial",
+      "pressure_direct_solve_coarsest": {
+        "p": true,
+        "pFinal": true
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "mapped_field_sha256": {
+        "0.6/U": "78e385d32aa9352cb28ed817f0ef96ac9b08bba3980b94328afc23673017ce89",
+        "0.6/p": "1fe694c2a38518f7b27a5b43771e1489e7cbdca6c52006d8f2ab5f85db0aa07a"
+      },
+      "source_unchanged": true,
+      "owner": "openfoam",
+      "prepared_unix_s": 1793555583.9172375
+    },
+    {
+      "case": "finemapped_n4_e19.2923_d1000_az0000",
+      "path": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n4_e19.2923_d1000_az0000",
+      "source_case": "coarse_n4_e19.2923_d1000_az0000",
+      "status": "ready_verified_not_launched",
+      "mesh_cells": 922576,
+      "source_time_s": 0.6,
+      "start_time_s": 0.6,
+      "end_time_s": 1.2,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "mpi_ranks": 1,
+      "execution_mode": "serial",
+      "pressure_direct_solve_coarsest": {
+        "p": true,
+        "pFinal": true
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "mapped_field_sha256": {
+        "0.6/U": "bc76e8534430fb695e126388cf4e025c951483d3d0e4622ddf93ecbfc5ccc325",
+        "0.6/p": "6bddbc0d9aee665c201c560a30817c5e8854d377ea7723a66dc9d31e6270d726"
+      },
+      "source_unchanged": true,
+      "owner": "openfoam",
+      "prepared_unix_s": 1793555604.6245003
+    },
+    {
+      "case": "finemapped_n8_e19.2923_d1000_az0000",
+      "path": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d1000_az0000",
+      "source_case": "coarse_n8_e19.2923_d1000_az0000",
+      "status": "ready_verified_not_launched",
+      "mesh_cells": 922576,
+      "source_time_s": 0.6,
+      "start_time_s": 0.6,
+      "end_time_s": 1.2,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "mpi_ranks": 1,
+      "execution_mode": "serial",
+      "pressure_direct_solve_coarsest": {
+        "p": true,
+        "pFinal": true
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "mapped_field_sha256": {
+        "0.6/U": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+        "0.6/p": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de"
+      },
+      "source_unchanged": true,
+      "owner": "openfoam",
+      "prepared_unix_s": 1793555626.5115223
+    },
+    {
+      "case": "mediummapped_n4_e19.2923_d1000_az0000",
+      "path": "/opt/openfoam-workspace/cases/tello_refinement/mediummapped_n4_e19.2923_d1000_az0000",
+      "source_case": "coarse_n4_e19.2923_d1000_az0000",
+      "status": "ready_verified_not_launched",
+      "mesh_cells": 481888,
+      "source_time_s": 0.6,
+      "start_time_s": 0.6,
+      "end_time_s": 1.2,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "mpi_ranks": 1,
+      "execution_mode": "serial",
+      "pressure_direct_solve_coarsest": {
+        "p": true,
+        "pFinal": true
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "mapped_field_sha256": {
+        "0.6/U": "7925cc54d8e132a46d78b6d124397ec232a731a5d635966ead371b3395310a03",
+        "0.6/p": "68794430cd35d464d98bb1c38ea523ee52d5c9175e476a90db71269e695ae6ba"
+      },
+      "source_unchanged": true,
+      "owner": "openfoam",
+      "prepared_unix_s": 1793555643.6408145
+    },
+    {
+      "case": "mediummapped_n8_e19.2923_d1000_az0000",
+      "path": "/opt/openfoam-workspace/cases/tello_refinement/mediummapped_n8_e19.2923_d1000_az0000",
+      "source_case": "coarse_n8_e19.2923_d1000_az0000",
+      "status": "ready_verified_not_launched",
+      "mesh_cells": 481888,
+      "source_time_s": 0.6,
+      "start_time_s": 0.6,
+      "end_time_s": 1.2,
+      "averaging_window_s": [
+        0.8,
+        1.2
+      ],
+      "mpi_ranks": 1,
+      "execution_mode": "serial",
+      "pressure_direct_solve_coarsest": {
+        "p": true,
+        "pFinal": true
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "helper_sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+      "mapped_field_sha256": {
+        "0.6/U": "82be2bce144124f42f17c7fafffff4d19a836c9bf014dd2101d1ee91f755e12b",
+        "0.6/p": "9a03cfcffc95071d80d074b4536f7763e6ee6392ee61ee4f7d3a79a535868f31"
+      },
+      "source_unchanged": true,
+      "owner": "openfoam",
+      "prepared_unix_s": 1793555660.1991153
+    }
+  ],
+  "no_solver_launched_by_preparation": true
+}

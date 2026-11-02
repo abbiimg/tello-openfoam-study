@@ -1,0 +1,8 @@
+{
+  "case": "coarselocalbracket_square_perimeter_n8_e19.2923_d0850_am1250_ae9f01add018",
+  "utc": "2026-11-01T23:28:03Z",
+  "disposition": "deferred_unstarted",
+  "reason": "Root-approved bounded adaptive substitution: await circle8 and choose one same-hub angle control at the best stable flat spacing",
+  "inputs_preserved": true,
+  "no_solver_launched": true
+}

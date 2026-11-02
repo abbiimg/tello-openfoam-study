@@ -1,0 +1,3 @@
+MapSMtoCores for SM 12.1is undefined. The default value of 128 Cores/SM is used.
+{"rank":1,"ranks":2,"pstream_parallel":true,"force_host_buffer":true,"single_gpu_owner":false,"passed":true,"executor_description":"ReferenceExecutor","actual_gpu_buffers_tested":true,"actual_cuda_reduction_kernels_tested":true,"global_norm1":22,"global_norm2":14.8997,"global_mean":5.5}
+{"rank":0,"ranks":2,"pstream_parallel":true,"force_host_buffer":true,"single_gpu_owner":true,"passed":true,"executor_description":"CudaExecutor on device 0 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)) with host ReferenceExecutor","actual_gpu_buffers_tested":true,"actual_cuda_reduction_kernels_tested":true,"global_norm1":22,"global_norm2":14.8997,"global_mean":5.5}

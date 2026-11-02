@@ -1,0 +1,792 @@
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:22,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/polymorphic_object.hpp:12,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/abstract_factory.hpp:12,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/include/ginkgo/ginkgo.hpp:10,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/CommunicationPattern.hpp:7,
+                 from /mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/gpu_feasibility/mpi_cuda_host_buffer_probe.cpp:2:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/memory.hpp: In member function ‘virtual bool gko::CudaAllocatorBase::check_environment(int, CUstream_st*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/memory.hpp:58:40: warning: unused parameter ‘device_id’ [-Wunused-parameter]
+   58 |     virtual bool check_environment(int device_id, CUstream_st* stream) const
+      |                                    ~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/memory.hpp:58:64: warning: unused parameter ‘stream’ [-Wunused-parameter]
+   58 |     virtual bool check_environment(int device_id, CUstream_st* stream) const
+      |                                                   ~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/memory.hpp: In member function ‘virtual bool gko::HipAllocatorBase::check_environment(int, CUstream_st*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/memory.hpp:83:40: warning: unused parameter ‘device_id’ [-Wunused-parameter]
+   83 |     virtual bool check_environment(int device_id,
+      |                                    ~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/memory.hpp:84:59: warning: unused parameter ‘stream’ [-Wunused-parameter]
+   84 |                                    GKO_HIP_STREAM_STRUCT* stream) const
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:25:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_allocation_started(const gko::Executor*, const gko::size_type&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:134:70: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  134 |     GKO_LOGGER_REGISTER_EVENT(0, allocation_started, const Executor* exec,
+      |                                                      ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:135:48: warning: unused parameter ‘num_bytes’ [-Wunused-parameter]
+  135 |                               const size_type& num_bytes)
+      |                               ~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_allocation_completed(const gko::Executor*, const gko::size_type&, const gko::uintptr&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:144:72: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  144 |     GKO_LOGGER_REGISTER_EVENT(1, allocation_completed, const Executor* exec,
+      |                                                        ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:145:48: warning: unused parameter ‘num_bytes’ [-Wunused-parameter]
+  145 |                               const size_type& num_bytes,
+      |                               ~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:146:46: warning: unused parameter ‘location’ [-Wunused-parameter]
+  146 |                               const uintptr& location)
+      |                               ~~~~~~~~~~~~~~~^~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_free_started(const gko::Executor*, const gko::uintptr&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:154:64: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  154 |     GKO_LOGGER_REGISTER_EVENT(2, free_started, const Executor* exec,
+      |                                                ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:155:46: warning: unused parameter ‘location’ [-Wunused-parameter]
+  155 |                               const uintptr& location)
+      |                               ~~~~~~~~~~~~~~~^~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_free_completed(const gko::Executor*, const gko::uintptr&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:163:66: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  163 |     GKO_LOGGER_REGISTER_EVENT(3, free_completed, const Executor* exec,
+      |                                                  ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:164:46: warning: unused parameter ‘location’ [-Wunused-parameter]
+  164 |                               const uintptr& location)
+      |                               ~~~~~~~~~~~~~~~^~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_copy_started(const gko::Executor*, const gko::Executor*, const gko::uintptr&, const gko::uintptr&, const gko::size_type&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:175:64: warning: unused parameter ‘exec_from’ [-Wunused-parameter]
+  175 |     GKO_LOGGER_REGISTER_EVENT(4, copy_started, const Executor* exec_from,
+      |                                                ~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:176:47: warning: unused parameter ‘exec_to’ [-Wunused-parameter]
+  176 |                               const Executor* exec_to, const uintptr& loc_from,
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:176:71: warning: unused parameter ‘loc_from’ [-Wunused-parameter]
+  176 |                               const Executor* exec_to, const uintptr& loc_from,
+      |                                                        ~~~~~~~~~~~~~~~^~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:177:46: warning: unused parameter ‘loc_to’ [-Wunused-parameter]
+  177 |                               const uintptr& loc_to, const size_type& num_bytes)
+      |                               ~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:177:71: warning: unused parameter ‘num_bytes’ [-Wunused-parameter]
+  177 |                               const uintptr& loc_to, const size_type& num_bytes)
+      |                                                      ~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_copy_completed(const gko::Executor*, const gko::Executor*, const gko::uintptr&, const gko::uintptr&, const gko::size_type&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:188:66: warning: unused parameter ‘exec_from’ [-Wunused-parameter]
+  188 |     GKO_LOGGER_REGISTER_EVENT(5, copy_completed, const Executor* exec_from,
+      |                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:189:47: warning: unused parameter ‘exec_to’ [-Wunused-parameter]
+  189 |                               const Executor* exec_to, const uintptr& loc_from,
+      |                               ~~~~~~~~~~~~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:189:71: warning: unused parameter ‘loc_from’ [-Wunused-parameter]
+  189 |                               const Executor* exec_to, const uintptr& loc_from,
+      |                                                        ~~~~~~~~~~~~~~~^~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:190:46: warning: unused parameter ‘loc_to’ [-Wunused-parameter]
+  190 |                               const uintptr& loc_to, const size_type& num_bytes)
+      |                               ~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:190:71: warning: unused parameter ‘num_bytes’ [-Wunused-parameter]
+  190 |                               const uintptr& loc_to, const size_type& num_bytes)
+      |                                                      ~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_operation_launched(const gko::Executor*, const gko::Operation*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:198:70: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  198 |     GKO_LOGGER_REGISTER_EVENT(6, operation_launched, const Executor* exec,
+      |                                                      ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:199:48: warning: unused parameter ‘op’ [-Wunused-parameter]
+  199 |                               const Operation* op)
+      |                               ~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_operation_completed(const gko::Executor*, const gko::Operation*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:212:71: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  212 |     GKO_LOGGER_REGISTER_EVENT(7, operation_completed, const Executor* exec,
+      |                                                       ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:213:48: warning: unused parameter ‘op’ [-Wunused-parameter]
+  213 |                               const Operation* op)
+      |                               ~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_create_started(const gko::Executor*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:222:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  222 |                               const Executor* exec, const PolymorphicObject* po)
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:222:78: warning: unused parameter ‘po’ [-Wunused-parameter]
+  222 |                               const Executor* exec, const PolymorphicObject* po)
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_create_completed(const gko::Executor*, const gko::PolymorphicObject*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:232:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  232 |                               const Executor* exec,
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:233:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  233 |                               const PolymorphicObject* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:234:56: warning: unused parameter ‘output’ [-Wunused-parameter]
+  234 |                               const PolymorphicObject* output)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_copy_started(const gko::Executor*, const gko::PolymorphicObject*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:244:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  244 |                               const Executor* exec,
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:245:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  245 |                               const PolymorphicObject* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:246:56: warning: unused parameter ‘output’ [-Wunused-parameter]
+  246 |                               const PolymorphicObject* output)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_copy_completed(const gko::Executor*, const gko::PolymorphicObject*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:256:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  256 |                               const Executor* exec,
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:257:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  257 |                               const PolymorphicObject* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:258:56: warning: unused parameter ‘output’ [-Wunused-parameter]
+  258 |                               const PolymorphicObject* output)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_deleted(const gko::Executor*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:267:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  267 |                               const Executor* exec, const PolymorphicObject* po)
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:267:78: warning: unused parameter ‘po’ [-Wunused-parameter]
+  267 |                               const Executor* exec, const PolymorphicObject* po)
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_linop_apply_started(const gko::LinOp*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:276:69: warning: unused parameter ‘A’ [-Wunused-parameter]
+  276 |     GKO_LOGGER_REGISTER_EVENT(13, linop_apply_started, const LinOp* A,
+      |                                                        ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:277:44: warning: unused parameter ‘b’ [-Wunused-parameter]
+  277 |                               const LinOp* b, const LinOp* x)
+      |                               ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:277:60: warning: unused parameter ‘x’ [-Wunused-parameter]
+  277 |                               const LinOp* b, const LinOp* x)
+      |                                               ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_linop_apply_completed(const gko::LinOp*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:286:71: warning: unused parameter ‘A’ [-Wunused-parameter]
+  286 |     GKO_LOGGER_REGISTER_EVENT(14, linop_apply_completed, const LinOp* A,
+      |                                                          ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:287:44: warning: unused parameter ‘b’ [-Wunused-parameter]
+  287 |                               const LinOp* b, const LinOp* x)
+      |                               ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:287:60: warning: unused parameter ‘x’ [-Wunused-parameter]
+  287 |                               const LinOp* b, const LinOp* x)
+      |                                               ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_linop_advanced_apply_started(const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:298:78: warning: unused parameter ‘A’ [-Wunused-parameter]
+  298 |     GKO_LOGGER_REGISTER_EVENT(15, linop_advanced_apply_started, const LinOp* A,
+      |                                                                 ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:299:44: warning: unused parameter ‘alpha’ [-Wunused-parameter]
+  299 |                               const LinOp* alpha, const LinOp* b,
+      |                               ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:299:64: warning: unused parameter ‘b’ [-Wunused-parameter]
+  299 |                               const LinOp* alpha, const LinOp* b,
+      |                                                   ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:300:44: warning: unused parameter ‘beta’ [-Wunused-parameter]
+  300 |                               const LinOp* beta, const LinOp* x)
+      |                               ~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:300:63: warning: unused parameter ‘x’ [-Wunused-parameter]
+  300 |                               const LinOp* beta, const LinOp* x)
+      |                                                  ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_linop_advanced_apply_completed(const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:312:44: warning: unused parameter ‘A’ [-Wunused-parameter]
+  312 |                               const LinOp* A, const LinOp* alpha,
+      |                               ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:312:60: warning: unused parameter ‘alpha’ [-Wunused-parameter]
+  312 |                               const LinOp* A, const LinOp* alpha,
+      |                                               ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:313:44: warning: unused parameter ‘b’ [-Wunused-parameter]
+  313 |                               const LinOp* b, const LinOp* beta, const LinOp* x)
+      |                               ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:313:60: warning: unused parameter ‘beta’ [-Wunused-parameter]
+  313 |                               const LinOp* b, const LinOp* beta, const LinOp* x)
+      |                                               ~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:313:79: warning: unused parameter ‘x’ [-Wunused-parameter]
+  313 |                               const LinOp* b, const LinOp* beta, const LinOp* x)
+      |                                                                  ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_linop_factory_generate_started(const gko::LinOpFactory*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:323:51: warning: unused parameter ‘factory’ [-Wunused-parameter]
+  323 |                               const LinOpFactory* factory, const LinOp* input)
+      |                               ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:323:73: warning: unused parameter ‘input’ [-Wunused-parameter]
+  323 |                               const LinOpFactory* factory, const LinOp* input)
+      |                                                            ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_linop_factory_generate_completed(const gko::LinOpFactory*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:334:51: warning: unused parameter ‘factory’ [-Wunused-parameter]
+  334 |                               const LinOpFactory* factory, const LinOp* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:334:73: warning: unused parameter ‘input’ [-Wunused-parameter]
+  334 |                               const LinOpFactory* factory, const LinOp* input,
+      |                                                            ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:335:44: warning: unused parameter ‘output’ [-Wunused-parameter]
+  335 |                               const LinOp* output)
+      |                               ~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_criterion_check_started(const gko::stop::Criterion*, const gko::size_type&, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::uint8&, const bool&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:349:54: warning: unused parameter ‘criterion’ [-Wunused-parameter]
+  349 |                               const stop::Criterion* criterion,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:350:48: warning: unused parameter ‘it’ [-Wunused-parameter]
+  350 |                               const size_type& it, const LinOp* r,
+      |                               ~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:350:65: warning: unused parameter ‘r’ [-Wunused-parameter]
+  350 |                               const size_type& it, const LinOp* r,
+      |                                                    ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:351:44: warning: unused parameter ‘tau’ [-Wunused-parameter]
+  351 |                               const LinOp* tau, const LinOp* x,
+      |                               ~~~~~~~~~~~~~^~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:351:62: warning: unused parameter ‘x’ [-Wunused-parameter]
+  351 |                               const LinOp* tau, const LinOp* x,
+      |                                                 ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:352:44: warning: unused parameter ‘stopping_id’ [-Wunused-parameter]
+  352 |                               const uint8& stopping_id,
+      |                               ~~~~~~~~~~~~~^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:353:43: warning: unused parameter ‘set_finalized’ [-Wunused-parameter]
+  353 |                               const bool& set_finalized)
+      |                               ~~~~~~~~~~~~^~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_criterion_check_completed(const gko::stop::Criterion*, const gko::size_type&, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::uint8&, const bool&, const gko::array<gko::stopping_status>*, const bool&, const bool&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:376:63: warning: unused parameter ‘criterion’ [-Wunused-parameter]
+  376 |         20, criterion_check_completed, const stop::Criterion* criterion,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:377:26: warning: unused parameter ‘it’ [-Wunused-parameter]
+  377 |         const size_type& it, const LinOp* r, const LinOp* tau, const LinOp* x,
+      |         ~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:377:43: warning: unused parameter ‘r’ [-Wunused-parameter]
+  377 |         const size_type& it, const LinOp* r, const LinOp* tau, const LinOp* x,
+      |                              ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:377:59: warning: unused parameter ‘tau’ [-Wunused-parameter]
+  377 |         const size_type& it, const LinOp* r, const LinOp* tau, const LinOp* x,
+      |                                              ~~~~~~~~~~~~~^~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:377:77: warning: unused parameter ‘x’ [-Wunused-parameter]
+  377 |         const size_type& it, const LinOp* r, const LinOp* tau, const LinOp* x,
+      |                                                                ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:378:22: warning: unused parameter ‘stopping_id’ [-Wunused-parameter]
+  378 |         const uint8& stopping_id, const bool& set_finalized,
+      |         ~~~~~~~~~~~~~^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:378:47: warning: unused parameter ‘set_finalized’ [-Wunused-parameter]
+  378 |         const uint8& stopping_id, const bool& set_finalized,
+      |                                   ~~~~~~~~~~~~^~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:379:39: warning: unused parameter ‘status’ [-Wunused-parameter]
+  379 |         const array<stopping_status>* status, const bool& one_changed,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:379:59: warning: unused parameter ‘one_changed’ [-Wunused-parameter]
+  379 |         const array<stopping_status>* status, const bool& one_changed,
+      |                                               ~~~~~~~~~~~~^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:380:21: warning: unused parameter ‘all_converged’ [-Wunused-parameter]
+  380 |         const bool& all_converged)
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_criterion_check_completed(const gko::stop::Criterion*, const gko::size_type&, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::uint8&, const bool&, const gko::array<gko::stopping_status>*, const bool&, const bool&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:401:40: warning: unused parameter ‘implicit_tau_sq’ [-Wunused-parameter]
+  401 |         const LinOp* tau, const LinOp* implicit_tau_sq, const LinOp* x,
+      |                           ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_iteration_complete(const gko::LinOp*, const gko::size_type&, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:441:53: warning: unused parameter ‘solver’ [-Wunused-parameter]
+  441 |     virtual void on_iteration_complete(const LinOp* solver, const size_type& it,
+      |                                        ~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:441:78: warning: unused parameter ‘it’ [-Wunused-parameter]
+  441 |     virtual void on_iteration_complete(const LinOp* solver, const size_type& it,
+      |                                                             ~~~~~~~~~~~~~~~~~^~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:442:53: warning: unused parameter ‘r’ [-Wunused-parameter]
+  442 |                                        const LinOp* r, const LinOp* x = nullptr,
+      |                                        ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:442:69: warning: unused parameter ‘x’ [-Wunused-parameter]
+  442 |                                        const LinOp* r, const LinOp* x = nullptr,
+      |                                                        ~~~~~~~~~~~~~^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:443:53: warning: unused parameter ‘tau’ [-Wunused-parameter]
+  443 |                                        const LinOp* tau = nullptr) const
+      |                                        ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_iteration_complete(const gko::LinOp*, const gko::size_type&, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:466:53: warning: unused parameter ‘implicit_tau_sq’ [-Wunused-parameter]
+  466 |                                        const LinOp* implicit_tau_sq) const
+      |                                        ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_iteration_complete(const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::size_type&, const gko::LinOp*, const gko::LinOp*, const gko::LinOp*, const gko::array<gko::stopping_status>*, bool) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:488:74: warning: unused parameter ‘b’ [-Wunused-parameter]
+  488 |     virtual void on_iteration_complete(const LinOp* solver, const LinOp* b,
+      |                                                             ~~~~~~~~~~~~~^
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:492:70: warning: unused parameter ‘status’ [-Wunused-parameter]
+  492 |                                        const array<stopping_status>* status,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:493:45: warning: unused parameter ‘stopped’ [-Wunused-parameter]
+  493 |                                        bool stopped) const
+      |                                        ~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_move_started(const gko::Executor*, const gko::PolymorphicObject*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:509:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  509 |                               const Executor* exec,
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:510:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  510 |                               const PolymorphicObject* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:511:56: warning: unused parameter ‘output’ [-Wunused-parameter]
+  511 |                               const PolymorphicObject* output)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_polymorphic_object_move_completed(const gko::Executor*, const gko::PolymorphicObject*, const gko::PolymorphicObject*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:521:47: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  521 |                               const Executor* exec,
+      |                               ~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:522:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  522 |                               const PolymorphicObject* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:523:56: warning: unused parameter ‘output’ [-Wunused-parameter]
+  523 |                               const PolymorphicObject* output)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_batch_linop_factory_generate_started(const gko::batch::BatchLinOpFactory*, const gko::batch::BatchLinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:533:63: warning: unused parameter ‘factory’ [-Wunused-parameter]
+  533 |                               const batch::BatchLinOpFactory* factory,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:534:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  534 |                               const batch::BatchLinOp* input)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_batch_linop_factory_generate_completed(const gko::batch::BatchLinOpFactory*, const gko::batch::BatchLinOp*, const gko::batch::BatchLinOp*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:545:63: warning: unused parameter ‘factory’ [-Wunused-parameter]
+  545 |                               const batch::BatchLinOpFactory* factory,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:546:56: warning: unused parameter ‘input’ [-Wunused-parameter]
+  546 |                               const batch::BatchLinOp* input,
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:547:56: warning: unused parameter ‘output’ [-Wunused-parameter]
+  547 |                               const batch::BatchLinOp* output)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:114:35: note: in definition of macro ‘GKO_LOGGER_REGISTER_EVENT’
+  114 |     virtual void on_##_event_name(__VA_ARGS__) const {}              \
+      |                                   ^~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_batch_solver_completed(const gko::array<int>&, const gko::array<double>&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:571:27: warning: unused parameter ‘iters’ [-Wunused-parameter]
+  571 |         const array<int>& iters, const array<double>& residual_norms) const
+      |         ~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:571:55: warning: unused parameter ‘residual_norms’ [-Wunused-parameter]
+  571 |         const array<int>& iters, const array<double>& residual_norms) const
+      |                                  ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In member function ‘virtual void gko::log::Logger::on_batch_solver_completed(const gko::array<int>&, const gko::array<float>&) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:582:27: warning: unused parameter ‘iters’ [-Wunused-parameter]
+  582 |         const array<int>& iters, const array<float>& residual_norms) const
+      |         ~~~~~~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:582:54: warning: unused parameter ‘residual_norms’ [-Wunused-parameter]
+  582 |         const array<int>& iters, const array<float>& residual_norms) const
+      |                                  ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp: In constructor ‘gko::log::Logger::Logger(std::shared_ptr<const gko::Executor>, const mask_type&)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/logger.hpp:704:58: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  704 |     explicit Logger(std::shared_ptr<const gko::Executor> exec,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘void gko::detail::EnableDeviceReset::set_device_reset(bool)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1318:32: warning: unused parameter ‘device_reset’ [-Wunused-parameter]
+ 1318 |     void set_device_reset(bool device_reset) {}
+      |                           ~~~~~^~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In constructor ‘gko::detail::EnableDeviceReset::EnableDeviceReset(bool)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1341:28: warning: unused parameter ‘device_reset’ [-Wunused-parameter]
+ 1341 |     EnableDeviceReset(bool device_reset) {}
+      |                       ~~~~~^~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::OmpExecutor::verify_memory_to(const gko::OmpExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1424:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1424 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(OmpExecutor, true);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::OmpExecutor::verify_memory_to(const gko::ReferenceExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1426:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1426 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(ReferenceExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::OmpExecutor::verify_memory_to(const gko::HipExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1428:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1428 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(HipExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::OmpExecutor::verify_memory_to(const gko::CudaExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1430:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1430 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(CudaExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::ReferenceExecutor::verify_memory_to(const gko::ReferenceExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1498:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1498 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(ReferenceExecutor, true);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::ReferenceExecutor::verify_memory_to(const gko::OmpExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1500:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1500 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(OmpExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::ReferenceExecutor::verify_memory_to(const gko::DpcppExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1502:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1502 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(DpcppExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::ReferenceExecutor::verify_memory_to(const gko::CudaExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1504:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1504 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(CudaExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::ReferenceExecutor::verify_memory_to(const gko::HipExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1506:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1506 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(HipExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::CudaExecutor::verify_memory_to(const gko::OmpExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1713:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1713 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(OmpExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::CudaExecutor::verify_memory_to(const gko::ReferenceExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1715:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1715 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(ReferenceExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::CudaExecutor::verify_memory_to(const gko::DpcppExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1717:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1717 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(DpcppExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::HipExecutor::verify_memory_to(const gko::OmpExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1915:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1915 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(OmpExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::HipExecutor::verify_memory_to(const gko::ReferenceExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1917:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1917 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(ReferenceExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::HipExecutor::verify_memory_to(const gko::DpcppExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1919:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 1919 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(DpcppExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::DpcppExecutor::verify_memory_to(const gko::CudaExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:2101:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 2101 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(CudaExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::DpcppExecutor::verify_memory_to(const gko::HipExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:2103:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 2103 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(HipExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp: In member function ‘virtual bool gko::DpcppExecutor::verify_memory_to(const gko::ReferenceExecutor*) const’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:1354:48: warning: unused parameter ‘other’ [-Wunused-parameter]
+ 1354 |     virtual bool verify_memory_to(const dest_* other) const override         \
+      |                                   ~~~~~~~~~~~~~^~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/executor.hpp:2105:5: note: in expansion of macro ‘GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY’
+ 2105 |     GKO_DEFAULT_OVERRIDE_VERIFY_MEMORY(ReferenceExecutor, false);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/solver/solver_base.hpp:24,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/config/config.hpp:16,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/include/ginkgo/ginkgo.hpp:56:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/solver/workspace.hpp: In member function ‘gko::solver::detail::workspace& gko::solver::detail::workspace::operator=(const gko::solver::detail::workspace&)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/solver/workspace.hpp:88:43: warning: unused parameter ‘other’ [-Wunused-parameter]
+   88 |     workspace& operator=(const workspace& other) { return *this; }
+      |                          ~~~~~~~~~~~~~~~~~^~~~~
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/include/ginkgo/ginkgo.hpp:90:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/record.hpp: In static member function ‘static std::unique_ptr<gko::log::Record> gko::log::Record::create(std::shared_ptr<const gko::Executor>, const gko::log::Logger::mask_type&, gko::size_type)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/record.hpp:423:41: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  423 |         std::shared_ptr<const Executor> exec,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/record.hpp: In constructor ‘gko::log::Record::Record(std::shared_ptr<const gko::Executor>, const gko::log::Logger::mask_type&, gko::size_type)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/log/record.hpp:476:58: warning: unused parameter ‘exec’ [-Wunused-parameter]
+  476 |     explicit Record(std::shared_ptr<const gko::Executor> exec,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/preconditioner/ic.hpp:26,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/include/ginkgo/ginkgo.hpp:120:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/stop/iteration.hpp: In constructor ‘gko::stop::Iteration::Iteration(const Factory*, const gko::stop::CriterionArgs&)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/stop/iteration.hpp:53:69: warning: unused parameter ‘args’ [-Wunused-parameter]
+   53 |     explicit Iteration(const Factory* factory, const CriterionArgs& args)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/include/ginkgo/ginkgo.hpp:161:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/stop/time.hpp: In constructor ‘gko::stop::Time::Time(const Factory*, gko::stop::CriterionArgs)’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/stop/time.hpp:48:63: warning: unused parameter ‘args’ [-Wunused-parameter]
+   48 |     explicit Time(const Factory* factory, const CriterionArgs args)
+      |                                           ~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/DevicePersistent/ExecutorHandler.hpp:8,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/CommunicationPattern.hpp:11:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/DevicePersistent/Base.hpp: At global scope:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/DevicePersistent/Base.hpp:27:22: warning: extra ‘;’ [-Wpedantic]
+   27 |     TypeName("IOPtr");
+      |                      ^
+      |                      -
+In file included from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/batch_dim.hpp:11,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/exception_helpers.hpp:11,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/temporary_clone.hpp:13,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/utils.hpp:9,
+                 from /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/polymorphic_object.hpp:13:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/dim.hpp: In instantiation of ‘gko::dim<1, DimensionType>::dimension_type& gko::dim<1, DimensionType>::operator[](const gko::size_type&) [with DimensionType = long unsigned int; dimension_type = long unsigned int; gko::size_type = long unsigned int]’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/dim.hpp:90:47:   required from ‘gko::dim<Dimensionality, DimensionType>::dimension_type& gko::dim<Dimensionality, DimensionType>::operator[](const gko::size_type&) [with long unsigned int Dimensionality = 2; DimensionType = long unsigned int; dimension_type = long unsigned int; gko::size_type = long unsigned int]’
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/lin_op.hpp:261:9:   required from here
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/dim.hpp:200:64: warning: unused parameter ‘dimension’ [-Wunused-parameter]
+  200 |     GKO_ATTRIBUTES dimension_type& operator[](const size_type& dimension)
+      |                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/dim.hpp: In instantiation of ‘constexpr const gko::dim<1, DimensionType>::dimension_type& gko::dim<1, DimensionType>::operator[](const gko::size_type&) const [with DimensionType = long unsigned int; dimension_type = long unsigned int; gko::size_type = long unsigned int]’:
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/dim.hpp:80:47:   required from ‘constexpr const gko::dim<Dimensionality, DimensionType>::dimension_type& gko::dim<Dimensionality, DimensionType>::operator[](const gko::size_type&) const [with long unsigned int Dimensionality = 2; DimensionType = long unsigned int; dimension_type = long unsigned int; gko::size_type = long unsigned int]’
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/block_operator.hpp:100:41:   required from here
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo/include/ginkgo/core/base/dim.hpp:195:26: warning: unused parameter ‘dimension’ [-Wunused-parameter]
+  195 |         const size_type& dimension) const noexcept
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~

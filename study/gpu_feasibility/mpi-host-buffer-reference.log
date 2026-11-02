@@ -1,0 +1,2 @@
+{"rank":0,"ranks":2,"pstream_parallel":true,"force_host_buffer":true,"single_gpu_owner":true,"allreduce_sum":3,"exchange":[0,10],"passed":true,"actual_gpu_buffers_tested":false}
+{"rank":1,"ranks":2,"pstream_parallel":true,"force_host_buffer":true,"single_gpu_owner":false,"allreduce_sum":3,"exchange":[1,11],"passed":true,"actual_gpu_buffers_tested":false}

@@ -1,0 +1,98 @@
+-- Auto detecting accelerator devices
+-- Skip CUDA detection OGL_BUILD_CUDA=OFF
+-- Skip HIP detection OGL_BUILD_HIP=OFF
+-- using OGL_GINKGO_DIR /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
+-- Could NOT find VTune (missing: VTune_EXECUTABLE VTune_LIBRARY VTune_INCLUDE_DIR) 
+-- Could NOT find METIS (missing: METIS_LIBRARY METIS_GKLIB_LIBRARY METIS_INCLUDE_DIR) 
+-- 
+---------------------------------------------------------------------------------------------------------
+--
+--    Summary of Configuration for Ginkgo (version 2.0.0 with tag develop, shortrev 13c9174)
+--    Ginkgo configuration:
+--        CMAKE_BUILD_TYPE:                                Release
+--        BUILD_SHARED_LIBS:                               ON
+--        CMAKE_INSTALL_PREFIX:                            /opt/openfoam-workspace/gpu-feasibility/pressure-offload/install
+--        PROJECT_SOURCE_DIR:                              /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
+--        PROJECT_BINARY_DIR:                              /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-reference/Ginkgo
+--        CMAKE_CXX_COMPILER:                              GNU 13.3.0 on platform Linux aarch64
+--                                                         /usr/bin/c++
+--    User configuration:
+--      Enabled modules:
+--        GINKGO_BUILD_OMP:                                OFF
+--        GINKGO_BUILD_MPI:                                ON
+--        GINKGO_BUILD_REFERENCE:                          ON
+--        GINKGO_BUILD_CUDA:                               OFF
+--        GINKGO_BUILD_HIP:                                OFF
+--        GINKGO_BUILD_SYCL:                               OFF
+--      Enabled features:
+--        GINKGO_MIXED_PRECISION:                          OFF
+--        GINKGO_HAVE_GPU_AWARE_MPI:                       OFF
+--        GINKGO_ENABLE_HALF:                              OFF
+--        GINKGO_ENABLE_BFLOAT16:                          OFF
+--      Tests, benchmarks and examples:
+--        GINKGO_BUILD_TESTS:                              OFF
+--        GINKGO_FAST_TESTS:                               OFF
+--        GINKGO_BUILD_EXAMPLES:                           OFF
+--        GINKGO_EXTLIB_EXAMPLE:                           
+--        GINKGO_BUILD_BENCHMARKS:                         OFF
+--        GINKGO_BENCHMARK_ENABLE_TUNING:                  OFF
+--      Documentation:
+--        GINKGO_BUILD_DOC:                                OFF
+--        GINKGO_VERBOSE_LEVEL:                            1
+--    
+---------------------------------------------------------------------------------------------------------
+--
+--      Developer Tools:
+--        GINKGO_DEVEL_TOOLS:                              OFF
+--        GINKGO_WITH_CLANG_TIDY:                          OFF
+--        GINKGO_WITH_IWYU:                                OFF
+--        GINKGO_CHECK_CIRCULAR_DEPS:                      OFF
+--        GINKGO_WITH_CCACHE:                              OFF
+---------------------------------------------------------------------------------------------------------
+--
+--      Components:
+--        GINKGO_BUILD_PAPI_SDE:                           OFF
+--
+--  Detailed information (More compiler flags, module configuration) can be found in detailed.log
+--   
+--
+--  Now, run  cmake --build .  to compile Ginkgo!
+--
+---------------------------------------------------------------------------------------------------------
+
+Compile against FoamFoundation version of OpenFOAM
+-- 
++------------------------------------------------------------------------------+
+ 
+	    ███████      █████████  █████      
+	  ███▒▒▒▒▒███   ███▒▒▒▒▒███▒▒███       
+	 ███     ▒▒███ ███     ▒▒▒  ▒███       
+	▒███      ▒███▒███          ▒███       
+	▒███      ▒███▒███    █████ ▒███       
+	▒▒███     ███ ▒▒███  ▒▒███  ▒███      █
+	 ▒▒▒███████▒   ▒▒█████████  ███████████
+	   ▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒ 
+       -     OpenFOAM     Ginkgo     Layer
+                                       
+         Version:  Git commit: 7c3ced4-dirty
+
++------------------------------------------------------------------------------+
+ Build information:
+--	CMAKE_BUILD_TYPE = Release
+--	CMAKE_CXX_COMPILER = GNU@13.3.0
++------------------------------------------------------------------------------+
+ Third-Party dependencies:
+ -- 	OGL_GINKGO_DIR = /opt/openfoam-workspace/gpu-feasibility/pressure-offload/Ginkgo
++------------------------------------------------------------------------------+
+ OGL components:
+ -- 	OGL_BUILD_CUDA = OFF
+ -- 	OGL_BUILD_HIP = OFF
+ -- 	OGL_BUILD_OMP = OFF
+ -- 	OGL_BUILD_SYCL = OFF
+ -- 	OGL_BUILD_UNITTEST = OFF
++------------------------------------------------------------------------------+
+ OGL definitions:
++------------------------------------------------------------------------------+
+-- Configuring done (10.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-reference

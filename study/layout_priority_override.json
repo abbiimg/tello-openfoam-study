@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-11-02 01:25:32 UTC",
+  "trigger": "User correction: square versus circle must be completed first",
+  "supersedes": "Timing/gating portions of circle_refinement_policy.json; original evidence is retained",
+  "active_stage": "Eight-rotor square versus circle, flat and inward10 at nearest horizontal hub spacing8cm, equal19.2923076923W modeled electrical budget and matched medium/fine resolution",
+  "footprint_notice": "These nearest-spacing-matched refined geometries have different box/span metrics; report them. Existing23.62cm equal-box cold/coarse comparisons remain a separate comparison and must not be pooled as equal-footprint fine results.",
+  "action": "Hold all unfinished non-layout CFD in original memory states; retain required square8 flat/inward10 fine and circle8 flat/inward10 medium; promote only the existing circle8 flat/inward10 fine pair",
+  "new_fine_geometry_count": 2,
+  "input_and_physics_changes": false,
+  "other_goal_status": "Remaining rotor-count and angle/spacing stages stay authorized and resume after layout stage; this is not a pause of the overall task",
+  "completion_rule": "Finish and scientifically review comparable-resolution layout means, modeled power, footprint metrics and finite-window/grid/initialization caveats; an unresolved layout tie is a valid outcome",
+  "continuation": "Report layout findings, then explicitly release preserved non-layout states and resume the remaining approved adaptive cycle"
+}

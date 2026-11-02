@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")"
+source /opt/openfoam14/etc/bashrc
+set -u -o pipefail
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+export CUDA_CACHE_PATH="$PWD/runtime_cache/cuda"
+export TMPDIR="$PWD/runtime_cache/tmp"
+export XDG_CACHE_HOME="$PWD/runtime_cache"
+export LD_LIBRARY_PATH=/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda:/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/lib:/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib:/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib:/opt/openfoam14/platforms/linuxArm64GccDPInt32Opt/lib/openmpi-system:/usr/lib/wsl/lib"${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+python3 ./run_benchmark.py --run

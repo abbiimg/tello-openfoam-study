@@ -1,0 +1,2517 @@
+{
+  "schema": "tello-prespecified-layout-stage-nearest8-v2",
+  "frozen_utc": "2026-11-02T03:02:21.403587+00:00",
+  "prespecified_cases": [
+    {
+      "key": "square_flat_medium",
+      "case": "mediummapped_n8_e19.2923_d0800_az0000",
+      "group": "square8",
+      "level": "medium",
+      "tilt_deg": 0.0
+    },
+    {
+      "key": "square_inward_medium",
+      "case": "mediummapped_n8_e19.2923_d0800_am1000",
+      "group": "square8",
+      "level": "medium",
+      "tilt_deg": -10.0
+    },
+    {
+      "key": "square_flat_fine",
+      "case": "finemapped_n8_e19.2923_d0800_az0000",
+      "group": "square8",
+      "level": "fine",
+      "tilt_deg": 0.0
+    },
+    {
+      "key": "square_inward_fine",
+      "case": "finemapped_n8_e19.2923_d0800_am1000",
+      "group": "square8",
+      "level": "fine",
+      "tilt_deg": -10.0
+    },
+    {
+      "key": "circle_flat_medium",
+      "case": "mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f",
+      "group": "circle8",
+      "level": "medium",
+      "tilt_deg": 0.0
+    },
+    {
+      "key": "circle_inward_medium",
+      "case": "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+      "group": "circle8",
+      "level": "medium",
+      "tilt_deg": -10.0
+    },
+    {
+      "key": "circle_flat_fine",
+      "case": "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "group": "circle8",
+      "level": "fine",
+      "tilt_deg": 0.0
+    },
+    {
+      "key": "circle_inward_fine",
+      "case": "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "group": "circle8",
+      "level": "fine",
+      "tilt_deg": -10.0
+    }
+  ],
+  "prespecified_case_ids_sha256": "fcfb187ebce9ea0453dd5d5224cdb6cfc64cc503883a4ef210339e3cacd8bad1",
+  "required_case_count": 8,
+  "root_absolute_at_freeze": "/opt/openfoam-workspace/cases/tello_refinement",
+  "input_cases": [
+    {
+      "key": "square_flat_medium",
+      "case": "mediummapped_n8_e19.2923_d0800_az0000",
+      "group": "square8",
+      "level": "medium",
+      "tilt_deg": 0.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "d0e5fe7a0c2f1f4181e0511b65f1a3b7f7e133952e19633279dc773bc00b7464",
+          "size_bytes": 8257,
+          "mtime_ns": 1793556324558562688
+        },
+        "initialization.json": {
+          "sha256": "83e530ba7cc9d6e741bce0c67140aef1a2b95cc332692925818b00c0cb6e890a",
+          "size_bytes": 24627,
+          "mtime_ns": 1793556344155755035
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793556324066865578
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793556324082539194
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793556323582325886
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793556323582369885
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793556323618511427
+        },
+        "constant/rotorParameters": {
+          "sha256": "1756134ec25fd0d5f9a44f3f44d51e248b671c6d340794c9758bdffa37b8543f",
+          "size_bytes": 602,
+          "mtime_ns": 1793556323618594426
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793556323582410784
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793556323582456883
+        },
+        "system/blockMeshDict": {
+          "sha256": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+          "size_bytes": 738,
+          "mtime_ns": 1793556323618384030
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793556324282861673
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793556323582550282
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793556323963819845
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793556324098864999
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": 0.0,
+        "level": "medium",
+        "mesh_cells": 481888,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            -0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.08,
+            0
+          ],
+          [
+            0.0,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.0,
+            0
+          ]
+        ],
+        "normals": [
+          [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "radials": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            -0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            1.0,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            1.0,
+            0
+          ],
+          [
+            -1.0,
+            0.0,
+            0
+          ]
+        ],
+        "layout": "square_perimeter",
+        "nearest_spacing_cm": 8.0,
+        "projected_width_m": 0.23620000000000002,
+        "projected_depth_m": 0.23620000000000002,
+        "projected_box_area_m2": 0.05579044000000001,
+        "projected_max_span_m": 0.30247416997969523,
+        "projected_convex_hull_area_m2": 0.05454436731187748,
+        "projected_geometry_metric_method": "analytic_flat_disk_Minkowski_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 0,
+        "projected_max_span_bound_width_m": 0.0,
+        "projected_convex_hull_area_bound_width_m2": 0.0,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 0.0,
+        "projected_geometry_normal_max_norm_error": 0.0,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarse_n8_e19.2923_d0800_az0000",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "83e530ba7cc9d6e741bce0c67140aef1a2b95cc332692925818b00c0cb6e890a",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"0318d336e0cad25f1bee0885d195377ff8fd48b5e290cf343d244d493d8d7763\", \"0.6/p\": \"49f13d9baa65a83bdf09b7ec1f8faa747ac1cfc5c08f9568557abcccd92dfa85\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"0a4a707e8c9d676b342ae0b121d2d5fee7c64183b3eaee8a0a7f80c9d82af55d\", \"0.6/p\": \"2f56f71de717ac63266d8068f2e6d2f71adcab8aeaeb63c554dc44d579b68be0\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarse_n8_e19.2923_d0800_az0000",
+        "source_time_s": 0.6,
+        "geometry_sha256": "ae6f41343b676fab5e4501f49fe673b6285d38d48962467333f4753305104b1b",
+        "historical_geometry_sha256": "ae6f41343b676fab5e4501f49fe673b6285d38d48962467333f4753305104b1b",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "0318d336e0cad25f1bee0885d195377ff8fd48b5e290cf343d244d493d8d7763",
+          "0.6/p": "49f13d9baa65a83bdf09b7ec1f8faa747ac1cfc5c08f9568557abcccd92dfa85"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 2,
+        "pressure_direct_coarsest": false
+      }
+    },
+    {
+      "key": "square_inward_medium",
+      "case": "mediummapped_n8_e19.2923_d0800_am1000",
+      "group": "square8",
+      "level": "medium",
+      "tilt_deg": -10.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "f41bce98d2e402259d4c7d1483cddbb04cefa96156468edd1ccb33bcb0851b9e",
+          "size_bytes": 8597,
+          "mtime_ns": 1793556283188829789
+        },
+        "initialization.json": {
+          "sha256": "9b4c00e88b93d721dc0347eab8c0c4ea65c245bf45c80da20ab11419f31003a3",
+          "size_bytes": 25247,
+          "mtime_ns": 1793556302270095713
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793556282718872434
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793556282734872519
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793556282187859510
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793556282187959210
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793556282221532789
+        },
+        "constant/rotorParameters": {
+          "sha256": "5d902ccbdbeede5a077907a0e54a16e98e3f6b59116127eb7208cc758ef49bd4",
+          "size_bytes": 893,
+          "mtime_ns": 1793556282221779290
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793556282188072011
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793556282188239312
+        },
+        "system/blockMeshDict": {
+          "sha256": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+          "size_bytes": 738,
+          "mtime_ns": 1793556282221244187
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793556282926873540
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793556282188571614
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793556282619566606
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793556282750872604
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": -10.0,
+        "level": "medium",
+        "mesh_cells": 481888,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            -0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.08,
+            0
+          ],
+          [
+            0.0,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.0,
+            0
+          ]
+        ],
+        "normals": [
+          [
+            0.12278780396897282,
+            0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            -0.12278780396897282,
+            0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            -0.12278780396897282,
+            -0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            0.12278780396897282,
+            -0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            -0.0,
+            0.17364817766693033,
+            0.984807753012208
+          ],
+          [
+            -0.17364817766693033,
+            -0.0,
+            0.984807753012208
+          ],
+          [
+            -0.0,
+            -0.17364817766693033,
+            0.984807753012208
+          ],
+          [
+            0.17364817766693033,
+            -0.0,
+            0.984807753012208
+          ]
+        ],
+        "radials": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            -0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            1.0,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            1.0,
+            0
+          ],
+          [
+            -1.0,
+            0.0,
+            0
+          ]
+        ],
+        "layout": "square_perimeter",
+        "nearest_spacing_cm": 8.0,
+        "projected_width_m": 0.23562339059615772,
+        "projected_depth_m": 0.23562339059615772,
+        "projected_box_area_m2": 0.05551838219602951,
+        "projected_max_span_m": 0.3013165207592255,
+        "projected_convex_hull_area_m2": 0.054246760458767425,
+        "projected_geometry_metric_method": "converged_inscribed_projected_ellipse_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 2048,
+        "projected_max_span_lower_bound_m": 0.3013165207592255,
+        "projected_max_span_upper_bound_m": 0.3013166104122058,
+        "projected_convex_hull_area_lower_bound_m2": 0.054246760458767425,
+        "projected_convex_hull_area_upper_bound_m2": 0.05424679974545733,
+        "projected_max_span_bound_width_m": 8.965298031680114e-08,
+        "projected_convex_hull_area_bound_width_m2": 3.9286689909644686e-08,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 2.1300992414374775e-08,
+        "projected_geometry_normal_max_norm_error": 1.1102230246251565e-16,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarse_n8_e19.2923_d0800_am1000",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "9b4c00e88b93d721dc0347eab8c0c4ea65c245bf45c80da20ab11419f31003a3",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"2c9e8bd3fd1d6a1afa59450babe147294a48cdd5df647de7148e9fdbb3f1e935\", \"0.6/p\": \"3c52266f644cef55eb2afc57dfe17068ca6678bc82fe54db94e798b50df164e7\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"6b75511a85f51e497d0658f4a91f27e8e1f538c3584bac6afc884dd2f08b2e26\", \"0.6/p\": \"79ee609e2dd30576d40e7ba64a80b5a3306a5ad82f1d530058c6e12a9a6f8ff1\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarse_n8_e19.2923_d0800_am1000",
+        "source_time_s": 0.6,
+        "geometry_sha256": "2552d97f61048f602210e4dd0411447cb2f88941309c864671f47e2e41a545e0",
+        "historical_geometry_sha256": "2552d97f61048f602210e4dd0411447cb2f88941309c864671f47e2e41a545e0",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "2c9e8bd3fd1d6a1afa59450babe147294a48cdd5df647de7148e9fdbb3f1e935",
+          "0.6/p": "3c52266f644cef55eb2afc57dfe17068ca6678bc82fe54db94e798b50df164e7"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 2,
+        "pressure_direct_coarsest": false
+      }
+    },
+    {
+      "key": "square_flat_fine",
+      "case": "finemapped_n8_e19.2923_d0800_az0000",
+      "group": "square8",
+      "level": "fine",
+      "tilt_deg": 0.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "86741e13785feadac53d7a85569660881dcbc059755da61d73f469feca9e97b1",
+          "size_bytes": 8289,
+          "mtime_ns": 1793556221745269301
+        },
+        "initialization.json": {
+          "sha256": "035fc19e5f06bda21a3c8e0789d714551da7b9136455c37900802c3b85d85537",
+          "size_bytes": 24626,
+          "mtime_ns": 1793556261091667967
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793556221326033774
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793556221337821506
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793556220703405020
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793556220703442619
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793556220745735806
+        },
+        "constant/rotorParameters": {
+          "sha256": "1756134ec25fd0d5f9a44f3f44d51e248b671c6d340794c9758bdffa37b8543f",
+          "size_bytes": 602,
+          "mtime_ns": 1793556220745821905
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793556220703480719
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793556220703515018
+        },
+        "system/blockMeshDict": {
+          "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+          "size_bytes": 743,
+          "mtime_ns": 1793556220745564508
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793556221514894783
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793556220703604017
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793556221211472306
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793556221350897120
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": 0.0,
+        "level": "fine",
+        "mesh_cells": 922576,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            -0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.08,
+            0
+          ],
+          [
+            0.0,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.0,
+            0
+          ]
+        ],
+        "normals": [
+          [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "radials": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            -0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            1.0,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            1.0,
+            0
+          ],
+          [
+            -1.0,
+            0.0,
+            0
+          ]
+        ],
+        "layout": "square_perimeter",
+        "nearest_spacing_cm": 8.0,
+        "projected_width_m": 0.23620000000000002,
+        "projected_depth_m": 0.23620000000000002,
+        "projected_box_area_m2": 0.05579044000000001,
+        "projected_max_span_m": 0.30247416997969523,
+        "projected_convex_hull_area_m2": 0.05454436731187748,
+        "projected_geometry_metric_method": "analytic_flat_disk_Minkowski_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 0,
+        "projected_max_span_bound_width_m": 0.0,
+        "projected_convex_hull_area_bound_width_m2": 0.0,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 0.0,
+        "projected_geometry_normal_max_norm_error": 0.0,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarse_n8_e19.2923_d0800_az0000",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "035fc19e5f06bda21a3c8e0789d714551da7b9136455c37900802c3b85d85537",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"0318d336e0cad25f1bee0885d195377ff8fd48b5e290cf343d244d493d8d7763\", \"0.6/p\": \"49f13d9baa65a83bdf09b7ec1f8faa747ac1cfc5c08f9568557abcccd92dfa85\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"9e13a9e6021bee8364f2fa23c4d8fbe008e61182068d7aaf8b92679e8b129d16\", \"0.6/p\": \"7e657ccc6738c515edd2e5b20504704447fe1b8ce0de7ec12a376d7fd62a2745\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarse_n8_e19.2923_d0800_az0000",
+        "source_time_s": 0.6,
+        "geometry_sha256": "ae6f41343b676fab5e4501f49fe673b6285d38d48962467333f4753305104b1b",
+        "historical_geometry_sha256": "ae6f41343b676fab5e4501f49fe673b6285d38d48962467333f4753305104b1b",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "0318d336e0cad25f1bee0885d195377ff8fd48b5e290cf343d244d493d8d7763",
+          "0.6/p": "49f13d9baa65a83bdf09b7ec1f8faa747ac1cfc5c08f9568557abcccd92dfa85"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 2,
+        "pressure_direct_coarsest": false
+      }
+    },
+    {
+      "key": "square_inward_fine",
+      "case": "finemapped_n8_e19.2923_d0800_am1000",
+      "group": "square8",
+      "level": "fine",
+      "tilt_deg": -10.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "df6c756e4b373775d1b6af3e015dbe113a96069182ea54c8fc159a3894405a93",
+          "size_bytes": 8629,
+          "mtime_ns": 1793556142846356164
+        },
+        "initialization.json": {
+          "sha256": "1b7b44996da0bedd34f3bf560a6438eea7b7d675a86c7098e2b38ae2d69d947f",
+          "size_bytes": 25245,
+          "mtime_ns": 1793556180401724246
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793556142386471559
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793556142398942741
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793556141773630303
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793556141773789898
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793556141810272940
+        },
+        "constant/rotorParameters": {
+          "sha256": "5d902ccbdbeede5a077907a0e54a16e98e3f6b59116127eb7208cc758ef49bd4",
+          "size_bytes": 893,
+          "mtime_ns": 1793556141810365737
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793556141773990092
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793556141774187685
+        },
+        "system/blockMeshDict": {
+          "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+          "size_bytes": 743,
+          "mtime_ns": 1793556141810099045
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793556142562945132
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793556141774666970
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793556142276724259
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793556142426179038
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": -10.0,
+        "level": "fine",
+        "mesh_cells": 922576,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            -0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.08,
+            0
+          ],
+          [
+            0.0,
+            -0.08,
+            0
+          ],
+          [
+            0.08,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            0.08,
+            0
+          ],
+          [
+            -0.08,
+            0.0,
+            0
+          ]
+        ],
+        "normals": [
+          [
+            0.12278780396897282,
+            0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            -0.12278780396897282,
+            0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            -0.12278780396897282,
+            -0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            0.12278780396897282,
+            -0.12278780396897282,
+            0.984807753012208
+          ],
+          [
+            -0.0,
+            0.17364817766693033,
+            0.984807753012208
+          ],
+          [
+            -0.17364817766693033,
+            -0.0,
+            0.984807753012208
+          ],
+          [
+            -0.0,
+            -0.17364817766693033,
+            0.984807753012208
+          ],
+          [
+            0.17364817766693033,
+            -0.0,
+            0.984807753012208
+          ]
+        ],
+        "radials": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            -0.7071067811865475,
+            0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            -0.7071067811865475,
+            0.7071067811865475,
+            0
+          ],
+          [
+            0.0,
+            -1.0,
+            0
+          ],
+          [
+            1.0,
+            0.0,
+            0
+          ],
+          [
+            0.0,
+            1.0,
+            0
+          ],
+          [
+            -1.0,
+            0.0,
+            0
+          ]
+        ],
+        "layout": "square_perimeter",
+        "nearest_spacing_cm": 8.0,
+        "projected_width_m": 0.23562339059615772,
+        "projected_depth_m": 0.23562339059615772,
+        "projected_box_area_m2": 0.05551838219602951,
+        "projected_max_span_m": 0.3013165207592255,
+        "projected_convex_hull_area_m2": 0.054246760458767425,
+        "projected_geometry_metric_method": "converged_inscribed_projected_ellipse_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 2048,
+        "projected_max_span_lower_bound_m": 0.3013165207592255,
+        "projected_max_span_upper_bound_m": 0.3013166104122058,
+        "projected_convex_hull_area_lower_bound_m2": 0.054246760458767425,
+        "projected_convex_hull_area_upper_bound_m2": 0.05424679974545733,
+        "projected_max_span_bound_width_m": 8.965298031680114e-08,
+        "projected_convex_hull_area_bound_width_m2": 3.9286689909644686e-08,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 2.1300992414374775e-08,
+        "projected_geometry_normal_max_norm_error": 1.1102230246251565e-16,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarse_n8_e19.2923_d0800_am1000",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "1b7b44996da0bedd34f3bf560a6438eea7b7d675a86c7098e2b38ae2d69d947f",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"2c9e8bd3fd1d6a1afa59450babe147294a48cdd5df647de7148e9fdbb3f1e935\", \"0.6/p\": \"3c52266f644cef55eb2afc57dfe17068ca6678bc82fe54db94e798b50df164e7\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"1caa999b1192ee877bdc93040b2b3ee1c2a082d751d9226282e3094283b25908\", \"0.6/p\": \"0a433ff28b94fa05874ff57ecb3ef7b4e83045b9ca810ded574e493603d0ca65\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarse_n8_e19.2923_d0800_am1000",
+        "source_time_s": 0.6,
+        "geometry_sha256": "2552d97f61048f602210e4dd0411447cb2f88941309c864671f47e2e41a545e0",
+        "historical_geometry_sha256": "2552d97f61048f602210e4dd0411447cb2f88941309c864671f47e2e41a545e0",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "2c9e8bd3fd1d6a1afa59450babe147294a48cdd5df647de7148e9fdbb3f1e935",
+          "0.6/p": "3c52266f644cef55eb2afc57dfe17068ca6678bc82fe54db94e798b50df164e7"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 2,
+        "pressure_direct_coarsest": false
+      }
+    },
+    {
+      "key": "circle_flat_medium",
+      "case": "mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f",
+      "group": "circle8",
+      "level": "medium",
+      "tilt_deg": 0.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "8c6dd52a52c9f9e3246734bd620a0d67e67fe6afb43e1bcca9b21b9f48f90152",
+          "size_bytes": 12244,
+          "mtime_ns": 1793576215780820490
+        },
+        "initialization.json": {
+          "sha256": "fc0dc07112899f09afe6b519d702aecb9105f7de004ebb3090d1a6fecaed2441",
+          "size_bytes": 27687,
+          "mtime_ns": 1793576236933129652
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793576215159405588
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793576215199405498
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793576212229004087
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793576212229048287
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793576213726968812
+        },
+        "constant/rotorParameters": {
+          "sha256": "7d14801634d50ddc9a4f5626c62da4b74393f0a8222ff8b0f397a18838f12e0b",
+          "size_bytes": 806,
+          "mtime_ns": 1793576213727824511
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793576213728027310
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793576213730666004
+        },
+        "system/blockMeshDict": {
+          "sha256": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+          "size_bytes": 738,
+          "mtime_ns": 1793576212262162912
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793576215459404913
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793576212229241986
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793576214677021774
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793576215251405381
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": 0.0,
+        "level": "medium",
+        "mesh_cells": 481888,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            0.0965685424949238,
+            0.04,
+            0.0
+          ],
+          [
+            0.04000000000000001,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.039999999999999994,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.0965685424949238,
+            0.040000000000000015,
+            0.0
+          ],
+          [
+            -0.09656854249492382,
+            -0.03999999999999999,
+            0.0
+          ],
+          [
+            -0.040000000000000056,
+            -0.09656854249492378,
+            0.0
+          ],
+          [
+            0.04000000000000002,
+            -0.09656854249492379,
+            0.0
+          ],
+          [
+            0.09656854249492378,
+            -0.04000000000000006,
+            0.0
+          ]
+        ],
+        "normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ],
+        "radials": [
+          [
+            0.9238795325112867,
+            0.3826834323650898,
+            0.0
+          ],
+          [
+            0.38268343236508984,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.3826834323650897,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.9238795325112867,
+            0.3826834323650899,
+            0.0
+          ],
+          [
+            -0.9238795325112868,
+            -0.38268343236508967,
+            0.0
+          ],
+          [
+            -0.38268343236509034,
+            -0.9238795325112865,
+            0.0
+          ],
+          [
+            0.38268343236509,
+            -0.9238795325112866,
+            0.0
+          ],
+          [
+            0.9238795325112865,
+            -0.3826834323650904,
+            0.0
+          ]
+        ],
+        "layout": "circular_ring",
+        "nearest_spacing_cm": 7.999999999999992,
+        "projected_width_m": 0.26933708498984765,
+        "projected_depth_m": 0.2693370849898476,
+        "projected_box_area_m2": 0.07254246535082841,
+        "projected_max_span_m": 0.28525007438022026,
+        "projected_convex_hull_area_m2": 0.0598463009102531,
+        "projected_geometry_metric_method": "analytic_flat_disk_Minkowski_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 0,
+        "projected_max_span_bound_width_m": 0.0,
+        "projected_convex_hull_area_bound_width_m2": 0.0,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 0.0,
+        "projected_geometry_normal_max_norm_error": 0.0,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "fc0dc07112899f09afe6b519d702aecb9105f7de004ebb3090d1a6fecaed2441",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"4f9f586466acf1c160f209a3d0f2ad74cf1e1b24dd307ed9b735c69bcacf94f7\", \"0.6/p\": \"4b158825744b7586afc2709092cf695203f944c2b8e049fb3a236287d7c4ebfb\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"97e01c69664a2ae24bfb8897c32181a406ca311dd658dff902b8d85704ada360\", \"0.6/p\": \"836f43856f330c86a88c8489c4d701ddfa9c004d085652bef7d6feecd47b7c5b\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+        "source_time_s": 0.6,
+        "geometry_sha256": "1ac24220b21a16e056a1702548c3c4fe8a54239a0738f11a05c5ff28942925b8",
+        "historical_geometry_sha256": "1ac24220b21a16e056a1702548c3c4fe8a54239a0738f11a05c5ff28942925b8",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "4f9f586466acf1c160f209a3d0f2ad74cf1e1b24dd307ed9b735c69bcacf94f7",
+          "0.6/p": "4b158825744b7586afc2709092cf695203f944c2b8e049fb3a236287d7c4ebfb"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 1,
+        "pressure_direct_coarsest": true
+      }
+    },
+    {
+      "key": "circle_inward_medium",
+      "case": "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+      "group": "circle8",
+      "level": "medium",
+      "tilt_deg": -10.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "b518af366c76e7139caf4e2443673d9a2afa185bb46defc22e938b29db666f81",
+          "size_bytes": 12674,
+          "mtime_ns": 1793582031559538512
+        },
+        "initialization.json": {
+          "sha256": "dff9b3925dfe9f3a910aadda443e0bc2f1486a3a92899c2fc8bb57e5d1bfb437",
+          "size_bytes": 28475,
+          "mtime_ns": 1793582052914414886
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793582031060463771
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793582031080467901
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793582029649323100
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793582029649349700
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793582030508868757
+        },
+        "constant/rotorParameters": {
+          "sha256": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+          "size_bytes": 1161,
+          "mtime_ns": 1793582030509162057
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793582030509230158
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793582030509290458
+        },
+        "system/blockMeshDict": {
+          "sha256": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+          "size_bytes": 738,
+          "mtime_ns": 1793582029666278386
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793582031296468222
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793582029649469600
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793582030925393172
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793582031100310531
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": -10.0,
+        "level": "medium",
+        "mesh_cells": 481888,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            0.0965685424949238,
+            0.04,
+            0.0
+          ],
+          [
+            0.04000000000000001,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.039999999999999994,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.0965685424949238,
+            0.040000000000000015,
+            0.0
+          ],
+          [
+            -0.09656854249492382,
+            -0.03999999999999999,
+            0.0
+          ],
+          [
+            -0.040000000000000056,
+            -0.09656854249492378,
+            0.0
+          ],
+          [
+            0.04000000000000002,
+            -0.09656854249492379,
+            0.0
+          ],
+          [
+            0.09656854249492378,
+            -0.04000000000000006,
+            0.0
+          ]
+        ],
+        "normals": [
+          [
+            -0.16042999720436046,
+            -0.06645228065352382,
+            0.984807753012208
+          ],
+          [
+            -0.06645228065352383,
+            -0.16042999720436046,
+            0.984807753012208
+          ],
+          [
+            0.06645228065352382,
+            -0.16042999720436046,
+            0.984807753012208
+          ],
+          [
+            0.16042999720436046,
+            -0.06645228065352385,
+            0.984807753012208
+          ],
+          [
+            0.16042999720436046,
+            0.06645228065352381,
+            0.984807753012208
+          ],
+          [
+            0.06645228065352392,
+            0.1604299972043604,
+            0.984807753012208
+          ],
+          [
+            -0.06645228065352386,
+            0.16042999720436044,
+            0.984807753012208
+          ],
+          [
+            -0.1604299972043604,
+            0.06645228065352393,
+            0.984807753012208
+          ]
+        ],
+        "radials": [
+          [
+            0.9238795325112867,
+            0.3826834323650898,
+            0.0
+          ],
+          [
+            0.38268343236508984,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.3826834323650897,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.9238795325112867,
+            0.3826834323650899,
+            0.0
+          ],
+          [
+            -0.9238795325112868,
+            -0.38268343236508967,
+            0.0
+          ],
+          [
+            -0.38268343236509034,
+            -0.9238795325112865,
+            0.0
+          ],
+          [
+            0.38268343236509,
+            -0.9238795325112866,
+            0.0
+          ],
+          [
+            0.9238795325112865,
+            -0.3826834323650904,
+            0.0
+          ]
+        ],
+        "layout": "circular_ring",
+        "nearest_spacing_cm": 7.999999999999992,
+        "projected_width_m": 0.26835008321125664,
+        "projected_depth_m": 0.26835008321125664,
+        "projected_box_area_m2": 0.07201176715948836,
+        "projected_max_span_m": 0.28409242515975053,
+        "projected_convex_hull_area_m2": 0.05939959571955567,
+        "projected_geometry_metric_method": "converged_inscribed_projected_ellipse_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 2048,
+        "projected_max_span_lower_bound_m": 0.28409242515975053,
+        "projected_max_span_upper_bound_m": 0.28409251481273085,
+        "projected_convex_hull_area_lower_bound_m2": 0.05939959571955567,
+        "projected_convex_hull_area_upper_bound_m2": 0.05939963498465121,
+        "projected_max_span_bound_width_m": 8.965298031680114e-08,
+        "projected_convex_hull_area_bound_width_m2": 3.926509553389903e-08,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 2.1466116363610954e-08,
+        "projected_geometry_normal_max_norm_error": 1.1102230246251565e-16,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "dff9b3925dfe9f3a910aadda443e0bc2f1486a3a92899c2fc8bb57e5d1bfb437",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"4033750a55d15d70808667905e74c06dfa2c342833098715d42e502ee771fb6d\", \"0.6/p\": \"7a3fa176d7b6d2a11893904321ed8f6791d75362f90537c11830b4aa6b1c5939\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"d1877d8b9ebca6c71feab7c6dd0354bad552c08ba9acc1203c243eb21ec226fb\", \"0.6/p\": \"28c97372755ef5992efc273fdec32ffb4c89c598ccb5b3662901e2c640e066cb\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+        "source_time_s": 0.6,
+        "geometry_sha256": "698c2c65c9e8821808170ad33c90ad7213f030d0bfb06411376e7b6c7174c6a8",
+        "historical_geometry_sha256": "698c2c65c9e8821808170ad33c90ad7213f030d0bfb06411376e7b6c7174c6a8",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "4033750a55d15d70808667905e74c06dfa2c342833098715d42e502ee771fb6d",
+          "0.6/p": "7a3fa176d7b6d2a11893904321ed8f6791d75362f90537c11830b4aa6b1c5939"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 1,
+        "pressure_direct_coarsest": true
+      }
+    },
+    {
+      "key": "circle_flat_fine",
+      "case": "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "group": "circle8",
+      "level": "fine",
+      "tilt_deg": 0.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "6197dce8333f94052a756912d8af2ee20dac6c84bf656beb1bc60a9cb327bbf1",
+          "size_bytes": 12274,
+          "mtime_ns": 1793576244070613944
+        },
+        "initialization.json": {
+          "sha256": "a087da144f86e53f1bf5c1bea128bc68e1861a3f2c9ba207284d2b4ca7aacf17",
+          "size_bytes": 27682,
+          "mtime_ns": 1793576303930783244
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793576243575340763
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793576243591340727
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793576242228225906
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793576242228334506
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793576243061833723
+        },
+        "constant/rotorParameters": {
+          "sha256": "7d14801634d50ddc9a4f5626c62da4b74393f0a8222ff8b0f397a18838f12e0b",
+          "size_bytes": 806,
+          "mtime_ns": 1793576243062313322
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793576243062589621
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793576243062806821
+        },
+        "system/blockMeshDict": {
+          "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+          "size_bytes": 743,
+          "mtime_ns": 1793576242261785831
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793576243803340248
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793576242229888703
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793576243455155134
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793576243611943880
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": 0.0,
+        "level": "fine",
+        "mesh_cells": 922576,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            0.0965685424949238,
+            0.04,
+            0.0
+          ],
+          [
+            0.04000000000000001,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.039999999999999994,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.0965685424949238,
+            0.040000000000000015,
+            0.0
+          ],
+          [
+            -0.09656854249492382,
+            -0.03999999999999999,
+            0.0
+          ],
+          [
+            -0.040000000000000056,
+            -0.09656854249492378,
+            0.0
+          ],
+          [
+            0.04000000000000002,
+            -0.09656854249492379,
+            0.0
+          ],
+          [
+            0.09656854249492378,
+            -0.04000000000000006,
+            0.0
+          ]
+        ],
+        "normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ],
+        "radials": [
+          [
+            0.9238795325112867,
+            0.3826834323650898,
+            0.0
+          ],
+          [
+            0.38268343236508984,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.3826834323650897,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.9238795325112867,
+            0.3826834323650899,
+            0.0
+          ],
+          [
+            -0.9238795325112868,
+            -0.38268343236508967,
+            0.0
+          ],
+          [
+            -0.38268343236509034,
+            -0.9238795325112865,
+            0.0
+          ],
+          [
+            0.38268343236509,
+            -0.9238795325112866,
+            0.0
+          ],
+          [
+            0.9238795325112865,
+            -0.3826834323650904,
+            0.0
+          ]
+        ],
+        "layout": "circular_ring",
+        "nearest_spacing_cm": 7.999999999999992,
+        "projected_width_m": 0.26933708498984765,
+        "projected_depth_m": 0.2693370849898476,
+        "projected_box_area_m2": 0.07254246535082841,
+        "projected_max_span_m": 0.28525007438022026,
+        "projected_convex_hull_area_m2": 0.0598463009102531,
+        "projected_geometry_metric_method": "analytic_flat_disk_Minkowski_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 0,
+        "projected_max_span_bound_width_m": 0.0,
+        "projected_convex_hull_area_bound_width_m2": 0.0,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 0.0,
+        "projected_geometry_normal_max_norm_error": 0.0,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "a087da144f86e53f1bf5c1bea128bc68e1861a3f2c9ba207284d2b4ca7aacf17",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"4f9f586466acf1c160f209a3d0f2ad74cf1e1b24dd307ed9b735c69bcacf94f7\", \"0.6/p\": \"4b158825744b7586afc2709092cf695203f944c2b8e049fb3a236287d7c4ebfb\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"bda8c91451354e223d0eca6501ab7adb419c3e5a814f1e3e51bb0a6d08918259\", \"0.6/p\": \"ffe6da03861d9cad2ce0b2329af657aaad1c196d004e9f49d7c29d0608f6ff64\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+        "source_time_s": 0.6,
+        "geometry_sha256": "1ac24220b21a16e056a1702548c3c4fe8a54239a0738f11a05c5ff28942925b8",
+        "historical_geometry_sha256": "1ac24220b21a16e056a1702548c3c4fe8a54239a0738f11a05c5ff28942925b8",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "4f9f586466acf1c160f209a3d0f2ad74cf1e1b24dd307ed9b735c69bcacf94f7",
+          "0.6/p": "4b158825744b7586afc2709092cf695203f944c2b8e049fb3a236287d7c4ebfb"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 1,
+        "pressure_direct_coarsest": true
+      }
+    },
+    {
+      "key": "circle_inward_fine",
+      "case": "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "group": "circle8",
+      "level": "fine",
+      "tilt_deg": -10.0,
+      "input_files": {
+        "geometry.json": {
+          "sha256": "7de12b4e21c8f8aab87b8c35ef9eb9bb6528fe273be2fd27e6676dd971935318",
+          "size_bytes": 12704,
+          "mtime_ns": 1793582108770180782
+        },
+        "initialization.json": {
+          "sha256": "df4d87d790e591e41d0b17128f4ca8630b6946a81e61fdacc23f390dc94c5c3f",
+          "size_bytes": 28470,
+          "mtime_ns": 1793582152306340282
+        },
+        "Allrun": {
+          "sha256": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "size_bytes": 1367,
+          "mtime_ns": 1793582108248455557
+        },
+        "prepare_mapped.py": {
+          "sha256": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "size_bytes": 29663,
+          "mtime_ns": 1793582108268268258
+        },
+        "0/U": {
+          "sha256": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "size_bytes": 203,
+          "mtime_ns": 1793582106888293399
+        },
+        "0/p": {
+          "sha256": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "size_bytes": 191,
+          "mtime_ns": 1793582106888410799
+        },
+        "constant/fvModels": {
+          "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "size_bytes": 4233,
+          "mtime_ns": 1793582107701883332
+        },
+        "constant/rotorParameters": {
+          "sha256": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+          "size_bytes": 1161,
+          "mtime_ns": 1793582107702514632
+        },
+        "constant/physicalProperties": {
+          "sha256": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "size_bytes": 107,
+          "mtime_ns": 1793582107702932932
+        },
+        "constant/momentumTransport": {
+          "sha256": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "size_bytes": 94,
+          "mtime_ns": 1793582107703193332
+        },
+        "system/blockMeshDict": {
+          "sha256": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+          "size_bytes": 743,
+          "mtime_ns": 1793582106902187800
+        },
+        "system/controlDict": {
+          "sha256": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "size_bytes": 1099,
+          "mtime_ns": 1793582108472455568
+        },
+        "system/fvSchemes": {
+          "sha256": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "size_bytes": 426,
+          "mtime_ns": 1793582106888813999
+        },
+        "system/fvSolution": {
+          "sha256": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "size_bytes": 368,
+          "mtime_ns": 1793582108140485251
+        },
+        "system/decomposeParDict": {
+          "sha256": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "size_bytes": 178,
+          "mtime_ns": 1793582108287008259
+        }
+      },
+      "geometry": {
+        "rotors": 8,
+        "diameter_m": 0.0762,
+        "radius_m": 0.0381,
+        "thickness_m": 0.012,
+        "battery_power_W": 19.29230769230769,
+        "tilt_deg": -10.0,
+        "level": "fine",
+        "mesh_cells": 922576,
+        "loss_model": {
+          "auxiliary_W": 0.5,
+          "esc_efficiency": 0.95,
+          "idle_W_per_motor": 0.1,
+          "motor_conversion": 0.6,
+          "axial_fraction": 0.5
+        },
+        "domain_xy_m": 0.36,
+        "domain_z_m": [
+          -0.6,
+          0.36
+        ],
+        "quadrature_subcells_xy": 16,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "study_role": "validation",
+        "averaging_start_s": 0.7999999999999999,
+        "averaging_stop_s": 1.2,
+        "configured_end_time_s": 1.2,
+        "centers": [
+          [
+            0.0965685424949238,
+            0.04,
+            0.0
+          ],
+          [
+            0.04000000000000001,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.039999999999999994,
+            0.0965685424949238,
+            0.0
+          ],
+          [
+            -0.0965685424949238,
+            0.040000000000000015,
+            0.0
+          ],
+          [
+            -0.09656854249492382,
+            -0.03999999999999999,
+            0.0
+          ],
+          [
+            -0.040000000000000056,
+            -0.09656854249492378,
+            0.0
+          ],
+          [
+            0.04000000000000002,
+            -0.09656854249492379,
+            0.0
+          ],
+          [
+            0.09656854249492378,
+            -0.04000000000000006,
+            0.0
+          ]
+        ],
+        "normals": [
+          [
+            -0.16042999720436046,
+            -0.06645228065352382,
+            0.984807753012208
+          ],
+          [
+            -0.06645228065352383,
+            -0.16042999720436046,
+            0.984807753012208
+          ],
+          [
+            0.06645228065352382,
+            -0.16042999720436046,
+            0.984807753012208
+          ],
+          [
+            0.16042999720436046,
+            -0.06645228065352385,
+            0.984807753012208
+          ],
+          [
+            0.16042999720436046,
+            0.06645228065352381,
+            0.984807753012208
+          ],
+          [
+            0.06645228065352392,
+            0.1604299972043604,
+            0.984807753012208
+          ],
+          [
+            -0.06645228065352386,
+            0.16042999720436044,
+            0.984807753012208
+          ],
+          [
+            -0.1604299972043604,
+            0.06645228065352393,
+            0.984807753012208
+          ]
+        ],
+        "radials": [
+          [
+            0.9238795325112867,
+            0.3826834323650898,
+            0.0
+          ],
+          [
+            0.38268343236508984,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.3826834323650897,
+            0.9238795325112867,
+            0.0
+          ],
+          [
+            -0.9238795325112867,
+            0.3826834323650899,
+            0.0
+          ],
+          [
+            -0.9238795325112868,
+            -0.38268343236508967,
+            0.0
+          ],
+          [
+            -0.38268343236509034,
+            -0.9238795325112865,
+            0.0
+          ],
+          [
+            0.38268343236509,
+            -0.9238795325112866,
+            0.0
+          ],
+          [
+            0.9238795325112865,
+            -0.3826834323650904,
+            0.0
+          ]
+        ],
+        "layout": "circular_ring",
+        "nearest_spacing_cm": 7.999999999999992,
+        "projected_width_m": 0.26835008321125664,
+        "projected_depth_m": 0.26835008321125664,
+        "projected_box_area_m2": 0.07201176715948836,
+        "projected_max_span_m": 0.28409242515975053,
+        "projected_convex_hull_area_m2": 0.05939959571955567,
+        "projected_geometry_metric_method": "converged_inscribed_projected_ellipse_hull",
+        "projected_geometry_metric_reliable": true,
+        "projected_geometry_angular_samples_per_disk": 2048,
+        "projected_max_span_lower_bound_m": 0.28409242515975053,
+        "projected_max_span_upper_bound_m": 0.28409251481273085,
+        "projected_convex_hull_area_lower_bound_m2": 0.05939959571955567,
+        "projected_convex_hull_area_upper_bound_m2": 0.05939963498465121,
+        "projected_max_span_bound_width_m": 8.965298031680114e-08,
+        "projected_convex_hull_area_bound_width_m2": 3.926509553389903e-08,
+        "projected_geometry_refinement_span_change_m": 0.0,
+        "projected_geometry_refinement_area_change_m2": 2.1466116363610954e-08,
+        "projected_geometry_normal_max_norm_error": 1.1102230246251565e-16,
+        "projected_geometry_normal_policy": "Accepted unit-normal tolerance checked, then normalized for projected ellipse metrics.",
+        "initialization_method": "mapped_coarse_fields",
+        "initialization_family": "mapped",
+        "initialization_declared_method": "mapped_coarse_fields",
+        "initialization_provenance_source": "geometry_and_sidecar",
+        "initialization_start_time_s": 0.6,
+        "initialization_source_time_s": 0.6,
+        "initialization_source_case": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+        "initialization_mapping_method": "interpolate",
+        "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+        "initialization_source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "initialization_manifest_sha256": "df4d87d790e591e41d0b17128f4ca8630b6946a81e61fdacc23f390dc94c5c3f",
+        "initialization_recorded_source_field_hashes": "{\"0.6/U\": \"4033750a55d15d70808667905e74c06dfa2c342833098715d42e502ee771fb6d\", \"0.6/p\": \"7a3fa176d7b6d2a11893904321ed8f6791d75362f90537c11830b4aa6b1c5939\"}",
+        "initialization_recorded_mapped_field_hashes": "{\"0.6/U\": \"a34090c9eb5f8ca5b2a668663f885c1c9d26d85f287edafdd564832f730962fb\", \"0.6/p\": \"6e8c78db9325a9e6afe4b0d42e22c9339016dee6792c05055406a6be2cbcd6fe\"}",
+        "initialization_provenance_consistent": true,
+        "initialization_field_hashes_reverified_by_analyzer": false,
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "declared_numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_method_label": "1 rank(s), pressure direct-coarsest on \u00b7 be7fbf20fced",
+        "numerical_rank_count": 1,
+        "numerical_direct_coarsest_p": true,
+        "numerical_direct_coarsest_pFinal": true,
+        "declared_method_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "declared_configuration_digest_consistent": true
+      },
+      "upstream": {
+        "source_case": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+        "source_time_s": 0.6,
+        "geometry_sha256": "698c2c65c9e8821808170ad33c90ad7213f030d0bfb06411376e7b6c7174c6a8",
+        "historical_geometry_sha256": "698c2c65c9e8821808170ad33c90ad7213f030d0bfb06411376e7b6c7174c6a8",
+        "historical_geometry_hash_matches_current": true,
+        "source_field_hashes": {
+          "0.6/U": "4033750a55d15d70808667905e74c06dfa2c342833098715d42e502ee771fb6d",
+          "0.6/p": "7a3fa176d7b6d2a11893904321ed8f6791d75362f90537c11830b4aa6b1c5939"
+        },
+        "initial_fields_rehashed_by_this_report": false,
+        "level": "coarse",
+        "mesh_cells": 248400,
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_method_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "numerical_audit_valid": true,
+        "numerical_audit_status": "current_input_hashes_and_canonical_digest_verified",
+        "rank_count": 1,
+        "pressure_direct_coarsest": true
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "equal_nearest_spacing",
+      "definition": "Eight rotors, nearest hub spacing 8 cm, Square versus Circle, flat and outer edges raised 10 degrees, medium/fine. Circle may be larger; no equal-width goal."
+    },
+    {
+      "id": "fixed_hub_tilt",
+      "definition": "Within each layout/grid, raised10 versus flat at unchanged hubs; same actual nearest spacing 8 cm."
+    }
+  ],
+  "no_outcome_file_read_by_freeze": true,
+  "no_case_chosen_by_outcome": true,
+  "generator_sha256_at_freeze": "26f2a2109e8a45786f9d21a6abaa0817e106dcae4c6543822bab0a6ecbc93c79",
+  "numerical_audit_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/numerical_configurations.json",
+  "numerical_audit_sha256_at_freeze": "52b7a6ec8faad28504dcca6dee77a988abc9905c57309e65dd744ab40a3ab85f",
+  "master_remains_complete": true,
+  "stage_is_not_a_master_case_filter": true,
+  "interpretation_policy": "No automated winner declaration; optional root-reviewed interpretation text is separate.",
+  "scope_limit": "Flat plus one fixed inward10 probe; no narrow angle optimization or global optimum claim.",
+  "scope": "nearest8_v2",
+  "supersedes_primary_comparison_constraint_only": true,
+  "previous_ten_case_manifest_path": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/layout_stage/stage_manifest.json",
+  "previous_ten_case_manifest_sha256": "20a85e808bb640b9e9dd867ebd2d48c94dab6b7b7984871f2a0bef9386cceabe",
+  "excluded_equalbox_reference_cases": [
+    {
+      "key": "circle_equalbox_medium",
+      "case": "mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18",
+      "group": "circle_equalbox",
+      "level": "medium",
+      "tilt_deg": 0.0
+    },
+    {
+      "key": "circle_equalbox_fine",
+      "case": "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+      "group": "circle_equalbox",
+      "level": "fine",
+      "tilt_deg": 0.0
+    }
+  ],
+  "rationale": "Explicit user constraint change: compare Square and Circle at nearest hub spacing 8 cm; Circle may grow as large as needed. Equal projected box is no longer the primary layout constraint. This scope change is user-driven, not selected by outcomes.",
+  "timing_statement": "Frozen at the recorded UTC after the user clarification and before Circle fine-grid outcomes were known, as directed by root. Prior Square and Circle medium results were already available; this is not blind whole-study preregistration.",
+  "optimization_scope": "For later Circle design optimization, requested maximum nearest-center spacing is 8 cm. Older 8.659/10 cm explorations remain in master but are outside this updated limit; master rankings are not edited here."
+}

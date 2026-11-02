@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-11-02T05:34:30Z",
+  "native_cli_sessions": {
+    "cpu_serial": 70806,
+    "cpu_mpi2": 89234,
+    "cuda_mpi2": 99843
+  },
+  "benchmark_root": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101",
+  "timing_reports": {
+    "cpu_serial": "benchmark_logs/cpu_serial/benchmark_timing.json",
+    "cpu_mpi2": "benchmark_logs/cpu_mpi2/benchmark_timing.json",
+    "cuda_mpi2": "benchmark_logs/cuda_mpi2/benchmark_timing.json"
+  },
+  "restored_only_prior_active_group": true,
+  "prior_nine_fine_holds_preserved_during_benchmark": true,
+  "resource_freeze": "../execution_evidence/gpu_benchmark_resource_freeze.json",
+  "resource_restore": "../execution_evidence/gpu_benchmark_resource_restore.json",
+  "no_production_case_input_changes": true,
+  "no_production_solver_switch": true
+}

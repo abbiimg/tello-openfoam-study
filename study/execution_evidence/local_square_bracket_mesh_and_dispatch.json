@@ -1,0 +1,120 @@
+{
+  "utc": "2026-11-01T22:37:53Z",
+  "readiness": {
+    "utc": "2026-11-01T22:37:12Z",
+    "cases": [
+      {
+        "case": "coarselocalbracket_square_perimeter_n8_e19.2923_d0800_am1500_b191715e946b",
+        "state": "ready",
+        "mesh_cells": 248400,
+        "input_hashes": {
+          "geometry.json": "5dd0dbdfe98f040ec06a3ea4a1c0c8ea2e9276de1c12019abe07f65bd0998b54",
+          "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+          "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "constant/rotorParameters": "9e0d7f2dc4dd9a5bac69799dc2c1021a8b00a0fa97e2f214238f8471a77f1e3f",
+          "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+          "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+          "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+        },
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "forcing_core_check": true,
+        "nearest_spacing_cm": 8.0,
+        "tilt_deg": -15,
+        "preflight_jobs": {
+          "blockMesh": {
+            "job_id": "blockMesh-e778fa",
+            "returncode": 0,
+            "actual_wall_seconds": 1.380265235900879,
+            "log": "log.preflight.blockMesh"
+          },
+          "checkMesh": {
+            "job_id": "checkMesh-f44597",
+            "returncode": 0,
+            "actual_wall_seconds": 3.694352149963379,
+            "log": "log.preflight.checkMesh"
+          }
+        },
+        "mesh_cell_count_verified": 248400,
+        "mesh_ok": true
+      },
+      {
+        "case": "coarselocalbracket_square_perimeter_n8_e19.2923_d0850_am1250_ae9f01add018",
+        "state": "ready",
+        "mesh_cells": 248400,
+        "input_hashes": {
+          "geometry.json": "4e8d1e6988f2993d48f053b7dbd60a2a288fa977aa044f0d801a40462df79d55",
+          "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+          "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "constant/rotorParameters": "83b1733e2123250238058f36eadf4b058720ab9802a63b8b106d55dde229b37a",
+          "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+          "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+          "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+        },
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "forcing_core_check": true,
+        "nearest_spacing_cm": 8.5,
+        "tilt_deg": -12.5,
+        "preflight_jobs": {
+          "blockMesh": {
+            "job_id": "blockMesh-6f355e",
+            "returncode": 0,
+            "actual_wall_seconds": 1.923741102218628,
+            "log": "log.preflight.blockMesh"
+          },
+          "checkMesh": {
+            "job_id": "checkMesh-0a6123",
+            "returncode": 0,
+            "actual_wall_seconds": 3.3985037803649902,
+            "log": "log.preflight.checkMesh"
+          }
+        },
+        "mesh_cell_count_verified": 248400,
+        "mesh_ok": true
+      }
+    ],
+    "no_solver_launched": true,
+    "mesh_preparation_complete_utc": "2026-11-01T22:37:46Z",
+    "solver_launched": false
+  },
+  "priority_cases": [
+    "coarsespacingseed_circular_ring_n8_e19.2923_d1000_az0000_8ee7d304f5df",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d1000_az0000_84d8973bf3ac",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0866_az0000_c256546365f0",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_az0000_aab080843db1",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_am1000_8b093f1e8ad8",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_ap1000_a0f5298ab023",
+    "coarsecirclefrontierangle_circular_ring_n8_e19.2923_d1000_am1000_7930cec156e1",
+    "coarsecirclefrontierangle_circular_ring_n8_e19.2923_d1000_ap1000_6c202ac525d1",
+    "coarsemapped_n8_e19.2923_d0800_az0000",
+    "coarsemapped_n8_e19.2923_d0800_am1000",
+    "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+    "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+    "coarselocalbracket_square_perimeter_n8_e19.2923_d0800_am1500_b191715e946b",
+    "coarselocalbracket_square_perimeter_n8_e19.2923_d0850_am1250_ae9f01add018",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d0400_az0000_9f29ed5af26b",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d0400_az0000_0b2978483d8d",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71"
+  ],
+  "existing85_entries_unchanged": true,
+  "physics_input_changes": 0,
+  "manager_restart": false,
+  "normal_rank_cap": 16,
+  "no_automatic_grid_promotion": true
+}

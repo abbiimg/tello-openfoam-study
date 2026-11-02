@@ -1,0 +1,382 @@
+{
+  "utc": "2026-11-02T03:02:10Z",
+  "prior_schedule": {
+    "revision": 10,
+    "mode": "pause_during_pilots",
+    "suspend_targets": [
+      {
+        "case": "finemapped_n4_e19.2923_d1000_az0000",
+        "job_id": "Allrun-f89d82",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 124579,
+        "birth_ticks": 9659612,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n4_e19.2923_d1000_az0000",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 124543,
+        "cpu_ticks": 471766
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0800_am0750",
+        "job_id": "Allrun-76a317",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 128230,
+        "birth_ticks": 9757655,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0750",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 128184,
+        "cpu_ticks": 373780
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0800_am1250",
+        "job_id": "Allrun-178696",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 128268,
+        "birth_ticks": 9757667,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am1250",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 128194,
+        "cpu_ticks": 373825
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0750_am1250",
+        "job_id": "Allrun-80ec84",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 131282,
+        "birth_ticks": 9803453,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0750_am1250",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 131263,
+        "cpu_ticks": 328023
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0850_am0500",
+        "job_id": "Allrun-8d4a4b",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 131285,
+        "birth_ticks": 9803462,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0850_am0500",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 131268,
+        "cpu_ticks": 327879
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0800_am0500",
+        "job_id": "Allrun-5aa723",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 136079,
+        "birth_ticks": 9980026,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0500",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 136068,
+        "cpu_ticks": 151274
+      },
+      {
+        "case": "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+        "job_id": "Allrun-aa773b",
+        "mpi_ranks": 1,
+        "level": "medium",
+        "pid": 201346,
+        "birth_ticks": 11834161,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/mediumcoldcheck_n8_e19.2923_d0800_am1000",
+        "uid": 999,
+        "command": "foamRun",
+        "cpu_ticks": 484190
+      },
+      {
+        "case": "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+        "job_id": "Allrun-d7282e",
+        "mpi_ranks": 1,
+        "level": "medium",
+        "pid": 201562,
+        "birth_ticks": 11854304,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/mediumcoldcheck_n8_e19.2923_d1000_az0000",
+        "uid": 999,
+        "command": "foamRun",
+        "cpu_ticks": 463902
+      },
+      {
+        "case": "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+        "job_id": "Allrun-de7ef6",
+        "mpi_ranks": 1,
+        "level": "coarse",
+        "pid": 202187,
+        "birth_ticks": 11944422,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+        "uid": 999,
+        "command": "foamRun",
+        "cpu_ticks": 373951
+      },
+      {
+        "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+        "job_id": "Allrun-e65314",
+        "mpi_ranks": 1,
+        "level": "coarse",
+        "pid": 204900,
+        "birth_ticks": 12114641,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+        "uid": 999,
+        "command": "foamRun",
+        "cpu_ticks": 204417
+      },
+      {
+        "case": "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+        "job_id": "Allrun-732ad3",
+        "mpi_ranks": 1,
+        "level": "coarse",
+        "pid": 205372,
+        "birth_ticks": 12197620,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+        "uid": 999,
+        "command": "foamRun",
+        "cpu_ticks": 121712
+      }
+    ],
+    "resume_after_succeeded": [],
+    "resume_max_solver_ranks": 16,
+    "reason": "Explicit user correction: complete matched-resolution square-versus-circle layout stage first; hold all other live states until explicit root release",
+    "approved_utc": "2026-11-01T19:36:29Z",
+    "safety": "Identity-checked SIGSTOP/CONT; graceful-exit cleanup plus independent parent-death watchdog; all signals audited",
+    "keep_suspended_after_milestones": [
+      "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+      "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+      "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+      "finemapped_n4_e19.2923_d1000_az0000",
+      "finemapped_n8_e19.2923_d0750_am1250",
+      "finemapped_n8_e19.2923_d0800_am0500",
+      "finemapped_n8_e19.2923_d0800_am0750",
+      "finemapped_n8_e19.2923_d0800_am1250",
+      "finemapped_n8_e19.2923_d0850_am0500",
+      "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+      "mediumcoldcheck_n8_e19.2923_d1000_az0000"
+    ],
+    "reserve_solver_ranks_after_milestones": 0,
+    "updated_utc": "2026-11-01T20:26:08Z",
+    "resource_session": "273ae0d336814e01804e5bde9650e754",
+    "conditional_resume_rules": [],
+    "resource_stage": "layout_comparison_first",
+    "release_policy": "Explicit root authorization only after layout stage report/review"
+  },
+  "prior_control": {
+    "stop_launching": false,
+    "phase": "layout_comparison_first",
+    "allowed_cases": [
+      "finemapped_n8_e19.2923_d0800_az0000",
+      "finemapped_n8_e19.2923_d0800_am1000",
+      "mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f",
+      "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+      "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18",
+      "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611"
+    ],
+    "reason": "Layout stage only: add exact medium/fine flat circle236.2mm box pair. Hold all11 unrelated live processes and15 unstarted deferrals until explicit root release; cap16; no new angles.",
+    "rank_budget": 16,
+    "reserved_new_batch_ranks": 0,
+    "updated_utc": "2026-11-02T01:49:46Z",
+    "priority_cases": [
+      "mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18",
+      "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+      "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+      "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+      "finemapped_n8_e19.2923_d0800_az0000",
+      "finemapped_n8_e19.2923_d0800_am1000",
+      "mediumcircle_flat_candidate_circular_ring_n8_mapped_f2153d152c4f",
+      "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c"
+    ]
+  },
+  "new_target": {
+    "case": "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+    "job_id": "Allrun-ba436f",
+    "mpi_ranks": 1,
+    "level": "fine",
+    "pid": 216272,
+    "birth_ticks": 12455004,
+    "os_state": "R",
+    "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+    "uid": 999,
+    "command": "foamRun",
+    "cpu_ticks": 432398
+  },
+  "source": "Latest user constraint permits the circle diameter needed for8cm nearest spacing; equal-box fine is deferred from primary layout stage",
+  "input_hashes": {
+    "geometry.json": "d11997fbb09a0363cfd57908ba08bfdbcd54bace6e3fe2820d7da2a0cabcacbd",
+    "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+    "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+    "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+    "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "constant/rotorParameters": "7444c53b5668c517773c633c00cfe58d7bf5ffab2c4b272575fd14b27aa9f55b",
+    "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+    "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+    "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+    "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+    "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+    "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+    "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+    "initialization.json": "78130048d3f2b5e83e0fe2b9bda8db1ee12372e8dad5e31709c85667dbbb7005",
+    "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+    "0.6/U": "f7963e44ccaa29dc01593b3208ae2f5a57e87b40f733d95368216783f95b7087",
+    "0.6/p": "c2e9a6b4aea1c78caeb067b518ca556679f439b95f0ec878a89b5aea9f223ad3"
+  },
+  "applied_utc": "2026-11-02T03:02:11Z",
+  "applied_state": {
+    "sampled_utc": "2026-11-02T03:02:11Z",
+    "pid": 191562,
+    "run_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+    "authorized": 94,
+    "complete": 65,
+    "active": 14,
+    "active_solver_ranks": 2,
+    "queued": 15,
+    "live_solver_ranks": 14,
+    "cpu_active_cases": 2,
+    "suspended_cases": 12,
+    "suspended_solver_ranks": 12,
+    "awaiting_preparation": 0,
+    "paused": false,
+    "errors": [],
+    "authoritative_journal": "/opt/openfoam-workspace/cases/tello_execution_supervisor/journal",
+    "phase": "layout_comparison_first",
+    "dispatch_hold": false,
+    "eligible_queued": 0,
+    "deferred_queued": 15,
+    "max_solver_ranks": 16,
+    "max_jobs": 16,
+    "pilot_override_active": false,
+    "progress": [
+      {
+        "case": "finemapped_n4_e19.2923_d1000_az0000",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.978846154,
+        "solver_cpu_s": 12635.027,
+        "solver_clock_s": 27051.0
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0800_am0750",
+        "scheduler_state": "suspended",
+        "physical_time_s": 1.18610422,
+        "solver_cpu_s": 17810.784,
+        "solver_clock_s": 26071.0
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0800_am1250",
+        "scheduler_state": "suspended",
+        "physical_time_s": 1.18802993,
+        "solver_cpu_s": 17818.4116,
+        "solver_clock_s": 26075.0
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0750_am1250",
+        "scheduler_state": "suspended",
+        "physical_time_s": 1.05373134,
+        "solver_cpu_s": 14529.8334,
+        "solver_clock_s": 25615.0
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0850_am0500",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.868670308,
+        "solver_cpu_s": 8108.67486,
+        "solver_clock_s": 25616.0
+      },
+      {
+        "case": "finemapped_n8_e19.2923_d0800_am0500",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.782766919,
+        "solver_cpu_s": 5963.78823,
+        "solver_clock_s": 23403.0
+      },
+      {
+        "case": "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.497956406,
+        "solver_cpu_s": 4845.56838,
+        "solver_clock_s": 4862.0
+      },
+      {
+        "case": "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.511253522,
+        "solver_cpu_s": 4644.11285,
+        "solver_clock_s": 4662.0
+      },
+      {
+        "case": "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+        "scheduler_state": "suspended",
+        "physical_time_s": 1.00848057,
+        "solver_cpu_s": 3744.77112,
+        "solver_clock_s": 3762.0
+      },
+      {
+        "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.468055556,
+        "solver_cpu_s": 2049.71344,
+        "solver_clock_s": 2060.0
+      },
+      {
+        "case": "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.272494172,
+        "solver_cpu_s": 1222.37718,
+        "solver_clock_s": 1229.0
+      },
+      {
+        "case": "finecircle_flat_candidate_circular_ring_n8_mapped_689ac2e20f88",
+        "scheduler_state": "running",
+        "physical_time_s": 0.98775,
+        "solver_cpu_s": 5325.72183,
+        "solver_clock_s": 5332.0
+      },
+      {
+        "case": "finecircle_inward_candidate_circular_ring_n8_mapped_8846f63e5424",
+        "scheduler_state": "running",
+        "physical_time_s": 0.97974359,
+        "solver_cpu_s": 5321.95324,
+        "solver_clock_s": 5329.0
+      },
+      {
+        "case": "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+        "scheduler_state": "suspended",
+        "physical_time_s": 0.839230171,
+        "solver_cpu_s": 4324.05802,
+        "solver_clock_s": 4332.0
+      }
+    ]
+  },
+  "new_pause_interval": {
+    "owner_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+    "requested_epoch": 1793588531.0591292,
+    "requested_utc": "2026-11-02T03:02:11Z",
+    "reason": "Latest user constraint permits the circle diameter needed for8cm nearest spacing; equal-box fine is deferred from primary layout stage; preserve all12 unrelated/equal-box live states until explicit root release",
+    "cpu_ticks_before_stop": 432500,
+    "resumed_epoch": null,
+    "confirmed_epoch": 1793588531.062085,
+    "confirmed_utc": "2026-11-02T03:02:11Z",
+    "cpu_ticks_after_stop": 432500
+  },
+  "physics_input_changes": 0,
+  "solver_cancelled": false
+}

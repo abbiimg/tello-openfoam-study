@@ -1,0 +1,46 @@
+{
+  "utc": "2026-11-02T01:19:03Z",
+  "readiness": {
+    "utc": "2026-11-02T01:18:54Z",
+    "cases": [
+      {
+        "case": "mediumcircle_inward_candidate_circular_ring_n8_mapped_7d72dfd9877c",
+        "state": "ready",
+        "mesh_cells": 481888,
+        "mesh_ok": true,
+        "input_hashes": {
+          "geometry.json": "b518af366c76e7139caf4e2443673d9a2afa185bb46defc22e938b29db666f81",
+          "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "constant/rotorParameters": "89b3a1fa8ce316a034ec6bef2fe704e62d1bda33bc41f5b00bc97ffb0c47c519",
+          "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+          "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "initialization.json": "dff9b3925dfe9f3a910aadda443e0bc2f1486a3a92899c2fc8bb57e5d1bfb437",
+          "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "0.6/U": "d1877d8b9ebca6c71feab7c6dd0354bad552c08ba9acc1203c243eb21ec226fb",
+          "0.6/p": "28c97372755ef5992efc273fdec32ffb4c89c598ccb5b3662901e2c640e066cb"
+        },
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "same_geometry_as": "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+        "mapped_initialization_verified": true,
+        "promotion_journal_sha256": "c5d245ae248855ee37779062f3414a910a658adb81d103cc3a1e37df257e3bc5"
+      }
+    ],
+    "no_solver_launched": true
+  },
+  "existing_entry_count_preserved": 89,
+  "existing_entries_unchanged": true,
+  "source_or_existing_input_changes": 0,
+  "remeshing_or_remapping": false,
+  "priority": "next_free_rank",
+  "fine_candidate_authorized": false,
+  "normal_rank_cap": 16
+}

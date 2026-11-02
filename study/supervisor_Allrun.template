@@ -1,0 +1,7 @@
+#!/bin/bash
+# Task-scoped queue process, not a CFD solve or an OS service.
+set -e
+cd "$(dirname "$0")"
+test "$(id -u)" != 0
+source /opt/openfoam14/etc/bashrc
+exec /opt/codex-tools/openfoam-mcp-venv/bin/python -u /mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/detached_supervisor.py --plan /mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/supervisor_plan.json

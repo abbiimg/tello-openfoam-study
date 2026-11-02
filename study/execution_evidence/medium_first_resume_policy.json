@@ -1,0 +1,34 @@
+{
+  "utc": "2026-11-01T20:26:08Z",
+  "plan_revision": 7,
+  "resume_medium_cases": [
+    "mediummapped_n8_e19.2923_d1000_az0000",
+    "mediummapped_n4_e19.2923_d1000_az0000",
+    "mediummapped_n8_e19.2923_d0800_am0750",
+    "mediummapped_n8_e19.2923_d0800_am1000",
+    "mediummapped_n8_e19.2923_d0800_am1250",
+    "mediummapped_n8_e19.2923_d0800_az0000",
+    "mediummapped_n8_e19.2923_d0750_am1250"
+  ],
+  "keep_fine_cases_suspended": [
+    "finemapped_n8_e19.2923_d1000_az0000",
+    "finemapped_n4_e19.2923_d1000_az0000",
+    "finemapped_n8_e19.2923_d0800_am0750",
+    "finemapped_n8_e19.2923_d0800_am1000",
+    "finemapped_n8_e19.2923_d0800_am1250",
+    "finemapped_n8_e19.2923_d0800_az0000",
+    "finemapped_n8_e19.2923_d0750_am1250",
+    "finemapped_n8_e19.2923_d0850_am0500",
+    "finemapped_n8_e19.2923_d0800_am0500"
+  ],
+  "reserved_solver_ranks": 6,
+  "base_rank_cap": 16,
+  "pilot_override_cases": [
+    "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+    "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+    "coarserotorcountpilot_n4_e19.2923_d1600_az0000"
+  ],
+  "new_case_launch_authorization": false,
+  "watchdog_resume_budget_checked": true,
+  "cpu_active_concurrency_excludes_suspended": true
+}

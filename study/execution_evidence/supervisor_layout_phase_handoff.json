@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-01T19:17:52Z",
+  "old_manager": "Allrun-c744a8",
+  "new_manager": "Allrun-f9e93c",
+  "old_manager_only_stop": "kill",
+  "cfd_jobs_stopped": 0,
+  "cfd_jobs_restarted": 0,
+  "active_ranks_before_release": 16,
+  "plan_revision": 3,
+  "authorized": 64,
+  "allowed_cases": [
+    "coarselayoutpilot_square_n8_e19.2923_d0800_az0000",
+    "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000"
+  ],
+  "base_rank_cap": 16,
+  "pilot_rank_cap": 18,
+  "script_sha256": "4d35dfa355f3eee521516723b1f73380f85df33f562553ce0bfff606f1d9c9c0"
+}

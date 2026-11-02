@@ -1,0 +1,107 @@
+{
+  "checked_utc": "2026-11-01T20:28:36.761604+00:00",
+  "passed": true,
+  "no_flow_solver_launched": true,
+  "no_mesh_utility_launched": true,
+  "no_actual_study_cases_added": true,
+  "source_files_unchanged": true,
+  "geometry_limit_normal_sign_and_monotonic_checks_passed": true,
+  "actual_envelope_bisection_handles_tight_spacing": true,
+  "zero_spacing_radials_defined": true,
+  "four_rotor_layouts_canonicalized_and_duplicate_rejected": true,
+  "physical_fingerprint_permutation_and_flat_zero_spacing_layout_equivalence_verified": true,
+  "different_grid_initialization_role_averaging_end_and_verified_method_allowed": true,
+  "unknown_or_stale_numerical_metadata_cannot_establish_duplicate": true,
+  "existing_target_overwrite_refused": true,
+  "spacing_mode_0_to_10cm_guard_and_width_control_exception_verified": true,
+  "scratch_root": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/generic_design_inputs_20261101T202814Z_343060",
+  "scratch_inputs": [
+    {
+      "case": "coarseangle_spacing_circular_ring_n8_e19.2923_d0667_am1000_96507cf7a9b2",
+      "rotors": 8,
+      "requested_layout": "circular_ring",
+      "layout": "circular_ring",
+      "signed_tilt_deg": -10.0,
+      "nearest_spacing_cm": 6.66829995024739,
+      "projected_box_m": [
+        0.23620000000000002,
+        0.2362
+      ],
+      "forcing_bounds_xy_m": [
+        [
+          -0.11906257998322617,
+          0.11906257998322617
+        ],
+        [
+          -0.11906257998322617,
+          0.11906257998322617
+        ]
+      ],
+      "forcing_z_extent_m": [
+        -0.012524842087183293,
+        0.012524842087183293
+      ],
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "cold_preparation_verified": true
+    },
+    {
+      "case": "coarseangle_spacing_circular_ring_n8_e19.2923_d0667_ap1000_07e802b6805b",
+      "rotors": 8,
+      "requested_layout": "circular_ring",
+      "layout": "circular_ring",
+      "signed_tilt_deg": 10.0,
+      "nearest_spacing_cm": 6.66829995024739,
+      "projected_box_m": [
+        0.23620000000000002,
+        0.2362
+      ],
+      "forcing_bounds_xy_m": [
+        [
+          -0.11906257998322617,
+          0.11906257998322617
+        ],
+        [
+          -0.11906257998322617,
+          0.11906257998322617
+        ]
+      ],
+      "forcing_z_extent_m": [
+        -0.012524842087183293,
+        0.012524842087183293
+      ],
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "cold_preparation_verified": true
+    },
+    {
+      "case": "coarseangle_spacing_square_perimeter_n4_e19.2923_d1600_az0000_9a80883ceba1",
+      "rotors": 4,
+      "requested_layout": "circular_ring",
+      "layout": "square_perimeter",
+      "signed_tilt_deg": 0.0,
+      "nearest_spacing_cm": 16.0,
+      "projected_box_m": [
+        0.23620000000000002,
+        0.23620000000000002
+      ],
+      "forcing_bounds_xy_m": [
+        [
+          -0.11810000000000001,
+          0.11810000000000001
+        ],
+        [
+          -0.11810000000000001,
+          0.11810000000000001
+        ]
+      ],
+      "forcing_z_extent_m": [
+        -0.006,
+        0.006
+      ],
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "cold_preparation_verified": true
+    }
+  ]
+}

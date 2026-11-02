@@ -1,0 +1,19 @@
+{
+  "kind": "One shared actual benchmark seed plus3small override layers",
+  "directory": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/tello_refinement/gpu_feasibility/benchmark_reproduction",
+  "seed_archive": {
+    "file": "shared_seed.zip",
+    "sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+    "size_bytes": 62823211,
+    "uncompressed_bytes": 214604370,
+    "compression": "ZIP_DEFLATED level1"
+  },
+  "common_file_count": 20,
+  "override_file_counts": {
+    "cpu_serial": 6,
+    "cpu_mpi2": 6,
+    "cuda_mpi2": 7
+  },
+  "source_originals_byte_and_mtime_unchanged": true,
+  "solver_launched": false
+}

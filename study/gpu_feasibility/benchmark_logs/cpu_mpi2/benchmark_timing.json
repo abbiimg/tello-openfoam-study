@@ -1,0 +1,59 @@
+{
+  "kind": "Actual isolated CFD CPU/CUDA timing benchmark",
+  "variant": "cpu_mpi2",
+  "case": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cpu_mpi2",
+  "mpi_ranks": 2,
+  "started_unix_s": 1793568458.6403236,
+  "completed": true,
+  "source_initial_hashes": {
+    "U": {
+      "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+      "size_bytes": 38621951,
+      "mtime_ns": 1793469502532445391
+    },
+    "p": {
+      "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+      "size_bytes": 13004937,
+      "mtime_ns": 1793469500504445160
+    }
+  },
+  "solver_configuration_sha256": "7aa9e91c332c58278ee5815ac3d5a81a09390470e042e65b203bded1b4cc18e5",
+  "no_production_case_changes": true,
+  "accuracy_gate_performed": false,
+  "speedup_calculated": false,
+  "adoption_qualified": false,
+  "actual_ginkgo_executor_records": [],
+  "end_marker": true,
+  "initial_inputs_preserved": true,
+  "physical_time_final": 0.62,
+  "nvidia_smi_is_only_corroboration": true,
+  "step_observer_finished": true,
+  "phases": {
+    "decomposition_s": 7.20784080500016,
+    "solver_elapsed_s": 121.41809851399739,
+    "reconstruction_s": 8.552524264989188,
+    "startup_through_first_completed_step_s": 6.367798406005022,
+    "steady_wall_s": 114.8553891289921,
+    "steady_physical_s": 0.01988095000000001,
+    "steady_completed_steps": 85,
+    "steady_simulated_s_per_wall_s": 0.00017309549121523638,
+    "step_observation_poll_interval_s": 0.02,
+    "first_native_step": {
+      "physical_time_s": 0.60011905,
+      "observed_monotonic_s": 108823.890133185,
+      "reported_cpu_s": 3.714979,
+      "reported_clock_s": 7.0
+    },
+    "last_native_step": {
+      "physical_time_s": 0.62,
+      "observed_monotonic_s": 108938.745522314,
+      "reported_cpu_s": 118.484891,
+      "reported_clock_s": 122.0
+    }
+  },
+  "total_runner_elapsed_s": 137.43455597100547,
+  "finished_unix_s": 1793568595.9451425,
+  "sampler_finished": true,
+  "scope": "Includes input verification, decomposition if needed, first CUDA setup/transfers inside solver, reconstruction if needed, and sampler cleanup. Solver phase is also reported separately. No speedup denominator is supplied here.",
+  "comparison_required": "Compare the better fresh cpu_serial/cpu_mpi2 elapsed time under the SAME host load; require pressure/continuity/field/lift/power accuracy gates before adoption."
+}

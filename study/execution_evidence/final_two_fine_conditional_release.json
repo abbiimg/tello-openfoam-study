@@ -1,0 +1,100 @@
+{
+  "utc": "2026-11-01T23:45:51Z",
+  "cases": [
+    "finemapped_n8_e19.2923_d0800_am0500",
+    "finemapped_n8_e19.2923_d0850_am0500"
+  ],
+  "after_cases_started": [
+    "coarsecircleridgeangle_circular_ring_n8_e19.2923_d0800_am1000_a8b6503c1609",
+    "coarsemapped_n8_e19.2923_d0800_az0000",
+    "coarsemapped_n8_e19.2923_d0800_am1000",
+    "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+    "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+    "coarselocalbracket_square_perimeter_n8_e19.2923_d0800_am1500_b191715e946b"
+  ],
+  "original_identity_snapshots": {
+    "finemapped_n8_e19.2923_d0800_am0500": {
+      "identity": {
+        "case": "finemapped_n8_e19.2923_d0800_am0500",
+        "job_id": "Allrun-5aa723",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 136079,
+        "birth_ticks": 9980026,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am0500",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 136068,
+        "cpu_ticks": 151274
+      },
+      "open_pause": {
+        "owner_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+        "requested_epoch": 1793564842.1462057,
+        "requested_utc": "2026-11-01T20:27:22Z",
+        "reason": "Preserve all sixteen unrelated serial refinements during layout/count pilots; afterward resume seven medium cases only, keep nine fine cases paused, and reserve six ranks for a separately authorized signed-angle batch",
+        "cpu_ticks_before_stop": 200441,
+        "resumed_epoch": null,
+        "confirmed_epoch": 1793564842.146902,
+        "confirmed_utc": "2026-11-01T20:27:22Z",
+        "cpu_ticks_after_stop": 200441,
+        "owner_transfers": [
+          {
+            "utc": "2026-11-01T22:19:12Z",
+            "old_owner": "131a9506f81747d49353ab506ad0b364",
+            "new_owner": "fd1d4c2004a74ff2a4093a2ed47cef56"
+          },
+          {
+            "utc": "2026-11-01T22:33:03Z",
+            "old_owner": "fd1d4c2004a74ff2a4093a2ed47cef56",
+            "new_owner": "fbe0d84d38c64e218ebe7d5ed133977c"
+          }
+        ]
+      }
+    },
+    "finemapped_n8_e19.2923_d0850_am0500": {
+      "identity": {
+        "case": "finemapped_n8_e19.2923_d0850_am0500",
+        "job_id": "Allrun-8d4a4b",
+        "mpi_ranks": 1,
+        "level": "fine",
+        "pid": 131285,
+        "birth_ticks": 9803462,
+        "os_state": "R",
+        "cwd": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0850_am0500",
+        "uid": 999,
+        "command": "foamRun",
+        "ppid": 131268,
+        "cpu_ticks": 327879
+      },
+      "open_pause": {
+        "owner_id": "fbe0d84d38c64e218ebe7d5ed133977c",
+        "requested_epoch": 1793564842.144552,
+        "requested_utc": "2026-11-01T20:27:22Z",
+        "reason": "Preserve all sixteen unrelated serial refinements during layout/count pilots; afterward resume seven medium cases only, keep nine fine cases paused, and reserve six ranks for a separately authorized signed-angle batch",
+        "cpu_ticks_before_stop": 377185,
+        "resumed_epoch": null,
+        "confirmed_epoch": 1793564842.1453223,
+        "confirmed_utc": "2026-11-01T20:27:22Z",
+        "cpu_ticks_after_stop": 377186,
+        "owner_transfers": [
+          {
+            "utc": "2026-11-01T22:19:12Z",
+            "old_owner": "131a9506f81747d49353ab506ad0b364",
+            "new_owner": "fd1d4c2004a74ff2a4093a2ed47cef56"
+          },
+          {
+            "utc": "2026-11-01T22:33:03Z",
+            "old_owner": "fd1d4c2004a74ff2a4093a2ed47cef56",
+            "new_owner": "fbe0d84d38c64e218ebe7d5ed133977c"
+          }
+        ]
+      }
+    }
+  },
+  "resume_before_low_coverage": true,
+  "normal_rank_cap": 16,
+  "source_or_case_input_changes": 0,
+  "solver_restarts": 0,
+  "queued_deferrals": 15
+}

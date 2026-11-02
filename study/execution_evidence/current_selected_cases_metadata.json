@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-11-02T05:46:07Z",
+  "status": "provisional_planned_selection_not_final_approved_or_frozen_scope",
+  "selection_file": "current_selected_cases.json",
+  "case_count": 84,
+  "plan_revision": 28,
+  "authorized_input_scope": 99,
+  "excluded_unstarted_dispatch_deferrals": [
+    "coarse_n8_e19.2923_d0750_am0250",
+    "coarse_n8_e19.2923_d0750_am0500",
+    "coarse_n8_e19.2923_d0750_az0000",
+    "coarse_n8_e19.2923_d0900_am0250",
+    "coarse_n8_e19.2923_d0900_am1000",
+    "coarse_n8_e19.2923_d0900_am1250",
+    "coarse_n8_e19.2923_d0900_az0000",
+    "coarselocalbracket_square_perimeter_n8_e19.2923_d0850_am1250_ae9f01add018",
+    "coarsemapped_n8_e19.2923_d0750_am1250",
+    "coarsemapped_n8_e19.2923_d0800_am0500",
+    "coarsemapped_n8_e19.2923_d0800_am0750",
+    "coarsemapped_n8_e19.2923_d0800_am1250",
+    "coarsemapped_n8_e19.2923_d0850_am0500",
+    "mediummapped_n8_e19.2923_d0800_am0500",
+    "mediummapped_n8_e19.2923_d0850_am0500"
+  ],
+  "excluded_count": 15,
+  "basis": "Every current explicitly planned case except the fifteen explicitly held unstarted deferrals; exact equality with all current run-manifest case records, without filtering any outcome or qualification.",
+  "outcome_or_qualification_filtering": false,
+  "final_approved_cases_file_created": false,
+  "dispatch_changed": false,
+  "source_snapshot_utc": "2026-11-02T05:45:59Z",
+  "completed_at_snapshot": 80,
+  "cpu_active_at_snapshot": 4
+}

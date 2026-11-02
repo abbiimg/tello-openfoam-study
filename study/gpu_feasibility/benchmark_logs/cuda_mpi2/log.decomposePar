@@ -1,0 +1,77 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-a4867fc914c1
+Exec   : decomposePar -time 0.6
+Date   : Nov 01 2026
+Time   : 13:30:52
+Host   : "abby-spark"
+PID    : 178155
+I/O    : uncollated
+Case   : /opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cuda_mpi2
+nProcs : 1
+sigFpe : Floating point exception trapping - not supported on this platform
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Calculating distribution of cells
+
+
+Selecting decomposer hierarchical
+
+Finished decomposition in 0.236335 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 461288
+    Number of faces shared with processor 1 = 10028
+    Number of processor patches = 1
+    Number of processor faces = 10028
+    Number of boundary faces = 28520
+
+Processor 1
+    Number of cells = 461288
+    Number of faces shared with processor 0 = 10028
+    Number of processor patches = 1
+    Number of processor faces = 10028
+    Number of boundary faces = 28520
+
+Number of processor faces = 10028
+Max number of cells = 461288 (0% above average 461288)
+Max number of processor patches = 1 (0% above average 1)
+Max number of faces between processors = 10028 (0% above average 10028)
+
+Time = 0.6s
+
+Decomposing FV fields
+
+    Decomposing volScalarFields
+
+        p
+
+    Decomposing volVectorFields
+
+        U
+
+Decomposing point fields
+
+    (no point fields)
+
+End
+

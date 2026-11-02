@@ -1,0 +1,18 @@
+{
+  "panels": [
+    {
+      "image": "flow_sources/layout_square_perimeter_4rotors_t1p2.png",
+      "label": "4 rotors \u00b7 square perimeter\nnearest hubs 16 cm"
+    },
+    {
+      "image": "flow_sources/layout_square_perimeter_8rotors_t1p2.png",
+      "label": "8 rotors \u00b7 square perimeter\nnearest hubs 8 cm"
+    },
+    {
+      "image": "flow_sources/layout_circular_ring_8rotors_t1p2.png",
+      "label": "8 rotors \u00b7 circular ring\nnearest hubs 6.63 cm"
+    }
+  ],
+  "footprint_cm": 23.62,
+  "snapshot_time_s": 1.2
+}

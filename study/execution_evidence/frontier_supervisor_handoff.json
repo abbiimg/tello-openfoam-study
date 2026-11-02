@@ -1,0 +1,30 @@
+{
+  "utc": "2026-11-01T22:33:32Z",
+  "new_manager": "Allrun-35daac",
+  "active_ranks": 16,
+  "held": 3,
+  "all_open_pauses_adopted_by_new_guard": true,
+  "physics_restarts": 0,
+  "new_unapproved_case_launches": 0,
+  "authorized": 85,
+  "priority_cases": [
+    "coarsespacingseed_circular_ring_n8_e19.2923_d1000_az0000_8ee7d304f5df",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d1000_az0000_84d8973bf3ac",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0866_az0000_c256546365f0",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_az0000_aab080843db1",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_am1000_8b093f1e8ad8",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_ap1000_a0f5298ab023",
+    "coarsecirclefrontierangle_circular_ring_n8_e19.2923_d1000_am1000_7930cec156e1",
+    "coarsecirclefrontierangle_circular_ring_n8_e19.2923_d1000_ap1000_6c202ac525d1",
+    "coarsemapped_n8_e19.2923_d0800_az0000",
+    "coarsemapped_n8_e19.2923_d0800_am1000",
+    "mediumcoldcheck_n8_e19.2923_d0800_am1000",
+    "mediumcoldcheck_n8_e19.2923_d1000_az0000",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d0400_az0000_9f29ed5af26b",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d0400_az0000_0b2978483d8d",
+    "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+    "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+    "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "kind": "Actual bounded Foundation14 API/reference-link/MPI compatibility gate; not GPU CFD",
+  "unix_s": 1793562922.2178807,
+  "gate_passed": true,
+  "sources": {
+    "OGL": {
+      "commit": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+      "archive": "OGL_upstream_7c3ced4514fb.tar.gz",
+      "sha256": "cf90e93b7ee8c9cc86f57306142c4b62ccbede1ba7611c16b9fb6bd1c6b543cd"
+    },
+    "Ginkgo": {
+      "commit": "13c9174360667ad8ae8f1d9e8523c554f2c06e7d",
+      "archive": "Ginkgo_upstream_13c917436066.tar.gz",
+      "sha256": "4a87e0c7a2de938b4fb5f36038cbde64b09fad1e85ed40572d63402f63625b1b"
+    }
+  },
+  "patch": "foundation14_ogl_compat.patch",
+  "patch_sha256": "dfc3412dc94d051eecceb66228cdb308db7f75092dc84c049703e6ec90aef59d",
+  "patch_reverse_check_passed": true,
+  "changes": [
+    "Private replacement for removed fvCFD.H umbrella using installed14 headers",
+    "lduMesh.thisDb() to db()",
+    "cyclic nbrPatchID() to nbrPatchIndex()",
+    "Switch.c_str() to asText() for logging only",
+    "Strict math build flags"
+  ],
+  "adapter_translation_units": 23,
+  "reference_build": {
+    "kind": "Private CPU/reference adapter/library link build; not CFD",
+    "command": [
+      "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+      "--build",
+      "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-reference",
+      "--target",
+      "OGL",
+      "--parallel",
+      "2",
+      "--",
+      "-Otarget"
+    ],
+    "max_build_cpus": 2,
+    "time_limit_s": 1200,
+    "elapsed_s": 514.7605333670072,
+    "returncode": 0,
+    "timed_out": false,
+    "cuda_toolkit_downloaded": false,
+    "library_exists": true
+  },
+  "real_link_resolved": true,
+  "dlopen_passed": true,
+  "mpi_host_exchange_passed": true,
+  "mpi_ranks": 2,
+  "plain_serial_supported": false,
+  "gpu_aware_mpi_assumed": false,
+  "actual_gpu_buffers_tested": false,
+  "host_staging_source_paths": [
+    "OGL/src/CommunicationPattern.cpp: communicate_values host-device/device-host branches",
+    "OGL/src/MatrixWrapper/Distributed.cpp: force_host_buffer receive branch",
+    "Ginkgo/core/distributed/helpers.hpp and matrix.cpp: requires_host_buffer paths"
+  ],
+  "recommended_cuda_settings": {
+    "executor": "cuda",
+    "ranksPerGPU": 2,
+    "forceHostBuffer": true,
+    "splitMPIComm": true,
+    "MPIxRankOffload": false
+  },
+  "cuda_toolkit_downloaded_at_gate": false,
+  "no_cfd_launched": true,
+  "no_global_changes": true,
+  "next_gate": "Private CUDA configuration/build graph and first10 representative unit rates, then actual CUDA-buffer MPI staging probe; no CFD benchmark without execution agent"
+}

@@ -1,0 +1,10 @@
+{
+  "cmake_binary": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+  "cmake_sha256": "e5b2dc2aefdca10afe09c8fa4ee2bbb4e732665943a94322f99c118781910c3c",
+  "cmake_archive_url": "https://github.com/Kitware/CMake/releases/download/v3.31.7/cmake-3.31.7-linux-aarch64.tar.gz",
+  "ginkgo_commit": "13c9174360667ad8ae8f1d9e8523c554f2c06e7d",
+  "ogl_commit": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+  "private_prefix": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload",
+  "global_install": false,
+  "cuda_toolkit_downloaded": false
+}

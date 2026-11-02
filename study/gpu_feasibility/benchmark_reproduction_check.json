@@ -1,0 +1,12 @@
+{
+  "kind": "Actual shared-seed restoration preflight; no CFD",
+  "restored_case": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/reproduction_restore_check_20261101",
+  "variant": "cuda_mpi2",
+  "shared_archive_sha256": "89c281267262bab336e3421ace9ccf41e4ec3fbdf1a42612e50dbdbd92bc62eb",
+  "solver_configuration_sha256": "e382c1d94680437f645b0b0bd975d7443890e496a0969f9fde73037e67b927c5",
+  "local_hash_verification_passed": true,
+  "verify_only_as_openfoam_passed": true,
+  "bash_syntax_check_passed": true,
+  "solver_launched": false,
+  "scope": "One actual CUDA override restoration exercises all shared files/runtime closure. All three override layers and every ZIP member were separately byte/hash verified during export."
+}

@@ -1,0 +1,88 @@
+{
+  "utc": "2026-11-02T01:49:46Z",
+  "readiness": {
+    "utc": "2026-11-02T01:49:41Z",
+    "cases": [
+      {
+        "case": "mediumcircle_equalbox_flat_circular_ring_n8_mapped_a515ece04b18",
+        "state": "ready",
+        "mesh_cells": 481888,
+        "mesh_ok": true,
+        "input_hashes": {
+          "geometry.json": "1062df913235c2fb00dc06f987d1164f6674fd4590fa9f02bc0e9f2c692b6ac1",
+          "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "constant/rotorParameters": "7444c53b5668c517773c633c00cfe58d7bf5ffab2c4b272575fd14b27aa9f55b",
+          "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "system/blockMeshDict": "2d7ce98644d029a9c0f9c66c1b43ba41f6d14fdfa5d0b1283e53405812f3031f",
+          "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "initialization.json": "3e5222612818feea1335f51a8d084a8bd8fcd8a0434746ce912fb0351e7ee00e",
+          "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "0.6/U": "51ac210f29cd7e3e2ecc17e8bf9a21d73b064dc48dc6dc85266cfb56d59bb61f",
+          "0.6/p": "67022172207adbbdcdc3b1f3eabb25afc16397873c5b05f8e25662f7127191b6"
+        },
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "same_geometry_as": "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+        "mapped_initialization_verified": true,
+        "level": "medium",
+        "equal_box_m": [
+          0.23620000000000002,
+          0.2362
+        ]
+      },
+      {
+        "case": "finecircle_equalbox_flat_circular_ring_n8_mapped_8e6feb26c611",
+        "state": "ready",
+        "mesh_cells": 922576,
+        "mesh_ok": true,
+        "input_hashes": {
+          "geometry.json": "d11997fbb09a0363cfd57908ba08bfdbcd54bace6e3fe2820d7da2a0cabcacbd",
+          "Allrun": "4534535c759eb7ed114c3f36111f56839c74e44885c52bc3d07ea6e00a0a64a2",
+          "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+          "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+          "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+          "constant/rotorParameters": "7444c53b5668c517773c633c00cfe58d7bf5ffab2c4b272575fd14b27aa9f55b",
+          "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+          "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+          "system/blockMeshDict": "85aed5b645e17b1907ff59228d297f9a7e3243fc4c34917b0f42b8ed59d310c4",
+          "system/controlDict": "8fb960d90b576c66448651590da587c4cd316f77a18aa71c7e995719ab39e1a7",
+          "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+          "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+          "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787",
+          "initialization.json": "78130048d3f2b5e83e0fe2b9bda8db1ee12372e8dad5e31709c85667dbbb7005",
+          "prepare_mapped.py": "5dbbf34eb64c9fa4c4f16880908126715c7a538b4d9e78bc9deea028752685ef",
+          "0.6/U": "f7963e44ccaa29dc01593b3208ae2f5a57e87b40f733d95368216783f95b7087",
+          "0.6/p": "c2e9a6b4aea1c78caeb067b518ca556679f439b95f0ec878a89b5aea9f223ad3"
+        },
+        "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "same_geometry_as": "coarselayoutpilot_circle_n8_e19.2923_d0663_az0000",
+        "mapped_initialization_verified": true,
+        "level": "fine",
+        "equal_box_m": [
+          0.23620000000000002,
+          0.2362
+        ]
+      }
+    ],
+    "memory_available_bytes": 46497198080,
+    "conservative_pair_reservation_bytes": 4018839552,
+    "all_held_states_retained": true,
+    "promotion_journal_sha256": "2e8f2c8a3240fb11327652c544154ab6a7d45a45eff78b9ddc76d4803671e042"
+  },
+  "existing92_entries_unchanged": true,
+  "source_or_existing_input_changes": 0,
+  "remeshing_or_remapping": false,
+  "only_layout_dispatch_allowed": true,
+  "non_layout_held": 11,
+  "prior_automatic_releases_disabled": true,
+  "unstarted_deferrals": 15,
+  "normal_rank_cap": 16
+}

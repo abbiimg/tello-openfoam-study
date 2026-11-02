@@ -1,0 +1,18 @@
+Actual Foundation14 CPU/CUDA benchmark
+922,576 cells; identical frozen mesh/0.6 U,p/physics/controller reset; simulated 0.600–0.620 s.
+Reference: faster fresh native CPU run = cpu_mpi2.
+Variant | full wall s | startup s | steady wall s | lift N | inferred input W | U L2 % | p L2 %
+cpu_serial | 237.579 | 9.675 | 227.464 | 1.292587881 | 19.346859922 | 0.002314413 | 0.02337171
+cpu_mpi2 | 137.435 | 6.368 | 114.855 | 1.292588320 | 19.346871599 | 0 | 0
+cuda_mpi2 | 250.130 | 15.479 | 218.255 | 1.292579035 | 19.346672483 | 0.01359285 | 0.1060366
+
+CUDA full wall: 82.00% longer than cpu_mpi2; steady throughput 0.5262 times the better native CPU rate.
+Native consistency: True. GPU force/power/field gates: True. GPU continuity review flag: local_all. Max-iteration hits: 0; fatal errors: 0.
+The 20% full-wall reduction screen failed. CPU stays default. No new variants or solver runs were launched by this analysis.
+Mean electrical input is inferred using the unchanged loss assumptions, not a battery measurement.
+The continuity flag concerns intermediate local continuity before the final pressure correction. Final-corrector local/global/cumulative continuity is below the native envelope. The preregistered flag is retained, not waived.
+Reported GPU utilization: 39.51% mean over full-run monitor samples; 41.85% while foamRun was present; peak 81%. WSL telemetry has limitations; real Ginkgo CudaExecutor/device 0 records corroborate use.
+See benchmark_accuracy_results.json for volumes, output hashes, convergence/continuity, telemetry and exact gates; performance_diagnosis.json for the bounded source/log diagnosis.
+Logged GPU pressure host-wall scopes: 93.037s recurring AMG preconditioner update, 69.362s CG solve, 5.809s matrix update, 0.764s copy-back. These are host scopes, not CUDA-event kernel profiles; parent/child nested timers must not be added.
+Hierarchy reuse was active, but caching0 rebuilds coarse operators/smoothers/coarse solver each pressure call.
+Unrun projection only: caching1 could optimistically remove 44.446s second-corrector setup, leaving 205.684s full. Even free removal of all logged setup leaves 157.092s versus 137.435s CPU2. No tuning was implemented or rerun.

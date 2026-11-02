@@ -1,0 +1,597 @@
+{
+  "utc": "2026-11-01T21:50:52Z",
+  "cases": [
+    {
+      "case": "coarsespacingseed_circular_ring_n8_e19.2923_d1000_az0000_8ee7d304f5df",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "circular_ring",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 9.99999999999999,
+      "projected_box_cm": [
+        31.762135623730952,
+        31.76213562373095
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 0,
+      "input_hashes": {
+        "geometry.json": "3dc6f2d92c88219ffa4bcd78268051ab63066654850dbbe108783c016bff33e4",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "a34f9a4d436b7cf556057366ef2d058699c10d302e81ebcf62aacfb1887196d0",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-2023ec",
+          "returncode": 0,
+          "actual_wall_seconds": 2.5742552280426025,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-b67c7c",
+          "returncode": 0,
+          "actual_wall_seconds": 7.715734004974365,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n8_e19.2923_d1000_az0000_84d8973bf3ac",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "square_perimeter",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 10.0,
+      "projected_box_cm": [
+        27.62,
+        27.62
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 1,
+      "input_hashes": {
+        "geometry.json": "c9814b47f165fca0df73448bf4fb7d67173b2e4f06b50f0d6b3a330403013541",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "53d00cd7b199c7d207afc7229a7cb9d15cde2509f42702d36c26c27939d5efd9",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-0f7e4c",
+          "returncode": 0,
+          "actual_wall_seconds": 2.9733994007110596,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-c1bea9",
+          "returncode": 0,
+          "actual_wall_seconds": 7.303560018539429,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_circular_ring_n8_e19.2923_d0866_az0000_c256546365f0",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "circular_ring",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 8.659137602339143,
+      "projected_box_cm": [
+        28.525007438022033,
+        28.525007438022026
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 2,
+      "input_hashes": {
+        "geometry.json": "ae42032701478112b3549a26b48d150bdae220fa2bacb1bd416a8ebc84e6c310",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "ed55bf055b090ef367075d972c5e8c470e0d29acc547c3983af105320087aafa",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-4865af",
+          "returncode": 0,
+          "actual_wall_seconds": 2.7976813316345215,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-8f6a3d",
+          "returncode": 0,
+          "actual_wall_seconds": 7.284814357757568,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_circular_ring_n8_e19.2923_d0800_az0000_624a4e165682",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "circular_ring",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 7.99999999999999,
+      "projected_box_cm": [
+        26.933708498984764,
+        26.93370849898476
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 3,
+      "input_hashes": {
+        "geometry.json": "1ac24220b21a16e056a1702548c3c4fe8a54239a0738f11a05c5ff28942925b8",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "7d14801634d50ddc9a4f5626c62da4b74393f0a8222ff8b0f397a18838f12e0b",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-53618f",
+          "returncode": 0,
+          "actual_wall_seconds": 3.010746955871582,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-7ccb09",
+          "returncode": 0,
+          "actual_wall_seconds": 6.672266244888306,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_az0000_aab080843db1",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 4,
+      "layout": "square_perimeter",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 10.0,
+      "projected_box_cm": [
+        17.62,
+        17.62
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 4,
+      "input_hashes": {
+        "geometry.json": "fcfbd17af253e6641db7a6104a629b03a81f666c326ab962c0d3958311eb1195",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "81963f6d4385292147301fafca04207ad53210d5434badfa0b64e4df98418b25",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-eb299d",
+          "returncode": 0,
+          "actual_wall_seconds": 3.175196886062622,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-999812",
+          "returncode": 0,
+          "actual_wall_seconds": 6.5372536182403564,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_am1000_8b093f1e8ad8",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 4,
+      "layout": "square_perimeter",
+      "tilt_deg": -10.0,
+      "nearest_spacing_cm": 10.0,
+      "projected_box_cm": [
+        17.562339059615773,
+        17.562339059615773
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 5,
+      "input_hashes": {
+        "geometry.json": "7397c4f6ab68b99f34a241d0c7d88b8b7135ea314c39dbaefacb5ab055dfa2be",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "48f080ec20cdd4bd0491f8a2ab98c5668a15691e2287e72dc222e8875aceb171",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-cca324",
+          "returncode": 0,
+          "actual_wall_seconds": 2.7158591747283936,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-9bf181",
+          "returncode": 0,
+          "actual_wall_seconds": 6.111530542373657,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d1000_ap1000_a0f5298ab023",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 4,
+      "layout": "square_perimeter",
+      "tilt_deg": 10.0,
+      "nearest_spacing_cm": 10.0,
+      "projected_box_cm": [
+        17.562339059615773,
+        17.562339059615773
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 6,
+      "input_hashes": {
+        "geometry.json": "b6759e90f5f5c95b829ed5a834efbff91504b0a7ae626782db718b960cdf8085",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "404fed63e3d02540769cfeebb853317c294c590f3da72fed5ad09303852a7217",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-724da3",
+          "returncode": 0,
+          "actual_wall_seconds": 2.8163604736328125,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-51f013",
+          "returncode": 0,
+          "actual_wall_seconds": 7.69746994972229,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d0400_az0000_9f29ed5af26b",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 4,
+      "layout": "square_perimeter",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 4.0,
+      "projected_box_cm": [
+        11.62,
+        11.62
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 7,
+      "input_hashes": {
+        "geometry.json": "2f369096227f003b03b3f11b8e35213166526be4aceebb2db56cafd13de1df70",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "a32bd73f201d4e086ff72071a38111d2d0018712e304fd6703eb436d4c757528",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-04b40d",
+          "returncode": 0,
+          "actual_wall_seconds": 2.451892614364624,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-4d2e37",
+          "returncode": 0,
+          "actual_wall_seconds": 8.073430299758911,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n8_e19.2923_d0400_az0000_0b2978483d8d",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "square_perimeter",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 4.0,
+      "projected_box_cm": [
+        15.620000000000001,
+        15.620000000000001
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 8,
+      "input_hashes": {
+        "geometry.json": "32f2e75310bca963eecbfc0aceab74fde8a63bdc9761de9c2fa87c30e6bf9cfe",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "903ce6da901d9fb344aecf17f7aadb0dd870ec778fcead86b090eff12b015a5f",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-5eb3b5",
+          "returncode": 0,
+          "actual_wall_seconds": 3.3482983112335205,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-578b5b",
+          "returncode": 0,
+          "actual_wall_seconds": 6.92919135093689,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_circular_ring_n8_e19.2923_d0400_az0000_339465228445",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "circular_ring",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 3.999999999999995,
+      "projected_box_cm": [
+        17.27685424949238,
+        17.27685424949238
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 9,
+      "input_hashes": {
+        "geometry.json": "3a7eb3c3b0b86de029cb57660eb05ee09a2e92881c9c053f810d22f80a826135",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "768bbe1b9b79eb355474f337d7f520e8ae35b4415fb617c3461cec30070def1a",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-555cf3",
+          "returncode": 0,
+          "actual_wall_seconds": 2.8343536853790283,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-a9911a",
+          "returncode": 0,
+          "actual_wall_seconds": 6.793710231781006,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n4_e19.2923_d0000_az0000_1f273f63db78",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 4,
+      "layout": "square_perimeter",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 0.0,
+      "projected_box_cm": [
+        7.62,
+        7.62
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 10,
+      "input_hashes": {
+        "geometry.json": "e3873427fa5ccbfea467e2301785d0d617efd4625ff3aa057238d975bb796bea",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "fd6dbc7ec3b66e18f69638b0713bc018b678a061bb59726b91ed1ad4aefa2d8a",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-5dabb2",
+          "returncode": 0,
+          "actual_wall_seconds": 2.7245559692382812,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-2c5c75",
+          "returncode": 0,
+          "actual_wall_seconds": 6.928833484649658,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    },
+    {
+      "case": "coarsespacingseed_square_perimeter_n8_e19.2923_d0000_az0000_283128d91d71",
+      "state": "ready",
+      "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+      "numerical_signature": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "mpi_ranks": 1,
+      "mesh_cells": 248400,
+      "rotors": 8,
+      "layout": "square_perimeter",
+      "tilt_deg": 0.0,
+      "nearest_spacing_cm": 0.0,
+      "projected_box_cm": [
+        7.62,
+        7.62
+      ],
+      "forcing_inside_uniform_core": true,
+      "priority": 11,
+      "input_hashes": {
+        "geometry.json": "483802c9fbf975abc3d6788c63c8973e294e449e5ea1bfb71ccd53fb24508993",
+        "Allrun": "0bbfda41829f403f92c651d4e3e7356da7a94b7786e5b43a412f979a166a4fa9",
+        "0/U": "fc1af376b048c29cc8d687f6e1f1f4af70888164da5b8dd7ce9231626855029c",
+        "0/p": "a64b798ebba4a4f8cfa00e0095adc3a797d684550b904b4152d1ea295ea8ab66",
+        "constant/fvModels": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+        "constant/rotorParameters": "6aa1039a05b5eb4f89f7cb1f31fce1f98656ad170abb0a427fd7e54c6c28c65f",
+        "constant/physicalProperties": "6dd5ee5cf953565cb54519ffda32d48bd224a5e6d59225018bef537f50b5ce5b",
+        "constant/momentumTransport": "d6a5260c06aae2c696f325e3dbe6df10124d3dff37043640ae04ebeb6b5b97f8",
+        "system/blockMeshDict": "f000a053637ad47d9943fcb01e78f17d7b7e4f152b22fe355cdbd5ca0994287f",
+        "system/controlDict": "aa72dd9edfc7ed298bb0963b016e78dd489b1f47711c1cea1b7fb95034974304",
+        "system/fvSchemes": "3c6f3ec25c60924de3003ec3e63a72d11c70e6f87debd8135d8f6eb196652943",
+        "system/fvSolution": "93f0c3ddc020e416c267c6edb44c3a3a1e4b3ea4a0209fd553c72b4af63be077",
+        "system/decomposeParDict": "0d7060672f06b269b2158bfaca70884086d93b1b55e7ccd5a805c7a8b3dfc787"
+      },
+      "mesh_cell_count_verified": 248400,
+      "mesh_ok": true,
+      "preflight_jobs": {
+        "blockMesh": {
+          "job_id": "blockMesh-73ea99",
+          "returncode": 0,
+          "actual_wall_seconds": 3.1046228408813477,
+          "log": "log.preflight.blockMesh"
+        },
+        "checkMesh": {
+          "job_id": "checkMesh-c451d5",
+          "returncode": 0,
+          "actual_wall_seconds": 6.597827911376953,
+          "log": "log.preflight.checkMesh"
+        }
+      }
+    }
+  ],
+  "source_transfer": "/mnt/c/Users/abbii/Documents/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/work/tello_spacing_transfer.json",
+  "verified_input_hashes": 192,
+  "solver_launched": false,
+  "mesh_preparation_complete_utc": "2026-11-01T21:54:47Z"
+}

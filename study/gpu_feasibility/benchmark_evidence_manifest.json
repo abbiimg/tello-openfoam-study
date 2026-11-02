@@ -1,0 +1,185 @@
+{
+  "kind": "Actual GPU benchmark evidence and reproduction index",
+  "actual_cuda_execution_verified": true,
+  "cpu_default_retained": true,
+  "tested_gpu_configuration_slower": true,
+  "gpu_force_power_field_gates_passed": true,
+  "preregistered_continuity_review_flag_retained": true,
+  "practical_timing_gate_passed": false,
+  "no_new_tuning_probe": true,
+  "numerical_and_performance_artifacts": [
+    {
+      "file": "benchmark_accuracy_results.json",
+      "sha256": "4e02ad23837935ae0b52d8c99b55d2ee34a5964764480f942c79b10087c5318f",
+      "size_bytes": 144598
+    },
+    {
+      "file": "benchmark_results.csv",
+      "sha256": "d3482b2be038f0fd9d2b24c3cdab05f21c513f17d95d1d82d24224a8ed11fa95",
+      "size_bytes": 2312
+    },
+    {
+      "file": "benchmark_comparison.txt",
+      "sha256": "189325bb49d4c65d3c68114e5c644c746c05625082a28b795de6bbf8bcc77345",
+      "size_bytes": 2204
+    },
+    {
+      "file": "benchmark_speed_comparison.png",
+      "sha256": "51405af2b8b14d0da8ae0ca101a2904ab0072d31a725498c6bf3280a996ae4d8",
+      "size_bytes": 125577
+    },
+    {
+      "file": "benchmark_speed_comparison.svg",
+      "sha256": "facd932a2b5cda62d5f514f38e5d0c080203146ccaa39cb8661dc9ff9d0d1fb4",
+      "size_bytes": 74529
+    },
+    {
+      "file": "performance_diagnosis.json",
+      "sha256": "b53d2932e7bd4bac223688f159e94898f0574ad329b57e17f56207670d6273dd",
+      "size_bytes": 15065
+    },
+    {
+      "file": "benchmark_acceptance.json",
+      "sha256": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+      "size_bytes": 3543
+    },
+    {
+      "file": "benchmark_reproduction_export.json",
+      "sha256": "d0e292e7c3d7fa68560461d0afcf96a6bb8a5d7bb96c77150bb9b3f8f1010e84",
+      "size_bytes": 691
+    },
+    {
+      "file": "benchmark_reproduction_check.json",
+      "sha256": "3050396d8fe27b4d6f2b8f5c1425853770b108c597b9db048397813eb5f95255",
+      "size_bytes": 742
+    }
+  ],
+  "raw_log_copies": [
+    {
+      "file": "benchmark_logs/cpu_serial/log.foamRun",
+      "sha256": "306c10e129cb2a0b5c8624cb141001b282e5592dc4b319cd54f72a590798dd8c",
+      "size_bytes": 85732
+    },
+    {
+      "file": "benchmark_logs/cpu_serial/benchmark_timing.json",
+      "sha256": "89bf54e551f00927446778fbcd64dc05b0431ed757e2c03d71e81d3b2c51ad8c",
+      "size_bytes": 2350
+    },
+    {
+      "file": "benchmark_logs/cpu_serial/gpu_usage.jsonl",
+      "sha256": "1edfc3a4388597e65b809f0fd74eeb2618141e536296cfd13d311633b1516241",
+      "size_bytes": 364424
+    },
+    {
+      "file": "benchmark_logs/cpu_serial/benchmark_step_times.jsonl",
+      "sha256": "a1b12f6cc3c9e8ea7c3bc2bd4178e809e523ee9f70f390cd3417c368fb012461",
+      "size_bytes": 11161
+    },
+    {
+      "file": "benchmark_logs/cpu_mpi2/log.foamRun",
+      "sha256": "417b7697b4d8ed04a23f296adbdc1aaf9f8eec48b42a1cd8d7ffd1b8b928d227",
+      "size_bytes": 85872
+    },
+    {
+      "file": "benchmark_logs/cpu_mpi2/benchmark_timing.json",
+      "sha256": "5fe4e25b2c75158961c2377d496f6b5614239674fed7f50172853c49ccf0d14e",
+      "size_bytes": 2429
+    },
+    {
+      "file": "benchmark_logs/cpu_mpi2/gpu_usage.jsonl",
+      "sha256": "d4922ba3ad7aa17ca554ea540da11b3f49e34d18fbde1abcae2aceebb899fd1a",
+      "size_bytes": 227500
+    },
+    {
+      "file": "benchmark_logs/cpu_mpi2/benchmark_step_times.jsonl",
+      "sha256": "31047869c4f3db3acf374b32ab3c0e7adce52218b9fefb8f117f646982f8ee0e",
+      "size_bytes": 11084
+    },
+    {
+      "file": "benchmark_logs/cpu_mpi2/log.decomposePar",
+      "sha256": "34ad5f77598458ef72d4c1a50fea70e2fc135764ddf18d6dc9fedc0c1560faf0",
+      "size_bytes": 2084
+    },
+    {
+      "file": "benchmark_logs/cpu_mpi2/log.reconstructPar",
+      "sha256": "0214ed47551a80e71eb207a438ebc8ec40f318aef9a0fb3885b06e95e11d0026",
+      "size_bytes": 1547
+    },
+    {
+      "file": "benchmark_logs/cuda_mpi2/log.foamRun",
+      "sha256": "a316439e4c04084607a72497a56660cdabd26c4a7a87a424eb48c2c7243cb02e",
+      "size_bytes": 331244
+    },
+    {
+      "file": "benchmark_logs/cuda_mpi2/benchmark_timing.json",
+      "sha256": "73b991c65d6d1da7a298217ddeda2749cf1293f72413b75324f4099ab11b7ad5",
+      "size_bytes": 2754
+    },
+    {
+      "file": "benchmark_logs/cuda_mpi2/gpu_usage.jsonl",
+      "sha256": "76a032ebdecfa63167e438b30cbc21bed5f7c7e34750f00ec798091ddbbe83b9",
+      "size_bytes": 651391
+    },
+    {
+      "file": "benchmark_logs/cuda_mpi2/benchmark_step_times.jsonl",
+      "sha256": "5971752f009ca5ba063dedb81f31fbe981a5c052b751b0c1c30ded5afc93cf70",
+      "size_bytes": 11157
+    },
+    {
+      "file": "benchmark_logs/cuda_mpi2/log.decomposePar",
+      "sha256": "cd624128664bc9127c796e1f8ac96b23bab1b36ce584dc3bf2b98e026a4cbf2a",
+      "size_bytes": 2085
+    },
+    {
+      "file": "benchmark_logs/cuda_mpi2/log.reconstructPar",
+      "sha256": "961cbbadf909d1a3a2e9ce76750f6c0ac36f99ee1482cb3e1ac952e5e0079b34",
+      "size_bytes": 1548
+    },
+    {
+      "file": "build_device_logs/configure-cuda.log",
+      "sha256": "c13c8415e14fc77fcc25debf6e69717c4388d8df640bf79423f28ca513ea9d4c",
+      "size_bytes": 8228
+    },
+    {
+      "file": "build_device_logs/cuda-build.log",
+      "sha256": "c615e54929f542f5fda7bfa4eea8a1354eeaf4f4a43dc3d41475a6efa99e375d",
+      "size_bytes": 2412389
+    },
+    {
+      "file": "build_device_logs/ldd-cuda.log",
+      "sha256": "6be5c464cc21488fc621755c84b931e86e63743a4259abbcc356f370c198fdc0",
+      "size_bytes": 3926
+    },
+    {
+      "file": "build_device_logs/dlopen-cuda.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "file": "build_device_logs/mpi-cuda-probe-compile.log",
+      "sha256": "fb82716d73a23f97541faf79f60b61a77326e8a4cf305f94f2c81d070a57b6f7",
+      "size_bytes": 91248
+    },
+    {
+      "file": "build_device_logs/mpi-cuda-host-buffer.log",
+      "sha256": "b0da6740973c17ad3bc3d1b205e156d8a1bb0b3ecca2efff626071b38fa6da4e",
+      "size_bytes": 744
+    },
+    {
+      "file": "cuda_redist_13.0.2_manifest.json",
+      "sha256": "fce66717a81c510ffeb89ecc3e79849ab34af3b80139f750876d9033e31d71c2",
+      "size_bytes": 47788
+    }
+  ],
+  "reproduction": {
+    "shared_seed": "benchmark_reproduction/shared_seed.zip",
+    "manifest": "benchmark_reproduction/reproduction_manifest.json",
+    "restore_tool": "benchmark_reproduction/restore_benchmark.py",
+    "instructions": "benchmark_reproduction/INSTRUCTIONS.txt",
+    "explicit_seed_link_required": true,
+    "no_SDK_or_build_tree_embedded": true
+  },
+  "historical_readiness": "cuda_build_device_readiness.json describes the pre-CFD handoff snapshot; benchmark_accuracy_results.json is the subsequent actual CFD result.",
+  "no_original_case_writes": true,
+  "no_solver_launched_by_analysis_packaging": true
+}

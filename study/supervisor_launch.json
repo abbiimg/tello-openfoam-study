@@ -1,0 +1,12 @@
+{
+  "job_id": "Allrun-35daac",
+  "case": "tello_execution_supervisor",
+  "app": "Allrun",
+  "np": 1,
+  "log": "log.supervisor_v7",
+  "state": "running",
+  "started_utc": "2026-11-01T22:32:52Z",
+  "previous_queue_process": "Allrun-8143ae",
+  "physics_restarted": false,
+  "purpose": "Exact 85-case plan; circle frontier angle brackets and four released validations precede low-spacing coverage; normal16 CPU ranks"
+}

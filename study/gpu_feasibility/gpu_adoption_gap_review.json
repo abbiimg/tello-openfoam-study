@@ -1,0 +1,71 @@
+{
+  "kind": "Bounded read-only GPU-adoption integration review; not adoption evidence",
+  "status": "conditional_patch_plan_only",
+  "approval_gate": "Do not adopt until the registered accuracy checks AND at least 1.25x full-wall speedup versus the faster fresh CPU benchmark pass. Keep CUDA optional otherwise.",
+  "no_CFD_build_or_benchmark_launched": true,
+  "no_frozen_case_or_production_helper_modified": true,
+  "no_candidate_spacing_seed_modified_or_moved": true,
+  "inspection_scope": "Small local preparation, audit, runner, archive and reproduction source/configuration records only. No installed-library hashing, SDK/build traversal or large-field reads during timing.",
+  "frozen_benchmark_root": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101",
+  "unrun_candidate_root": "/opt/openfoam-workspace/cases/tello_next_spacing_inputs",
+  "observed_profiles": {
+    "legacy_CPU_MPI2_default": "1bc1e3ba86238784cd0f6318ec5217b3bbbefb6f7f4b7c7af06efbad4eb3f66e",
+    "current_CPU_serial_direct": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+    "experimental_CUDA_MPI2": "e382c1d94680437f645b0b0bd975d7443890e496a0969f9fde73037e67b927c5",
+    "CUDA_signature_note": "The benchmark configuration includes source commits, architecture, precision, fast_math and mpi_gpu_aware policy, but its binary and patch hashes live in separate manifest/audit records rather than this signature. Its frozen_numerics_helper.py still has a GAMG-only effective_direct_settings guard. e382 is an isolated experimental identity, not proof that the current production collector supports GKO. Preserve it unchanged."
+  },
+  "minimal_new_optional_module": {
+    "path": "pressure_backend_identity_proposal.py",
+    "production_imports": false,
+    "API": ["pressure_metadata(configuration)", "backend_identity(runtime_records)", "bind_method_identity(configuration, runtime_records=None)"],
+    "scope": "Pure structural validation and path-independent content identity only. No case preparation, library verification, solver invocation, gate decision or adoption authority.",
+    "CPU_compatibility": "Native canonical configurations are deep-copied without adding fields or changing tokens, preserving their existing digest. The current GAMG default-insertion path must remain unchanged.",
+    "GKO_identity": "Add signed adapter/Ginkgo/CUDA library closure hashes and sizes, OGL/Ginkgo commits, patched source hashes, compatibility/audit patch hashes, build/precision flags and MPI/device/staging policy. Runtime paths remain separately audited portable deployment records. Future production identity is deliberately distinct from weaker e382."
+  },
+  "conditional_patch_plan": [
+    {
+      "files": ["prepare_mapped.py or a new optional dispatcher beside it"],
+      "gap": "effective_direct_settings requires both pressure solvers to be GAMG, and solver_configuration calls it unconditionally. Only selected time-stepping controls are signed; controlDict libs and the external runtime sidecar are not in method identity.",
+      "change": "Preserve the native GAMG branch exactly. Add an explicit GKOCG/CUDA branch for p and inherited pFinal that does not inject directSolveCoarsest. Expand dictionaries as today, retain all GKO controls, require MPI2/one-GPU/host staging, and bind the externally verified runtime identity. Audit controlDict libs against the sidecar's adapter path/hash. A new optional wrapper can dispatch without changing frozen helpers."
+    },
+    {
+      "files": ["collect_numerics.py"],
+      "gap": "case_numerics checks GAMG/direct switches and emits direct-on/off labels. Only geometry and four numerical dictionaries are hashed, so sidecar/runner/library changes cannot currently invalidate a GKO audit.",
+      "change": "Keep old CPU INPUTS/schema/signature interpretation stable. For the explicit GKO branch require separately recorded current runtime-sidecar and runner hashes plus verified external closure identity, and validate the current library records outside timing. Derive pressure solver/executor/rank/device policy from the signed configuration. Direct-coarsest is N/A, never falsely off. Emit e.g. '2 ranks, GKOCG CUDA, 1 GPU owner, host staging' and retain the full signature. Unknown, missing or stale runtime evidence cannot establish a match."
+    },
+    {
+      "files": ["NEW optional prepare_cold_pressure_backend.py", "NEW Allrun_cold_cuda_mpi2.template"],
+      "gap": "prepare_serial_cold.py and Allrun_cold_serial.template intentionally create only one-rank GAMG/direct cold cases. The twelve candidates already have frozen serial-cold preparation provenance.",
+      "change": "After gate approval only, clone selected UNRUN candidate inputs into fresh tagged siblings/private staging; never convert their frozen originals in place. Retain cold uniform 0/U,p, original grid/end/window/role/layout and physical files. Rewrite only fresh pressure backend, adapter lib declaration, two-rank decomposition, runtime sidecar, runner and consistent metadata/provenance. Require approved source SHA 29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd and byte-identical fvModels/rotorParameters/physicalProperties/momentumTransport/blockMeshDict to each source candidate. Record source input hashes before/after; new cold_preparation records must bind method, runner, runtime sidecar, 0/U,p and helper hashes. Refuse existing/started/nonzero-time targets. Do not call enable_direct_coarsest on GKO."
+    },
+    {
+      "files": ["NEW future CUDA runner template", "execution supervisor configuration"],
+      "gap": "The isolated benchmark runner starts from frozen 0.6 fields on an existing fine mesh and has benchmark-only bounds/roles. It is not a cold validation runner, and default multi-case concurrency would oversubscribe the single GPU.",
+      "change": "Freeze a dedicated cold MPI2 runner using the benchmark's exact verified GKO controls and launch policy. Set per-case owned runtime_cache/cuda, runtime_cache/tmp and XDG cache directories with valid non-root permissions; source Foundation14 and prepend only the private SDK/OGL/Ginkgo paths in case-local environment. Keep threads per rank 1 and the benchmark's host-buffer/communicator behavior. Mesh/check, decompose cold time0, copy rotorParameters as required, launch mpirun --bind-to none -np2 foamRun -parallel, reconstruct saved root fields, and check End/fatal errors. Verify real OGL_RUNTIME_EXECUTOR owner/Reference records and runtime library resolution. Use an explicit one-case-per-GPU lease/concurrency limit. Keep temporary/caches out of delivered setup archives; no global CUDA/driver changes."
+    },
+    {
+      "files": ["archive_completed.py", "reproduce_cases.py", "run_cases.py validation hook"],
+      "gap": "validate_cold_initialization hardcodes one-rank serial/direct preparation. copy_delivered copies only a fixed set of cold root files; a CUDA sidecar/helper could be omitted. Generic ranks_and_runner already accepts two ranks but does not verify the external backend closure.",
+      "change": "Add a separately versioned explicit CUDA-cold provenance validator without weakening the serial branch. Validate MPI2, cold initial fields, method/runner/sidecar consistency and runtime evidence. Generalize copying of explicitly frozen cold inputs as already done for mapped inputs, with safe relative-path restrictions. Archive the small provenance/source/patch/build-recipe and runtime manifests, not SDK/build trees. Validate-only must launch nothing and catch missing/stale CUDA runtime deployment."
+    },
+    {
+      "files": ["analysis_helpers.py", "analyze_refinement.py", "initialization diagnostics labels"],
+      "gap": "Existing comparison grouping already holds verified method signatures fixed, but human labels and auditing assume GAMG/direct status. Frozen CUDA benchmark geometry also retains inherited CPU descriptions in its older numerics/benchmark_variant fields; do not copy those stale descriptions into future cases.",
+      "change": "Use the auditor's backend-aware label/metadata and retain GKO versus CPU as different methods. Overwrite fresh geometry's numerics/execution descriptions consistently. Do not pool CPU controls with CUDA candidates for a numerical-method-isolated layout/count/spacing claim. Keep old CPU results/audits visible and unchanged. If comparing backends, label it as an explicit method sensitivity with identical geometry and windows."
+    }
+  ],
+  "post_gate_small_checks_before_any_seed_launch": [
+    "Fresh scratch cold-CUDA preparation and validate-only: no solver, no edits to original candidates; protected physical dictionaries and cold U,p unchanged.",
+    "Read-only canonical collection of fresh scratch GKO cases, exact effective pressure-controls comparison against approved frozen cuda_mpi2, and backend/runtime closure verification after benchmark timing ends.",
+    "Regression: old be7/1bc configurations/signatures remain identical; CPU and GKO cannot match; changed adapter/source/patch/runtime-sidecar/runner records fail qualification.",
+    "Reproduction copies all frozen sidecars/helpers and refuses missing runtime dependencies. Archive gate accepts the explicit CUDA MPI2 cold schema without relaxing CPU checks.",
+    "Extend the approved manifest/audit/archive/watch scopes only after parent chooses actual cases; preserve existing roots and benchmark files."
+  ],
+  "scientific_limits": [
+    "Build/device/MPI readiness is not CFD accuracy, speed, stationarity or convergence validation.",
+    "A 922576-cell frozen 0.6–0.62 s pressure benchmark does not establish the speedup of smaller cold-start spacing seeds or their 0.8–1.2 s lift statistics. Avoid a blanket runtime claim across those protocols.",
+    "No force or power rescaling, loss-map change, source-model change or altered stopping criteria should be used to make CUDA pass.",
+    "A new stronger production method digest identifies an unchanged approved GKO implementation plus a fuller closure; preserve the frozen experimental digest rather than rewriting benchmark provenance."
+  ],
+  "scratch_test_evidence": "work/gpu_identity_proposal_checks.json; synthetic runtime records only, not verified installed binaries or adoption evidence"
+}

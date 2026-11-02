@@ -1,0 +1,329 @@
+{
+  "kind": "Read-only actual benchmark performance diagnosis; no new CFD/build or case mutation",
+  "numerical_accuracy_scope": "Parent analysis owns frozen-acceptance U/p/force/power/continuity gates; this report does not declare their outcome.",
+  "cases": {
+    "cpu_serial": {
+      "full_runner_s": 237.57867109599465,
+      "phases": {
+        "solver_elapsed_s": 237.32259443300427,
+        "startup_through_first_completed_step_s": 9.675378859988996,
+        "steady_wall_s": 227.46394834200328,
+        "steady_physical_s": 0.01988095000000001,
+        "steady_completed_steps": 85,
+        "steady_simulated_s_per_wall_s": 8.740264180285845e-05,
+        "step_observation_poll_interval_s": 0.02,
+        "first_native_step": {
+          "physical_time_s": 0.60011905,
+          "observed_monotonic_s": 108500.971764661,
+          "reported_cpu_s": 6.416241,
+          "reported_clock_s": 10.0
+        },
+        "last_native_step": {
+          "physical_time_s": 0.62,
+          "observed_monotonic_s": 108728.435713003,
+          "reported_cpu_s": 233.337834,
+          "reported_clock_s": 237.0
+        }
+      },
+      "pressure_solves": 172,
+      "pressure_iterations_total": 1678,
+      "pressure_iterations_mean": 9.755813953488373,
+      "pressure_iterations_max": 36,
+      "nonfinal_pressure_iterations_mean": 2.604651162790698,
+      "final_pressure_iterations_mean": 16.906976744186046,
+      "physical_steps": 86,
+      "ogl_host_wall_sections": {},
+      "gpu_monitor": {
+        "valid_utilization_samples": 165,
+        "mean_percent": 0.0,
+        "maximum_percent": 0.0,
+        "note": "Includes startup/decomposition/reconstruction. WSL memory totals, power and process attribution are not treated as authoritative."
+      },
+      "hierarchy_initial_record_count": 0,
+      "hierarchy_reuse_exception_count": 0,
+      "log_sha256": "306c10e129cb2a0b5c8624cb141001b282e5592dc4b319cd54f72a590798dd8c"
+    },
+    "cpu_mpi2": {
+      "full_runner_s": 137.43455597100547,
+      "phases": {
+        "decomposition_s": 7.20784080500016,
+        "solver_elapsed_s": 121.41809851399739,
+        "reconstruction_s": 8.552524264989188,
+        "startup_through_first_completed_step_s": 6.367798406005022,
+        "steady_wall_s": 114.8553891289921,
+        "steady_physical_s": 0.01988095000000001,
+        "steady_completed_steps": 85,
+        "steady_simulated_s_per_wall_s": 0.00017309549121523638,
+        "step_observation_poll_interval_s": 0.02,
+        "first_native_step": {
+          "physical_time_s": 0.60011905,
+          "observed_monotonic_s": 108823.890133185,
+          "reported_cpu_s": 3.714979,
+          "reported_clock_s": 7.0
+        },
+        "last_native_step": {
+          "physical_time_s": 0.62,
+          "observed_monotonic_s": 108938.745522314,
+          "reported_cpu_s": 118.484891,
+          "reported_clock_s": 122.0
+        }
+      },
+      "pressure_solves": 172,
+      "pressure_iterations_total": 1739,
+      "pressure_iterations_mean": 10.11046511627907,
+      "pressure_iterations_max": 40,
+      "nonfinal_pressure_iterations_mean": 2.604651162790698,
+      "final_pressure_iterations_mean": 17.61627906976744,
+      "physical_steps": 86,
+      "ogl_host_wall_sections": {},
+      "gpu_monitor": {
+        "valid_utilization_samples": 96,
+        "mean_percent": 0.0,
+        "maximum_percent": 0.0,
+        "note": "Includes startup/decomposition/reconstruction. WSL memory totals, power and process attribution are not treated as authoritative."
+      },
+      "hierarchy_initial_record_count": 0,
+      "hierarchy_reuse_exception_count": 0,
+      "log_sha256": "417b7697b4d8ed04a23f296adbdc1aaf9f8eec48b42a1cd8d7ffd1b8b928d227"
+    },
+    "cuda_mpi2": {
+      "full_runner_s": 250.12985353000113,
+      "phases": {
+        "decomposition_s": 6.291246863998822,
+        "solver_elapsed_s": 234.08550994600228,
+        "reconstruction_s": 8.966284235997591,
+        "startup_through_first_completed_step_s": 15.4789650849998,
+        "steady_wall_s": 218.25515733400243,
+        "steady_physical_s": 0.01988095000000001,
+        "steady_completed_steps": 85,
+        "steady_simulated_s_per_wall_s": 9.109040190777985e-05,
+        "step_observation_poll_interval_s": 0.02,
+        "first_native_step": {
+          "physical_time_s": 0.60011905,
+          "observed_monotonic_s": 109025.69832143,
+          "reported_cpu_s": 11.935781,
+          "reported_clock_s": 16.0
+        },
+        "last_native_step": {
+          "physical_time_s": 0.62,
+          "observed_monotonic_s": 109243.953478764,
+          "reported_cpu_s": 214.880291,
+          "reported_clock_s": 234.0
+        }
+      },
+      "pressure_solves": 172,
+      "pressure_iterations_total": 2778,
+      "pressure_iterations_mean": 16.151162790697676,
+      "pressure_iterations_max": 36,
+      "nonfinal_pressure_iterations_mean": 6.488372093023256,
+      "final_pressure_iterations_mean": 25.813953488372093,
+      "physical_steps": 86,
+      "ogl_host_wall_sections": {
+        "generate_all_to_all_update_data": {
+          "count": 1,
+          "total_s": 6.500000000000001e-05,
+          "median_s": 6.500000000000001e-05,
+          "minimum_s": 6.500000000000001e-05,
+          "maximum_s": 6.500000000000001e-05
+        },
+        "generate_local_pairwise_data": {
+          "count": 1,
+          "total_s": 7e-06,
+          "median_s": 7e-06,
+          "minimum_s": 7e-06,
+          "maximum_s": 7e-06
+        },
+        "generate_non_local_pairwise_data": {
+          "count": 1,
+          "total_s": 1e-06,
+          "median_s": 1e-06,
+          "minimum_s": 1e-06,
+          "maximum_s": 1e-06
+        },
+        "generate_local_reorder_map": {
+          "count": 1,
+          "total_s": 0.01834,
+          "median_s": 0.01834,
+          "minimum_s": 0.01834,
+          "maximum_s": 0.01834
+        },
+        "generate_non_local_reorder_map": {
+          "count": 1,
+          "total_s": 2.1000000000000002e-05,
+          "median_s": 2.1000000000000002e-05,
+          "minimum_s": 2.1000000000000002e-05,
+          "maximum_s": 2.1000000000000002e-05
+        },
+        "perform_all_to_all_update": {
+          "count": 172,
+          "total_s": 3.772309,
+          "median_s": 0.0179825,
+          "minimum_s": 0.006872,
+          "maximum_s": 0.581667
+        },
+        "perform_pairwise_update": {
+          "count": 172,
+          "total_s": 0.16120400000000001,
+          "median_s": 0.0008105,
+          "minimum_s": 0.00029,
+          "maximum_s": 0.002806
+        },
+        "reorder_matrix_data": {
+          "count": 172,
+          "total_s": 1.8434089999999999,
+          "median_s": 0.0069039999999999995,
+          "minimum_s": 0.003907,
+          "maximum_s": 0.6769489999999999
+        },
+        "perform_matrix_update": {
+          "count": 172,
+          "total_s": 5.808785,
+          "median_s": 0.025978,
+          "minimum_s": 0.013769,
+          "maximum_s": 0.694629
+        },
+        "call_init": {
+          "count": 3,
+          "total_s": 1.4611740000000002,
+          "median_s": 0.004347,
+          "minimum_s": 0.004281,
+          "maximum_s": 1.4525460000000001
+        },
+        "scale_RHS": {
+          "count": 172,
+          "total_s": 0.104152,
+          "median_s": 0.0005065,
+          "minimum_s": 0.000211,
+          "maximum_s": 0.002062
+        },
+        "init_precond": {
+          "count": 172,
+          "total_s": 93.037402,
+          "median_s": 0.540178,
+          "minimum_s": 0.261475,
+          "maximum_s": 5.5646629999999995
+        },
+        "generate_solver": {
+          "count": 172,
+          "total_s": 0.010404,
+          "median_s": 5.3e-05,
+          "minimum_s": 2.4e-05,
+          "maximum_s": 0.000321
+        },
+        "solve": {
+          "count": 172,
+          "total_s": 69.362435,
+          "median_s": 0.299253,
+          "minimum_s": 0.071467,
+          "maximum_s": 0.966647
+        },
+        "copy_x_back": {
+          "count": 172,
+          "total_s": 0.763801,
+          "median_s": 0.0042775,
+          "minimum_s": 0.00275,
+          "maximum_s": 0.015183
+        },
+        "solve_multi_gpu": {
+          "count": 172,
+          "total_s": 170.929829,
+          "median_s": 0.8317575,
+          "minimum_s": 0.35673200000000005,
+          "maximum_s": 7.621647
+        },
+        "call_update": {
+          "count": 513,
+          "total_s": 5.717589,
+          "median_s": 0.001911,
+          "minimum_s": 0.0006730000000000001,
+          "maximum_s": 0.589727
+        }
+      },
+      "gpu_monitor": {
+        "valid_utilization_samples": 197,
+        "mean_percent": 39.51269035532995,
+        "maximum_percent": 81.0,
+        "note": "Includes startup/decomposition/reconstruction. WSL memory totals, power and process attribution are not treated as authoritative."
+      },
+      "hierarchy_initial_record_count": 1,
+      "hierarchy_reuse_exception_count": 0,
+      "log_sha256": "a316439e4c04084607a72497a56660cdabd26c4a7a87a424eb48c2c7243cb02e"
+    }
+  },
+  "measured_comparison": {
+    "best_native_case": "cpu_mpi2",
+    "cuda_full_time_ratio_to_best_native": 1.8199924448605993,
+    "cuda_full_extra_s": 112.69529755899566,
+    "cuda_solver_extra_s": 112.66741143200488,
+    "cuda_steady_throughput_ratio_to_best_native": 0.5262436431374927,
+    "native_CPU2_full_speedup_over_CPU1": 1.7286676514319772
+  },
+  "diagnosis": [
+    "The slowdown persists after startup: CUDA steady throughput is about0.526 times nativeCPU2, so first CUDA context/hierarchy initialization is not the sole cause.",
+    "GPU pressure wrapper host-wall total170.930s includes93.037s preconditioner generation/update and69.362s CG solve. These source timers are nested; parent and child totals must not be added.",
+    "The hierarchy reuse flag is active: one initial hierarchy recording, no mismatch exception. However caching0 calls generate_reuse each pressure solve, recomputing coarse matrices, smoothers and coarse solver each time.",
+    "Logged matrix update/redistribution totals5.809s and solution copy-back0.764s are much smaller than recurring AMG setup. The measured host-buffer transfer path is not the dominant recorded section.",
+    "CUDA CG reports2778 outer iterations versus nativeGAMG1739 for the same172pressure solves/86steps. These are different algorithms, so iteration counts are diagnostic rather than equivalent work units.",
+    "CPU monitoring shows0% GPU utilization; CUDA samples average39.51%, peak81%, corroborating actual executor/device records. This is not a CPU fallback result."
+  ],
+  "cost_summary": {
+    "gpu_preconditioner_total_s": 93.037402,
+    "gpu_CG_solve_total_s": 69.362435,
+    "gpu_pressure_wrapper_total_s": 170.929829,
+    "preconditioner_fraction_of_wrapper": 0.5443017321453003,
+    "preconditioner_fraction_of_GPU_solver_wall": 0.397450495852825,
+    "logged_matrix_update_s": 5.808785,
+    "logged_copy_back_s": 0.763801,
+    "timer_limitations": "std::chrono host-wall scopes, not CUPTI/CUDA-event kernel profiling. Some CUDA work can synchronize in a later scope. Matrix-update subscopes and persistent call_update are nested. Residual-norm statistics report the last check, not an accumulated norm profile."
+  },
+  "one_possible_candidate": {
+    "status": "Proposed only; not run, frozen or adopted",
+    "sole_control_change": "Nested preconditioner.caching:0 to1, inherited by pFinal; retain all other physics, matrix/RHS/guess updates, stopping criteria and device settings.",
+    "why": "Exactly2PISO correctors per fixed-mesh timestep,1outer and0nonorthogonal correctors. Foundation14 builds pEqn from1/UEqn.A; UEqn is retained for both. U/totalPressure boundary values alter RHS, while the pressure matrix should remain the same within each pair. caching1 can reuse the already generated full preconditioner for the second corrector, then rebuild next timestep.",
+    "assumptions_requiring_validation": "Verify paired pressure matrices are unchanged for this fixture; do not generalize to changed mesh, models, outer loops or pressure-dependent implicit sources. A future candidate requires its own new frozen method signature and the same acceptance before execution.",
+    "measured_second_corrector_setup_total_s": 44.445665,
+    "optimistic_arithmetic_scenario_not_simulated": {
+      "assumption": "Remove every second-corrector setup cost completely, with all other work unchanged.",
+      "projected_full_s": 205.68418853000114,
+      "projected_ratio_to_best_CPU2": 1.496597322826104,
+      "even_removing_ALL_logged_preconditioner_setup_full_s": 157.09245153000114
+    },
+    "recommend_another_probe_now": false,
+    "reason": "Even the optimistic same-work caching1 arithmetic is205.684s,49.7% slower than CPU2. Removing all93.037s recorded setup would still leave157.092s versus137.435s CPU2. This single evident control does not support the preregistered20%full-wall advantage; further GPU research should not delay the CFD goal."
+  },
+  "conclusion": "Keep nativeCPU default for this study/configuration. The adapter and realGPU execution work, but this measured conservative CG/AMG offload configuration is slower. This does not establish that CUDA acceleration cannot help other settings or workloads.",
+  "source_evidence": {
+    "OGL_preconditioner_cache": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/Preconditioner.hpp",
+      "sha256": "87f71aa233c72ef09869d2fe96d5ce85365c21209e8dd0682cfbd44629b79ba3"
+    },
+    "OGL_multigrid_reuse": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/Preconditioner/Multigrid.hpp",
+      "sha256": "d8f6cf364fbccbf4d0c1a30423f9562a802969e3a24740f876abc237981ad7cd"
+    },
+    "OGL_pressure_wrapper": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/lduLduBase.hpp",
+      "sha256": "ab06c382c3e102b336629f0cb065dd4c605aa03f479212ace70a0bbaa36104c4"
+    },
+    "OGL_host_wall_timer": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/common.hpp",
+      "sha256": "a18a2ec5bd20b903ad17683080480cd78c959daddf38857843812bcbf29e491d"
+    },
+    "Foundation14_pressure_matrix": {
+      "path": "/opt/openfoam14/applications/modules/incompressibleFluid/correctPressure.C",
+      "sha256": "1e6b6d38e1f2730368b5de45a4fc76017b06284748349149da41c90c6d84efb2"
+    }
+  },
+  "source_lines": {
+    "preconditioner_cache": "Preconditioner.hpp:128–166 (cache counter, return stored preconditioner, regeneration)",
+    "hierarchy_reuse": "Multigrid.hpp:45–55,62–108 (reuse recomputes coarse operators/smoothers)",
+    "matrix": "Foundation14 correctPressure.C:45–54,65–94 (UEqn.A/rAU, retained UEqn and Laplacian)"
+  },
+  "primary_source_links": [
+    "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/Preconditioner.hpp",
+    "https://github.com/hpsim/OGL/blob/7c3ced4514fb2260e52b16106f8a4df6435d77be/include/OGL/Preconditioner/Multigrid.hpp"
+  ],
+  "no_new_CFD": true,
+  "no_builds": true,
+  "no_case_changes": true
+}

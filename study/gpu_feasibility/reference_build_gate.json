@@ -1,0 +1,21 @@
+{
+  "kind": "Private CPU/reference adapter/library link build; not CFD",
+  "command": [
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/tools/cmake-3.31.7-linux-aarch64/bin/cmake",
+    "--build",
+    "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-reference",
+    "--target",
+    "OGL",
+    "--parallel",
+    "2",
+    "--",
+    "-Otarget"
+  ],
+  "max_build_cpus": 2,
+  "time_limit_s": 1200,
+  "elapsed_s": 514.7605333670072,
+  "returncode": 0,
+  "timed_out": false,
+  "cuda_toolkit_downloaded": false,
+  "library_exists": true
+}

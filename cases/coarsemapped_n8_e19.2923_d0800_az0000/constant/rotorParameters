@@ -1,0 +1,5 @@
+FoamFile {format ascii;class dictionary;object rotorParameters;}
+centres ((-0.08 -0.08 0) (0.08 -0.08 0) (0.08 0.08 0) (-0.08 0.08 0) (0 -0.08 0) (0.08 0 0) (0 0.08 0) (-0.08 0 0));
+normals ((-0 -0 1) (0 -0 1) (0 0 1) (-0 0 1) (0 -0 1) (0 0 1) (0 0 1) (-0 0 1));
+radials ((-0.707106781187 -0.707106781187 0) (0.707106781187 -0.707106781187 0) (0.707106781187 0.707106781187 0) (-0.707106781187 0.707106781187 0) (0 -1 0) (1 0 0) (0 1 0) (-1 0 0));
+radius 0.0381;halfThickness 0.006;tiltSin 0;tiltCos 1;batteryPower 19.2923076923077;auxiliaryPower .5;etaEsc .95;idlePower .10;etaMotor .60;etaAxial .50;

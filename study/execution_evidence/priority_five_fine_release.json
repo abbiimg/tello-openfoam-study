@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-01T21:40:44Z",
+  "released": [
+    "finemapped_n8_e19.2923_d0800_az0000",
+    "finemapped_n8_e19.2923_d0800_am0750",
+    "finemapped_n8_e19.2923_d0800_am1000",
+    "finemapped_n8_e19.2923_d0800_am1250",
+    "finemapped_n8_e19.2923_d1000_az0000"
+  ],
+  "remaining_held": [
+    "finemapped_n4_e19.2923_d1000_az0000",
+    "finemapped_n8_e19.2923_d0750_am1250",
+    "finemapped_n8_e19.2923_d0800_am0500",
+    "finemapped_n8_e19.2923_d0850_am0500"
+  ],
+  "reserved_ranks": 4,
+  "normal_cap": 16,
+  "active_ranks": 12,
+  "same_process_memory_preserved": true,
+  "physics_restarts": 0,
+  "new_unapproved_cases_launched": 0
+}

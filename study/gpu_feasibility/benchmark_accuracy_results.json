@@ -1,0 +1,4151 @@
+{
+  "kind": "Actual completed CPU/CUDA CFD benchmark accuracy and timing comparison",
+  "case_root": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101",
+  "reference": "cpu_mpi2",
+  "acceptance_file": "benchmark_acceptance.json",
+  "preregistered_acceptance_sha256": "e0c6a2e962bac4491a5fce9f3ab93782d8bf9068a851606191a20f77cb7eed33",
+  "registered_before_runs": true,
+  "mean_window_s": [
+    0.61,
+    0.62
+  ],
+  "final_field_time_s": 0.62,
+  "simulated_window_s": [
+    0.6,
+    0.62
+  ],
+  "mesh": {
+    "cells": 922576,
+    "shape": [
+      92,
+      92,
+      109
+    ],
+    "ordering_check": "All points and one actual owned face per cell match x-fast boxes",
+    "points_sha256": "64a97d8b885948393944ef8a2dd2d1327edd6e7fd2544a13d60828ce165205f8",
+    "volume_sum_m3": 0.4976639999999998,
+    "box_volume_m3": 0.49766399999999994,
+    "volume_method": "Exact axis-aligned hexahedron volumes from saved mesh point coordinates; every cell ordering verified against an actual owned face."
+  },
+  "rows": [
+    {
+      "variant": "cpu_serial",
+      "mpi_ranks": 1,
+      "reference": false,
+      "full_wall_s": 237.57867109599465,
+      "solver_wall_s": 237.32259443300427,
+      "startup_s": 9.675378859988996,
+      "steady_wall_s": 227.46394834200328,
+      "steady_physical_s": 0.01988095000000001,
+      "steady_steps": 85,
+      "steady_throughput": 8.740264180285845e-05,
+      "decomposition_s": 0,
+      "reconstruction_s": 0,
+      "mean_lift_N": 1.292587880779686,
+      "mean_air_work_W": 5.1313550768161775,
+      "mean_inferred_shaft_W": 10.262710152277961,
+      "mean_inferred_input_W": 19.346859922138783,
+      "max_pressure_iterations": 36,
+      "mean_pressure_iterations": 9.755813953488373,
+      "max_iteration_hits": 0,
+      "fatal_errors": 0,
+      "peak_continuity_local_all": 4.8275131e-06,
+      "peak_continuity_global_all": 2.6600353e-07,
+      "peak_continuity_cumulative": 6.78658359e-11,
+      "peak_continuity_local_final": 1.81949242e-11,
+      "peak_continuity_global_final": 5.95798598e-12,
+      "sampled_gpu_util_mean_percent": 0.0,
+      "sampled_gpu_util_full_runner_mean_percent": 0.0,
+      "sampled_gpu_util_max_percent": 0.0,
+      "mean_lift_difference_percent": -3.395156534802268e-05,
+      "mean_input_difference_percent": -6.0356909070691245e-05,
+      "final_U_relative_L2_percent": 0.0023144129053087395,
+      "final_p_relative_L2_percent": 0.02337171117861972,
+      "full_throughput_ratio_vs_best_CPU": 0.5784801949476115,
+      "full_wall_change_percent": 72.86676514319772,
+      "steady_throughput_ratio_vs_best_CPU": 0.504938870384424,
+      "force_power_field_gates_pass": true,
+      "continuity_review_flag": false,
+      "continuity_flagged_metrics": "",
+      "all_accuracy_gates_pass": true
+    },
+    {
+      "variant": "cpu_mpi2",
+      "mpi_ranks": 2,
+      "reference": true,
+      "full_wall_s": 137.43455597100547,
+      "solver_wall_s": 121.41809851399739,
+      "startup_s": 6.367798406005022,
+      "steady_wall_s": 114.8553891289921,
+      "steady_physical_s": 0.01988095000000001,
+      "steady_steps": 85,
+      "steady_throughput": 0.00017309549121523638,
+      "decomposition_s": 7.20784080500016,
+      "reconstruction_s": 8.552524264989188,
+      "mean_lift_N": 1.292588319633654,
+      "mean_air_work_W": 5.13135840458788,
+      "mean_inferred_shaft_W": 10.26271680992699,
+      "mean_inferred_input_W": 19.346871599312482,
+      "max_pressure_iterations": 40,
+      "mean_pressure_iterations": 10.11046511627907,
+      "max_iteration_hits": 0,
+      "fatal_errors": 0,
+      "peak_continuity_local_all": 5.17062094e-06,
+      "peak_continuity_global_all": 1.96332879e-07,
+      "peak_continuity_cumulative": 5.91409696e-11,
+      "peak_continuity_local_final": 2.61524116e-11,
+      "peak_continuity_global_final": 1.44983562e-11,
+      "sampled_gpu_util_mean_percent": 0.0,
+      "sampled_gpu_util_full_runner_mean_percent": 0.0,
+      "sampled_gpu_util_max_percent": 0.0,
+      "mean_lift_difference_percent": 0.0,
+      "mean_input_difference_percent": 0.0,
+      "final_U_relative_L2_percent": 0.0,
+      "final_p_relative_L2_percent": 0.0,
+      "full_throughput_ratio_vs_best_CPU": 1.0,
+      "full_wall_change_percent": 0.0,
+      "steady_throughput_ratio_vs_best_CPU": 1.0,
+      "force_power_field_gates_pass": true,
+      "continuity_review_flag": false,
+      "continuity_flagged_metrics": "",
+      "all_accuracy_gates_pass": true
+    },
+    {
+      "variant": "cuda_mpi2",
+      "mpi_ranks": 2,
+      "reference": false,
+      "full_wall_s": 250.12985353000113,
+      "solver_wall_s": 234.08550994600228,
+      "startup_s": 15.4789650849998,
+      "steady_wall_s": 218.25515733400243,
+      "steady_physical_s": 0.01988095000000001,
+      "steady_steps": 85,
+      "steady_throughput": 9.109040190777985e-05,
+      "decomposition_s": 6.291246863998822,
+      "reconstruction_s": 8.966284235997591,
+      "mean_lift_N": 1.292579035150805,
+      "mean_air_work_W": 5.1313016575668104,
+      "mean_inferred_shaft_W": 10.262603304706166,
+      "mean_inferred_input_W": 19.34667248284661,
+      "max_pressure_iterations": 36,
+      "mean_pressure_iterations": 16.151162790697676,
+      "max_iteration_hits": 0,
+      "fatal_errors": 0,
+      "peak_continuity_local_all": 6.71144663e-06,
+      "peak_continuity_global_all": 8.4876231e-08,
+      "peak_continuity_cumulative": 2.04359702e-12,
+      "peak_continuity_local_final": 2.26820124e-11,
+      "peak_continuity_global_final": 1.58247361e-13,
+      "sampled_gpu_util_mean_percent": 41.8494623655914,
+      "sampled_gpu_util_full_runner_mean_percent": 39.51269035532995,
+      "sampled_gpu_util_max_percent": 81.0,
+      "mean_lift_difference_percent": -0.0007182861478716163,
+      "mean_input_difference_percent": -0.0010291920574889701,
+      "final_U_relative_L2_percent": 0.013592852960056136,
+      "final_p_relative_L2_percent": 0.1060365819272446,
+      "full_throughput_ratio_vs_best_CPU": 0.5494528303256743,
+      "full_wall_change_percent": 81.99924448605994,
+      "steady_throughput_ratio_vs_best_CPU": 0.5262436431374927,
+      "force_power_field_gates_pass": true,
+      "continuity_review_flag": true,
+      "continuity_flagged_metrics": "local_all",
+      "all_accuracy_gates_pass": false
+    }
+  ],
+  "details": {
+    "cpu_serial": {
+      "timing": {
+        "kind": "Actual isolated CFD CPU/CUDA timing benchmark",
+        "variant": "cpu_serial",
+        "case": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cpu_serial",
+        "mpi_ranks": 1,
+        "started_unix_s": 1793568139.6237833,
+        "completed": true,
+        "source_initial_hashes": {
+          "U": {
+            "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+            "size_bytes": 38621951,
+            "mtime_ns": 1793469502532445391
+          },
+          "p": {
+            "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+            "size_bytes": 13004937,
+            "mtime_ns": 1793469500504445160
+          }
+        },
+        "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+        "no_production_case_changes": true,
+        "accuracy_gate_performed": false,
+        "speedup_calculated": false,
+        "adoption_qualified": false,
+        "actual_ginkgo_executor_records": [],
+        "end_marker": true,
+        "initial_inputs_preserved": true,
+        "physical_time_final": 0.62,
+        "nvidia_smi_is_only_corroboration": true,
+        "step_observer_finished": true,
+        "phases": {
+          "solver_elapsed_s": 237.32259443300427,
+          "startup_through_first_completed_step_s": 9.675378859988996,
+          "steady_wall_s": 227.46394834200328,
+          "steady_physical_s": 0.01988095000000001,
+          "steady_completed_steps": 85,
+          "steady_simulated_s_per_wall_s": 8.740264180285845e-05,
+          "step_observation_poll_interval_s": 0.02,
+          "first_native_step": {
+            "physical_time_s": 0.60011905,
+            "observed_monotonic_s": 108500.971764661,
+            "reported_cpu_s": 6.416241,
+            "reported_clock_s": 10.0
+          },
+          "last_native_step": {
+            "physical_time_s": 0.62,
+            "observed_monotonic_s": 108728.435713003,
+            "reported_cpu_s": 233.337834,
+            "reported_clock_s": 237.0
+          }
+        },
+        "total_runner_elapsed_s": 237.57867109599465,
+        "finished_unix_s": 1793568377.0822687,
+        "sampler_finished": true,
+        "scope": "Includes input verification, decomposition if needed, first CUDA setup/transfers inside solver, reconstruction if needed, and sampler cleanup. Solver phase is also reported separately. No speedup denominator is supplied here.",
+        "comparison_required": "Compare the better fresh cpu_serial/cpu_mpi2 elapsed time under the SAME host load; require pressure/continuity/field/lift/power accuracy gates before adoption."
+      },
+      "means": {
+        "lift_N": 1.292587880779686,
+        "air_work_W": 5.1313550768161775,
+        "inferred_shaft_W": 10.262710152277961,
+        "inferred_input_W": 19.346859922138783,
+        "sum_rotor_thrust_N": 1.292587880779686
+      },
+      "log": {
+        "end_marker": true,
+        "fatal_errors": 0,
+        "linear_solve_count": 430,
+        "pressure_solve_count": 172,
+        "max_pressure_iterations": 36,
+        "mean_pressure_iterations": 9.755813953488373,
+        "pressure_iteration_sum": 1678,
+        "max_all_linear_iterations": 36,
+        "max_iteration_hits": 0,
+        "max_iteration_limit": 1000,
+        "max_iteration_limit_basis": "Native Foundation14 default and explicit GPU maxIter1000; all U/p limits retained.",
+        "continuity_count": 172,
+        "final_corrector_continuity_count": 86,
+        "continuity_peaks": {
+          "local_all": 4.8275131e-06,
+          "global_all": 2.6600353e-07,
+          "cumulative": 6.78658359e-11,
+          "local_final": 1.81949242e-11,
+          "global_final": 5.95798598e-12
+        },
+        "last_final_corrector_continuity": {
+          "local": 8.82020837e-12,
+          "global_value": -4.25893933e-12,
+          "cumulative": 7.97073558e-12
+        }
+      },
+      "runtime": {
+        "samples": 165,
+        "active_solver_gpu_samples": 165,
+        "full_runner_gpu_samples": 165,
+        "full_runner_sampled_gpu_util_mean_percent": 0.0,
+        "sampled_gpu_util_mean_percent": 0.0,
+        "sampled_gpu_util_max_percent": 0.0,
+        "sampled_gpu_nonzero_fraction": 0.0,
+        "other_foam_pids": [
+          124577,
+          124579,
+          128230,
+          128246,
+          128268,
+          128280,
+          131282,
+          131285,
+          136079,
+          136091,
+          167176,
+          167179,
+          167182,
+          167196,
+          167298,
+          167376
+        ],
+        "other_foam_all_stopped": true,
+        "other_foam_cpu_ticks_unchanged": true,
+        "own_foam_pids": [
+          175543
+        ],
+        "loaded_gpu_libraries": [],
+        "limitations": "nvidia-smi WSL memory totals/process attribution/utilization can be incomplete; samples corroborate actual Ginkgo executor/device logs and device-buffer/kernel gate, never replace them.",
+        "trace": [
+          {
+            "unix_s": 1793568139.633946,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568140.9924576,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568142.3587954,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568143.7415388,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568145.0957732,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568147.0422523,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.7
+          },
+          {
+            "unix_s": 1793568148.4972222,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568149.8969522,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568151.278693,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568153.0936768,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.57
+          },
+          {
+            "unix_s": 1793568154.5258775,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.58
+          },
+          {
+            "unix_s": 1793568155.88977,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.58
+          },
+          {
+            "unix_s": 1793568157.243191,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568158.6188517,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568160.0188668,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568161.3919332,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568162.775941,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568164.198219,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568165.5862715,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568166.9880862,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568168.2903657,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568169.5903761,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568170.8767006,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568172.2804,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568173.6975102,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568175.1058555,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568176.490347,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568177.8658006,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568179.2690864,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568180.6540604,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568182.0226681,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568183.4504592,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568184.8551493,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568186.2643163,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568188.062769,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568189.4980357,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568190.8916097,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568192.3077514,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568193.7069917,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568195.098935,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568196.5134168,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568197.8857405,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568199.3030355,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568200.6752725,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568202.0839984,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568203.475027,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568204.895432,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568206.258948,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568207.6379676,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568209.0515418,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568210.4578412,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568211.9040904,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568213.3454971,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568214.8029861,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568216.2311366,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568217.6598146,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568219.0961368,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568220.5036855,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568222.2840295,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568223.7035165,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568225.1574395,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568226.5774672,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568227.9684052,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568229.3494048,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568230.8206441,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568232.2286792,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568233.6552265,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568235.0319605,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568236.4687123,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568237.8579714,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568239.3077857,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568240.7537572,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568242.1761026,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568243.579864,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568244.9950573,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568246.4531415,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568247.8374174,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568249.2666595,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568250.674681,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568252.0867186,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568253.480919,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568254.952064,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568257.4147408,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568258.9196076,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568260.357437,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568261.8164482,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568263.2971992,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568264.6864839,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.63
+          },
+          {
+            "unix_s": 1793568268.431386,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568269.985746,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568271.4051228,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568272.820531,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568274.199817,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6614.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568275.5637484,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568276.9631965,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568278.3471043,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568279.7281573,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568281.1460168,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.63
+          },
+          {
+            "unix_s": 1793568282.5377915,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568283.940589,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568285.3018699,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568286.768404,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.63
+          },
+          {
+            "unix_s": 1793568288.1665177,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568289.5631776,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568291.3510833,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568292.7661033,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568294.1139126,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568295.489001,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568296.8553867,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568298.25931,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568299.6608543,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568301.1435456,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568302.5228314,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568303.8849237,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568305.2501674,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568306.6224287,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568307.9722035,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568309.3690777,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568310.7816343,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568312.1706903,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568313.5733974,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568314.9721928,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568316.3700216,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.63
+          },
+          {
+            "unix_s": 1793568317.8056903,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568319.1755881,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568320.5530615,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568321.9673786,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568323.3487291,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568324.7886677,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568326.5747275,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568327.990655,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568329.3732936,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568330.7445674,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.63
+          },
+          {
+            "unix_s": 1793568332.1165187,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568333.5155115,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568334.893086,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568336.3070822,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568337.7075038,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568339.1312282,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568340.5310917,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568341.9198549,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568343.3451116,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568344.7611685,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568346.161077,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568347.6137788,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568349.0270388,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.63
+          },
+          {
+            "unix_s": 1793568350.4099545,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568351.8593245,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568353.2797608,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568354.6908987,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568356.1045616,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568357.5559766,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568358.9716704,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568360.7613184,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568362.2118502,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568363.641524,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568365.058509,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568366.4460108,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568367.8226914,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568369.289956,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568370.6693528,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568372.0612283,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568373.484616,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568374.902264,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568376.3154671,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          }
+        ]
+      },
+      "actual_final_field_hashes": {
+        "U": "6c38fe5bd9360f81d632d029a634c3e174379a6abff5be84accd4cbea254e8ef",
+        "p": "9e9e1b259339a50688c9af06a2e6895c297a03273cbe418688cf9da3e6653888"
+      },
+      "log_sha256": "306c10e129cb2a0b5c8624cb141001b282e5592dc4b319cd54f72a590798dd8c",
+      "pressure_gauge": {
+        "type": "totalPressure",
+        "rho": "rho",
+        "psi": "none",
+        "gamma": "1",
+        "p0": "uniform 0"
+      },
+      "solver_configuration_sha256": "be7fbf20fcedfaed74b459ac012046232b251d3767586d9d981b729523832eb8",
+      "field_comparison": {
+        "reference": "cpu_mpi2",
+        "U_relative_L2": 2.3144129053087397e-05,
+        "p_relative_L2": 0.0002337171117861972,
+        "U_absolute_volume_L2": 1.8889931104065026e-05,
+        "p_absolute_volume_L2": 7.947978672995847e-05,
+        "U_reference_volume_L2": 0.8161867340410951,
+        "p_reference_volume_L2": 0.34006832500423007,
+        "no_pressure_gauge_offset_fitted": true,
+        "continuity_review_flags": []
+      }
+    },
+    "cpu_mpi2": {
+      "timing": {
+        "kind": "Actual isolated CFD CPU/CUDA timing benchmark",
+        "variant": "cpu_mpi2",
+        "case": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cpu_mpi2",
+        "mpi_ranks": 2,
+        "started_unix_s": 1793568458.6403236,
+        "completed": true,
+        "source_initial_hashes": {
+          "U": {
+            "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+            "size_bytes": 38621951,
+            "mtime_ns": 1793469502532445391
+          },
+          "p": {
+            "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+            "size_bytes": 13004937,
+            "mtime_ns": 1793469500504445160
+          }
+        },
+        "solver_configuration_sha256": "7aa9e91c332c58278ee5815ac3d5a81a09390470e042e65b203bded1b4cc18e5",
+        "no_production_case_changes": true,
+        "accuracy_gate_performed": false,
+        "speedup_calculated": false,
+        "adoption_qualified": false,
+        "actual_ginkgo_executor_records": [],
+        "end_marker": true,
+        "initial_inputs_preserved": true,
+        "physical_time_final": 0.62,
+        "nvidia_smi_is_only_corroboration": true,
+        "step_observer_finished": true,
+        "phases": {
+          "decomposition_s": 7.20784080500016,
+          "solver_elapsed_s": 121.41809851399739,
+          "reconstruction_s": 8.552524264989188,
+          "startup_through_first_completed_step_s": 6.367798406005022,
+          "steady_wall_s": 114.8553891289921,
+          "steady_physical_s": 0.01988095000000001,
+          "steady_completed_steps": 85,
+          "steady_simulated_s_per_wall_s": 0.00017309549121523638,
+          "step_observation_poll_interval_s": 0.02,
+          "first_native_step": {
+            "physical_time_s": 0.60011905,
+            "observed_monotonic_s": 108823.890133185,
+            "reported_cpu_s": 3.714979,
+            "reported_clock_s": 7.0
+          },
+          "last_native_step": {
+            "physical_time_s": 0.62,
+            "observed_monotonic_s": 108938.745522314,
+            "reported_cpu_s": 118.484891,
+            "reported_clock_s": 122.0
+          }
+        },
+        "total_runner_elapsed_s": 137.43455597100547,
+        "finished_unix_s": 1793568595.9451425,
+        "sampler_finished": true,
+        "scope": "Includes input verification, decomposition if needed, first CUDA setup/transfers inside solver, reconstruction if needed, and sampler cleanup. Solver phase is also reported separately. No speedup denominator is supplied here.",
+        "comparison_required": "Compare the better fresh cpu_serial/cpu_mpi2 elapsed time under the SAME host load; require pressure/continuity/field/lift/power accuracy gates before adoption."
+      },
+      "means": {
+        "lift_N": 1.292588319633654,
+        "air_work_W": 5.13135840458788,
+        "inferred_shaft_W": 10.26271680992699,
+        "inferred_input_W": 19.346871599312482,
+        "sum_rotor_thrust_N": 1.292588319633654
+      },
+      "log": {
+        "end_marker": true,
+        "fatal_errors": 0,
+        "linear_solve_count": 430,
+        "pressure_solve_count": 172,
+        "max_pressure_iterations": 40,
+        "mean_pressure_iterations": 10.11046511627907,
+        "pressure_iteration_sum": 1739,
+        "max_all_linear_iterations": 40,
+        "max_iteration_hits": 0,
+        "max_iteration_limit": 1000,
+        "max_iteration_limit_basis": "Native Foundation14 default and explicit GPU maxIter1000; all U/p limits retained.",
+        "continuity_count": 172,
+        "final_corrector_continuity_count": 86,
+        "continuity_peaks": {
+          "local_all": 5.17062094e-06,
+          "global_all": 1.96332879e-07,
+          "cumulative": 5.91409696e-11,
+          "local_final": 2.61524116e-11,
+          "global_final": 1.44983562e-11
+        },
+        "last_final_corrector_continuity": {
+          "local": 5.59706653e-12,
+          "global_value": 1.57611277e-12,
+          "cumulative": 6.12365538e-12
+        }
+      },
+      "runtime": {
+        "samples": 96,
+        "active_solver_gpu_samples": 84,
+        "full_runner_gpu_samples": 96,
+        "full_runner_sampled_gpu_util_mean_percent": 0.0,
+        "sampled_gpu_util_mean_percent": 0.0,
+        "sampled_gpu_util_max_percent": 0.0,
+        "sampled_gpu_nonzero_fraction": 0.0,
+        "other_foam_pids": [
+          124577,
+          124579,
+          128230,
+          128246,
+          128268,
+          128280,
+          131282,
+          131285,
+          136079,
+          136091,
+          167176,
+          167179,
+          167182,
+          167196,
+          167298,
+          167376
+        ],
+        "other_foam_all_stopped": true,
+        "other_foam_cpu_ticks_unchanged": true,
+        "own_foam_pids": [
+          177080,
+          177081
+        ],
+        "loaded_gpu_libraries": [],
+        "limitations": "nvidia-smi WSL memory totals/process attribution/utilization can be incomplete; samples corroborate actual Ginkgo executor/device logs and device-buffer/kernel gate, never replace them.",
+        "trace": [
+          {
+            "unix_s": 1793568467.2140179,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568468.6171026,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568470.0297325,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568471.4822347,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568472.905363,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568474.3833694,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568475.8432016,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568477.2371173,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568478.6509774,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568480.0650437,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568481.4679787,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568482.8878036,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568484.301826,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568485.7164671,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568487.1513846,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568488.5297055,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568489.9102023,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568491.3051944,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568492.827554,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568494.242236,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568495.6582563,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568497.077124,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568498.525457,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568500.2957249,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568501.7101033,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568503.143679,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568504.560679,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568505.9946167,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568507.4879603,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568508.8898594,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568510.4770906,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568511.8802538,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568513.304626,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568514.7572021,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568516.1746304,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568517.649206,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568519.1422656,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568520.603239,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568522.0227914,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568523.4578097,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568524.873123,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568526.304701,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568527.7904887,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568529.224531,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568530.62708,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568532.0509324,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568533.495674,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568535.220296,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568536.6481054,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.58
+          },
+          {
+            "unix_s": 1793568538.0982609,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.58
+          },
+          {
+            "unix_s": 1793568539.5127718,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568540.9462156,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568542.3804007,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568543.8036904,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568545.2327268,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568546.664922,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568548.109608,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568549.5400896,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568551.0175414,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568552.4708,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568553.9285865,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568555.3633006,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568556.7463276,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568558.158661,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568559.5522532,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568560.9973438,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568562.4034073,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568563.8621056,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568565.333385,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568566.7673917,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568568.2173352,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568569.9761696,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568571.389558,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568572.8112414,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568574.2213702,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568575.656111,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568577.063143,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568578.47867,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568579.9414923,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568581.3807285,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568582.8243375,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.62
+          },
+          {
+            "unix_s": 1793568584.2652597,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.61
+          },
+          {
+            "unix_s": 1793568585.6826026,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568587.1128259,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          }
+        ]
+      },
+      "actual_final_field_hashes": {
+        "U": "c71d47f8c1d3bb1f23851aefa1e3ba8eb78044521cab24d7cfda9aef1dcab310",
+        "p": "a3c3400383f24204ec5bebacd492b25c8db8018ff8f92241190b53b1dd5236bb"
+      },
+      "log_sha256": "417b7697b4d8ed04a23f296adbdc1aaf9f8eec48b42a1cd8d7ffd1b8b928d227",
+      "pressure_gauge": {
+        "type": "totalPressure",
+        "rho": "rho",
+        "psi": "none",
+        "gamma": "1",
+        "p0": "uniform 0"
+      },
+      "solver_configuration_sha256": "7aa9e91c332c58278ee5815ac3d5a81a09390470e042e65b203bded1b4cc18e5",
+      "field_comparison": {
+        "reference": "cpu_mpi2",
+        "U_relative_L2": 0.0,
+        "p_relative_L2": 0.0,
+        "U_absolute_volume_L2": 0.0,
+        "p_absolute_volume_L2": 0.0,
+        "U_reference_volume_L2": 0.8161867340410951,
+        "p_reference_volume_L2": 0.34006832500423007,
+        "no_pressure_gauge_offset_fitted": true,
+        "continuity_review_flags": []
+      }
+    },
+    "cuda_mpi2": {
+      "timing": {
+        "kind": "Actual isolated CFD CPU/CUDA timing benchmark",
+        "variant": "cuda_mpi2",
+        "case": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/benchmarks_20261101/cuda_mpi2",
+        "mpi_ranks": 2,
+        "started_unix_s": 1793568652.2542012,
+        "completed": true,
+        "source_initial_hashes": {
+          "U": {
+            "sha256": "40c9eb8310e2398fe348ca9d7523ca8230b2c2698707d5e8ef3a54a49f47d046",
+            "size_bytes": 38621951,
+            "mtime_ns": 1793469502532445391
+          },
+          "p": {
+            "sha256": "0f802d62f6aac1e58833459c47070bbbe9f6646a0c061645ff41e0374a22e3de",
+            "size_bytes": 13004937,
+            "mtime_ns": 1793469500504445160
+          }
+        },
+        "solver_configuration_sha256": "e382c1d94680437f645b0b0bd975d7443890e496a0969f9fde73037e67b927c5",
+        "no_production_case_changes": true,
+        "accuracy_gate_performed": false,
+        "speedup_calculated": false,
+        "adoption_qualified": false,
+        "actual_ginkgo_executor_records": [
+          "[OGL LOG]1][ExecutorHandler.hpp:170] OGL_RUNTIME_EXECUTOR rank=1 owner=0 description=ReferenceExecutor",
+          "[OGL LOG]0][ExecutorHandler.hpp:178] OGL_RUNTIME_EXECUTOR rank=0 owner=1 device_id=0 description=CudaExecutor on device 0 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)) with host ReferenceExecutor"
+        ],
+        "end_marker": true,
+        "initial_inputs_preserved": true,
+        "physical_time_final": 0.62,
+        "nvidia_smi_is_only_corroboration": true,
+        "step_observer_finished": true,
+        "phases": {
+          "decomposition_s": 6.291246863998822,
+          "solver_elapsed_s": 234.08550994600228,
+          "reconstruction_s": 8.966284235997591,
+          "startup_through_first_completed_step_s": 15.4789650849998,
+          "steady_wall_s": 218.25515733400243,
+          "steady_physical_s": 0.01988095000000001,
+          "steady_completed_steps": 85,
+          "steady_simulated_s_per_wall_s": 9.109040190777985e-05,
+          "step_observation_poll_interval_s": 0.02,
+          "first_native_step": {
+            "physical_time_s": 0.60011905,
+            "observed_monotonic_s": 109025.69832143,
+            "reported_cpu_s": 11.935781,
+            "reported_clock_s": 16.0
+          },
+          "last_native_step": {
+            "physical_time_s": 0.62,
+            "observed_monotonic_s": 109243.953478764,
+            "reported_cpu_s": 214.880291,
+            "reported_clock_s": 234.0
+          }
+        },
+        "total_runner_elapsed_s": 250.12985353000113,
+        "finished_unix_s": 1793568901.9927425,
+        "sampler_finished": true,
+        "scope": "Includes input verification, decomposition if needed, first CUDA setup/transfers inside solver, reconstruction if needed, and sampler cleanup. Solver phase is also reported separately. No speedup denominator is supplied here.",
+        "comparison_required": "Compare the better fresh cpu_serial/cpu_mpi2 elapsed time under the SAME host load; require pressure/continuity/field/lift/power accuracy gates before adoption."
+      },
+      "means": {
+        "lift_N": 1.292579035150805,
+        "air_work_W": 5.1313016575668104,
+        "inferred_shaft_W": 10.262603304706166,
+        "inferred_input_W": 19.34667248284661,
+        "sum_rotor_thrust_N": 1.292579035150805
+      },
+      "log": {
+        "end_marker": true,
+        "fatal_errors": 0,
+        "linear_solve_count": 430,
+        "pressure_solve_count": 172,
+        "max_pressure_iterations": 36,
+        "mean_pressure_iterations": 16.151162790697676,
+        "pressure_iteration_sum": 2778,
+        "max_all_linear_iterations": 36,
+        "max_iteration_hits": 0,
+        "max_iteration_limit": 1000,
+        "max_iteration_limit_basis": "Native Foundation14 default and explicit GPU maxIter1000; all U/p limits retained.",
+        "continuity_count": 172,
+        "final_corrector_continuity_count": 86,
+        "continuity_peaks": {
+          "local_all": 6.71144663e-06,
+          "global_all": 8.4876231e-08,
+          "cumulative": 2.04359702e-12,
+          "local_final": 2.26820124e-11,
+          "global_final": 1.58247361e-13
+        },
+        "last_final_corrector_continuity": {
+          "local": 8.93673059e-12,
+          "global_value": -9.88189082e-14,
+          "cumulative": 2.91300735e-13
+        }
+      },
+      "runtime": {
+        "samples": 197,
+        "active_solver_gpu_samples": 186,
+        "full_runner_gpu_samples": 197,
+        "full_runner_sampled_gpu_util_mean_percent": 39.51269035532995,
+        "sampled_gpu_util_mean_percent": 41.8494623655914,
+        "sampled_gpu_util_max_percent": 81.0,
+        "sampled_gpu_nonzero_fraction": 0.8010752688172043,
+        "other_foam_pids": [
+          124577,
+          124579,
+          128230,
+          128246,
+          128268,
+          128280,
+          131282,
+          131285,
+          136079,
+          136091,
+          167176,
+          167179,
+          167182,
+          167196,
+          167298,
+          167376
+        ],
+        "other_foam_all_stopped": true,
+        "other_foam_cpu_ticks_unchanged": true,
+        "own_foam_pids": [
+          178180,
+          178181
+        ],
+        "loaded_gpu_libraries": [
+          "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/Ginkgo/lib/libginkgo_cuda.so.2.0.0",
+          "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/build-cuda/libOGL.so",
+          "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcudart.so.13.0.96",
+          "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/lib/libcusparse.so.12.6.3.3",
+          "/usr/lib/wsl/drivers/nv_asus_woa.inf_arm64_4678bbc474ba512a/libcuda.so.1.1",
+          "/usr/lib/wsl/lib/libcuda.so.1"
+        ],
+        "limitations": "nvidia-smi WSL memory totals/process attribution/utilization can be incomplete; samples corroborate actual Ginkgo executor/device logs and device-buffer/kernel gate, never replace them.",
+        "trace": [
+          {
+            "unix_s": 1793568659.161427,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568660.5295162,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568661.9282827,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.6
+          },
+          {
+            "unix_s": 1793568663.2883222,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6597.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 0.59
+          },
+          {
+            "unix_s": 1793568664.6581602,
+            "gpu_util_percent": 6.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6919.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 4.15
+          },
+          {
+            "unix_s": 1793568665.8635824,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7137.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 5.05
+          },
+          {
+            "unix_s": 1793568667.070872,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7137.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 5.25
+          },
+          {
+            "unix_s": 1793568668.258638,
+            "gpu_util_percent": 6.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7217.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 5.15
+          },
+          {
+            "unix_s": 1793568669.449675,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7217.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 5.07
+          },
+          {
+            "unix_s": 1793568670.6372478,
+            "gpu_util_percent": 73.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7293.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.91
+          },
+          {
+            "unix_s": 1793568671.901161,
+            "gpu_util_percent": 10.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7538.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.21
+          },
+          {
+            "unix_s": 1793568673.55771,
+            "gpu_util_percent": 47.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7425.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 4.41
+          },
+          {
+            "unix_s": 1793568674.8144321,
+            "gpu_util_percent": 11.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7433.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.83
+          },
+          {
+            "unix_s": 1793568676.103261,
+            "gpu_util_percent": 60.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7411.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.73
+          },
+          {
+            "unix_s": 1793568677.469748,
+            "gpu_util_percent": 26.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7121.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 4.99
+          },
+          {
+            "unix_s": 1793568678.6939912,
+            "gpu_util_percent": 41.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7327.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.89
+          },
+          {
+            "unix_s": 1793568680.214609,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7102.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 4.45
+          },
+          {
+            "unix_s": 1793568681.4526126,
+            "gpu_util_percent": 32.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7086.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.56
+          },
+          {
+            "unix_s": 1793568682.671799,
+            "gpu_util_percent": 65.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 4.52
+          },
+          {
+            "unix_s": 1793568683.9273953,
+            "gpu_util_percent": 71.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7374.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.09
+          },
+          {
+            "unix_s": 1793568685.2097936,
+            "gpu_util_percent": 65.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 4.06
+          },
+          {
+            "unix_s": 1793568686.4865074,
+            "gpu_util_percent": 70.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7386.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.05
+          },
+          {
+            "unix_s": 1793568687.7434163,
+            "gpu_util_percent": 61.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.88
+          },
+          {
+            "unix_s": 1793568688.9619849,
+            "gpu_util_percent": 80.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7368.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.02
+          },
+          {
+            "unix_s": 1793568690.314963,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.66
+          },
+          {
+            "unix_s": 1793568691.5442774,
+            "gpu_util_percent": 71.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7370.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.17
+          },
+          {
+            "unix_s": 1793568692.8908644,
+            "gpu_util_percent": 55.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.63
+          },
+          {
+            "unix_s": 1793568694.0989082,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.23
+          },
+          {
+            "unix_s": 1793568695.2989209,
+            "gpu_util_percent": 74.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7314.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.77
+          },
+          {
+            "unix_s": 1793568696.5298698,
+            "gpu_util_percent": 3.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.61
+          },
+          {
+            "unix_s": 1793568697.7304785,
+            "gpu_util_percent": 56.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7362.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.1
+          },
+          {
+            "unix_s": 1793568699.0304272,
+            "gpu_util_percent": 32.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7080.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.54
+          },
+          {
+            "unix_s": 1793568700.2588956,
+            "gpu_util_percent": 58.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.0
+          },
+          {
+            "unix_s": 1793568701.4507008,
+            "gpu_util_percent": 63.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.35
+          },
+          {
+            "unix_s": 1793568702.637768,
+            "gpu_util_percent": 64.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7154.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.92
+          },
+          {
+            "unix_s": 1793568703.8954422,
+            "gpu_util_percent": 55.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.33
+          },
+          {
+            "unix_s": 1793568705.1110983,
+            "gpu_util_percent": 76.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7330.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.0
+          },
+          {
+            "unix_s": 1793568706.3925827,
+            "gpu_util_percent": 64.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.7
+          },
+          {
+            "unix_s": 1793568707.587023,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7087.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.25
+          },
+          {
+            "unix_s": 1793568708.93223,
+            "gpu_util_percent": 67.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7382.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.58
+          },
+          {
+            "unix_s": 1793568710.1621325,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.38
+          },
+          {
+            "unix_s": 1793568711.4231393,
+            "gpu_util_percent": 73.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7376.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.09
+          },
+          {
+            "unix_s": 1793568712.6606185,
+            "gpu_util_percent": 52.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7112.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.79
+          },
+          {
+            "unix_s": 1793568713.873426,
+            "gpu_util_percent": 6.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7364.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.52
+          },
+          {
+            "unix_s": 1793568715.2101092,
+            "gpu_util_percent": 47.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7134.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.78
+          },
+          {
+            "unix_s": 1793568716.4294453,
+            "gpu_util_percent": 20.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7362.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.72
+          },
+          {
+            "unix_s": 1793568717.7305984,
+            "gpu_util_percent": 67.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7400.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.93
+          },
+          {
+            "unix_s": 1793568719.0030205,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.7
+          },
+          {
+            "unix_s": 1793568720.2977843,
+            "gpu_util_percent": 69.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7378.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.88
+          },
+          {
+            "unix_s": 1793568721.5967636,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.46
+          },
+          {
+            "unix_s": 1793568722.8027484,
+            "gpu_util_percent": 77.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.88
+          },
+          {
+            "unix_s": 1793568724.0759814,
+            "gpu_util_percent": 63.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7118.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.27
+          },
+          {
+            "unix_s": 1793568725.2952294,
+            "gpu_util_percent": 60.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7114.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.83
+          },
+          {
+            "unix_s": 1793568726.4909682,
+            "gpu_util_percent": 63.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.98
+          },
+          {
+            "unix_s": 1793568727.7578104,
+            "gpu_util_percent": 81.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7386.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.98
+          },
+          {
+            "unix_s": 1793568728.9993613,
+            "gpu_util_percent": 51.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.74
+          },
+          {
+            "unix_s": 1793568730.2599812,
+            "gpu_util_percent": 75.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7376.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.07
+          },
+          {
+            "unix_s": 1793568731.5435703,
+            "gpu_util_percent": 50.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.82
+          },
+          {
+            "unix_s": 1793568732.8406663,
+            "gpu_util_percent": 80.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7292.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.52
+          },
+          {
+            "unix_s": 1793568734.129034,
+            "gpu_util_percent": 58.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7112.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.62
+          },
+          {
+            "unix_s": 1793568735.357663,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7364.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.28
+          },
+          {
+            "unix_s": 1793568736.6663115,
+            "gpu_util_percent": 75.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7380.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.73
+          },
+          {
+            "unix_s": 1793568737.9137383,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.39
+          },
+          {
+            "unix_s": 1793568739.1185863,
+            "gpu_util_percent": 44.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7282.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.9
+          },
+          {
+            "unix_s": 1793568740.4080458,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.5
+          },
+          {
+            "unix_s": 1793568741.6406615,
+            "gpu_util_percent": 47.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7368.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.9
+          },
+          {
+            "unix_s": 1793568743.0736008,
+            "gpu_util_percent": 44.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.96
+          },
+          {
+            "unix_s": 1793568744.4375358,
+            "gpu_util_percent": 75.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7356.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.59
+          },
+          {
+            "unix_s": 1793568745.653517,
+            "gpu_util_percent": 48.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.94
+          },
+          {
+            "unix_s": 1793568746.8946278,
+            "gpu_util_percent": 28.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7372.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.46
+          },
+          {
+            "unix_s": 1793568748.2203496,
+            "gpu_util_percent": 56.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.84
+          },
+          {
+            "unix_s": 1793568749.4231164,
+            "gpu_util_percent": 6.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7160.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.65
+          },
+          {
+            "unix_s": 1793568750.727233,
+            "gpu_util_percent": 67.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7380.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.0
+          },
+          {
+            "unix_s": 1793568751.9784167,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.75
+          },
+          {
+            "unix_s": 1793568753.2051175,
+            "gpu_util_percent": 79.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7378.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.02
+          },
+          {
+            "unix_s": 1793568754.4664667,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.45
+          },
+          {
+            "unix_s": 1793568755.6527123,
+            "gpu_util_percent": 46.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.09
+          },
+          {
+            "unix_s": 1793568756.9580421,
+            "gpu_util_percent": 62.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7064.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.62
+          },
+          {
+            "unix_s": 1793568758.168013,
+            "gpu_util_percent": 68.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.92
+          },
+          {
+            "unix_s": 1793568759.3711138,
+            "gpu_util_percent": 49.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7102.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.2
+          },
+          {
+            "unix_s": 1793568760.6505334,
+            "gpu_util_percent": 70.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7326.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.07
+          },
+          {
+            "unix_s": 1793568761.8601556,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.98
+          },
+          {
+            "unix_s": 1793568763.0427516,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7358.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.57
+          },
+          {
+            "unix_s": 1793568764.374666,
+            "gpu_util_percent": 65.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7384.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.91
+          },
+          {
+            "unix_s": 1793568765.6443396,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.56
+          },
+          {
+            "unix_s": 1793568766.846444,
+            "gpu_util_percent": 81.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7348.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.01
+          },
+          {
+            "unix_s": 1793568768.193798,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.56
+          },
+          {
+            "unix_s": 1793568769.4019222,
+            "gpu_util_percent": 71.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7372.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.91
+          },
+          {
+            "unix_s": 1793568770.6949692,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.52
+          },
+          {
+            "unix_s": 1793568771.8892279,
+            "gpu_util_percent": 38.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7360.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.23
+          },
+          {
+            "unix_s": 1793568773.1884544,
+            "gpu_util_percent": 56.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.57
+          },
+          {
+            "unix_s": 1793568774.4042487,
+            "gpu_util_percent": 49.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7092.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.03
+          },
+          {
+            "unix_s": 1793568775.618069,
+            "gpu_util_percent": 62.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7112.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.45
+          },
+          {
+            "unix_s": 1793568776.8641436,
+            "gpu_util_percent": 69.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7400.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.89
+          },
+          {
+            "unix_s": 1793568778.282352,
+            "gpu_util_percent": 57.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7344.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.09
+          },
+          {
+            "unix_s": 1793568779.6896927,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.57
+          },
+          {
+            "unix_s": 1793568781.0076873,
+            "gpu_util_percent": 75.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7390.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.88
+          },
+          {
+            "unix_s": 1793568782.2373233,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.64
+          },
+          {
+            "unix_s": 1793568783.4313831,
+            "gpu_util_percent": 44.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7370.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.99
+          },
+          {
+            "unix_s": 1793568784.781616,
+            "gpu_util_percent": 35.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.64
+          },
+          {
+            "unix_s": 1793568785.993751,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7078.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.21
+          },
+          {
+            "unix_s": 1793568787.2943177,
+            "gpu_util_percent": 64.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.62
+          },
+          {
+            "unix_s": 1793568788.494247,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7356.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.14
+          },
+          {
+            "unix_s": 1793568789.841855,
+            "gpu_util_percent": 60.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7382.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.62
+          },
+          {
+            "unix_s": 1793568791.0634198,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.58
+          },
+          {
+            "unix_s": 1793568792.2908876,
+            "gpu_util_percent": 62.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7314.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.87
+          },
+          {
+            "unix_s": 1793568793.5806181,
+            "gpu_util_percent": 37.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.55
+          },
+          {
+            "unix_s": 1793568794.774032,
+            "gpu_util_percent": 48.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.07
+          },
+          {
+            "unix_s": 1793568796.019238,
+            "gpu_util_percent": 58.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.57
+          },
+          {
+            "unix_s": 1793568797.2510116,
+            "gpu_util_percent": 66.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7100.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.89
+          },
+          {
+            "unix_s": 1793568798.4890544,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.28
+          },
+          {
+            "unix_s": 1793568799.7002752,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7284.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.4
+          },
+          {
+            "unix_s": 1793568801.0096796,
+            "gpu_util_percent": 51.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.82
+          },
+          {
+            "unix_s": 1793568802.2505643,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7362.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.55
+          },
+          {
+            "unix_s": 1793568803.5442872,
+            "gpu_util_percent": 70.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7380.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.89
+          },
+          {
+            "unix_s": 1793568804.784748,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.71
+          },
+          {
+            "unix_s": 1793568805.9734867,
+            "gpu_util_percent": 72.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7372.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.84
+          },
+          {
+            "unix_s": 1793568807.2761624,
+            "gpu_util_percent": 26.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.58
+          },
+          {
+            "unix_s": 1793568808.4807668,
+            "gpu_util_percent": 56.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.09
+          },
+          {
+            "unix_s": 1793568809.7066321,
+            "gpu_util_percent": 60.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.57
+          },
+          {
+            "unix_s": 1793568810.9459136,
+            "gpu_util_percent": 68.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7104.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.9
+          },
+          {
+            "unix_s": 1793568812.175079,
+            "gpu_util_percent": 30.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.71
+          },
+          {
+            "unix_s": 1793568813.558094,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7076.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.81
+          },
+          {
+            "unix_s": 1793568814.7888598,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7364.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.19
+          },
+          {
+            "unix_s": 1793568816.1468716,
+            "gpu_util_percent": 45.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7080.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.51
+          },
+          {
+            "unix_s": 1793568817.3608918,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.24
+          },
+          {
+            "unix_s": 1793568818.6047049,
+            "gpu_util_percent": 61.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.61
+          },
+          {
+            "unix_s": 1793568819.8289468,
+            "gpu_util_percent": 66.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7206.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.87
+          },
+          {
+            "unix_s": 1793568821.0538564,
+            "gpu_util_percent": 63.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.5
+          },
+          {
+            "unix_s": 1793568822.302016,
+            "gpu_util_percent": 78.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7388.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.15
+          },
+          {
+            "unix_s": 1793568823.625384,
+            "gpu_util_percent": 59.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7110.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.29
+          },
+          {
+            "unix_s": 1793568824.8983839,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7372.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.51
+          },
+          {
+            "unix_s": 1793568826.1800315,
+            "gpu_util_percent": 67.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7108.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.97
+          },
+          {
+            "unix_s": 1793568827.3953204,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7210.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.55
+          },
+          {
+            "unix_s": 1793568828.7139645,
+            "gpu_util_percent": 67.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7374.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.76
+          },
+          {
+            "unix_s": 1793568829.9836848,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.62
+          },
+          {
+            "unix_s": 1793568831.192783,
+            "gpu_util_percent": 24.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7272.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.47
+          },
+          {
+            "unix_s": 1793568832.883124,
+            "gpu_util_percent": 5.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7378.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 5.04
+          },
+          {
+            "unix_s": 1793568834.036157,
+            "gpu_util_percent": 34.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7090.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 13.1
+          },
+          {
+            "unix_s": 1793568835.1480336,
+            "gpu_util_percent": 34.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7122.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 14.52
+          },
+          {
+            "unix_s": 1793568836.2853239,
+            "gpu_util_percent": 71.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7388.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 11.24
+          },
+          {
+            "unix_s": 1793568837.485491,
+            "gpu_util_percent": 45.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7124.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 11.39
+          },
+          {
+            "unix_s": 1793568838.6915689,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7092.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 14.88
+          },
+          {
+            "unix_s": 1793568839.8830805,
+            "gpu_util_percent": 34.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7092.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 20.31
+          },
+          {
+            "unix_s": 1793568841.0562165,
+            "gpu_util_percent": 71.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7394.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 12.8
+          },
+          {
+            "unix_s": 1793568842.2728345,
+            "gpu_util_percent": 77.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7472.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 11.16
+          },
+          {
+            "unix_s": 1793568843.5684495,
+            "gpu_util_percent": 1.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7271.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 10.97
+          },
+          {
+            "unix_s": 1793568844.7283247,
+            "gpu_util_percent": 43.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7201.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 16.25
+          },
+          {
+            "unix_s": 1793568845.9317825,
+            "gpu_util_percent": 40.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7103.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 11.08
+          },
+          {
+            "unix_s": 1793568847.1928604,
+            "gpu_util_percent": 9.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7074.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 11.88
+          },
+          {
+            "unix_s": 1793568848.4221716,
+            "gpu_util_percent": 71.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7348.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 12.24
+          },
+          {
+            "unix_s": 1793568849.6462889,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7094.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 11.77
+          },
+          {
+            "unix_s": 1793568850.918631,
+            "gpu_util_percent": 1.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7087.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 12.28
+          },
+          {
+            "unix_s": 1793568852.069281,
+            "gpu_util_percent": 31.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7106.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 17.04
+          },
+          {
+            "unix_s": 1793568853.2911332,
+            "gpu_util_percent": 18.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7348.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 10.72
+          },
+          {
+            "unix_s": 1793568854.507186,
+            "gpu_util_percent": 6.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7364.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 10.84
+          },
+          {
+            "unix_s": 1793568855.7298412,
+            "gpu_util_percent": 18.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 16.0
+          },
+          {
+            "unix_s": 1793568856.901345,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7364.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 8.97
+          },
+          {
+            "unix_s": 1793568858.430627,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7384.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 13.82
+          },
+          {
+            "unix_s": 1793568859.6630723,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7072.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 15.91
+          },
+          {
+            "unix_s": 1793568860.8525617,
+            "gpu_util_percent": 35.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7100.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 19.24
+          },
+          {
+            "unix_s": 1793568862.084075,
+            "gpu_util_percent": 51.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7063.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 5.86
+          },
+          {
+            "unix_s": 1793568863.425008,
+            "gpu_util_percent": 63.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7101.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.3
+          },
+          {
+            "unix_s": 1793568864.7299445,
+            "gpu_util_percent": 68.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7095.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.82
+          },
+          {
+            "unix_s": 1793568865.9697673,
+            "gpu_util_percent": 72.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7099.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.96
+          },
+          {
+            "unix_s": 1793568867.2119021,
+            "gpu_util_percent": 60.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7369.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.19
+          },
+          {
+            "unix_s": 1793568868.510131,
+            "gpu_util_percent": 51.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7103.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.92
+          },
+          {
+            "unix_s": 1793568869.727215,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7355.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.95
+          },
+          {
+            "unix_s": 1793568871.0263152,
+            "gpu_util_percent": 65.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7061.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.94
+          },
+          {
+            "unix_s": 1793568872.2671921,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7069.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.43
+          },
+          {
+            "unix_s": 1793568873.4910758,
+            "gpu_util_percent": 77.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7365.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.92
+          },
+          {
+            "unix_s": 1793568874.7650898,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7067.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.6
+          },
+          {
+            "unix_s": 1793568876.0210085,
+            "gpu_util_percent": 57.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7361.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.85
+          },
+          {
+            "unix_s": 1793568877.3286371,
+            "gpu_util_percent": 30.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7067.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.42
+          },
+          {
+            "unix_s": 1793568878.5519774,
+            "gpu_util_percent": 56.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7067.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.07
+          },
+          {
+            "unix_s": 1793568879.7789125,
+            "gpu_util_percent": 64.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7069.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.53
+          },
+          {
+            "unix_s": 1793568881.0723186,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7069.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.53
+          },
+          {
+            "unix_s": 1793568882.4215453,
+            "gpu_util_percent": 64.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7363.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.83
+          },
+          {
+            "unix_s": 1793568883.7454832,
+            "gpu_util_percent": 11.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7071.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.4
+          },
+          {
+            "unix_s": 1793568884.9372194,
+            "gpu_util_percent": 54.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7349.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.22
+          },
+          {
+            "unix_s": 1793568886.2355125,
+            "gpu_util_percent": 30.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7069.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.49
+          },
+          {
+            "unix_s": 1793568887.4416301,
+            "gpu_util_percent": 56.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7101.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.09
+          },
+          {
+            "unix_s": 1793568888.6686342,
+            "gpu_util_percent": 64.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7103.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.21
+          },
+          {
+            "unix_s": 1793568889.9150856,
+            "gpu_util_percent": 74.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7371.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 2.0
+          },
+          {
+            "unix_s": 1793568891.137999,
+            "gpu_util_percent": 53.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 7095.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 3.31
+          },
+          {
+            "unix_s": 1793568892.3784158,
+            "gpu_util_percent": 0.0,
+            "memory_util_percent": 0.0,
+            "reported_used_MiB": 6909.0,
+            "reported_total_MiB": 8192.0,
+            "reported_gpu_power_W": 1.55
+          }
+        ]
+      },
+      "actual_final_field_hashes": {
+        "U": "d5792f19fd7489f9f64a4f71d046c806410d6dabf3f30ab7b97b2384f8c84f0a",
+        "p": "29c9919773c604f3535e4d2b5cc19369b25da908053868b8ca6ab8278ff80cc6"
+      },
+      "log_sha256": "a316439e4c04084607a72497a56660cdabd26c4a7a87a424eb48c2c7243cb02e",
+      "pressure_gauge": {
+        "type": "totalPressure",
+        "rho": "rho",
+        "psi": "none",
+        "gamma": "1",
+        "p0": "uniform 0"
+      },
+      "solver_configuration_sha256": "e382c1d94680437f645b0b0bd975d7443890e496a0969f9fde73037e67b927c5",
+      "field_comparison": {
+        "reference": "cpu_mpi2",
+        "U_relative_L2": 0.00013592852960056135,
+        "p_relative_L2": 0.001060365819272446,
+        "U_absolute_volume_L2": 0.0001109430626376905,
+        "p_absolute_volume_L2": 0.0003605968280517189,
+        "U_reference_volume_L2": 0.8161867340410951,
+        "p_reference_volume_L2": 0.34006832500423007,
+        "no_pressure_gauge_offset_fitted": true,
+        "continuity_review_flags": [
+          "local_all"
+        ]
+      }
+    }
+  },
+  "native_continuity_envelope": {
+    "local_all": 5.17062094e-06,
+    "global_all": 2.6600353e-07,
+    "cumulative": 6.78658359e-11
+  },
+  "native_consistency_passed": true,
+  "matched_stopped_host_foam_evidence": true,
+  "actual_cuda_executor_device_evidence": [
+    "[OGL LOG]1][ExecutorHandler.hpp:170] OGL_RUNTIME_EXECUTOR rank=1 owner=0 description=ReferenceExecutor",
+    "[OGL LOG]0][ExecutorHandler.hpp:178] OGL_RUNTIME_EXECUTOR rank=0 owner=1 device_id=0 description=CudaExecutor on device 0 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)) with host ReferenceExecutor"
+  ],
+  "performance_diagnosis_log_hashes_match": true,
+  "logged_pressure_host_wall_costs": {
+    "gpu_preconditioner_total_s": 93.037402,
+    "gpu_CG_solve_total_s": 69.362435,
+    "gpu_pressure_wrapper_total_s": 170.929829,
+    "preconditioner_fraction_of_wrapper": 0.5443017321453003,
+    "preconditioner_fraction_of_GPU_solver_wall": 0.397450495852825,
+    "logged_matrix_update_s": 5.808785,
+    "logged_copy_back_s": 0.763801,
+    "timer_limitations": "std::chrono host-wall scopes, not CUPTI/CUDA-event kernel profiling. Some CUDA work can synchronize in a later scope. Matrix-update subscopes and persistent call_update are nested. Residual-norm statistics report the last check, not an accumulated norm profile."
+  },
+  "gpu_force_power_field_gates_passed": true,
+  "gpu_continuity_requires_review": true,
+  "gpu_all_accuracy_gates_passed": false,
+  "practical_timing_gate_passed": false,
+  "cuda_default_qualified": false,
+  "cpu_default_retained": true,
+  "interpretation": "The tested OGL/Ginkgo CUDA pressure configuration does not improve runtime against the better fresh native CPU run. This does not establish that CUDA cannot accelerate other methods/configurations/problems.",
+  "limitations": [
+    "One short0.02s run per variant, not a statistically replicated long-run or batch throughput study.",
+    "Lift is actual actuator reaction from computed fields; electrical/shaft input remains inferred through the unchanged assumed loss law.",
+    "WSL nvidia-smi telemetry has limitations; actual Ginkgo executor/device records and CUDA-buffer/reduction gate corroborate execution.",
+    "Any preregistered continuity review flag remains flagged even if final-field and force/power gates pass."
+  ],
+  "solver_launched_by_analysis": false,
+  "case_files_written_by_analysis": false
+}

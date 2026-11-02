@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+fresh_cases/
+new_results/
+*.zip
+*.tar.gz
+!study/gpu_feasibility/OGL_upstream_7c3ced4514fb.tar.gz
+!study/gpu_feasibility/Ginkgo_upstream_13c917436066.tar.gz
+!study/gpu_feasibility/benchmark_reproduction/shared_seed.zip
+.codex-study-export.json

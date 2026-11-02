@@ -1,0 +1,63 @@
+{
+  "captured_utc": "2026-11-02T05:53:00.288753+00:00",
+  "status": "Observed original execution prerequisites; not a WSL filesystem backup or container image.",
+  "machine": "aarch64",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "matplotlib": "3.6.3",
+  "openfoam_environment": {
+    "WM_PROJECT": "OpenFOAM",
+    "WM_PROJECT_VERSION": "14",
+    "WM_OPTIONS": "linuxArm64GccDPInt32Opt",
+    "WM_COMPILER": "Gcc",
+    "WM_MPLIB": "SYSTEMOPENMPI"
+  },
+  "openfoam_help": {
+    "command": [
+      "foamRun",
+      "-help"
+    ],
+    "returncode": 0,
+    "output": "\nUsage: foamRun [OPTIONS]\noptions:\n  -case <dir>       specify alternate case directory, default is the cwd\n  -fileHandler <handler>\n                    override the fileHandler\n  -hostRoots <((host1 dir1) .. (hostN dirN))>\n                    slave root directories (per host) for distributed running\n  -libs '(\"lib1.so\" ... \"libN.so\")'\n                    pre-load libraries\n  -noFunctionObjects\n                    do not execute functionObjects\n  -parallel         run in parallel\n  -roots <(dir1 .. dirN)>\n                    slave root directories for distributed running\n  -solver <name>    Solver name\n  -srcDoc           display source code in browser\n  -doc              display application documentation in browser\n  -help             print the usage\n\nUsing: OpenFOAM-14 (see https://openfoam.org)\nBuild: 14-a4867fc914c1\n\n"
+  },
+  "openfoam_package": {
+    "command": [
+      "dpkg-query",
+      "-W",
+      "-f=${Package} ${Version} ${Architecture}\n",
+      "openfoam14"
+    ],
+    "returncode": 0,
+    "output": "openfoam14 20261008 arm64\n"
+  },
+  "openfoam_source_commit": {
+    "command": [
+      "git",
+      "-C",
+      "/opt/openfoam14",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 128,
+    "output": "fatal: not a git repository (or any of the parent directories): .git\n"
+  },
+  "compiler": {
+    "command": [
+      "g++",
+      "--version"
+    ],
+    "returncode": 0,
+    "output": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  "mpi": {
+    "command": [
+      "mpirun",
+      "--version"
+    ],
+    "returncode": 0,
+    "output": "mpirun (Open MPI) 4.1.6\n\nReport bugs to http://www.open-mpi.org/community/help/\n"
+  },
+  "foundation_source_instructions": "https://openfoam.org/download/14-source/",
+  "foundation_build_instructions": "https://openfoam.org/download/source/"
+}

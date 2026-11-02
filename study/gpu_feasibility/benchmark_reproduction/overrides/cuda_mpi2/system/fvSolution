@@ -1,0 +1,49 @@
+FoamFile { format ascii; class dictionary; object fvSolution; }
+solvers {
+p {
+    solver GKOCG;
+    executor cuda;
+    ranksPerGPU 2;
+    forceHostBuffer true;
+    splitMPIComm true;
+    MPIxRankOffload false;
+    matrixFormat Csr;
+    scaling -1.0;
+    updateSysMatrix true;
+    updateRHS true;
+    updateInitGuess true;
+    adaptMinIter false;
+    minIter 0;
+    evalFrequency 1;
+    tolerance 1e-07;
+    relTol 0.05;
+    maxIter 1000;
+    verbose 1;
+    export false;
+    preconditioner
+    {
+        preconditioner Multigrid;
+        type Schwarz;
+        caching 0;
+        reuseHierarchy true;
+        maxHierarchyReuses 0;
+        skipSorting false;
+        minCoarseRows 64;
+        maxLevels 20;
+        smoother Jacobi;
+        relaxationFactor 0.9;
+        maxIterSmoother 1;
+        cycle v;
+        coarseSolverConfig
+        {
+            solver Jacobi;
+            relTol 0.0;
+            maxIter 20;
+            relaxationFactor 0.9;
+        }
+    }
+}
+pFinal {$p; relTol 0;}
+U {solver smoothSolver; smoother symGaussSeidel; tolerance 1e-7; relTol .05;}
+UFinal {$U; relTol 0;}}
+PIMPLE {nOuterCorrectors 1; nCorrectors 2; nNonOrthogonalCorrectors 0;}

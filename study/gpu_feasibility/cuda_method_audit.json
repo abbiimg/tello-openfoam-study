@@ -1,0 +1,118 @@
+{
+  "kind": "Source-only numerical method audit; no full CFD equivalence or speed test",
+  "source_hashes": {
+    "ogl_stopping_criterion": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/src/StoppingCriterion.cpp",
+      "sha256": "5b782dcecee291587893c3698a45a150f1a92a33cdb42dcc6bfcf91b3f8ff02c"
+    },
+    "ogl_stopping_controls": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/StoppingCriterion.hpp",
+      "sha256": "a023c27bb3d959d8353f9c5046959096bc29519c8aaa5880216fcddb6065573b"
+    },
+    "ogl_multigrid": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/include/OGL/Preconditioner/Multigrid.hpp",
+      "sha256": "d8f6cf364fbccbf4d0c1a30423f9562a802969e3a24740f876abc237981ad7cd"
+    },
+    "ogl_coarse_solver": {
+      "path": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/OGL/src/Preconditioner/CoarseSolver.cpp",
+      "sha256": "e3b526936fefd6abc63d52551d567242291bcfe27d0d2ac502ece49af3e0d3fd"
+    },
+    "foundation14_norm_factor": {
+      "path": "/opt/openfoam14/src/OpenFOAM/matrices/lduMatrix/lduMatrix/lduMatrixSolver.C",
+      "sha256": "95eda050d2718403b71ad92df5ed17440bff88928c8e2996a44b3da4a1824e03"
+    },
+    "foundation14_small": {
+      "path": "/opt/openfoam14/src/OpenFOAM/primitives/Scalar/doubleScalar/doubleScalar.H",
+      "sha256": "b0d8d82dc7e8b960120b57dba07532c83e8a6454c72234072e7b325649810d06"
+    },
+    "foundation14_scalar_alias": {
+      "path": "/opt/openfoam14/src/OpenFOAM/primitives/Scalar/scalar/scalar.H",
+      "sha256": "062b82ba4db489d983e664f91fe4e00db4534e170fe41fce28d2264f9f5dc384"
+    },
+    "foundation14_solver_small": {
+      "path": "/opt/openfoam14/src/OpenFOAM/matrices/LduMatrix/LduMatrix/SolverPerformance.H",
+      "sha256": "88f993e05a199caec68f59692fd683ac6e96cae4e9ca4b71364e6fe7d166235c"
+    }
+  },
+  "source_level_normalization_algebra_matches": true,
+  "notation": "r=b−Ax; xref=global arithmetic mean(x); vector absolute values summed globally",
+  "foundation14_norm_factor": "sum(abs(Ax−A*xref)+abs(b−A*xref))+solverPerformance::small_",
+  "ogl_norm_factor": "sum(abs((b−A*xref)−r)+abs(b−A*xref))+SMALL",
+  "algebra": "(b−A*xref)−r=Ax−A*xref",
+  "foundation14_safeguard": 1e-20,
+  "ogl_safeguard_actual_Foundation14": 2.220446049250313e-16,
+  "safeguards_identical": false,
+  "upstream_safeguard_preserved": true,
+  "stopping_controls": "Explicit minIter0/adaptMinIterfalse/evalFrequency1 avoid adaptive skipping of norm checks; p tolerance1e−7,relTol.05,pFinal relTol0.",
+  "mandatory_full_cfd_checks": [
+    "Actual CUDA library link and real CUDA-buffer MPI gather/scatter must pass first.",
+    "Execution agent alone launches a bounded new CFD benchmark; never edit a production case.",
+    "Compare against the best existing CPU method rerun from identical actual mesh and frozen initial0.6 U,p under the same host load.",
+    "Keep all physical inputs, actuator model, losses, time stepping, U solver, mesh and output windows unchanged.",
+    "Check pressure convergence, continuity, fields, controller/lift and power agreement; record GPU ownership/host staging and process timing.",
+    "Check the anchored pressure operator is SPD after scaling and the actual V-cycle uses transpose restriction/prolongation, matching pre/post smoothing, and positive coarse Jacobi polynomial; CG requires a fixed SPD preconditioner.",
+    "Audit globally reduced interface matvecs and OpenFOAM-equivalent residual normalization. Matching tolerance numbers alone is insufficient.",
+    "Record a distinct numerical-method signature for CUDA/AMG/communicator settings rather than presenting this as identical CPU numerics.",
+    "Include decomposition, first matrix setup and transfer overhead in end-to-end elapsed time; also report steady solver timing separately if available.",
+    "No production adoption or claimed speedup until the full CFD correctness and timing comparison passes."
+  ],
+  "independent_review": "CG requires the actually anchored SPD pressure operator and a fixed SPD preconditioner. Galerkin restriction/prolongation, adjoint pre/post smoothing and the Jacobi polynomial must be checked; equal tolerance numbers alone do not prove equivalence.",
+  "experimental_backend_configuration": {
+    "backend": "Experimental OGL/Ginkgo CUDA pressure offload",
+    "Foam": "Foundation14 DPInt32",
+    "ogl_commit": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+    "ginkgo_commit": "13c9174360667ad8ae8f1d9e8523c554f2c06e7d",
+    "patch_sha256": "dfc3412dc94d051eecceb66228cdb308db7f75092dc84c049703e6ec90aef59d",
+    "architecture": "SM121",
+    "mpi_ranks": 2,
+    "gpu_owners": 1,
+    "candidate_controls": {
+      "solver": "GKOCG",
+      "executor": "cuda",
+      "ranksPerGPU": 2,
+      "forceHostBuffer": true,
+      "splitMPIComm": true,
+      "MPIxRankOffload": false,
+      "matrixFormat": "Csr",
+      "scaling": -1.0,
+      "updateSysMatrix": true,
+      "updateRHS": true,
+      "updateInitGuess": true,
+      "adaptMinIter": false,
+      "minIter": 0,
+      "evalFrequency": 1,
+      "tolerance": 1e-07,
+      "relTol": 0.05,
+      "maxIter": 1000,
+      "verbose": 1,
+      "export": false,
+      "preconditioner": {
+        "preconditioner": "Multigrid",
+        "type": "Schwarz",
+        "caching": 0,
+        "reuseHierarchy": true,
+        "maxHierarchyReuses": 0,
+        "skipSorting": false,
+        "minCoarseRows": 64,
+        "maxLevels": 20,
+        "smoother": "Jacobi",
+        "relaxationFactor": 0.9,
+        "maxIterSmoother": 1,
+        "cycle": "v",
+        "coarseSolverConfig": {
+          "solver": "Jacobi",
+          "relTol": 0.0,
+          "maxIter": 20,
+          "relaxationFactor": 0.9
+        }
+      }
+    },
+    "fp": "double; half/bfloat16/mixed precision disabled; no fast-math; NVCC standard FMA behavior",
+    "normalization_safeguard": 2.220446049250313e-16
+  },
+  "experimental_backend_configuration_sha256": "0aecd988d9bd1c8e0f13a435181c0a0813529a00315794a74c0d7758a145374d",
+  "is_production_signature": false,
+  "full_cfd_equivalence_checked": false,
+  "actual_gpu_speedup_measured": false,
+  "no_cfd_launched": true
+}

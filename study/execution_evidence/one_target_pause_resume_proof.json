@@ -1,0 +1,13 @@
+{
+  "case": "finemapped_n8_e19.2923_d1000_az0000",
+  "job_id": "Allrun-8b62e8",
+  "pid": 124577,
+  "birth_ticks": 9659610,
+  "stopped_cpu_ticks": 495965,
+  "still_stopped_cpu_ticks": 495965,
+  "resumed_cpu_ticks": 495969,
+  "wrapper_alive": true,
+  "exit_file_absent": true,
+  "same_process_preserved": true,
+  "proof_passed": true
+}

@@ -1,0 +1,609 @@
+{
+  "rotors": 8,
+  "battery_power_W": 19.29230769230769,
+  "distance_cm": 10.0,
+  "tilt_deg": 0.0,
+  "level": "fine",
+  "tag": "_direct_solver_probe",
+  "diameter_m": 0.0762,
+  "radius_m": 0.0381,
+  "thickness_m": 0.012,
+  "half_thickness_m": 0.006,
+  "centers": [
+    [
+      -0.1,
+      -0.1,
+      0
+    ],
+    [
+      0.1,
+      -0.1,
+      0
+    ],
+    [
+      0.1,
+      0.1,
+      0
+    ],
+    [
+      -0.1,
+      0.1,
+      0
+    ],
+    [
+      0.0,
+      -0.1,
+      0
+    ],
+    [
+      0.1,
+      0.0,
+      0
+    ],
+    [
+      0.0,
+      0.1,
+      0
+    ],
+    [
+      -0.1,
+      0.0,
+      0
+    ]
+  ],
+  "normals": [
+    [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      -0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "radials": [
+    [
+      -0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    [
+      0.7071067811865475,
+      -0.7071067811865475,
+      0
+    ],
+    [
+      0.7071067811865475,
+      0.7071067811865475,
+      0
+    ],
+    [
+      -0.7071067811865475,
+      0.7071067811865475,
+      0
+    ],
+    [
+      0.0,
+      -1.0,
+      0
+    ],
+    [
+      1.0,
+      0.0,
+      0
+    ],
+    [
+      0.0,
+      1.0,
+      0
+    ],
+    [
+      -1.0,
+      0.0,
+      0
+    ]
+  ],
+  "footprint_side_m": 0.2762,
+  "projected_footprint_m": 0.2762,
+  "footprint_m": 0.2762,
+  "projected_footprint_xy_m": [
+    0.2762,
+    0.2762
+  ],
+  "forcing_footprint_side_m": 0.2762,
+  "forcing_footprint_xy_m": [
+    0.2762,
+    0.2762
+  ],
+  "forcing_z_extent_m": [
+    -0.006,
+    0.006
+  ],
+  "flat_footprint_side_m": 0.2762,
+  "geometric_volume_per_rotor_m3": 5.4724407742529756e-05,
+  "sum_geometric_actuator_volumes_m3": 0.00043779526194023805,
+  "mesh_cells": 922576,
+  "mesh_cells_xyz": [
+    92,
+    92,
+    109
+  ],
+  "mesh_inner_xy_cells": 70,
+  "mesh_outer_xy_cells_each_side": 11,
+  "mesh_z_cells": [
+    42,
+    35,
+    32
+  ],
+  "domain_xy_m": 0.36,
+  "domain_z_m": [
+    -0.6,
+    0.36
+  ],
+  "fine_core_halfwidth_m": 0.168,
+  "z_core_halfwidth_m": 0.042,
+  "inner_xy_cell_width_m": 0.0048000000000000004,
+  "inner_z_cell_width_m": 0.0024000000000000002,
+  "loss_model": {
+    "auxiliary_W": 0.5,
+    "esc_efficiency": 0.95,
+    "idle_W_per_motor": 0.1,
+    "motor_conversion": 0.6,
+    "axial_fraction": 0.5
+  },
+  "target_shaft_power_W": 10.231615384615383,
+  "target_air_power_W": 5.115807692307691,
+  "quadrature_subcells": 16,
+  "quadrature_subcells_xy": 16,
+  "quadrature_subcells_per_cell": 256,
+  "source_sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+  "averaging_duration_s": 0.01,
+  "averaging_start_s": 0.61,
+  "averaging_stop_s": 0.62,
+  "study_role": "isolated_backend_benchmark",
+  "configured_end_time_s": 0.62,
+  "aircraft_mass_assumption_kg": 0.08,
+  "aircraft_weight_reference_N": 0.784532,
+  "no_added_mass_assumption": true,
+  "benchmark_variant": "Serial, one rank; exact direct-coarsest benchmark mesh, mapped initial fields, physical and numerical settings retained",
+  "numerics": {
+    "pressure_solver": "GAMG",
+    "smoother": "GaussSeidel",
+    "tolerance": 1e-07,
+    "directSolveCoarsest": true,
+    "mpi_ranks": 1
+  },
+  "initialization_method": "Exact frozen0.6 U,p and immutable fine mesh cloned from completed CPU serial probe; unchanged actuator controller reinitializes identically. No phi or evolved fields copied.",
+  "initialization_family": "mapped",
+  "initialization_start_time_s": 0.6,
+  "initialization_source_time_s": 0.6,
+  "initialization_source_case": "coarse_n8_e19.2923_d1000_az0000",
+  "initialization_source_case_absolute_historical": "/opt/openfoam-workspace/cases/tello_refinement/coarse_n8_e19.2923_d1000_az0000",
+  "initialization_source_case_reference": {
+    "case_name": "coarse_n8_e19.2923_d1000_az0000",
+    "archive_member_prefix": "cases/coarse_n8_e19.2923_d1000_az0000/",
+    "source_time_directory": "0.6",
+    "historical_study_root_name": "tello_refinement",
+    "original_source_time_fields_in_archive": "not guaranteed; hashes identify the original fields",
+    "initialized_target_rerun_requires_live_source": false
+  },
+  "initialization_controller_state_policy": "Only U and p are mapped. The unchanged actuator source reinitializes its static relaxed thrust to the target inferred from mapped velocity at the first nonzero-time update; controller history is not transferred. This is a mapped/reinitialized run, not a continuation of complete source state.",
+  "solver_configuration": {
+    "schema": "openfoam-foundation14-numerical-method-v1",
+    "openfoam_family": "Foundation",
+    "openfoam_major_version": 14,
+    "fvSolution": {
+      "PIMPLE": {
+        "nCorrectors": [
+          "2"
+        ],
+        "nNonOrthogonalCorrectors": [
+          "0"
+        ],
+        "nOuterCorrectors": [
+          "1"
+        ]
+      },
+      "solvers": {
+        "U": {
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "UFinal": {
+          "relTol": [
+            "0"
+          ],
+          "smoother": [
+            "symGaussSeidel"
+          ],
+          "solver": [
+            "smoothSolver"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ]
+        },
+        "p": {
+          "MPIxRankOffload": [
+            "false"
+          ],
+          "adaptMinIter": [
+            "false"
+          ],
+          "evalFrequency": [
+            "1"
+          ],
+          "executor": [
+            "cuda"
+          ],
+          "export": [
+            "false"
+          ],
+          "forceHostBuffer": [
+            "true"
+          ],
+          "matrixFormat": [
+            "Csr"
+          ],
+          "maxIter": [
+            "1E+3"
+          ],
+          "minIter": [
+            "0"
+          ],
+          "preconditioner": {
+            "caching": [
+              "0"
+            ],
+            "coarseSolverConfig": {
+              "maxIter": [
+                "2E+1"
+              ],
+              "relTol": [
+                "0"
+              ],
+              "relaxationFactor": [
+                "0.90000000000000002"
+              ],
+              "solver": [
+                "Jacobi"
+              ]
+            },
+            "cycle": [
+              "v"
+            ],
+            "maxHierarchyReuses": [
+              "0"
+            ],
+            "maxIterSmoother": [
+              "1"
+            ],
+            "maxLevels": [
+              "2E+1"
+            ],
+            "minCoarseRows": [
+              "64"
+            ],
+            "preconditioner": [
+              "Multigrid"
+            ],
+            "relaxationFactor": [
+              "0.90000000000000002"
+            ],
+            "reuseHierarchy": [
+              "true"
+            ],
+            "skipSorting": [
+              "false"
+            ],
+            "smoother": [
+              "Jacobi"
+            ],
+            "type": [
+              "Schwarz"
+            ]
+          },
+          "ranksPerGPU": [
+            "2"
+          ],
+          "relTol": [
+            "0.050000000000000003"
+          ],
+          "scaling": [
+            "-1"
+          ],
+          "solver": [
+            "GKOCG"
+          ],
+          "splitMPIComm": [
+            "true"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ],
+          "updateInitGuess": [
+            "true"
+          ],
+          "updateRHS": [
+            "true"
+          ],
+          "updateSysMatrix": [
+            "true"
+          ],
+          "verbose": [
+            "1"
+          ]
+        },
+        "pFinal": {
+          "MPIxRankOffload": [
+            "false"
+          ],
+          "adaptMinIter": [
+            "false"
+          ],
+          "evalFrequency": [
+            "1"
+          ],
+          "executor": [
+            "cuda"
+          ],
+          "export": [
+            "false"
+          ],
+          "forceHostBuffer": [
+            "true"
+          ],
+          "matrixFormat": [
+            "Csr"
+          ],
+          "maxIter": [
+            "1E+3"
+          ],
+          "minIter": [
+            "0"
+          ],
+          "preconditioner": {
+            "caching": [
+              "0"
+            ],
+            "coarseSolverConfig": {
+              "maxIter": [
+                "2E+1"
+              ],
+              "relTol": [
+                "0"
+              ],
+              "relaxationFactor": [
+                "0.90000000000000002"
+              ],
+              "solver": [
+                "Jacobi"
+              ]
+            },
+            "cycle": [
+              "v"
+            ],
+            "maxHierarchyReuses": [
+              "0"
+            ],
+            "maxIterSmoother": [
+              "1"
+            ],
+            "maxLevels": [
+              "2E+1"
+            ],
+            "minCoarseRows": [
+              "64"
+            ],
+            "preconditioner": [
+              "Multigrid"
+            ],
+            "relaxationFactor": [
+              "0.90000000000000002"
+            ],
+            "reuseHierarchy": [
+              "true"
+            ],
+            "skipSorting": [
+              "false"
+            ],
+            "smoother": [
+              "Jacobi"
+            ],
+            "type": [
+              "Schwarz"
+            ]
+          },
+          "ranksPerGPU": [
+            "2"
+          ],
+          "relTol": [
+            "0"
+          ],
+          "scaling": [
+            "-1"
+          ],
+          "solver": [
+            "GKOCG"
+          ],
+          "splitMPIComm": [
+            "true"
+          ],
+          "tolerance": [
+            "9.9999999999999995E-8"
+          ],
+          "updateInitGuess": [
+            "true"
+          ],
+          "updateRHS": [
+            "true"
+          ],
+          "updateSysMatrix": [
+            "true"
+          ],
+          "verbose": [
+            "1"
+          ]
+        }
+      }
+    },
+    "fvSchemes": {
+      "ddtSchemes": {
+        "default": [
+          "Euler"
+        ]
+      },
+      "divSchemes": {
+        "default": [
+          "none"
+        ],
+        "div((nuEff*dev2(T(grad(U)))))": [
+          "Gauss",
+          "linear"
+        ],
+        "div(phi,U)": [
+          "Gauss",
+          "linearUpwind",
+          "grad",
+          "(",
+          "U",
+          ")"
+        ]
+      },
+      "gradSchemes": {
+        "default": [
+          "Gauss",
+          "linear"
+        ],
+        "grad(U)": [
+          "cellLimited",
+          "Gauss",
+          "linear",
+          "1"
+        ]
+      },
+      "interpolationSchemes": {
+        "default": [
+          "linear"
+        ]
+      },
+      "laplacianSchemes": {
+        "default": [
+          "Gauss",
+          "linear",
+          "corrected"
+        ]
+      },
+      "snGradSchemes": {
+        "default": [
+          "corrected"
+        ]
+      },
+      "wallDist": {
+        "method": [
+          "meshWave"
+        ]
+      }
+    },
+    "time_stepping": {
+      "application": [
+        "foamRun"
+      ],
+      "solver": [
+        "incompressibleFluid"
+      ],
+      "deltaT": [
+        "0.0001"
+      ],
+      "adjustTimeStep": [
+        "true"
+      ],
+      "maxCo": [
+        "0.90000000000000002"
+      ],
+      "maxDeltaT": [
+        "0.00080000000000000004"
+      ]
+    },
+    "decomposition": {
+      "hierarchicalCoeffs": {
+        "n": [
+          "(",
+          "2",
+          "1",
+          "1",
+          ")"
+        ],
+        "order": [
+          "xyz"
+        ]
+      },
+      "method": [
+        "hierarchical"
+      ],
+      "numberOfSubdomains": [
+        "2"
+      ]
+    },
+    "external_pressure_backend": {
+      "ogl_commit": "7c3ced4514fb2260e52b16106f8a4df6435d77be",
+      "ginkgo_commit": "13c9174360667ad8ae8f1d9e8523c554f2c06e7d",
+      "architecture": "SM121",
+      "precision": "double",
+      "fast_math": false,
+      "mpi_gpu_aware": false
+    }
+  },
+  "solver_configuration_sha256": "e382c1d94680437f645b0b0bd975d7443890e496a0969f9fde73037e67b927c5",
+  "pressure_direct_solve_coarsest": null,
+  "execution": {
+    "mpi_ranks": 2,
+    "execution_mode": "parallel",
+    "threads_per_rank": 1,
+    "backend": "cuda_mpi2",
+    "runner_sha256": "7771c230176942a3313516a2d7701b098119f83b1c1ec2755a3062747c7b2dea",
+    "helper_sha256": "6e3e6fa94f1b926d0ebdc89cacfd028affb8290be1a14a90cd9c1de03b1230da"
+  }
+}

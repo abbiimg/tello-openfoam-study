@@ -1,0 +1,40 @@
+Reproduce the measured CPU/CUDA benchmark setup
+
+This folder needs shared_seed.zip as a separate explicit artifact. Generic
+setup bundles may exclude nested ZIP/GZ files; obtain that ZIP beside this file.
+It contains ONE actual shared mesh,0.6 U,p, physical model and common helpers.
+overrides/ contains only the three small configuration/runner/manifest layers.
+Every source copy and every archive member was SHA256/byte-size verified.
+Original benchmark cases and frozen files were not changed.
+
+Use native Linux ARM64 with the installed Foundation OpenFOAM14 environment:
+  source /opt/openfoam14/etc/bashrc
+  python3 restore_benchmark.py --variant cpu_mpi2 --dest /tmp/tello_cpu2_repeat --owner openfoam:openfoam
+
+Choose cpu_serial, cpu_mpi2 or cuda_mpi2. Destination must be NEW and outside
+the original study/benchmark roots. Omit --owner when restoring as the same
+non-root execution user. Restoration performs --verify-only and NEVER runs CFD.
+
+An explicitly authorized execution owner can subsequently launch once:
+  runuser -u openfoam -- bash /tmp/tello_cpu2_repeat/Allrun
+
+For cuda_mpi2, the exact recorded private libOGL/Ginkgo closure at
+/opt/openfoam-workspace/gpu-feasibility/pressure-offload is required. It is
+already installed and device-tested on this workstation. SDK/build trees are
+NOT embedded. Parent GPU feasibility artifacts preserve pinned commits,
+patches, official CUDA component checksums, build commands and device tests.
+For a different/rebuilt runtime, require a NEW explicit provenance package
+and device validation rather than silently weakening the frozen hash checks.
+
+The case starts from exactly the measured0.6 fields, with the same actuator
+controller reinitialization, and advances to0.62 s. Acceptance and numerical
+method signatures are copied unchanged. The setup includes a fresh case.foam
+marker; reconstruction excludes0.6 so the shared initial fields remain sealed.
+
+Run comparisons under matched quiet host load. Runners record startup,
+steady and full wall, actual Ginkgo executor/device logs and GPU/host samples.
+Hardware/host-load-dependent timing will vary; the measured results and
+accuracy gates are in the parent benchmark_results.csv and
+benchmark_accuracy_results.json. CUDA was slower than the better native CPU
+configuration in this actual test and remains nondefault. No tuned rerun is
+included or implied.

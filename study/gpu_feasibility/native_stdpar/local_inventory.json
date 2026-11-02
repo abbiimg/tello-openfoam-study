@@ -1,0 +1,226 @@
+{
+  "kind": "Read-only local feasibility evidence for an independent native stdpar OpenFOAM branch; no CFD performance result",
+  "observed_at_utc": "2026-11-02T05:09:34.107213+00:00",
+  "scope": {
+    "distro": "NVIDIA-Workbench-ARM64",
+    "architecture": "aarch64",
+    "read_only_runtime_inspection": true,
+    "no_solver_launches": true,
+    "no_gpu_kernels_launched": true,
+    "no_installs_downloads_or_builds": true,
+    "no_process_pauses_or_configuration_changes": true
+  },
+  "installed_components": {
+    "openfoam": {
+      "family": "OpenFOAM Foundation",
+      "version": "14",
+      "root": "/opt/openfoam14",
+      "platforms": [
+        "linuxArm64GccDPInt32Opt"
+      ],
+      "package_version": "20261008",
+      "package_version_observation": "dpkg-query earlier in this same local inspection"
+    },
+    "command_paths": {
+      "nvc++": null,
+      "nvc": null,
+      "nvfortran": null,
+      "nvcc": null,
+      "clang++": null,
+      "g++": "/usr/bin/g++",
+      "podman": "/usr/bin/podman",
+      "docker": "/mnt/c/Program Files/Docker/Docker/resources/bin/docker",
+      "apptainer": null,
+      "singularity": null
+    },
+    "gcc_version": {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "return_code": 0,
+      "stdout": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+      "stderr": ""
+    },
+    "private_cuda": {
+      "prefix": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13",
+      "nvcc_version": {
+        "command": [
+          "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/bin/nvcc",
+          "--version"
+        ],
+        "return_code": 0,
+        "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:57:39_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+        "stderr": ""
+      },
+      "prior_verified_target": "SM121",
+      "note": "CUDA nvcc is installed privately for the existing Ginkgo/OGL experiment; it is not the NVIDIA HPC SDK nvc++ compiler."
+    },
+    "standard_hpc_or_cuda_locations": {
+      "/opt/nvidia": false,
+      "/opt/nvidia/hpc_sdk": false,
+      "/opt/hpc_sdk": false,
+      "/usr/local/cuda": false,
+      "/usr/local/cuda-13.0": false,
+      "/usr/lib/llvm-18": false
+    },
+    "openfoam_build_rules": {
+      "arm64": [
+        "linuxArm64Gcc"
+      ],
+      "nvidia": []
+    },
+    "containers": {
+      "podman_version": {
+        "command": [
+          "podman",
+          "--version"
+        ],
+        "return_code": 0,
+        "stdout": "podman version 5.4.0",
+        "stderr": ""
+      },
+      "root_images": {
+        "command": [
+          "podman",
+          "images",
+          "--format",
+          "json"
+        ],
+        "return_code": 0,
+        "stdout": "[]",
+        "stderr": ""
+      },
+      "earlier_same_inspection": {
+        "openfoam_user_images": [],
+        "workbench_user_images": [
+          "docker.io/library/ubuntu:24.04"
+        ],
+        "docker_windows_client": "C:/Program Files/Docker/Docker/resources/bin/docker.exe",
+        "docker_daemon_query": "Failed: dockerDesktopLinuxEngine named pipe absent.",
+        "wsl_states": {
+          "NVIDIA-Workbench-ARM64": "Running",
+          "NVIDIA-Workbench": "Stopped",
+          "NVIDIA-Workbench-x64-backup": "Stopped",
+          "docker-desktop": "Stopped"
+        },
+        "note": "Stopped distros and Docker Desktop were not started. No existing native GPUFOAM/HPC SDK container appeared in queried local image inventories."
+      }
+    }
+  },
+  "gpu": {
+    "query": {
+      "command": [
+        "/usr/lib/wsl/lib/nvidia-smi",
+        "--query-gpu=name,driver_version,compute_cap,memory.total",
+        "--format=csv,noheader"
+      ],
+      "return_code": 0,
+      "stdout": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU), 617.74, 12.1, 8192 MiB",
+      "stderr": ""
+    },
+    "managed_memory_query": {
+      "observed_at_utc": "2026-11-02T05:09:41.068072+00:00",
+      "method": "Python ctypes CUDA Driver API cuInit, cuDeviceGet, cuDeviceGetAttribute; no compilation or kernel launch",
+      "library": "/usr/lib/wsl/lib/libcuda.so.1",
+      "header": "/opt/openfoam-workspace/gpu-feasibility/pressure-offload/cuda13/include/cuda.h",
+      "enum_method": "Explicit decimal enum values parsed from installed cuda.h by attribute name; no guessed enum IDs",
+      "cuInit_return_code": 0,
+      "cuDeviceGet_return_code": 0,
+      "device_ordinal": 0,
+      "attributes": [
+        {
+          "attribute": "CU_DEVICE_ATTRIBUTE_MANAGED_MEMORY",
+          "header_match": "CU_DEVICE_ATTRIBUTE_MANAGED_MEMORY = 83",
+          "enum_id": 83,
+          "return_code": 0,
+          "value": 1
+        },
+        {
+          "attribute": "CU_DEVICE_ATTRIBUTE_CONCURRENT_MANAGED_ACCESS",
+          "header_match": "CU_DEVICE_ATTRIBUTE_CONCURRENT_MANAGED_ACCESS = 89",
+          "enum_id": 89,
+          "return_code": 0,
+          "value": 0
+        },
+        {
+          "attribute": "CU_DEVICE_ATTRIBUTE_PAGEABLE_MEMORY_ACCESS",
+          "header_match": "CU_DEVICE_ATTRIBUTE_PAGEABLE_MEMORY_ACCESS = 88",
+          "enum_id": 88,
+          "return_code": 0,
+          "value": 0
+        },
+        {
+          "attribute": "CU_DEVICE_ATTRIBUTE_PAGEABLE_MEMORY_ACCESS_USES_HOST_PAGE_TABLES",
+          "header_match": "CU_DEVICE_ATTRIBUTE_PAGEABLE_MEMORY_ACCESS_USES_HOST_PAGE_TABLES = 100",
+          "enum_id": 100,
+          "return_code": 0,
+          "value": 0
+        },
+        {
+          "attribute": "CU_DEVICE_ATTRIBUTE_DIRECT_MANAGED_MEM_ACCESS_FROM_HOST",
+          "header_match": "CU_DEVICE_ATTRIBUTE_DIRECT_MANAGED_MEM_ACCESS_FROM_HOST = 101",
+          "enum_id": 101,
+          "return_code": 0,
+          "value": 0
+        }
+      ],
+      "interpretation": "Basic managed allocation is reported available; concurrent/pageable/host-page-table capabilities are not. This constrains system unified-memory assumptions but does not independently rule out managed-mode stdpar."
+    }
+  },
+  "current_actuator": {
+    "path": "/opt/openfoam-workspace/cases/tello_refinement/finemapped_n8_e19.2923_d0800_am1000/constant/fvModels",
+    "sha256": "29df3e9ea621551c51f5576e9dfac9a17d31fb3d26e2aac0c0be118914d4fdbd",
+    "configuration": "constant/fvModels; type coded; cellZone all; field U; codeAddSup",
+    "foundation_class": "Foam::fv::codedFvModel",
+    "solver": "foamRun / incompressibleFluid",
+    "operation": "Weighted finite cylindrical source volumes in one interacting incompressible flow; adaptive per-rotor thrust controller targeting modeled electrical power.",
+    "observed_host_features": [
+      "forAll loops over rotors and selected cells",
+      "static IOdictionary and nested List<labelList>/List<scalarField> state",
+      "DynamicList geometry initialization using cell points",
+      "direct mesh centres/volumes and U/eqn.source references",
+      "Pstream reduce calls for rotor volume and velocity flux",
+      "once-per-time-index thrust update and Info logging"
+    ],
+    "port_requirements": [
+      "Select a compatible transient incompressible solver and translate Foundation14 dictionaries/property filenames as needed by the selected OpenCFD/GPU branch.",
+      "Adapt coded fvModel wrapper to the branch source API, such as fvOptions/codedSource if that is the supported interface; verify actual callback, registration and sign/density conventions rather than only renaming a file.",
+      "Recompile source and dependencies for the selected branch/compiler; existing Foundation14 dynamic-code/shared libraries cannot be assumed ABI-compatible.",
+      "Preserve finite-cylinder cell fractions, global normalization, velocity/work weighting, force direction, modeled electrical-power budget and controller reset/lifecycle.",
+      "Use branch-supported GPU iteration and device-safe allocations/captures for offloaded source/reduction kernels; ordinary host forAll loops are not automatically GPU kernels.",
+      "If host source callbacks remain, establish synchronization and managed-memory correctness and measure transfer/migration overhead.",
+      "Concurrent processing of different rotors must handle shared source cells in overlapping disks safely; keep rotor accumulation serial, use cell-owned accumulation, or supply suitable atomic/reduction semantics.",
+      "Validate frozen-case force/power/field/continuity equivalence and measure full elapsed time including setup, startup, mapping/decomposition and output before production adoption."
+    ]
+  },
+  "primary_document_context_supplied_by_parent_review": {
+    "status": "Official repository build documentation and flags verified by parent/reviewer; this artifact task did not download a new source tree.",
+    "build_wiki": "https://gitlab.com/api/v4/projects/62231285/wikis/build",
+    "compiler_rule": "https://gitlab.com/api/v4/projects/62231285/repository/files/wmake%2Frules%2FGeneral%2FNvidia-gpu%2Fc%2B%2B/raw?ref=feature-gpu",
+    "documented_prerequisites": [
+      "NVIDIA HPC SDK nvc++",
+      "ARM64 Nvidia-gpu build rules",
+      "Umpire memory pool"
+    ],
+    "reviewer_reported_default_rule": "nvc++ -std=c++17 -stdpar=gpu -gpu=cc90,mem:unified,managed -DFOAM_OFFLOAD",
+    "reviewer_reported_fallback": "Build wiki documents mem:managed for A100 when unified/HMM/ATS mode is unavailable.",
+    "parent_document_review_update_date_utc": "2026-11-02",
+    "documented_target_support": "The NVHPC 26.9 compiler guide documents ARM64 and compute capability through 12.1; no local nvc++ compilation or native stdpar runtime test was performed.",
+    "target_support_source": "https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-user-guide/",
+    "current_source_note": "Official core/develop identifies GPU merge 68a81857/API2609; the older feature-branch rule above is historical guidance, not a verified current build recipe.",
+    "current_source_url": "https://gitlab.com/openfoam/core/openfoam/-/tree/develop",
+    "unresolved": [
+      "Exact chosen branch/release, selected NVHPC toolchain, and successful local cc121 compilation/runtime validation",
+      "Whether this actuator's dynamic-coded source is supported and correctly synchronized",
+      "Case-specific speed, accuracy, continuity and concurrent-batch throughput"
+    ]
+  },
+  "conclusion": {
+    "ready_native_gpufoam_test_executable_found": false,
+    "native_stdpar_speedup_measured": false,
+    "managed_mode_declared_impossible": false,
+    "existing_ginkgo_benchmark_scope": "Pressure-only Foundation14 adapter; does not determine performance of a different full native GPU implementation.",
+    "practical_next_gate": "After the official branch/memory/compiler requirements are settled: isolated toolchain build and supported tutorial smoke test, then a source-port/frozen-case benchmark. No completion time or speedup is measured here."
+  }
+}
